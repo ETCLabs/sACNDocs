@@ -8,7 +8,7 @@
         $('#error_text').text('If you are reading this, something has gone wrong!');
       }
 
-      $.get('/sACN/versions.txt', function(data) {
+      $.get('/sACNDocs/versions.txt', function(data) {
         var success = false;
         if (data) {
           var lines = data.split('\n');
