@@ -244,7 +244,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deinitialize the sACN library. </p>
-<p>Closes all connections, deallocates all resources and joins the background thread. No sACN API functions are usable after this function is called. </p>
+<p>Closes all connections, deallocates all resources and joins the background thread. No sACN API functions are usable after this function is called.</p>
+<p>This function is not thread safe with respect to other sACN API functions. Make sure to join your threads that use the APIs before calling this. </p>
 
 </div>
 </div>

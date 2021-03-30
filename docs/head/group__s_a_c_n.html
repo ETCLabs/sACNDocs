@@ -464,7 +464,8 @@ sACN version strings</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deinitialize the sACN library. </p>
-<p>Set the sACN library back to an uninitialized state. Calls to other sACN API functions will fail until <a class="el" href="group__s_a_c_n.html#ga06e5eacb42e03b67c65ed299500a8366" title="Initialize the sACN library. ">sacn_init()</a> is called again. </p>
+<p>Set the sACN library back to an uninitialized state. Calls to other sACN API functions will fail until <a class="el" href="group__s_a_c_n.html#ga06e5eacb42e03b67c65ed299500a8366" title="Initialize the sACN library. ">sacn_init()</a> is called again.</p>
+<p>This function is not thread safe with respect to other sACN API functions. Make sure to join your threads that use the APIs before calling this. </p>
 
 </div>
 </div>
