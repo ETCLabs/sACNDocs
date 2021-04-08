@@ -22,6 +22,6 @@ var group__sacn__source__detector =
     [ "sacn_source_detector_config_init", "group__sacn__source__detector.html#gaaf2f5a453a68df1ed4dcc80e1a94a49a", null ],
     [ "sacn_source_detector_create", "group__sacn__source__detector.html#ga42f3c00c3814e158f6ae6902c64daa68", null ],
     [ "sacn_source_detector_destroy", "group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d", null ],
-    [ "sacn_source_detector_get_network_interfaces", "group__sacn__source__detector.html#ga65c7acc31aae57bdf1616614473501dd", null ],
+    [ "sacn_source_detector_get_network_interfaces", "group__sacn__source__detector.html#gae0c2cafc1d5d765f272981fc06f5fdc6", null ],
     [ "sacn_source_detector_reset_networking", "group__sacn__source__detector.html#gad7c4a8404d060c574e69a7d369dde609", null ]
 ];
