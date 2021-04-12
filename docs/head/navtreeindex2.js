@@ -1,11 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"source_loss_behavior.html":[1,0],
-"struct_sacn_dmx_merger_config.html":[3,0,0,0],
-"struct_sacn_dmx_merger_config.html#a08bc75bcabb0a92022eac3a623f32ff6":[3,0,0,0,2],
-"struct_sacn_dmx_merger_config.html#a52db3df3a97298a9d96b7559fded9128":[3,0,0,0,1],
-"struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30":[3,0,0,0,0],
-"struct_sacn_dmx_merger_config.html#aa56795d5b57bff4910ce11baac4003ba":[3,0,0,0,3],
 "struct_sacn_dmx_merger_source.html":[3,0,0,1],
 "struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d":[3,0,0,1,5],
 "struct_sacn_dmx_merger_source.html#a6f908810ffc25f89449b60177428980b":[3,0,0,1,2],

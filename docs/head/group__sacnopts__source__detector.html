@@ -204,15 +204,6 @@ $(document).ready(function(){initNavTree('group__sacnopts__source__detector.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga75cc0df47297d4051307c283d398d12a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__source__detector.html#ga75cc0df47297d4051307c283d398d12a">SACN_SOURCE_DETECTOR_THREAD_PRIORITY</a>&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></td></tr>
-<tr class="memdesc:ga75cc0df47297d4051307c283d398d12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the sACN source detector thread.  <a href="#ga75cc0df47297d4051307c283d398d12a">More...</a><br /></td></tr>
-<tr class="separator:ga75cc0df47297d4051307c283d398d12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3fd4d040877d49d52ab3b52e64897e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__source__detector.html#gae3fd4d040877d49d52ab3b52e64897e5">SACN_SOURCE_DETECTOR_THREAD_STACK</a>&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></td></tr>
-<tr class="memdesc:gae3fd4d040877d49d52ab3b52e64897e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack size of each sACN source detector thread.  <a href="#gae3fd4d040877d49d52ab3b52e64897e5">More...</a><br /></td></tr>
-<tr class="separator:gae3fd4d040877d49d52ab3b52e64897e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf49c37ed22894c9db85e376833727ee3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__source__detector.html#gaf49c37ed22894c9db85e376833727ee3">SACN_SOURCE_DETECTOR_READ_TIMEOUT_MS</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:gaf49c37ed22894c9db85e376833727ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of time the Source Detector thread will block waiting for data, in milliseconds.  <a href="#gaf49c37ed22894c9db85e376833727ee3">More...</a><br /></td></tr>
-<tr class="separator:gaf49c37ed22894c9db85e376833727ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga872fc4bd419f3cc3d77e7502f0b1ed0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__source__detector.html#ga872fc4bd419f3cc3d77e7502f0b1ed0e">SACN_SOURCE_DETECTOR_MAX_SOURCES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:ga872fc4bd419f3cc3d77e7502f0b1ed0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sACN sources that can be monitored.  <a href="#ga872fc4bd419f3cc3d77e7502f0b1ed0e">More...</a><br /></td></tr>
 <tr class="separator:ga872fc4bd419f3cc3d77e7502f0b1ed0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,57 +247,6 @@ Macros</h2></td></tr>
 <p>The maximum number of sACN universes that can be tracked on each source. </p>
 <p>This number is intentionally set on the small side. This module is more likely to be needed by applications that use dynamic memory.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> is defined to 0. </p>
-
-</div>
-</div>
-<a id="gaf49c37ed22894c9db85e376833727ee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf49c37ed22894c9db85e376833727ee3">&#9670;&nbsp;</a></span>SACN_SOURCE_DETECTOR_READ_TIMEOUT_MS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_DETECTOR_READ_TIMEOUT_MS&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The maximum amount of time the Source Detector thread will block waiting for data, in milliseconds. </p>
-<p>It is recommended to keep this time short to avoid delays on shutdown. </p>
-
-</div>
-</div>
-<a id="ga75cc0df47297d4051307c283d398d12a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75cc0df47297d4051307c283d398d12a">&#9670;&nbsp;</a></span>SACN_SOURCE_DETECTOR_THREAD_PRIORITY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_DETECTOR_THREAD_PRIORITY&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The priority of the sACN source detector thread. </p>
-<p>This is usually only meaningful on real-time systems. </p>
-
-</div>
-</div>
-<a id="gae3fd4d040877d49d52ab3b52e64897e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae3fd4d040877d49d52ab3b52e64897e5">&#9670;&nbsp;</a></span>SACN_SOURCE_DETECTOR_THREAD_STACK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_DETECTOR_THREAD_STACK&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The stack size of each sACN source detector thread. </p>
-<p>It's usually only necessary to worry about this on real-time or embedded systems. </p>
 
 </div>
 </div>
