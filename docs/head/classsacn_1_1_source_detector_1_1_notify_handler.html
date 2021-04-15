@@ -337,7 +337,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Notify that a source is new or has changed. </p>
 <p>This passes the source's current universe list, but you will only get this callback when the module detects that the source is new or the list has somehow changed.</p>
-<p>The list of sourced universes is guaranteed by the protocol to be numerically sorted.</p>
+<p>The protocol requires the list of sourced universes to be numerically sorted. The library enforces this rule by checking that the universe list is in ascending order before notifying.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>The CID of the source. </td></tr>
