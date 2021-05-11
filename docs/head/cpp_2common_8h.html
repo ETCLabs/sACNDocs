@@ -197,7 +197,9 @@ $(document).ready(function(){initNavTree('cpp_2common_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">common.h File Reference</div>  </div>
 </div><!--header-->
@@ -214,6 +216,11 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacesacn"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace which contains all C++ language definitions in the sACN library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:acfd8aea0d62baa7d2f16a969ec5849af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a> = <a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a></td></tr>
+<tr class="separator:acfd8aea0d62baa7d2f16a969ec5849af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga65534ea21e4b2adde8d3189b3c4405a3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3">Init</a> (const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params=nullptr)</td></tr>
@@ -225,6 +232,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">Deinit</a> ()</td></tr>
 <tr class="memdesc:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the sACN library.  <a href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">More...</a><br /></td></tr>
 <tr class="separator:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa353377fefbbdd6ae634d981944c5619"><td class="memItemLeft" align="right" valign="top">RemoteSourceHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#gaa353377fefbbdd6ae634d981944c5619">GetRemoteSourceHandle</a> (const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;source_cid)</td></tr>
+<tr class="memdesc:gaa353377fefbbdd6ae634d981944c5619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found.  <a href="group__sacn__cpp__common.html#gaa353377fefbbdd6ae634d981944c5619">More...</a><br /></td></tr>
+<tr class="separator:gaa353377fefbbdd6ae634d981944c5619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab05243a382f6332a3d73dbb3b202bb95"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#gab05243a382f6332a3d73dbb3b202bb95">GetRemoteSourceCid</a> (RemoteSourceHandle source_handle)</td></tr>
+<tr class="memdesc:gab05243a382f6332a3d73dbb3b202bb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source handle to the corresponding source CID.  <a href="group__sacn__cpp__common.html#gab05243a382f6332a3d73dbb3b202bb95">More...</a><br /></td></tr>
+<tr class="separator:gab05243a382f6332a3d73dbb3b202bb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a731047fe50bd58178f7cd8b1960e6e57"><td class="memItemLeft" align="right" valign="top">constexpr RemoteSourceHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesacn.html#a731047fe50bd58178f7cd8b1960e6e57">kInvalidRemoteSourceHandle</a> = <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a></td></tr>
+<tr class="separator:a731047fe50bd58178f7cd8b1960e6e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C++ wrapper for the sACN init/deinit functions. </p>

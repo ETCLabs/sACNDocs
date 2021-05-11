@@ -7,7 +7,7 @@ var group__sacn__receiver__cpp =
       [ "HandleSourceLimitExceeded", "classsacn_1_1_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ],
       [ "HandleSourcePapLost", "classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672", null ],
       [ "HandleSourcesLost", "classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae", null ],
-      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#aa202e81718fa1f1abecd83c50fc94125", null ]
+      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#ae547d3c4d9b20519c7f02c84b291ae52", null ]
     ] ],
     [ "Settings", "structsacn_1_1_receiver_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],

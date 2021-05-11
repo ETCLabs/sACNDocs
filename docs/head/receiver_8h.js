@@ -16,7 +16,7 @@ var receiver_8h =
     [ "SacnSourceLimitExceededCallback", "group__sacn__receiver.html#ga64bfe2ecfceca8b4f50f1a3a0a9c9a07", null ],
     [ "SacnSourcePapLostCallback", "group__sacn__receiver.html#ga7608a394e455465e56c789957f3f3214", null ],
     [ "SacnSourcesLostCallback", "group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3", null ],
-    [ "SacnUniverseDataCallback", "group__sacn__receiver.html#ga7bbce89033bafcde13e1c4a413555acf", null ],
+    [ "SacnUniverseDataCallback", "group__sacn__receiver.html#ga4061a24aadf15e943e417b1189468138", null ],
     [ "sacn_receiver_change_universe", "group__sacn__receiver.html#gabb5ec7d4459ac694e5fa0ae97572f388", null ],
     [ "sacn_receiver_config_init", "group__sacn__receiver.html#ga82f2e3740ce865b7aa3e018aa8a229d9", null ],
     [ "sacn_receiver_create", "group__sacn__receiver.html#ga7c6f216bef2361a0e097f22fe69cba1a", null ],

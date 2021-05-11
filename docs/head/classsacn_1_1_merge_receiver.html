@@ -256,12 +256,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a227c8165a2af9b39ac6d53cbea18d121"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#a227c8165a2af9b39ac6d53cbea18d121">GetNetworkInterfaces</a> ()</td></tr>
 <tr class="memdesc:a227c8165a2af9b39ac6d53cbea18d121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a vector of this merge receiver's network interfaces.  <a href="#a227c8165a2af9b39ac6d53cbea18d121">More...</a><br /></td></tr>
 <tr class="separator:a227c8165a2af9b39ac6d53cbea18d121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9271878d6aef7a83d55fbf5a0027298"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__sacn__dmx__merger.html#gab8d8887ff8ef5fbfa4a39a9db5230a49">sacn_source_id_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#af9271878d6aef7a83d55fbf5a0027298">GetSourceId</a> (const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;source_cid) const</td></tr>
-<tr class="memdesc:af9271878d6aef7a83d55fbf5a0027298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a source CID to the corresponding source ID.  <a href="#af9271878d6aef7a83d55fbf5a0027298">More...</a><br /></td></tr>
-<tr class="separator:af9271878d6aef7a83d55fbf5a0027298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacb67c6e3cfcd63f9b047cbe7c0a056"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#aeacb67c6e3cfcd63f9b047cbe7c0a056">GetSourceCid</a> (<a class="el" href="group__sacn__dmx__merger.html#gab8d8887ff8ef5fbfa4a39a9db5230a49">sacn_source_id_t</a> source) const</td></tr>
-<tr class="memdesc:aeacb67c6e3cfcd63f9b047cbe7c0a056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a source ID to the corresponding source CID.  <a href="#aeacb67c6e3cfcd63f9b047cbe7c0a056">More...</a><br /></td></tr>
-<tr class="separator:aeacb67c6e3cfcd63f9b047cbe7c0a056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a> () const</td></tr>
 <tr class="memdesc:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current handle to the underlying C merge receiver.  <a href="#aa4a2884ccfef0338bcb1985f86ae89b7">More...</a><br /></td></tr>
 <tr class="separator:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,81 +400,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aeacb67c6e3cfcd63f9b047cbe7c0a056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeacb67c6e3cfcd63f9b047cbe7c0a056">&#9670;&nbsp;</a></span>GetSourceCid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; GetSourceCid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__sacn__dmx__merger.html#gab8d8887ff8ef5fbfa4a39a9db5230a49">sacn_source_id_t</a>&#160;</td>
-          <td class="paramname"><em>source_id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts a source ID to the corresponding source CID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">source_id</td><td>The ID of the source. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>On success, the source CID. </dd>
-<dd>
-<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: This merge receiver is uninitialized, or source_id does not correspond to a valid source. </dd>
-<dd>
-<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
-
-</div>
-</div>
-<a id="af9271878d6aef7a83d55fbf5a0027298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9271878d6aef7a83d55fbf5a0027298">&#9670;&nbsp;</a></span>GetSourceId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__sacn__dmx__merger.html#gab8d8887ff8ef5fbfa4a39a9db5230a49">sacn_source_id_t</a> &gt; GetSourceId </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
-          <td class="paramname"><em>source_cid</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts a source CID to the corresponding source ID. </p>
-<p>This is a simple conversion from a source CID to it's corresponding source ID. A source ID will be returned only if it is a source that has been discovered by the merge receiver.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">source_cid</td><td>The UUID of the source CID. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>On success this will be the source ID, otherwise kEtcPalErrNotFound. </dd></dl>
-
-</div>
-</div>
 <a id="a3d205f22d3d18f81585fd8d07ea21647"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d205f22d3d18f81585fd8d07ea21647">&#9670;&nbsp;</a></span>GetUniverse()</h2>
 
@@ -525,7 +444,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the current handle to the underlying C merge receiver. </p>
-<dl class="section return"><dt>Returns</dt><dd>The handle or <a class="el" href="classsacn_1_1_receiver.html#a86c59ec42eb180800c2e554d0f1e1a06">Receiver::kInvalidHandle</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle or <a class="el" href="classsacn_1_1_merge_receiver.html#a86c59ec42eb180800c2e554d0f1e1a06">MergeReceiver::kInvalidHandle</a>. </dd></dl>
 
 </div>
 </div>

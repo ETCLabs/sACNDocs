@@ -242,9 +242,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga606572d0bec7d4ce5e711c34996e137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab6014a06f428313d58eb316a50209af3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gab6014a06f428313d58eb316a50209af3">SacnLostSource</a></td></tr>
 <tr class="separator:gab6014a06f428313d58eb316a50209af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7bbce89033bafcde13e1c4a413555acf"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga7bbce89033bafcde13e1c4a413555acf">SacnUniverseDataCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td></tr>
-<tr class="memdesc:ga7bbce89033bafcde13e1c4a413555acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a data packet has been received.  <a href="#ga7bbce89033bafcde13e1c4a413555acf">More...</a><br /></td></tr>
-<tr class="separator:ga7bbce89033bafcde13e1c4a413555acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4061a24aadf15e943e417b1189468138"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga4061a24aadf15e943e417b1189468138">SacnUniverseDataCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td></tr>
+<tr class="memdesc:ga4061a24aadf15e943e417b1189468138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a data packet has been received.  <a href="#ga4061a24aadf15e943e417b1189468138">More...</a><br /></td></tr>
+<tr class="separator:ga4061a24aadf15e943e417b1189468138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80326cc324898e1faebe2da1339bd0b3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3">SacnSourcesLostCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> *lost_sources, size_t num_lost_sources, void *context)</td></tr>
 <tr class="memdesc:ga80326cc324898e1faebe2da1339bd0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that one or more sources have entered a source loss state.  <a href="#ga80326cc324898e1faebe2da1339bd0b3">More...</a><br /></td></tr>
 <tr class="separator:ga80326cc324898e1faebe2da1339bd0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,7 +340,7 @@ sACN receiver flags</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                              \</div><div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, 0, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div><div class="line">  }</div><div class="ttc" id="group__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdef"><b>Definition:</b> common.h:67</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                              \</div><div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, 0, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div><div class="line">  }</div><div class="ttc" id="group__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
 <div class="ttc" id="group__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes. </div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
 
@@ -612,14 +612,14 @@ sACN receiver flags</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7bbce89033bafcde13e1c4a413555acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7bbce89033bafcde13e1c4a413555acf">&#9670;&nbsp;</a></span>SacnUniverseDataCallback</h2>
+<a id="ga4061a24aadf15e943e417b1189468138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4061a24aadf15e943e417b1189468138">&#9670;&nbsp;</a></span>SacnUniverseDataCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* SacnUniverseDataCallback) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td>
+          <td class="memname">typedef void(* SacnUniverseDataCallback) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -631,7 +631,7 @@ sACN receiver flags</h2></td></tr>
 <p>If the source is sending sACN Sync packets, this callback will only be called when the sync packet is received, if the source forces the packet, or if the source sends a data packet without a sync universe. TODO: this version of the sACN library does not support sACN Sync. This paragraph will be valid in the future.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the receiver instance for which universe data was received. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">receiver_handle</td><td>Handle to the receiver instance for which universe data was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">source_addr</td><td>The network address from which the sACN packet originated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">header</td><td>The header data of the sACN packet. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pdata</td><td>Pointer to the data buffer. Size of the buffer is indicated by header-&gt;slot_count. </td></tr>

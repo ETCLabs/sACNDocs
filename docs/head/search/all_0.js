@@ -39,7 +39,7 @@ var searchData=
   ['addr_5fbuf',['addr_buf',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html#a53d9f270f12d57a90a97d60b5e612237',1,'EtcPalIpAddr']]],
   ['address_5fpriority',['address_priority',['../struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea',1,'SacnDmxMergerSource']]],
   ['address_5fpriority_5fvalid',['address_priority_valid',['../struct_sacn_dmx_merger_source.html#ab2fb729fbb80e2b480e4466e8cbf9b57',1,'SacnDmxMergerSource']]],
-  ['addsource',['AddSource',['../classsacn_1_1_dmx_merger.html#ad5624a399f15ee212a97a6e2701efd02',1,'sacn::DmxMerger']]],
+  ['addsource',['AddSource',['../classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce',1,'sacn::DmxMerger']]],
   ['addunicastdestination',['AddUnicastDestination',['../classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454',1,'sacn::Source']]],
   ['adduniverse',['AddUniverse',['../classsacn_1_1_source.html#ad899234878a1c955c1cc66a4f097902e',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings)'],['../classsacn_1_1_source.html#acde56409812c209c488836f19cf53662',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings, std::vector&lt; SacnMcastInterface &gt; &amp;netints)']]],
   ['ai_5faddr',['ai_addr',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_addrinfo.html#a2000f4ebfae33b230309b0344354031d',1,'EtcPalAddrinfo']]],

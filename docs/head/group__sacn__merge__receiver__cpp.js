@@ -2,8 +2,8 @@ var group__sacn__merge__receiver__cpp =
 [
     [ "NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html", [
       [ "~NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9e07a73282d628b72531a124236be7da", null ],
-      [ "HandleMergedData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a88fabe1242cbbdcecc9bd6a9d6cf619e", null ],
-      [ "HandleNonDmxData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a11b6b37dc08a31d1360011e85e016956", null ],
+      [ "HandleMergedData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a47683b1b61d43999908ea12c46f28ea6", null ],
+      [ "HandleNonDmxData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a3c74faa01aa5f5f7f1dfe7ce4a9deba1", null ],
       [ "HandleSourceLimitExceeded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ]
     ] ],
     [ "Settings", "structsacn_1_1_merge_receiver_1_1_settings.html", [
@@ -28,8 +28,6 @@ var group__sacn__merge__receiver__cpp =
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#acd894017c62b549662194bd84a9f4a15", null ],
       [ "ChangeUniverse", "classsacn_1_1_merge_receiver.html#aa94ae64c11fbb22db3e21fba1e85cc64", null ],
       [ "GetNetworkInterfaces", "classsacn_1_1_merge_receiver.html#a227c8165a2af9b39ac6d53cbea18d121", null ],
-      [ "GetSourceCid", "classsacn_1_1_merge_receiver.html#aeacb67c6e3cfcd63f9b047cbe7c0a056", null ],
-      [ "GetSourceId", "classsacn_1_1_merge_receiver.html#af9271878d6aef7a83d55fbf5a0027298", null ],
       [ "GetUniverse", "classsacn_1_1_merge_receiver.html#a3d205f22d3d18f81585fd8d07ea21647", null ],
       [ "handle", "classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7", null ],
       [ "operator=", "classsacn_1_1_merge_receiver.html#af2404624e492d4bbedd10461caf85353", null ],

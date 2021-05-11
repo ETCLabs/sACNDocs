@@ -216,6 +216,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">Deinit</a> ()</td></tr>
 <tr class="memdesc:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the sACN library.  <a href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">More...</a><br /></td></tr>
 <tr class="separator:ga7c27553e8de8ffb78e3627f51fe9eb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa353377fefbbdd6ae634d981944c5619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#gaa353377fefbbdd6ae634d981944c5619">GetRemoteSourceHandle</a> (const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;source_cid)</td></tr>
+<tr class="memdesc:gaa353377fefbbdd6ae634d981944c5619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found.  <a href="group__sacn__cpp__common.html#gaa353377fefbbdd6ae634d981944c5619">More...</a><br /></td></tr>
+<tr class="separator:gaa353377fefbbdd6ae634d981944c5619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab05243a382f6332a3d73dbb3b202bb95"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__cpp__common.html#gab05243a382f6332a3d73dbb3b202bb95">GetRemoteSourceCid</a> (<a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a> source_handle)</td></tr>
+<tr class="memdesc:gab05243a382f6332a3d73dbb3b202bb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source handle to the corresponding source CID.  <a href="group__sacn__cpp__common.html#gab05243a382f6332a3d73dbb3b202bb95">More...</a><br /></td></tr>
+<tr class="separator:gab05243a382f6332a3d73dbb3b202bb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Definitions shared by other APIs in this module. </p>
@@ -246,6 +252,83 @@ Functions</h2></td></tr>
 <p>Deinitialize the sACN library. </p>
 <p>Closes all connections, deallocates all resources and joins the background thread. No sACN API functions are usable after this function is called.</p>
 <p>This function is not thread safe with respect to other sACN API functions. Make sure to join your threads that use the APIs before calling this. </p>
+
+</div>
+</div>
+<a id="gab05243a382f6332a3d73dbb3b202bb95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab05243a382f6332a3d73dbb3b202bb95">&#9670;&nbsp;</a></span>GetRemoteSourceCid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&gt; sacn::GetRemoteSourceCid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a>&#160;</td>
+          <td class="paramname"><em>source_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a remote source handle to the corresponding source CID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_handle</td><td>The handle of the remote source.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The UUID of the source CID if there was no error. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: The source handle does not match a source that was found by a receiver, merge receiver, or source detector. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="gaa353377fefbbdd6ae634d981944c5619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa353377fefbbdd6ae634d981944c5619">&#9670;&nbsp;</a></span>GetRemoteSourceHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a> sacn::GetRemoteSourceHandle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>source_cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found. </p>
+<p>This is a simple conversion from a remote source CID to it's corresponding remote source handle. A handle will be returned only if it is a source that has been discovered by a receiver, merge receiver, or source detector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_cid</td><td>The UUID of the remote source CID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The remote source handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found. </dd></dl>
 
 </div>
 </div>
