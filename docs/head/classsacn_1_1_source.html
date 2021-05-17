@@ -1382,7 +1382,7 @@ used to generate live output."</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1448,9 +1448,9 @@ used to generate live output."</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This may be NULL if you are not using per-address priorities or want to stop using per-address priorities. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. This may be NULL if you are not using per-address priorities or want to stop using per-address priorities. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1505,7 +1505,7 @@ used to generate live output."</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1573,9 +1573,9 @@ used to generate live output."</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This may be NULL if you are not using per-address priorities or want to stop using per-address priorities. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. This may be NULL if you are not using per-address priorities or want to stop using per-address priorities. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>

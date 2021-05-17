@@ -333,7 +333,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                 \</div><div class="line">    kEtcPalNullUuid, NULL, <a class="code" href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a>, <span class="keyword">false</span>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>, \</div><div class="line">        SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT                                     \</div><div class="line">  }</div><div class="ttc" id="group__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdef"><b>Definition:</b> common.h:72</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                 \</div><div class="line">    kEtcPalNullUuid, NULL, <a class="code" href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a>, <span class="keyword">false</span>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>, \</div><div class="line">        SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT                                     \</div><div class="line">  }</div><div class="ttc" id="group__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdef"><b>Definition:</b> common.h:77</div></div>
 <div class="ttc" id="group__sacn__source_html_ga1ac5056bc752c32ca80c08b9839a142d"><div class="ttname"><a href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a></div><div class="ttdeci">#define SACN_SOURCE_INFINITE_UNIVERSES</div><div class="ttdoc">Constant for &quot;infinite&quot; when sending sACN universes. </div><div class="ttdef"><b>Definition:</b> source.h:66</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_source_config.html">SacnSourceConfig</a> struct. </p>
 
@@ -1448,7 +1448,7 @@ Other codes translated from system error codes are possible. </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1502,7 +1502,7 @@ Other codes translated from system error codes are possible. </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1567,9 +1567,9 @@ Other codes translated from system error codes are possible. </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>
@@ -1636,9 +1636,9 @@ Other codes translated from system error codes are possible. </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of dmx values to copy from. This pointer must not be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_values</td><td>A buffer of DMX values to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_values_size</td><td>Size of new_values. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
   </table>
   </dd>

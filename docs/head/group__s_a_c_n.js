@@ -23,6 +23,8 @@ var group__s_a_c_n =
     [ "DMX_ADDRESS_COUNT", "group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb", null ],
     [ "SACN_REMOTE_SOURCE_INVALID", "group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956", null ],
     [ "SACN_SOURCE_NAME_MAX_LEN", "group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8", null ],
+    [ "SACN_STARTCODE_DMX", "group__s_a_c_n.html#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a", null ],
+    [ "SACN_STARTCODE_PRIORITY", "group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349", null ],
     [ "SACN_VERSION_BUILD", "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86", null ],
     [ "SACN_VERSION_MAJOR", "group__s_a_c_n.html#ga3b04b863e88d1bae02133dfb19667e06", null ],
     [ "SACN_VERSION_MINOR", "group__s_a_c_n.html#ga234bcbd2198002c6ee8d3caa670ba0ed", null ],
