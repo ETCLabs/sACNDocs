@@ -268,6 +268,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The maximum number of sources that can be tracked on each universe. </p>
+<p>If this is set to 0, the Receiver, Merge Receiver, and Source Detector APIs are disabled and no memory pools are allocated for them.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> is defined to 0. This includes sources at any priority; all sources for a given universe are tracked, even those with a lower priority than the highest-priority source. </p>
 
 </div>
@@ -303,6 +304,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The maximum number of sACN universes that can be listened to simultaneously. </p>
+<p>If this is set to 0, the Receiver, Merge Receiver, and Source Detector APIs are disabled and no memory pools are allocated for them.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> is defined to 0. </p>
 
 </div>
@@ -371,6 +373,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The total maximum number of sources that can be tracked. </p>
+<p>If this is set to 0, the Receiver, Merge Receiver, and Source Detector APIs are disabled and no memory pools are allocated for them.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> is defined to 0. Defaults to <a class="el" href="group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62" title="The maximum number of sACN universes that can be listened to simultaneously. ">SACN_RECEIVER_MAX_UNIVERSES</a> * <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>, but can be made lower if an application wants to impose a global hard source limit. The total number of sources that will be handled will be the lower of <a class="el" href="group__sacnopts__receiver.html#ga055b24b2c72073823f4c92ed32e7ddb0" title="The total maximum number of sources that can be tracked. ">SACN_RECEIVER_TOTAL_MAX_SOURCES</a> and (<a class="el" href="group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62" title="The maximum number of sACN universes that can be listened to simultaneously. ">SACN_RECEIVER_MAX_UNIVERSES</a> * <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>). </p>
 
 </div>

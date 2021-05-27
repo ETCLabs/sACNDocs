@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('per_address_priority.html','');});
 <p>To better handle multiple source control scenarios, the 0xDD sACN start code was obtained by ETC from ESTA to allow setting a priority per-address, with the option of having DMX levels for a particular address ignored by a receiver. This provides a more versatile and finer resolution priority mechanism over the sACN provided packet priority. This document details how sACN devices implementing this extension will use this start code.</p>
 <h1>Document Conventions</h1>
 <p>The following acronyms and terms are used:</p><ul>
-<li><em>sACN</em>, <em>Streaming ACN</em>, <em>Streaming DMX</em>: Reference “BSR E1.31 DMX512-A Streaming Protocol”</li>
+<li><em>sACN</em>, <em>Streaming ACN</em>, <em>Streaming DMX</em>: Reference "BSR E1.31 DMX512-A Streaming Protocol"</li>
 <li><em>Receiver</em>: A device that receives sACN</li>
 <li><em>Source</em>: A device that sends sACN. Sources are uniquely identified by their CID.</li>
 <li><em>DMX level(s)</em>: Property values associated with a Null START code data packet.</li>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('per_address_priority.html','');});
 </ul>
 <h1>Rules for using the 0xDD start code</h1>
 <ol type="1">
-<li>Devices will support per-address priority via the alternate start code 0xDD, which will be used to identify the sACN packet as carrying “per-address priority” values and not DMX levels.</li>
+<li>Devices will support per-address priority via the alternate start code 0xDD, which will be used to identify the sACN packet as carrying "per-address priority" values and not DMX levels.</li>
 <li>The rules apply on a per universe basis where a receiver is receiving sACN packets for the same universe from different sources.</li>
 <li>Per-address priority values consist of a series of single byte values indicating the source’s desired priority for the corresponding DMX level. Priority values can be set from 0 to 200 where 200 is the highest priority and 1 is the lowest priority. Priority values 201 thru 255 are reserved for the receiver to use as internal priorities.</li>
 <li>A priority value of 0 indicates that the DMX level from the source is to be ignored by the receiver.</li>
