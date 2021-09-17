@@ -8,7 +8,6 @@ var searchData=
   ['sacn_5fsource_5ft',['sacn_source_t',['../group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8',1,'source.h']]],
   ['sacndmxmergerconfig',['SacnDmxMergerConfig',['../group__sacn__dmx__merger.html#ga40f96dd6f9ef2598f03b2b757e37f064',1,'dmx_merger.h']]],
   ['sacndmxmergersource',['SacnDmxMergerSource',['../group__sacn__dmx__merger.html#ga2c69b926b913a0baa225106584012459',1,'dmx_merger.h']]],
-  ['sacndmxmergertransmitparams',['SacnDmxMergerTransmitParams',['../group__sacn__dmx__merger.html#ga315d7b672c481b3adec3f1e34a63b63c',1,'dmx_merger.h']]],
   ['sacnheaderdata',['SacnHeaderData',['../group__s_a_c_n.html#ga2e6652620c783917abe8e5c6b5d9d8b7',1,'common.h']]],
   ['sacnlostsource',['SacnLostSource',['../group__sacn__receiver.html#gab6014a06f428313d58eb316a50209af3',1,'receiver.h']]],
   ['sacnmcastinterface',['SacnMcastInterface',['../group__s_a_c_n.html#gab240ac59938a557843efa9068b74e1d4',1,'common.h']]],

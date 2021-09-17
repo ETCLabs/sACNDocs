@@ -208,8 +208,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a08bc75bcabb0a92022eac3a623f32ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b8790b29687764423319cc2b8f24c30"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30">per_address_priorities</a></td></tr>
 <tr class="separator:a6b8790b29687764423319cc2b8f24c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34002a14e923d3740b2c9cdc7da5f6e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_dmx_merger_transmit_params.html">SacnDmxMergerTransmitParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#a34002a14e923d3740b2c9cdc7da5f6e6">transmit_params</a></td></tr>
-<tr class="separator:a34002a14e923d3740b2c9cdc7da5f6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa844a92b4e32e58dee13b77318f8cb8e"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#aa844a92b4e32e58dee13b77318f8cb8e">per_address_priorities_active</a></td></tr>
+<tr class="separator:aa844a92b4e32e58dee13b77318f8cb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39fb52602dd51d0696c8973b0d5cd44"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44">universe_priority</a></td></tr>
+<tr class="separator:ae39fb52602dd51d0696c8973b0d5cd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbbbf4681c241f6fdb7b41a6f85a8ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce">slot_owners</a></td></tr>
 <tr class="separator:a3bbbbf4681c241f6fdb7b41a6f85a8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_dmx_merger_config.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a></td></tr>
@@ -230,6 +232,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Buffer of <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a> per-address priorities for each winning slot. This is used if the merge results need to be sent over sACN. Otherwise this can just be set to NULL. If a source with a universe priority of 0 wins, that priority is converted to 1. If there is no winner for a slot, then a per-address priority of 0 is used to show that there is no source for that slot. Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
+
+</div>
+</div>
+<a id="aa844a92b4e32e58dee13b77318f8cb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa844a92b4e32e58dee13b77318f8cb8e">&#9670;&nbsp;</a></span>per_address_priorities_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool* per_address_priorities_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the merger output is being transmitted via sACN, this is set to true if per-address-priority packets should be transmitted. Otherwise this is set to false. This can be set to NULL if not needed, which can save some performance. </p>
 
 </div>
 </div>
@@ -278,18 +295,18 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a34002a14e923d3740b2c9cdc7da5f6e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34002a14e923d3740b2c9cdc7da5f6e6">&#9670;&nbsp;</a></span>transmit_params</h2>
+<a id="ae39fb52602dd51d0696c8973b0d5cd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39fb52602dd51d0696c8973b0d5cd44">&#9670;&nbsp;</a></span>universe_priority</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_sacn_dmx_merger_transmit_params.html">SacnDmxMergerTransmitParams</a>* transmit_params</td>
+          <td class="memname">uint8_t* universe_priority</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This contains information required if the merger output is being transmitted via sACN. Otherwise this not needed and should be set to NULL, which will save performance. Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
+<p>If the merger output is being transmitted via sACN, this is set to the universe priority that should be used in the transmitted sACN packets. This can be set to NULL if not needed, which can save some performance. </p>
 
 </div>
 </div>

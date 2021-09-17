@@ -5,10 +5,11 @@ var group__sacn__dmx__merger__cpp =
       [ "Settings", "structsacn_1_1_dmx_merger_1_1_settings.html#a9f4473f7247b2d802e7ac9299b0f2e26", null ],
       [ "IsValid", "structsacn_1_1_dmx_merger_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed", null ],
       [ "per_address_priorities", "structsacn_1_1_dmx_merger_1_1_settings.html#a6b8790b29687764423319cc2b8f24c30", null ],
+      [ "per_address_priorities_active", "structsacn_1_1_dmx_merger_1_1_settings.html#aa844a92b4e32e58dee13b77318f8cb8e", null ],
       [ "slot_owners", "structsacn_1_1_dmx_merger_1_1_settings.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce", null ],
       [ "slots", "structsacn_1_1_dmx_merger_1_1_settings.html#a08bc75bcabb0a92022eac3a623f32ff6", null ],
       [ "source_count_max", "structsacn_1_1_dmx_merger_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba", null ],
-      [ "transmit_params", "structsacn_1_1_dmx_merger_1_1_settings.html#a34002a14e923d3740b2c9cdc7da5f6e6", null ]
+      [ "universe_priority", "structsacn_1_1_dmx_merger_1_1_settings.html#ae39fb52602dd51d0696c8973b0d5cd44", null ]
     ] ],
     [ "DmxMerger", "classsacn_1_1_dmx_merger.html", [
       [ "Handle", "classsacn_1_1_dmx_merger.html#a632b10282146049d1f9c5f44d676833e", null ],

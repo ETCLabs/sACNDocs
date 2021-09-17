@@ -3,7 +3,6 @@ var annotated_dup =
     [ "sacn", "namespacesacn.html", "namespacesacn" ],
     [ "SacnDmxMergerConfig", "struct_sacn_dmx_merger_config.html", "struct_sacn_dmx_merger_config" ],
     [ "SacnDmxMergerSource", "struct_sacn_dmx_merger_source.html", "struct_sacn_dmx_merger_source" ],
-    [ "SacnDmxMergerTransmitParams", "struct_sacn_dmx_merger_transmit_params.html", "struct_sacn_dmx_merger_transmit_params" ],
     [ "SacnHeaderData", "struct_sacn_header_data.html", "struct_sacn_header_data" ],
     [ "SacnLostSource", "struct_sacn_lost_source.html", "struct_sacn_lost_source" ],
     [ "SacnMcastInterface", "struct_sacn_mcast_interface.html", "struct_sacn_mcast_interface" ],
