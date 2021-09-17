@@ -51,12 +51,12 @@ var group__sacn__receiver =
     [ "SacnUniverseDataCallback", "group__sacn__receiver.html#ga4061a24aadf15e943e417b1189468138", null ],
     [ "sacn_receiver_change_universe", "group__sacn__receiver.html#gabb5ec7d4459ac694e5fa0ae97572f388", null ],
     [ "sacn_receiver_config_init", "group__sacn__receiver.html#ga82f2e3740ce865b7aa3e018aa8a229d9", null ],
-    [ "sacn_receiver_create", "group__sacn__receiver.html#ga7c6f216bef2361a0e097f22fe69cba1a", null ],
+    [ "sacn_receiver_create", "group__sacn__receiver.html#gacc6321deb0647ac0175993be6083683b", null ],
     [ "sacn_receiver_destroy", "group__sacn__receiver.html#ga43f99a2447364832c9ab135ac3d8b6ae", null ],
     [ "sacn_receiver_get_expired_wait", "group__sacn__receiver.html#gabd632f80d5da75c47c1f08103a42a391", null ],
     [ "sacn_receiver_get_network_interfaces", "group__sacn__receiver.html#ga6ce5c1c8e4fafe2f339c6d3084dacfc4", null ],
     [ "sacn_receiver_get_universe", "group__sacn__receiver.html#gae77eea445ebb380fb4d47c63c0f3ba32", null ],
-    [ "sacn_receiver_reset_networking", "group__sacn__receiver.html#ga3cb970c236a7f37064988f72d760d47b", null ],
-    [ "sacn_receiver_reset_networking_per_receiver", "group__sacn__receiver.html#ga0b14f40eaf24a866fed007bc18674ec7", null ],
+    [ "sacn_receiver_reset_networking", "group__sacn__receiver.html#ga54fd65585c71e83af35289c3cad0f685", null ],
+    [ "sacn_receiver_reset_networking_per_receiver", "group__sacn__receiver.html#ga29f330fc880d1c776afb5972514e6ac4", null ],
     [ "sacn_receiver_set_expired_wait", "group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06", null ]
 ];

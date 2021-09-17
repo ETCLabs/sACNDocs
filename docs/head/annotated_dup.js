@@ -9,6 +9,7 @@ var annotated_dup =
     [ "SacnMergeReceiverCallbacks", "struct_sacn_merge_receiver_callbacks.html", "struct_sacn_merge_receiver_callbacks" ],
     [ "SacnMergeReceiverConfig", "struct_sacn_merge_receiver_config.html", "struct_sacn_merge_receiver_config" ],
     [ "SacnMergeReceiverNetintList", "struct_sacn_merge_receiver_netint_list.html", "struct_sacn_merge_receiver_netint_list" ],
+    [ "SacnNetintConfig", "struct_sacn_netint_config.html", "struct_sacn_netint_config" ],
     [ "SacnReceiverConfig", "struct_sacn_receiver_config.html", "struct_sacn_receiver_config" ],
     [ "SacnReceiverNetintList", "struct_sacn_receiver_netint_list.html", "struct_sacn_receiver_netint_list" ],
     [ "SacnRecvCallbacks", "struct_sacn_recv_callbacks.html", "struct_sacn_recv_callbacks" ],

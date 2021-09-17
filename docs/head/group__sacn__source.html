@@ -259,9 +259,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0c44cd3dba2627779bfb65ea8349fe1c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga0c44cd3dba2627779bfb65ea8349fe1c">sacn_source_change_name</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, const char *new_name)</td></tr>
 <tr class="memdesc:ga0c44cd3dba2627779bfb65ea8349fe1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the name of an sACN source.  <a href="#ga0c44cd3dba2627779bfb65ea8349fe1c">More...</a><br /></td></tr>
 <tr class="separator:ga0c44cd3dba2627779bfb65ea8349fe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa26374ff40861d221d4f0f863d17793d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gaa26374ff40861d221d4f0f863d17793d">sacn_source_add_universe</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, const <a class="el" href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a> *config, <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> *netints, size_t num_netints)</td></tr>
-<tr class="memdesc:gaa26374ff40861d221d4f0f863d17793d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a universe to an sACN source.  <a href="#gaa26374ff40861d221d4f0f863d17793d">More...</a><br /></td></tr>
-<tr class="separator:gaa26374ff40861d221d4f0f863d17793d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22a80913e48354c6da37a9fa11626261"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261">sacn_source_add_universe</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, const <a class="el" href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a> *config, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *netint_config)</td></tr>
+<tr class="memdesc:ga22a80913e48354c6da37a9fa11626261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a universe to an sACN source.  <a href="#ga22a80913e48354c6da37a9fa11626261">More...</a><br /></td></tr>
+<tr class="separator:ga22a80913e48354c6da37a9fa11626261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f8233fae115142c2e2a9488faa12d5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d">sacn_source_remove_universe</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, uint16_t universe)</td></tr>
 <tr class="memdesc:ga7f8233fae115142c2e2a9488faa12d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a universe from a source.  <a href="#ga7f8233fae115142c2e2a9488faa12d5d">More...</a><br /></td></tr>
 <tr class="separator:ga7f8233fae115142c2e2a9488faa12d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,12 +307,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga05ae91a74132e84439e18364de2b62d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4">sacn_source_process_manual</a> (void)</td></tr>
 <tr class="memdesc:ga05ae91a74132e84439e18364de2b62d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true.  <a href="#ga05ae91a74132e84439e18364de2b62d4">More...</a><br /></td></tr>
 <tr class="separator:ga05ae91a74132e84439e18364de2b62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2f7ed83fdf05329c1aa1e0ae497404c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gad2f7ed83fdf05329c1aa1e0ae497404c">sacn_source_reset_networking</a> (<a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> *netints, size_t num_netints)</td></tr>
-<tr class="memdesc:gad2f7ed83fdf05329c1aa1e0ae497404c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets for all universes of all sources.  <a href="#gad2f7ed83fdf05329c1aa1e0ae497404c">More...</a><br /></td></tr>
-<tr class="separator:gad2f7ed83fdf05329c1aa1e0ae497404c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ce6ceb1bd9f0edac10a45381fe10126"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga4ce6ceb1bd9f0edac10a45381fe10126">sacn_source_reset_networking_per_universe</a> (const <a class="el" href="struct_sacn_source_universe_netint_list.html">SacnSourceUniverseNetintList</a> *netint_lists, size_t num_netint_lists)</td></tr>
-<tr class="memdesc:ga4ce6ceb1bd9f0edac10a45381fe10126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets and determines network interfaces for each universe of each source.  <a href="#ga4ce6ceb1bd9f0edac10a45381fe10126">More...</a><br /></td></tr>
-<tr class="separator:ga4ce6ceb1bd9f0edac10a45381fe10126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga348c4a38439a1bf2623253bbc30120c5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
+<tr class="memdesc:ga348c4a38439a1bf2623253bbc30120c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets for all universes of all sources.  <a href="#ga348c4a38439a1bf2623253bbc30120c5">More...</a><br /></td></tr>
+<tr class="separator:ga348c4a38439a1bf2623253bbc30120c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac47eb25e0017cf7d62120fb3fa072333"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gac47eb25e0017cf7d62120fb3fa072333">sacn_source_reset_networking_per_universe</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, const <a class="el" href="struct_sacn_source_universe_netint_list.html">SacnSourceUniverseNetintList</a> *per_universe_netint_lists, size_t num_per_universe_netint_lists)</td></tr>
+<tr class="memdesc:gac47eb25e0017cf7d62120fb3fa072333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets and determines network interfaces for each universe of each source.  <a href="#gac47eb25e0017cf7d62120fb3fa072333">More...</a><br /></td></tr>
+<tr class="separator:gac47eb25e0017cf7d62120fb3fa072333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8c8d77375ea48b26fc069c9068aec69"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69">sacn_source_get_network_interfaces</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, uint16_t universe, <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *netints, size_t netints_size)</td></tr>
 <tr class="memdesc:gae8c8d77375ea48b26fc069c9068aec69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a list of a universe's network interfaces.  <a href="#gae8c8d77375ea48b26fc069c9068aec69">More...</a><br /></td></tr>
 <tr class="separator:gae8c8d77375ea48b26fc069c9068aec69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,8 +521,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa26374ff40861d221d4f0f863d17793d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa26374ff40861d221d4f0f863d17793d">&#9670;&nbsp;</a></span>sacn_source_add_universe()</h2>
+<a id="ga22a80913e48354c6da37a9fa11626261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22a80913e48354c6da37a9fa11626261">&#9670;&nbsp;</a></span>sacn_source_add_universe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,14 +542,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> *&#160;</td>
-          <td class="paramname"><em>netints</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_netints</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *&#160;</td>
+          <td class="paramname"><em>netint_config</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -567,8 +561,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to which to add a universe. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the universe to be added. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">netints</td><td>Optional. If non-NULL, this is the list of interfaces the application wants to use, and the status codes are filled in. If NULL, all available interfaces are tried. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_netints</td><td>Optional. The size of netints, or 0 if netints is NULL. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">netint_config</td><td>Optional. If non-NULL, this is the list of interfaces the application wants to use, and the status codes are filled in. If NULL, all available interfaces are tried. </td></tr>
   </table>
   </dd>
 </dl>
@@ -858,7 +851,7 @@ used to generate live output."</p>
 </div><div class="memdoc">
 
 <p>Create a new sACN source to send sACN data. </p>
-<p>This creates the instance of the source and begins sending universe discovery packets for it (which will list no universes until start code data begins transmitting). No start code data is sent until <a class="el" href="group__sacn__source.html#gaa26374ff40861d221d4f0f863d17793d" title="Add a universe to an sACN source. ">sacn_source_add_universe()</a> and a variant of <a class="el" href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4" title="Copies the universe&#39;s dmx values into the packet to be sent on the next threaded or manual update...">sacn_source_update_values()</a> is called.</p>
+<p>This creates the instance of the source and begins sending universe discovery packets for it (which will list no universes until start code data begins transmitting). No start code data is sent until <a class="el" href="group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261" title="Add a universe to an sACN source. ">sacn_source_add_universe()</a> and a variant of <a class="el" href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4" title="Copies the universe&#39;s dmx values into the packet to be sent on the next threaded or manual update...">sacn_source_update_values()</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the sACN source to be created. If any of these parameters are invalid, <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a> will be returned. This includes if the source name's length (including the null terminator) is beyond <a class="el" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8" title="The maximum length of an sACN source name, including the null-terminator. ">SACN_SOURCE_NAME_MAX_LEN</a>. </td></tr>
@@ -1163,8 +1156,8 @@ Other codes translated from system error codes are possible. </dd></dl>
 
 </div>
 </div>
-<a id="gad2f7ed83fdf05329c1aa1e0ae497404c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2f7ed83fdf05329c1aa1e0ae497404c">&#9670;&nbsp;</a></span>sacn_source_reset_networking()</h2>
+<a id="ga348c4a38439a1bf2623253bbc30120c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga348c4a38439a1bf2623253bbc30120c5">&#9670;&nbsp;</a></span>sacn_source_reset_networking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1172,32 +1165,21 @@ Other codes translated from system error codes are possible. </dd></dl>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_source_reset_networking </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> *&#160;</td>
-          <td class="paramname"><em>netints</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *&#160;</td>
+          <td class="paramname"><em>sys_netint_config</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_netints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Resets the underlying network sockets for all universes of all sources. </p>
-<p>This is typically used when the application detects that the list of networking interfaces has changed, and wants every universe to use the same network interfaces.</p>
+<p>This is typically used when the application detects that the list of networking interfaces has changed. This changes the list of system interfaces the source API will be limited to (the list passed into <a class="el" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize the sACN library. ">sacn_init()</a>, if any, is overridden for the source API, but not the other APIs). Then all universes of all sources will be configured to use all of those interfaces.</p>
 <p>After this call completes successfully, all universes of all sources are considered to be updated and have new values and priorities. It's as if every source just started sending values on all their universes.</p>
 <p>If this call fails, the caller must call <a class="el" href="group__sacn__source.html#gaeb8a9797368aabad696c81225b4c8aaa" title="Destroy an sACN source instance. ">sacn_source_destroy()</a> on all sources, because the source API may be in an invalid state.</p>
 <p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in. This will only return <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">netints</td><td>If non-NULL, this is the list of interfaces the application wants to use, and the status codes are filled in. If NULL, all available interfaces are tried. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_netints</td><td>The size of netints, or 0 if netints is NULL. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the source API will be limited to, and the status codes are filled in. If NULL, the source API is allowed to use all available system interfaces. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1211,8 +1193,8 @@ Other codes translated from system error codes are possible. </dd></dl>
 
 </div>
 </div>
-<a id="ga4ce6ceb1bd9f0edac10a45381fe10126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ce6ceb1bd9f0edac10a45381fe10126">&#9670;&nbsp;</a></span>sacn_source_reset_networking_per_universe()</h2>
+<a id="gac47eb25e0017cf7d62120fb3fa072333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac47eb25e0017cf7d62120fb3fa072333">&#9670;&nbsp;</a></span>sacn_source_reset_networking_per_universe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1220,14 +1202,20 @@ Other codes translated from system error codes are possible. </dd></dl>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_source_reset_networking_per_universe </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *&#160;</td>
+          <td class="paramname"><em>sys_netint_config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="struct_sacn_source_universe_netint_list.html">SacnSourceUniverseNetintList</a> *&#160;</td>
-          <td class="paramname"><em>netint_lists</em>, </td>
+          <td class="paramname"><em>per_universe_netint_lists</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_netint_lists</em>&#160;</td>
+          <td class="paramname"><em>num_per_universe_netint_lists</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1238,14 +1226,15 @@ Other codes translated from system error codes are possible. </dd></dl>
 </div><div class="memdoc">
 
 <p>Resets the underlying network sockets and determines network interfaces for each universe of each source. </p>
-<p>This is typically used when the application detects that the list of networking interfaces has changed, and wants to determine what the new network interfaces should be for each universe of each source.</p>
+<p>This is typically used when the application detects that the list of networking interfaces has changed. This changes the list of system interfaces the source API will be limited to (the list passed into <a class="el" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize the sACN library. ">sacn_init()</a>, if any, is overridden for the source API, but not the other APIs). Then the network interfaces are specified for each universe of each source.</p>
 <p>After this call completes successfully, all universes of all sources are considered to be updated and have new values and priorities. It's as if every source just started sending values on all their universes.</p>
 <p>If this call fails, the caller must call <a class="el" href="group__sacn__source.html#gaeb8a9797368aabad696c81225b4c8aaa" title="Destroy an sACN source instance. ">sacn_source_destroy()</a> on all sources, because the source API may be in an invalid state.</p>
 <p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in for each universe. This will only return <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work for a universe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">netint_lists</td><td>Lists of interfaces the application wants to use for each universe. Must not be NULL. Must include all universes of all sources, and nothing more. The status codes are filled in whenever <a class="el" href="struct_sacn_source_universe_netint_list.html#add0da5313d4b1d06a67bda5508b848e1">SacnSourceUniverseNetintList::netints</a> is non-NULL. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_netint_lists</td><td>The size of netint_lists. Must not be 0. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the source API will be limited to, and the status codes are filled in. If NULL, the source API is allowed to use all available system interfaces. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">per_universe_netint_lists</td><td>Lists of interfaces the application wants to use for each universe. Must not be NULL. Must include all universes of all sources, and nothing more. The status codes are filled in whenever <a class="el" href="struct_sacn_source_universe_netint_list.html#add0da5313d4b1d06a67bda5508b848e1">SacnSourceUniverseNetintList::netints</a> is non-NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_per_universe_netint_lists</td><td>The size of netint_lists. Must not be 0. </td></tr>
   </table>
   </dd>
 </dl>

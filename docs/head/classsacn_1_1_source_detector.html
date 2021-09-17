@@ -300,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Resets the underlying network sockets and packet receipt state for the sACN <a class="el" href="classsacn_1_1_source.html" title="An instance of sACN Source functionality; see Using the sACN Source API. ">Source</a> Detector. </p>
 <p>This is an override of ResetNetworking that uses all network interfaces.</p>
-<p>This is typically used when the application detects that the list of networking interfaces has changed.</p>
+<p>This is typically used when the application detects that the list of networking interfaces has changed. The source detector API will no longer be limited to specific interfaces (the list passed into <a class="el" href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3" title="Initialize the sACN library. ">sacn::Init()</a>, if any, is overridden for the source detector API, but not the other APIs). The source detector is set to all system interfaces.</p>
 <p>After this call completes successfully, the detector will continue as if nothing had changed. New sources could be discovered, or old sources could expire. If this call fails, the caller must call <a class="el" href="classsacn_1_1_source_detector.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Destroy the sACN Source Detector. ">Shutdown()</a>, because the source detector may be in an invalid state.</p>
 <p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces. This will only return <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Network changed successfully. </dd>
@@ -330,7 +330,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> ResetNetworking </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>netints</em></td><td>)</td>
+          <td class="paramname"><em>sys_netints</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -342,12 +342,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the underlying network sockets and packet receipt state for the sACN <a class="el" href="classsacn_1_1_source.html" title="An instance of sACN Source functionality; see Using the sACN Source API. ">Source</a> Detector. </p>
-<p>This is typically used when the application detects that the list of networking interfaces has changed.</p>
+<p>This is typically used when the application detects that the list of networking interfaces has changed. This changes the list of system interfaces the source detector API will be limited to (the list passed into <a class="el" href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3" title="Initialize the sACN library. ">sacn::Init()</a>, if any, is overridden for the source detector API, but not the other APIs). The source detector is then set to those interfaces.</p>
 <p>After this call completes successfully, the detector will continue as if nothing had changed. New sources could be discovered, or old sources could expire. If this call fails, the caller must call <a class="el" href="classsacn_1_1_source_detector.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Destroy the sACN Source Detector. ">Shutdown()</a>, because the source detector may be in an invalid state.</p>
 <p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in. This will only return <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">netints</td><td>Optional. If !empty, this is the list of interfaces the application wants to use, and the status codes are filled in. If empty, all available interfaces are tried and this vector isn't modified. </td></tr>
+    <tr><td class="paramname">sys_netints</td><td>If !empty, this is the list of system interfaces the source detector API will be limited to, and the status codes are filled in. If empty, the source detector API is allowed to use all available system interfaces. </td></tr>
   </table>
   </dd>
 </dl>

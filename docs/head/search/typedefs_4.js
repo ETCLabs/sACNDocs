@@ -17,6 +17,7 @@ var searchData=
   ['sacnmergereceivernetintlist',['SacnMergeReceiverNetintList',['../group__sacn__merge__receiver.html#gad68f6aef1092c8566414a01ceb9fba55',1,'merge_receiver.h']]],
   ['sacnmergereceivernondmxcallback',['SacnMergeReceiverNonDmxCallback',['../group__sacn__merge__receiver.html#ga189ae9d751ac31f47b50f5bb4cb1923a',1,'merge_receiver.h']]],
   ['sacnmergereceiversourcelimitexceededcallback',['SacnMergeReceiverSourceLimitExceededCallback',['../group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0',1,'merge_receiver.h']]],
+  ['sacnnetintconfig',['SacnNetintConfig',['../group__s_a_c_n.html#gae4016efc12ffca5172a4c2cb99f85db4',1,'common.h']]],
   ['sacnreceivercallbacks',['SacnReceiverCallbacks',['../group__sacn__receiver.html#ga23f7f1621591aca86090172aab798576',1,'receiver.h']]],
   ['sacnreceiverconfig',['SacnReceiverConfig',['../group__sacn__receiver.html#ga3c5b4aec7e1c6fbfc7255c282b7ccf1d',1,'receiver.h']]],
   ['sacnreceivernetintlist',['SacnReceiverNetintList',['../group__sacn__receiver.html#ga5ce1e4d9da4807b53d71869f0e39950a',1,'receiver.h']]],

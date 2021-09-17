@@ -29,10 +29,10 @@ var group__sacn__merge__receiver =
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],
     [ "sacn_merge_receiver_change_universe", "group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970", null ],
     [ "sacn_merge_receiver_config_init", "group__sacn__merge__receiver.html#gab0d6a624f1d44008625335112788eb37", null ],
-    [ "sacn_merge_receiver_create", "group__sacn__merge__receiver.html#ga65a9abaa973d15e06a3d7432702d36fc", null ],
+    [ "sacn_merge_receiver_create", "group__sacn__merge__receiver.html#ga91ca26eea8b78eeb2b25bb003e8aa208", null ],
     [ "sacn_merge_receiver_destroy", "group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850", null ],
     [ "sacn_merge_receiver_get_network_interfaces", "group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8", null ],
     [ "sacn_merge_receiver_get_universe", "group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7", null ],
-    [ "sacn_merge_receiver_reset_networking", "group__sacn__merge__receiver.html#ga13c4096a5ce32c538c3f1972fee16b99", null ],
-    [ "sacn_merge_receiver_reset_networking_per_receiver", "group__sacn__merge__receiver.html#gaf61e8a5f50fde28553a03a6df9c22ba9", null ]
+    [ "sacn_merge_receiver_reset_networking", "group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375", null ],
+    [ "sacn_merge_receiver_reset_networking_per_receiver", "group__sacn__merge__receiver.html#ga0db3ceb5a812f02e2e4daa52b5797523", null ]
 ];
