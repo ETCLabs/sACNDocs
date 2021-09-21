@@ -10,6 +10,7 @@ var opts_8h =
     [ "SACN_LOOPBACK", "group__sacnopts__global.html#ga6ae6b1e22f87a5c2e49aefbc95a97256", null ],
     [ "SACN_MAX_NETINTS", "group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81", null ],
     [ "SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE", "group__sacnopts__send.html#ga53a3e7e498368c3311403912d7c01515", null ],
+    [ "SACN_MERGE_RECEIVER_ENABLE", "group__sacnopts__merge__receiver.html#gacb8513985c683aac79b8ead43d84b5f0", null ],
     [ "SACN_RECEIVER_LIMIT_BIND", "group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638", null ],
     [ "SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE", "group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e", null ],
     [ "SACN_RECEIVER_MAX_SUBS_PER_SOCKET", "group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8", null ],

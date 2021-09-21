@@ -42,7 +42,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "group__sacn__dmx__merger.html#gaa5bfa99f39c2874287003faf284d754b",
-"merge__receiver_8h.html"
+"group__sacnopts__source__detector.html#ga872fc4bd419f3cc3d77e7502f0b1ed0e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

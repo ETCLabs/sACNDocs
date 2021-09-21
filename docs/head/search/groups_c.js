@@ -19,6 +19,7 @@ var searchData=
   ['sacn_20source_20detector_20api',['sACN Source Detector API',['../group__sacn__source__detector__cpp.html',1,'']]],
   ['sacn_20configuration_20options',['sACN Configuration Options',['../group__sacnopts.html',1,'']]],
   ['sacn_20dmx_20merger_20options',['sACN DMX Merger Options',['../group__sacnopts__dmx__merger.html',1,'']]],
+  ['sacn_20merge_20receiver_20options',['sACN Merge Receiver Options',['../group__sacnopts__merge__receiver.html',1,'']]],
   ['sacn_20receiver_20options',['sACN Receiver Options',['../group__sacnopts__receiver.html',1,'']]],
   ['sacn_20send_20options',['sACN Send Options',['../group__sacnopts__send.html',1,'']]],
   ['sacn_20source_20detector_20options',['sACN Source Detector Options',['../group__sacnopts__source__detector.html',1,'']]]
