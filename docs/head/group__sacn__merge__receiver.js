@@ -23,7 +23,7 @@ var group__sacn__merge__receiver =
     [ "sacn_merge_receiver_t", "group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61", null ],
     [ "SacnMergeReceiverCallbacks", "group__sacn__merge__receiver.html#gad3600818c88533f6e800c148bfaf5404", null ],
     [ "SacnMergeReceiverConfig", "group__sacn__merge__receiver.html#ga43f2c792ba03a1461b5196f4a436e256", null ],
-    [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#gae4f73734a210ca2c240ee757d766c0c0", null ],
+    [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#ga7a665833b17ab1f35fd702004725f83c", null ],
     [ "SacnMergeReceiverNetintList", "group__sacn__merge__receiver.html#gad68f6aef1092c8566414a01ceb9fba55", null ],
     [ "SacnMergeReceiverNonDmxCallback", "group__sacn__merge__receiver.html#ga189ae9d751ac31f47b50f5bb4cb1923a", null ],
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],

@@ -2,7 +2,7 @@ var group__sacn__merge__receiver__cpp =
 [
     [ "NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html", [
       [ "~NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9e07a73282d628b72531a124236be7da", null ],
-      [ "HandleMergedData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a47683b1b61d43999908ea12c46f28ea6", null ],
+      [ "HandleMergedData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0b114f14ef57910624d93c36154dc6ec", null ],
       [ "HandleNonDmxData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a3c74faa01aa5f5f7f1dfe7ce4a9deba1", null ],
       [ "HandleSourceLimitExceeded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ]
     ] ],
