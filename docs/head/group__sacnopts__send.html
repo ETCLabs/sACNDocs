@@ -204,6 +204,15 @@ $(document).ready(function(){initNavTree('group__sacnopts__send.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gac69e2ffb7e6a156134373d687a7cbed7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#gac69e2ffb7e6a156134373d687a7cbed7">SACN_SOURCE_THREAD_PRIORITY</a>&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></td></tr>
+<tr class="memdesc:gac69e2ffb7e6a156134373d687a7cbed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the sACN source thread.  <a href="#gac69e2ffb7e6a156134373d687a7cbed7">More...</a><br /></td></tr>
+<tr class="separator:gac69e2ffb7e6a156134373d687a7cbed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga197a7ace1de904752a545c799ea9e498"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#ga197a7ace1de904752a545c799ea9e498">SACN_SOURCE_THREAD_STACK</a>&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></td></tr>
+<tr class="memdesc:ga197a7ace1de904752a545c799ea9e498"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack size of the sACN source thread.  <a href="#ga197a7ace1de904752a545c799ea9e498">More...</a><br /></td></tr>
+<tr class="separator:ga197a7ace1de904752a545c799ea9e498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2">SACN_SOURCE_THREAD_NAME</a>&#160;&#160;&#160;&quot;sACN Source Thread&quot;</td></tr>
+<tr class="memdesc:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name to assign the sACN source thread.  <a href="#ga0a2bddcd541aabbd0b4536d6dae4caa2">More...</a><br /></td></tr>
+<tr class="separator:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa08afe863ab6922c173055d4239184c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#gaa08afe863ab6922c173055d4239184c4">SACN_SOURCE_MAX_SOURCES</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:gaa08afe863ab6922c173055d4239184c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sources that can be created.  <a href="#gaa08afe863ab6922c173055d4239184c4">More...</a><br /></td></tr>
 <tr class="separator:gaa08afe863ab6922c173055d4239184c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +276,57 @@ Macros</h2></td></tr>
 <p>The maximum number of universes that a source can send to simultaneously. </p>
 <p>If this is set to 0, the Source API is disabled and no memory pools are allocated for it.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> is defined to 0. </p>
+
+</div>
+</div>
+<a id="ga0a2bddcd541aabbd0b4536d6dae4caa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a2bddcd541aabbd0b4536d6dae4caa2">&#9670;&nbsp;</a></span>SACN_SOURCE_THREAD_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_SOURCE_THREAD_NAME&#160;&#160;&#160;&quot;sACN Source Thread&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name to assign the sACN source thread. </p>
+<p>This is useful for distinguishing the source thread from other threads when debugging. </p>
+
+</div>
+</div>
+<a id="gac69e2ffb7e6a156134373d687a7cbed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac69e2ffb7e6a156134373d687a7cbed7">&#9670;&nbsp;</a></span>SACN_SOURCE_THREAD_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_SOURCE_THREAD_PRIORITY&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The priority of the sACN source thread. </p>
+<p>This is usually only meaningful on real-time systems. </p>
+
+</div>
+</div>
+<a id="ga197a7ace1de904752a545c799ea9e498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga197a7ace1de904752a545c799ea9e498">&#9670;&nbsp;</a></span>SACN_SOURCE_THREAD_STACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_SOURCE_THREAD_STACK&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The stack size of the sACN source thread. </p>
+<p>It's usually only necessary to worry about this on real-time or embedded systems. </p>
 
 </div>
 </div>

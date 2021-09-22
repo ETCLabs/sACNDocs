@@ -17,11 +17,15 @@ var opts_8h =
     [ "SACN_RECEIVER_MAX_THREADS", "group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64", null ],
     [ "SACN_RECEIVER_MAX_UNIVERSES", "group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62", null ],
     [ "SACN_RECEIVER_READ_TIMEOUT_MS", "group__sacnopts__receiver.html#gae7ae8c07912489f40fa77146cdc93d71", null ],
+    [ "SACN_RECEIVER_THREAD_NAME", "group__sacnopts__receiver.html#ga0b3b952f010e515ba69fed3767e905f1", null ],
     [ "SACN_RECEIVER_THREAD_PRIORITY", "group__sacnopts__receiver.html#ga0262024b708fa546807d7b01485c7fcf", null ],
     [ "SACN_RECEIVER_THREAD_STACK", "group__sacnopts__receiver.html#ga3194913a252cb1da68e5bd919f6c1658", null ],
     [ "SACN_RECEIVER_TOTAL_MAX_SOURCES", "group__sacnopts__receiver.html#ga055b24b2c72073823f4c92ed32e7ddb0", null ],
     [ "SACN_SOURCE_DETECTOR_MAX_SOURCES", "group__sacnopts__source__detector.html#ga872fc4bd419f3cc3d77e7502f0b1ed0e", null ],
     [ "SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE", "group__sacnopts__source__detector.html#ga24e186592053bd29fbffbfc92825268e", null ],
     [ "SACN_SOURCE_MAX_SOURCES", "group__sacnopts__send.html#gaa08afe863ab6922c173055d4239184c4", null ],
-    [ "SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE", "group__sacnopts__send.html#gaac75390f2990b299303bfbce89e5f7ef", null ]
+    [ "SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE", "group__sacnopts__send.html#gaac75390f2990b299303bfbce89e5f7ef", null ],
+    [ "SACN_SOURCE_THREAD_NAME", "group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2", null ],
+    [ "SACN_SOURCE_THREAD_PRIORITY", "group__sacnopts__send.html#gac69e2ffb7e6a156134373d687a7cbed7", null ],
+    [ "SACN_SOURCE_THREAD_STACK", "group__sacnopts__send.html#ga197a7ace1de904752a545c799ea9e498", null ]
 ];

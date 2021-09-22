@@ -210,6 +210,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga3194913a252cb1da68e5bd919f6c1658"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga3194913a252cb1da68e5bd919f6c1658">SACN_RECEIVER_THREAD_STACK</a>&#160;&#160;&#160;<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></td></tr>
 <tr class="memdesc:ga3194913a252cb1da68e5bd919f6c1658"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack size of each sACN receiver thread.  <a href="#ga3194913a252cb1da68e5bd919f6c1658">More...</a><br /></td></tr>
 <tr class="separator:ga3194913a252cb1da68e5bd919f6c1658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b3b952f010e515ba69fed3767e905f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga0b3b952f010e515ba69fed3767e905f1">SACN_RECEIVER_THREAD_NAME</a>&#160;&#160;&#160;&quot;sACN Receive Thread&quot;</td></tr>
+<tr class="memdesc:ga0b3b952f010e515ba69fed3767e905f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name to assign each sACN receiver thread.  <a href="#ga0b3b952f010e515ba69fed3767e905f1">More...</a><br /></td></tr>
+<tr class="separator:ga0b3b952f010e515ba69fed3767e905f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7ae8c07912489f40fa77146cdc93d71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gae7ae8c07912489f40fa77146cdc93d71">SACN_RECEIVER_READ_TIMEOUT_MS</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:gae7ae8c07912489f40fa77146cdc93d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of time that a call to sacnrecv_read() will block waiting for data, in milliseconds.  <a href="#gae7ae8c07912489f40fa77146cdc93d71">More...</a><br /></td></tr>
 <tr class="separator:gae7ae8c07912489f40fa77146cdc93d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,6 +326,23 @@ Macros</h2></td></tr>
 
 <p>The maximum amount of time that a call to sacnrecv_read() will block waiting for data, in milliseconds. </p>
 <p>It is recommended to keep this time short to avoid delays on shutdown. </p>
+
+</div>
+</div>
+<a id="ga0b3b952f010e515ba69fed3767e905f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b3b952f010e515ba69fed3767e905f1">&#9670;&nbsp;</a></span>SACN_RECEIVER_THREAD_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_RECEIVER_THREAD_NAME&#160;&#160;&#160;&quot;sACN Receive Thread&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name to assign each sACN receiver thread. </p>
+<p>This is useful for distinguishing the receiver threads from other threads when debugging. </p>
 
 </div>
 </div>
