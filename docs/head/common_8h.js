@@ -6,7 +6,6 @@ var common_8h =
     [ "SACN_STARTCODE_DMX", "group__s_a_c_n.html#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a", null ],
     [ "SACN_STARTCODE_PRIORITY", "group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
-    [ "SacnHeaderData", "group__s_a_c_n.html#ga2e6652620c783917abe8e5c6b5d9d8b7", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gab240ac59938a557843efa9068b74e1d4", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#gae4016efc12ffca5172a4c2cb99f85db4", null ],
     [ "sacn_ip_support_t", "group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a", [

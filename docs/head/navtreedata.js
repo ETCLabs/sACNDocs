@@ -4,6 +4,7 @@ var NAVTREE =
     [ "Streaming ACN", "index.html", null ],
     [ "Additional Documentation", "additional_documentation.html", "additional_documentation" ],
     [ "Getting Started with sACN", "getting_started.html", "getting_started" ],
+    [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -41,8 +42,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"group__sacn__dmx__merger.html#gaa5bfa99f39c2874287003faf284d754b",
-"group__sacnopts__send.html#gaac75390f2990b299303bfbce89e5f7ef"
+"group__sacn__dmx__merger.html#ga7b7762d0e6afca73eb8c31fa55354439",
+"group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

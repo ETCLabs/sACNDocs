@@ -1,6 +1,7 @@
 var group__sacnopts__receiver =
 [
     [ "SACN_RECEIVER_LIMIT_BIND", "group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638", null ],
+    [ "SACN_RECEIVER_MAX_FOOTPRINT", "group__sacnopts__receiver.html#gaf0e0364237fe1e26c348fdd53bb5976f", null ],
     [ "SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE", "group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e", null ],
     [ "SACN_RECEIVER_MAX_SUBS_PER_SOCKET", "group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8", null ],
     [ "SACN_RECEIVER_MAX_THREADS", "group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64", null ],

@@ -37,6 +37,7 @@ var searchData=
   ['additional_20documentation',['Additional Documentation',['../additional_documentation.html',1,'']]],
   ['addr',['addr',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html#a3423eb761e78396c67ba1345c0438871',1,'EtcPalIpAddr::addr()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#ac10a4235b585003054f76871bad3fd85',1,'EtcPalNetintInfo::addr()']]],
   ['addr_5fbuf',['addr_buf',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html#a53d9f270f12d57a90a97d60b5e612237',1,'EtcPalIpAddr']]],
+  ['address_5fcount',['address_count',['../struct_sacn_recv_universe_subrange.html#a827b7214573943430871533037d0f5b9',1,'SacnRecvUniverseSubrange']]],
   ['address_5fpriority',['address_priority',['../struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea',1,'SacnDmxMergerSource']]],
   ['address_5fpriority_5fvalid',['address_priority_valid',['../struct_sacn_dmx_merger_source.html#ab2fb729fbb80e2b480e4466e8cbf9b57',1,'SacnDmxMergerSource']]],
   ['addsource',['AddSource',['../classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce',1,'sacn::DmxMerger']]],

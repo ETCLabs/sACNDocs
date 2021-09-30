@@ -210,11 +210,15 @@ $(document).ready(function(){initNavTree('group__sacn__receiver.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_callbacks.html">SacnRecvCallbacks</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,13 +242,17 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:gafc1e3c92911f567bed81bbd04f3f34f6"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a></td></tr>
 <tr class="separator:gafc1e3c92911f567bed81bbd04f3f34f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8b358f95d739912d8c61fbdc0f45ea4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gad8b358f95d739912d8c61fbdc0f45ea4">SacnRecvUniverseSubrange</a></td></tr>
+<tr class="separator:gad8b358f95d739912d8c61fbdc0f45ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcb28bff3412bbca23bc994f5679a8d2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gafcb28bff3412bbca23bc994f5679a8d2">SacnRecvUniverseData</a></td></tr>
+<tr class="separator:gafcb28bff3412bbca23bc994f5679a8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga606572d0bec7d4ce5e711c34996e137c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga606572d0bec7d4ce5e711c34996e137c">SacnRemoteSource</a></td></tr>
 <tr class="separator:ga606572d0bec7d4ce5e711c34996e137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab6014a06f428313d58eb316a50209af3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gab6014a06f428313d58eb316a50209af3">SacnLostSource</a></td></tr>
 <tr class="separator:gab6014a06f428313d58eb316a50209af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4061a24aadf15e943e417b1189468138"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga4061a24aadf15e943e417b1189468138">SacnUniverseDataCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td></tr>
-<tr class="memdesc:ga4061a24aadf15e943e417b1189468138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a data packet has been received.  <a href="#ga4061a24aadf15e943e417b1189468138">More...</a><br /></td></tr>
-<tr class="separator:ga4061a24aadf15e943e417b1189468138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ea1f87c1d1098d6df521cb9d9ccd0b3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga1ea1f87c1d1098d6df521cb9d9ccd0b3">SacnUniverseDataCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td></tr>
+<tr class="memdesc:ga1ea1f87c1d1098d6df521cb9d9ccd0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that new universe data within the configured footprint has been received.  <a href="#ga1ea1f87c1d1098d6df521cb9d9ccd0b3">More...</a><br /></td></tr>
+<tr class="separator:ga1ea1f87c1d1098d6df521cb9d9ccd0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80326cc324898e1faebe2da1339bd0b3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3">SacnSourcesLostCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> *lost_sources, size_t num_lost_sources, void *context)</td></tr>
 <tr class="memdesc:ga80326cc324898e1faebe2da1339bd0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that one or more sources have entered a source loss state.  <a href="#ga80326cc324898e1faebe2da1339bd0b3">More...</a><br /></td></tr>
 <tr class="separator:ga80326cc324898e1faebe2da1339bd0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,8 +268,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga64bfe2ecfceca8b4f50f1a3a0a9c9a07"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga64bfe2ecfceca8b4f50f1a3a0a9c9a07">SacnSourceLimitExceededCallback</a>) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
 <tr class="memdesc:ga64bfe2ecfceca8b4f50f1a3a0a9c9a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="#ga64bfe2ecfceca8b4f50f1a3a0a9c9a07">More...</a><br /></td></tr>
 <tr class="separator:ga64bfe2ecfceca8b4f50f1a3a0a9c9a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23f7f1621591aca86090172aab798576"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_recv_callbacks.html">SacnRecvCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga23f7f1621591aca86090172aab798576">SacnReceiverCallbacks</a></td></tr>
-<tr class="separator:ga23f7f1621591aca86090172aab798576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c5122e845281f265f9da7c7ec3aad17"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga7c5122e845281f265f9da7c7ec3aad17">SacnReceiverCallbacks</a></td></tr>
+<tr class="separator:ga7c5122e845281f265f9da7c7ec3aad17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c5b4aec7e1c6fbfc7255c282b7ccf1d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga3c5b4aec7e1c6fbfc7255c282b7ccf1d">SacnReceiverConfig</a></td></tr>
 <tr class="separator:ga3c5b4aec7e1c6fbfc7255c282b7ccf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ce1e4d9da4807b53d71869f0e39950a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_receiver_netint_list.html">SacnReceiverNetintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga5ce1e4d9da4807b53d71869f0e39950a">SacnReceiverNetintList</a></td></tr>
@@ -281,9 +289,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gae77eea445ebb380fb4d47c63c0f3ba32"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gae77eea445ebb380fb4d47c63c0f3ba32">sacn_receiver_get_universe</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t *universe_id)</td></tr>
 <tr class="memdesc:gae77eea445ebb380fb4d47c63c0f3ba32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the universe on which a sACN receiver is currently listening.  <a href="#gae77eea445ebb380fb4d47c63c0f3ba32">More...</a><br /></td></tr>
 <tr class="separator:gae77eea445ebb380fb4d47c63c0f3ba32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dadba0fa169d0bfe82d5884004ecaa8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga3dadba0fa169d0bfe82d5884004ecaa8">sacn_receiver_get_footprint</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *footprint)</td></tr>
+<tr class="memdesc:ga3dadba0fa169d0bfe82d5884004ecaa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the footprint within the universe on which a sACN receiver is currently listening.  <a href="#ga3dadba0fa169d0bfe82d5884004ecaa8">More...</a><br /></td></tr>
+<tr class="separator:ga3dadba0fa169d0bfe82d5884004ecaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb5ec7d4459ac694e5fa0ae97572f388"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gabb5ec7d4459ac694e5fa0ae97572f388">sacn_receiver_change_universe</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t new_universe_id)</td></tr>
 <tr class="memdesc:gabb5ec7d4459ac694e5fa0ae97572f388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the universe on which an sACN receiver is listening.  <a href="#gabb5ec7d4459ac694e5fa0ae97572f388">More...</a><br /></td></tr>
 <tr class="separator:gabb5ec7d4459ac694e5fa0ae97572f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5be9e77fa2652f71c93d9886ae826b2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gab5be9e77fa2652f71c93d9886ae826b2">sacn_receiver_change_footprint</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
+<tr class="memdesc:gab5be9e77fa2652f71c93d9886ae826b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the footprint within the universe on which an sACN receiver is listening. TODO: Not yet implemented.  <a href="#gab5be9e77fa2652f71c93d9886ae826b2">More...</a><br /></td></tr>
+<tr class="separator:gab5be9e77fa2652f71c93d9886ae826b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf046362e62f8f4a910a00aaee3006247"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gaf046362e62f8f4a910a00aaee3006247">sacn_receiver_change_universe_and_footprint</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> handle, uint16_t new_universe_id, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
+<tr class="memdesc:gaf046362e62f8f4a910a00aaee3006247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the universe and footprint on which an sACN receiver is listening. TODO: Not yet implemented.  <a href="#gaf046362e62f8f4a910a00aaee3006247">More...</a><br /></td></tr>
+<tr class="separator:gaf046362e62f8f4a910a00aaee3006247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54fd65585c71e83af35289c3cad0f685"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga54fd65585c71e83af35289c3cad0f685">sacn_receiver_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga54fd65585c71e83af35289c3cad0f685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets underlying network sockets and packet receipt state, determines network interfaces for all receivers.  <a href="#ga54fd65585c71e83af35289c3cad0f685">More...</a><br /></td></tr>
 <tr class="separator:ga54fd65585c71e83af35289c3cad0f685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,8 +357,8 @@ sACN receiver flags</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                              \</div><div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, 0, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div><div class="line">  }</div><div class="ttc" id="group__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdef"><b>Definition:</b> common.h:77</div></div>
-<div class="ttc" id="group__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes. </div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                     \</div><div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, {1, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, 0, \</div><div class="line">        kSacnIpV4AndIpV6                                                                                \</div><div class="line">  }</div><div class="ttc" id="group__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes. </div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
+<div class="ttc" id="group__s_a_c_n_html_ga681f92a30c76ae426e2403a328978abb"><div class="ttname"><a href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a></div><div class="ttdeci">#define DMX_ADDRESS_COUNT</div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
 
 </div>
@@ -424,14 +441,14 @@ sACN receiver flags</h2></td></tr>
 
 </div>
 </div>
-<a id="ga23f7f1621591aca86090172aab798576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga23f7f1621591aca86090172aab798576">&#9670;&nbsp;</a></span>SacnReceiverCallbacks</h2>
+<a id="ga7c5122e845281f265f9da7c7ec3aad17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c5122e845281f265f9da7c7ec3aad17">&#9670;&nbsp;</a></span>SacnReceiverCallbacks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_sacn_recv_callbacks.html">SacnRecvCallbacks</a>  <a class="el" href="group__sacn__receiver.html#ga23f7f1621591aca86090172aab798576">SacnReceiverCallbacks</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a>  <a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -466,6 +483,36 @@ sACN receiver flags</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A set of network interfaces for a particular receiver. </p>
+
+</div>
+</div>
+<a id="gafcb28bff3412bbca23bc994f5679a8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcb28bff3412bbca23bc994f5679a8d2">&#9670;&nbsp;</a></span>SacnRecvUniverseData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>  <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A complete description of newly received universe data within the configured footprint. </p>
+
+</div>
+</div>
+<a id="gad8b358f95d739912d8c61fbdc0f45ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8b358f95d739912d8c61fbdc0f45ea4">&#9670;&nbsp;</a></span>SacnRecvUniverseSubrange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a>  <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines a range of addresses within a sACN universe. </p>
 
 </div>
 </div>
@@ -546,7 +593,7 @@ sACN receiver flags</h2></td></tr>
 
 <p>Notify that more than the configured maximum number of sources are currently sending on the universe being listened to. </p>
 <p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> was defined to 1 when sACN was compiled (the default on non-embedded platforms), and the configuration you pass to <a class="el" href="group__sacn__receiver.html#gacc6321deb0647ac0175993be6083683b" title="Create a new sACN receiver to listen for sACN data on a universe. ">sacn_receiver_create()</a> has source_count_max set to <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes. ">SACN_RECEIVER_INFINITE_SOURCES</a>, this callback will never be called and may be set to NULL.</p>
-<p>if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> was defined to 0 when sACN was compiled, source_count_max is ignored and <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead.</p>
+<p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation. ">SACN_DYNAMIC_MEM</a> was defined to 0 when sACN was compiled, source_count_max is only used if it's less than <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>, otherwise <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead.</p>
 <p>This callback is rate-limited: it will only be called when the first sACN packet is received from a source beyond the limit specified. After that, it will not be called again until the number of sources sending drops below that limit and then hits it again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -612,30 +659,30 @@ sACN receiver flags</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4061a24aadf15e943e417b1189468138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4061a24aadf15e943e417b1189468138">&#9670;&nbsp;</a></span>SacnUniverseDataCallback</h2>
+<a id="ga1ea1f87c1d1098d6df521cb9d9ccd0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ea1f87c1d1098d6df521cb9d9ccd0b3">&#9670;&nbsp;</a></span>SacnUniverseDataCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* SacnUniverseDataCallback) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> *header, const uint8_t *pdata, bool is_sampling, void *context)</td>
+          <td class="memname">typedef void(* SacnUniverseDataCallback) (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Notify that a data packet has been received. </p>
+<p>Notify that new universe data within the configured footprint has been received. </p>
 <p>This will not be called if the Stream_Terminated bit is set, or if the Preview_Data bit is set and preview packets are being filtered.</p>
 <p>Start code 0xDD packets will only trigger this notification if <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN. ">SACN_ETC_PRIORITY_EXTENSION</a> is set to 1. This callback will be called for all other start codes received, even those without a startcode of 0x00 or 0xDD.</p>
 <p>This notification will not be called for a source until the first NULL start code packet is received. After that happens, this notification is always called immediately during the sampling period, if <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN. ">SACN_ETC_PRIORITY_EXTENSION</a> is set to 0, or if the start code is not 0x00 or 0xDD. Otherwise, this notification won't be called until both 0x00 and 0xDD start codes are received (in which case the 0xDD notification comes first), or the 0xDD timer has expired and a 0x00 packet is received.</p>
-<p>If the source is sending sACN Sync packets, this callback will only be called when the sync packet is received, if the source forces the packet, or if the source sends a data packet without a sync universe. TODO: this version of the sACN library does not support sACN Sync. This paragraph will be valid in the future.</p>
+<p>If the source is sending sACN Sync packets, this callback will only be called when the sync packet is received, if the source forces the packet, or if the source sends a data packet without a sync universe.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>This version of the sACN library does not support sACN Sync. This paragraph will be valid in the future.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">receiver_handle</td><td>Handle to the receiver instance for which universe data was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">source_addr</td><td>The network address from which the sACN packet originated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">header</td><td>The header data of the sACN packet. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pdata</td><td>Pointer to the data buffer. Size of the buffer is indicated by header-&gt;slot_count. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_sampling</td><td>True if this data was received during the sampling period, false otherwise. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_info</td><td>Information about the source that sent this data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe_data</td><td>The universe data (and relevant information about that data), starting from the first slot of the currently configured footprint. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the receiver instance. </td></tr>
   </table>
   </dd>
@@ -644,6 +691,45 @@ sACN receiver flags</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gab5be9e77fa2652f71c93d9886ae826b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5be9e77fa2652f71c93d9886ae826b2">&#9670;&nbsp;</a></span>sacn_receiver_change_footprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_receiver_change_footprint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *&#160;</td>
+          <td class="paramname"><em>new_footprint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the footprint within the universe on which an sACN receiver is listening. TODO: Not yet implemented. </p>
+<p>After this call completes successfully, the receiver is in a sampling period for the new footprint and will provide SamplingPeriodStarted() and SamplingPeriodEnded() notifications, as well as UniverseData() notifications as packets are received for the new footprint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the receiver for which to change the universe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_footprint</td><td>New footprint that this receiver should listen to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
+
+</div>
+</div>
 <a id="gabb5ec7d4459ac694e5fa0ae97572f388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabb5ec7d4459ac694e5fa0ae97572f388">&#9670;&nbsp;</a></span>sacn_receiver_change_universe()</h2>
 
@@ -690,6 +776,52 @@ sACN receiver flags</h2></td></tr>
 <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid receiver. </dd>
 <dd>
 <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="gaf046362e62f8f4a910a00aaee3006247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf046362e62f8f4a910a00aaee3006247">&#9670;&nbsp;</a></span>sacn_receiver_change_universe_and_footprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_receiver_change_universe_and_footprint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>new_universe_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *&#160;</td>
+          <td class="paramname"><em>new_footprint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the universe and footprint on which an sACN receiver is listening. TODO: Not yet implemented. </p>
+<p>After this call completes successfully, the receiver is in a sampling period for the new footprint and will provide SamplingPeriodStarted() and SamplingPeriodEnded() notifications, as well as UniverseData() notifications as packets are received for the new footprint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the receiver for which to change the universe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_universe_id</td><td>New universe number that this receiver should listen to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_footprint</td><td>New footprint within the universe. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
 
 </div>
 </div>
@@ -833,6 +965,53 @@ sACN receiver flags</h2></td></tr>
 <p>Get the current value of the expired notification wait time. </p>
 <p>The library will wait at least this long after a source loss condition has been encountered before sending a <a class="el" href="group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3">sources_lost()</a> notification. However, the wait may be longer due to the source loss algorithm (see <a class="el" href="source_loss_behavior.html">Source Loss Behavior</a>).</p>
 <dl class="section return"><dt>Returns</dt><dd>Wait time in milliseconds. </dd></dl>
+
+</div>
+</div>
+<a id="ga3dadba0fa169d0bfe82d5884004ecaa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3dadba0fa169d0bfe82d5884004ecaa8">&#9670;&nbsp;</a></span>sacn_receiver_get_footprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_receiver_get_footprint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *&#160;</td>
+          <td class="paramname"><em>footprint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the footprint within the universe on which a sACN receiver is currently listening. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>At this time, custom footprints are not supported by this library, so the full 512-slot footprint is returned.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the receiver that we want to query. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">footprint</td><td>The retrieved footprint. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Footprint retrieved successfully. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid receiver. </dd>
+<dd>
+<a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>

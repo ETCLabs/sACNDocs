@@ -777,7 +777,7 @@ used to generate live output."</p>
 <p>Changes the synchronization universe for a universe of a sACN source. </p>
 <p>This will change the synchronization universe used by a sACN universe on the source. If this value is 0, synchronization is turned off for that universe.</p>
 <p>This function will update the packet buffers with the new sync universe. If this universe is transmitting NULL start code or PAP data, the logic that slows down packet transmission due to inactivity will be reset.</p>
-<p>TODO: At this time, synchronization is not supported by this library.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>At this time, synchronization is not supported by this library.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to change. </td></tr>
@@ -1346,7 +1346,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 
 <p>Indicate that a new synchronization packet should be sent on the given synchronization universe. </p>
 <p>This will cause the source to transmit a synchronization packet on the given synchronization universe.</p>
-<p>TODO: At this time, synchronization is not supported by this library, so this function is not implemented.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>At this time, synchronization is not supported by this library, so this function is not implemented.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source. </td></tr>
@@ -1486,7 +1486,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 <p>Like <a class="el" href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4" title="Copies the universe&#39;s dmx values into the packet to be sent on the next threaded or manual update...">sacn_source_update_values()</a>, but also sets the force_sync flag on the packet. </p>
 <p>This function will update the outgoing packet values to be sent on the next threaded or manual update, and will reset the logic that slows down packet transmission due to inactivity. Additionally, the packet to be sent will have its force_synchronization option flag set.</p>
 <p>If no synchronization universe is configured, this function acts like a direct call to <a class="el" href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4" title="Copies the universe&#39;s dmx values into the packet to be sent on the next threaded or manual update...">sacn_source_update_values()</a>.</p>
-<p>TODO: At this time, synchronization is not supported by this library.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>At this time, synchronization is not supported by this library.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
@@ -1620,7 +1620,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 <p>This function will update the outgoing packet values to be sent on the next threaded or manual update, and will reset the logic that slows down packet transmission due to inactivity. Additionally, both packets to be sent by this call will have their force_synchronization option flags set.</p>
 <p>The application should adhere to the rules for per-address priority (PAP) specified in <a href="https://etclabs.github.io/sACN/docs/head/per_address_priority.html">https://etclabs.github.io/sACN/docs/head/per_address_priority.html</a>. This API will adhere to the rules within the scope of the implementation. This includes handling transmission suppression and the order in which DMX and PAP packets are sent. This also includes automatically setting levels to 0, even if the application specified a different level, for each slot that the application assigns a PAP of 0 (by setting the PAP to 0 or reducing the number of PAPs).</p>
 <p>If no synchronization universe is configured, this function acts like a direct call to <a class="el" href="group__sacn__source.html#ga5eeb0dbabcfbfe8846aa0cccc28264b3" title="Copies the universe&#39;s dmx values and per-address priorities into packets that are sent on the next th...">sacn_source_update_values_and_pap()</a>.</p>
-<p>TODO: At this time, synchronization is not supported by this library.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>At this time, synchronization is not supported by this library.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>

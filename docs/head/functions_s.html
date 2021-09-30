@@ -199,10 +199,10 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sampling_period_ended
-: <a class="el" href="struct_sacn_recv_callbacks.html#a3c827e69c782db7012f8d20f9a25bf53">SacnRecvCallbacks</a>
+: <a class="el" href="struct_sacn_receiver_callbacks.html#a3c827e69c782db7012f8d20f9a25bf53">SacnReceiverCallbacks</a>
 </li>
 <li>sampling_period_started
-: <a class="el" href="struct_sacn_recv_callbacks.html#a401d2be24423a263467e2b7b09f68b0b">SacnRecvCallbacks</a>
+: <a class="el" href="struct_sacn_receiver_callbacks.html#a401d2be24423a263467e2b7b09f68b0b">SacnReceiverCallbacks</a>
 </li>
 <li>send_preview
 : <a class="el" href="structsacn_1_1_source_1_1_universe_settings.html#a5c7913b52f7d575e1cedacbd6601b047">Source::UniverseSettings</a>
@@ -235,16 +235,20 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="classsacn_1_1_source.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Source</a>
 , <a class="el" href="classsacn_1_1_source_detector.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">SourceDetector</a>
 </li>
-<li>slot_count
-: <a class="el" href="struct_sacn_header_data.html#a59d8c182097049f06609faab81891542">SacnHeaderData</a>
-</li>
 <li>slot_owners
 : <a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce">DmxMerger::Settings</a>
 , <a class="el" href="struct_sacn_dmx_merger_config.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce">SacnDmxMergerConfig</a>
+, <a class="el" href="struct_sacn_recv_merged_data.html#aa606475f7c1c81619acb2c01d1d16c06">SacnRecvMergedData</a>
+</li>
+<li>slot_range
+: <a class="el" href="struct_sacn_recv_merged_data.html#ad634e09aa77487d44087c02a9143ee17">SacnRecvMergedData</a>
+, <a class="el" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">SacnRecvUniverseData</a>
 </li>
 <li>slots
 : <a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#a08bc75bcabb0a92022eac3a623f32ff6">DmxMerger::Settings</a>
 , <a class="el" href="struct_sacn_dmx_merger_config.html#a08bc75bcabb0a92022eac3a623f32ff6">SacnDmxMergerConfig</a>
+, <a class="el" href="struct_sacn_recv_merged_data.html#adf0c2661b04c42e8f6064aff36a93430">SacnRecvMergedData</a>
+, <a class="el" href="struct_sacn_recv_universe_data.html#adf0c2661b04c42e8f6064aff36a93430">SacnRecvUniverseData</a>
 </li>
 <li>Source()
 : <a class="el" href="classsacn_1_1_source.html#ab3745517fb270270e41c41f0938dc278">Source</a>
@@ -262,34 +266,31 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>source_expired
 : <a class="el" href="struct_sacn_source_detector_callbacks.html#ad53b703dc988168f5b0b5bff06b2d2ff">SacnSourceDetectorCallbacks</a>
 </li>
-<li>source_handle
-: <a class="el" href="struct_sacn_header_data.html#aeb500f38bddbab0f09e061934ba47c33">SacnHeaderData</a>
-</li>
 <li>source_limit_exceeded
 : <a class="el" href="struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992">SacnMergeReceiverCallbacks</a>
-, <a class="el" href="struct_sacn_recv_callbacks.html#addfb88eea24f335ebbfc61590a5dffd3">SacnRecvCallbacks</a>
-</li>
-<li>source_name
-: <a class="el" href="struct_sacn_header_data.html#a176bd2902909dd199b4c4d03c1cae8cd">SacnHeaderData</a>
+, <a class="el" href="struct_sacn_receiver_callbacks.html#addfb88eea24f335ebbfc61590a5dffd3">SacnReceiverCallbacks</a>
 </li>
 <li>source_pap_lost
-: <a class="el" href="struct_sacn_recv_callbacks.html#ae587c65553885a5286a270d7bca267dc">SacnRecvCallbacks</a>
+: <a class="el" href="struct_sacn_receiver_callbacks.html#ae587c65553885a5286a270d7bca267dc">SacnReceiverCallbacks</a>
 </li>
 <li>source_updated
 : <a class="el" href="struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45">SacnSourceDetectorCallbacks</a>
 </li>
 <li>sources_lost
-: <a class="el" href="struct_sacn_recv_callbacks.html#a4aa47bcca0d30a2c28463942cac94be5">SacnRecvCallbacks</a>
+: <a class="el" href="struct_sacn_receiver_callbacks.html#a4aa47bcca0d30a2c28463942cac94be5">SacnReceiverCallbacks</a>
+</li>
+<li>start_address
+: <a class="el" href="struct_sacn_recv_universe_subrange.html#ace16bae043b38ea02cb084b12bcbf646">SacnRecvUniverseSubrange</a>
 </li>
 <li>start_code
-: <a class="el" href="struct_sacn_header_data.html#a09df16493b12c991aef309819c8eebab">SacnHeaderData</a>
+: <a class="el" href="struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab">SacnRecvUniverseData</a>
 </li>
 <li>Startup()
 : <a class="el" href="classsacn_1_1_dmx_merger.html#ab263565edc9ebf5ffd6e82a18184e4c3">DmxMerger</a>
 , <a class="el" href="classsacn_1_1_merge_receiver.html#abb65535d2f1ed30a79014d81eb7f6807">MergeReceiver</a>
-, <a class="el" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Receiver</a>
+, <a class="el" href="classsacn_1_1_receiver.html#abb65535d2f1ed30a79014d81eb7f6807">Receiver</a>
 , <a class="el" href="classsacn_1_1_source.html#ab263565edc9ebf5ffd6e82a18184e4c3">Source</a>
-, <a class="el" href="classsacn_1_1_source_detector.html#ad61de069d345200c0f0c45d0cc8c223c">SourceDetector</a>
+, <a class="el" href="classsacn_1_1_source_detector.html#a213169bd9a5d38cb80144f8d9fb82962">SourceDetector</a>
 </li>
 <li>status
 : <a class="el" href="struct_sacn_mcast_interface.html#a3ed2ca570213574abb27e4d16cab480b">SacnMcastInterface</a>

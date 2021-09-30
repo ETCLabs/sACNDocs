@@ -1,5 +1,12 @@
 var group__sacn__merge__receiver =
 [
+    [ "SacnRecvMergedData", "struct_sacn_recv_merged_data.html", [
+      [ "num_active_sources", "struct_sacn_recv_merged_data.html#a6f445f896ce37297dbcd575006fdcb6c", null ],
+      [ "slot_owners", "struct_sacn_recv_merged_data.html#aa606475f7c1c81619acb2c01d1d16c06", null ],
+      [ "slot_range", "struct_sacn_recv_merged_data.html#ad634e09aa77487d44087c02a9143ee17", null ],
+      [ "slots", "struct_sacn_recv_merged_data.html#adf0c2661b04c42e8f6064aff36a93430", null ],
+      [ "universe_id", "struct_sacn_recv_merged_data.html#a7e0de4d0f4e4bbd14771257febdf7248", null ]
+    ] ],
     [ "SacnMergeReceiverCallbacks", "struct_sacn_merge_receiver_callbacks.html", [
       [ "callback_context", "struct_sacn_merge_receiver_callbacks.html#a67b5953b36108e04f24abe803bc1fe44", null ],
       [ "source_limit_exceeded", "struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992", null ],
@@ -8,6 +15,7 @@ var group__sacn__merge__receiver =
     ] ],
     [ "SacnMergeReceiverConfig", "struct_sacn_merge_receiver_config.html", [
       [ "callbacks", "struct_sacn_merge_receiver_config.html#ac1381db71af830c6635c5d2b338217ba", null ],
+      [ "footprint", "struct_sacn_merge_receiver_config.html#a3fa13922bd1ee44412886d8e562582c8", null ],
       [ "ip_supported", "struct_sacn_merge_receiver_config.html#ab619351af6b7a5abcb23e38bdc09e984", null ],
       [ "source_count_max", "struct_sacn_merge_receiver_config.html#aa56795d5b57bff4910ce11baac4003ba", null ],
       [ "universe_id", "struct_sacn_merge_receiver_config.html#a7e0de4d0f4e4bbd14771257febdf7248", null ],
@@ -23,14 +31,18 @@ var group__sacn__merge__receiver =
     [ "sacn_merge_receiver_t", "group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61", null ],
     [ "SacnMergeReceiverCallbacks", "group__sacn__merge__receiver.html#gad3600818c88533f6e800c148bfaf5404", null ],
     [ "SacnMergeReceiverConfig", "group__sacn__merge__receiver.html#ga43f2c792ba03a1461b5196f4a436e256", null ],
-    [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#ga7a665833b17ab1f35fd702004725f83c", null ],
+    [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d", null ],
     [ "SacnMergeReceiverNetintList", "group__sacn__merge__receiver.html#gad68f6aef1092c8566414a01ceb9fba55", null ],
-    [ "SacnMergeReceiverNonDmxCallback", "group__sacn__merge__receiver.html#ga189ae9d751ac31f47b50f5bb4cb1923a", null ],
+    [ "SacnMergeReceiverNonDmxCallback", "group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b", null ],
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],
+    [ "SacnRecvMergedData", "group__sacn__merge__receiver.html#ga6025dc6c15a56eb0b8e5b35da97e3182", null ],
+    [ "sacn_merge_receiver_change_footprint", "group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80", null ],
     [ "sacn_merge_receiver_change_universe", "group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970", null ],
+    [ "sacn_merge_receiver_change_universe_and_footprint", "group__sacn__merge__receiver.html#ga99f34c7a019f2f4f5f62220a505c6e47", null ],
     [ "sacn_merge_receiver_config_init", "group__sacn__merge__receiver.html#gab0d6a624f1d44008625335112788eb37", null ],
     [ "sacn_merge_receiver_create", "group__sacn__merge__receiver.html#ga91ca26eea8b78eeb2b25bb003e8aa208", null ],
     [ "sacn_merge_receiver_destroy", "group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850", null ],
+    [ "sacn_merge_receiver_get_footprint", "group__sacn__merge__receiver.html#ga32dfa392c47b9f7a443e9bd563e1a974", null ],
     [ "sacn_merge_receiver_get_network_interfaces", "group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8", null ],
     [ "sacn_merge_receiver_get_universe", "group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7", null ],
     [ "sacn_merge_receiver_reset_networking", "group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375", null ],

@@ -207,12 +207,12 @@ $(document).ready(function(){initNavTree('classsacn_1_1_merge_receiver_1_1_notif
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b114f14ef57910624d93c36154dc6ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0b114f14ef57910624d93c36154dc6ec">HandleMergedData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe, const uint8_t *slots, const <a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a> *slot_owners, size_t num_active_sources)=0</td></tr>
-<tr class="memdesc:a0b114f14ef57910624d93c36154dc6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a new data packet has been received and merged.  <a href="#a0b114f14ef57910624d93c36154dc6ec">More...</a><br /></td></tr>
-<tr class="separator:a0b114f14ef57910624d93c36154dc6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c74faa01aa5f5f7f1dfe7ce4a9deba1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a3c74faa01aa5f5f7f1dfe7ce4a9deba1">HandleNonDmxData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a> receiver_handle, uint16_t universe, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;source_addr, const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> &amp;header, const uint8_t *pdata)=0</td></tr>
-<tr class="memdesc:a3c74faa01aa5f5f7f1dfe7ce4a9deba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="#a3c74faa01aa5f5f7f1dfe7ce4a9deba1">More...</a><br /></td></tr>
-<tr class="separator:a3c74faa01aa5f5f7f1dfe7ce4a9deba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d46e56c609d6edd9806994bb81190fc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">HandleMergedData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, const <a class="el" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a> &amp;merged_data)=0</td></tr>
+<tr class="memdesc:a0d46e56c609d6edd9806994bb81190fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a new data packet has been received and merged.  <a href="#a0d46e56c609d6edd9806994bb81190fc">More...</a><br /></td></tr>
+<tr class="separator:a0d46e56c609d6edd9806994bb81190fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad516f76e02d5606d65074ad213f206a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">HandleNonDmxData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a> receiver_handle, const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> &amp;universe_data)=0</td></tr>
+<tr class="memdesc:ad516f76e02d5606d65074ad213f206a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="#ad516f76e02d5606d65074ad213f206a2">More...</a><br /></td></tr>
+<tr class="separator:ad516f76e02d5606d65074ad213f206a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab517496e89eb88b7ee7fa383558f725b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
 <tr class="memdesc:ab517496e89eb88b7ee7fa383558f725b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="#ab517496e89eb88b7ee7fa383558f725b">More...</a><br /></td></tr>
 <tr class="separator:ab517496e89eb88b7ee7fa383558f725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,8 +220,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for a class that receives notification callbacks from a sACN merge receiver. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0b114f14ef57910624d93c36154dc6ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b114f14ef57910624d93c36154dc6ec">&#9670;&nbsp;</a></span>HandleMergedData()</h2>
+<a id="a0d46e56c609d6edd9806994bb81190fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d46e56c609d6edd9806994bb81190fc">&#9670;&nbsp;</a></span>HandleMergedData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,26 +238,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>universe</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>slots</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacesacn.html#acfd8aea0d62baa7d2f16a969ec5849af">RemoteSourceHandle</a> *&#160;</td>
-          <td class="paramname"><em>slot_owners</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_active_sources</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a> &amp;&#160;</td>
+          <td class="paramname"><em>merged_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,18 +263,15 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">slots</td><td>Buffer of <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a> bytes containing the merged levels for the universe. This buffer is owned by the library. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">slot_owners</td><td>Buffer of <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a> source handles. If a value in the buffer is <a class="el" href="namespacesacn.html#a731047fe50bd58178f7cd8b1960e6e57">sacn::kInvalidRemoteSourceHandle</a>, the corresponding slot is not currently controlled. This buffer is owned by the library. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_active_sources</td><td>The current number of sources considered to be active on the current universe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">merged_data</td><td>The merged data (and relevant information about that data), starting from the first slot of the currently configured footprint. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a3c74faa01aa5f5f7f1dfe7ce4a9deba1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c74faa01aa5f5f7f1dfe7ce4a9deba1">&#9670;&nbsp;</a></span>HandleNonDmxData()</h2>
+<a id="ad516f76e02d5606d65074ad213f206a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad516f76e02d5606d65074ad213f206a2">&#9670;&nbsp;</a></span>HandleNonDmxData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,26 +288,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>universe</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="elRef" doxygen="/builds/etc/common-tech/net/sacn/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;&#160;</td>
           <td class="paramname"><em>source_addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_sacn_header_data.html">SacnHeaderData</a> &amp;&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>source_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>pdata</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> &amp;&#160;</td>
+          <td class="paramname"><em>universe_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -344,15 +317,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a non-data packet has been received. </p>
-<p>When an established source sends a sACN data packet that doesn't contain DMX values or priorities, the raw packet is immediately and synchronously passed to this callback.</p>
+<p>When an established source sends a sACN data packet that doesn't contain DMX values or priorities, the raw data within the configured footprint is immediately and synchronously passed to this callback.</p>
 <p>This callback should be processed quickly, since it will interfere with the receipt and processing of other sACN packets on the universe.</p>
+<p>If the source is sending sACN Sync packets, this callback will only be called when the sync packet is received, if the source forces the packet, or if the source sends a data packet without a sync universe. TODO: this version of the sACN library does not support sACN Sync. This paragraph will be valid in the future.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">receiver_handle</td><td>The merge receiver's handle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">source_addr</td><td>The network address from which the sACN packet originated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">header</td><td>The header data of the sACN packet. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pdata</td><td>Pointer to the data buffer. Size of the buffer is indicated by header-&gt;slot_count. This buffer is owned by the library. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_info</td><td>Information about the source that sent this data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe_data</td><td>The universe data (and relevant information about that data), starting from the first slot of the currently configured footprint. </td></tr>
   </table>
   </dd>
 </dl>

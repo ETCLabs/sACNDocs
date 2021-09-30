@@ -206,8 +206,10 @@ $(document).ready(function(){initNavTree('struct_sacn_receiver_config.html','');
 Data Fields</h2></td></tr>
 <tr class="memitem:a7e0de4d0f4e4bbd14771257febdf7248"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#a7e0de4d0f4e4bbd14771257febdf7248">universe_id</a></td></tr>
 <tr class="separator:a7e0de4d0f4e4bbd14771257febdf7248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4beb413a7e2291bf1488fc6472af6aa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__receiver.html#ga23f7f1621591aca86090172aab798576">SacnReceiverCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#a4beb413a7e2291bf1488fc6472af6aa4">callbacks</a></td></tr>
+<tr class="memitem:a4beb413a7e2291bf1488fc6472af6aa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#a4beb413a7e2291bf1488fc6472af6aa4">callbacks</a></td></tr>
 <tr class="separator:a4beb413a7e2291bf1488fc6472af6aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa13922bd1ee44412886d8e562582c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#a3fa13922bd1ee44412886d8e562582c8">footprint</a></td></tr>
+<tr class="separator:a3fa13922bd1ee44412886d8e562582c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a></td></tr>
 <tr class="separator:aa56795d5b57bff4910ce11baac4003ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92588540e8c1d014a08cd8a45462b19"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_receiver_config.html#ac92588540e8c1d014a08cd8a45462b19">flags</a></td></tr>
@@ -225,7 +227,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__sacn__receiver.html#ga23f7f1621591aca86090172aab798576">SacnReceiverCallbacks</a> callbacks</td>
+          <td class="memname"><a class="el" href="struct_sacn_receiver_callbacks.html">SacnReceiverCallbacks</a> callbacks</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,6 +247,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A set of option flags. See "sACN receiver flags". </p>
+
+</div>
+</div>
+<a id="a3fa13922bd1ee44412886d8e562582c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa13922bd1ee44412886d8e562582c8">&#9670;&nbsp;</a></span>footprint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> footprint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The footprint within the universe to monitor. TODO: Currently unimplemented and thus ignored. </p>
 
 </div>
 </div>
@@ -274,7 +291,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The maximum number of sources this universe will listen to. May be <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes. ">SACN_RECEIVER_INFINITE_SOURCES</a>. This parameter is ignored when configured to use static memory &ndash; <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead. </p>
+<p>The maximum number of sources this universe will listen to. May be <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes. ">SACN_RECEIVER_INFINITE_SOURCES</a>. When configured to use static memory, this parameter is only used if it's less than <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> &ndash; otherwise <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe. ">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead. </p>
 
 </div>
 </div>

@@ -216,10 +216,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gae7ae8c07912489f40fa77146cdc93d71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gae7ae8c07912489f40fa77146cdc93d71">SACN_RECEIVER_READ_TIMEOUT_MS</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:gae7ae8c07912489f40fa77146cdc93d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of time that a call to sacnrecv_read() will block waiting for data, in milliseconds.  <a href="#gae7ae8c07912489f40fa77146cdc93d71">More...</a><br /></td></tr>
 <tr class="separator:gae7ae8c07912489f40fa77146cdc93d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d749b5a5b67d89a114aa2409ba6ff62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62">SACN_RECEIVER_MAX_UNIVERSES</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:ga5d749b5a5b67d89a114aa2409ba6ff62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62">SACN_RECEIVER_MAX_UNIVERSES</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ga5d749b5a5b67d89a114aa2409ba6ff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sACN universes that can be listened to simultaneously.  <a href="#ga5d749b5a5b67d89a114aa2409ba6ff62">More...</a><br /></td></tr>
 <tr class="separator:ga5d749b5a5b67d89a114aa2409ba6ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga079b2f51919b9ac76e3b3330040bd20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:ga079b2f51919b9ac76e3b3330040bd20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:ga079b2f51919b9ac76e3b3330040bd20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sources that can be tracked on each universe.  <a href="#ga079b2f51919b9ac76e3b3330040bd20e">More...</a><br /></td></tr>
 <tr class="separator:ga079b2f51919b9ac76e3b3330040bd20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga055b24b2c72073823f4c92ed32e7ddb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga055b24b2c72073823f4c92ed32e7ddb0">SACN_RECEIVER_TOTAL_MAX_SOURCES</a>&#160;&#160;&#160;(<a class="el" href="group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62">SACN_RECEIVER_MAX_UNIVERSES</a> * <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>)</td></tr>
@@ -235,6 +235,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64">SACN_RECEIVER_MAX_THREADS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ga064a427072df41e909b7d78cdb233c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unconfigurable; will be configurable in the future. <br /></td></tr>
 <tr class="separator:ga064a427072df41e909b7d78cdb233c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0e0364237fe1e26c348fdd53bb5976f"><td class="memItemLeft" align="right" valign="top"><a id="gaf0e0364237fe1e26c348fdd53bb5976f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gaf0e0364237fe1e26c348fdd53bb5976f">SACN_RECEIVER_MAX_FOOTPRINT</a>&#160;&#160;&#160;512</td></tr>
+<tr class="memdesc:gaf0e0364237fe1e26c348fdd53bb5976f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unconfigurable; will be configurable in the future. <br /></td></tr>
+<tr class="separator:gaf0e0364237fe1e26c348fdd53bb5976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Configuration options for the <a class="el" href="group__sacn__receiver.html">sACN Receiver</a> module. </p>
@@ -265,7 +269,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE&#160;&#160;&#160;8</td>
+          <td class="memname">#define SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,7 +305,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SACN_RECEIVER_MAX_UNIVERSES&#160;&#160;&#160;8</td>
+          <td class="memname">#define SACN_RECEIVER_MAX_UNIVERSES&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">

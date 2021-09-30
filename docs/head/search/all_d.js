@@ -16,6 +16,7 @@ var searchData=
   ['notifyfromisr',['NotifyFromIsr',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#ad8b69b07e8a31350db1cd221db678cb3',1,'etcpal::Signal']]],
   ['notifyhandler',['NotifyHandler',['../classsacn_1_1_merge_receiver_1_1_notify_handler.html',1,'MergeReceiver::NotifyHandler'],['../classsacn_1_1_receiver_1_1_notify_handler.html',1,'Receiver::NotifyHandler'],['../classsacn_1_1_source_detector_1_1_notify_handler.html',1,'SourceDetector::NotifyHandler']]],
   ['now',['Now',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_time_point.html#ac59e08d917c73620c51f17923428da50',1,'etcpal::TimePoint']]],
+  ['num_5factive_5fsources',['num_active_sources',['../struct_sacn_recv_merged_data.html#a6f445f896ce37297dbcd575006fdcb6c',1,'SacnRecvMergedData']]],
   ['num_5fnetints',['num_netints',['../struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445',1,'SacnNetintConfig::num_netints()'],['../struct_sacn_merge_receiver_netint_list.html#a6ddc029bb8aba3ead075508554592445',1,'SacnMergeReceiverNetintList::num_netints()'],['../struct_sacn_receiver_netint_list.html#a6ddc029bb8aba3ead075508554592445',1,'SacnReceiverNetintList::num_netints()'],['../struct_sacn_source_universe_netint_list.html#a6ddc029bb8aba3ead075508554592445',1,'SacnSourceUniverseNetintList::num_netints()']]],
   ['num_5funicast_5fdestinations',['num_unicast_destinations',['../struct_sacn_source_universe_config.html#aa148fe1bdf89b3e7b900a130d32de29c',1,'SacnSourceUniverseConfig']]]
 ];

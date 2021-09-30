@@ -6,16 +6,6 @@ var group__s_a_c_n =
     [ "sACN Source", "group__sacn__source.html", "group__sacn__source" ],
     [ "sACN Source Detector", "group__sacn__source__detector.html", "group__sacn__source__detector" ],
     [ "sACN Configuration Options", "group__sacnopts.html", "group__sacnopts" ],
-    [ "SacnHeaderData", "struct_sacn_header_data.html", [
-      [ "cid", "struct_sacn_header_data.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
-      [ "preview", "struct_sacn_header_data.html#a631d1206624dc91b6c574bf919a7699d", null ],
-      [ "priority", "struct_sacn_header_data.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ],
-      [ "slot_count", "struct_sacn_header_data.html#a59d8c182097049f06609faab81891542", null ],
-      [ "source_handle", "struct_sacn_header_data.html#aeb500f38bddbab0f09e061934ba47c33", null ],
-      [ "source_name", "struct_sacn_header_data.html#a176bd2902909dd199b4c4d03c1cae8cd", null ],
-      [ "start_code", "struct_sacn_header_data.html#a09df16493b12c991aef309819c8eebab", null ],
-      [ "universe_id", "struct_sacn_header_data.html#a7e0de4d0f4e4bbd14771257febdf7248", null ]
-    ] ],
     [ "SacnMcastInterface", "struct_sacn_mcast_interface.html", [
       [ "iface", "struct_sacn_mcast_interface.html#a9d398e27f9eb3b1ee3b422225196b684", null ],
       [ "status", "struct_sacn_mcast_interface.html#a3ed2ca570213574abb27e4d16cab480b", null ]
@@ -38,7 +28,6 @@ var group__s_a_c_n =
     [ "SACN_VERSION_PRODUCTNAME", "group__s_a_c_n.html#ga46b3c38236732e08243f8fe79bcf6c06", null ],
     [ "SACN_VERSION_STRING", "group__s_a_c_n.html#ga2ff6980847182dc1ac56ee3660e0a360", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
-    [ "SacnHeaderData", "group__s_a_c_n.html#ga2e6652620c783917abe8e5c6b5d9d8b7", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gab240ac59938a557843efa9068b74e1d4", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#gae4016efc12ffca5172a4c2cb99f85db4", null ],
     [ "sacn_ip_support_t", "group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a", [
