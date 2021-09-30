@@ -10,6 +10,7 @@ var searchData=
   ['masklength',['MaskLength',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a0613200b3e9958598089ca48824732be',1,'etcpal::IpAddr']]],
   ['merge_5freceiver_2eh',['merge_receiver.h',['../merge__receiver_8h.html',1,'(Global Namespace)'],['../cpp_2merge__receiver_8h.html',1,'(Global Namespace)']]],
   ['mergereceiver',['MergeReceiver',['../classsacn_1_1_merge_receiver.html',1,'MergeReceiver'],['../classsacn_1_1_merge_receiver.html#acd894017c62b549662194bd84a9f4a15',1,'sacn::MergeReceiver::MergeReceiver()']]],
+  ['mergereceiverhandletype',['MergeReceiverHandleType',['../classsacn_1_1detail_1_1_merge_receiver_handle_type.html',1,'sacn::detail']]],
   ['minute',['minute',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_timestamp.html#a7ff63df03ff6549639b712d24a94adef',1,'EtcPalLogTimestamp']]],
   ['month',['month',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_timestamp.html#a8c07e017c7b80f536d05c6134cae89ef',1,'EtcPalLogTimestamp']]],
   ['msec',['msec',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_timestamp.html#ab7174bcdc6006eb03894beaa8664521c',1,'EtcPalLogTimestamp']]],

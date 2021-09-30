@@ -23,7 +23,7 @@ var group__sacn__merge__receiver__cpp =
       [ "netints", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ]
     ] ],
     [ "MergeReceiver", "classsacn_1_1_merge_receiver.html", [
-      [ "Handle", "classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e", null ],
+      [ "Handle", "classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922", null ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#abffd6ce55e98154f496e0d341728769b", null ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#ad3e150350cbde08d2a6cd57573e9ae89", null ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#acd894017c62b549662194bd84a9f4a15", null ],

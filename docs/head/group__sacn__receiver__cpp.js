@@ -26,7 +26,7 @@ var group__sacn__receiver__cpp =
       [ "netints", "structsacn_1_1_receiver_1_1_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ]
     ] ],
     [ "Receiver", "classsacn_1_1_receiver.html", [
-      [ "Handle", "classsacn_1_1_receiver.html#aa9f5bbfb2d5e01f2239d38c052c1b909", null ],
+      [ "Handle", "classsacn_1_1_receiver.html#a7337fe02f7aa0f984a2da3fe2c7d4524", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a96590ef9bb15aaa2d157193314684c3d", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a896715490bebfc93080500e9014a091d", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a8b226a7db315d39b6fdc4c8e61c3d896", null ],

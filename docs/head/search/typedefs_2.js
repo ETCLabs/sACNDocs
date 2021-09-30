@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handle',['Handle',['../classsacn_1_1_dmx_merger.html#a632b10282146049d1f9c5f44d676833e',1,'sacn::DmxMerger::Handle()'],['../classsacn_1_1_merge_receiver.html#a6b2f628cbf2d805f9a8026a02253aa2e',1,'sacn::MergeReceiver::Handle()'],['../classsacn_1_1_receiver.html#aa9f5bbfb2d5e01f2239d38c052c1b909',1,'sacn::Receiver::Handle()'],['../classsacn_1_1_source.html#a3defc9aed71824af85696f0f7e1b9ae4',1,'sacn::Source::Handle()']]]
+  ['handle',['Handle',['../classsacn_1_1_dmx_merger.html#a7b4c9f6ffcd98ecf441928151d890453',1,'sacn::DmxMerger::Handle()'],['../classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922',1,'sacn::MergeReceiver::Handle()'],['../classsacn_1_1_receiver.html#a7337fe02f7aa0f984a2da3fe2c7d4524',1,'sacn::Receiver::Handle()'],['../classsacn_1_1_source.html#a3defc9aed71824af85696f0f7e1b9ae4',1,'sacn::Source::Handle()']]]
 ];

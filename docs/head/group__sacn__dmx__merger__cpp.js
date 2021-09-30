@@ -12,7 +12,7 @@ var group__sacn__dmx__merger__cpp =
       [ "universe_priority", "structsacn_1_1_dmx_merger_1_1_settings.html#ae39fb52602dd51d0696c8973b0d5cd44", null ]
     ] ],
     [ "DmxMerger", "classsacn_1_1_dmx_merger.html", [
-      [ "Handle", "classsacn_1_1_dmx_merger.html#a632b10282146049d1f9c5f44d676833e", null ],
+      [ "Handle", "classsacn_1_1_dmx_merger.html#a7b4c9f6ffcd98ecf441928151d890453", null ],
       [ "DmxMerger", "classsacn_1_1_dmx_merger.html#af5cba58e23f9f704e330262f3e4213e6", null ],
       [ "DmxMerger", "classsacn_1_1_dmx_merger.html#a366a68351bc07d5517436bbaf7425a62", null ],
       [ "DmxMerger", "classsacn_1_1_dmx_merger.html#a18d71ec061f6533c49251873b493818f", null ],

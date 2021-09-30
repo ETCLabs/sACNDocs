@@ -38,7 +38,6 @@ var searchData=
   ['ketcpaliptypev6',['kEtcPalIpTypeV6',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae',1,]]],
   ['ketcpalnullmacaddr',['kEtcPalNullMacAddr',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gae648df0d068e3335073224fb0fb45512',1,]]],
   ['ketcpalnulluuid',['kEtcPalNullUuid',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e',1,]]],
-  ['kinvalidhandle',['kInvalidHandle',['../classsacn_1_1_dmx_merger.html#a86c59ec42eb180800c2e554d0f1e1a06',1,'sacn::DmxMerger::kInvalidHandle()'],['../classsacn_1_1_merge_receiver.html#a86c59ec42eb180800c2e554d0f1e1a06',1,'sacn::MergeReceiver::kInvalidHandle()'],['../classsacn_1_1_receiver.html#a86c59ec42eb180800c2e554d0f1e1a06',1,'sacn::Receiver::kInvalidHandle()']]],
   ['kinvalidremotesourcehandle',['kInvalidRemoteSourceHandle',['../namespacesacn.html#a731047fe50bd58178f7cd8b1960e6e57',1,'sacn']]],
   ['ksacnipv4andipv6',['kSacnIpV4AndIpV6',['../group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2',1,'common.h']]],
   ['ksacnipv4only',['kSacnIpV4Only',['../group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4',1,'common.h']]],

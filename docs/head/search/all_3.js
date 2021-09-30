@@ -11,5 +11,6 @@ var searchData=
   ['dispatch_5fpolicy',['dispatch_policy',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a49d1636c7a4675c4bfc73cf52edacbc2',1,'etcpal::Logger::dispatch_policy() const noexcept'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a49d1636c7a4675c4bfc73cf52edacbc2',1,'etcpal::Logger::dispatch_policy() const noexcept']]],
   ['dmx_5faddress_5fcount',['DMX_ADDRESS_COUNT',['../group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb',1,'common.h']]],
   ['dmx_5fmerger_2eh',['dmx_merger.h',['../dmx__merger_8h.html',1,'(Global Namespace)'],['../cpp_2dmx__merger_8h.html',1,'(Global Namespace)']]],
-  ['dmxmerger',['DmxMerger',['../classsacn_1_1_dmx_merger.html',1,'DmxMerger'],['../classsacn_1_1_dmx_merger.html#a18d71ec061f6533c49251873b493818f',1,'sacn::DmxMerger::DmxMerger()']]]
+  ['dmxmerger',['DmxMerger',['../classsacn_1_1_dmx_merger.html',1,'DmxMerger'],['../classsacn_1_1_dmx_merger.html#a18d71ec061f6533c49251873b493818f',1,'sacn::DmxMerger::DmxMerger()']]],
+  ['dmxmergerhandletype',['DmxMergerHandleType',['../classsacn_1_1detail_1_1_dmx_merger_handle_type.html',1,'sacn::detail']]]
 ];
