@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sACN: Streaming ACN</title>
+<title>sACN: Data Fields</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -141,7 +141,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('functions_u.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -159,22 +159,74 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title">Streaming ACN </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="mainpage"></a> </p><h1>Introduction</h1>
-<p>sACN is a C-language library (with C++ wrappers) that implements <b>ANSI E1.31: Lightweight streaming protocol for transport of DMX512 using ACN</b>, commonly referred to as <b>Streaming ACN</b> or <b>sACN</b>. The sACN library is designed to be portable and scalable to almost any sACN usage scenario, from lightweight embedded devices to large-scale data sending operations.</p>
-<p>Check out <a class="el" href="getting_started.html">Getting Started with sACN</a> to get started with using the library in your application. To jump right into the documentation, check out the <a class="el" href="group__s_a_c_n.html">Modules Overview</a>.</p>
-<h1>Standard Revision</h1>
-<p>The sACN library currently implements ANSI E1.31-2018. E1.31-2016 adds synchronization and universe discovery features to sACN. E1.31-2018 adds IPv6 support.</p>
-<h1>Platforms</h1>
-<p>sACN uses ETC's Platform Abstraction Layer (EtcPal) for platform abstraction, and it runs on every platform supported by EtcPal; that list can be found <a href="https://etclabs.github.io/EtcPal/docs/head/">here</a>.</p>
-<h1>Dependencies</h1>
-<h2>EtcPal</h2>
-<p>sACN depends on ETC's Platform Abstraction Library (EtcPal) for platform abstraction. EtcPal is included as a git submodule in the sACN repository. The sACN CMake configuration will also automatically detect the presence of an EtcPal directory at the same level as the sACN root directory, and use that as its dependency. </p>
-</div></div><!-- PageDoc -->
+<div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>unicast_destinations
+: <a class="el" href="structsacn_1_1_source_1_1_universe_settings.html#a9cf8b7c7691e8c1634ae68b495659650">Source::UniverseSettings</a>
+, <a class="el" href="struct_sacn_source_universe_config.html#a42ef84da1b2dc4f0e993432d4a7be8a3">SacnSourceUniverseConfig</a>
+</li>
+<li>universe
+: <a class="el" href="structsacn_1_1_source_1_1_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c">Source::UniverseNetintList</a>
+, <a class="el" href="structsacn_1_1_source_1_1_universe_settings.html#a0cf34824f8777f28b50f62b7870d6f8c">Source::UniverseSettings</a>
+, <a class="el" href="struct_sacn_source_universe_config.html#a0cf34824f8777f28b50f62b7870d6f8c">SacnSourceUniverseConfig</a>
+, <a class="el" href="struct_sacn_source_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c">SacnSourceUniverseNetintList</a>
+</li>
+<li>universe_count_max
+: <a class="el" href="structsacn_1_1_source_1_1_settings.html#af4a1d1d970b94a6a07b8c612b8d7ad73">Source::Settings</a>
+, <a class="el" href="struct_sacn_source_config.html#af4a1d1d970b94a6a07b8c612b8d7ad73">SacnSourceConfig</a>
+</li>
+<li>universe_data
+: <a class="el" href="struct_sacn_merge_receiver_callbacks.html#a1a4295429c025c42d5a54b646f03f62b">SacnMergeReceiverCallbacks</a>
+, <a class="el" href="struct_sacn_receiver_callbacks.html#a98b4132d20211455c32c7d1d73b1e156">SacnReceiverCallbacks</a>
+</li>
+<li>universe_id
+: <a class="el" href="structsacn_1_1_merge_receiver_1_1_settings.html#a7e0de4d0f4e4bbd14771257febdf7248">MergeReceiver::Settings</a>
+, <a class="el" href="structsacn_1_1_receiver_1_1_settings.html#a7e0de4d0f4e4bbd14771257febdf7248">Receiver::Settings</a>
+, <a class="el" href="struct_sacn_merge_receiver_config.html#a7e0de4d0f4e4bbd14771257febdf7248">SacnMergeReceiverConfig</a>
+, <a class="el" href="struct_sacn_receiver_config.html#a7e0de4d0f4e4bbd14771257febdf7248">SacnReceiverConfig</a>
+, <a class="el" href="struct_sacn_recv_merged_data.html#a7e0de4d0f4e4bbd14771257febdf7248">SacnRecvMergedData</a>
+, <a class="el" href="struct_sacn_recv_universe_data.html#a7e0de4d0f4e4bbd14771257febdf7248">SacnRecvUniverseData</a>
+</li>
+<li>universe_non_dmx
+: <a class="el" href="struct_sacn_merge_receiver_callbacks.html#ace7f60e7140c695d729d045abca2ba73">SacnMergeReceiverCallbacks</a>
+</li>
+<li>universe_priority
+: <a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#ae39fb52602dd51d0696c8973b0d5cd44">DmxMerger::Settings</a>
+, <a class="el" href="struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44">SacnDmxMergerConfig</a>
+, <a class="el" href="struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">SacnDmxMergerSource</a>
+</li>
+<li>UniverseNetintList()
+: <a class="el" href="structsacn_1_1_source_1_1_universe_netint_list.html#a73644ddd63df91014c177680f2336e47">Source::UniverseNetintList</a>
+</li>
+<li>universes_per_source_max
+: <a class="el" href="structsacn_1_1_source_detector_1_1_settings.html#a56cecc9bab9fb8d197ce21bbbc036e06">SourceDetector::Settings</a>
+, <a class="el" href="struct_sacn_source_detector_config.html#a56cecc9bab9fb8d197ce21bbbc036e06">SacnSourceDetectorConfig</a>
+</li>
+<li>UniverseSettings()
+: <a class="el" href="structsacn_1_1_source_1_1_universe_settings.html#af00507fb4c88058e9363bb4007ddea6f">Source::UniverseSettings</a>
+</li>
+<li>UpdateLevels()
+: <a class="el" href="classsacn_1_1_dmx_merger.html#a1aa19e03ca654b84ed0574bb4c4b5659">DmxMerger</a>
+</li>
+<li>UpdatePaps()
+: <a class="el" href="classsacn_1_1_dmx_merger.html#af6d3f714200fec49886b9375a528e779">DmxMerger</a>
+</li>
+<li>UpdateUniversePriority()
+: <a class="el" href="classsacn_1_1_dmx_merger.html#ada8d157cee674178ec576caa111afca9">DmxMerger</a>
+</li>
+<li>UpdateValues()
+: <a class="el" href="classsacn_1_1_source.html#ac162298618ea8824476cbe33cb95c047">Source</a>
+</li>
+<li>UpdateValuesAndForceSync()
+: <a class="el" href="classsacn_1_1_source.html#a2a5aeeebf0c4930dd45abc67bbc665a2">Source</a>
+</li>
+<li>use_pap
+: <a class="el" href="structsacn_1_1_merge_receiver_1_1_settings.html#af4536f740a72ae5788afacd0db91da30">MergeReceiver::Settings</a>
+, <a class="el" href="struct_sacn_merge_receiver_config.html#af4536f740a72ae5788afacd0db91da30">SacnMergeReceiverConfig</a>
+</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

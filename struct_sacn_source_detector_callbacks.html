@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sACN: Streaming ACN</title>
+<title>sACN: SacnSourceDetectorCallbacks Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -141,7 +141,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_sacn_source_detector_callbacks.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -159,27 +159,97 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Streaming ACN </div>  </div>
+<div class="title">SacnSourceDetectorCallbacks Struct Reference<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a> &raquo; <a class="el" href="group__sacn__source__detector.html">sACN Source Detector</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="mainpage"></a> </p><h1>Introduction</h1>
-<p>sACN is a C-language library (with C++ wrappers) that implements <b>ANSI E1.31: Lightweight streaming protocol for transport of DMX512 using ACN</b>, commonly referred to as <b>Streaming ACN</b> or <b>sACN</b>. The sACN library is designed to be portable and scalable to almost any sACN usage scenario, from lightweight embedded devices to large-scale data sending operations.</p>
-<p>Check out <a class="el" href="getting_started.html">Getting Started with sACN</a> to get started with using the library in your application. To jump right into the documentation, check out the <a class="el" href="group__s_a_c_n.html">Modules Overview</a>.</p>
-<h1>Standard Revision</h1>
-<p>The sACN library currently implements ANSI E1.31-2018. E1.31-2016 adds synchronization and universe discovery features to sACN. E1.31-2018 adds IPv6 support.</p>
-<h1>Platforms</h1>
-<p>sACN uses ETC's Platform Abstraction Layer (EtcPal) for platform abstraction, and it runs on every platform supported by EtcPal; that list can be found <a href="https://etclabs.github.io/EtcPal/docs/head/">here</a>.</p>
-<h1>Dependencies</h1>
-<h2>EtcPal</h2>
-<p>sACN depends on ETC's Platform Abstraction Library (EtcPal) for platform abstraction. EtcPal is included as a git submodule in the sACN repository. The sACN CMake configuration will also automatically detect the presence of an EtcPal directory at the same level as the sACN root directory, and use that as its dependency. </p>
-</div></div><!-- PageDoc -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ae4d714b0bc64241d5632fe77d013fb45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__source__detector.html#ga30a59185e89668385ea425238cab8422">SacnSourceDetectorSourceUpdatedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45">source_updated</a></td></tr>
+<tr class="separator:ae4d714b0bc64241d5632fe77d013fb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53b703dc988168f5b0b5bff06b2d2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__source__detector.html#ga18cf47c111cd4d23ee36c8aae4c97158">SacnSourceDetectorSourceExpiredCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_detector_callbacks.html#ad53b703dc988168f5b0b5bff06b2d2ff">source_expired</a></td></tr>
+<tr class="separator:ad53b703dc988168f5b0b5bff06b2d2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a102ec50557c2902e0b43656c0fa33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__source__detector.html#gadb2603e053f842705b654047e99c0096">SacnSourceDetectorLimitExceededCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_detector_callbacks.html#a2a102ec50557c2902e0b43656c0fa33c">limit_exceeded</a></td></tr>
+<tr class="separator:a2a102ec50557c2902e0b43656c0fa33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_detector_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A set of callback functions that the library uses to notify the application about source detector events. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="a2a102ec50557c2902e0b43656c0fa33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a102ec50557c2902e0b43656c0fa33c">&#9670;&nbsp;</a></span>limit_exceeded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__source__detector.html#gadb2603e053f842705b654047e99c0096">SacnSourceDetectorLimitExceededCallback</a> limit_exceeded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional </p>
+
+</div>
+</div>
+<a id="ad53b703dc988168f5b0b5bff06b2d2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53b703dc988168f5b0b5bff06b2d2ff">&#9670;&nbsp;</a></span>source_expired</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__source__detector.html#ga18cf47c111cd4d23ee36c8aae4c97158">SacnSourceDetectorSourceExpiredCallback</a> source_expired</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required </p>
+
+</div>
+</div>
+<a id="ae4d714b0bc64241d5632fe77d013fb45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d714b0bc64241d5632fe77d013fb45">&#9670;&nbsp;</a></span>source_updated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__source__detector.html#ga30a59185e89668385ea425238cab8422">SacnSourceDetectorSourceUpdatedCallback</a> source_updated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/sacn/<a class="el" href="source__detector_8h_source.html">source_detector.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="struct_sacn_source_detector_callbacks.html">SacnSourceDetectorCallbacks</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

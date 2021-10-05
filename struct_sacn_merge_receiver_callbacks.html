@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sACN: Streaming ACN</title>
+<title>sACN: SacnMergeReceiverCallbacks Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -141,7 +141,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_sacn_merge_receiver_callbacks.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -159,27 +159,97 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Streaming ACN </div>  </div>
+<div class="title">SacnMergeReceiverCallbacks Struct Reference<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a> &raquo; <a class="el" href="group__sacn__merge__receiver.html">sACN Merge Receiver</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="mainpage"></a> </p><h1>Introduction</h1>
-<p>sACN is a C-language library (with C++ wrappers) that implements <b>ANSI E1.31: Lightweight streaming protocol for transport of DMX512 using ACN</b>, commonly referred to as <b>Streaming ACN</b> or <b>sACN</b>. The sACN library is designed to be portable and scalable to almost any sACN usage scenario, from lightweight embedded devices to large-scale data sending operations.</p>
-<p>Check out <a class="el" href="getting_started.html">Getting Started with sACN</a> to get started with using the library in your application. To jump right into the documentation, check out the <a class="el" href="group__s_a_c_n.html">Modules Overview</a>.</p>
-<h1>Standard Revision</h1>
-<p>The sACN library currently implements ANSI E1.31-2018. E1.31-2016 adds synchronization and universe discovery features to sACN. E1.31-2018 adds IPv6 support.</p>
-<h1>Platforms</h1>
-<p>sACN uses ETC's Platform Abstraction Layer (EtcPal) for platform abstraction, and it runs on every platform supported by EtcPal; that list can be found <a href="https://etclabs.github.io/EtcPal/docs/head/">here</a>.</p>
-<h1>Dependencies</h1>
-<h2>EtcPal</h2>
-<p>sACN depends on ETC's Platform Abstraction Library (EtcPal) for platform abstraction. EtcPal is included as a git submodule in the sACN repository. The sACN CMake configuration will also automatically detect the presence of an EtcPal directory at the same level as the sACN root directory, and use that as its dependency. </p>
-</div></div><!-- PageDoc -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1a4295429c025c42d5a54b646f03f62b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d">SacnMergeReceiverMergedDataCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a1a4295429c025c42d5a54b646f03f62b">universe_data</a></td></tr>
+<tr class="separator:a1a4295429c025c42d5a54b646f03f62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7f60e7140c695d729d045abca2ba73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#ace7f60e7140c695d729d045abca2ba73">universe_non_dmx</a></td></tr>
+<tr class="separator:ace7f60e7140c695d729d045abca2ba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e01e068c71bd55dd31d6aeb5483992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992">source_limit_exceeded</a></td></tr>
+<tr class="separator:a29e01e068c71bd55dd31d6aeb5483992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a67b5953b36108e04f24abe803bc1fe44">callback_context</a></td></tr>
+<tr class="separator:a67b5953b36108e04f24abe803bc1fe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A set of callback functions that the library uses to notify the application about sACN events. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a67b5953b36108e04f24abe803bc1fe44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b5953b36108e04f24abe803bc1fe44">&#9670;&nbsp;</a></span>callback_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* callback_context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="a29e01e068c71bd55dd31d6aeb5483992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e01e068c71bd55dd31d6aeb5483992">&#9670;&nbsp;</a></span>source_limit_exceeded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a> source_limit_exceeded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional </p>
+
+</div>
+</div>
+<a id="a1a4295429c025c42d5a54b646f03f62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4295429c025c42d5a54b646f03f62b">&#9670;&nbsp;</a></span>universe_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d">SacnMergeReceiverMergedDataCallback</a> universe_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required </p>
+
+</div>
+</div>
+<a id="ace7f60e7140c695d729d045abca2ba73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7f60e7140c695d729d045abca2ba73">&#9670;&nbsp;</a></span>universe_non_dmx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a> universe_non_dmx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/sacn/<a class="el" href="merge__receiver_8h_source.html">merge_receiver.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="struct_sacn_merge_receiver_callbacks.html">SacnMergeReceiverCallbacks</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

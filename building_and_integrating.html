@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sACN: Streaming ACN</title>
+<title>sACN: Building and Integrating the sACN Library Into Your Project</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -141,7 +141,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('building_and_integrating.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -161,25 +161,50 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Streaming ACN </div>  </div>
+<div class="title">Building and Integrating the sACN Library Into Your Project </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="mainpage"></a> </p><h1>Introduction</h1>
-<p>sACN is a C-language library (with C++ wrappers) that implements <b>ANSI E1.31: Lightweight streaming protocol for transport of DMX512 using ACN</b>, commonly referred to as <b>Streaming ACN</b> or <b>sACN</b>. The sACN library is designed to be portable and scalable to almost any sACN usage scenario, from lightweight embedded devices to large-scale data sending operations.</p>
-<p>Check out <a class="el" href="getting_started.html">Getting Started with sACN</a> to get started with using the library in your application. To jump right into the documentation, check out the <a class="el" href="group__s_a_c_n.html">Modules Overview</a>.</p>
-<h1>Standard Revision</h1>
-<p>The sACN library currently implements ANSI E1.31-2018. E1.31-2016 adds synchronization and universe discovery features to sACN. E1.31-2018 adds IPv6 support.</p>
-<h1>Platforms</h1>
-<p>sACN uses ETC's Platform Abstraction Layer (EtcPal) for platform abstraction, and it runs on every platform supported by EtcPal; that list can be found <a href="https://etclabs.github.io/EtcPal/docs/head/">here</a>.</p>
-<h1>Dependencies</h1>
-<h2>EtcPal</h2>
-<p>sACN depends on ETC's Platform Abstraction Library (EtcPal) for platform abstraction. EtcPal is included as a git submodule in the sACN repository. The sACN CMake configuration will also automatically detect the presence of an EtcPal directory at the same level as the sACN root directory, and use that as its dependency. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpoq5umzuu_docs_pages_building_and_integrating"></a> </p><h1>Prerequisites</h1>
+<ul>
+<li><b>CMake &gt;= 3.10</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
+</ul>
+<h1>Configuring sACN</h1>
+<p>sACN can be provided a configuration file called "sacn_config.h" when compiling to change its behavior. This is most applicable when compiling sACN for an embedded target; for non-embedded applications, the default compilation options are usually fine.</p>
+<p>To provide an sacn_config.h when building sACN with CMake, pass its location using the SACN_CONFIG_LOC CMake option: </p><div class="fragment"><div class="line">$ cmake -DSACN_CONFIG_LOC=path/to/folder/containing/sacn_config.h ...</div>
+</div><!-- fragment --><p>If you are building sACN manually/without CMake, add the definition <code>SACN_HAVE_CONFIG_H</code> in your compile settings and add the sacn_config.h location to your include paths.</p>
+<p>For a list of all possible options that can be included in the sacn_config.h file, see <a class="el" href="group__sacnopts.html">sACN Configuration Options</a>.</p>
+<h2>Special Platform Configuration</h2>
+<p>Some platforms require special configuration considerations:</p>
+<ul>
+<li><a class="el" href="configuring_lwip.html">Configuring lwIP for compatibility with sACN</a></li>
+</ul>
+<h1>Including sACN in your project</h1>
+<h2>Including sACN in CMake projects</h2>
+<p>To include sACN as a source dependency from a CMake project, use the <code>add_subdirectory()</code> command, specifying the root of the sACN repository, and use <code>target_link_libraries()</code> to add the relevant sACN include paths and binaries to your project settings.</p>
+<div class="fragment"><div class="line">add_subdirectory(path/to/sACN/root)</div>
+<div class="line"># ...</div>
+<div class="line">target_link_libraries(MyApp PRIVATE sACN)</div>
+</div><!-- fragment --><h2>Including sACN in non-CMake projects</h2>
+<p>sACN can be built on its own using CMake and its headers and binaries can be installed for inclusion in a non-CMake project. Typical practice is to create a clean directory to hold the build results named some variation of "build".</p>
+<p><b>NOTE</b>: If you are cross-compiling and/or building for an embedded target, some additional configuration is necessary. EtcPal helps make this possible; see the <a href="https://etclabs.github.io/EtcPal/docs/head/building_for_embedded.html">EtcPal embedded build documentation</a> for more details.</p>
+<ol type="1">
+<li>Create the build directory: <div class="fragment"><div class="line">$ mkdir build &amp;&amp; cd build</div>
+</div><!-- fragment --></li>
+<li>Run CMake to configure the sACN project: <div class="fragment"><div class="line">$ cmake -DCMAKE_INSTALL_PREFIX=path/to/install/location path/to/sACN/root</div>
+</div><!-- fragment --> <code>-G</code> can be used to specify a build system; otherwise, CMake will choose a system-appropriate default. CMake also has a GUI tool that can be used for this, as well as plugins available for several editors and IDEs. <code>CMAKE_INSTALL_PREFIX</code> specifies where the final binaries and headers will go; if not given, they will be installed in a system appropriate place like <code>/usr/local/include</code> and <code>/usr/local/lib</code> on a *nix system.</li>
+<li>Use CMake to invoke the generated build system to build the sACN library: <div class="fragment"><div class="line">$ cmake --build .</div>
+</div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line">$ cmake --open .</div>
+</div><!-- fragment --></li>
+<li>Use CMake's installation target to install the built binaries and headers. This usually shows up as another project called "INSTALL" inside an IDE or as a target called "install" (e.g. <code>make install</code> for a makefile generator). You can also do it manually from the command line in the build directory: <div class="fragment"><div class="line">$ cmake -P cmake_install.cmake</div>
+</div><!-- fragment --> </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="getting_started.html">Getting Started with sACN</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

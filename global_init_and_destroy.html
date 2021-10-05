@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sACN: Streaming ACN</title>
+<title>sACN: Global Initialization and Destruction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -141,7 +141,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('global_init_and_destroy.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -161,25 +161,58 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Streaming ACN </div>  </div>
+<div class="title">Global Initialization and Destruction </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="mainpage"></a> </p><h1>Introduction</h1>
-<p>sACN is a C-language library (with C++ wrappers) that implements <b>ANSI E1.31: Lightweight streaming protocol for transport of DMX512 using ACN</b>, commonly referred to as <b>Streaming ACN</b> or <b>sACN</b>. The sACN library is designed to be portable and scalable to almost any sACN usage scenario, from lightweight embedded devices to large-scale data sending operations.</p>
-<p>Check out <a class="el" href="getting_started.html">Getting Started with sACN</a> to get started with using the library in your application. To jump right into the documentation, check out the <a class="el" href="group__s_a_c_n.html">Modules Overview</a>.</p>
-<h1>Standard Revision</h1>
-<p>The sACN library currently implements ANSI E1.31-2018. E1.31-2016 adds synchronization and universe discovery features to sACN. E1.31-2018 adds IPv6 support.</p>
-<h1>Platforms</h1>
-<p>sACN uses ETC's Platform Abstraction Layer (EtcPal) for platform abstraction, and it runs on every platform supported by EtcPal; that list can be found <a href="https://etclabs.github.io/EtcPal/docs/head/">here</a>.</p>
-<h1>Dependencies</h1>
-<h2>EtcPal</h2>
-<p>sACN depends on ETC's Platform Abstraction Library (EtcPal) for platform abstraction. EtcPal is included as a git submodule in the sACN repository. The sACN CMake configuration will also automatically detect the presence of an EtcPal directory at the same level as the sACN root directory, and use that as its dependency. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpoq5umzuu_docs_pages_global_init_and_destroy"></a> The sACN library has overall init and deinit functions that should be called once each at application startup and shutdown time. These functions interface with the EtcPal <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html">log (Logging)</a> API to configure what happens when the sACN library logs messages. Optionally pass an <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> structure to use this functionality. This structure can be shared across different ETC library modules.</p>
+<p> 
+<div class="code-tab-selector">
+  <button id="button_1_c" class="code-tab-links" onclick="selectLanguage(event, '1', 'c')">C</button>
+  <button id="button_1_cpp" class="code-tab-links" onclick="selectLanguage(event, '1', 'cpp')">C++</button>
+</div>
+<div id="div_1_c" class="code-tab-content">
+</p>
+<div class="fragment"><div class="line"><span class="comment">// During startup:</span></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> log_params = <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html#ga24911b91f9e4d5043348096a3065cd41">ETCPAL_LOG_PARAMS_INIT</a>;</div>
+<div class="line"><span class="comment">// Initialize log_params...</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a>(&amp;log_params, NULL);</div>
+<div class="line"><span class="comment">// Or, to init without worrying about logs from the sACN library...</span></div>
+<div class="line"><a class="code" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a>(NULL, NULL);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// During shutdown:</span></div>
+<div class="line"><a class="code" href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a>();</div>
+<div class="ttc" id="agroup__etcpal__log_html_ga24911b91f9e4d5043348096a3065cd41"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html#ga24911b91f9e4d5043348096a3065cd41">ETCPAL_LOG_PARAMS_INIT</a></div><div class="ttdeci">#define ETCPAL_LOG_PARAMS_INIT</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga612160fe1d0f1e4f1fae4d72232fee07"><div class="ttname"><a href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a></div><div class="ttdeci">etcpal_error_t sacn_init(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:68</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:234</div></div>
+<div class="ttc" id="astruct_etc_pal_log_params_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a></div></div>
+</div><!-- fragment --><p> 
+</div>
+<div id="div_1_cpp" class="code-tab-content">
+</p>
+<div class="fragment"><div class="line"><span class="comment">// During startup:</span></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a> logger;</div>
+<div class="line"><span class="comment">// Initialize logger...</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3">sacn::Init</a>(logger);</div>
+<div class="line"><span class="comment">// Or, to init without worrying about logs from the sACN library...</span></div>
+<div class="line"><a class="code" href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3">sacn::Init</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// During shutdown:</span></div>
+<div class="line"><a class="code" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">sacn::Deinit</a>();</div>
+<div class="ttc" id="aclassetcpal_1_1_logger_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a></div></div>
+<div class="ttc" id="agroup__sacn__cpp__common_html_ga65534ea21e4b2adde8d3189b3c4405a3"><div class="ttname"><a href="group__sacn__cpp__common.html#ga65534ea21e4b2adde8d3189b3c4405a3">sacn::Init</a></div><div class="ttdeci">etcpal::Error Init(const EtcPalLogParams *log_params=nullptr)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.h:70</div></div>
+<div class="ttc" id="agroup__sacn__cpp__common_html_ga7c27553e8de8ffb78e3627f51fe9eb25"><div class="ttname"><a href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">sacn::Deinit</a></div><div class="ttdeci">void Deinit()</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.h:162</div></div>
+</div><!-- fragment --><p> 
+</div>
+ </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="getting_started.html">Getting Started with sACN</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
