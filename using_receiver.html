@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="title">Using the sACN Receiver API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp1xldrl1k_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp4wicdq91_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -408,7 +408,8 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line">  <span class="keywordflow">if</span> ((universe_data-&gt;<a class="code" href="struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab">start_code</a> == 0x00) &amp;&amp; (universe_data-&gt;<a class="code" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">slot_range</a>.<a class="code" href="struct_sacn_recv_universe_subrange.html#ace16bae043b38ea02cb084b12bcbf646">start_address</a> == my_start_addr) &amp;&amp;</div>
 <div class="line">      (universe_data-&gt;<a class="code" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">slot_range</a>.<a class="code" href="struct_sacn_recv_universe_subrange.html#a827b7214573943430871533037d0f5b9">address_count</a> == MY_DMX_FOOTPRINT))</div>
 <div class="line">  {</div>
-<div class="line">    memcpy(my_data_buf, pdata, MY_DMX_FOOTPRINT);  <span class="comment">// pdata[0] will always be the first slot of the footprint</span></div>
+<div class="line">    <span class="comment">// pdata[0] will always be the first slot of the footprint</span></div>
+<div class="line">    memcpy(my_data_buf, universe_data-&gt;<a class="code" href="struct_sacn_recv_universe_data.html#adf0c2661b04c42e8f6064aff36a93430">slots</a>, MY_DMX_FOOTPRINT);</div>
 <div class="line">    <span class="comment">// Act on the data somehow</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -424,6 +425,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="ttc" id="astruct_sacn_recv_universe_data_html_a7d039abc15e5b41fb9404c941d705648"><div class="ttname"><a href="struct_sacn_recv_universe_data.html#a7d039abc15e5b41fb9404c941d705648">SacnRecvUniverseData::is_sampling</a></div><div class="ttdeci">bool is_sampling</div><div class="ttdef"><b>Definition:</b> receiver.h:107</div></div>
 <div class="ttc" id="astruct_sacn_recv_universe_data_html_a7e0de4d0f4e4bbd14771257febdf7248"><div class="ttname"><a href="struct_sacn_recv_universe_data.html#a7e0de4d0f4e4bbd14771257febdf7248">SacnRecvUniverseData::universe_id</a></div><div class="ttdeci">uint16_t universe_id</div><div class="ttdef"><b>Definition:</b> receiver.h:93</div></div>
 <div class="ttc" id="astruct_sacn_recv_universe_data_html_ad634e09aa77487d44087c02a9143ee17"><div class="ttname"><a href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">SacnRecvUniverseData::slot_range</a></div><div class="ttdeci">SacnRecvUniverseSubrange slot_range</div><div class="ttdef"><b>Definition:</b> receiver.h:115</div></div>
+<div class="ttc" id="astruct_sacn_recv_universe_data_html_adf0c2661b04c42e8f6064aff36a93430"><div class="ttname"><a href="struct_sacn_recv_universe_data.html#adf0c2661b04c42e8f6064aff36a93430">SacnRecvUniverseData::slots</a></div><div class="ttdeci">const uint8_t * slots</div><div class="ttdef"><b>Definition:</b> receiver.h:119</div></div>
 <div class="ttc" id="astruct_sacn_remote_source_html_a4c3f7d9a58af5033f9acd8c942bf81d9"><div class="ttname"><a href="struct_sacn_remote_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9">SacnRemoteSource::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdef"><b>Definition:</b> receiver.h:128</div></div>
 <div class="ttc" id="astruct_sacn_remote_source_html_a7e3669a12853b82f7d2b7488bb174956"><div class="ttname"><a href="struct_sacn_remote_source.html#a7e3669a12853b82f7d2b7488bb174956">SacnRemoteSource::name</a></div><div class="ttdeci">char name[SACN_SOURCE_NAME_MAX_LEN]</div><div class="ttdef"><b>Definition:</b> receiver.h:130</div></div>
 </div><!-- fragment --><p> 
@@ -449,7 +451,8 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line">  <span class="keywordflow">if</span> ((universe_data.<a class="code" href="struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab">start_code</a> == 0x00) &amp;&amp; (universe_data.<a class="code" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">slot_range</a>.<a class="code" href="struct_sacn_recv_universe_subrange.html#ace16bae043b38ea02cb084b12bcbf646">start_address</a> == my_start_addr) &amp;&amp;</div>
 <div class="line">      (universe_data.<a class="code" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">slot_range</a>.<a class="code" href="struct_sacn_recv_universe_subrange.html#a827b7214573943430871533037d0f5b9">address_count</a> == MY_DMX_FOOTPRINT))</div>
 <div class="line">  {</div>
-<div class="line">    memcpy(my_data_buf, pdata, MY_DMX_FOOTPRINT);  <span class="comment">// pdata[0] will always be the first slot of the footprint</span></div>
+<div class="line">    <span class="comment">// pdata[0] will always be the first slot of the footprint</span></div>
+<div class="line">    memcpy(my_data_buf, universe_data.<a class="code" href="struct_sacn_recv_universe_data.html#adf0c2661b04c42e8f6064aff36a93430">slots</a>, MY_DMX_FOOTPRINT);</div>
 <div class="line">    <span class="comment">// Act on the data somehow</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
