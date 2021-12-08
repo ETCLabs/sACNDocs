@@ -24,10 +24,10 @@ var group__sacn__source__cpp =
       [ "SendSynchronization", "classsacn_1_1_source.html#aecaeb4e484f6b34e839b705a1395765f", null ],
       [ "Shutdown", "classsacn_1_1_source.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
       [ "Startup", "classsacn_1_1_source.html#ab263565edc9ebf5ffd6e82a18184e4c3", null ],
-      [ "UpdateValues", "classsacn_1_1_source.html#ac162298618ea8824476cbe33cb95c047", null ],
-      [ "UpdateValues", "classsacn_1_1_source.html#a6604c17fdfc2154ec16331fff6cf9bd3", null ],
-      [ "UpdateValuesAndForceSync", "classsacn_1_1_source.html#a2a5aeeebf0c4930dd45abc67bbc665a2", null ],
-      [ "UpdateValuesAndForceSync", "classsacn_1_1_source.html#af65ca703eb59bd26ca80a0493169eb0f", null ]
+      [ "UpdateLevels", "classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3", null ],
+      [ "UpdateLevelsAndForceSync", "classsacn_1_1_source.html#ab7249aefa54c1fc4a230439d08fcfddd", null ],
+      [ "UpdateLevelsAndPap", "classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126", null ],
+      [ "UpdateLevelsAndPapAndForceSync", "classsacn_1_1_source.html#ae6ab3c198ab506632e32e186bebe6a56", null ]
     ] ],
     [ "Settings", "structsacn_1_1_source_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_source_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],

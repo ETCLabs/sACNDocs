@@ -29,8 +29,8 @@ var source_8h =
     [ "sacn_source_send_now", "group__sacn__source.html#ga6e7cea16d61ae355bc313452f0b47e48", null ],
     [ "sacn_source_send_synchronization", "group__sacn__source.html#ga0e07a954dab245c7d6f323d9bdeb2df3", null ],
     [ "sacn_source_universe_config_init", "group__sacn__source.html#ga79d292e6589859e52e82834c611311ea", null ],
-    [ "sacn_source_update_values", "group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4", null ],
-    [ "sacn_source_update_values_and_force_sync", "group__sacn__source.html#ga4a1b2868d1234dde8870f64c28243cf7", null ],
-    [ "sacn_source_update_values_and_pap", "group__sacn__source.html#ga5eeb0dbabcfbfe8846aa0cccc28264b3", null ],
-    [ "sacn_source_update_values_and_pap_and_force_sync", "group__sacn__source.html#gaee393cb6670ce6ed37270607b0311a50", null ]
+    [ "sacn_source_update_levels", "group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341", null ],
+    [ "sacn_source_update_levels_and_force_sync", "group__sacn__source.html#ga56ea27101d95616ca53c5c602257311a", null ],
+    [ "sacn_source_update_levels_and_pap", "group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab", null ],
+    [ "sacn_source_update_levels_and_pap_and_force_sync", "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009", null ]
 ];

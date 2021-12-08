@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="title">Using the sACN Source API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpf95lzxiy_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpgukjk6wj_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -318,8 +318,8 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div><!-- fragment --><p> 
 </div>
 </p>
-<h1>Update Values</h1>
-<p>At this point, once you have new data to transmit, you can use the Update Values functionality to copy in the NULL start code or per-address priority (PAP) data that should be transmitted on the network. Assuming you didn't set the manually_process_source setting to true, the source thread will take care of actually sending the data. Otherwise, you'll need to call the Process Manual function at your DMX rate (typically 23 ms).</p>
+<h1>Update Levels and Per-Address Priorities</h1>
+<p>At this point, once you have new data to transmit, you can use one of the Update functions to copy in the NULL start code or per-address priority (PAP) data that should be transmitted on the network. Assuming you didn't set the manually_process_source setting to true, the source thread will take care of actually sending the data. Otherwise, you'll need to call the Process Manual function at your DMX rate (typically 23 ms).</p>
 <p>Please note that per-address priority is an ETC-specific sACN extension, and is disabled if the library is compiled with <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN.">SACN_ETC_PRIORITY_EXTENSION</a> set to 0.</p>
 <p> 
 <div class="code-tab-selector">
@@ -328,32 +328,33 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div>
 <div id="div_5_c" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="comment">// Initialize my_values_buffer and (possibly) my_priorities_buffer with the values you want to send...</span></div>
-<div class="line">uint8_t my_values_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="fragment"><div class="line"><span class="comment">// Initialize my_levels_buffer and (possibly) my_priorities_buffer with the data you want to send...</span></div>
+<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Now copy in the new values to send. Then the source thread will handle transmitting the </span></div>
+<div class="line"><span class="comment">// Now copy in the new data to send. Then the source thread will handle transmitting the </span></div>
 <div class="line"><span class="comment">// data (unless you set manually_process_source to true in the SacnSourceConfig).</span></div>
-<div class="line"><a class="code" href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4">sacn_source_update_values</a>(my_handle, my_universe, my_values_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line"><a class="code" href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341">sacn_source_update_levels</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
 <div class="line"><span class="comment">// Or if you&#39;re using per-address priorities:</span></div>
-<div class="line"><a class="code" href="group__sacn__source.html#ga5eeb0dbabcfbfe8846aa0cccc28264b3">sacn_source_update_values_and_pap</a>(my_handle, my_universe, my_values_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line"><a class="code" href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab">sacn_source_update_levels_and_pap</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
 <div class="ttc" id="agroup__s_a_c_n_html_ga681f92a30c76ae426e2403a328978abb"><div class="ttname"><a href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a></div><div class="ttdeci">#define DMX_ADDRESS_COUNT</div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
-<div class="ttc" id="agroup__sacn__source_html_ga5eeb0dbabcfbfe8846aa0cccc28264b3"><div class="ttname"><a href="group__sacn__source.html#ga5eeb0dbabcfbfe8846aa0cccc28264b3">sacn_source_update_values_and_pap</a></div><div class="ttdeci">void sacn_source_update_values_and_pap(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</div><div class="ttdoc">Copies the universe's dmx values and per-address priorities into packets that are sent on the next th...</div><div class="ttdef"><b>Definition:</b> source.c:847</div></div>
-<div class="ttc" id="agroup__sacn__source_html_gabf3e1c5a9c098ad1a85d4d3099a84cf4"><div class="ttname"><a href="group__sacn__source.html#gabf3e1c5a9c098ad1a85d4d3099a84cf4">sacn_source_update_values</a></div><div class="ttdeci">void sacn_source_update_values(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size)</div><div class="ttdoc">Copies the universe's dmx values into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.c:798</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ga23dc503a9f5a46fce7e8448266760341"><div class="ttname"><a href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341">sacn_source_update_levels</a></div><div class="ttdeci">void sacn_source_update_levels(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</div><div class="ttdoc">Copies the universe's DMX levels into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.c:798</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ga6a8835b680485d307f9d2d9c750517ab"><div class="ttname"><a href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab">sacn_source_update_levels_and_pap</a></div><div class="ttdeci">void sacn_source_update_levels_and_pap(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</div><div class="ttdoc">Copies the universe's DMX levels and per-address priorities into packets that are sent on the next th...</div><div class="ttdef"><b>Definition:</b> source.c:846</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_5_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="comment">// Initialize my_values_buffer and (possibly) my_priorities_buffer with the values you want to send...</span></div>
-<div class="line">uint8_t my_values_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="fragment"><div class="line"><span class="comment">// Initialize my_levels_buffer and (possibly) my_priorities_buffer with the data you want to send...</span></div>
+<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Now copy in the new values to send. Then the source thread will handle transmitting the </span></div>
+<div class="line"><span class="comment">// Now copy in the new data to send. Then the source thread will handle transmitting the </span></div>
 <div class="line"><span class="comment">// data (unless you set manually_process_source to true in the Source::Settings).</span></div>
-<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#ac162298618ea8824476cbe33cb95c047">UpdateValues</a>(my_universe, my_values_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3">UpdateLevels</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
 <div class="line"><span class="comment">// Or if you&#39;re using per-address priorities:</span></div>
-<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#ac162298618ea8824476cbe33cb95c047">UpdateValues</a>(my_universe, my_values_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
-<div class="ttc" id="aclasssacn_1_1_source_html_ac162298618ea8824476cbe33cb95c047"><div class="ttname"><a href="classsacn_1_1_source.html#ac162298618ea8824476cbe33cb95c047">sacn::Source::UpdateValues</a></div><div class="ttdeci">void UpdateValues(uint16_t universe, const uint8_t *new_values, size_t new_values_size)</div><div class="ttdoc">Copies the universe's dmx values into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.h:639</div></div>
+<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126">UpdateLevelsAndPap</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="ttc" id="aclasssacn_1_1_source_html_a2d60e097ae578e5f8683fc10b271b126"><div class="ttname"><a href="classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126">sacn::Source::UpdateLevelsAndPap</a></div><div class="ttdeci">void UpdateLevelsAndPap(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</div><div class="ttdoc">Copies the universe's DMX levels and per-address priorities into packets that are sent on the next th...</div><div class="ttdef"><b>Definition:</b> source.h:665</div></div>
+<div class="ttc" id="aclasssacn_1_1_source_html_acbec36dcb6b7ac017788510763dffef3"><div class="ttname"><a href="classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3">sacn::Source::UpdateLevels</a></div><div class="ttdeci">void UpdateLevels(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</div><div class="ttdoc">Copies the universe's DMX levels into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.h:638</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -421,7 +422,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div>
 </p>
 <h1>Custom Start Codes</h1>
-<p>The Update Values functions only allow you to send start code 0x00 (NULL) and 0xDD (PAP) data. If you want to send data for a different start code, you'll need to use the Send Now function to transmit that data synchronously.</p>
+<p>The Update functions only allow you to send start code 0x00 (NULL) and 0xDD (PAP) data. If you want to send data for a different start code, you'll need to use the Send Now function to transmit that data synchronously.</p>
 <p> 
 <div class="code-tab-selector">
   <button id="button_8_c" class="code-tab-links" onclick="selectLanguage(event, '8', 'c')">C</button>

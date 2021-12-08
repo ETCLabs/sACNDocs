@@ -301,10 +301,10 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
-      <name>sacn_dmx_merger_update_paps</name>
+      <name>sacn_dmx_merger_update_pap</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>gaa5bfa99f39c2874287003faf284d754b</anchor>
-      <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *paps, size_t paps_count)</arglist>
+      <anchor>gac28b72fd6849cb6815c0ca58c2d29e65</anchor>
+      <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</arglist>
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
@@ -315,9 +315,9 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
-      <name>sacn_dmx_merger_remove_paps</name>
+      <name>sacn_dmx_merger_remove_pap</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga25639875c886ff365a45b580c5b4944f</anchor>
+      <anchor>gada109b5171e78bc858ab18a7c13931ee</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
   </compound>
@@ -945,31 +945,31 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values</name>
+      <name>sacn_source_update_levels</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gabf3e1c5a9c098ad1a85d4d3099a84cf4</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>ga23dc503a9f5a46fce7e8448266760341</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_pap</name>
+      <name>sacn_source_update_levels_and_pap</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga5eeb0dbabcfbfe8846aa0cccc28264b3</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>ga6a8835b680485d307f9d2d9c750517ab</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_force_sync</name>
+      <name>sacn_source_update_levels_and_force_sync</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga4a1b2868d1234dde8870f64c28243cf7</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>ga56ea27101d95616ca53c5c602257311a</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_pap_and_force_sync</name>
+      <name>sacn_source_update_levels_and_pap_and_force_sync</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gaee393cb6670ce6ed37270607b0311a50</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>gabec53e52dbb1808a546832ef3446f009</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -1517,10 +1517,10 @@
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>UpdatePaps</name>
+      <name>UpdatePap</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>af6d3f714200fec49886b9375a528e779</anchor>
-      <arglist>(sacn_dmx_merger_source_t source, const uint8_t *paps, size_t paps_count)</arglist>
+      <anchor>a6954a0af298bdb2c17829a129ce0aad6</anchor>
+      <arglist>(sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
@@ -1531,9 +1531,9 @@
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>RemovePaps</name>
+      <name>RemovePap</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>aa374c7b91e81f0a8aab81a8737fd9e1f</anchor>
+      <anchor>ae33a69fe3b51efd79d384a462efcd64a</anchor>
       <arglist>(sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
@@ -3105,31 +3105,31 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>UpdateValues</name>
+      <name>UpdateLevels</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ac162298618ea8824476cbe33cb95c047</anchor>
-      <arglist>(uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>acbec36dcb6b7ac017788510763dffef3</anchor>
+      <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>UpdateValues</name>
+      <name>UpdateLevelsAndPap</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a6604c17fdfc2154ec16331fff6cf9bd3</anchor>
-      <arglist>(uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>a2d60e097ae578e5f8683fc10b271b126</anchor>
+      <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>UpdateValuesAndForceSync</name>
+      <name>UpdateLevelsAndForceSync</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a2a5aeeebf0c4930dd45abc67bbc665a2</anchor>
-      <arglist>(uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>ab7249aefa54c1fc4a230439d08fcfddd</anchor>
+      <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>UpdateValuesAndForceSync</name>
+      <name>UpdateLevelsAndPapAndForceSync</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>af65ca703eb59bd26ca80a0493169eb0f</anchor>
-      <arglist>(uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>ae6ab3c198ab506632e32e186bebe6a56</anchor>
+      <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; EtcPalMcastNetintId &gt;</type>
@@ -3716,10 +3716,10 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
-      <name>sacn_dmx_merger_update_paps</name>
+      <name>sacn_dmx_merger_update_pap</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>gaa5bfa99f39c2874287003faf284d754b</anchor>
-      <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *paps, size_t paps_count)</arglist>
+      <anchor>gac28b72fd6849cb6815c0ca58c2d29e65</anchor>
+      <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</arglist>
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
@@ -3730,9 +3730,9 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
-      <name>sacn_dmx_merger_remove_paps</name>
+      <name>sacn_dmx_merger_remove_pap</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga25639875c886ff365a45b580c5b4944f</anchor>
+      <anchor>gada109b5171e78bc858ab18a7c13931ee</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
   </compound>
@@ -4312,31 +4312,31 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values</name>
+      <name>sacn_source_update_levels</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gabf3e1c5a9c098ad1a85d4d3099a84cf4</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>ga23dc503a9f5a46fce7e8448266760341</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_pap</name>
+      <name>sacn_source_update_levels_and_pap</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga5eeb0dbabcfbfe8846aa0cccc28264b3</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>ga6a8835b680485d307f9d2d9c750517ab</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_force_sync</name>
+      <name>sacn_source_update_levels_and_force_sync</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga4a1b2868d1234dde8870f64c28243cf7</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size)</arglist>
+      <anchor>ga56ea27101d95616ca53c5c602257311a</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sacn_source_update_values_and_pap_and_force_sync</name>
+      <name>sacn_source_update_levels_and_pap_and_force_sync</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gaee393cb6670ce6ed37270607b0311a50</anchor>
-      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_values, size_t new_values_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
+      <anchor>gabec53e52dbb1808a546832ef3446f009</anchor>
+      <arglist>(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -4827,67 +4827,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpf95lzxiy_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpgukjk6wj_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpf95lzxiy_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpgukjk6wj_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpf95lzxiy_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpgukjk6wj_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpf95lzxiy_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpgukjk6wj_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpf95lzxiy_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpgukjk6wj_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpf95lzxiy_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpgukjk6wj_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpf95lzxiy_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpgukjk6wj_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpf95lzxiy_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpgukjk6wj_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpf95lzxiy_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpgukjk6wj_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpf95lzxiy_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpgukjk6wj_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpf95lzxiy_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpgukjk6wj_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
