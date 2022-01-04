@@ -309,7 +309,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If any of the currently winning sources has per-address priorities, this is set to true. Otherwise this is set to false. If the merger's output is transmitted by a sACN source, this can be used to determine whether per-address priority packets should be sent. Otherwise this can be set to nullptr if not needed. </p>
+<p>If the merger output is being transmitted via sACN, this is set to true if per-address-priority packets should be transmitted. Otherwise this is set to false. This can be set to nullptr if not needed, which can save some performance. </p>
 
 </div>
 </div>

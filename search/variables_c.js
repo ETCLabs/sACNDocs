@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['onoff_1797',['onoff',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_linger.html#a7730494d5c90b034d5937c758f354997',1,'EtcPalLinger']]]
+  ['onoff_1796',['onoff',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_linger.html#a7730494d5c90b034d5937c758f354997',1,'EtcPalLinger']]]
 ];
