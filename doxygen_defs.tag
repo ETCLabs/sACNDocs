@@ -226,8 +226,8 @@
       <type>#define</type>
       <name>SACN_DMX_MERGER_SOURCE_IS_VALID</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga7b7762d0e6afca73eb8c31fa55354439</anchor>
-      <arglist>(slot_owners_array, slot_index)</arglist>
+      <anchor>gaec4962a6c5655b357d4c81dc9e7a7b86</anchor>
+      <arglist>(owners_array, slot_index)</arglist>
     </member>
     <member kind="typedef">
       <type>int</type>
@@ -1973,9 +1973,9 @@
     <filename>struct_sacn_dmx_merger_config.html</filename>
     <member kind="variable">
       <type>uint8_t *</type>
-      <name>slots</name>
+      <name>levels</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>a08bc75bcabb0a92022eac3a623f32ff6</anchor>
+      <anchor>a65f1e6db75de6e20f9df99807d14fe19</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -2001,9 +2001,9 @@
     </member>
     <member kind="variable">
       <type>sacn_dmx_merger_source_t *</type>
-      <name>slot_owners</name>
+      <name>owners</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>a3bbbbf4681c241f6fdb7b41a6f85a8ce</anchor>
+      <anchor>aec37c8bd38cd533fbff8d704cef812d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -2374,16 +2374,16 @@
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
-      <name>slots</name>
+      <name>levels</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>adf0c2661b04c42e8f6064aff36a93430</anchor>
+      <anchor>a538119b446f2e353678608bd05ad4db2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const sacn_remote_source_t *</type>
-      <name>slot_owners</name>
+      <name>owners</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>aa606475f7c1c81619acb2c01d1d16c06</anchor>
+      <anchor>ade95d8642c07e44ecacc13f358ede54d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -2441,9 +2441,9 @@
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
-      <name>slots</name>
+      <name>values</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>adf0c2661b04c42e8f6064aff36a93430</anchor>
+      <anchor>a92142b0edf6b988306f478760c7a38aa</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2699,8 +2699,8 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a9f4473f7247b2d802e7ac9299b0f2e26</anchor>
-      <arglist>(uint8_t *slots_ptr)</arglist>
+      <anchor>a22fb1d51b3d5315e1cd17f387e1abc77</anchor>
+      <arglist>(uint8_t *levels_ptr)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -2711,9 +2711,9 @@
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
-      <name>slots</name>
+      <name>levels</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a08bc75bcabb0a92022eac3a623f32ff6</anchor>
+      <anchor>a65f1e6db75de6e20f9df99807d14fe19</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -2739,9 +2739,9 @@
     </member>
     <member kind="variable">
       <type>sacn_dmx_merger_source_t *</type>
-      <name>slot_owners</name>
+      <name>owners</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a3bbbbf4681c241f6fdb7b41a6f85a8ce</anchor>
+      <anchor>aec37c8bd38cd533fbff8d704cef812d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -3641,8 +3641,8 @@
       <type>#define</type>
       <name>SACN_DMX_MERGER_SOURCE_IS_VALID</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga7b7762d0e6afca73eb8c31fa55354439</anchor>
-      <arglist>(slot_owners_array, slot_index)</arglist>
+      <anchor>gaec4962a6c5655b357d4c81dc9e7a7b86</anchor>
+      <arglist>(owners_array, slot_index)</arglist>
     </member>
     <member kind="typedef">
       <type>int</type>
@@ -4827,67 +4827,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmp40i1et73_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpgpgmk4nv_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmp40i1et73_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpgpgmk4nv_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmp40i1et73_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpgpgmk4nv_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmp40i1et73_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpgpgmk4nv_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmp40i1et73_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpgpgmk4nv_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmp40i1et73_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpgpgmk4nv_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmp40i1et73_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpgpgmk4nv_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmp40i1et73_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpgpgmk4nv_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmp40i1et73_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpgpgmk4nv_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmp40i1et73_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpgpgmk4nv_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmp40i1et73_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpgpgmk4nv_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

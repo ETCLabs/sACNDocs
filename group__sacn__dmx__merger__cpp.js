@@ -20,12 +20,12 @@ var group__sacn__dmx__merger__cpp =
     ] ],
     [ "Settings", "structsacn_1_1_dmx_merger_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_dmx_merger_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],
-      [ "Settings", "structsacn_1_1_dmx_merger_1_1_settings.html#a9f4473f7247b2d802e7ac9299b0f2e26", null ],
+      [ "Settings", "structsacn_1_1_dmx_merger_1_1_settings.html#a22fb1d51b3d5315e1cd17f387e1abc77", null ],
       [ "IsValid", "structsacn_1_1_dmx_merger_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed", null ],
+      [ "levels", "structsacn_1_1_dmx_merger_1_1_settings.html#a65f1e6db75de6e20f9df99807d14fe19", null ],
+      [ "owners", "structsacn_1_1_dmx_merger_1_1_settings.html#aec37c8bd38cd533fbff8d704cef812d9", null ],
       [ "per_address_priorities", "structsacn_1_1_dmx_merger_1_1_settings.html#a6b8790b29687764423319cc2b8f24c30", null ],
       [ "per_address_priorities_active", "structsacn_1_1_dmx_merger_1_1_settings.html#aa844a92b4e32e58dee13b77318f8cb8e", null ],
-      [ "slot_owners", "structsacn_1_1_dmx_merger_1_1_settings.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce", null ],
-      [ "slots", "structsacn_1_1_dmx_merger_1_1_settings.html#a08bc75bcabb0a92022eac3a623f32ff6", null ],
       [ "source_count_max", "structsacn_1_1_dmx_merger_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba", null ],
       [ "universe_priority", "structsacn_1_1_dmx_merger_1_1_settings.html#ae39fb52602dd51d0696c8973b0d5cd44", null ]
     ] ]

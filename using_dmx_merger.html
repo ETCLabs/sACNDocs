@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="title">Using the sACN DMX Merger API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp40i1et73_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpgpgmk4nv_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p>Please note that per-address priority is an ETC-specific sACN extension, and is disabled if the library is compiled with <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN.">SACN_ETC_PRIORITY_EXTENSION</a> set to 0.</p>
 <p> 
 <div class="code-tab-page-selector">
@@ -185,15 +185,15 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div id="div_2_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// These buffers are updated on each merger call with the merge results.</span></div>
-<div class="line">uint8_t slots[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t merged_levels[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t per_address_priorities[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
-<div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> slot_owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Merger configuration used for the initialization of each merger:</span></div>
 <div class="line"><a class="code" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> merger_config = <a class="code" href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a>;</div>
-<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a08bc75bcabb0a92022eac3a623f32ff6">slots</a> = slots;</div>
+<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19">levels</a> = merged_levels;</div>
 <div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30">per_address_priorities</a> = per_address_priorities;</div>
-<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce">slot_owners</a> = slot_owners;</div>
+<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9">owners</a> = owners;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize a merger and obtain its handle.</span></div>
 <div class="line"><a class="code" href="group__sacn__dmx__merger.html#gabee79fb378d5942866adc898cb7da38b">sacn_dmx_merger_t</a> merger_handle;</div>
@@ -209,23 +209,23 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="ttc" id="agroup__sacn__dmx__merger_html_ga8758dad93531c1a5bbf4643157fe2c72"><div class="ttname"><a href="group__sacn__dmx__merger.html#ga8758dad93531c1a5bbf4643157fe2c72">sacn_dmx_merger_create</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_create(const SacnDmxMergerConfig *config, sacn_dmx_merger_t *handle)</div><div class="ttdoc">Create a new merger instance.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:170</div></div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_gabee79fb378d5942866adc898cb7da38b"><div class="ttname"><a href="group__sacn__dmx__merger.html#gabee79fb378d5942866adc898cb7da38b">sacn_dmx_merger_t</a></div><div class="ttdeci">int sacn_dmx_merger_t</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:65</div></div>
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a></div><div class="ttdef"><b>Definition:</b> dmx_merger.h:79</div></div>
-<div class="ttc" id="astruct_sacn_dmx_merger_config_html_a08bc75bcabb0a92022eac3a623f32ff6"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a08bc75bcabb0a92022eac3a623f32ff6">SacnDmxMergerConfig::slots</a></div><div class="ttdeci">uint8_t * slots</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:86</div></div>
-<div class="ttc" id="astruct_sacn_dmx_merger_config_html_a3bbbbf4681c241f6fdb7b41a6f85a8ce"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a3bbbbf4681c241f6fdb7b41a6f85a8ce">SacnDmxMergerConfig::slot_owners</a></div><div class="ttdeci">sacn_dmx_merger_source_t * slot_owners</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:112</div></div>
+<div class="ttc" id="astruct_sacn_dmx_merger_config_html_a65f1e6db75de6e20f9df99807d14fe19"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19">SacnDmxMergerConfig::levels</a></div><div class="ttdeci">uint8_t * levels</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:86</div></div>
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html_a6b8790b29687764423319cc2b8f24c30"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30">SacnDmxMergerConfig::per_address_priorities</a></div><div class="ttdeci">uint8_t * per_address_priorities</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:95</div></div>
+<div class="ttc" id="astruct_sacn_dmx_merger_config_html_aec37c8bd38cd533fbff8d704cef812d9"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9">SacnDmxMergerConfig::owners</a></div><div class="ttdeci">sacn_dmx_merger_source_t * owners</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:112</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// These buffers are updated on each merger call with the merge results.</span></div>
 <div class="line"><span class="comment">// They must be valid as long as the merger is using them.</span></div>
-<div class="line">uint8_t slots[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t merged_levels[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t per_address_priorities[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
-<div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> slot_owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Merger configuration used for the initialization of each merger:</span></div>
-<div class="line"><a class="code" href="structsacn_1_1_dmx_merger_1_1_settings.html">sacn::DmxMerger::Settings</a> settings(slots);</div>
+<div class="line"><a class="code" href="structsacn_1_1_dmx_merger_1_1_settings.html">sacn::DmxMerger::Settings</a> settings(merged_levels);</div>
 <div class="line">settings.per_address_priorities = per_address_priorities;</div>
-<div class="line">settings.slot_owners = slot_owners;</div>
+<div class="line">settings.owners = owners;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize a merger.</span></div>
 <div class="line"><a class="code" href="classsacn_1_1_dmx_merger.html">sacn::DmxMerger</a> merger;</div>
@@ -234,10 +234,10 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Mergers can later be destroyed individually.</span></div>
 <div class="line"><span class="comment">// Keep in mind that sacn::Deinit() will destroy all mergers automatically.</span></div>
 <div class="line">merger.<a class="code" href="classsacn_1_1_dmx_merger.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Shutdown</a>();</div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html">sacn::DmxMerger</a></div><div class="ttdoc">An instance of sACN DMX Merger functionality; see Using the sACN DMX Merger API.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:68</div></div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ab263565edc9ebf5ffd6e82a18184e4c3"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ab263565edc9ebf5ffd6e82a18184e4c3">sacn::DmxMerger::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings)</div><div class="ttdoc">Create a new merger instance.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:185</div></div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ac5f038c2b480cf9ef5e19e3eba8dbaf9"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">sacn::DmxMerger::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Destroy a merger instance.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:207</div></div>
-<div class="ttc" id="astructsacn_1_1_dmx_merger_1_1_settings_html"><div class="ttname"><a href="structsacn_1_1_dmx_merger_1_1_settings.html">sacn::DmxMerger::Settings</a></div><div class="ttdoc">A set of configuration settings that a merger needs to initialize.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:78</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html">sacn::DmxMerger</a></div><div class="ttdoc">An instance of sACN DMX Merger functionality; see Using the sACN DMX Merger API.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:67</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ab263565edc9ebf5ffd6e82a18184e4c3"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ab263565edc9ebf5ffd6e82a18184e4c3">sacn::DmxMerger::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings)</div><div class="ttdoc">Create a new merger instance.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:184</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ac5f038c2b480cf9ef5e19e3eba8dbaf9"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">sacn::DmxMerger::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Destroy a merger instance.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:206</div></div>
+<div class="ttc" id="astructsacn_1_1_dmx_merger_1_1_settings_html"><div class="ttname"><a href="structsacn_1_1_dmx_merger_1_1_settings.html">sacn::DmxMerger::Settings</a></div><div class="ttdoc">A set of configuration settings that a merger needs to initialize.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:77</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -273,8 +273,8 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Sources can later be removed individually, which updates the merger&#39;s output.</span></div>
 <div class="line">merger.<a class="code" href="classsacn_1_1_dmx_merger.html#a826044729a5c70ee16d5fbc26f93414b">RemoveSource</a>(source_1_handle);</div>
 <div class="line">merger.<a class="code" href="classsacn_1_1_dmx_merger.html#a826044729a5c70ee16d5fbc26f93414b">RemoveSource</a>(source_2_handle);</div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a826044729a5c70ee16d5fbc26f93414b"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a826044729a5c70ee16d5fbc26f93414b">sacn::DmxMerger::RemoveSource</a></div><div class="ttdeci">etcpal::Error RemoveSource(sacn_dmx_merger_source_t source)</div><div class="ttdoc">Removes a source from the merger.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:249</div></div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ac4c679c71b50cde6301145a91b8440ce"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce">sacn::DmxMerger::AddSource</a></div><div class="ttdeci">etcpal::Expected&lt; sacn_dmx_merger_source_t &gt; AddSource()</div><div class="ttdoc">Adds a new source to the merger.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:228</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a826044729a5c70ee16d5fbc26f93414b"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a826044729a5c70ee16d5fbc26f93414b">sacn::DmxMerger::RemoveSource</a></div><div class="ttdeci">etcpal::Error RemoveSource(sacn_dmx_merger_source_t source)</div><div class="ttdoc">Removes a source from the merger.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:248</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ac4c679c71b50cde6301145a91b8440ce"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce">sacn::DmxMerger::AddSource</a></div><div class="ttdeci">etcpal::Expected&lt; sacn_dmx_merger_source_t &gt; AddSource()</div><div class="ttdoc">Adds a new source to the merger.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:227</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Now the source has been factored into the merge results, which are printed here.</span></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>; ++i)</div>
 <div class="line">{</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Slot %u:\n Level: %u\n PAP: %u\n Source ID: %u\n&quot;</span>, i, slots[i], per_address_priorities[i], slot_owners[i]);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Slot %u:\n Level: %u\n PAP: %u\n Source ID: %u\n&quot;</span>, i, merged_levels[i], per_address_priorities[i], owners[i]);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_ga6ee5e85689e75879fa1db01db0bad8a6"><div class="ttname"><a href="group__sacn__dmx__merger.html#ga6ee5e85689e75879fa1db01db0bad8a6">sacn_dmx_merger_update_levels</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_update_levels(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</div><div class="ttdoc">Updates a source's levels and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:385</div></div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_gab56b1f0e4fe8d5d1dd23695a1a861b3b"><div class="ttname"><a href="group__sacn__dmx__merger.html#gab56b1f0e4fe8d5d1dd23695a1a861b3b">sacn_dmx_merger_update_universe_priority</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_update_universe_priority(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, uint8_t universe_priority)</div><div class="ttdoc">Updates a source's universe priority and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:500</div></div>
@@ -330,12 +330,12 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Now the source has been factored into the merge results, which are printed here.</span></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>; ++i)</div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;:\n Level: &quot;</span> &lt;&lt; slots[i] &lt;&lt; <span class="stringliteral">&quot;:\n PAP: &quot;</span> &lt;&lt; per_address_priorities[i] &lt;&lt; <span class="stringliteral">&quot;\n Source ID: &quot;</span></div>
-<div class="line">            &lt;&lt; slot_owners[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;:\n Level: &quot;</span> &lt;&lt; merged_levels[i] &lt;&lt; <span class="stringliteral">&quot;:\n PAP: &quot;</span> &lt;&lt; per_address_priorities[i] &lt;&lt; <span class="stringliteral">&quot;\n Source ID: &quot;</span></div>
+<div class="line">            &lt;&lt; owners[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a1aa19e03ca654b84ed0574bb4c4b5659"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a1aa19e03ca654b84ed0574bb4c4b5659">sacn::DmxMerger::UpdateLevels</a></div><div class="ttdeci">etcpal::Error UpdateLevels(sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</div><div class="ttdoc">Updates a source's levels and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:286</div></div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a6954a0af298bdb2c17829a129ce0aad6"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a6954a0af298bdb2c17829a129ce0aad6">sacn::DmxMerger::UpdatePap</a></div><div class="ttdeci">etcpal::Error UpdatePap(sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</div><div class="ttdoc">Updates a source's per-address priorities (PAP) and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:310</div></div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ada8d157cee674178ec576caa111afca9"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ada8d157cee674178ec576caa111afca9">sacn::DmxMerger::UpdateUniversePriority</a></div><div class="ttdeci">etcpal::Error UpdateUniversePriority(sacn_dmx_merger_source_t source, uint8_t universe_priority)</div><div class="ttdoc">Updates a source's universe priority and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:336</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a1aa19e03ca654b84ed0574bb4c4b5659"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a1aa19e03ca654b84ed0574bb4c4b5659">sacn::DmxMerger::UpdateLevels</a></div><div class="ttdeci">etcpal::Error UpdateLevels(sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</div><div class="ttdoc">Updates a source's levels and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:285</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a6954a0af298bdb2c17829a129ce0aad6"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a6954a0af298bdb2c17829a129ce0aad6">sacn::DmxMerger::UpdatePap</a></div><div class="ttdeci">etcpal::Error UpdatePap(sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</div><div class="ttdoc">Updates a source's per-address priorities (PAP) and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:309</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ada8d157cee674178ec576caa111afca9"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ada8d157cee674178ec576caa111afca9">sacn::DmxMerger::UpdateUniversePriority</a></div><div class="ttdeci">etcpal::Error UpdateUniversePriority(sacn_dmx_merger_source_t source, uint8_t universe_priority)</div><div class="ttdoc">Updates a source's universe priority and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:335</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -400,7 +400,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a5f5b58945088002ac617cc5b80cd6fa2"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a5f5b58945088002ac617cc5b80cd6fa2">sacn::DmxMerger::GetSourceInfo</a></div><div class="ttdeci">const SacnDmxMergerSource * GetSourceInfo(sacn_dmx_merger_source_t source) const</div><div class="ttdoc">Gets a read-only view of the source data.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:264</div></div>
+<div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a5f5b58945088002ac617cc5b80cd6fa2"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a5f5b58945088002ac617cc5b80cd6fa2">sacn::DmxMerger::GetSourceInfo</a></div><div class="ttdeci">const SacnDmxMergerSource * GetSourceInfo(sacn_dmx_merger_source_t source) const</div><div class="ttdoc">Gets a read-only view of the source data.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:263</div></div>
 </div><!-- fragment --><p> 
 </div>
  </p>

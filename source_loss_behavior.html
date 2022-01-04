@@ -164,18 +164,18 @@ $(document).ready(function(){initNavTree('source_loss_behavior.html',''); initRe
 <div class="title">Source Loss Behavior </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp40i1et73_docs_pages_source_loss_behavior"></a> The <a class="el" href="group__sacn__receiver.html">sACN Receiver</a> module uses a custom algorithm, designed by ETC's network team, to react predictably in the event that multiple sACN Sources are lost in quick succession.</p>
-<p>Consider the following scenario: </p><div class="fragment"><div class="line">+----------------+  +----------------+</div>
-<div class="line">| Source 1       |  | Source 2       |           +----------+</div>
-<div class="line">| Priority: 90   |  | Priority: 100  |           | Receiver |</div>
-<div class="line">| All slots 0xff |  | All slots 0x00 |           +----------+</div>
-<div class="line">+----------------+  +----------------+                ||</div>
-<div class="line">        ||                  ||                        ||</div>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpgpgmk4nv_docs_pages_source_loss_behavior"></a> The <a class="el" href="group__sacn__receiver.html">sACN Receiver</a> module uses a custom algorithm, designed by ETC's network team, to react predictably in the event that multiple sACN Sources are lost in quick succession.</p>
+<p>Consider the following scenario: </p><div class="fragment"><div class="line">+-----------------+  +-----------------+</div>
+<div class="line">| Source 1        |  | Source 2        |         +----------+</div>
+<div class="line">| Priority: 90    |  | Priority: 100   |         | Receiver |</div>
+<div class="line">| All levels 0xff |  | All levels 0x00 |         +----------+</div>
+<div class="line">+-----------------+  +-----------------+              ||</div>
+<div class="line">        ||                   ||                       ||</div>
 <div class="line">      ====================================================</div>
 <div class="line">      |                  Network switch                  |</div>
 <div class="line">      ====================================================</div>
 </div><!-- fragment --><p>Sources 1 and 2 are sending sACN consistently with the parameters shown on the same universe, to which the receiver is listening. Then, the receiver is disconnected from the switch. The receiver starts a source loss (network data loss) timer for both sources.</p>
-<p>The timer for Source 2 could easily expire first, in which case the receiver will for a brief time consider Source 1 to have taken over. This will result in a short flash of all of the DMX slots on that universe to full, before the source loss timer for Source 1 also expires.</p>
+<p>The timer for Source 2 could easily expire first, in which case the receiver will for a brief time consider Source 1 to have taken over. This will result in a short flash of all of the DMX levels on that universe to full, before the source loss timer for Source 1 also expires.</p>
 <p>To avoid this unwanted behavior, the algorithm is specified as follows:</p>
 <ul>
 <li>Whenever a source is considered to be lost, either due to the Stream_Terminated bit being set or a source loss timeout, the library shall compile a list of all other sources currently being tracked for that universe and wait until their online/offline status has been verified before sending a <a class="el" href="group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3">sources_lost()</a> notification.</li>

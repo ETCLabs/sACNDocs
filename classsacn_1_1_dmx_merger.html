@@ -305,7 +305,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds a new source to the merger. </p>
 <p>Adds a new source to the merger, if the maximum number of sources hasn't been reached. The returned source id is used for two purposes:</p><ul>
 <li>It is the handle for calls that need to access the source data.</li>
-<li>It is the source identifer that is put into the slot_owners buffer that was passed in the DmxMergerUniverseConfig structure when creating the merger.</li>
+<li>It is the source identifer that is put into the owners buffer that was passed in the DmxMergerUniverseConfig structure when creating the merger.</li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>The successfully added source_id. </dd>
 <dd>
@@ -619,7 +619,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The id of the source to modify. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>The new DMX levels to be copied in, starting from the first slot. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_count</td><td>The length of new_levels. If this is less than DMX_ADDRESS_COUNT, the levels for all remaining slots will be set to 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_count</td><td>The length of new_levels. If this is less than DMX_ADDRESS_COUNT, the levels for all remaining levels will be set to 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -677,7 +677,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Updates a source's per-address priorities (PAP) and recalculates outputs. </p>
 <p>This function updates the per-address priorities (PAP) of the specified source, and then triggers the recalculation of each slot. For each slot, the source will only be included in the merge if it has a priority at that slot.</p>
-<p>If PAP is not specified for all slots, then the remaining slots will default to a PAP of 0. To remove PAP for this source and revert to the universe priority, call <a class="el" href="classsacn_1_1_dmx_merger.html#ae33a69fe3b51efd79d384a462efcd64a" title="Removes the per-address priority (PAP) data from the source and recalculate outputs.">DmxMerger::RemovePap</a>.</p>
+<p>If PAP is not specified for all levels, then the remaining levels will default to a PAP of 0. To remove PAP for this source and revert to the universe priority, call <a class="el" href="classsacn_1_1_dmx_merger.html#ae33a69fe3b51efd79d384a462efcd64a" title="Removes the per-address priority (PAP) data from the source and recalculate outputs.">DmxMerger::RemovePap</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The id of the source to modify. </td></tr>
