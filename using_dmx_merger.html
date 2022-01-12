@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="title">Using the sACN DMX Merger API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp5wy_57jt_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpqw9hzx8u_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p>Please note that per-address priority is an ETC-specific sACN extension, and is disabled if the library is compiled with <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN.">SACN_ETC_PRIORITY_EXTENSION</a> set to 0.</p>
 <p> 
 <div class="code-tab-page-selector">
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <h1>Initialization and Destruction</h1>
 <p>The sACN library must be globally initialized before using the DMX Merger API. See <a class="el" href="global_init_and_destroy.html">Global Initialization and Destruction</a>.</p>
 <p>A merger must first be created before it can be used. A separate merger should be created for each universe that needs merging.</p>
-<p>To create a merger, a config needs to be initialized and passed into the create/startup function. In the config, the output array pointer for the merged slot levels must be specified. There are also two optional output array pointers: one for the per-address priority of each slot, and another for the source ID of each slot. These two are set to NULL if not used. The application owns the memory that it points to in the config, and must ensure that the memory provided is valid until the merger is destroyed. The maximum source count (the maximum number of sources the merger will merge when <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> is 1) is also specified in the config, and it defaults to <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">SACN_RECEIVER_INFINITE_SOURCES</a>. If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> is 0, then <a class="el" href="group__sacnopts__dmx__merger.html#gaaeaa9701ec2b290ddfb3b31d8463dca4" title="The maximum number of sources that can be merged on each merger instance.">SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</a> is used instead.</p>
+<p>To create a merger, a config needs to be initialized and passed into the create/startup function. In the config, the output array pointer for the merged slot levels must be specified. There are also optional outputs: the source IDs of each slot, the per-address priorities of each slot, whether per-address priority packets should be transmitted to sACN, and the universe priority to transmit. These are set to NULL if not used. The application owns the memory that it points to in the config, and must ensure that the memory provided is valid until the merger is destroyed. The maximum source count (the maximum number of sources the merger will merge when <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> is 1) is also specified in the config, and it defaults to <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">SACN_RECEIVER_INFINITE_SOURCES</a>. If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> is 0, then <a class="el" href="group__sacnopts__dmx__merger.html#gaaeaa9701ec2b290ddfb3b31d8463dca4" title="The maximum number of sources that can be merged on each merger instance.">SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</a> is used instead.</p>
 <p>Once the merger is created, the merger's functionality can be used. Mergers can also be destroyed individually with the destroy/shutdown function, although keep in mind that all mergers are destroyed automatically when sACN deinitializes.</p>
 <p> 
 <div class="code-tab-selector">
@@ -187,12 +187,16 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="fragment"><div class="line"><span class="comment">// These buffers are updated on each merger call with the merge results.</span></div>
 <div class="line">uint8_t merged_levels[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t per_address_priorities[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line"><span class="keywordtype">bool</span> should_transmit_per_address_priorities = <span class="keyword">false</span>;</div>
+<div class="line">uint8_t universe_priority_to_transmit = 0;</div>
 <div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Merger configuration used for the initialization of each merger:</span></div>
 <div class="line"><a class="code" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> merger_config = <a class="code" href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a>;</div>
 <div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19">levels</a> = merged_levels;</div>
 <div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30">per_address_priorities</a> = per_address_priorities;</div>
+<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#aa844a92b4e32e58dee13b77318f8cb8e">per_address_priorities_active</a> = &amp;should_transmit_per_address_priorities;</div>
+<div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44">universe_priority</a> = &amp;universe_priority_to_transmit;</div>
 <div class="line">merger_config.<a class="code" href="struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9">owners</a> = owners;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize a merger and obtain its handle.</span></div>
@@ -211,6 +215,8 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a></div><div class="ttdef"><b>Definition:</b> dmx_merger.h:79</div></div>
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html_a65f1e6db75de6e20f9df99807d14fe19"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19">SacnDmxMergerConfig::levels</a></div><div class="ttdeci">uint8_t * levels</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:86</div></div>
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html_a6b8790b29687764423319cc2b8f24c30"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30">SacnDmxMergerConfig::per_address_priorities</a></div><div class="ttdeci">uint8_t * per_address_priorities</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:95</div></div>
+<div class="ttc" id="astruct_sacn_dmx_merger_config_html_aa844a92b4e32e58dee13b77318f8cb8e"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#aa844a92b4e32e58dee13b77318f8cb8e">SacnDmxMergerConfig::per_address_priorities_active</a></div><div class="ttdeci">bool * per_address_priorities_active</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:100</div></div>
+<div class="ttc" id="astruct_sacn_dmx_merger_config_html_ae39fb52602dd51d0696c8973b0d5cd44"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44">SacnDmxMergerConfig::universe_priority</a></div><div class="ttdeci">uint8_t * universe_priority</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:104</div></div>
 <div class="ttc" id="astruct_sacn_dmx_merger_config_html_aec37c8bd38cd533fbff8d704cef812d9"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9">SacnDmxMergerConfig::owners</a></div><div class="ttdeci">sacn_dmx_merger_source_t * owners</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:112</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -220,11 +226,15 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// They must be valid as long as the merger is using them.</span></div>
 <div class="line">uint8_t merged_levels[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line">uint8_t per_address_priorities[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line"><span class="keywordtype">bool</span> should_transmit_per_address_priorities = <span class="keyword">false</span>;</div>
+<div class="line">uint8_t universe_priority_to_transmit = 0;</div>
 <div class="line"><a class="code" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> owners[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Merger configuration used for the initialization of each merger:</span></div>
 <div class="line"><a class="code" href="structsacn_1_1_dmx_merger_1_1_settings.html">sacn::DmxMerger::Settings</a> settings(merged_levels);</div>
 <div class="line">settings.per_address_priorities = per_address_priorities;</div>
+<div class="line">settings.per_address_priorities_active = &amp;should_transmit_per_address_priorities;</div>
+<div class="line">settings.universe_priority = &amp;universe_priority_to_transmit;</div>
 <div class="line">settings.owners = owners;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize a merger.</span></div>
