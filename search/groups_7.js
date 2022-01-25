@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['netint_20_28network_20interfaces_29_1975',['netint (Network Interfaces)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__netint.html',1,'']]],
-  ['network_20abstraction_20modules_1976',['Network Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__net.html',1,'']]]
+  ['mempool_20_28memory_20pools_29_5229',['mempool (Memory Pools)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mempool.html',1,'']]],
+  ['mutex_20_28mutexes_29_5230',['mutex (Mutexes)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__mutex.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html',1,'(Global Namespace)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue_20_28rtos_20queues_29_1980',['queue (RTOS queues)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__queue.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__queue.html',1,'(Global Namespace)']]]
+  ['pack_20_28buffer_20packing_20and_20unpacking_29_5235',['pack (Buffer Packing and Unpacking)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__pack.html',1,'']]]
 ];

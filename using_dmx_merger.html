@@ -19,7 +19,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
 <!-- MULTIVERSION_SCRIPT_SENTINEL -->
 <script type="text/javascript">
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="title">Using the sACN DMX Merger API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmph5l3zijf_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp7ewvpo74_docs_pages_using_dmx_merger"></a> The sACN DMX Merger API provides a software merger that takes level (NULL start code) and priority data as input and outputs the merged levels, along with source IDs and per-address priorities (PAP) for each merged level. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p>Please note that per-address priority is an ETC-specific sACN extension, and is disabled if the library is compiled with <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN.">SACN_ETC_PRIORITY_EXTENSION</a> set to 0.</p>
 <p> 
 <div class="code-tab-page-selector">
@@ -316,8 +316,9 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Now the source has been factored into the merge results, which are printed here.</span></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>; ++i)</div>
 <div class="line">{</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Slot %u:\n Level: %u\n PAP: %u\n Source ID: %u\n&quot;</span>, i, merged_levels[i], per_address_priorities[i], owners[i]);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Slot %u:\n Level: %u\n PAP: %u\n Source ID: %u\n&quot;</span>, i, merged_levels[i], per_address_priorities[i], owners[i]);</div>
 <div class="line">}</div>
+<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_ga6ee5e85689e75879fa1db01db0bad8a6"><div class="ttname"><a href="group__sacn__dmx__merger.html#ga6ee5e85689e75879fa1db01db0bad8a6">sacn_dmx_merger_update_levels</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_update_levels(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</div><div class="ttdoc">Updates a source's levels and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:385</div></div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_gab56b1f0e4fe8d5d1dd23695a1a861b3b"><div class="ttname"><a href="group__sacn__dmx__merger.html#gab56b1f0e4fe8d5d1dd23695a1a861b3b">sacn_dmx_merger_update_universe_priority</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_update_universe_priority(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, uint8_t universe_priority)</div><div class="ttdoc">Updates a source's universe priority and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:500</div></div>
 <div class="ttc" id="agroup__sacn__dmx__merger_html_gac28b72fd6849cb6815c0ca58c2d29e65"><div class="ttname"><a href="group__sacn__dmx__merger.html#gac28b72fd6849cb6815c0ca58c2d29e65">sacn_dmx_merger_update_pap</a></div><div class="ttdeci">etcpal_error_t sacn_dmx_merger_update_pap(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</div><div class="ttdoc">Updates a source's per-address priorities (PAP) and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.c:441</div></div>
@@ -340,9 +341,10 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="comment">// Now the source has been factored into the merge results, which are printed here.</span></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>; ++i)</div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;:\n Level: &quot;</span> &lt;&lt; merged_levels[i] &lt;&lt; <span class="stringliteral">&quot;:\n PAP: &quot;</span> &lt;&lt; per_address_priorities[i] &lt;&lt; <span class="stringliteral">&quot;\n Source ID: &quot;</span></div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;:\n Level: &quot;</span> &lt;&lt; merged_levels[i] &lt;&lt; <span class="stringliteral">&quot;:\n PAP: &quot;</span> &lt;&lt; per_address_priorities[i] &lt;&lt; <span class="stringliteral">&quot;\n Source ID: &quot;</span></div>
 <div class="line">            &lt;&lt; owners[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a1aa19e03ca654b84ed0574bb4c4b5659"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a1aa19e03ca654b84ed0574bb4c4b5659">sacn::DmxMerger::UpdateLevels</a></div><div class="ttdeci">etcpal::Error UpdateLevels(sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</div><div class="ttdoc">Updates a source's levels and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:285</div></div>
 <div class="ttc" id="aclasssacn_1_1_dmx_merger_html_a6954a0af298bdb2c17829a129ce0aad6"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#a6954a0af298bdb2c17829a129ce0aad6">sacn::DmxMerger::UpdatePap</a></div><div class="ttdeci">etcpal::Error UpdatePap(sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</div><div class="ttdoc">Updates a source's per-address priorities (PAP) and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:309</div></div>
 <div class="ttc" id="aclasssacn_1_1_dmx_merger_html_ada8d157cee674178ec576caa111afca9"><div class="ttname"><a href="classsacn_1_1_dmx_merger.html#ada8d157cee674178ec576caa111afca9">sacn::DmxMerger::UpdateUniversePriority</a></div><div class="ttdeci">etcpal::Error UpdateUniversePriority(sacn_dmx_merger_source_t source, uint8_t universe_priority)</div><div class="ttdoc">Updates a source's universe priority and recalculates outputs.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:335</div></div>
@@ -363,20 +365,20 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="keywordflow">if</span> (source_state)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Do some printouts to demonstrate the fields available</span></div>
-<div class="line">  printf(<span class="stringliteral">&quot;Source data:\n&quot;</span>);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source data:\n&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot; Universe Priority: %u\n&quot;</span>, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">universe_priority</a>);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot; Universe Priority: %u\n&quot;</span>, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">universe_priority</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d">valid_level_count</a>; ++i)</div>
 <div class="line">  {</div>
-<div class="line">    printf(<span class="stringliteral">&quot; Level at slot %u: %u\n&quot;</span>, i, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a82f491441fd8ea7e0b36c867797a9ba5">levels</a>[i]);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot; Level at slot %u: %u\n&quot;</span>, i, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a82f491441fd8ea7e0b36c867797a9ba5">levels</a>[i]);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span>(source_state-&gt;address_priority_valid)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d">valid_level_count</a>; ++i)</div>
 <div class="line">    {</div>
-<div class="line">      printf(<span class="stringliteral">&quot; PAP at slot %u: %u\n&quot;</span>, i, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea">address_priority</a>[i]);</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot; PAP at slot %u: %u\n&quot;</span>, i, source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea">address_priority</a>[i]);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -395,18 +397,18 @@ $(document).ready(function(){initNavTree('using_dmx_merger.html',''); initResiza
 <div class="line"><span class="keywordflow">if</span> (source_state)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Do some printouts to demonstrate the fields available</span></div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Source data:\n Universe Priority: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">universe_priority</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Source data:\n Universe Priority: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">universe_priority</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d">valid_level_count</a>; ++i)</div>
 <div class="line">  {</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; Level at slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a82f491441fd8ea7e0b36c867797a9ba5">levels</a>[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; Level at slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a82f491441fd8ea7e0b36c867797a9ba5">levels</a>[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span>(source_state-&gt;address_priority_valid)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d">valid_level_count</a>; ++i)</div>
 <div class="line">    {</div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; PAP at slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea">address_priority</a>[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; PAP at slot &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; source_state-&gt;<a class="code" href="struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea">address_priority</a>[i] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>

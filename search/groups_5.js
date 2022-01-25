@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_20_28logging_29_1972',['log (Logging)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'(Global Namespace)']]]
+  ['inet_20_28internet_20addressing_29_5227',['inet (Internet Addressing)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__inet.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html',1,'(Global Namespace)']]]
 ];

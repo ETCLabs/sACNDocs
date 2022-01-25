@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mempool_20_28memory_20pools_29_1973',['mempool (Memory Pools)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mempool.html',1,'']]],
-  ['mutex_20_28mutexes_29_1974',['mutex (Mutexes)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__mutex.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html',1,'(Global Namespace)']]]
+  ['log_20_28logging_29_5228',['log (Logging)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'(Global Namespace)']]]
 ];

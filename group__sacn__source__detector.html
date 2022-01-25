@@ -19,7 +19,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
 <!-- MULTIVERSION_SCRIPT_SENTINEL -->
 <script type="text/javascript">
@@ -291,17 +291,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">char</span> cid_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(cid, cid_str);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) &quot;</span>, cid_str, name);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) &quot;</span>, cid_str, name);</div>
 <div class="line">    <span class="keywordflow">if</span>(sourced_universes)</div>
 <div class="line">    {</div>
-<div class="line">      printf(<span class="stringliteral">&quot;is active on these universes: &quot;</span>);</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;is active on these universes: &quot;</span>);</div>
 <div class="line">      <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; num_sourced_universes; ++i)</div>
-<div class="line">        printf(<span class="stringliteral">&quot;%d &quot;</span>, sourced_universes[i]);</div>
-<div class="line">      printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line">        <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;%d &quot;</span>, sourced_universes[i]);</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      printf(<span class="stringliteral">&quot;is not active on any universes.\n&quot;</span>);</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;is not active on any universes.\n&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -312,14 +312,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">char</span> cid_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(cid, cid_str);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) has expired.\n&quot;</span>, cid_str, name);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) has expired.\n&quot;</span>, cid_str, name);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> my_limit_exceeded(<span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Source Detector: Source/universe limit exceeded!\n&quot;</span>);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source Detector: Source/universe limit exceeded!\n&quot;</span>);</div>
 <div class="line">}</div>
+<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_ga479b00b02ab33cf757e9476ad3286336"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a></div><div class="ttdeci">bool etcpal_uuid_to_string(const EtcPalUuid *uuid, char *buf)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_gabab14207e273082491f7be2a21275092"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_UUID_STRING_BYTES</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_ga31b1febd91134668307803d573ed2f2c"><div class="ttname"><a href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a></div><div class="ttdeci">uint16_t sacn_remote_source_t</div><div class="ttdef"><b>Definition:</b> common.h:58</div></div>
