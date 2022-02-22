@@ -34,5 +34,5 @@ var searchData=
   ['unordered_5fmultiset_3139',['unordered_multiset',['https://en.cppreference.com/w/cpp/container/unordered_multiset.html',1,'std']]],
   ['unordered_5fset_3140',['unordered_set',['https://en.cppreference.com/w/cpp/container/unordered_set.html',1,'std']]],
   ['uses_5fallocator_3141',['uses_allocator',['https://en.cppreference.com/w/cpp/memory/uses_allocator.html',1,'std']]],
-  ['uuid_3142',['Uuid',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html',1,'etcpal']]]
+  ['uuid_3142',['Uuid',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_uuid.html',1,'etcpal']]]
 ];
