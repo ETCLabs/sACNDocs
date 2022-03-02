@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macaddr_2891',['MacAddr',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_mac_addr.html',1,'etcpal']]],
+  ['macaddr_2891',['MacAddr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mac_addr.html',1,'etcpal']]],
   ['make_5fsigned_2892',['make_signed',['https://en.cppreference.com/w/cpp/types/make_signed.html',1,'std']]],
   ['make_5funsigned_2893',['make_unsigned',['https://en.cppreference.com/w/cpp/types/make_unsigned.html',1,'std']]],
   ['map_2894',['map',['https://en.cppreference.com/w/cpp/container/map.html',1,'std']]],
@@ -35,7 +35,7 @@ var searchData=
   ['multimap_2923',['multimap',['https://en.cppreference.com/w/cpp/container/multimap.html',1,'std']]],
   ['multiplies_2924',['multiplies',['https://en.cppreference.com/w/cpp/utility/functional/multiplies.html',1,'std']]],
   ['multiset_2925',['multiset',['https://en.cppreference.com/w/cpp/container/multiset.html',1,'std']]],
-  ['mutex_2926',['Mutex',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_mutex.html',1,'etcpal']]],
+  ['mutex_2926',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html',1,'etcpal']]],
   ['mutex_2927',['mutex',['https://en.cppreference.com/w/cpp/thread/mutex.html',1,'std']]],
-  ['mutexguard_2928',['MutexGuard',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_mutex_guard.html',1,'etcpal']]]
+  ['mutexguard_2928',['MutexGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html',1,'etcpal']]]
 ];

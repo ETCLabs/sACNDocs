@@ -20,13 +20,13 @@ var searchData=
   ['ratio_5fnot_5fequal_2998',['ratio_not_equal',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio_not_equal.html',1,'std']]],
   ['ratio_5fsubtract_2999',['ratio_subtract',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio_subtract.html',1,'std']]],
   ['raw_5fstorage_5fiterator_3000',['raw_storage_iterator',['https://en.cppreference.com/w/cpp/memory/raw_storage_iterator.html',1,'std']]],
-  ['readguard_3001',['ReadGuard',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_read_guard.html',1,'etcpal']]],
+  ['readguard_3001',['ReadGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_read_guard.html',1,'etcpal']]],
   ['receiver_3002',['Receiver',['../classsacn_1_1_receiver.html',1,'sacn']]],
   ['receiverhandletype_3003',['ReceiverHandleType',['../classsacn_1_1detail_1_1_receiver_handle_type.html',1,'sacn::detail']]],
   ['recursive_5fmutex_3004',['recursive_mutex',['https://en.cppreference.com/w/cpp/thread/recursive_mutex.html',1,'std']]],
   ['recursive_5ftimed_5fmutex_3005',['recursive_timed_mutex',['https://en.cppreference.com/w/cpp/thread/recursive_timed_mutex.html',1,'std']]],
-  ['recursivemutex_3006',['RecursiveMutex',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_recursive_mutex.html',1,'etcpal']]],
-  ['recursivemutexguard_3007',['RecursiveMutexGuard',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_recursive_mutex_guard.html',1,'etcpal']]],
+  ['recursivemutex_3006',['RecursiveMutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_recursive_mutex.html',1,'etcpal']]],
+  ['recursivemutexguard_3007',['RecursiveMutexGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_recursive_mutex_guard.html',1,'etcpal']]],
   ['reference_3008',['reference',['https://en.cppreference.com/w/cpp/utility/bitset/reference.html',1,'std::bitset']]],
   ['reference_5fwrapper_3009',['reference_wrapper',['https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper.html',1,'std']]],
   ['regex_3010',['regex',['https://en.cppreference.com/w/cpp/regex/basic_regex.html',1,'std']]],
@@ -44,5 +44,5 @@ var searchData=
   ['result_5fof_3022',['result_of',['https://en.cppreference.com/w/cpp/types/result_of.html',1,'std']]],
   ['reverse_5fiterator_3023',['reverse_iterator',['https://en.cppreference.com/w/cpp/iterator/reverse_iterator.html',1,'std']]],
   ['runtime_5ferror_3024',['runtime_error',['https://en.cppreference.com/w/cpp/error/runtime_error.html',1,'std']]],
-  ['rwlock_3025',['RwLock',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_rw_lock.html',1,'etcpal']]]
+  ['rwlock_3025',['RwLock',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_rw_lock.html',1,'etcpal']]]
 ];

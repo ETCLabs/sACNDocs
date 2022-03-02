@@ -10,7 +10,7 @@ var searchData=
   ['bad_5foptional_5faccess_2634',['bad_optional_access',['https://en.cppreference.com/w/cpp/utility/bad_optional_access.html',1,'std']]],
   ['bad_5ftypeid_2635',['bad_typeid',['https://en.cppreference.com/w/cpp/types/bad_typeid.html',1,'std']]],
   ['bad_5fweak_5fptr_2636',['bad_weak_ptr',['https://en.cppreference.com/w/cpp/memory/bad_weak_ptr.html',1,'std']]],
-  ['badexpectedaccess_2637',['BadExpectedAccess',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_bad_expected_access.html',1,'etcpal']]],
+  ['badexpectedaccess_2637',['BadExpectedAccess',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_bad_expected_access.html',1,'etcpal']]],
   ['basic_5ffilebuf_2638',['basic_filebuf',['https://en.cppreference.com/w/cpp/io/basic_filebuf.html',1,'std']]],
   ['basic_5ffstream_2639',['basic_fstream',['https://en.cppreference.com/w/cpp/io/basic_fstream.html',1,'std']]],
   ['basic_5fifstream_2640',['basic_ifstream',['https://en.cppreference.com/w/cpp/io/basic_ifstream.html',1,'std']]],

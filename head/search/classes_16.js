@@ -21,7 +21,7 @@ var searchData=
   ['wostream_3168',['wostream',['https://en.cppreference.com/w/cpp/io/basic_ostream.html',1,'std']]],
   ['wostringstream_3169',['wostringstream',['https://en.cppreference.com/w/cpp/io/basic_ostringstream.html',1,'std']]],
   ['wregex_3170',['wregex',['https://en.cppreference.com/w/cpp/regex/basic_regex.html',1,'std']]],
-  ['writeguard_3171',['WriteGuard',['https://etclabs.github.io/EtcPalDocs/0.4.0/classetcpal_1_1_write_guard.html',1,'etcpal']]],
+  ['writeguard_3171',['WriteGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_write_guard.html',1,'etcpal']]],
   ['wsmatch_3172',['wsmatch',['https://en.cppreference.com/w/cpp/regex/match_results.html',1,'std']]],
   ['wsregex_5fiterator_3173',['wsregex_iterator',['https://en.cppreference.com/w/cpp/regex/regex_iterator.html',1,'std']]],
   ['wsregex_5ftoken_5fiterator_3174',['wsregex_token_iterator',['https://en.cppreference.com/w/cpp/regex/regex_token_iterator.html',1,'std']]],
