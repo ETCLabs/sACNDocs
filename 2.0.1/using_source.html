@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="title">Using the sACN Source API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp_ms03kyl_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpa2hgv0d7_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div>
 <div id="div_2_c" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> my_cid;</div>
+<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_uuid.html">EtcPalUuid</a> my_cid;</div>
 <div class="line"><span class="keywordtype">char</span> my_name[<a class="code" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8">SACN_SOURCE_NAME_MAX_LEN</a>];</div>
 <div class="line"><span class="comment">// Assuming my_cid and my_name are initialized by the application...</span></div>
 <div class="line"> </div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="ttc" id="agroup__sacn__source_html_ga37f43cd2ec265e3052eea6d5f1b68233"><div class="ttname"><a href="group__sacn__source.html#ga37f43cd2ec265e3052eea6d5f1b68233">sacn_source_create</a></div><div class="ttdeci">etcpal_error_t sacn_source_create(const SacnSourceConfig *config, sacn_source_t *handle)</div><div class="ttdoc">Create a new sACN source to send sACN data.</div><div class="ttdef"><b>Definition:</b> source.c:103</div></div>
 <div class="ttc" id="agroup__sacn__source_html_gacc4c9d2c77cf4126e9ac7faf297c3dd8"><div class="ttname"><a href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a></div><div class="ttdeci">int sacn_source_t</div><div class="ttdef"><b>Definition:</b> source.h:56</div></div>
 <div class="ttc" id="agroup__sacn__source_html_gaeb8a9797368aabad696c81225b4c8aaa"><div class="ttname"><a href="group__sacn__source.html#gaeb8a9797368aabad696c81225b4c8aaa">sacn_source_destroy</a></div><div class="ttdeci">void sacn_source_destroy(sacn_source_t handle)</div><div class="ttdoc">Destroy an sACN source instance.</div><div class="ttdef"><b>Definition:</b> source.c:218</div></div>
-<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
+<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
 <div class="ttc" id="astruct_sacn_source_config_html"><div class="ttname"><a href="struct_sacn_source_config.html">SacnSourceConfig</a></div><div class="ttdef"><b>Definition:</b> source.h:73</div></div>
 <div class="ttc" id="astruct_sacn_source_config_html_a4c3f7d9a58af5033f9acd8c942bf81d9"><div class="ttname"><a href="struct_sacn_source_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">SacnSourceConfig::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdef"><b>Definition:</b> source.h:77</div></div>
 <div class="ttc" id="astruct_sacn_source_config_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="struct_sacn_source_config.html#a8f8f80d37794cde9472343e4487ba3eb">SacnSourceConfig::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> source.h:79</div></div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> my_cid;</div>
+<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/classetcpal_1_1_uuid.html">etcpal::Uuid</a> my_cid;</div>
 <div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> my_name;</div>
 <div class="line"><span class="comment">// Assuming my_cid and my_name are initialized by the application...</span></div>
 <div class="line"> </div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="line"><span class="comment">// To destroy the source when you&#39;re done with it:</span></div>
 <div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Shutdown</a>();</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/0.4.1/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html"><div class="ttname"><a href="classsacn_1_1_source.html">sacn::Source</a></div><div class="ttdoc">An instance of sACN Source functionality; see Using the sACN Source API.</div><div class="ttdef"><b>Definition:</b> source.h:61</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_ab263565edc9ebf5ffd6e82a18184e4c3"><div class="ttname"><a href="classsacn_1_1_source.html#ab263565edc9ebf5ffd6e82a18184e4c3">sacn::Source::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings)</div><div class="ttdoc">Create a new sACN source to send sACN data.</div><div class="ttdef"><b>Definition:</b> source.h:299</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_ac5f038c2b480cf9ef5e19e3eba8dbaf9"><div class="ttname"><a href="classsacn_1_1_source.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">sacn::Source::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Destroy an sACN source instance.</div><div class="ttdef"><b>Definition:</b> source.h:315</div></div>
@@ -409,25 +409,25 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div id="div_6_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Unicast can be sent to one or more addresses, in addition to multicast.</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> custom_destination;  <span class="comment">// Application initializes custom_destination...</span></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> custom_destination;  <span class="comment">// Application initializes custom_destination...</span></div>
 <div class="line"><a class="code" href="group__sacn__source.html#ga2b7d3fb6a2d252eee7c051acfe97d242">sacn_source_add_unicast_destination</a>(my_handle, my_universe, &amp;custom_destination);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// You can remove a unicast destination previously added:</span></div>
 <div class="line"><a class="code" href="group__sacn__source.html#ga4ebe5d509af8c963c104f2dd96a3ac76">sacn_source_remove_unicast_destination</a>(my_handle, my_universe, &amp;custom_destination);</div>
 <div class="ttc" id="agroup__sacn__source_html_ga2b7d3fb6a2d252eee7c051acfe97d242"><div class="ttname"><a href="group__sacn__source.html#ga2b7d3fb6a2d252eee7c051acfe97d242">sacn_source_add_unicast_destination</a></div><div class="ttdeci">etcpal_error_t sacn_source_add_unicast_destination(sacn_source_t handle, uint16_t universe, const EtcPalIpAddr *dest)</div><div class="ttdoc">Add a unicast destination for a source's universe.</div><div class="ttdef"><b>Definition:</b> source.c:406</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga4ebe5d509af8c963c104f2dd96a3ac76"><div class="ttname"><a href="group__sacn__source.html#ga4ebe5d509af8c963c104f2dd96a3ac76">sacn_source_remove_unicast_destination</a></div><div class="ttdeci">void sacn_source_remove_unicast_destination(sacn_source_t handle, uint16_t universe, const EtcPalIpAddr *dest)</div><div class="ttdoc">Remove a unicast destination on a source's universe.</div><div class="ttdef"><b>Definition:</b> source.c:481</div></div>
-<div class="ttc" id="astruct_etc_pal_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></div></div>
+<div class="ttc" id="astruct_etc_pal_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Unicast can be sent to one or more addresses, in addition to multicast.</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a> custom_destination;  <span class="comment">// Application initializes custom_destination...</span></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a> custom_destination;  <span class="comment">// Application initializes custom_destination...</span></div>
 <div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454">AddUnicastDestination</a>(my_universe, custom_destination);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// You can remove a unicast destination previously added:</span></div>
 <div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a2073e5814e81bf1257c7264a1b984966">RemoveUnicastDestination</a>(my_universe, custom_destination);</div>
-<div class="ttc" id="aclassetcpal_1_1_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/0.4.1/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a2073e5814e81bf1257c7264a1b984966"><div class="ttname"><a href="classsacn_1_1_source.html#a2073e5814e81bf1257c7264a1b984966">sacn::Source::RemoveUnicastDestination</a></div><div class="ttdeci">void RemoveUnicastDestination(uint16_t universe, const etcpal::IpAddr &amp;dest)</div><div class="ttdoc">Remove a unicast destination on a universe.</div><div class="ttdef"><b>Definition:</b> source.h:475</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a5d7f1f26d1a6f5dbffca60dd08ac0454"><div class="ttname"><a href="classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454">sacn::Source::AddUnicastDestination</a></div><div class="ttdeci">etcpal::Error AddUnicastDestination(uint16_t universe, const etcpal::IpAddr &amp;dest)</div><div class="ttdoc">Add a unicast destination for a universe.</div><div class="ttdef"><b>Definition:</b> source.h:461</div></div>
 </div><!-- fragment --><p> 
@@ -442,7 +442,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 </div>
 <div id="div_7_c" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *unicast_dests;  <span class="comment">// Points to an array with DESTS_SIZE (perhaps SACN_MAX_UNICAST_DESTINATIONS) elements.</span></div>
+<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *unicast_dests;  <span class="comment">// Points to an array with DESTS_SIZE (perhaps SACN_MAX_UNICAST_DESTINATIONS) elements.</span></div>
 <div class="line"><span class="keywordtype">size_t</span> num_dests = <a class="code" href="group__sacn__source.html#ga12f792b85add6af90ba2560f287b630c">sacn_source_get_unicast_destinations</a>(handle_, my_universe, unicast_dests, DESTS_SIZE);</div>
 <div class="line"><span class="keywordflow">if</span>(num_dests &gt; DESTS_SIZE)</div>
 <div class="line">{</div>

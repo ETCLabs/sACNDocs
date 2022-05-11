@@ -18,8 +18,8 @@ var searchData=
   ['sacn_20source_20detector_5255',['sACN Source Detector',['../group__sacn__source__detector.html',1,'']]],
   ['sacn_20source_20detector_20api_5256',['sACN Source Detector API',['../group__sacn__source__detector__cpp.html',1,'']]],
   ['sacn_20source_20detector_20options_5257',['sACN Source Detector Options',['../group__sacnopts__source__detector.html',1,'']]],
-  ['sem_20_28counting_20semaphores_29_5258',['sem (Counting Semaphores)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__sem.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__sem.html',1,'(Global Namespace)']]],
-  ['signal_20_28signal_20objects_29_5259',['signal (Signal Objects)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__signal.html',1,'']]],
-  ['signal_20_28signals_29_5260',['signal (Signals)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__signal.html',1,'']]],
-  ['socket_20_28network_20socket_20interface_29_5261',['socket (Network Socket Interface)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__socket.html',1,'']]]
+  ['sem_20_28counting_20semaphores_29_5258',['sem (Counting Semaphores)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__cpp__sem.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__sem.html',1,'(Global Namespace)']]],
+  ['signal_20_28signal_20objects_29_5259',['signal (Signal Objects)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__cpp__signal.html',1,'']]],
+  ['signal_20_28signals_29_5260',['signal (Signals)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__signal.html',1,'']]],
+  ['socket_20_28network_20socket_20interface_29_5261',['socket (Network Socket Interface)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__socket.html',1,'']]]
 ];

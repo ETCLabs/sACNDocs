@@ -239,7 +239,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga3b87b4a0324b476a926c86a18eab3a1d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d">SacnMergeReceiverMergedDataCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, const <a class="el" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a> *merged_data, void *context)</td></tr>
 <tr class="memdesc:ga3b87b4a0324b476a926c86a18eab3a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a new data packet has been received and merged.  <a href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d">More...</a><br /></td></tr>
 <tr class="separator:ga3b87b4a0324b476a926c86a18eab3a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga274346790ea25827de515b93f6df2c2b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td></tr>
+<tr class="memitem:ga274346790ea25827de515b93f6df2c2b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td></tr>
 <tr class="memdesc:ga274346790ea25827de515b93f6df2c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">More...</a><br /></td></tr>
 <tr class="separator:ga274346790ea25827de515b93f6df2c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
@@ -257,34 +257,34 @@ Functions</h2></td></tr>
 <tr class="memitem:gab0d6a624f1d44008625335112788eb37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#gab0d6a624f1d44008625335112788eb37">sacn_merge_receiver_config_init</a> (<a class="el" href="struct_sacn_merge_receiver_config.html">SacnMergeReceiverConfig</a> *config)</td></tr>
 <tr class="memdesc:gab0d6a624f1d44008625335112788eb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an sACN Merge Receiver Config struct to default values.  <a href="group__sacn__merge__receiver.html#gab0d6a624f1d44008625335112788eb37">More...</a><br /></td></tr>
 <tr class="separator:gab0d6a624f1d44008625335112788eb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91ca26eea8b78eeb2b25bb003e8aa208"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga91ca26eea8b78eeb2b25bb003e8aa208">sacn_merge_receiver_create</a> (const <a class="el" href="struct_sacn_merge_receiver_config.html">SacnMergeReceiverConfig</a> *config, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> *handle, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *netint_config)</td></tr>
+<tr class="memitem:ga91ca26eea8b78eeb2b25bb003e8aa208"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga91ca26eea8b78eeb2b25bb003e8aa208">sacn_merge_receiver_create</a> (const <a class="el" href="struct_sacn_merge_receiver_config.html">SacnMergeReceiverConfig</a> *config, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> *handle, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *netint_config)</td></tr>
 <tr class="memdesc:ga91ca26eea8b78eeb2b25bb003e8aa208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new sACN Merge Receiver to listen and merge sACN data on a universe.  <a href="group__sacn__merge__receiver.html#ga91ca26eea8b78eeb2b25bb003e8aa208">More...</a><br /></td></tr>
 <tr class="separator:ga91ca26eea8b78eeb2b25bb003e8aa208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02c0879618435049e7a9bd25dbe58850"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850">sacn_merge_receiver_destroy</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle)</td></tr>
+<tr class="memitem:ga02c0879618435049e7a9bd25dbe58850"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850">sacn_merge_receiver_destroy</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle)</td></tr>
 <tr class="memdesc:ga02c0879618435049e7a9bd25dbe58850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a sACN Merge Receiver instance.  <a href="group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850">More...</a><br /></td></tr>
 <tr class="separator:ga02c0879618435049e7a9bd25dbe58850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7345c390c8b94221b481c3cd1ca37de7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7">sacn_merge_receiver_get_universe</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t *universe_id)</td></tr>
+<tr class="memitem:ga7345c390c8b94221b481c3cd1ca37de7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7">sacn_merge_receiver_get_universe</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t *universe_id)</td></tr>
 <tr class="memdesc:ga7345c390c8b94221b481c3cd1ca37de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the universe on which a sACN Merge Receiver is currently listening.  <a href="group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7">More...</a><br /></td></tr>
 <tr class="separator:ga7345c390c8b94221b481c3cd1ca37de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32dfa392c47b9f7a443e9bd563e1a974"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga32dfa392c47b9f7a443e9bd563e1a974">sacn_merge_receiver_get_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *footprint)</td></tr>
+<tr class="memitem:ga32dfa392c47b9f7a443e9bd563e1a974"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga32dfa392c47b9f7a443e9bd563e1a974">sacn_merge_receiver_get_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *footprint)</td></tr>
 <tr class="memdesc:ga32dfa392c47b9f7a443e9bd563e1a974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the footprint within the universe on which a sACN Merge Receiver is currently listening.  <a href="group__sacn__merge__receiver.html#ga32dfa392c47b9f7a443e9bd563e1a974">More...</a><br /></td></tr>
 <tr class="separator:ga32dfa392c47b9f7a443e9bd563e1a974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga821122037b6cd927facd821c11cce970"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970">sacn_merge_receiver_change_universe</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t new_universe_id)</td></tr>
+<tr class="memitem:ga821122037b6cd927facd821c11cce970"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970">sacn_merge_receiver_change_universe</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t new_universe_id)</td></tr>
 <tr class="memdesc:ga821122037b6cd927facd821c11cce970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the universe on which a sACN Merge Receiver is listening.  <a href="group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970">More...</a><br /></td></tr>
 <tr class="separator:ga821122037b6cd927facd821c11cce970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05a2a94b9c4346efa7918c7fe3031a80"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80">sacn_merge_receiver_change_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
+<tr class="memitem:ga05a2a94b9c4346efa7918c7fe3031a80"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80">sacn_merge_receiver_change_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
 <tr class="memdesc:ga05a2a94b9c4346efa7918c7fe3031a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the footprint within the universe on which an sACN receiver is listening. TODO: Not yet implemented.  <a href="group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80">More...</a><br /></td></tr>
 <tr class="separator:ga05a2a94b9c4346efa7918c7fe3031a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99f34c7a019f2f4f5f62220a505c6e47"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga99f34c7a019f2f4f5f62220a505c6e47">sacn_merge_receiver_change_universe_and_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t new_universe_id, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
+<tr class="memitem:ga99f34c7a019f2f4f5f62220a505c6e47"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga99f34c7a019f2f4f5f62220a505c6e47">sacn_merge_receiver_change_universe_and_footprint</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t new_universe_id, const <a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> *new_footprint)</td></tr>
 <tr class="memdesc:ga99f34c7a019f2f4f5f62220a505c6e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the universe and footprint on which an sACN merge receiver is listening. TODO: Not yet implemented.  <a href="group__sacn__merge__receiver.html#ga99f34c7a019f2f4f5f62220a505c6e47">More...</a><br /></td></tr>
 <tr class="separator:ga99f34c7a019f2f4f5f62220a505c6e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00e28a2333ce8cd38b0eb3e58ac5f375"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375">sacn_merge_receiver_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
+<tr class="memitem:ga00e28a2333ce8cd38b0eb3e58ac5f375"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375">sacn_merge_receiver_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga00e28a2333ce8cd38b0eb3e58ac5f375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets underlying network sockets and packet receipt state, determines network interfaces for all merge receivers.  <a href="group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375">More...</a><br /></td></tr>
 <tr class="separator:ga00e28a2333ce8cd38b0eb3e58ac5f375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0db3ceb5a812f02e2e4daa52b5797523"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga0db3ceb5a812f02e2e4daa52b5797523">sacn_merge_receiver_reset_networking_per_receiver</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, const <a class="el" href="struct_sacn_merge_receiver_netint_list.html">SacnMergeReceiverNetintList</a> *per_receiver_netint_lists, size_t num_per_receiver_netint_lists)</td></tr>
+<tr class="memitem:ga0db3ceb5a812f02e2e4daa52b5797523"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga0db3ceb5a812f02e2e4daa52b5797523">sacn_merge_receiver_reset_networking_per_receiver</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, const <a class="el" href="struct_sacn_merge_receiver_netint_list.html">SacnMergeReceiverNetintList</a> *per_receiver_netint_lists, size_t num_per_receiver_netint_lists)</td></tr>
 <tr class="memdesc:ga0db3ceb5a812f02e2e4daa52b5797523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets underlying network sockets and packet receipt state, determines network interfaces for each merge receiver.  <a href="group__sacn__merge__receiver.html#ga0db3ceb5a812f02e2e4daa52b5797523">More...</a><br /></td></tr>
 <tr class="separator:ga0db3ceb5a812f02e2e4daa52b5797523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01cecd351da958dc2fc7b55088559de8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8">sacn_merge_receiver_get_network_interfaces</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *netints, size_t netints_size)</td></tr>
+<tr class="memitem:ga01cecd351da958dc2fc7b55088559de8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8">sacn_merge_receiver_get_network_interfaces</a> (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *netints, size_t netints_size)</td></tr>
 <tr class="memdesc:ga01cecd351da958dc2fc7b55088559de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a list of a merge receiver's network interfaces.  <a href="group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8">More...</a><br /></td></tr>
 <tr class="separator:ga01cecd351da958dc2fc7b55088559de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -426,7 +426,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* SacnMergeReceiverNonDmxCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td>
+          <td class="memname">typedef void(* SacnMergeReceiverNonDmxCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -497,7 +497,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_footprint </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_footprint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -525,7 +525,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
 
 </div>
 </div>
@@ -536,7 +536,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_universe </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_universe </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -564,17 +564,17 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Universe changed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Universe changed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaeab0ae4d277d52dc56a1d78f81868c2d">kEtcPalErrExists</a>: A merge receiver already exists which is listening on the specified new universe. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaeab0ae4d277d52dc56a1d78f81868c2d">kEtcPalErrExists</a>: A merge receiver already exists which is listening on the specified new universe. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_universe_and_footprint </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_change_universe_and_footprint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -620,7 +620,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: Not yet implemented. </dd></dl>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_create </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_sacn_merge_receiver_config.html">SacnMergeReceiverConfig</a> *&#160;</td>
           <td class="paramname"><em>config</em>, </td>
@@ -684,7 +684,7 @@ Functions</h2></td></tr>
 
 <p>Create a new sACN Merge Receiver to listen and merge sACN data on a universe. </p>
 <p>An sACN merge receiver can listen on one universe at a time, and each universe can only be listened to by one merge receiver at at time.</p>
-<p>Note that a merge receiver is considered as successfully created if it is able to successfully use any of the network interfaces listed in the passed in. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
+<p>Note that a merge receiver is considered as successfully created if it is able to successfully use any of the network interfaces listed in the passed in. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the sACN Merge Receiver to be created. </td></tr>
@@ -693,21 +693,21 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Merge Receiver created successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Merge Receiver created successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided were usable by the library. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided were usable by the library. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaeab0ae4d277d52dc56a1d78f81868c2d">kEtcPalErrExists</a>: A merge receiver already exists which is listening on the specified universe. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaeab0ae4d277d52dc56a1d78f81868c2d">kEtcPalErrExists</a>: A merge receiver already exists which is listening on the specified universe. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: No room to allocate memory for this merge receiver, or maximum merge receivers reached. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: No room to allocate memory for this merge receiver, or maximum merge receivers reached. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: A network interface ID given was not found on the system. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: A network interface ID given was not found on the system. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_destroy </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_destroy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -734,13 +734,13 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Merge receiver destroyed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Merge receiver destroyed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -751,7 +751,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_get_footprint </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_get_footprint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -779,15 +779,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Footprint retrieved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Footprint retrieved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td>
           <td class="paramname"><em>netints</em>, </td>
         </tr>
         <tr>
@@ -843,7 +843,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_get_universe </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_get_universe </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -870,15 +870,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Universe retrieved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Universe retrieved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle does not correspond to a valid merge receiver. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_reset_networking </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_reset_networking </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *&#160;</td>
           <td class="paramname"><em>sys_netint_config</em></td><td>)</td>
@@ -901,20 +901,20 @@ Functions</h2></td></tr>
 <p>Resets underlying network sockets and packet receipt state, determines network interfaces for all merge receivers. </p>
 <p>This is typically used when the application detects that the list of networking interfaces has changed. This changes the list of system interfaces the receiver (and by extension, merge receiver) API will be limited to (the list passed into <a class="el" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize the sACN library.">sacn_init()</a>, if any, is overridden for the receiver API, but not the other APIs). Then all receivers (including merge receivers) will be configured to use all of those interfaces.</p>
 <p>After this call completes, a new sampling period occurs, and then underlying updates will generate new calls to <a class="el" href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d" title="Notify that a new data packet has been received and merged.">SacnMergeReceiverMergedDataCallback()</a>. If this call fails, the caller must call sacn_merge_receiver_destroy for each merge receiver, because the merge receivers may be in an invalid state.</p>
-<p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
+<p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the receiver API will be limited to, and the status codes are filled in. If NULL, the receiver API is allowed to use all available system interfaces. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Networking reset successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Networking reset successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided were usable by the library. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided were usable by the library. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
@@ -925,7 +925,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_reset_networking_per_receiver </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_merge_receiver_reset_networking_per_receiver </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *&#160;</td>
           <td class="paramname"><em>sys_netint_config</em>, </td>
@@ -953,7 +953,7 @@ Functions</h2></td></tr>
 <p>Resets underlying network sockets and packet receipt state, determines network interfaces for each merge receiver. </p>
 <p>This is typically used when the application detects that the list of networking interfaces has changed. This changes the list of system interfaces the receiver (and by extension, merge receiver) API will be limited to (the list passed into <a class="el" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize the sACN library.">sacn_init()</a>, if any, is overridden for the receiver API, but not the other APIs). Then the network interfaces are specified for each merge receiver.</p>
 <p>After this call completes, a new sampling period occurs, and then underlying updates will generate new calls to <a class="el" href="group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d" title="Notify that a new data packet has been received and merged.">SacnMergeReceiverMergedDataCallback()</a>. If this call fails, the caller must call sacn_merge_receiver_destroy for each merge receiver, because the merge receivers may be in an invalid state.</p>
-<p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in for each merge receiver. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work for a merge receiver.</p>
+<p>Note that the networking reset is considered successful if it is able to successfully use any of the network interfaces passed in for each merge receiver. This will only return <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> if none of the interfaces work for a merge receiver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the receiver API will be limited to, and the status codes are filled in. If NULL, the receiver API is allowed to use all available system interfaces. </td></tr>
@@ -962,15 +962,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Networking reset successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Networking reset successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided for a merge receiver were usable by the library. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: None of the network interfaces provided for a merge receiver were usable by the library. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>

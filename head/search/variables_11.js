@@ -9,7 +9,7 @@ var searchData=
   ['universe_5fpriority_5103',['universe_priority',['../struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44',1,'SacnDmxMergerConfig::universe_priority()'],['../struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4',1,'SacnDmxMergerSource::universe_priority()'],['../structsacn_1_1_dmx_merger_1_1_settings.html#ae39fb52602dd51d0696c8973b0d5cd44',1,'sacn::DmxMerger::Settings::universe_priority()']]],
   ['universes_5fper_5fsource_5fmax_5104',['universes_per_source_max',['../struct_sacn_source_detector_config.html#a56cecc9bab9fb8d197ce21bbbc036e06',1,'SacnSourceDetectorConfig::universes_per_source_max()'],['../structsacn_1_1_source_detector_1_1_settings.html#a56cecc9bab9fb8d197ce21bbbc036e06',1,'sacn::SourceDetector::Settings::universes_per_source_max()']]],
   ['use_5fpap_5105',['use_pap',['../struct_sacn_merge_receiver_config.html#af4536f740a72ae5788afacd0db91da30',1,'SacnMergeReceiverConfig::use_pap()'],['../structsacn_1_1_merge_receiver_1_1_settings.html#af4536f740a72ae5788afacd0db91da30',1,'sacn::MergeReceiver::Settings::use_pap()']]],
-  ['user_5fdata_5106',['user_data',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9',1,'EtcPalPollEvent']]],
+  ['user_5fdata_5106',['user_data',['https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9',1,'EtcPalPollEvent']]],
   ['using_5funiverse_5fpriority_5107',['using_universe_priority',['../struct_sacn_dmx_merger_source.html#a61802cbe97a2c1aa336df0282b2bb07f',1,'SacnDmxMergerSource']]],
-  ['utc_5foffset_5108',['utc_offset',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_timestamp.html#a0d5ceb6295477b5931bf54c002e36fe9',1,'EtcPalLogTimestamp']]]
+  ['utc_5foffset_5108',['utc_offset',['https://etclabs.github.io/EtcPalDocs/0.4.1/struct_etc_pal_log_timestamp.html#a0d5ceb6295477b5931bf54c002e36fe9',1,'EtcPalLogTimestamp']]]
 ];
