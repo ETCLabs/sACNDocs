@@ -1,11 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"cpp/string/byte/atoi.html":[5,0,1,31],
-"cpp/string/byte/isalnum.html":[5,0,1,198],
-"cpp/string/byte/isalpha.html":[5,0,1,199],
-"cpp/string/byte/isblank.html":[5,0,1,200],
-"cpp/string/byte/iscntrl.html":[5,0,1,201],
-"cpp/string/byte/isdigit.html":[5,0,1,202],
 "cpp/string/byte/isgraph.html":[5,0,1,204],
 "cpp/string/byte/islower.html":[5,0,1,206],
 "cpp/string/byte/isprint.html":[5,0,1,209],
@@ -142,10 +136,10 @@ var NAVTREEINDEX2 =
 "cpp/utility/program/raise.html":[5,0,1,326],
 "cpp/utility/program/signal.html":[5,0,1,382],
 "cpp/utility/program/system.html":[5,0,1,436],
-"cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,0],
-"cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,1],
 "cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,2],
+"cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,0],
 "cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,3],
+"cpp/utility/rel_ops/operator_cmp.html":[5,0,1,2,1],
 "cpp/utility/tuple/forward_as_tuple.html":[5,0,1,143],
 "cpp/utility/tuple/make_tuple.html":[5,0,1,254],
 "cpp/utility/tuple/tie.html":[5,0,1,443],
@@ -249,5 +243,11 @@ var NAVTREEINDEX2 =
 "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef":[4,0,26],
 "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef":[7,0,0,0,1,10],
 "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86":[4,0,13],
-"group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86":[7,0,0,0,7,0]
+"group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86":[7,0,0,0,7,0],
+"group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4":[4,0,22],
+"group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4":[7,0,0,0,1,6],
+"group__s_a_c_n.html#gae1d8849ebfa2d27cec433e54f7f7308d":[4,0,18],
+"group__s_a_c_n.html#gae1d8849ebfa2d27cec433e54f7f7308d":[7,0,0,0,7,5],
+"group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4":[7,0,0,0,1,8,0],
+"group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4":[4,0,24,0]
 };
