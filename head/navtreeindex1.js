@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"cpp/error/rethrow_exception.html":[5,0,1,346],
 "cpp/error/rethrow_if_nested.html":[5,0,1,347],
 "cpp/error/set_terminate.html":[5,0,1,367],
 "cpp/error/set_unexpected.html":[5,0,1,368],
@@ -67,11 +68,11 @@ var NAVTREEINDEX1 =
 "cpp/io/c/vfscanf.html":[5,0,1,475],
 "cpp/io/c/vfscanf.html":[5,0,1,479],
 "cpp/io/c/vfscanf.html":[5,0,1,482],
-"cpp/io/c/vfwprintf.html":[5,0,1,476],
 "cpp/io/c/vfwprintf.html":[5,0,1,483],
+"cpp/io/c/vfwprintf.html":[5,0,1,476],
 "cpp/io/c/vfwprintf.html":[5,0,1,485],
-"cpp/io/c/vfwscanf.html":[5,0,1,484],
 "cpp/io/c/vfwscanf.html":[5,0,1,477],
+"cpp/io/c/vfwscanf.html":[5,0,1,484],
 "cpp/io/c/vfwscanf.html":[5,0,1,486],
 "cpp/io/manip/boolalpha.html":[5,0,1,60],
 "cpp/io/manip/boolalpha.html":[5,0,1,292],
@@ -243,11 +244,10 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/stol.html":[5,0,1,399],
 "cpp/string/basic_string/stol.html":[5,0,1,400],
 "cpp/string/basic_string/stol.html":[5,0,1,402],
-"cpp/string/basic_string/stoul.html":[5,0,1,404],
 "cpp/string/basic_string/stoul.html":[5,0,1,403],
+"cpp/string/basic_string/stoul.html":[5,0,1,404],
 "cpp/string/basic_string/to_string.html":[5,0,1,447],
 "cpp/string/basic_string/to_wstring.html":[5,0,1,448],
 "cpp/string/byte/atof.html":[5,0,1,28],
-"cpp/string/byte/atoi.html":[5,0,1,30],
-"cpp/string/byte/atoi.html":[5,0,1,29]
+"cpp/string/byte/atoi.html":[5,0,1,30]
 };

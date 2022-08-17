@@ -9,6 +9,7 @@ var classsacn_1_1_merge_receiver =
     [ "ChangeUniverseAndFootprint", "classsacn_1_1_merge_receiver.html#ac097835505ac503b525bcaa566cf506d", null ],
     [ "GetFootprint", "classsacn_1_1_merge_receiver.html#aaa4d2448f1e1f8b23c095742738df97c", null ],
     [ "GetNetworkInterfaces", "classsacn_1_1_merge_receiver.html#a227c8165a2af9b39ac6d53cbea18d121", null ],
+    [ "GetSource", "classsacn_1_1_merge_receiver.html#aae0754f40a65bc30573808504455cfe5", null ],
     [ "GetUniverse", "classsacn_1_1_merge_receiver.html#a3d205f22d3d18f81585fd8d07ea21647", null ],
     [ "handle", "classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7", null ],
     [ "operator=", "classsacn_1_1_merge_receiver.html#af2404624e492d4bbedd10461caf85353", null ],

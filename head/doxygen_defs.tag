@@ -342,6 +342,7 @@
     <class kind="struct">SacnMergeReceiverCallbacks</class>
     <class kind="struct">SacnMergeReceiverConfig</class>
     <class kind="struct">SacnMergeReceiverNetintList</class>
+    <class kind="struct">SacnMergeReceiverSource</class>
     <member kind="define">
       <type>#define</type>
       <name>SACN_MERGE_RECEIVER_INVALID</name>
@@ -410,6 +411,13 @@
       <name>SacnMergeReceiverNetintList</name>
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga2003a3a906229f10aaf77ad600ea1ad1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnMergeReceiverSource</type>
+      <name>SacnMergeReceiverSource</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>gac417e4563acfbf4bdfe8f2490c7e88c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -489,6 +497,13 @@
       <anchor>ga01cecd351da958dc2fc7b55088559de8</anchor>
       <arglist>(sacn_merge_receiver_t handle, EtcPalMcastNetintId *netints, size_t netints_size)</arglist>
     </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
+      <name>sacn_merge_receiver_get_source</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>ga807515578955a36b0a33de53a1d5bd9c</anchor>
+      <arglist>(sacn_merge_receiver_t merge_receiver_handle, sacn_remote_source_t source_handle, SacnMergeReceiverSource *source_info)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>merge_receiver.h</name>
@@ -501,6 +516,7 @@
     <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
     <class kind="struct">sacn::MergeReceiver::Settings</class>
     <class kind="struct">sacn::MergeReceiver::NetintList</class>
+    <class kind="struct">sacn::MergeReceiver::Source</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
@@ -1554,6 +1570,7 @@
     <class kind="struct">sacn::MergeReceiver::NetintList</class>
     <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
     <class kind="struct">sacn::MergeReceiver::Settings</class>
+    <class kind="struct">sacn::MergeReceiver::Source</class>
     <member kind="typedef">
       <type>etcpal::OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, SACN_MERGE_RECEIVER_INVALID &gt;</type>
       <name>Handle</name>
@@ -1637,6 +1654,13 @@
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
       <anchor>a227c8165a2af9b39ac6d53cbea18d121</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal::Expected&lt; Source &gt;</type>
+      <name>GetSource</name>
+      <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
+      <anchor>aae0754f40a65bc30573808504455cfe5</anchor>
+      <arglist>(sacn_remote_source_t source_handle)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
@@ -2210,6 +2234,38 @@
       <name>num_netints</name>
       <anchorfile>struct_sacn_merge_receiver_netint_list.html</anchorfile>
       <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SacnMergeReceiverSource</name>
+    <filename>struct_sacn_merge_receiver_source.html</filename>
+    <member kind="variable">
+      <type>sacn_remote_source_t</type>
+      <name>handle</name>
+      <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
+      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>EtcPalUuid</type>
+      <name>cid</name>
+      <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
+      <anchor>a7e3669a12853b82f7d2b7488bb174956</anchor>
+      <arglist>[SACN_SOURCE_NAME_MAX_LEN]</arglist>
+    </member>
+    <member kind="variable">
+      <type>EtcPalSockAddr</type>
+      <name>addr</name>
+      <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
+      <anchor>a730cebe0970ed6300a5f832363e65852</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2968,6 +3024,38 @@
       <name>ip_supported</name>
       <anchorfile>structsacn_1_1_source_detector_1_1_settings.html</anchorfile>
       <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sacn::MergeReceiver::Source</name>
+    <filename>structsacn_1_1_merge_receiver_1_1_source.html</filename>
+    <member kind="variable">
+      <type>sacn_remote_source_t</type>
+      <name>handle</name>
+      <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
+      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>etcpal::Uuid</type>
+      <name>cid</name>
+      <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
+      <anchor>a9b45b3e13bd9167aab02e17e08916231</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>etcpal::SockAddr</type>
+      <name>addr</name>
+      <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
+      <anchor>a6089008b110eefe551612f1d3d9073bc</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3744,6 +3832,7 @@
     <class kind="struct">SacnMergeReceiverCallbacks</class>
     <class kind="struct">SacnMergeReceiverConfig</class>
     <class kind="struct">SacnMergeReceiverNetintList</class>
+    <class kind="struct">SacnMergeReceiverSource</class>
     <member kind="define">
       <type>#define</type>
       <name>SACN_MERGE_RECEIVER_INVALID</name>
@@ -3812,6 +3901,13 @@
       <name>SacnMergeReceiverNetintList</name>
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga2003a3a906229f10aaf77ad600ea1ad1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnMergeReceiverSource</type>
+      <name>SacnMergeReceiverSource</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>gac417e4563acfbf4bdfe8f2490c7e88c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -3890,6 +3986,13 @@
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga01cecd351da958dc2fc7b55088559de8</anchor>
       <arglist>(sacn_merge_receiver_t handle, EtcPalMcastNetintId *netints, size_t netints_size)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
+      <name>sacn_merge_receiver_get_source</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>ga807515578955a36b0a33de53a1d5bd9c</anchor>
+      <arglist>(sacn_merge_receiver_t merge_receiver_handle, sacn_remote_source_t source_handle, SacnMergeReceiverSource *source_info)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -4545,6 +4648,7 @@
     <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
     <class kind="struct">sacn::MergeReceiver::Settings</class>
     <class kind="struct">sacn::MergeReceiver::NetintList</class>
+    <class kind="struct">sacn::MergeReceiver::Source</class>
   </compound>
   <compound kind="group">
     <name>sacn_receiver_cpp</name>
@@ -4827,67 +4931,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpg2i2ogx9_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpbm26dutu_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpg2i2ogx9_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpbm26dutu_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpg2i2ogx9_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpbm26dutu_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpg2i2ogx9_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpbm26dutu_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpg2i2ogx9_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpbm26dutu_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpg2i2ogx9_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpbm26dutu_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpg2i2ogx9_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpbm26dutu_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpg2i2ogx9_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpbm26dutu_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpg2i2ogx9_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpbm26dutu_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpg2i2ogx9_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpbm26dutu_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpg2i2ogx9_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpbm26dutu_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

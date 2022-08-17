@@ -26,6 +26,12 @@ var group__sacn__merge__receiver =
       [ "netints", "struct_sacn_merge_receiver_netint_list.html#add0da5313d4b1d06a67bda5508b848e1", null ],
       [ "num_netints", "struct_sacn_merge_receiver_netint_list.html#a6ddc029bb8aba3ead075508554592445", null ]
     ] ],
+    [ "SacnMergeReceiverSource", "struct_sacn_merge_receiver_source.html", [
+      [ "addr", "struct_sacn_merge_receiver_source.html#a730cebe0970ed6300a5f832363e65852", null ],
+      [ "cid", "struct_sacn_merge_receiver_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "handle", "struct_sacn_merge_receiver_source.html#abd2d36f012ca716885c43720824b4a75", null ],
+      [ "name", "struct_sacn_merge_receiver_source.html#a7e3669a12853b82f7d2b7488bb174956", null ]
+    ] ],
     [ "SACN_MERGE_RECEIVER_CONFIG_DEFAULT_INIT", "group__sacn__merge__receiver.html#gaeb89255ebd3592d97fe76ed6203913ae", null ],
     [ "SACN_MERGE_RECEIVER_INVALID", "group__sacn__merge__receiver.html#gae86374c92bace3a7d2bef9656da6048a", null ],
     [ "sacn_merge_receiver_t", "group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61", null ],
@@ -34,6 +40,7 @@ var group__sacn__merge__receiver =
     [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d", null ],
     [ "SacnMergeReceiverNetintList", "group__sacn__merge__receiver.html#ga2003a3a906229f10aaf77ad600ea1ad1", null ],
     [ "SacnMergeReceiverNonDmxCallback", "group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b", null ],
+    [ "SacnMergeReceiverSource", "group__sacn__merge__receiver.html#gac417e4563acfbf4bdfe8f2490c7e88c9", null ],
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],
     [ "SacnRecvMergedData", "group__sacn__merge__receiver.html#gafb05eeea1bbac03fd2058d197e2c5846", null ],
     [ "sacn_merge_receiver_change_footprint", "group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80", null ],
@@ -44,6 +51,7 @@ var group__sacn__merge__receiver =
     [ "sacn_merge_receiver_destroy", "group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850", null ],
     [ "sacn_merge_receiver_get_footprint", "group__sacn__merge__receiver.html#ga32dfa392c47b9f7a443e9bd563e1a974", null ],
     [ "sacn_merge_receiver_get_network_interfaces", "group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8", null ],
+    [ "sacn_merge_receiver_get_source", "group__sacn__merge__receiver.html#ga807515578955a36b0a33de53a1d5bd9c", null ],
     [ "sacn_merge_receiver_get_universe", "group__sacn__merge__receiver.html#ga7345c390c8b94221b481c3cd1ca37de7", null ],
     [ "sacn_merge_receiver_reset_networking", "group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375", null ],
     [ "sacn_merge_receiver_reset_networking_per_receiver", "group__sacn__merge__receiver.html#ga0db3ceb5a812f02e2e4daa52b5797523", null ]
