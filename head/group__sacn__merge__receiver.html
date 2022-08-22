@@ -244,6 +244,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga274346790ea25827de515b93f6df2c2b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> *universe_data, void *context)</td></tr>
 <tr class="memdesc:ga274346790ea25827de515b93f6df2c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">More...</a><br /></td></tr>
 <tr class="separator:ga274346790ea25827de515b93f6df2c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28f0d4119155beb794d94ef052ffe0c3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3">SacnMergeReceiverSourcesLostCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> *lost_sources, size_t num_lost_sources, void *context)</td></tr>
+<tr class="memdesc:ga28f0d4119155beb794d94ef052ffe0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that one or more sources have entered a source loss state.  <a href="group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3">More...</a><br /></td></tr>
+<tr class="separator:ga28f0d4119155beb794d94ef052ffe0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6bca38b03e63aa5a2e272449d23662ce"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce">SacnMergeReceiverSamplingPeriodStartedCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
+<tr class="memdesc:ga6bca38b03e63aa5a2e272449d23662ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has begun.  <a href="group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce">More...</a><br /></td></tr>
+<tr class="separator:ga6bca38b03e63aa5a2e272449d23662ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga361d2c730abd2b490d99017f6ebb3739"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">SacnMergeReceiverSamplingPeriodEndedCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
+<tr class="memdesc:ga361d2c730abd2b490d99017f6ebb3739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has ended.  <a href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">More...</a><br /></td></tr>
+<tr class="separator:ga361d2c730abd2b490d99017f6ebb3739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
 <tr class="memdesc:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">More...</a><br /></td></tr>
 <tr class="separator:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,6 +465,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga361d2c730abd2b490d99017f6ebb3739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga361d2c730abd2b490d99017f6ebb3739">&#9670;&nbsp;</a></span>SacnMergeReceiverSamplingPeriodEndedCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnMergeReceiverSamplingPeriodEndedCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that a merge receiver's sampling period has ended. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the sampling period ended. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6bca38b03e63aa5a2e272449d23662ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6bca38b03e63aa5a2e272449d23662ce">&#9670;&nbsp;</a></span>SacnMergeReceiverSamplingPeriodStartedCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnMergeReceiverSamplingPeriodStartedCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that a merge receiver's sampling period has begun. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the sampling period started. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gac417e4563acfbf4bdfe8f2490c7e88c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac417e4563acfbf4bdfe8f2490c7e88c9">&#9670;&nbsp;</a></span>SacnMergeReceiverSource</h2>
 
@@ -489,6 +546,33 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the source limit has been exceeded. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga28f0d4119155beb794d94ef052ffe0c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28f0d4119155beb794d94ef052ffe0c3">&#9670;&nbsp;</a></span>SacnMergeReceiverSourcesLostCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnMergeReceiverSourcesLostCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> *lost_sources, size_t num_lost_sources, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that one or more sources have entered a source loss state. </p>
+<p>This could be due to timeout or explicit termination. Sources are grouped using an algorithm designed to prevent level jumps when multiple sources are lost simultaneously. See <a class="el" href="source_loss_behavior.html">Source Loss Behavior</a> for more information.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which sources were lost. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lost_sources</td><td>Array of structs describing the source or sources that have been lost. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_lost_sources</td><td>Size of the lost_sources array. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
   </table>
   </dd>

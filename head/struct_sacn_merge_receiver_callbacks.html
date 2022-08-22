@@ -212,6 +212,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:a1a4295429c025c42d5a54b646f03f62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7f60e7140c695d729d045abca2ba73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b">SacnMergeReceiverNonDmxCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#ace7f60e7140c695d729d045abca2ba73">universe_non_dmx</a></td></tr>
 <tr class="separator:ace7f60e7140c695d729d045abca2ba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26d911447fbf0732edb4c48e6cdd043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3">SacnMergeReceiverSourcesLostCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#ad26d911447fbf0732edb4c48e6cdd043">sources_lost</a></td></tr>
+<tr class="separator:ad26d911447fbf0732edb4c48e6cdd043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25de9ebaf3bbe659df822828f4011b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce">SacnMergeReceiverSamplingPeriodStartedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a25de9ebaf3bbe659df822828f4011b42">sampling_period_started</a></td></tr>
+<tr class="separator:a25de9ebaf3bbe659df822828f4011b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b543dcbe601f5b9ae53cdb1564fa3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">SacnMergeReceiverSamplingPeriodEndedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#ab5b543dcbe601f5b9ae53cdb1564fa3d">sampling_period_ended</a></td></tr>
+<tr class="separator:ab5b543dcbe601f5b9ae53cdb1564fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e01e068c71bd55dd31d6aeb5483992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992">source_limit_exceeded</a></td></tr>
 <tr class="separator:a29e01e068c71bd55dd31d6aeb5483992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_merge_receiver_callbacks.html#a67b5953b36108e04f24abe803bc1fe44">callback_context</a></td></tr>
@@ -235,6 +241,36 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ab5b543dcbe601f5b9ae53cdb1564fa3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b543dcbe601f5b9ae53cdb1564fa3d">&#9670;&nbsp;</a></span>sampling_period_ended</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">SacnMergeReceiverSamplingPeriodEndedCallback</a> sampling_period_ended</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional </p>
+
+</div>
+</div>
+<a id="a25de9ebaf3bbe659df822828f4011b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25de9ebaf3bbe659df822828f4011b42">&#9670;&nbsp;</a></span>sampling_period_started</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce">SacnMergeReceiverSamplingPeriodStartedCallback</a> sampling_period_started</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional </p>
+
+</div>
+</div>
 <a id="a29e01e068c71bd55dd31d6aeb5483992"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e01e068c71bd55dd31d6aeb5483992">&#9670;&nbsp;</a></span>source_limit_exceeded</h2>
 
@@ -243,6 +279,21 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a> source_limit_exceeded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional </p>
+
+</div>
+</div>
+<a id="ad26d911447fbf0732edb4c48e6cdd043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26d911447fbf0732edb4c48e6cdd043">&#9670;&nbsp;</a></span>sources_lost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3">SacnMergeReceiverSourcesLostCallback</a> sources_lost</td>
         </tr>
       </table>
 </div><div class="memdoc">

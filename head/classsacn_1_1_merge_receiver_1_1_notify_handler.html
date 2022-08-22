@@ -217,6 +217,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad516f76e02d5606d65074ad213f206a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">HandleNonDmxData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> &amp;universe_data)=0</td></tr>
 <tr class="memdesc:ad516f76e02d5606d65074ad213f206a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">More...</a><br /></td></tr>
 <tr class="separator:ad516f76e02d5606d65074ad213f206a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d27b76147fba2f4d4ed5219d614246"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">HandleSourcesLost</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> &gt; &amp;lost_sources)</td></tr>
+<tr class="memdesc:ae2d27b76147fba2f4d4ed5219d614246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that one or more sources have entered a source loss state.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">More...</a><br /></td></tr>
+<tr class="separator:ae2d27b76147fba2f4d4ed5219d614246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd14450c1a43ab482bebaf5a1dcb0cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
+<tr class="memdesc:a9cd14450c1a43ab482bebaf5a1dcb0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has begun.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">More...</a><br /></td></tr>
+<tr class="separator:a9cd14450c1a43ab482bebaf5a1dcb0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02397cc6bf09294666b38883dbdf6a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
+<tr class="memdesc:af02397cc6bf09294666b38883dbdf6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has ended.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">More...</a><br /></td></tr>
+<tr class="separator:af02397cc6bf09294666b38883dbdf6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab517496e89eb88b7ee7fa383558f725b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
 <tr class="memdesc:ab517496e89eb88b7ee7fa383558f725b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">More...</a><br /></td></tr>
 <tr class="separator:ab517496e89eb88b7ee7fa383558f725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +345,96 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af02397cc6bf09294666b38883dbdf6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02397cc6bf09294666b38883dbdf6a5">&#9670;&nbsp;</a></span>HandleSamplingPeriodEnded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleSamplingPeriodEnded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>universe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify that a merge receiver's sampling period has ended. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
+    <tr><td class="paramname">universe</td><td>The universe the merge receiver is monitoring. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9cd14450c1a43ab482bebaf5a1dcb0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd14450c1a43ab482bebaf5a1dcb0cc">&#9670;&nbsp;</a></span>HandleSamplingPeriodStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleSamplingPeriodStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>universe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify that a merge receiver's sampling period has begun. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
+    <tr><td class="paramname">universe</td><td>The universe the merge receiver is monitoring. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab517496e89eb88b7ee7fa383558f725b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab517496e89eb88b7ee7fa383558f725b">&#9670;&nbsp;</a></span>HandleSourceLimitExceeded()</h2>
 
@@ -376,6 +475,58 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2d27b76147fba2f4d4ed5219d614246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d27b76147fba2f4d4ed5219d614246">&#9670;&nbsp;</a></span>HandleSourcesLost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleSourcesLost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>universe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lost_sources</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify that one or more sources have entered a source loss state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
+    <tr><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramname">lost_sources</td><td>Vector of structs describing the source or sources that have been lost. </td></tr>
   </table>
   </dd>
 </dl>

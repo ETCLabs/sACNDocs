@@ -23,7 +23,10 @@ var group__sacn__merge__receiver__cpp =
       [ "~NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9e07a73282d628b72531a124236be7da", null ],
       [ "HandleMergedData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc", null ],
       [ "HandleNonDmxData", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2", null ],
-      [ "HandleSourceLimitExceeded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ]
+      [ "HandleSamplingPeriodEnded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5", null ],
+      [ "HandleSamplingPeriodStarted", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc", null ],
+      [ "HandleSourceLimitExceeded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ],
+      [ "HandleSourcesLost", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246", null ]
     ] ],
     [ "Settings", "structsacn_1_1_merge_receiver_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_merge_receiver_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],

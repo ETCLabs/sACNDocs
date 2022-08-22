@@ -9,7 +9,10 @@ var group__sacn__merge__receiver =
     ] ],
     [ "SacnMergeReceiverCallbacks", "struct_sacn_merge_receiver_callbacks.html", [
       [ "callback_context", "struct_sacn_merge_receiver_callbacks.html#a67b5953b36108e04f24abe803bc1fe44", null ],
+      [ "sampling_period_ended", "struct_sacn_merge_receiver_callbacks.html#ab5b543dcbe601f5b9ae53cdb1564fa3d", null ],
+      [ "sampling_period_started", "struct_sacn_merge_receiver_callbacks.html#a25de9ebaf3bbe659df822828f4011b42", null ],
       [ "source_limit_exceeded", "struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992", null ],
+      [ "sources_lost", "struct_sacn_merge_receiver_callbacks.html#ad26d911447fbf0732edb4c48e6cdd043", null ],
       [ "universe_data", "struct_sacn_merge_receiver_callbacks.html#a1a4295429c025c42d5a54b646f03f62b", null ],
       [ "universe_non_dmx", "struct_sacn_merge_receiver_callbacks.html#ace7f60e7140c695d729d045abca2ba73", null ]
     ] ],
@@ -40,8 +43,11 @@ var group__sacn__merge__receiver =
     [ "SacnMergeReceiverMergedDataCallback", "group__sacn__merge__receiver.html#ga3b87b4a0324b476a926c86a18eab3a1d", null ],
     [ "SacnMergeReceiverNetintList", "group__sacn__merge__receiver.html#ga2003a3a906229f10aaf77ad600ea1ad1", null ],
     [ "SacnMergeReceiverNonDmxCallback", "group__sacn__merge__receiver.html#ga274346790ea25827de515b93f6df2c2b", null ],
+    [ "SacnMergeReceiverSamplingPeriodEndedCallback", "group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739", null ],
+    [ "SacnMergeReceiverSamplingPeriodStartedCallback", "group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce", null ],
     [ "SacnMergeReceiverSource", "group__sacn__merge__receiver.html#gac417e4563acfbf4bdfe8f2490c7e88c9", null ],
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],
+    [ "SacnMergeReceiverSourcesLostCallback", "group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3", null ],
     [ "SacnRecvMergedData", "group__sacn__merge__receiver.html#gafb05eeea1bbac03fd2058d197e2c5846", null ],
     [ "sacn_merge_receiver_change_footprint", "group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80", null ],
     [ "sacn_merge_receiver_change_universe", "group__sacn__merge__receiver.html#ga821122037b6cd927facd821c11cce970", null ],

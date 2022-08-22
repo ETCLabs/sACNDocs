@@ -66,7 +66,7 @@ var searchData=
   ['mt19937_5f64_4122',['mt19937_64',['https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine/mersenne_twister_engine.html',1,'std::mt19937_64']]],
   ['multimap_4123',['multimap',['https://en.cppreference.com/w/cpp/container/multimap/multimap.html',1,'std::multimap']]],
   ['multiset_4124',['multiset',['https://en.cppreference.com/w/cpp/container/multiset/multiset.html',1,'std::multiset']]],
-  ['mutex_4125',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
-  ['mutex_4126',['mutex',['https://en.cppreference.com/w/cpp/thread/mutex/mutex.html',1,'std::mutex::mutex()'],['https://en.cppreference.com/w/cpp/thread/shared_lock/mutex.html',1,'std::shared_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/unique_lock/mutex.html',1,'std::unique_lock::mutex()']]],
+  ['mutex_4125',['mutex',['https://en.cppreference.com/w/cpp/thread/mutex/mutex.html',1,'std::mutex::mutex()'],['https://en.cppreference.com/w/cpp/thread/shared_lock/mutex.html',1,'std::shared_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/unique_lock/mutex.html',1,'std::unique_lock::mutex()']]],
+  ['mutex_4126',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
   ['mutexguard_4127',['MutexGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['sampling_5fperiod_5fended_5110',['sampling_period_ended',['../struct_sacn_receiver_callbacks.html#a3c827e69c782db7012f8d20f9a25bf53',1,'SacnReceiverCallbacks']]],
-  ['sampling_5fperiod_5fstarted_5111',['sampling_period_started',['../struct_sacn_receiver_callbacks.html#a401d2be24423a263467e2b7b09f68b0b',1,'SacnReceiverCallbacks']]],
+  ['sampling_5fperiod_5fended_5110',['sampling_period_ended',['../struct_sacn_receiver_callbacks.html#a3c827e69c782db7012f8d20f9a25bf53',1,'SacnReceiverCallbacks::sampling_period_ended()'],['../struct_sacn_merge_receiver_callbacks.html#ab5b543dcbe601f5b9ae53cdb1564fa3d',1,'SacnMergeReceiverCallbacks::sampling_period_ended()']]],
+  ['sampling_5fperiod_5fstarted_5111',['sampling_period_started',['../struct_sacn_receiver_callbacks.html#a401d2be24423a263467e2b7b09f68b0b',1,'SacnReceiverCallbacks::sampling_period_started()'],['../struct_sacn_merge_receiver_callbacks.html#a25de9ebaf3bbe659df822828f4011b42',1,'SacnMergeReceiverCallbacks::sampling_period_started()']]],
   ['scope_5fid_5112',['scope_id',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html#a77c3e8275263425c8924ad010b38fae7',1,'EtcPalIpAddr']]],
   ['second_5113',['second',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_timestamp.html#a7ab95bf164c7490d2855a7efcea6784a',1,'EtcPalLogTimestamp']]],
   ['send_5fpreview_5114',['send_preview',['../struct_sacn_source_universe_config.html#a5c7913b52f7d575e1cedacbd6601b047',1,'SacnSourceUniverseConfig::send_preview()'],['../structsacn_1_1_source_1_1_universe_settings.html#a5c7913b52f7d575e1cedacbd6601b047',1,'sacn::Source::UniverseSettings::send_preview()']]],
@@ -15,7 +15,7 @@ var searchData=
   ['source_5flimit_5fexceeded_5122',['source_limit_exceeded',['../struct_sacn_merge_receiver_callbacks.html#a29e01e068c71bd55dd31d6aeb5483992',1,'SacnMergeReceiverCallbacks::source_limit_exceeded()'],['../struct_sacn_receiver_callbacks.html#addfb88eea24f335ebbfc61590a5dffd3',1,'SacnReceiverCallbacks::source_limit_exceeded()']]],
   ['source_5fpap_5flost_5123',['source_pap_lost',['../struct_sacn_receiver_callbacks.html#ae587c65553885a5286a270d7bca267dc',1,'SacnReceiverCallbacks']]],
   ['source_5fupdated_5124',['source_updated',['../struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45',1,'SacnSourceDetectorCallbacks']]],
-  ['sources_5flost_5125',['sources_lost',['../struct_sacn_receiver_callbacks.html#a4aa47bcca0d30a2c28463942cac94be5',1,'SacnReceiverCallbacks']]],
+  ['sources_5flost_5125',['sources_lost',['../struct_sacn_merge_receiver_callbacks.html#ad26d911447fbf0732edb4c48e6cdd043',1,'SacnMergeReceiverCallbacks::sources_lost()'],['../struct_sacn_receiver_callbacks.html#a4aa47bcca0d30a2c28463942cac94be5',1,'SacnReceiverCallbacks::sources_lost()']]],
   ['stack_5fsize_5126',['stack_size',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'EtcPalThreadParams']]],
   ['start_5faddress_5127',['start_address',['../struct_sacn_recv_universe_subrange.html#ace16bae043b38ea02cb084b12bcbf646',1,'SacnRecvUniverseSubrange']]],
   ['start_5fcode_5128',['start_code',['../struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab',1,'SacnRecvUniverseData']]],
