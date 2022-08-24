@@ -216,12 +216,29 @@ Data Fields</h2></td></tr>
 <tr class="separator:a538119b446f2e353678608bd05ad4db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade95d8642c07e44ecacc13f358ede54d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_merged_data.html#ade95d8642c07e44ecacc13f358ede54d">owners</a></td></tr>
 <tr class="separator:ade95d8642c07e44ecacc13f358ede54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067998056b2591fd39a6ab1247edf94b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_merged_data.html#a067998056b2591fd39a6ab1247edf94b">active_sources</a></td></tr>
+<tr class="separator:a067998056b2591fd39a6ab1247edf94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f445f896ce37297dbcd575006fdcb6c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_recv_merged_data.html#a6f445f896ce37297dbcd575006fdcb6c">num_active_sources</a></td></tr>
 <tr class="separator:a6f445f896ce37297dbcd575006fdcb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Newly updated merged data within the configured footprint. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a067998056b2591fd39a6ab1247edf94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067998056b2591fd39a6ab1247edf94b">&#9670;&nbsp;</a></span>active_sources</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>* active_sources</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The handles of all sources considered to be active on the current universe. This buffer is owned by the library. </p>
+
+</div>
+</div>
 <a id="a538119b446f2e353678608bd05ad4db2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a538119b446f2e353678608bd05ad4db2">&#9670;&nbsp;</a></span>levels</h2>
 
@@ -248,7 +265,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The current number of sources considered to be active on the current universe. </p>
+<p>The current number of sources considered to be active on the current universe (and thus the size of active_sources). </p>
 
 </div>
 </div>
