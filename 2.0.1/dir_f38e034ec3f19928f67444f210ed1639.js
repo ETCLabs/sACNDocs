@@ -1,4 +1,0 @@
-var dir_f38e034ec3f19928f67444f210ed1639 =
-[
-    [ "sacn", "dir_ad7f857c303732b24213622e5e1c741d.html", "dir_ad7f857c303732b24213622e5e1c741d" ]
-];
