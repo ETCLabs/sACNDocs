@@ -1,6 +1,8 @@
 var opts_8h =
 [
     [ "SACN_ASSERT", "group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921", null ],
+    [ "SACN_DMX_MERGER_DEFAULT_MAX_MERGERS", "group__sacnopts__dmx__merger.html#ga2701910b53a3f1fa34c7d3d33c7ebe3b", null ],
+    [ "SACN_DMX_MERGER_MAX_MERGERS", "group__sacnopts__dmx__merger.html#ga7d15f54f43af8434b4967746f1282fb1", null ],
     [ "SACN_DMX_MERGER_MAX_MERGERS", "group__sacnopts__dmx__merger.html#ga7d15f54f43af8434b4967746f1282fb1", null ],
     [ "SACN_DMX_MERGER_MAX_SLOTS", "group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f", null ],
     [ "SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER", "group__sacnopts__dmx__merger.html#gaaeaa9701ec2b290ddfb3b31d8463dca4", null ],
@@ -12,6 +14,7 @@ var opts_8h =
     [ "SACN_MAX_NETINTS", "group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81", null ],
     [ "SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE", "group__sacnopts__send.html#ga53a3e7e498368c3311403912d7c01515", null ],
     [ "SACN_MERGE_RECEIVER_ENABLE", "group__sacnopts__merge__receiver.html#gacb8513985c683aac79b8ead43d84b5f0", null ],
+    [ "SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER", "group__sacnopts__merge__receiver.html#ga2e082ccf74be5a3b106b8623f5eaa65d", null ],
     [ "SACN_RECEIVER_LIMIT_BIND", "group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638", null ],
     [ "SACN_RECEIVER_MAX_FOOTPRINT", "group__sacnopts__receiver.html#gaf0e0364237fe1e26c348fdd53bb5976f", null ],
     [ "SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE", "group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e", null ],

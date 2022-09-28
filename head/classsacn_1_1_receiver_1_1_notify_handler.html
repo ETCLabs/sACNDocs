@@ -268,6 +268,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a receiver's sampling period has ended. </p>
+<p>All sources that were included in this sampling period can officially be used in the merge result for the universe. If there was a networking reset during this sampling period, another sampling period may have been scheduled, in which case this will be immediately followed by a sampling period started notification.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>The receiver's handle. </td></tr>
@@ -313,6 +314,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a receiver's sampling period has begun. </p>
+<p>If this sampling period was due to a networking reset, some sources may not be included in it. See the universe data callback to determine if a source is included or not.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>The receiver's handle. </td></tr>

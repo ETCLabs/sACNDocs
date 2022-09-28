@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['buf_4991',['buf',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html#a5bc5fa69bee375df074734a2c4858604',1,'EtcPalMsgHdr']]],
-  ['buflen_4992',['buflen',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html#ad6994903b3c19997ffcfdccb4431d308',1,'EtcPalMsgHdr']]]
+  ['buf_4992',['buf',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html#a5bc5fa69bee375df074734a2c4858604',1,'EtcPalMsgHdr']]],
+  ['buflen_4993',['buflen',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html#ad6994903b3c19997ffcfdccb4431d308',1,'EtcPalMsgHdr']]]
 ];

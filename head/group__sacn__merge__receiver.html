@@ -405,14 +405,15 @@ Functions</h2></td></tr>
 
 <p>Notify that a new data packet has been received and merged. </p>
 <p>This callback will be called in multiple ways:</p><ol type="1">
-<li>When a new non-preview data packet or per-address priority packet is received from the sACN Receiver module, it is immediately and synchronously passed to the DMX Merger. If the sampling period has not ended, the merged result is not passed to this callback until the sampling period ends. Otherwise, it is immediately and synchronously passed to this callback.</li>
-<li>When a sACN source is no longer sending non-preview data or per-address priority packets, the lost source callback from the sACN Receiver module will be passed to the merger, after which the merged result is passed to this callback pending the sampling period.</li>
+<li>When a new non-preview data packet or per-address priority packet is received from the sACN Receiver module, it is immediately and synchronously passed to a DMX Merger. If the sampling period has not ended for the source, the merged result is not passed to this callback until the sampling period ends. Otherwise, it is immediately and synchronously passed to this callback.</li>
+<li>When a sACN source is no longer sending non-preview data or per-address priority packets, the lost source callback from the sACN Receiver module will be passed to a merger, after which the merged result is passed to this callback pending the sampling period.</li>
 </ol>
+<p>After a networking reset, some of the sources on the universe may not be included in the resulting sampling period. Therefore, expect this to continue to be called during said sampling period.</p>
 <p>This callback should be processed quickly, since it will interfere with the receipt and processing of other sACN packets on the universe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>The handle to the merge receiver instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">merged_data</td><td>The merged data (and relevant information about that data), starting from the first slot of the currently configured footprint. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">merged_data</td><td>The merged data (and relevant information about that data), starting from the first slot of the currently configured footprint. Only sources that are not currently part of a sampling period are part of the merged result. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
   </table>
   </dd>
@@ -478,6 +479,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a merge receiver's sampling period has ended. </p>
+<p>All sources that were included in this sampling period will officially be included in future merged data notifications. If there was a networking reset during this sampling period, another sampling period may have been scheduled, in which case this will be immediately followed by a sampling period started notification.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the sampling period ended. </td></tr>
@@ -502,6 +504,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a merge receiver's sampling period has begun. </p>
+<p>If this sampling period was due to a networking reset, some sources may not be included in it. The sources that are not part of the sampling period will continue to be included in merged data notifications.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the sampling period started. </td></tr>
