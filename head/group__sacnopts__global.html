@@ -200,7 +200,8 @@ $(document).ready(function(){initNavTree('group__sacnopts__global.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Global Options<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a> &raquo; <a class="el" href="group__sacnopts.html">sACN Configuration Options</a></div></div>  </div>
 </div><!--header-->
@@ -218,8 +219,11 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga739093ac67975234540c307629ac8280">SACN_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;sACN: &quot;</td></tr>
 <tr class="memdesc:ga739093ac67975234540c307629ac8280"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the sACN library. <br /></td></tr>
 <tr class="separator:ga739093ac67975234540c307629ac8280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a66b273b21d3c30e4531a590a480d2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">SACN_ASSERT_VERIFY</a>(exp)&#160;&#160;&#160;((exp) ? true : sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__))</td></tr>
+<tr class="memdesc:ga5a66b273b21d3c30e4531a590a480d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The assertion handler used by the sACN library.  <a href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">More...</a><br /></td></tr>
+<tr class="separator:ga5a66b273b21d3c30e4531a590a480d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd4f61db43336221d5947896ef0f2921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921">SACN_ASSERT</a>(expr)&#160;&#160;&#160;assert(expr)</td></tr>
-<tr class="memdesc:gabd4f61db43336221d5947896ef0f2921"><td class="mdescLeft">&#160;</td><td class="mdescRight">The debug assert used by the sACN library.  <a href="group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921">More...</a><br /></td></tr>
+<tr class="memdesc:gabd4f61db43336221d5947896ef0f2921"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower-level debug assert used by the sACN library.  <a href="group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921">More...</a><br /></td></tr>
 <tr class="separator:gabd4f61db43336221d5947896ef0f2921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59ee3abb2f4eb1554d7be219a9c8028b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b">SACN_ETC_PRIORITY_EXTENSION</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ga59ee3abb2f4eb1554d7be219a9c8028b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ETC's per-address priority extension to sACN.  <a href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b">More...</a><br /></td></tr>
@@ -230,6 +234,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga2dd2edc6a9d13618baaf6d02b4d86e81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81">SACN_MAX_NETINTS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:ga2dd2edc6a9d13618baaf6d02b4d86e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces that can used by the sACN library.  <a href="group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81">More...</a><br /></td></tr>
 <tr class="separator:ga2dd2edc6a9d13618baaf6d02b4d86e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gad4259643c29ff35c310475e2ca95ce3a"><td class="memItemLeft" align="right" valign="top"><a id="gad4259643c29ff35c310475e2ca95ce3a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sacn_assert_verify_fail</b> (const char *exp, const char *file, const char *func, const int line)</td></tr>
+<tr class="separator:gad4259643c29ff35c310475e2ca95ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Options that apply to both <a class="el" href="group__sacn__source.html">sACN Source</a> and <a class="el" href="group__sacn__receiver.html">sACN Receiver</a>. </p>
@@ -250,8 +260,30 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The debug assert used by the sACN library. </p>
+<p>The lower-level debug assert used by the sACN library. </p>
+<p>This is the assertion that gets called by <a class="el" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c" title="The assertion handler used by the sACN library.">SACN_ASSERT_VERIFY</a> on failure. Redefine this to retain the logging done by the default <a class="el" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c" title="The assertion handler used by the sACN library.">SACN_ASSERT_VERIFY</a> macro.</p>
 <p>By default, just uses the C library assert. If redefining this, it must be redefined as a macro taking a single argument (the assertion expression). </p>
+
+</div>
+</div>
+<a id="ga5a66b273b21d3c30e4531a590a480d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a66b273b21d3c30e4531a590a480d2c">&#9670;&nbsp;</a></span>SACN_ASSERT_VERIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_ASSERT_VERIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">exp</td><td>)</td>
+          <td>&#160;&#160;&#160;((exp) ? true : sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The assertion handler used by the sACN library. </p>
+<p>By default, evaluates to true on success, or false on failure (additionally asserting and logging). If redefining this, it must be redefined as a macro taking a single argument (the assertion expression). </p>
 
 </div>
 </div>

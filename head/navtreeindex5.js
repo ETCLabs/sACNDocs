@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"struct_sacn_source_universe_netint_list.html#aee044b8551b82b1058427bbb17e74528":[4,0,3,2,0],
+"structsacn_1_1_dmx_merger_1_1_settings.html":[4,1,1,1],
+"structsacn_1_1_dmx_merger_1_1_settings.html#a22fb1d51b3d5315e1cd17f387e1abc77":[4,1,1,1,1],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb":[4,1,1,1,0],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a65f1e6db75de6e20f9df99807d14fe19":[4,1,1,1,3],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a6b8790b29687764423319cc2b8f24c30":[4,1,1,1,5],
