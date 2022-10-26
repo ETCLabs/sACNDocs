@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="title">Using the sACN Receiver API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp7i8i68l2_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp6fga2yju_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line"><a class="code" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> my_netints[NUM_MY_NETINTS];</div>
 <div class="line"><span class="comment">// Assuming my_netints and NUM_MY_NETINTS are initialized by the application...</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config;</div>
+<div class="line"><a class="code" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config = SACN_NETINT_CONFIG_DEFAULT_INIT;</div>
 <div class="line">netint_config.<a class="code" href="struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1">netints</a> = my_netints;</div>
 <div class="line">netint_config.<a class="code" href="struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445">num_netints</a> = NUM_MY_NETINTS;</div>
 <div class="line"> </div>
@@ -294,12 +294,12 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line"><a class="code" href="classsacn_1_1_receiver.html">sacn::Receiver</a> receiver; <span class="comment">// Instantiate a receiver</span></div>
 <div class="line"> </div>
 <div class="line">MyNotifyHandler my_notify_handler;</div>
-<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Startup</a>(config, my_notify_handler);</div>
+<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2">Startup</a>(config, my_notify_handler);</div>
 <div class="line"><span class="comment">// Or do this if Startup is being called within the NotifyHandler-derived class:</span></div>
-<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Startup</a>(config, *<span class="keyword">this</span>);</div>
+<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2">Startup</a>(config, *<span class="keyword">this</span>);</div>
 <div class="line"><span class="comment">// Or do this to specify custom interfaces for the receiver to use:</span></div>
 <div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnMcastInterface&gt;</a> my_netints;  <span class="comment">// Assuming my_netints is initialized by the application...</span></div>
-<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Startup</a>(config, my_notify_handler, my_netints);</div>
+<div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2">Startup</a>(config, my_notify_handler, my_netints);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the receiver when you&#39;re done with it:</span></div>
 <div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Shutdown</a>();</div>
@@ -312,8 +312,8 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="ttc" id="aclasssacn_1_1_receiver_1_1_notify_handler_html_af02397cc6bf09294666b38883dbdf6a5"><div class="ttname"><a href="classsacn_1_1_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">sacn::Receiver::NotifyHandler::HandleSamplingPeriodEnded</a></div><div class="ttdeci">virtual void HandleSamplingPeriodEnded(Handle handle, uint16_t universe)</div><div class="ttdoc">Notify that a receiver's sampling period has ended.</div><div class="ttdef"><b>Definition:</b> receiver.h:138</div></div>
 <div class="ttc" id="aclasssacn_1_1_receiver_1_1_notify_handler_html_afc6fd518860704ac4b1f58d5a24f6672"><div class="ttname"><a href="classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672">sacn::Receiver::NotifyHandler::HandleSourcePapLost</a></div><div class="ttdeci">virtual void HandleSourcePapLost(Handle handle, uint16_t universe, const SacnRemoteSource &amp;source)</div><div class="ttdoc">Notify that a source has stopped transmission of per-address priority packets.</div><div class="ttdef"><b>Definition:</b> receiver.h:150</div></div>
 <div class="ttc" id="aclasssacn_1_1_receiver_html"><div class="ttname"><a href="classsacn_1_1_receiver.html">sacn::Receiver</a></div><div class="ttdoc">An instance of sACN Receiver functionality; see Using the sACN Receiver API.</div><div class="ttdef"><b>Definition:</b> receiver.h:62</div></div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_ab8a65d7188fcd0074fd757a450a79100"><div class="ttname"><a href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">sacn::Receiver::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings, NotifyHandler &amp;notify_handler)</div><div class="ttdoc">Start listening for sACN data on a universe.</div><div class="ttdef"><b>Definition:</b> receiver.h:372</div></div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_ac5f038c2b480cf9ef5e19e3eba8dbaf9"><div class="ttname"><a href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">sacn::Receiver::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Stop listening for sACN data on a universe.</div><div class="ttdef"><b>Definition:</b> receiver.h:433</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_a1fa0e47dc34289f2cffabdfc69c216a2"><div class="ttname"><a href="classsacn_1_1_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2">sacn::Receiver::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings, NotifyHandler &amp;notify_handler, McastMode mcast_mode)</div><div class="ttdoc">Start listening for sACN data on a universe.</div><div class="ttdef"><b>Definition:</b> receiver.h:392</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_ac5f038c2b480cf9ef5e19e3eba8dbaf9"><div class="ttname"><a href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">sacn::Receiver::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Stop listening for sACN data on a universe.</div><div class="ttdef"><b>Definition:</b> receiver.h:467</div></div>
 <div class="ttc" id="astruct_sacn_recv_universe_data_html"><div class="ttname"><a href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a></div><div class="ttdef"><b>Definition:</b> receiver.h:89</div></div>
 <div class="ttc" id="astruct_sacn_remote_source_html"><div class="ttname"><a href="struct_sacn_remote_source.html">SacnRemoteSource</a></div><div class="ttdef"><b>Definition:</b> receiver.h:127</div></div>
 <div class="ttc" id="astructsacn_1_1_receiver_1_1_settings_html"><div class="ttname"><a href="structsacn_1_1_receiver_1_1_settings.html">sacn::Receiver::Settings</a></div><div class="ttdoc">A set of configuration settings that a receiver needs to initialize.</div><div class="ttdef"><b>Definition:</b> receiver.h:175</div></div>
@@ -351,8 +351,8 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line">  uint16_t new_universe = *result + 1;</div>
 <div class="line">  receiver.<a class="code" href="classsacn_1_1_receiver.html#aa94ae64c11fbb22db3e21fba1e85cc64">ChangeUniverse</a>(new_universe);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_a3d205f22d3d18f81585fd8d07ea21647"><div class="ttname"><a href="classsacn_1_1_receiver.html#a3d205f22d3d18f81585fd8d07ea21647">sacn::Receiver::GetUniverse</a></div><div class="ttdeci">etcpal::Expected&lt; uint16_t &gt; GetUniverse() const</div><div class="ttdoc">Get the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:444</div></div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_aa94ae64c11fbb22db3e21fba1e85cc64"><div class="ttname"><a href="classsacn_1_1_receiver.html#aa94ae64c11fbb22db3e21fba1e85cc64">sacn::Receiver::ChangeUniverse</a></div><div class="ttdeci">etcpal::Error ChangeUniverse(uint16_t new_universe_id)</div><div class="ttdoc">Change the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:488</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_a3d205f22d3d18f81585fd8d07ea21647"><div class="ttname"><a href="classsacn_1_1_receiver.html#a3d205f22d3d18f81585fd8d07ea21647">sacn::Receiver::GetUniverse</a></div><div class="ttdeci">etcpal::Expected&lt; uint16_t &gt; GetUniverse() const</div><div class="ttdoc">Get the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:478</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_aa94ae64c11fbb22db3e21fba1e85cc64"><div class="ttname"><a href="classsacn_1_1_receiver.html#aa94ae64c11fbb22db3e21fba1e85cc64">sacn::Receiver::ChangeUniverse</a></div><div class="ttdeci">etcpal::Error ChangeUniverse(uint16_t new_universe_id)</div><div class="ttdoc">Change the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:522</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -406,9 +406,9 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line">  uint16_t new_universe = 100u;</div>
 <div class="line">  receiver.<a class="code" href="classsacn_1_1_receiver.html#ac097835505ac503b525bcaa566cf506d">ChangeUniverseAndFootprint</a>(new_universe, new_footprint);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_a6d46635ac84bcb47ff0d01bcafe4ef91"><div class="ttname"><a href="classsacn_1_1_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91">sacn::Receiver::ChangeFootprint</a></div><div class="ttdeci">etcpal::Error ChangeFootprint(const SacnRecvUniverseSubrange &amp;new_footprint)</div><div class="ttdoc">Change the footprint within the universe this receiver is listening to. TODO: Not yet implemented.</div><div class="ttdef"><b>Definition:</b> receiver.h:503</div></div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_aaa4d2448f1e1f8b23c095742738df97c"><div class="ttname"><a href="classsacn_1_1_receiver.html#aaa4d2448f1e1f8b23c095742738df97c">sacn::Receiver::GetFootprint</a></div><div class="ttdeci">etcpal::Expected&lt; SacnRecvUniverseSubrange &gt; GetFootprint() const</div><div class="ttdoc">Get the footprint within the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:461</div></div>
-<div class="ttc" id="aclasssacn_1_1_receiver_html_ac097835505ac503b525bcaa566cf506d"><div class="ttname"><a href="classsacn_1_1_receiver.html#ac097835505ac503b525bcaa566cf506d">sacn::Receiver::ChangeUniverseAndFootprint</a></div><div class="ttdeci">etcpal::Error ChangeUniverseAndFootprint(uint16_t new_universe_id, const SacnRecvUniverseSubrange &amp;new_footprint)</div><div class="ttdoc">Change the universe and footprint this receiver is listening to. TODO: Not yet implemented.</div><div class="ttdef"><b>Definition:</b> receiver.h:519</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_a6d46635ac84bcb47ff0d01bcafe4ef91"><div class="ttname"><a href="classsacn_1_1_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91">sacn::Receiver::ChangeFootprint</a></div><div class="ttdeci">etcpal::Error ChangeFootprint(const SacnRecvUniverseSubrange &amp;new_footprint)</div><div class="ttdoc">Change the footprint within the universe this receiver is listening to. TODO: Not yet implemented.</div><div class="ttdef"><b>Definition:</b> receiver.h:537</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_aaa4d2448f1e1f8b23c095742738df97c"><div class="ttname"><a href="classsacn_1_1_receiver.html#aaa4d2448f1e1f8b23c095742738df97c">sacn::Receiver::GetFootprint</a></div><div class="ttdeci">etcpal::Expected&lt; SacnRecvUniverseSubrange &gt; GetFootprint() const</div><div class="ttdoc">Get the footprint within the universe this receiver is listening to.</div><div class="ttdef"><b>Definition:</b> receiver.h:495</div></div>
+<div class="ttc" id="aclasssacn_1_1_receiver_html_ac097835505ac503b525bcaa566cf506d"><div class="ttname"><a href="classsacn_1_1_receiver.html#ac097835505ac503b525bcaa566cf506d">sacn::Receiver::ChangeUniverseAndFootprint</a></div><div class="ttdeci">etcpal::Error ChangeUniverseAndFootprint(uint16_t new_universe_id, const SacnRecvUniverseSubrange &amp;new_footprint)</div><div class="ttdoc">Change the universe and footprint this receiver is listening to. TODO: Not yet implemented.</div><div class="ttdef"><b>Definition:</b> receiver.h:553</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>

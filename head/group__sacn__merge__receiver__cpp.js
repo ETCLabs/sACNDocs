@@ -16,7 +16,7 @@ var group__sacn__merge__receiver__cpp =
       [ "operator=", "classsacn_1_1_merge_receiver.html#af2404624e492d4bbedd10461caf85353", null ],
       [ "operator=", "classsacn_1_1_merge_receiver.html#a7778785bf8c7ee8aaf1708c6c188cced", null ],
       [ "Shutdown", "classsacn_1_1_merge_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
-      [ "Startup", "classsacn_1_1_merge_receiver.html#ab8a65d7188fcd0074fd757a450a79100", null ],
+      [ "Startup", "classsacn_1_1_merge_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2", null ],
       [ "Startup", "classsacn_1_1_merge_receiver.html#abb65535d2f1ed30a79014d81eb7f6807", null ]
     ] ],
     [ "NotifyHandler", "classsacn_1_1_merge_receiver_1_1_notify_handler.html", [
@@ -40,9 +40,11 @@ var group__sacn__merge__receiver__cpp =
     ] ],
     [ "NetintList", "structsacn_1_1_merge_receiver_1_1_netint_list.html", [
       [ "NetintList", "structsacn_1_1_merge_receiver_1_1_netint_list.html#aab5d1e8b9c2879521f59b7a50388e1a3", null ],
-      [ "NetintList", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a93563df2f1849147e16b043b35eec5f8", null ],
+      [ "NetintList", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a8d90a29c2e9f8926b9b3ff64458392d2", null ],
+      [ "NetintList", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a7f4b990c2355dccdf25025a56358b6fd", null ],
       [ "handle", "structsacn_1_1_merge_receiver_1_1_netint_list.html#aba7e88ef8eda8612d97729978383ba05", null ],
-      [ "netints", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ]
+      [ "netints", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ],
+      [ "no_netints", "structsacn_1_1_merge_receiver_1_1_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ]
     ] ],
     [ "Source", "structsacn_1_1_merge_receiver_1_1_source.html", [
       [ "addr", "structsacn_1_1_merge_receiver_1_1_source.html#a6089008b110eefe551612f1d3d9073bc", null ],

@@ -15,6 +15,6 @@ var classsacn_1_1_merge_receiver =
     [ "operator=", "classsacn_1_1_merge_receiver.html#af2404624e492d4bbedd10461caf85353", null ],
     [ "operator=", "classsacn_1_1_merge_receiver.html#a7778785bf8c7ee8aaf1708c6c188cced", null ],
     [ "Shutdown", "classsacn_1_1_merge_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
-    [ "Startup", "classsacn_1_1_merge_receiver.html#ab8a65d7188fcd0074fd757a450a79100", null ],
+    [ "Startup", "classsacn_1_1_merge_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2", null ],
     [ "Startup", "classsacn_1_1_merge_receiver.html#abb65535d2f1ed30a79014d81eb7f6807", null ]
 ];

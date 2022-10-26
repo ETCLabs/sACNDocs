@@ -1,6 +1,7 @@
 var common_8h =
 [
     [ "DMX_ADDRESS_COUNT", "group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb", null ],
+    [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
     [ "SACN_REMOTE_SOURCE_INVALID", "group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956", null ],
     [ "SACN_SOURCE_NAME_MAX_LEN", "group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8", null ],
     [ "SACN_STARTCODE_DMX", "group__s_a_c_n.html#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a", null ],

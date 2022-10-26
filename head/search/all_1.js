@@ -58,7 +58,7 @@ var searchData=
   ['addressof_56',['addressof',['https://en.cppreference.com/w/cpp/memory/addressof.html',1,'std']]],
   ['addsource_57',['AddSource',['../classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce',1,'sacn::DmxMerger']]],
   ['addunicastdestination_58',['AddUnicastDestination',['../classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454',1,'sacn::Source']]],
-  ['adduniverse_59',['AddUniverse',['../classsacn_1_1_source.html#acde56409812c209c488836f19cf53662',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings, std::vector&lt; SacnMcastInterface &gt; &amp;netints)'],['../classsacn_1_1_source.html#ad899234878a1c955c1cc66a4f097902e',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings)']]],
+  ['adduniverse_59',['AddUniverse',['../classsacn_1_1_source.html#acde56409812c209c488836f19cf53662',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings, std::vector&lt; SacnMcastInterface &gt; &amp;netints)'],['../classsacn_1_1_source.html#a62069c900842c7ca322bd7ed4b587800',1,'sacn::Source::AddUniverse(const UniverseSettings &amp;settings, McastMode mcast_mode)']]],
   ['adjacent_5fdifference_60',['adjacent_difference',['https://en.cppreference.com/w/cpp/algorithm/adjacent_difference.html',1,'std']]],
   ['adjacent_5ffind_61',['adjacent_find',['https://en.cppreference.com/w/cpp/algorithm/adjacent_find.html',1,'std']]],
   ['adopt_5flock_5ft_62',['adopt_lock_t',['https://en.cppreference.com/w/cpp/thread/lock_tag_t.html',1,'std']]],

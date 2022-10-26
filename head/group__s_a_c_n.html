@@ -255,6 +255,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92ab22221d9dedb5b22978e6c14c6349"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349">SACN_STARTCODE_PRIORITY</a>&#160;&#160;&#160;0xddu</td></tr>
 <tr class="separator:ga92ab22221d9dedb5b22978e6c14c6349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ee0954838bc60d3e04d7a54692533fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_NETINT_CONFIG_DEFAULT_INIT</b></td></tr>
+<tr class="separator:ga3ee0954838bc60d3e04d7a54692533fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -324,6 +326,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The number of addresses in a DMX universe. </p>
 
+</div>
+</div>
+<a id="ga3ee0954838bc60d3e04d7a54692533fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ee0954838bc60d3e04d7a54692533fd">&#9670;&nbsp;</a></span>SACN_NETINT_CONFIG_DEFAULT_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_NETINT_CONFIG_DEFAULT_INIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  {                                     \</div>
+<div class="line">    NULL, 0, <span class="keyword">false</span>                      \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ga4579b31d1f4e1ecff0ecd8214c551956"></a>
@@ -704,7 +723,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the library will be limited to, and the status codes are filled in. If NULL, the library is allowed to use all available system interfaces. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the library will be limited to (with the added option of not allowing any interfaces to be used), and the status codes are filled in. If NULL, the library is allowed to use all available system interfaces. </td></tr>
   </table>
   </dd>
 </dl>

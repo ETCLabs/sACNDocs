@@ -6,7 +6,7 @@ var group__sacn__source__cpp =
       [ "Source", "classsacn_1_1_source.html#ade9699a755d9e894dd62439e18869a23", null ],
       [ "Source", "classsacn_1_1_source.html#ab3745517fb270270e41c41f0938dc278", null ],
       [ "AddUnicastDestination", "classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454", null ],
-      [ "AddUniverse", "classsacn_1_1_source.html#ad899234878a1c955c1cc66a4f097902e", null ],
+      [ "AddUniverse", "classsacn_1_1_source.html#a62069c900842c7ca322bd7ed4b587800", null ],
       [ "AddUniverse", "classsacn_1_1_source.html#acde56409812c209c488836f19cf53662", null ],
       [ "ChangeName", "classsacn_1_1_source.html#aa33e199741640a65c41cc19d18b4b6f0", null ],
       [ "ChangePreviewFlag", "classsacn_1_1_source.html#a386b243f62f7cc246de825add2af3161", null ],
@@ -53,10 +53,11 @@ var group__sacn__source__cpp =
     ] ],
     [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html", [
       [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html#a73644ddd63df91014c177680f2336e47", null ],
-      [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html#a830547cfb51426350144edd9c028bc14", null ],
+      [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html#ad95505f4cce0aa335224a5680ca309f4", null ],
       [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html#aa0cef0ea55a0e9bc9d8a2c5ecd16ec31", null ],
       [ "handle", "structsacn_1_1_source_1_1_universe_netint_list.html#aee044b8551b82b1058427bbb17e74528", null ],
       [ "netints", "structsacn_1_1_source_1_1_universe_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ],
+      [ "no_netints", "structsacn_1_1_source_1_1_universe_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
       [ "universe", "structsacn_1_1_source_1_1_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
     ] ]
 ];
