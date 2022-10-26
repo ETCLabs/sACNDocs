@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global_20options_5286',['Global Options',['../group__sacnopts__global.html',1,'']]]
+  ['global_20options_5292',['Global Options',['../group__sacnopts__global.html',1,'']]]
 ];

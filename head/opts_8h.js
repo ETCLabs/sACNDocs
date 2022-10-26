@@ -14,7 +14,7 @@ var opts_8h =
     [ "SACN_LOOPBACK", "group__sacnopts__global.html#ga6ae6b1e22f87a5c2e49aefbc95a97256", null ],
     [ "SACN_MAX_NETINTS", "group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81", null ],
     [ "SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE", "group__sacnopts__send.html#ga53a3e7e498368c3311403912d7c01515", null ],
-    [ "SACN_MERGE_RECEIVER_ENABLE", "group__sacnopts__merge__receiver.html#gacb8513985c683aac79b8ead43d84b5f0", null ],
+    [ "SACN_MERGE_RECEIVER_ENABLE_IN_STATIC_MEMORY_MODE", "group__sacnopts__merge__receiver.html#gaedd4882cf4778846d5e3e244fea9c916", null ],
     [ "SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER", "group__sacnopts__merge__receiver.html#ga2e082ccf74be5a3b106b8623f5eaa65d", null ],
     [ "SACN_RECEIVER_LIMIT_BIND", "group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638", null ],
     [ "SACN_RECEIVER_MAX_FOOTPRINT", "group__sacnopts__receiver.html#gaf0e0364237fe1e26c348fdd53bb5976f", null ],
