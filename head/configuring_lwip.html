@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('configuring_lwip.html',''); initResiza
 <div class="title">Configuring lwIP for compatibility with sACN </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp6fga2yju_docs_pages_configuring_lwip"></a> Lightweight IP (lwIP) is a lightweight embedded TCP/IP stack. When including sACN in a lwIP project, the following lwIP configuration options are required:</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpxvrin4a8_docs_pages_configuring_lwip"></a> Lightweight IP (lwIP) is a lightweight embedded TCP/IP stack. When including sACN in a lwIP project, the following lwIP configuration options are required:</p>
 <ul>
 <li><b>Required options</b><ul>
 <li><code>LWIP_IPV4=1</code>: sACN devices are required to support IPv4.</li>
@@ -211,10 +211,12 @@ $(document).ready(function(){initNavTree('configuring_lwip.html',''); initResiza
 <li><code>LWIP_SOCKET=1</code>: EtcPal uses the lwIP sockets API which requires this.</li>
 <li><code>SO_REUSE=1</code>: Allows sACN multicast reception to work properly.</li>
 <li><code>SO_REUSE_RXTOALL=1</code>: Allows sACN multicast reception to work properly.</li>
-<li><code>LWIP_IGMP=1</code>: Allows sACN to play nicely with multicast network infrastructure. </li>
+<li><code>LWIP_IGMP=1</code>: Allows sACN to play nicely with multicast network infrastructure.</li>
+<li><code>LWIP_NETBUF_RECVINFO=1</code>: Allows sACN multicast reception to work properly.</li>
 </ul>
 </li>
 </ul>
+<p>Note that, on lwIP, multicast reception is currently only supported on IPv4 interfaces. IPv6 support will eventually be added, at which point this text will be updated to indicate the lwIP version required. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
