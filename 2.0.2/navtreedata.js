@@ -69,8 +69,8 @@ var NAVTREEINDEX =
 "cpp/error/throw_with_nested.html",
 "cpp/string/byte/isdigit.html",
 "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4",
-"group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21",
-"structsacn_1_1_merge_receiver_1_1_source.html#a9b45b3e13bd9167aab02e17e08916231"
+"group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d",
+"structsacn_1_1_receiver_1_1_netint_list.html#a0d237fd6d38af257c8ab2a14a64a76e0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
