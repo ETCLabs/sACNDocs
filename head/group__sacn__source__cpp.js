@@ -48,7 +48,7 @@ var group__sacn__source__cpp =
       [ "send_preview", "structsacn_1_1_source_1_1_universe_settings.html#a5c7913b52f7d575e1cedacbd6601b047", null ],
       [ "send_unicast_only", "structsacn_1_1_source_1_1_universe_settings.html#adcf08448ca5544a8be4518fc2d966ef0", null ],
       [ "sync_universe", "structsacn_1_1_source_1_1_universe_settings.html#a9c7dff151ba6b32fc343e6aa55147bcc", null ],
-      [ "unicast_destinations", "structsacn_1_1_source_1_1_universe_settings.html#a9cf8b7c7691e8c1634ae68b495659650", null ],
+      [ "unicast_destinations", "structsacn_1_1_source_1_1_universe_settings.html#a91fd2db41d13ddf5440d0d72619d1a2b", null ],
       [ "universe", "structsacn_1_1_source_1_1_universe_settings.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
     ] ],
     [ "UniverseNetintList", "structsacn_1_1_source_1_1_universe_netint_list.html", [

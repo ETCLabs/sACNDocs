@@ -1,11 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"cpp/error/rethrow_exception.html":[5,0,1,346],
-"cpp/error/rethrow_if_nested.html":[5,0,1,347],
-"cpp/error/set_terminate.html":[5,0,1,367],
-"cpp/error/set_unexpected.html":[5,0,1,368],
-"cpp/error/system_category.html":[5,0,1,437],
-"cpp/error/terminate.html":[5,0,1,440],
 "cpp/error/throw_with_nested.html":[5,0,1,442],
 "cpp/error/uncaught_exception.html":[5,0,1,458],
 "cpp/error/unexpected.html":[5,0,1,461],
@@ -249,5 +243,11 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/to_string.html":[5,0,1,447],
 "cpp/string/basic_string/to_wstring.html":[5,0,1,448],
 "cpp/string/byte/atof.html":[5,0,1,28],
-"cpp/string/byte/atoi.html":[5,0,1,30]
+"cpp/string/byte/atoi.html":[5,0,1,30],
+"cpp/string/byte/atoi.html":[5,0,1,31],
+"cpp/string/byte/atoi.html":[5,0,1,29],
+"cpp/string/byte/isalnum.html":[5,0,1,198],
+"cpp/string/byte/isalpha.html":[5,0,1,199],
+"cpp/string/byte/isblank.html":[5,0,1,200],
+"cpp/string/byte/iscntrl.html":[5,0,1,201]
 };
