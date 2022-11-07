@@ -70,7 +70,7 @@ var NAVTREEINDEX =
 "cpp/string/byte/isdigit.html",
 "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4",
 "group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21",
-"structsacn_1_1_receiver_1_1_settings.html#ac92588540e8c1d014a08cd8a45462b19"
+"structsacn_1_1_merge_receiver_1_1_source.html#a9b45b3e13bd9167aab02e17e08916231"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
