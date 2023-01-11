@@ -217,6 +217,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2">SACN_SOURCE_THREAD_NAME</a>&#160;&#160;&#160;&quot;sACN Source Thread&quot;</td></tr>
 <tr class="memdesc:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name to assign the sACN source thread.  <a href="group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2">More...</a><br /></td></tr>
 <tr class="separator:ga0a2bddcd541aabbd0b4536d6dae4caa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb37b9b4569cb297e919655ad1f0ff22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#gafb37b9b4569cb297e919655ad1f0ff22">SACN_SOURCE_SOCKET_SNDBUF_SIZE</a>&#160;&#160;&#160;115000</td></tr>
+<tr class="memdesc:gafb37b9b4569cb297e919655ad1f0ff22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the send buffer to use for sockets that send sACN over multicast and unicast.  <a href="group__sacnopts__send.html#gafb37b9b4569cb297e919655ad1f0ff22">More...</a><br /></td></tr>
+<tr class="separator:gafb37b9b4569cb297e919655ad1f0ff22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa08afe863ab6922c173055d4239184c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__send.html#gaa08afe863ab6922c173055d4239184c4">SACN_SOURCE_MAX_SOURCES</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:gaa08afe863ab6922c173055d4239184c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sources that can be created.  <a href="group__sacnopts__send.html#gaa08afe863ab6922c173055d4239184c4">More...</a><br /></td></tr>
 <tr class="separator:gaa08afe863ab6922c173055d4239184c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,6 +283,24 @@ Macros</h2></td></tr>
 <p>The maximum number of universes that a source can send to simultaneously. </p>
 <p>If this is set to 0, the Source API is disabled and no memory pools are allocated for it.</p>
 <p>Meaningful only if <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> is defined to 0. </p>
+
+</div>
+</div>
+<a id="gafb37b9b4569cb297e919655ad1f0ff22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb37b9b4569cb297e919655ad1f0ff22">&#9670;&nbsp;</a></span>SACN_SOURCE_SOCKET_SNDBUF_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_SOURCE_SOCKET_SNDBUF_SIZE&#160;&#160;&#160;115000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the send buffer to use for sockets that send sACN over multicast and unicast. </p>
+<p>This buffer size will only be used on Windows, Mac, and Linux. This isn't used for embedded platforms since their support for SO_SNDBUF is sparse and more limited.</p>
+<p>Increasing this can improve the performance of sACN sources when sending a large number of universes. The default chosen for this (115000) was determined to be sufficient to prevent the send buffer from getting full when running 1 source to 100 universes at 1 unicast destination. </p>
 
 </div>
 </div>
