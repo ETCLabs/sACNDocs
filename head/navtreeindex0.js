@@ -1,11 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[5,0,0,0],
-"":[5,0,1],
-"":[5,0,1,0],
-"":[5,0,1,1],
-"":[5,0,1,2],
-"":[5,0,1,3],
 "additional_documentation.html":[1],
 "annotated.html":[6,0],
 "building_and_integrating.html":[2,0],
@@ -189,8 +183,8 @@ var NAVTREEINDEX0 =
 "cpp/algorithm/remove_copy.html":[5,0,1,337],
 "cpp/algorithm/replace.html":[5,0,1,341],
 "cpp/algorithm/replace.html":[5,0,1,344],
-"cpp/algorithm/replace_copy.html":[5,0,1,343],
 "cpp/algorithm/replace_copy.html":[5,0,1,342],
+"cpp/algorithm/replace_copy.html":[5,0,1,343],
 "cpp/algorithm/reverse.html":[5,0,1,349],
 "cpp/algorithm/reverse_copy.html":[5,0,1,350],
 "cpp/algorithm/rotate.html":[5,0,1,354],
@@ -249,5 +243,11 @@ var NAVTREEINDEX0 =
 "cpp/chrono/duration/duration_cast.html":[5,0,1,0,0],
 "cpp/chrono/time_point/time_point_cast.html":[5,0,1,0,1],
 "cpp/error/current_exception.html":[5,0,1,83],
-"cpp/error/generic_category.html":[5,0,1,166]
+"cpp/error/generic_category.html":[5,0,1,166],
+"cpp/error/get_terminate.html":[5,0,1,171],
+"cpp/error/get_unexpected.html":[5,0,1,173],
+"cpp/error/make_exception_ptr.html":[5,0,1,249],
+"cpp/error/rethrow_exception.html":[5,0,1,346],
+"cpp/error/rethrow_if_nested.html":[5,0,1,347],
+"cpp/error/set_terminate.html":[5,0,1,367]
 };

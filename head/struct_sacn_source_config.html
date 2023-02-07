@@ -220,6 +220,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab619351af6b7a5abcb23e38bdc09e984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987c78ebef19e1addb7485ce29ef4dd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_config.html#a987c78ebef19e1addb7485ce29ef4dd7">keep_alive_interval</a></td></tr>
 <tr class="separator:a987c78ebef19e1addb7485ce29ef4dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c6c9ee861a74ce7f88cbf8ba7ec99f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_source_config.html#aa0c6c9ee861a74ce7f88cbf8ba7ec99f">pap_keep_alive_interval</a></td></tr>
+<tr class="separator:aa0c6c9ee861a74ce7f88cbf8ba7ec99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A set of configuration information for a sACN source. </p>
@@ -265,7 +267,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The interval at which the source will send keep-alive packets during transmission suppression, in milliseconds. The default is <a class="el" href="group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71">SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</a>. </p>
+<p>The interval at which the source will send keep-alive NULL start code packets during transmission suppression, in milliseconds. The default is <a class="el" href="group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71">SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</a>. </p>
 
 </div>
 </div>
@@ -296,6 +298,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The source's name, a UTF-8 encoded string. </p>
+
+</div>
+</div>
+<a id="aa0c6c9ee861a74ce7f88cbf8ba7ec99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c6c9ee861a74ce7f88cbf8ba7ec99f">&#9670;&nbsp;</a></span>pap_keep_alive_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pap_keep_alive_interval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The interval at which the source will send keep-alive per-address priority packets during transmission suppression, in milliseconds. The default is <a class="el" href="group__sacn__source.html#gae3df139429df836f977bab01da3af19d">SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</a>. </p>
 
 </div>
 </div>

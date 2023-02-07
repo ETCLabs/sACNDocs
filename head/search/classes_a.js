@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kilo_2915',['kilo',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
-  ['knuth_5fb_2916',['knuth_b',['https://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine.html',1,'std']]]
+  ['kilo_2918',['kilo',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['knuth_5fb_2919',['knuth_b',['https://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine.html',1,'std']]]
 ];

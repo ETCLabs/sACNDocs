@@ -4,6 +4,7 @@ var source_8h =
     [ "SACN_SOURCE_INFINITE_UNIVERSES", "group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d", null ],
     [ "SACN_SOURCE_INVALID", "group__sacn__source.html#ga446e9e065e08c7a90309a993b2502153", null ],
     [ "SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT", "group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71", null ],
+    [ "SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT", "group__sacn__source.html#gae3df139429df836f977bab01da3af19d", null ],
     [ "SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT", "group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b", null ],
     [ "sacn_source_t", "group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8", null ],
     [ "SacnSourceConfig", "group__sacn__source.html#gaf13f724dda8304930fcda0977088cd6a", null ],
