@@ -10,6 +10,11 @@ var source_8h =
     [ "SacnSourceConfig", "group__sacn__source.html#gaf13f724dda8304930fcda0977088cd6a", null ],
     [ "SacnSourceUniverseConfig", "group__sacn__source.html#ga3f72b89ed47da0e268c7735ae8971e89", null ],
     [ "SacnSourceUniverseNetintList", "group__sacn__source.html#ga0f30b2db7d3c6686a14bab97c80d73a0", null ],
+    [ "sacn_source_tick_mode_t", "group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d", [
+      [ "kSacnSourceTickModeProcessLevelsOnly", "group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e", null ],
+      [ "kSacnSourceTickModeProcessPapOnly", "group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280", null ],
+      [ "kSacnSourceTickModeProcessLevelsAndPap", "group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61", null ]
+    ] ],
     [ "sacn_source_add_unicast_destination", "group__sacn__source.html#ga2b7d3fb6a2d252eee7c051acfe97d242", null ],
     [ "sacn_source_add_universe", "group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261", null ],
     [ "sacn_source_change_name", "group__sacn__source.html#ga0c44cd3dba2627779bfb65ea8349fe1c", null ],
@@ -22,7 +27,7 @@ var source_8h =
     [ "sacn_source_get_network_interfaces", "group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69", null ],
     [ "sacn_source_get_unicast_destinations", "group__sacn__source.html#ga12f792b85add6af90ba2560f287b630c", null ],
     [ "sacn_source_get_universes", "group__sacn__source.html#ga90b2e59fa6709ee72042778a60c93330", null ],
-    [ "sacn_source_process_manual", "group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4", null ],
+    [ "sacn_source_process_manual", "group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d", null ],
     [ "sacn_source_remove_unicast_destination", "group__sacn__source.html#ga4ebe5d509af8c963c104f2dd96a3ac76", null ],
     [ "sacn_source_remove_universe", "group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d", null ],
     [ "sacn_source_reset_networking", "group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5", null ],

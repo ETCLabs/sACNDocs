@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('source_8h.html',''); initResizable(); 
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">source.h File Reference</div>  </div>
@@ -249,6 +250,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga3f72b89ed47da0e268c7735ae8971e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f30b2db7d3c6686a14bab97c80d73a0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_source_universe_netint_list.html">SacnSourceUniverseNetintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga0f30b2db7d3c6686a14bab97c80d73a0">SacnSourceUniverseNetintList</a></td></tr>
 <tr class="separator:ga0f30b2db7d3c6686a14bab97c80d73a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> { <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e">kSacnSourceTickModeProcessLevelsOnly</a>
+, <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280">kSacnSourceTickModeProcessPapOnly</a>
+, <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61">kSacnSourceTickModeProcessLevelsAndPap</a>
+ }</td></tr>
+<tr class="separator:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -312,9 +321,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabec53e52dbb1808a546832ef3446f009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009">sacn_source_update_levels_and_pap_and_force_sync</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</td></tr>
 <tr class="memdesc:gabec53e52dbb1808a546832ef3446f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab" title="Copies the universe&#39;s DMX levels and per-address priorities into packets that are sent on the next th...">sacn_source_update_levels_and_pap()</a>, but also sets the force_sync flag on the packet.  <a href="group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009">More...</a><br /></td></tr>
 <tr class="separator:gabec53e52dbb1808a546832ef3446f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05ae91a74132e84439e18364de2b62d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4">sacn_source_process_manual</a> (void)</td></tr>
-<tr class="memdesc:ga05ae91a74132e84439e18364de2b62d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true.  <a href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4">More...</a><br /></td></tr>
-<tr class="separator:ga05ae91a74132e84439e18364de2b62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d9b3e992e56375779651023cc92121d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d">sacn_source_process_manual</a> (<a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> tick_mode)</td></tr>
+<tr class="memdesc:ga9d9b3e992e56375779651023cc92121d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true.  <a href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d">More...</a><br /></td></tr>
+<tr class="separator:ga9d9b3e992e56375779651023cc92121d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga348c4a38439a1bf2623253bbc30120c5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga348c4a38439a1bf2623253bbc30120c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets for all universes of all sources.  <a href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">More...</a><br /></td></tr>
 <tr class="separator:ga348c4a38439a1bf2623253bbc30120c5"><td class="memSeparator" colspan="2">&#160;</td></tr>

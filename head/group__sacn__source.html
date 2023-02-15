@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('group__sacn__source.html',''); initRes
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sACN Source<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a></div></div>  </div>
@@ -247,6 +248,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga3f72b89ed47da0e268c7735ae8971e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f30b2db7d3c6686a14bab97c80d73a0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_source_universe_netint_list.html">SacnSourceUniverseNetintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga0f30b2db7d3c6686a14bab97c80d73a0">SacnSourceUniverseNetintList</a></td></tr>
 <tr class="separator:ga0f30b2db7d3c6686a14bab97c80d73a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> { <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e">kSacnSourceTickModeProcessLevelsOnly</a>
+, <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280">kSacnSourceTickModeProcessPapOnly</a>
+, <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61">kSacnSourceTickModeProcessLevelsAndPap</a>
+ }</td></tr>
+<tr class="separator:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -310,9 +319,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabec53e52dbb1808a546832ef3446f009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009">sacn_source_update_levels_and_pap_and_force_sync</a> (<a class="el" href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a> handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</td></tr>
 <tr class="memdesc:gabec53e52dbb1808a546832ef3446f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab" title="Copies the universe&#39;s DMX levels and per-address priorities into packets that are sent on the next th...">sacn_source_update_levels_and_pap()</a>, but also sets the force_sync flag on the packet.  <a href="group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009">More...</a><br /></td></tr>
 <tr class="separator:gabec53e52dbb1808a546832ef3446f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05ae91a74132e84439e18364de2b62d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4">sacn_source_process_manual</a> (void)</td></tr>
-<tr class="memdesc:ga05ae91a74132e84439e18364de2b62d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true.  <a href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4">More...</a><br /></td></tr>
-<tr class="separator:ga05ae91a74132e84439e18364de2b62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d9b3e992e56375779651023cc92121d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d">sacn_source_process_manual</a> (<a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> tick_mode)</td></tr>
+<tr class="memdesc:ga9d9b3e992e56375779651023cc92121d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true.  <a href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d">More...</a><br /></td></tr>
+<tr class="separator:ga9d9b3e992e56375779651023cc92121d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga348c4a38439a1bf2623253bbc30120c5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga348c4a38439a1bf2623253bbc30120c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the underlying network sockets for all universes of all sources.  <a href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">More...</a><br /></td></tr>
 <tr class="separator:ga348c4a38439a1bf2623253bbc30120c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +497,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A set of network interfaces for a particular universe. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gaa32b392ec2a472f4b42d1395fa1d047d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa32b392ec2a472f4b42d1395fa1d047d">&#9670;&nbsp;</a></span>sacn_source_tick_mode_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This enum determines the type of start code (levels and/or PAP) to process/transmit in a source tick. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e"></a>kSacnSourceTickModeProcessLevelsOnly&#160;</td><td class="fielddoc"><p>Process/send levels only (includes termination). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280"></a>kSacnSourceTickModeProcessPapOnly&#160;</td><td class="fielddoc"><p>Process/send PAP only (excludes termination). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61"></a>kSacnSourceTickModeProcessLevelsAndPap&#160;</td><td class="fielddoc"><p>Process/send everything (both levels and PAP + termination). </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -919,7 +952,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 </div><div class="memdoc">
 
 <p>Destroy an sACN source instance. </p>
-<p>Stops sending all universes for this source. This removes the source and queues the sending of termination packets to all of the source's universes, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>. The source will also stop transmitting sACN universe discovery packets.</p>
+<p>Stops sending all universes for this source. This removes the source and queues the sending of termination packets to all of the source's universes, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>. The source will also stop transmitting sACN universe discovery packets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to destroy. This handle will no longer be usable with the source API. </td></tr>
@@ -1078,8 +1111,8 @@ Other codes translated from system error codes are possible. </dd></dl>
 
 </div>
 </div>
-<a id="ga05ae91a74132e84439e18364de2b62d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05ae91a74132e84439e18364de2b62d4">&#9670;&nbsp;</a></span>sacn_source_process_manual()</h2>
+<a id="ga9d9b3e992e56375779651023cc92121d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d9b3e992e56375779651023cc92121d">&#9670;&nbsp;</a></span>sacn_source_process_manual()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,16 +1120,22 @@ Other codes translated from system error codes are possible. </dd></dl>
         <tr>
           <td class="memname">int sacn_source_process_manual </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a>&#160;</td>
+          <td class="paramname"><em>tick_mode</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Trigger the transmission of sACN packets for all universes of sources that were created with manually_process_source set to true. </p>
-<p>Note: Unless you created the source with manually_process_source set to true, similar functionality will be automatically called by an internal thread of the module. Otherwise, this must be called at the maximum rate at which the application will send sACN.</p>
-<p>Sends the current data for universes which have been updated, and sends keep-alive data for universes which haven't been updated. Also destroys sources &amp; universes that have been marked for termination after sending the required three terminated packets.</p>
+<p>Note: Unless you created the source with manually_process_source set to true, similar functionality will be automatically called by an internal thread of the module. Otherwise, this must be called at the maximum rate at which the application will send sACN (see tick_mode for details of what is actually sent in a call).</p>
+<p>Sends the current data for universes which have been updated, and sends keep-alive data for universes which haven't been updated. If levels are processed (see tick_mode), this also destroys sources &amp; universes that have been marked for termination after sending the required three terminated packets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tick_mode</td><td>Specifies whether to process levels (and by extension termination) and/or PAP. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Current number of manual sources tracked by the library, including sources that have been destroyed but are still sending termination packets. This can be useful on shutdown to track when destroyed sources have finished sending the terminated packets and actually been destroyed. </dd></dl>
 
 </div>
@@ -1134,7 +1173,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 </div><div class="memdoc">
 
 <p>Remove a unicast destination on a source's universe. </p>
-<p>This removes a unicast destination address and queues the sending of termination packets to the address, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
+<p>This removes a unicast destination address and queues the sending of termination packets to the address, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to change. </td></tr>
@@ -1173,7 +1212,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 </div><div class="memdoc">
 
 <p>Remove a universe from a source. </p>
-<p>This removes a universe and queues the sending of termination packets to the universe, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
+<p>This removes a universe and queues the sending of termination packets to the universe, which takes place either on the thread or on calls to <a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
 <p>The source will also stop including the universe in sACN universe discovery packets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1324,7 +1363,7 @@ Other codes translated from system error codes are possible. </dd></dl>
 </div><div class="memdoc">
 
 <p>Immediately sends the provided sACN start code &amp; data. </p>
-<p>Immediately sends a sACN packet with the provided start code and data. This function is intended for sACN packets that have a startcode other than 0 or 0xdd, since those start codes are taken care of by either the thread or <a class="el" href="group__sacn__source.html#ga05ae91a74132e84439e18364de2b62d4" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
+<p>Immediately sends a sACN packet with the provided start code and data. This function is intended for sACN packets that have a startcode other than 0 or 0xdd, since those start codes are taken care of by either the thread or <a class="el" href="group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d" title="Trigger the transmission of sACN packets for all universes of sources that were created with manually...">sacn_source_process_manual()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source. </td></tr>

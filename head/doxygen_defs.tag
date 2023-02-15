@@ -884,6 +884,31 @@
       <anchor>ga0f30b2db7d3c6686a14bab97c80d73a0</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>sacn_source_tick_mode_t</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>gaa32b392ec2a472f4b42d1395fa1d047d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessLevelsOnly</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessPapOnly</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessLevelsAndPap</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>sacn_source_config_init</name>
@@ -1028,8 +1053,8 @@
       <type>int</type>
       <name>sacn_source_process_manual</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga05ae91a74132e84439e18364de2b62d4</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga9d9b3e992e56375779651023cc92121d</anchor>
+      <arglist>(sacn_source_tick_mode_t tick_mode)</arglist>
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
@@ -3249,6 +3274,16 @@
     <class kind="struct">sacn::Source::Settings</class>
     <class kind="struct">sacn::Source::UniverseNetintList</class>
     <class kind="struct">sacn::Source::UniverseSettings</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>TickMode</name>
+      <anchorfile>classsacn_1_1_source.html</anchorfile>
+      <anchor>af36a9f4e41fd0d0e2f1c538486bf57bf</anchor>
+      <arglist></arglist>
+      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfad95af72fafcf05564a73aa4c6ac8b79b">kProcessLevelsOnly</enumvalue>
+      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfa8a07e62c29375b0e7b5c3cdc53158e2d">kProcessPapOnly</enumvalue>
+      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfa3be842a0530fef755880cd131a19c6c5">kProcessLevelsAndPap</enumvalue>
+    </member>
     <member kind="typedef">
       <type>etcpal::OpaqueId&lt; detail::SourceHandleType, sacn_source_t, SACN_SOURCE_INVALID &gt;</type>
       <name>Handle</name>
@@ -3421,8 +3456,8 @@
       <type>static int</type>
       <name>ProcessManual</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ad0b6181050c6d436a907401688950126</anchor>
-      <arglist>()</arglist>
+      <anchor>a90c818e6bc851e44b833014780ad939c</anchor>
+      <arglist>(TickMode tick_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
@@ -4529,6 +4564,31 @@
       <anchor>ga0f30b2db7d3c6686a14bab97c80d73a0</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>sacn_source_tick_mode_t</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>gaa32b392ec2a472f4b42d1395fa1d047d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessLevelsOnly</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessPapOnly</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceTickModeProcessLevelsAndPap</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>sacn_source_config_init</name>
@@ -4673,8 +4733,8 @@
       <type>int</type>
       <name>sacn_source_process_manual</name>
       <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga05ae91a74132e84439e18364de2b62d4</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga9d9b3e992e56375779651023cc92121d</anchor>
+      <arglist>(sacn_source_tick_mode_t tick_mode)</arglist>
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
@@ -5187,67 +5247,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpuuas24_8_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmp10ox8wkk_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpuuas24_8_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmp10ox8wkk_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpuuas24_8_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmp10ox8wkk_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpuuas24_8_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmp10ox8wkk_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpuuas24_8_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmp10ox8wkk_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpuuas24_8_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmp10ox8wkk_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpuuas24_8_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmp10ox8wkk_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpuuas24_8_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmp10ox8wkk_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpuuas24_8_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmp10ox8wkk_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpuuas24_8_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmp10ox8wkk_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpuuas24_8_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmp10ox8wkk_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
