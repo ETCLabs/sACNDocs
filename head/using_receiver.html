@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="title">Using the sACN Receiver API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpk1lq0a97_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp_5mp5n8k_docs_pages_using_receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -278,15 +278,15 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line"><span class="keyword">class </span>MyNotifyHandler : <span class="keyword">public</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html">sacn::Receiver::NotifyHandler</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Required callbacks that must be implemented:</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3">HandleUniverseData</a>(Handle receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3">HandleUniverseData</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
 <div class="line">                          <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source_info, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&amp; universe_data) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae">HandleSourcesLost</a>(Handle handle, uint16_t universe, <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae">HandleSourcesLost</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe, <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources) <span class="keyword">override</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Optional callbacks - these don&#39;t have to be a part of MyNotifyHandler:</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672">HandleSourcePapLost</a>(Handle handle, uint16_t universe, <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672">HandleSourcePapLost</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe, <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Now to set up a receiver:</span></div>
@@ -303,6 +303,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the receiver when you&#39;re done with it:</span></div>
 <div class="line">receiver.<a class="code" href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Shutdown</a>();</div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::ReceiverHandleType, sacn_receiver_t, SACN_RECEIVER_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_receiver_1_1_notify_handler_html"><div class="ttname"><a href="classsacn_1_1_receiver_1_1_notify_handler.html">sacn::Receiver::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a sACN receiver.</div><div class="ttdef"><b>Definition:</b> receiver.h:72</div></div>
 <div class="ttc" id="aclasssacn_1_1_receiver_1_1_notify_handler_html_a31ed01381fa689d55d77f298fdf3c2c3"><div class="ttname"><a href="classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3">sacn::Receiver::NotifyHandler::HandleUniverseData</a></div><div class="ttdeci">virtual void HandleUniverseData(Handle receiver_handle, const etcpal::SockAddr &amp;source_addr, const SacnRemoteSource &amp;source_info, const SacnRecvUniverseData &amp;universe_data)=0</div><div class="ttdoc">Notify that new universe data within the configured footprint has been received.</div></div>
@@ -474,7 +475,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 </div>
 <div id="div_5_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleUniverseData(Handle receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleUniverseData(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
 <div class="line">                                         <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source_info, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&amp; universe_data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You wouldn&#39;t normally print a message on each sACN update, but this is just to demonstrate the</span></div>
@@ -526,7 +527,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSamplingPeriodEnded(Handle handle, uint16_t universe)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSamplingPeriodEnded(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Apply universe data as needed...</span></div>
 <div class="line">}</div>
@@ -558,7 +559,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 </div>
 <div id="div_7_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourcePapLost(Handle handle, uint16_t universe, <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourcePapLost(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe, <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Revert to using the per-packet priority value to resolve priorities for this universe.</span></div>
 <div class="line">}</div>
@@ -601,7 +602,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 </div>
 <div id="div_8_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourcesLost(Handle handle, uint16_t universe,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourcesLost(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe,</div>
 <div class="line">                                        <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You might not normally print a message on this condition, but this is just to demonstrate</span></div>
@@ -640,7 +641,7 @@ $(document).ready(function(){initNavTree('using_receiver.html',''); initResizabl
 </div>
 <div id="div_9_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourceLimitExceeded(Handle handle, uint16_t universe)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourceLimitExceeded(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::Receiver::Handle</a> handle, uint16_t universe)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Handle the condition in an application-defined way. Maybe log it?</span></div>
 <div class="line">}</div>

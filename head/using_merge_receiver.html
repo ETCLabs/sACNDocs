@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 <div class="title">Using the sACN Merge Receiver API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpk1lq0a97_docs_pages_using_merge_receiver"></a> The sACN Merge Receiver API combines the functionality of the sACN Receiver and DMX Merger APIs. It provides the application with merged DMX levels, plus data with other start codes from each source, as sACN packets are received. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp_5mp5n8k_docs_pages_using_merge_receiver"></a> The sACN Merge Receiver API combines the functionality of the sACN Receiver and DMX Merger APIs. It provides the application with merged DMX levels, plus data with other start codes from each source, as sACN packets are received. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -278,15 +278,15 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 <div class="line"><span class="keyword">class </span>MyNotifyHandler : <span class="keyword">public</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html">sacn::MergeReceiver::NotifyHandler</a></div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Required callbacks that must be implemented:</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">HandleMergedData</a>(Handle handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">HandleNonDmxData</a>(Handle receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">HandleMergedData</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">HandleNonDmxData</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
 <div class="line">                        <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source_info, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&amp; universe_data) <span class="keyword">override</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Optional callbacks - these don&#39;t have to be a part of MyNotifyHandler:</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">HandleSourcesLost</a>(Handle handle, uint16_t universe, <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">HandleSourcesLost</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, uint16_t universe, <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, uint16_t universe) <span class="keyword">override</span>;</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Now to set up a merge receiver:</span></div>
@@ -303,6 +303,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the merge receiver when you&#39;re done with it:</span></div>
 <div class="line">merge_receiver.<a class="code" href="classsacn_1_1_merge_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9">Shutdown</a>();</div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, SACN_MERGE_RECEIVER_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_merge_receiver_1_1_notify_handler_html"><div class="ttname"><a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html">sacn::MergeReceiver::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a sACN merge receiver.</div><div class="ttdef"><b>Definition:</b> merge_receiver.h:71</div></div>
 <div class="ttc" id="aclasssacn_1_1_merge_receiver_1_1_notify_handler_html_a0d46e56c609d6edd9806994bb81190fc"><div class="ttname"><a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">sacn::MergeReceiver::NotifyHandler::HandleMergedData</a></div><div class="ttdeci">virtual void HandleMergedData(Handle handle, const SacnRecvMergedData &amp;merged_data)=0</div><div class="ttdoc">Notify that a new data packet has been received and merged.</div></div>
@@ -468,7 +469,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 </div>
 <div id="div_5_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleMergedData(Handle handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleMergedData(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You wouldn&#39;t normally print a message on each sACN update, but this is just to demonstrate the</span></div>
 <div class="line">  <span class="comment">// fields available:</span></div>
@@ -538,7 +539,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleNonDmxData(Handle receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleNonDmxData(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> receiver_handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
 <div class="line">                                       <span class="keyword">const</span> <a class="code" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source_info, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&amp; universe_data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You wouldn&#39;t normally print a message on each sACN update, but this is just to demonstrate the</span></div>
@@ -609,7 +610,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 </div>
 <div id="div_7_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleMergedData(Handle handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleMergedData(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, <span class="keyword">const</span> <a class="code" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a>&amp; merged_data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// How to get the merge receiver instance from the handle is application-defined. For example:</span></div>
 <div class="line">  <span class="keyword">auto</span> merge_receiver = my_app_state.GetMergeReceiver(handle);</div>
@@ -658,7 +659,7 @@ $(document).ready(function(){initNavTree('using_merge_receiver.html',''); initRe
 </div>
 <div id="div_8_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourceLimitExceeded(Handle handle, uint16_t universe)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourceLimitExceeded(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">sacn::MergeReceiver::Handle</a> handle, uint16_t universe)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Handle the condition in an application-defined way. Maybe log it?</span></div>
 <div class="line">}</div>
