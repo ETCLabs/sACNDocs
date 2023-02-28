@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"cpp/error/uncaught_exception.html":[5,0,1,458],
 "cpp/error/unexpected.html":[5,0,1,461],
 "cpp/experimental/optional/make_optional.html":[5,0,1,1,0],
 "cpp/io/c/clearerr.html":[5,0,1,69],
@@ -13,6 +12,7 @@ var NAVTREEINDEX1 =
 "cpp/io/c/fgetpos.html":[5,0,1,122],
 "cpp/io/c/fgets.html":[5,0,1,123],
 "cpp/io/c/fgetwc.html":[5,0,1,124],
+"":[5,0,1,3],
 "cpp/io/c/fgetws.html":[5,0,1,125],
 "cpp/io/c/fopen.html":[5,0,1,140],
 "cpp/io/c/fprintf.html":[5,0,1,145],
@@ -23,6 +23,7 @@ var NAVTREEINDEX1 =
 "cpp/io/c/fputc.html":[5,0,1,320],
 "cpp/io/c/fputs.html":[5,0,1,147],
 "cpp/io/c/fputwc.html":[5,0,1,148],
+"":[5,0,1,2],
 "cpp/io/c/fputws.html":[5,0,1,149],
 "cpp/io/c/fread.html":[5,0,1,150],
 "cpp/io/c/freopen.html":[5,0,1,152],
@@ -31,10 +32,12 @@ var NAVTREEINDEX1 =
 "cpp/io/c/fscanf.html":[5,0,1,393],
 "cpp/io/c/fseek.html":[5,0,1,156],
 "cpp/io/c/fsetpos.html":[5,0,1,157],
+"":[5,0,1,0],
 "cpp/io/c/ftell.html":[5,0,1,158],
 "cpp/io/c/fwprintf.html":[5,0,1,524],
 "cpp/io/c/fwprintf.html":[5,0,1,160],
 "cpp/io/c/fwprintf.html":[5,0,1,434],
+"":[5,0,1],
 "cpp/io/c/fwrite.html":[5,0,1,161],
 "cpp/io/c/fwscanf.html":[5,0,1,526],
 "cpp/io/c/fwscanf.html":[5,0,1,162],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "cpp/string/byte/atoi.html":[5,0,1,29],
 "cpp/string/byte/atoi.html":[5,0,1,31],
 "cpp/string/byte/isalnum.html":[5,0,1,198],
-"cpp/string/byte/isalpha.html":[5,0,1,199],
-"cpp/string/byte/isblank.html":[5,0,1,200],
-"cpp/string/byte/iscntrl.html":[5,0,1,201],
-"cpp/string/byte/isdigit.html":[5,0,1,202]
+"cpp/string/byte/isalpha.html":[5,0,1,199]
 };
