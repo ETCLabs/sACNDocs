@@ -1,5 +1,11 @@
 var NAVTREEINDEX0 =
 {
+"":[5,0,0,0],
+"":[5,0,1,2],
+"":[5,0,1,3],
+"":[5,0,1],
+"":[5,0,1,0],
+"":[5,0,1,1],
 "additional_documentation.html":[1],
 "annotated.html":[6,0],
 "building_and_integrating.html":[2,0],
@@ -237,17 +243,11 @@ var NAVTREEINDEX0 =
 "cpp/chrono/c/time.html":[5,0,1,444],
 "cpp/chrono/c/wcsftime.html":[5,0,1,494],
 "cpp/chrono/duration/duration_cast.html":[5,0,1,0,0],
+"cpp/chrono/time_point/time_point_cast.html":[5,0,1,0,1],
 "cpp/error/current_exception.html":[5,0,1,83],
 "cpp/error/generic_category.html":[5,0,1,166],
 "cpp/error/get_terminate.html":[5,0,1,171],
 "cpp/error/get_unexpected.html":[5,0,1,173],
 "cpp/error/make_exception_ptr.html":[5,0,1,249],
-"cpp/error/rethrow_exception.html":[5,0,1,346],
-"cpp/error/rethrow_if_nested.html":[5,0,1,347],
-"cpp/error/set_terminate.html":[5,0,1,367],
-"cpp/error/set_unexpected.html":[5,0,1,368],
-"cpp/error/system_category.html":[5,0,1,437],
-"cpp/error/terminate.html":[5,0,1,440],
-"cpp/error/throw_with_nested.html":[5,0,1,442],
-"cpp/error/uncaught_exception.html":[5,0,1,458]
+"cpp/error/rethrow_exception.html":[5,0,1,346]
 };
