@@ -199,7 +199,7 @@ var searchData=
   ['etcpal_5fthread_5fget_5fcurrent_5fos_5fhandle_3731',['etcpal_thread_get_current_os_handle',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#gae66dc24d979de981d2e2a0475d320be2',1,]]],
   ['etcpal_5fthread_5fget_5fos_5fhandle_3732',['etcpal_thread_get_os_handle',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#gaf6711b2ff2eee44104ec5f472b2701b1',1,]]],
   ['etcpal_5fthread_5fjoin_3733',['etcpal_thread_join',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792',1,]]],
-  ['etcpal_5fthread_5fsleep_3734',['etcpal_thread_sleep',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#gaf5d7c5aec312d172e617fd653ade3b08',1,]]],
+  ['etcpal_5fthread_5fsleep_3734',['etcpal_thread_sleep',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#gaafb424d729ccb88b26e8389c0a5b5347',1,]]],
   ['etcpal_5fthread_5fterminate_3735',['etcpal_thread_terminate',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#ga9906049c7d559046052fa9509aedb705',1,]]],
   ['etcpal_5fthread_5ftimed_5fjoin_3736',['etcpal_thread_timed_join',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__thread.html#ga37eccd4b250f7b697bd366922d081f13',1,]]],
   ['etcpal_5ftimer_5felapsed_3737',['etcpal_timer_elapsed',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__timer.html#ga5d73c9f8144f65719e8b319cdfdc05bb',1,]]],
