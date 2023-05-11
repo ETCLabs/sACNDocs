@@ -214,9 +214,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d46e56c609d6edd9806994bb81190fc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">HandleMergedData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, const <a class="el" href="struct_sacn_recv_merged_data.html">SacnRecvMergedData</a> &amp;merged_data)=0</td></tr>
 <tr class="memdesc:a0d46e56c609d6edd9806994bb81190fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a new data packet has been received and merged.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a0d46e56c609d6edd9806994bb81190fc">More...</a><br /></td></tr>
 <tr class="separator:a0d46e56c609d6edd9806994bb81190fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad516f76e02d5606d65074ad213f206a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">HandleNonDmxData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> &amp;universe_data)=0</td></tr>
-<tr class="memdesc:ad516f76e02d5606d65074ad213f206a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ad516f76e02d5606d65074ad213f206a2">More...</a><br /></td></tr>
-<tr class="separator:ad516f76e02d5606d65074ad213f206a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7240a815773ac4a959a56d553588b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a7d7240a815773ac4a959a56d553588b7">HandleNonDmxData</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> receiver_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;source_addr, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;source_info, const <a class="el" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a> &amp;universe_data)</td></tr>
+<tr class="memdesc:a7d7240a815773ac4a959a56d553588b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a non-data packet has been received.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#a7d7240a815773ac4a959a56d553588b7">More...</a><br /></td></tr>
+<tr class="separator:a7d7240a815773ac4a959a56d553588b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d27b76147fba2f4d4ed5219d614246"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">HandleSourcesLost</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_lost_source.html">SacnLostSource</a> &gt; &amp;lost_sources)</td></tr>
 <tr class="memdesc:ae2d27b76147fba2f4d4ed5219d614246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that one or more sources have entered a source loss state.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246">More...</a><br /></td></tr>
 <tr class="separator:ae2d27b76147fba2f4d4ed5219d614246"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,8 +284,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad516f76e02d5606d65074ad213f206a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad516f76e02d5606d65074ad213f206a2">&#9670;&nbsp;</a></span>HandleNonDmxData()</h2>
+<a id="a7d7240a815773ac4a959a56d553588b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7240a815773ac4a959a56d553588b7">&#9670;&nbsp;</a></span>HandleNonDmxData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +325,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -381,7 +381,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that a merge receiver's sampling period has ended. </p>
-<p>All sources that were included in this sampling period will officially be included in future merged data notifications. If there was a networking reset during this sampling period, another sampling period may have been scheduled, in which case this will be immediately followed by a sampling period started notification.</p>
+<p>All sources that were included in this sampling period will now officially be included in merged data notifications. If there was a networking reset during this sampling period, another sampling period may have been scheduled, in which case this will be immediately followed by a sampling period started notification.</p>
+<p>If there were any active levels received during the sampling period, they were factored into the merged data notification called immediately before this notification. If the merged data notification wasn't called before this notification, that means there currently isn't any active data on the universe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
