@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"struct_sacn_remote_source.html":[4,0,2,2],
+"struct_sacn_remote_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9":[4,0,2,2,0],
+"struct_sacn_remote_source.html#a7e3669a12853b82f7d2b7488bb174956":[4,0,2,2,2],
+"struct_sacn_remote_source.html#abd2d36f012ca716885c43720824b4a75":[4,0,2,2,1],
+"struct_sacn_source_config.html":[4,0,3,0],
+"struct_sacn_source_config.html#a16ca9a84fb49dbc5b40b8b333a239e2d":[4,0,3,0,3],
+"struct_sacn_source_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9":[4,0,3,0,0],
+"struct_sacn_source_config.html#a8f8f80d37794cde9472343e4487ba3eb":[4,0,3,0,4],
+"struct_sacn_source_config.html#a987c78ebef19e1addb7485ce29ef4dd7":[4,0,3,0,2],
+"struct_sacn_source_config.html#aa0c6c9ee861a74ce7f88cbf8ba7ec99f":[4,0,3,0,5],
 "struct_sacn_source_config.html#ab619351af6b7a5abcb23e38bdc09e984":[4,0,3,0,1],
 "struct_sacn_source_config.html#af4a1d1d970b94a6a07b8c612b8d7ad73":[4,0,3,0,6],
 "struct_sacn_source_detector_callbacks.html":[4,0,4,0],
@@ -113,11 +123,5 @@ var NAVTREEINDEX5 =
 "using_receiver.html":[2,4],
 "using_source.html":[2,2],
 "version_8h.html":[7,0,0,0,7],
-"version_8h_source.html":[7,0,0,0,7],
-"":[5,0,0,0],
-"":[5,0,1,3],
-"":[5,0,1,2],
-"":[5,0,1,0],
-"":[5,0,1,1],
-"":[5,0,1]
+"version_8h_source.html":[7,0,0,0,7]
 };

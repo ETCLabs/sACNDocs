@@ -224,10 +224,50 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f">SACN_DMX_MERGER_MAX_SLOTS</a>&#160;&#160;&#160;512</td></tr>
 <tr class="memdesc:ga01ed1a377484d83e568bd7cf053f392f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unconfigurable; will be configurable in the future. <br /></td></tr>
 <tr class="separator:ga01ed1a377484d83e568bd7cf053f392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1291670a95116043ee7489006427aa5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__dmx__merger.html#ga1291670a95116043ee7489006427aa5c">SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga1291670a95116043ee7489006427aa5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables internal DMX merger PAP buffer for merge results.  <a href="group__sacnopts__dmx__merger.html#ga1291670a95116043ee7489006427aa5c">More...</a><br /></td></tr>
+<tr class="separator:ga1291670a95116043ee7489006427aa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79ce98d0c9b30964fd17728dc8073a26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26">SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga79ce98d0c9b30964fd17728dc8073a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables internal DMX merger owner buffer for merge results.  <a href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26">More...</a><br /></td></tr>
+<tr class="separator:ga79ce98d0c9b30964fd17728dc8073a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Configuration options for the <a class="el" href="group__sacn__dmx__merger.html">sACN DMX Merger</a> module. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga79ce98d0c9b30964fd17728dc8073a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79ce98d0c9b30964fd17728dc8073a26">&#9670;&nbsp;</a></span>SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disables internal DMX merger owner buffer for merge results. </p>
+<p>This is a memory optimization for use cases where an output pointer will always be supplied for owners in the DMX merger configuration. Enabling this makes it required instead of optional. </p>
+
+</div>
+</div>
+<a id="ga1291670a95116043ee7489006427aa5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1291670a95116043ee7489006427aa5c">&#9670;&nbsp;</a></span>SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disables internal DMX merger PAP buffer for merge results. </p>
+<p>This is a memory optimization for use cases where an output pointer will always be supplied for PAP in the DMX merger configuration. Enabling this makes it required instead of optional. </p>
+
+</div>
+</div>
 <a id="ga7d15f54f43af8434b4967746f1282fb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d15f54f43af8434b4967746f1282fb1">&#9670;&nbsp;</a></span>SACN_DMX_MERGER_MAX_MERGERS <span class="overload">[1/2]</span></h2>
 
