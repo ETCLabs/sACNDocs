@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"cpp/string/basic_string/stol.html":[5,0,1,399],
+"cpp/string/basic_string/stol.html":[5,0,1,402],
+"cpp/string/basic_string/stoul.html":[5,0,1,403],
+"cpp/string/basic_string/stoul.html":[5,0,1,404],
+"cpp/string/basic_string/to_string.html":[5,0,1,447],
+"cpp/string/basic_string/to_wstring.html":[5,0,1,448],
 "cpp/string/byte/atof.html":[5,0,1,28],
 "cpp/string/byte/atoi.html":[5,0,1,30],
 "cpp/string/byte/atoi.html":[5,0,1,29],
@@ -243,11 +249,5 @@ var NAVTREEINDEX2 =
 "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b":[4,0,14],
 "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b":[7,0,0,0,7,1],
 "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07":[7,0,0,0,1,13],
-"group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07":[4,0,28],
-"group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872":[7,0,0,0,1,12],
-"group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872":[4,0,27],
-"group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb":[4,0,8],
-"group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb":[7,0,0,0,1,0],
-"group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a":[7,0,0,0,1,10],
-"group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a":[4,0,25]
+"group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07":[4,0,28]
 };
