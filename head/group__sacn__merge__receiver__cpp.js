@@ -26,6 +26,7 @@ var group__sacn__merge__receiver__cpp =
       [ "HandleSamplingPeriodEnded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5", null ],
       [ "HandleSamplingPeriodStarted", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc", null ],
       [ "HandleSourceLimitExceeded", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ],
+      [ "HandleSourcePapLost", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672", null ],
       [ "HandleSourcesLost", "classsacn_1_1_merge_receiver_1_1_notify_handler.html#ae2d27b76147fba2f4d4ed5219d614246", null ]
     ] ],
     [ "Settings", "structsacn_1_1_merge_receiver_1_1_settings.html", [

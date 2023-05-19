@@ -12,6 +12,7 @@ var merge__receiver_8h =
     [ "SacnMergeReceiverSamplingPeriodStartedCallback", "group__sacn__merge__receiver.html#ga6bca38b03e63aa5a2e272449d23662ce", null ],
     [ "SacnMergeReceiverSource", "group__sacn__merge__receiver.html#gac417e4563acfbf4bdfe8f2490c7e88c9", null ],
     [ "SacnMergeReceiverSourceLimitExceededCallback", "group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0", null ],
+    [ "SacnMergeReceiverSourcePapLostCallback", "group__sacn__merge__receiver.html#ga3791403f2e07bd8df2364339f22d5b08", null ],
     [ "SacnMergeReceiverSourcesLostCallback", "group__sacn__merge__receiver.html#ga28f0d4119155beb794d94ef052ffe0c3", null ],
     [ "SacnRecvMergedData", "group__sacn__merge__receiver.html#gafb05eeea1bbac03fd2058d197e2c5846", null ],
     [ "sacn_merge_receiver_change_footprint", "group__sacn__merge__receiver.html#ga05a2a94b9c4346efa7918c7fe3031a80", null ],

@@ -253,6 +253,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga361d2c730abd2b490d99017f6ebb3739"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">SacnMergeReceiverSamplingPeriodEndedCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
 <tr class="memdesc:ga361d2c730abd2b490d99017f6ebb3739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has ended.  <a href="group__sacn__merge__receiver.html#ga361d2c730abd2b490d99017f6ebb3739">More...</a><br /></td></tr>
 <tr class="separator:ga361d2c730abd2b490d99017f6ebb3739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3791403f2e07bd8df2364339f22d5b08"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga3791403f2e07bd8df2364339f22d5b08">SacnMergeReceiverSourcePapLostCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source, void *context)</td></tr>
+<tr class="memdesc:ga3791403f2e07bd8df2364339f22d5b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a source has stopped transmission of per-address priority packets.  <a href="group__sacn__merge__receiver.html#ga3791403f2e07bd8df2364339f22d5b08">More...</a><br /></td></tr>
+<tr class="separator:ga3791403f2e07bd8df2364339f22d5b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">SacnMergeReceiverSourceLimitExceededCallback</a>) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, void *context)</td></tr>
 <tr class="memdesc:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="group__sacn__merge__receiver.html#ga47ccc08a4f5812e26ecf694fa0cb0ff0">More...</a><br /></td></tr>
 <tr class="separator:ga47ccc08a4f5812e26ecf694fa0cb0ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -550,6 +553,32 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which the source limit has been exceeded. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3791403f2e07bd8df2364339f22d5b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3791403f2e07bd8df2364339f22d5b08">&#9670;&nbsp;</a></span>SacnMergeReceiverSourcePapLostCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnMergeReceiverSourcePapLostCallback) (<a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a> handle, uint16_t universe, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> *source, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that a source has stopped transmission of per-address priority packets. </p>
+<p>If <a class="el" href="group__sacnopts__global.html#ga59ee3abb2f4eb1554d7be219a9c8028b" title="Enable ETC&#39;s per-address priority extension to sACN.">SACN_ETC_PRIORITY_EXTENSION</a> was defined to 0 when sACN was compiled, this callback will never be called and may be set to NULL. This is only called due to a timeout condition; a termination bit is treated as the termination of the entire stream and will result in a sources_lost() notification.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver instance for which a source stopped sending per-address priority. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>Information about the source that has stopped transmission of per-address priority. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the merge receiver instance. </td></tr>
   </table>
   </dd>

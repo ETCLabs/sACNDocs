@@ -226,6 +226,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af02397cc6bf09294666b38883dbdf6a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">HandleSamplingPeriodEnded</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
 <tr class="memdesc:af02397cc6bf09294666b38883dbdf6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a merge receiver's sampling period has ended.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5">More...</a><br /></td></tr>
 <tr class="separator:af02397cc6bf09294666b38883dbdf6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6fd518860704ac4b1f58d5a24f6672"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672">HandleSourcePapLost</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe, const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;source)</td></tr>
+<tr class="memdesc:afc6fd518860704ac4b1f58d5a24f6672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a source has stopped transmission of per-address priority packets.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672">More...</a><br /></td></tr>
+<tr class="separator:afc6fd518860704ac4b1f58d5a24f6672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab517496e89eb88b7ee7fa383558f725b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">HandleSourceLimitExceeded</a> (<a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> <a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a>, uint16_t universe)</td></tr>
 <tr class="memdesc:ab517496e89eb88b7ee7fa383558f725b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that more than the configured maximum number of sources are currently sending on the universe being listened to.  <a href="classsacn_1_1_merge_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b">More...</a><br /></td></tr>
 <tr class="separator:ab517496e89eb88b7ee7fa383558f725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,6 +482,58 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afc6fd518860704ac4b1f58d5a24f6672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6fd518860704ac4b1f58d5a24f6672">&#9670;&nbsp;</a></span>HandleSourcePapLost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleSourcePapLost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>universe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_remote_source.html">SacnRemoteSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify that a source has stopped transmission of per-address priority packets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The merge receiver's handle. </td></tr>
+    <tr><td class="paramname">universe</td><td>The universe this merge receiver is monitoring. </td></tr>
+    <tr><td class="paramname">source</td><td>Information about the source that has stopped transmission of per-address priority. </td></tr>
   </table>
   </dd>
 </dl>

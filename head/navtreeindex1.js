@@ -1,5 +1,12 @@
 var NAVTREEINDEX1 =
 {
+"cpp/chrono/c/wcsftime.html":[5,0,1,494],
+"cpp/chrono/duration/duration_cast.html":[5,0,1,0,0],
+"cpp/chrono/time_point/time_point_cast.html":[5,0,1,0,1],
+"cpp/error/current_exception.html":[5,0,1,83],
+"cpp/error/generic_category.html":[5,0,1,166],
+"cpp/error/get_terminate.html":[5,0,1,171],
+"cpp/error/get_unexpected.html":[5,0,1,173],
 "cpp/error/make_exception_ptr.html":[5,0,1,249],
 "cpp/error/rethrow_exception.html":[5,0,1,346],
 "cpp/error/rethrow_if_nested.html":[5,0,1,347],
@@ -208,8 +215,8 @@ var NAVTREEINDEX1 =
 "cpp/numeric/math/logb.html":[5,0,1,244],
 "cpp/numeric/math/modf.html":[5,0,1,280],
 "cpp/numeric/math/nan.html":[5,0,1,284],
-"cpp/numeric/math/nan.html":[5,0,1,285],
 "cpp/numeric/math/nan.html":[5,0,1,286],
+"cpp/numeric/math/nan.html":[5,0,1,285],
 "cpp/numeric/math/nearbyint.html":[5,0,1,287],
 "cpp/numeric/math/nextafter.html":[5,0,1,290],
 "cpp/numeric/math/nextafter.html":[5,0,1,291],
@@ -222,8 +229,8 @@ var NAVTREEINDEX1 =
 "cpp/numeric/math/round.html":[5,0,1,237],
 "cpp/numeric/math/round.html":[5,0,1,248],
 "cpp/numeric/math/round.html":[5,0,1,356],
-"cpp/numeric/math/scalbn.html":[5,0,1,357],
 "cpp/numeric/math/scalbn.html":[5,0,1,358],
+"cpp/numeric/math/scalbn.html":[5,0,1,357],
 "cpp/numeric/math/signbit.html":[5,0,1,383],
 "cpp/numeric/math/sin.html":[5,0,1,384],
 "cpp/numeric/math/sinh.html":[5,0,1,385],
@@ -242,12 +249,5 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/stof.html":[5,0,1,397],
 "cpp/string/basic_string/stof.html":[5,0,1,398],
 "cpp/string/basic_string/stof.html":[5,0,1,401],
-"cpp/string/basic_string/stol.html":[5,0,1,399],
-"cpp/string/basic_string/stol.html":[5,0,1,400],
-"cpp/string/basic_string/stol.html":[5,0,1,402],
-"cpp/string/basic_string/stoul.html":[5,0,1,403],
-"cpp/string/basic_string/stoul.html":[5,0,1,404],
-"cpp/string/basic_string/to_string.html":[5,0,1,447],
-"cpp/string/basic_string/to_wstring.html":[5,0,1,448],
-"cpp/string/byte/atof.html":[5,0,1,28]
+"cpp/string/basic_string/stol.html":[5,0,1,400]
 };

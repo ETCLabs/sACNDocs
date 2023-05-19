@@ -417,6 +417,13 @@
     </member>
     <member kind="typedef">
       <type>void(*</type>
+      <name>SacnMergeReceiverSourcePapLostCallback</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>ga3791403f2e07bd8df2364339f22d5b08</anchor>
+      <arglist>)(sacn_merge_receiver_t handle, uint16_t universe, const SacnRemoteSource *source, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
       <name>SacnMergeReceiverSourceLimitExceededCallback</name>
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga47ccc08a4f5812e26ecf694fa0cb0ff0</anchor>
@@ -1931,6 +1938,13 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>HandleSourcePapLost</name>
+      <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>afc6fd518860704ac4b1f58d5a24f6672</anchor>
+      <arglist>(Handle handle, uint16_t universe, const SacnRemoteSource &amp;source)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>HandleSourceLimitExceeded</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
       <anchor>ab517496e89eb88b7ee7fa383558f725b</anchor>
@@ -2323,6 +2337,13 @@
       <name>sampling_period_ended</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
       <anchor>ab5b543dcbe601f5b9ae53cdb1564fa3d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>SacnMergeReceiverSourcePapLostCallback</type>
+      <name>source_pap_lost</name>
+      <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
+      <anchor>a78c717807daa436372d67d4c2a43a354</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -4154,6 +4175,13 @@
     </member>
     <member kind="typedef">
       <type>void(*</type>
+      <name>SacnMergeReceiverSourcePapLostCallback</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>ga3791403f2e07bd8df2364339f22d5b08</anchor>
+      <arglist>)(sacn_merge_receiver_t handle, uint16_t universe, const SacnRemoteSource *source, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
       <name>SacnMergeReceiverSourceLimitExceededCallback</name>
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga47ccc08a4f5812e26ecf694fa0cb0ff0</anchor>
@@ -5282,67 +5310,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmps_hfpsy2_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmp5tgc5gfs_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmps_hfpsy2_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmp5tgc5gfs_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmps_hfpsy2_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmp5tgc5gfs_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmps_hfpsy2_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmp5tgc5gfs_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmps_hfpsy2_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmp5tgc5gfs_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmps_hfpsy2_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmp5tgc5gfs_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmps_hfpsy2_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmp5tgc5gfs_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmps_hfpsy2_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmp5tgc5gfs_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmps_hfpsy2_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmp5tgc5gfs_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmps_hfpsy2_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmp5tgc5gfs_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmps_hfpsy2_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmp5tgc5gfs_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
