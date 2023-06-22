@@ -7,6 +7,7 @@ var group__sacnopts__receiver =
     [ "SACN_RECEIVER_MAX_THREADS", "group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64", null ],
     [ "SACN_RECEIVER_MAX_UNIVERSES", "group__sacnopts__receiver.html#ga5d749b5a5b67d89a114aa2409ba6ff62", null ],
     [ "SACN_RECEIVER_READ_TIMEOUT_MS", "group__sacnopts__receiver.html#gae7ae8c07912489f40fa77146cdc93d71", null ],
+    [ "SACN_RECEIVER_SOCKET_PER_NIC", "group__sacnopts__receiver.html#gac9daa024fb951f98cdf9c97ddc8244dc", null ],
     [ "SACN_RECEIVER_THREAD_NAME", "group__sacnopts__receiver.html#ga0b3b952f010e515ba69fed3767e905f1", null ],
     [ "SACN_RECEIVER_THREAD_PRIORITY", "group__sacnopts__receiver.html#ga0262024b708fa546807d7b01485c7fcf", null ],
     [ "SACN_RECEIVER_THREAD_STACK", "group__sacnopts__receiver.html#ga3194913a252cb1da68e5bd919f6c1658", null ],

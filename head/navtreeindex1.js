@@ -71,8 +71,8 @@ var NAVTREEINDEX1 =
 "cpp/io/c/ungetwc.html":[5,0,1,463],
 "cpp/io/c/vfprintf.html":[5,0,1,474],
 "cpp/io/c/vfprintf.html":[5,0,1,478],
-"cpp/io/c/vfprintf.html":[5,0,1,480],
 "cpp/io/c/vfprintf.html":[5,0,1,481],
+"cpp/io/c/vfprintf.html":[5,0,1,480],
 "cpp/io/c/vfscanf.html":[5,0,1,475],
 "cpp/io/c/vfscanf.html":[5,0,1,479],
 "cpp/io/c/vfscanf.html":[5,0,1,482],
@@ -215,8 +215,8 @@ var NAVTREEINDEX1 =
 "cpp/numeric/math/logb.html":[5,0,1,244],
 "cpp/numeric/math/modf.html":[5,0,1,280],
 "cpp/numeric/math/nan.html":[5,0,1,284],
-"cpp/numeric/math/nan.html":[5,0,1,286],
 "cpp/numeric/math/nan.html":[5,0,1,285],
+"cpp/numeric/math/nan.html":[5,0,1,286],
 "cpp/numeric/math/nearbyint.html":[5,0,1,287],
 "cpp/numeric/math/nextafter.html":[5,0,1,290],
 "cpp/numeric/math/nextafter.html":[5,0,1,291],
@@ -229,8 +229,8 @@ var NAVTREEINDEX1 =
 "cpp/numeric/math/round.html":[5,0,1,237],
 "cpp/numeric/math/round.html":[5,0,1,248],
 "cpp/numeric/math/round.html":[5,0,1,356],
-"cpp/numeric/math/scalbn.html":[5,0,1,358],
 "cpp/numeric/math/scalbn.html":[5,0,1,357],
+"cpp/numeric/math/scalbn.html":[5,0,1,358],
 "cpp/numeric/math/signbit.html":[5,0,1,383],
 "cpp/numeric/math/sin.html":[5,0,1,384],
 "cpp/numeric/math/sinh.html":[5,0,1,385],
@@ -249,5 +249,5 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/stof.html":[5,0,1,397],
 "cpp/string/basic_string/stof.html":[5,0,1,398],
 "cpp/string/basic_string/stof.html":[5,0,1,401],
-"cpp/string/basic_string/stol.html":[5,0,1,400]
+"cpp/string/basic_string/stol.html":[5,0,1,399]
 };

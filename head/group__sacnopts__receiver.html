@@ -232,6 +232,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga6bfc294d941da830fbb9bd562c45f638"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638">SACN_RECEIVER_LIMIT_BIND</a>&#160;&#160;&#160;(!_WIN32 &amp;&amp; !__APPLE__)</td></tr>
 <tr class="memdesc:ga6bfc294d941da830fbb9bd562c45f638"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to 1, bind only two sockets per thread to reduce duplicate multicast traffic.  <a href="group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638">More...</a><br /></td></tr>
 <tr class="separator:ga6bfc294d941da830fbb9bd562c45f638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9daa024fb951f98cdf9c97ddc8244dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gac9daa024fb951f98cdf9c97ddc8244dc">SACN_RECEIVER_SOCKET_PER_NIC</a>&#160;&#160;&#160;(_WIN32)</td></tr>
+<tr class="memdesc:gac9daa024fb951f98cdf9c97ddc8244dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure whether or not to use the PKTINFO sockopts to determine which NIC received a packet.  <a href="group__sacnopts__receiver.html#gac9daa024fb951f98cdf9c97ddc8244dc">More...</a><br /></td></tr>
+<tr class="separator:gac9daa024fb951f98cdf9c97ddc8244dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab20e9727556f9656a506bb85628f7df8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8">SACN_RECEIVER_MAX_SUBS_PER_SOCKET</a>&#160;&#160;&#160;20</td></tr>
 <tr class="memdesc:gab20e9727556f9656a506bb85628f7df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of multicast subscriptions supported per shared socket.  <a href="group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8">More...</a><br /></td></tr>
 <tr class="separator:gab20e9727556f9656a506bb85628f7df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,6 +337,25 @@ Macros</h2></td></tr>
 
 <p>The maximum amount of time that a call to sacnrecv_read() will block waiting for data, in milliseconds. </p>
 <p>It is recommended to keep this time short to avoid delays on shutdown. </p>
+
+</div>
+</div>
+<a id="gac9daa024fb951f98cdf9c97ddc8244dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9daa024fb951f98cdf9c97ddc8244dc">&#9670;&nbsp;</a></span>SACN_RECEIVER_SOCKET_PER_NIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_RECEIVER_SOCKET_PER_NIC&#160;&#160;&#160;(_WIN32)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure whether or not to use the PKTINFO sockopts to determine which NIC received a packet. </p>
+<p>If set to 0, the corresponding PKTINFO sockopts for IPv4 and/or IPv6 are enabled, and the NIC is obtained from ancillary data via recvmsg. This is not supported on Windows due to performance issues that occur when either of the PKTINFO sockopts are enabled.</p>
+<p>If set to 1, a socket will only be able to subscribe on one NIC instead of all of them. This will result in the creation of more sockets to cover all the NICs on the system. The NIC will then be determined by the socket that received the data. This will likely not work on Linux or lwIP, since each bound socket is susceptible to receiving data from subscriptions on other sockets.</p>
+<p>Don't change this option unless you know what you're doing. </p>
 
 </div>
 </div>
