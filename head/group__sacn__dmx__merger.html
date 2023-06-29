@@ -628,7 +628,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes the per-address priority (PAP) data from the source and recalculate outputs. </p>
-<p>Per-address priority data can time out in sACN just like levels. This is a convenience function to immediately turn off the per-address priority data for a source and recalculate the outputs.</p>
+<p>Per-address priority data can time out in sACN just like levels. This is a convenience function to immediately turn off the per-address priority data for a source and recalculate the outputs currently within the valid level count (no merging will occur if levels haven't been inputted yet). Priorities for slots beyond this count will eventually be merged once levels beyond this count are inputted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">merger</td><td>The handle to the merger. </td></tr>
@@ -730,13 +730,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates a source's levels and recalculates outputs. </p>
-<p>This function updates the levels of the specified source, and then triggers the recalculation of each slot. For each slot, the source will only be included in the merge if it has a priority at that slot. Otherwise the level will be saved for when a priority is eventually inputted.</p>
+<p>This function updates the levels of the specified source, and then triggers the recalculation of each slot. Only slots within the valid level range will ever be factored into the merge. If the level count increased (it is 0 initially), previously inputted priorities will be factored into the recalculation for the added slots. However, if the level count decreased, the slots that were lost will be released and will no longer be part of the merge. For each slot, the source will only be included in the merge if it has a priority at that slot. Otherwise the level will be saved for when a priority is eventually inputted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">merger</td><td>The handle to the merger. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The id of the source to modify. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>The new DMX levels to be copied in, starting from the first slot. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_count</td><td>The length of new_levels. If this is less than DMX_ADDRESS_COUNT, the levels for all remaining levels will be set to 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_count</td><td>The length of new_levels. Only slots within this range will ever be factored into the merge. </td></tr>
   </table>
   </dd>
 </dl>
@@ -791,7 +791,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates a source's per-address priorities (PAP) and recalculates outputs. </p>
-<p>This function updates the per-address priorities (PAP) of the specified source, and then triggers the recalculation of each slot. For each slot, the source will only be included in the merge if it has a priority at that slot.</p>
+<p>This function updates the per-address priorities (PAP) of the specified source, and then triggers the recalculation of each slot within the current valid level count (thus no merging will occur if levels haven't been inputted yet). Priorities beyond this count are saved, and eventually merged once levels beyond this count are inputted. For each slot, the source will only be included in the merge if it has a priority at that slot.</p>
 <p>If PAP is not specified for all levels, then the remaining levels will default to a PAP of 0. To remove PAP for this source and revert to the universe priority, call sacn_dmx_merger_remove_pap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -847,7 +847,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates a source's universe priority and recalculates outputs. </p>
-<p>This function updates the universe priority of the specified source, and then triggers the recalculation of each slot. For each slot, the source will only be included in the merge if it has a priority at that slot.</p>
+<p>This function updates the universe priority of the specified source, and then triggers the recalculation of each slot within the current valid level count (thus no merging will occur if levels haven't been inputted yet). Priorities for slots beyond this count are saved, and eventually merged once levels beyond this count are inputted. For each slot, the source will only be included in the merge if it has a priority at that slot.</p>
 <p>If this source currently has per-address priorities (PAP) via sacn_dmx_merger_update_pap, then the universe priority can have no effect on the merge results until the application calls sacn_dmx_merger_remove_pap, at which point the priorities of each slot will revert to the universe priority passed in here.</p>
 <p>If this source doesn't have PAP, then the universe priority is converted into PAP for each slot. These are the priorities used for the merge. This means a universe priority of 0 will be converted to a PAP of 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
