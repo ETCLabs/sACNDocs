@@ -72,7 +72,7 @@ var NAVTREEINDEX =
 "cpp/string/byte/atof.html",
 "group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349",
 "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009",
-"struct_sacn_remote_source.html"
+"struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -238,6 +238,12 @@ Macros</h2></td></tr>
 <tr class="memitem:gab20e9727556f9656a506bb85628f7df8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8">SACN_RECEIVER_MAX_SUBS_PER_SOCKET</a>&#160;&#160;&#160;20</td></tr>
 <tr class="memdesc:gab20e9727556f9656a506bb85628f7df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of multicast subscriptions supported per shared socket.  <a href="group__sacnopts__receiver.html#gab20e9727556f9656a506bb85628f7df8">More...</a><br /></td></tr>
 <tr class="separator:gab20e9727556f9656a506bb85628f7df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeed18ca4945f91d2108bdc32e587cf18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#gaeed18ca4945f91d2108bdc32e587cf18">SACN_RECEIVER_ENABLE_SO_REUSEPORT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:gaeed18ca4945f91d2108bdc32e587cf18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether sACN should try to enable the SO_REUSEPORT socket option.  <a href="group__sacnopts__receiver.html#gaeed18ca4945f91d2108bdc32e587cf18">More...</a><br /></td></tr>
+<tr class="separator:gaeed18ca4945f91d2108bdc32e587cf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b589b1c57b1812592ae77df67bd754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga45b589b1c57b1812592ae77df67bd754">SACN_RECEIVER_ENABLE_SO_RCVBUF</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga45b589b1c57b1812592ae77df67bd754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether sACN should try to set the SO_RCVBUF socket option.  <a href="group__sacnopts__receiver.html#ga45b589b1c57b1812592ae77df67bd754">More...</a><br /></td></tr>
+<tr class="separator:ga45b589b1c57b1812592ae77df67bd754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga064a427072df41e909b7d78cdb233c64"><td class="memItemLeft" align="right" valign="top"><a id="ga064a427072df41e909b7d78cdb233c64"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__receiver.html#ga064a427072df41e909b7d78cdb233c64">SACN_RECEIVER_MAX_THREADS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ga064a427072df41e909b7d78cdb233c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unconfigurable; will be configurable in the future. <br /></td></tr>
@@ -250,6 +256,42 @@ Macros</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Configuration options for the <a class="el" href="group__sacn__receiver.html">sACN Receiver</a> module. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga45b589b1c57b1812592ae77df67bd754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45b589b1c57b1812592ae77df67bd754">&#9670;&nbsp;</a></span>SACN_RECEIVER_ENABLE_SO_RCVBUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_RECEIVER_ENABLE_SO_RCVBUF&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether sACN should try to set the SO_RCVBUF socket option. </p>
+<p>If enabled, the library will try to set it to #SACN_RECEIVER_SOCKET_RCVBUF_SIZE and log an error if it failed.</p>
+<p>Define to 0 to disable. Then the library will not attempt this sockopt, avoiding potential errors. </p>
+
+</div>
+</div>
+<a id="gaeed18ca4945f91d2108bdc32e587cf18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeed18ca4945f91d2108bdc32e587cf18">&#9670;&nbsp;</a></span>SACN_RECEIVER_ENABLE_SO_REUSEPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_RECEIVER_ENABLE_SO_REUSEPORT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether sACN should try to enable the SO_REUSEPORT socket option. </p>
+<p>If enabled, the library will try to enable this socket option and fail to initialize if it fails.</p>
+<p>Define to 0 to disable. Then the library will not attempt this sockopt, avoiding potential errors. </p>
+
+</div>
+</div>
 <a id="ga6bfc294d941da830fbb9bd562c45f638"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6bfc294d941da830fbb9bd562c45f638">&#9670;&nbsp;</a></span>SACN_RECEIVER_LIMIT_BIND</h2>
 

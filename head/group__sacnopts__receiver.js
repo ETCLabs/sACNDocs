@@ -1,5 +1,7 @@
 var group__sacnopts__receiver =
 [
+    [ "SACN_RECEIVER_ENABLE_SO_RCVBUF", "group__sacnopts__receiver.html#ga45b589b1c57b1812592ae77df67bd754", null ],
+    [ "SACN_RECEIVER_ENABLE_SO_REUSEPORT", "group__sacnopts__receiver.html#gaeed18ca4945f91d2108bdc32e587cf18", null ],
     [ "SACN_RECEIVER_LIMIT_BIND", "group__sacnopts__receiver.html#ga6bfc294d941da830fbb9bd562c45f638", null ],
     [ "SACN_RECEIVER_MAX_FOOTPRINT", "group__sacnopts__receiver.html#gaf0e0364237fe1e26c348fdd53bb5976f", null ],
     [ "SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE", "group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e", null ],
