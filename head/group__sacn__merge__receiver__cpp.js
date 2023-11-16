@@ -51,6 +51,8 @@ var group__sacn__merge__receiver__cpp =
       [ "addr", "structsacn_1_1_merge_receiver_1_1_source.html#a6089008b110eefe551612f1d3d9073bc", null ],
       [ "cid", "structsacn_1_1_merge_receiver_1_1_source.html#ab74b3ddda3c95279107d0059dd7ee9f3", null ],
       [ "handle", "structsacn_1_1_merge_receiver_1_1_source.html#abd2d36f012ca716885c43720824b4a75", null ],
-      [ "name", "structsacn_1_1_merge_receiver_1_1_source.html#a9b45b3e13bd9167aab02e17e08916231", null ]
+      [ "name", "structsacn_1_1_merge_receiver_1_1_source.html#a9b45b3e13bd9167aab02e17e08916231", null ],
+      [ "per_address_priorities_active", "structsacn_1_1_merge_receiver_1_1_source.html#a401cf1a9b9e5bd901e1600ea9abc4350", null ],
+      [ "universe_priority", "structsacn_1_1_merge_receiver_1_1_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4", null ]
     ] ]
 ];

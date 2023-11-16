@@ -219,6 +219,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a9b45b3e13bd9167aab02e17e08916231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6089008b110eefe551612f1d3d9073bc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_merge_receiver_1_1_source.html#a6089008b110eefe551612f1d3d9073bc">addr</a></td></tr>
 <tr class="separator:a6089008b110eefe551612f1d3d9073bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401cf1a9b9e5bd901e1600ea9abc4350"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_merge_receiver_1_1_source.html#a401cf1a9b9e5bd901e1600ea9abc4350">per_address_priorities_active</a></td></tr>
+<tr class="separator:a401cf1a9b9e5bd901e1600ea9abc4350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc54b6cd291e480d6cb7c9b5b98a3f4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_merge_receiver_1_1_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4">universe_priority</a></td></tr>
+<tr class="separator:aefc54b6cd291e480d6cb7c9b5b98a3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information about a remote sACN source being tracked by a merge receiver. </p>
@@ -280,6 +284,36 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The name of the source. </p>
+
+</div>
+</div>
+<a id="a401cf1a9b9e5bd901e1600ea9abc4350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401cf1a9b9e5bd901e1600ea9abc4350">&#9670;&nbsp;</a></span>per_address_priorities_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool per_address_priorities_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the source is sending per-address priority packets, or only per-universe. </p>
+
+</div>
+</div>
+<a id="aefc54b6cd291e480d6cb7c9b5b98a3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc54b6cd291e480d6cb7c9b5b98a3f4">&#9670;&nbsp;</a></span>universe_priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t universe_priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The source's current per-universe priority. </p>
 
 </div>
 </div>

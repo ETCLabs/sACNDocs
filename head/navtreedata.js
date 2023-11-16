@@ -72,7 +72,7 @@ var NAVTREEINDEX =
 "cpp/string/basic_string/stol.html",
 "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872",
 "group__sacn__source.html#ga9d9b3e992e56375779651023cc92121d",
-"struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab"
+"struct_sacn_recv_merged_data.html#ade95d8642c07e44ecacc13f358ede54d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

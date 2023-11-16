@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"struct_sacn_recv_merged_data.html#ade95d8642c07e44ecacc13f358ede54d":[4,0,1,0,3],
+"struct_sacn_recv_universe_data.html":[4,0,2,1],
 "struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab":[4,0,2,1,4],
 "struct_sacn_recv_universe_data.html#a0ad043071ccc7a261d79a759dc9c6f0c":[4,0,2,1,2],
 "struct_sacn_recv_universe_data.html#a631d1206624dc91b6c574bf919a7699d":[4,0,2,1,1],
@@ -73,10 +75,12 @@ var NAVTREEINDEX5 =
 "structsacn_1_1_merge_receiver_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed":[4,1,2,2,2],
 "structsacn_1_1_merge_receiver_1_1_settings.html#af4536f740a72ae5788afacd0db91da30":[4,1,2,2,7],
 "structsacn_1_1_merge_receiver_1_1_source.html":[4,1,2,4],
+"structsacn_1_1_merge_receiver_1_1_source.html#a401cf1a9b9e5bd901e1600ea9abc4350":[4,1,2,4,4],
 "structsacn_1_1_merge_receiver_1_1_source.html#a6089008b110eefe551612f1d3d9073bc":[4,1,2,4,0],
 "structsacn_1_1_merge_receiver_1_1_source.html#a9b45b3e13bd9167aab02e17e08916231":[4,1,2,4,3],
 "structsacn_1_1_merge_receiver_1_1_source.html#ab74b3ddda3c95279107d0059dd7ee9f3":[4,1,2,4,1],
 "structsacn_1_1_merge_receiver_1_1_source.html#abd2d36f012ca716885c43720824b4a75":[4,1,2,4,2],
+"structsacn_1_1_merge_receiver_1_1_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4":[4,1,2,4,5],
 "structsacn_1_1_receiver_1_1_netint_list.html":[4,1,3,3],
 "structsacn_1_1_receiver_1_1_netint_list.html#a055503469cbefb1d3f658e9c8b55a5ba":[4,1,3,3,2],
 "structsacn_1_1_receiver_1_1_netint_list.html#a0d237fd6d38af257c8ab2a14a64a76e0":[4,1,3,3,3],
