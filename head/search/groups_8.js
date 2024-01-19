@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['netint_20_28network_20interfaces_29_5327',['netint (Network Interfaces)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__netint.html',1,'']]],
-  ['network_20abstraction_20modules_5328',['Network Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__net.html',1,'']]]
+  ['netint_20_28network_20interfaces_29_5359',['netint (Network Interfaces)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__netint.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__netint.html',1,'(Global Namespace)']]],
+  ['network_20abstraction_20modules_5360',['Network Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__net.html',1,'']]]
 ];

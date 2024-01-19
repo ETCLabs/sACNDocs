@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['thread_2eh_3244',['thread.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2thread_8h.html',1,'']]],
-  ['timer_2eh_3245',['timer.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2timer_8h.html',1,'']]]
+  ['sem_2eh_3253',['sem.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2sem_8h.html',1,'']]],
+  ['signal_2eh_3254',['signal.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2signal_8h.html',1,'']]],
+  ['source_2eh_3255',['source.h',['../source_8h.html',1,'(Global Namespace)'],['../cpp_2source_8h.html',1,'(Global Namespace)']]],
+  ['source_5fdetector_2eh_3256',['source_detector.h',['../source__detector_8h.html',1,'(Global Namespace)'],['../cpp_2source__detector_8h.html',1,'(Global Namespace)']]]
 ];
