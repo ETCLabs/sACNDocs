@@ -251,9 +251,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa662eb1cc3bb937691dcabc56332952f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f">sacn_source_detector_create</a> (const <a class="el" href="struct_sacn_source_detector_config.html">SacnSourceDetectorConfig</a> *config, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *netint_config)</td></tr>
 <tr class="memdesc:gaa662eb1cc3bb937691dcabc56332952f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the sACN Source Detector.  <a href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f">More...</a><br /></td></tr>
 <tr class="separator:gaa662eb1cc3bb937691dcabc56332952f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42bf1f29fa1a313343b672e33685ba1d"><td class="memItemLeft" align="right" valign="top"><a id="ga42bf1f29fa1a313343b672e33685ba1d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">sacn_source_detector_destroy</a> ()</td></tr>
-<tr class="memdesc:ga42bf1f29fa1a313343b672e33685ba1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the sACN Source Detector. <br /></td></tr>
+<tr class="memitem:ga42bf1f29fa1a313343b672e33685ba1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">sacn_source_detector_destroy</a> ()</td></tr>
+<tr class="memdesc:ga42bf1f29fa1a313343b672e33685ba1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the sACN Source Detector.  <a href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">More...</a><br /></td></tr>
 <tr class="separator:ga42bf1f29fa1a313343b672e33685ba1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga740a10eb54b67decf41794e298258a21"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21">sacn_source_detector_reset_networking</a> (const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga740a10eb54b67decf41794e298258a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the source detector system network interfaces. Also resets the underlying network sockets for the sACN Source Detector if it was created.  <a href="group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21">More...</a><br /></td></tr>
@@ -306,10 +305,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div class="line"><a class="code" href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a>();</div>
 <div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
 <div class="ttc" id="agroup__etcpal__log_html_ga24911b91f9e4d5043348096a3065cd41"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html#ga24911b91f9e4d5043348096a3065cd41">ETCPAL_LOG_PARAMS_INIT</a></div><div class="ttdeci">#define ETCPAL_LOG_PARAMS_INIT</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga612160fe1d0f1e4f1fae4d72232fee07"><div class="ttname"><a href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a></div><div class="ttdeci">etcpal_error_t sacn_init(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:68</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:234</div></div>
-<div class="ttc" id="agroup__sacn__source__detector_html_ga42bf1f29fa1a313343b672e33685ba1d"><div class="ttname"><a href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">sacn_source_detector_destroy</a></div><div class="ttdeci">void sacn_source_detector_destroy()</div><div class="ttdoc">Destroy the sACN Source Detector.</div><div class="ttdef"><b>Definition:</b> source_detector.c:126</div></div>
-<div class="ttc" id="agroup__sacn__source__detector_html_ga740a10eb54b67decf41794e298258a21"><div class="ttname"><a href="group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21">sacn_source_detector_reset_networking</a></div><div class="ttdeci">etcpal_error_t sacn_source_detector_reset_networking(const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Updates the source detector system network interfaces. Also resets the underlying network sockets for...</div><div class="ttdef"><b>Definition:</b> source_detector.c:167</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga612160fe1d0f1e4f1fae4d72232fee07"><div class="ttname"><a href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a></div><div class="ttdeci">etcpal_error_t sacn_init(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:70</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:251</div></div>
+<div class="ttc" id="agroup__sacn__source__detector_html_ga42bf1f29fa1a313343b672e33685ba1d"><div class="ttname"><a href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">sacn_source_detector_destroy</a></div><div class="ttdeci">void sacn_source_detector_destroy()</div><div class="ttdoc">Destroy the sACN Source Detector.</div><div class="ttdef"><b>Definition:</b> source_detector.c:129</div></div>
+<div class="ttc" id="agroup__sacn__source__detector_html_ga740a10eb54b67decf41794e298258a21"><div class="ttname"><a href="group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21">sacn_source_detector_reset_networking</a></div><div class="ttdeci">etcpal_error_t sacn_source_detector_reset_networking(const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Updates the source detector system network interfaces. Also resets the underlying network sockets for...</div><div class="ttdef"><b>Definition:</b> source_detector.c:178</div></div>
 <div class="ttc" id="agroup__sacn__source__detector_html_ga78fbb7639c835e3b08091fc16e31d6fc"><div class="ttname"><a href="group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc">SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source_detector.h:231</div></div>
 <div class="ttc" id="agroup__sacn__source__detector_html_gaa662eb1cc3bb937691dcabc56332952f"><div class="ttname"><a href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f">sacn_source_detector_create</a></div><div class="ttdeci">etcpal_error_t sacn_source_detector_create(const SacnSourceDetectorConfig *config, const SacnNetintConfig *netint_config)</div><div class="ttdoc">Create the sACN Source Detector.</div><div class="ttdef"><b>Definition:</b> source_detector.c:85</div></div>
 <div class="ttc" id="asource__detector_8h_html"><div class="ttname"><a href="source__detector_8h.html">source_detector.h</a></div><div class="ttdoc">sACN Source Detector API definitions</div></div>
@@ -585,6 +584,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: No room to allocate memory for the detector. </dd>
 <dd>
 <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="ga42bf1f29fa1a313343b672e33685ba1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42bf1f29fa1a313343b672e33685ba1d">&#9670;&nbsp;</a></span>sacn_source_detector_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sacn_source_detector_destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the sACN Source Detector. </p>
+<p>WARNING: Calling this from a source detector callback will deadlock!</p>
+<p>After this function completes, callbacks will no longer be called for the source detector. </p>
 
 </div>
 </div>

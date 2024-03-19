@@ -868,6 +868,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroy a sACN Merge Receiver instance. </p>
+<p>WARNING: Calling this from a merge receiver callback will deadlock!</p>
+<p>After this function completes, callbacks will no longer be called for this merge receiver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the merge receiver to destroy. </td></tr>

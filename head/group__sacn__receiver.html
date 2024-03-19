@@ -940,7 +940,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroy a sACN receiver instance. </p>
+<p>WARNING: Calling this from a receiver callback will deadlock!</p>
 <p>Tears down the receiver and any sources currently being tracked on the receiver's universe. Stops listening for sACN on that universe.</p>
+<p>After this function completes, callbacks will no longer be called for this receiver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the receiver to destroy. </td></tr>

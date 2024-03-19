@@ -842,7 +842,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop listening for sACN data on a universe. </p>
-<p>Tears down the receiver and any sources currently being tracked on the receiver's universe. Stops listening for sACN on that universe. </p>
+<p>WARNING: Calling this from a receiver callback will deadlock!</p>
+<p>Tears down the receiver and any sources currently being tracked on the receiver's universe. Stops listening for sACN on that universe.</p>
+<p>After this function completes, callbacks will no longer be called for this receiver. </p>
 
 </div>
 </div>
@@ -893,7 +895,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Configuration parameters for the sACN receiver and this class instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">notify_handler</td><td>The notification interface to call back to the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify_handler</td><td>The notification interface to call back to the application. This reference must remain valid until <a class="el" href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Stop listening for sACN data on a universe.">Shutdown()</a> or <a class="el" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25" title="Deinitialize the sACN library.">sacn::Deinit()</a> is called. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mcast_mode</td><td>This controls whether or not multicast traffic is allowed for this receiver. </td></tr>
   </table>
   </dd>
@@ -963,7 +965,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Configuration parameters for the sACN receiver and this class instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">notify_handler</td><td>The notification interface to call back to the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify_handler</td><td>The notification interface to call back to the application. This reference must remain valid until <a class="el" href="classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9" title="Stop listening for sACN data on a universe.">Shutdown()</a> or <a class="el" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25" title="Deinitialize the sACN library.">sacn::Deinit()</a> is called. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">netints</td><td>Optional. If !empty, this is the list of interfaces the application wants to use, and the status codes are filled in. If empty, all available interfaces are tried and this vector isn't modified. </td></tr>
   </table>
   </dd>
