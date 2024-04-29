@@ -91,9 +91,9 @@ var searchData=
   ['multiplies_1458',['multiplies',['https://en.cppreference.com/w/cpp/utility/functional/multiplies.html',1,'std']]],
   ['multiset_1459',['multiset',['https://en.cppreference.com/w/cpp/container/multiset/multiset.html',1,'std::multiset::multiset()'],['https://en.cppreference.com/w/cpp/container/multiset.html',1,'multiset']]],
   ['mutex_1460',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html',1,'etcpal']]],
-  ['mutex_1461',['mutex',['https://en.cppreference.com/w/cpp/thread/unique_lock/mutex.html',1,'std::unique_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/shared_lock/mutex.html',1,'std::shared_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/mutex/mutex.html',1,'std::mutex::mutex()']]],
+  ['mutex_1461',['mutex',['https://en.cppreference.com/w/cpp/thread/shared_lock/mutex.html',1,'std::shared_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/mutex/mutex.html',1,'std::mutex::mutex()']]],
   ['mutex_1462',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
-  ['mutex_1463',['mutex',['https://en.cppreference.com/w/cpp/thread/mutex.html',1,'std']]],
+  ['mutex_1463',['mutex',['https://en.cppreference.com/w/cpp/thread/unique_lock/mutex.html',1,'std::unique_lock::mutex()'],['https://en.cppreference.com/w/cpp/thread/mutex.html',1,'mutex']]],
   ['mutex_20_28mutexes_29_1464',['mutex (Mutexes)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__mutex.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html',1,'(Global Namespace)']]],
   ['mutex_2eh_1465',['mutex.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2mutex_8h.html',1,'']]],
   ['mutexguard_1466',['MutexGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html',1,'MutexGuard'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
