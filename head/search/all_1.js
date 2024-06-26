@@ -54,7 +54,7 @@ var searchData=
   ['addr_5fbuf_52',['addr_buf',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html#a53d9f270f12d57a90a97d60b5e612237',1,'EtcPalIpAddr']]],
   ['address_53',['address',['https://en.cppreference.com/w/cpp/memory/allocator/address.html',1,'std::allocator']]],
   ['address_5fcount_54',['address_count',['../struct_sacn_recv_universe_subrange.html#a827b7214573943430871533037d0f5b9',1,'SacnRecvUniverseSubrange']]],
-  ['address_5fpriority_55',['address_priority',['../struct_sacn_dmx_merger_source.html#a8e2ad703e06552317b7f47dd0e0ebbea',1,'SacnDmxMergerSource']]],
+  ['address_5fpriority_55',['address_priority',['../struct_sacn_dmx_merger_source.html#a25728b13e434ea13b42583a7a27fce63',1,'SacnDmxMergerSource']]],
   ['addressof_56',['addressof',['https://en.cppreference.com/w/cpp/memory/addressof.html',1,'std']]],
   ['addsource_57',['AddSource',['../classsacn_1_1_dmx_merger.html#ac4c679c71b50cde6301145a91b8440ce',1,'sacn::DmxMerger']]],
   ['addunicastdestination_58',['AddUnicastDestination',['../classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454',1,'sacn::Source']]],

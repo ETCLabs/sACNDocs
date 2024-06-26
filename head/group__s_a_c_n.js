@@ -2,10 +2,10 @@ var group__s_a_c_n =
 [
     [ "sACN DMX Merger", "group__sacn__dmx__merger.html", "group__sacn__dmx__merger" ],
     [ "sACN Merge Receiver", "group__sacn__merge__receiver.html", "group__sacn__merge__receiver" ],
+    [ "sACN Configuration Options", "group__sacnopts.html", "group__sacnopts" ],
     [ "sACN Receiver", "group__sacn__receiver.html", "group__sacn__receiver" ],
     [ "sACN Source", "group__sacn__source.html", "group__sacn__source" ],
     [ "sACN Source Detector", "group__sacn__source__detector.html", "group__sacn__source__detector" ],
-    [ "sACN Configuration Options", "group__sacnopts.html", "group__sacnopts" ],
     [ "SacnMcastInterface", "struct_sacn_mcast_interface.html", [
       [ "iface", "struct_sacn_mcast_interface.html#a9d398e27f9eb3b1ee3b422225196b684", null ],
       [ "status", "struct_sacn_mcast_interface.html#a3ed2ca570213574abb27e4d16cab480b", null ]

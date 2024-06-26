@@ -208,6 +208,7 @@
     <filename>dmx__merger_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
     <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
+    <includes id="opts_8h" name="opts.h" local="yes" imported="no">sacn/opts.h</includes>
     <class kind="struct">SacnDmxMergerConfig</class>
     <class kind="struct">SacnDmxMergerSource</class>
     <member kind="define">
@@ -555,6 +556,284 @@
     <class kind="struct">sacn::MergeReceiver::NetintList</class>
     <class kind="struct">sacn::MergeReceiver::Source</class>
     <namespace>sacn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>opts.h</name>
+    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <filename>opts_8h.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DYNAMIC_MEM</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gaf7b1d2fa482d1665683883f80b1f4d87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOGGING_ENABLED</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga5b77f40b283fa0f754576a64ff6f3d4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOG_MSG_PREFIX</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga739093ac67975234540c307629ac8280</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ASSERT_VERIFY</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga5a66b273b21d3c30e4531a590a480d2c</anchor>
+      <arglist>(exp)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ASSERT</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gabd4f61db43336221d5947896ef0f2921</anchor>
+      <arglist>(expr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ETC_PRIORITY_EXTENSION</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga59ee3abb2f4eb1554d7be219a9c8028b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOOPBACK</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga6ae6b1e22f87a5c2e49aefbc95a97256</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MAX_NETINTS</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga2dd2edc6a9d13618baaf6d02b4d86e81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_PRIORITY</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga0262024b708fa546807d7b01485c7fcf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_STACK</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga3194913a252cb1da68e5bd919f6c1658</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_NAME</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga0b3b952f010e515ba69fed3767e905f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_READ_TIMEOUT_MS</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gae7ae8c07912489f40fa77146cdc93d71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_UNIVERSES</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga5d749b5a5b67d89a114aa2409ba6ff62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga079b2f51919b9ac76e3b3330040bd20e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_TOTAL_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga055b24b2c72073823f4c92ed32e7ddb0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_LIMIT_BIND</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga6bfc294d941da830fbb9bd562c45f638</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_SOCKET_PER_NIC</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gac9daa024fb951f98cdf9c97ddc8244dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_SUBS_PER_SOCKET</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gab20e9727556f9656a506bb85628f7df8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_ENABLE_SO_REUSEPORT</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gaeed18ca4945f91d2108bdc32e587cf18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_ENABLE_SO_RCVBUF</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga45b589b1c57b1812592ae77df67bd754</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_THREADS</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga064a427072df41e909b7d78cdb233c64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_FOOTPRINT</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gaf0e0364237fe1e26c348fdd53bb5976f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_PRIORITY</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gac69e2ffb7e6a156134373d687a7cbed7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_STACK</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga197a7ace1de904752a545c799ea9e498</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_NAME</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga0a2bddcd541aabbd0b4536d6dae4caa2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_SOCKET_SNDBUF_SIZE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gafb37b9b4569cb297e919655ad1f0ff22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gaa08afe863ab6922c173055d4239184c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gaac75390f2990b299303bfbce89e5f7ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga53a3e7e498368c3311403912d7c01515</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>gaaeaa9701ec2b290ddfb3b31d8463dca4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_SLOTS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga01ed1a377484d83e568bd7cf053f392f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga1291670a95116043ee7489006427aa5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga79ce98d0c9b30964fd17728dc8073a26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MERGE_RECEIVER_ENABLE_IN_STATIC_MEMORY_MODE</name>
+      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
+      <anchor>gaedd4882cf4778846d5e3e244fea9c916</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER</name>
+      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
+      <anchor>ga2e082ccf74be5a3b106b8623f5eaa65d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_DETECTOR_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
+      <anchor>ga872fc4bd419f3cc3d77e7502f0b1ed0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE</name>
+      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
+      <anchor>ga24e186592053bd29fbffbfc92825268e</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>receiver.h</name>
@@ -1318,284 +1597,6 @@
       <arglist></arglist>
     </member>
   </compound>
-  <compound kind="file">
-    <name>opts.h</name>
-    <path>/builds/etc/common-tech/net/sacn/src/sacn/private/</path>
-    <filename>opts_8h.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DYNAMIC_MEM</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>gaf7b1d2fa482d1665683883f80b1f4d87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOGGING_ENABLED</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga5b77f40b283fa0f754576a64ff6f3d4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOG_MSG_PREFIX</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga739093ac67975234540c307629ac8280</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ASSERT_VERIFY</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga5a66b273b21d3c30e4531a590a480d2c</anchor>
-      <arglist>(exp)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ASSERT</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>gabd4f61db43336221d5947896ef0f2921</anchor>
-      <arglist>(expr)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ETC_PRIORITY_EXTENSION</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga59ee3abb2f4eb1554d7be219a9c8028b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOOPBACK</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga6ae6b1e22f87a5c2e49aefbc95a97256</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MAX_NETINTS</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga2dd2edc6a9d13618baaf6d02b4d86e81</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_PRIORITY</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga0262024b708fa546807d7b01485c7fcf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_STACK</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga3194913a252cb1da68e5bd919f6c1658</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_NAME</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga0b3b952f010e515ba69fed3767e905f1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_READ_TIMEOUT_MS</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gae7ae8c07912489f40fa77146cdc93d71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_UNIVERSES</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga5d749b5a5b67d89a114aa2409ba6ff62</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga079b2f51919b9ac76e3b3330040bd20e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_TOTAL_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga055b24b2c72073823f4c92ed32e7ddb0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_LIMIT_BIND</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga6bfc294d941da830fbb9bd562c45f638</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_SOCKET_PER_NIC</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gac9daa024fb951f98cdf9c97ddc8244dc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_SUBS_PER_SOCKET</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gab20e9727556f9656a506bb85628f7df8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_ENABLE_SO_REUSEPORT</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gaeed18ca4945f91d2108bdc32e587cf18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_ENABLE_SO_RCVBUF</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga45b589b1c57b1812592ae77df67bd754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_THREADS</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga064a427072df41e909b7d78cdb233c64</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_FOOTPRINT</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gaf0e0364237fe1e26c348fdd53bb5976f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_PRIORITY</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gac69e2ffb7e6a156134373d687a7cbed7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_STACK</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga197a7ace1de904752a545c799ea9e498</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_NAME</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga0a2bddcd541aabbd0b4536d6dae4caa2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_SOCKET_SNDBUF_SIZE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gafb37b9b4569cb297e919655ad1f0ff22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gaa08afe863ab6922c173055d4239184c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gaac75390f2990b299303bfbce89e5f7ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga53a3e7e498368c3311403912d7c01515</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>gaaeaa9701ec2b290ddfb3b31d8463dca4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_SLOTS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga01ed1a377484d83e568bd7cf053f392f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga1291670a95116043ee7489006427aa5c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga79ce98d0c9b30964fd17728dc8073a26</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_ENABLE_IN_STATIC_MEMORY_MODE</name>
-      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
-      <anchor>gaedd4882cf4778846d5e3e244fea9c916</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER</name>
-      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
-      <anchor>ga2e082ccf74be5a3b106b8623f5eaa65d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
-      <anchor>ga872fc4bd419f3cc3d77e7502f0b1ed0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE</name>
-      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
-      <anchor>ga24e186592053bd29fbffbfc92825268e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
   <compound kind="class">
     <name>sacn::DmxMerger</name>
     <filename>classsacn_1_1_dmx_merger.html</filename>
@@ -2240,8 +2241,8 @@
       <type>uint8_t</type>
       <name>levels</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a82f491441fd8ea7e0b36c867797a9ba5</anchor>
-      <arglist>[DMX_ADDRESS_COUNT]</arglist>
+      <anchor>a5c49750d2936b26b07440cdc876a4844</anchor>
+      <arglist>[SACN_DMX_MERGER_MAX_SLOTS]</arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
@@ -2261,8 +2262,8 @@
       <type>uint8_t</type>
       <name>address_priority</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a8e2ad703e06552317b7f47dd0e0ebbea</anchor>
-      <arglist>[DMX_ADDRESS_COUNT]</arglist>
+      <anchor>a25728b13e434ea13b42583a7a27fce63</anchor>
+      <arglist>[SACN_DMX_MERGER_MAX_SLOTS]</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -3852,10 +3853,10 @@
     <filename>group__s_a_c_n.html</filename>
     <subgroup>sacn_dmx_merger</subgroup>
     <subgroup>sacn_merge_receiver</subgroup>
+    <subgroup>sacnopts</subgroup>
     <subgroup>sacn_receiver</subgroup>
     <subgroup>sacn_source</subgroup>
     <subgroup>sacn_source_detector</subgroup>
-    <subgroup>sacnopts</subgroup>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
     <member kind="define">
@@ -4347,6 +4348,320 @@
       <anchorfile>group__sacn__merge__receiver.html</anchorfile>
       <anchor>ga807515578955a36b0a33de53a1d5bd9c</anchor>
       <arglist>(sacn_merge_receiver_t merge_receiver_handle, sacn_remote_source_t source_handle, SacnMergeReceiverSource *source_info)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts</name>
+    <title>sACN Configuration Options</title>
+    <filename>group__sacnopts.html</filename>
+    <subgroup>sacnopts_global</subgroup>
+    <subgroup>sacnopts_receiver</subgroup>
+    <subgroup>sacnopts_send</subgroup>
+    <subgroup>sacnopts_dmx_merger</subgroup>
+    <subgroup>sacnopts_merge_receiver</subgroup>
+    <subgroup>sacnopts_source_detector</subgroup>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_global</name>
+    <title>Global Options</title>
+    <filename>group__sacnopts__global.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DYNAMIC_MEM</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gaf7b1d2fa482d1665683883f80b1f4d87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOGGING_ENABLED</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga5b77f40b283fa0f754576a64ff6f3d4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOG_MSG_PREFIX</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga739093ac67975234540c307629ac8280</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ASSERT_VERIFY</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga5a66b273b21d3c30e4531a590a480d2c</anchor>
+      <arglist>(exp)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ASSERT</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gabd4f61db43336221d5947896ef0f2921</anchor>
+      <arglist>(expr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_ETC_PRIORITY_EXTENSION</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga59ee3abb2f4eb1554d7be219a9c8028b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_LOOPBACK</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga6ae6b1e22f87a5c2e49aefbc95a97256</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MAX_NETINTS</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>ga2dd2edc6a9d13618baaf6d02b4d86e81</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_receiver</name>
+    <title>sACN Receiver Options</title>
+    <filename>group__sacnopts__receiver.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_PRIORITY</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga0262024b708fa546807d7b01485c7fcf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_STACK</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga3194913a252cb1da68e5bd919f6c1658</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_THREAD_NAME</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga0b3b952f010e515ba69fed3767e905f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_READ_TIMEOUT_MS</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gae7ae8c07912489f40fa77146cdc93d71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_UNIVERSES</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga5d749b5a5b67d89a114aa2409ba6ff62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga079b2f51919b9ac76e3b3330040bd20e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_TOTAL_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga055b24b2c72073823f4c92ed32e7ddb0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_LIMIT_BIND</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga6bfc294d941da830fbb9bd562c45f638</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_SOCKET_PER_NIC</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gac9daa024fb951f98cdf9c97ddc8244dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_SUBS_PER_SOCKET</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gab20e9727556f9656a506bb85628f7df8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_ENABLE_SO_REUSEPORT</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gaeed18ca4945f91d2108bdc32e587cf18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_ENABLE_SO_RCVBUF</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga45b589b1c57b1812592ae77df67bd754</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_THREADS</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>ga064a427072df41e909b7d78cdb233c64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_RECEIVER_MAX_FOOTPRINT</name>
+      <anchorfile>group__sacnopts__receiver.html</anchorfile>
+      <anchor>gaf0e0364237fe1e26c348fdd53bb5976f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_send</name>
+    <title>sACN Send Options</title>
+    <filename>group__sacnopts__send.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_PRIORITY</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gac69e2ffb7e6a156134373d687a7cbed7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_STACK</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga197a7ace1de904752a545c799ea9e498</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_THREAD_NAME</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga0a2bddcd541aabbd0b4536d6dae4caa2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_SOCKET_SNDBUF_SIZE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gafb37b9b4569cb297e919655ad1f0ff22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gaa08afe863ab6922c173055d4239184c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>gaac75390f2990b299303bfbce89e5f7ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE</name>
+      <anchorfile>group__sacnopts__send.html</anchorfile>
+      <anchor>ga53a3e7e498368c3311403912d7c01515</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_dmx_merger</name>
+    <title>sACN DMX Merger Options</title>
+    <filename>group__sacnopts__dmx__merger.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>gaaeaa9701ec2b290ddfb3b31d8463dca4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_MAX_SLOTS</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga01ed1a377484d83e568bd7cf053f392f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga1291670a95116043ee7489006427aa5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</name>
+      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
+      <anchor>ga79ce98d0c9b30964fd17728dc8073a26</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_merge_receiver</name>
+    <title>sACN Merge Receiver Options</title>
+    <filename>group__sacnopts__merge__receiver.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MERGE_RECEIVER_ENABLE_IN_STATIC_MEMORY_MODE</name>
+      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
+      <anchor>gaedd4882cf4778846d5e3e244fea9c916</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER</name>
+      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
+      <anchor>ga2e082ccf74be5a3b106b8623f5eaa65d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>sacnopts_source_detector</name>
+    <title>sACN Source Detector Options</title>
+    <filename>group__sacnopts__source__detector.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_DETECTOR_MAX_SOURCES</name>
+      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
+      <anchor>ga872fc4bd419f3cc3d77e7502f0b1ed0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE</name>
+      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
+      <anchor>ga24e186592053bd29fbffbfc92825268e</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -5062,385 +5377,71 @@
     <class kind="class">sacn::SourceDetector::NotifyHandler</class>
     <class kind="struct">sacn::SourceDetector::Settings</class>
   </compound>
-  <compound kind="group">
-    <name>sacnopts</name>
-    <title>sACN Configuration Options</title>
-    <filename>group__sacnopts.html</filename>
-    <subgroup>sacnopts_global</subgroup>
-    <subgroup>sacnopts_receiver</subgroup>
-    <subgroup>sacnopts_send</subgroup>
-    <subgroup>sacnopts_dmx_merger</subgroup>
-    <subgroup>sacnopts_merge_receiver</subgroup>
-    <subgroup>sacnopts_source_detector</subgroup>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_global</name>
-    <title>Global Options</title>
-    <filename>group__sacnopts__global.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DYNAMIC_MEM</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>gaf7b1d2fa482d1665683883f80b1f4d87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOGGING_ENABLED</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga5b77f40b283fa0f754576a64ff6f3d4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOG_MSG_PREFIX</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga739093ac67975234540c307629ac8280</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ASSERT_VERIFY</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga5a66b273b21d3c30e4531a590a480d2c</anchor>
-      <arglist>(exp)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ASSERT</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>gabd4f61db43336221d5947896ef0f2921</anchor>
-      <arglist>(expr)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_ETC_PRIORITY_EXTENSION</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga59ee3abb2f4eb1554d7be219a9c8028b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_LOOPBACK</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga6ae6b1e22f87a5c2e49aefbc95a97256</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MAX_NETINTS</name>
-      <anchorfile>group__sacnopts__global.html</anchorfile>
-      <anchor>ga2dd2edc6a9d13618baaf6d02b4d86e81</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_receiver</name>
-    <title>sACN Receiver Options</title>
-    <filename>group__sacnopts__receiver.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_PRIORITY</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga0262024b708fa546807d7b01485c7fcf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_STACK</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga3194913a252cb1da68e5bd919f6c1658</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_THREAD_NAME</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga0b3b952f010e515ba69fed3767e905f1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_READ_TIMEOUT_MS</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gae7ae8c07912489f40fa77146cdc93d71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_UNIVERSES</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga5d749b5a5b67d89a114aa2409ba6ff62</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga079b2f51919b9ac76e3b3330040bd20e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_TOTAL_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga055b24b2c72073823f4c92ed32e7ddb0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_LIMIT_BIND</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga6bfc294d941da830fbb9bd562c45f638</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_SOCKET_PER_NIC</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gac9daa024fb951f98cdf9c97ddc8244dc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_SUBS_PER_SOCKET</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gab20e9727556f9656a506bb85628f7df8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_ENABLE_SO_REUSEPORT</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gaeed18ca4945f91d2108bdc32e587cf18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_ENABLE_SO_RCVBUF</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga45b589b1c57b1812592ae77df67bd754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_THREADS</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>ga064a427072df41e909b7d78cdb233c64</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_MAX_FOOTPRINT</name>
-      <anchorfile>group__sacnopts__receiver.html</anchorfile>
-      <anchor>gaf0e0364237fe1e26c348fdd53bb5976f</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_send</name>
-    <title>sACN Send Options</title>
-    <filename>group__sacnopts__send.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_PRIORITY</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gac69e2ffb7e6a156134373d687a7cbed7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_STACK</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga197a7ace1de904752a545c799ea9e498</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_THREAD_NAME</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga0a2bddcd541aabbd0b4536d6dae4caa2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_SOCKET_SNDBUF_SIZE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gafb37b9b4569cb297e919655ad1f0ff22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gaa08afe863ab6922c173055d4239184c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_MAX_UNIVERSES_PER_SOURCE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>gaac75390f2990b299303bfbce89e5f7ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MAX_UNICAST_DESTINATIONS_PER_UNIVERSE</name>
-      <anchorfile>group__sacnopts__send.html</anchorfile>
-      <anchor>ga53a3e7e498368c3311403912d7c01515</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_dmx_merger</name>
-    <title>sACN DMX Merger Options</title>
-    <filename>group__sacnopts__dmx__merger.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>gaaeaa9701ec2b290ddfb3b31d8463dca4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_SLOTS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga01ed1a377484d83e568bd7cf053f392f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga1291670a95116043ee7489006427aa5c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga79ce98d0c9b30964fd17728dc8073a26</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_merge_receiver</name>
-    <title>sACN Merge Receiver Options</title>
-    <filename>group__sacnopts__merge__receiver.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_ENABLE_IN_STATIC_MEMORY_MODE</name>
-      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
-      <anchor>gaedd4882cf4778846d5e3e244fea9c916</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_ENABLE_SAMPLING_MERGER</name>
-      <anchorfile>group__sacnopts__merge__receiver.html</anchorfile>
-      <anchor>ga2e082ccf74be5a3b106b8623f5eaa65d</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>sacnopts_source_detector</name>
-    <title>sACN Source Detector Options</title>
-    <filename>group__sacnopts__source__detector.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_MAX_SOURCES</name>
-      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
-      <anchor>ga872fc4bd419f3cc3d77e7502f0b1ed0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE</name>
-      <anchorfile>group__sacnopts__source__detector.html</anchorfile>
-      <anchor>ga24e186592053bd29fbffbfc92825268e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
   <compound kind="page">
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmp_lj5kihj_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpz1arw_lb_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmp_lj5kihj_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpz1arw_lb_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmp_lj5kihj_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpz1arw_lb_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmp_lj5kihj_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpz1arw_lb_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmp_lj5kihj_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpz1arw_lb_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmp_lj5kihj_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpz1arw_lb_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmp_lj5kihj_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpz1arw_lb_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmp_lj5kihj_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpz1arw_lb_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmp_lj5kihj_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpz1arw_lb_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmp_lj5kihj_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpz1arw_lb_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmp_lj5kihj_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpz1arw_lb_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
