@@ -8,6 +8,7 @@ var group__sacn__source__cpp =
         [ "kProcessLevelsAndPap", "classsacn_1_1_source.html#af36a9f4e41fd0d0e2f1c538486bf57bfa3be842a0530fef755880cd131a19c6c5", null ]
       ] ],
       [ "Source", "classsacn_1_1_source.html#afcba8c9f647eab467be20bcf54000c21", null ],
+      [ "~Source", "classsacn_1_1_source.html#a30f7be491d4694b01eace66fe4e03fba", null ],
       [ "Source", "classsacn_1_1_source.html#ade9699a755d9e894dd62439e18869a23", null ],
       [ "Source", "classsacn_1_1_source.html#ab3745517fb270270e41c41f0938dc278", null ],
       [ "AddUnicastDestination", "classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454", null ],
@@ -36,7 +37,7 @@ var group__sacn__source__cpp =
     ] ],
     [ "Settings", "structsacn_1_1_source_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_source_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],
-      [ "Settings", "structsacn_1_1_source_1_1_settings.html#a6a01ccea29e11babd7c2ba65931f7dc7", null ],
+      [ "Settings", "structsacn_1_1_source_1_1_settings.html#acfd8cc20d59492732b3f0d7ccf757a0f", null ],
       [ "IsValid", "structsacn_1_1_source_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed", null ],
       [ "cid", "structsacn_1_1_source_1_1_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3", null ],
       [ "ip_supported", "structsacn_1_1_source_1_1_settings.html#ab619351af6b7a5abcb23e38bdc09e984", null ],

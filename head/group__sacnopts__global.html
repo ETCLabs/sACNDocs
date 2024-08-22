@@ -219,7 +219,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga739093ac67975234540c307629ac8280">SACN_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;sACN: &quot;</td></tr>
 <tr class="memdesc:ga739093ac67975234540c307629ac8280"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the sACN library. <br /></td></tr>
 <tr class="separator:ga739093ac67975234540c307629ac8280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a66b273b21d3c30e4531a590a480d2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">SACN_ASSERT_VERIFY</a>(exp)&#160;&#160;&#160;((exp) ? true : sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__))</td></tr>
+<tr class="memitem:ga5a66b273b21d3c30e4531a590a480d2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">SACN_ASSERT_VERIFY</a>(exp)&#160;&#160;&#160;((exp) ? true : (sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__) &amp;&amp; false))</td></tr>
 <tr class="memdesc:ga5a66b273b21d3c30e4531a590a480d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The assertion handler used by the sACN library.  <a href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">More...</a><br /></td></tr>
 <tr class="separator:ga5a66b273b21d3c30e4531a590a480d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd4f61db43336221d5947896ef0f2921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921">SACN_ASSERT</a>(expr)&#160;&#160;&#160;assert(expr)</td></tr>
@@ -237,9 +237,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad4259643c29ff35c310475e2ca95ce3a"><td class="memItemLeft" align="right" valign="top"><a id="gad4259643c29ff35c310475e2ca95ce3a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>sacn_assert_verify_fail</b> (const char *exp, const char *file, const char *func, const int line)</td></tr>
-<tr class="separator:gad4259643c29ff35c310475e2ca95ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab694ddf2e6290ac8a1910b4acd879dd2"><td class="memItemLeft" align="right" valign="top"><a id="gab694ddf2e6290ac8a1910b4acd879dd2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sacn_assert_verify_fail</b> (const char *exp, const char *file, const char *func, int line)</td></tr>
+<tr class="separator:gab694ddf2e6290ac8a1910b4acd879dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Options that apply to both <a class="el" href="group__sacn__source.html">sACN Source</a> and <a class="el" href="group__sacn__receiver.html">sACN Receiver</a>. </p>
@@ -277,7 +277,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>sacn_assert_verify_fa
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">exp</td><td>)</td>
-          <td>&#160;&#160;&#160;((exp) ? true : sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__))</td>
+          <td>&#160;&#160;&#160;((exp) ? true : (sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__) &amp;&amp; false))</td>
         </tr>
       </table>
 </div><div class="memdoc">

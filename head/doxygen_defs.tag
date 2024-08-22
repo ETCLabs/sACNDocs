@@ -62,6 +62,18 @@
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>kSacnMinimumUniverse</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnMaximumUniverse</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>sacn_ip_support_t</name>
@@ -199,6 +211,20 @@
       <name>kInvalidRemoteSourceHandle</name>
       <anchorfile>namespacesacn.html</anchorfile>
       <anchor>a731047fe50bd58178f7cd8b1960e6e57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr uint16_t</type>
+      <name>kMinimumUniverse</name>
+      <anchorfile>namespacesacn.html</anchorfile>
+      <anchor>a3a2dc07a6c561afb7bc52f8298903e4b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr uint16_t</type>
+      <name>kMaximumUniverse</name>
+      <anchorfile>namespacesacn.html</anchorfile>
+      <anchor>a3d7b4639506640d043637309708c57ae</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3222,8 +3248,8 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>a6a01ccea29e11babd7c2ba65931f7dc7</anchor>
-      <arglist>(const etcpal::Uuid &amp;new_cid, const std::string &amp;new_name)</arglist>
+      <anchor>acfd8cc20d59492732b3f0d7ccf757a0f</anchor>
+      <arglist>(etcpal::Uuid new_cid, std::string new_name)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -3846,6 +3872,20 @@
       <anchor>a731047fe50bd58178f7cd8b1960e6e57</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>constexpr uint16_t</type>
+      <name>kMinimumUniverse</name>
+      <anchorfile>namespacesacn.html</anchorfile>
+      <anchor>a3a2dc07a6c561afb7bc52f8298903e4b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr uint16_t</type>
+      <name>kMaximumUniverse</name>
+      <anchorfile>namespacesacn.html</anchorfile>
+      <anchor>a3d7b4639506640d043637309708c57ae</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>sACN</name>
@@ -3913,6 +3953,18 @@
       <name>SacnNetintConfig</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnMinimumUniverse</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnMaximumUniverse</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -5381,67 +5433,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpee5y3vt8_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpba_zyzsh_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpee5y3vt8_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpba_zyzsh_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpee5y3vt8_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpba_zyzsh_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpee5y3vt8_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpba_zyzsh_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpee5y3vt8_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpba_zyzsh_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpee5y3vt8_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpba_zyzsh_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpee5y3vt8_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpba_zyzsh_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpee5y3vt8_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpba_zyzsh_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpee5y3vt8_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpba_zyzsh_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpee5y3vt8_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpba_zyzsh_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpee5y3vt8_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpba_zyzsh_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

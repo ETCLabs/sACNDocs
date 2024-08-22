@@ -30,7 +30,10 @@ var group__s_a_c_n =
     [ "SACN_VERSION_STRING", "group__s_a_c_n.html#ga2ff6980847182dc1ac56ee3660e0a360", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
-    [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", null ],
+    [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", [
+      [ "kSacnMinimumUniverse", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50", null ],
+      [ "kSacnMaximumUniverse", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805", null ]
+    ] ],
     [ "sacn_ip_support_t", "group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a", [
       [ "kSacnIpV4Only", "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4", null ],
       [ "kSacnIpV6Only", "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aaa7c7cce56d48e45e33bde272cb0be424", null ],

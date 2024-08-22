@@ -24,5 +24,7 @@ var namespacesacn =
     [ "Init", "group__sacn__cpp__common.html#ga462a83ab46a4fa6a2f642fcacabecc82", null ],
     [ "Init", "group__sacn__cpp__common.html#gac1cf1cb5e698e8ad656481cc834925db", null ],
     [ "Init", "group__sacn__cpp__common.html#ga73781de46ab1321166a0dce24094c73d", null ],
-    [ "kInvalidRemoteSourceHandle", "namespacesacn.html#a731047fe50bd58178f7cd8b1960e6e57", null ]
+    [ "kInvalidRemoteSourceHandle", "namespacesacn.html#a731047fe50bd58178f7cd8b1960e6e57", null ],
+    [ "kMaximumUniverse", "namespacesacn.html#a3d7b4639506640d043637309708c57ae", null ],
+    [ "kMinimumUniverse", "namespacesacn.html#a3a2dc07a6c561afb7bc52f8298903e4b", null ]
 ];

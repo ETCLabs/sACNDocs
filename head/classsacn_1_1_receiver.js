@@ -2,6 +2,7 @@ var classsacn_1_1_receiver =
 [
     [ "Handle", "classsacn_1_1_receiver.html#a7337fe02f7aa0f984a2da3fe2c7d4524", null ],
     [ "Receiver", "classsacn_1_1_receiver.html#a96590ef9bb15aaa2d157193314684c3d", null ],
+    [ "~Receiver", "classsacn_1_1_receiver.html#a1574b33a5e64fe9a6197931b97a6a38d", null ],
     [ "Receiver", "classsacn_1_1_receiver.html#a896715490bebfc93080500e9014a091d", null ],
     [ "Receiver", "classsacn_1_1_receiver.html#a8b226a7db315d39b6fdc4c8e61c3d896", null ],
     [ "ChangeFootprint", "classsacn_1_1_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91", null ],

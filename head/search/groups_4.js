@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handle_5fmanager_5366',['handle_manager',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__handle__manager.html',1,'']]],
-  ['hash_20_28hashing_20utilities_29_5367',['hash (Hashing Utilities)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__hash.html',1,'']]]
+  ['handle_5fmanager_5376',['handle_manager',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__handle__manager.html',1,'']]],
+  ['hash_20_28hashing_20utilities_29_5377',['hash (Hashing Utilities)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__hash.html',1,'']]]
 ];

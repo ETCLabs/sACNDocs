@@ -2,6 +2,7 @@ var classsacn_1_1_merge_receiver =
 [
     [ "Handle", "classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922", null ],
     [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#abffd6ce55e98154f496e0d341728769b", null ],
+    [ "~MergeReceiver", "classsacn_1_1_merge_receiver.html#adb1f9239326731fbfcd20429fde340ca", null ],
     [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#ad3e150350cbde08d2a6cd57573e9ae89", null ],
     [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#acd894017c62b549662194bd84a9f4a15", null ],
     [ "ChangeFootprint", "classsacn_1_1_merge_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91", null ],

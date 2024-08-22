@@ -3,6 +3,7 @@ var group__sacn__receiver__cpp =
     [ "Receiver", "classsacn_1_1_receiver.html", [
       [ "Handle", "classsacn_1_1_receiver.html#a7337fe02f7aa0f984a2da3fe2c7d4524", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a96590ef9bb15aaa2d157193314684c3d", null ],
+      [ "~Receiver", "classsacn_1_1_receiver.html#a1574b33a5e64fe9a6197931b97a6a38d", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a896715490bebfc93080500e9014a091d", null ],
       [ "Receiver", "classsacn_1_1_receiver.html#a8b226a7db315d39b6fdc4c8e61c3d896", null ],
       [ "ChangeFootprint", "classsacn_1_1_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91", null ],
@@ -19,13 +20,18 @@ var group__sacn__receiver__cpp =
       [ "Startup", "classsacn_1_1_receiver.html#abb65535d2f1ed30a79014d81eb7f6807", null ]
     ] ],
     [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html", [
+      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a54da9d46d9fe3179d8d90c2cda62a978", null ],
       [ "~NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a9e07a73282d628b72531a124236be7da", null ],
+      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a624efff6fc0cb574eec2cbf986228046", null ],
+      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a61048cd937a2855bc1a2815f3336af98", null ],
       [ "HandleSamplingPeriodEnded", "classsacn_1_1_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5", null ],
       [ "HandleSamplingPeriodStarted", "classsacn_1_1_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc", null ],
       [ "HandleSourceLimitExceeded", "classsacn_1_1_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ],
       [ "HandleSourcePapLost", "classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672", null ],
       [ "HandleSourcesLost", "classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae", null ],
-      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3", null ]
+      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3", null ],
+      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a0c93c34dc16f72cb4d710a533cd24a43", null ],
+      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a4f8428079ddf253532b44e68fae1ad11", null ]
     ] ],
     [ "Settings", "structsacn_1_1_receiver_1_1_settings.html", [
       [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],

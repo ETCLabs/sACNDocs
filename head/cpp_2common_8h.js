@@ -13,5 +13,7 @@ var cpp_2common_8h =
     [ "Init", "cpp_2common_8h.html#ga462a83ab46a4fa6a2f642fcacabecc82", null ],
     [ "Init", "cpp_2common_8h.html#gac1cf1cb5e698e8ad656481cc834925db", null ],
     [ "Init", "cpp_2common_8h.html#ga73781de46ab1321166a0dce24094c73d", null ],
-    [ "kInvalidRemoteSourceHandle", "cpp_2common_8h.html#a731047fe50bd58178f7cd8b1960e6e57", null ]
+    [ "kInvalidRemoteSourceHandle", "cpp_2common_8h.html#a731047fe50bd58178f7cd8b1960e6e57", null ],
+    [ "kMaximumUniverse", "cpp_2common_8h.html#a3d7b4639506640d043637309708c57ae", null ],
+    [ "kMinimumUniverse", "cpp_2common_8h.html#a3a2dc07a6c561afb7bc52f8298903e4b", null ]
 ];

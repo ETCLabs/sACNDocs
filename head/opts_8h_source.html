@@ -256,10 +256,10 @@ $(document).ready(function(){initNavTree('opts_8h_source.html',''); initResizabl
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/* Assertion failure handler */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">bool</span> sacn_assert_verify_fail(<span class="keyword">const</span> <span class="keywordtype">char</span>* exp, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* func, <span class="keyword">const</span> <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">bool</span> sacn_assert_verify_fail(<span class="keyword">const</span> <span class="keywordtype">char</span>* exp, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* func, <span class="keywordtype">int</span> line);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#ifndef SACN_ASSERT_VERIFY</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">  108</a></span>&#160;<span class="preprocessor">#define SACN_ASSERT_VERIFY(exp) ((exp) ? true : sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__))</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c">  108</a></span>&#160;<span class="preprocessor">#define SACN_ASSERT_VERIFY(exp) ((exp) ? true : (sacn_assert_verify_fail(#exp, __FILE__, __func__, __LINE__) &amp;&amp; false))</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#ifndef SACN_ASSERT</span></div>

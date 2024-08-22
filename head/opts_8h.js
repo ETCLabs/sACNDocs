@@ -40,5 +40,5 @@ var opts_8h =
     [ "SACN_SOURCE_THREAD_NAME", "group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2", null ],
     [ "SACN_SOURCE_THREAD_PRIORITY", "group__sacnopts__send.html#gac69e2ffb7e6a156134373d687a7cbed7", null ],
     [ "SACN_SOURCE_THREAD_STACK", "group__sacnopts__send.html#ga197a7ace1de904752a545c799ea9e498", null ],
-    [ "sacn_assert_verify_fail", "group__sacnopts__global.html#gad4259643c29ff35c310475e2ca95ce3a", null ]
+    [ "sacn_assert_verify_fail", "group__sacnopts__global.html#gab694ddf2e6290ac8a1910b4acd879dd2", null ]
 ];
