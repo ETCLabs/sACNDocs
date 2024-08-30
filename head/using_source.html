@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="title">Using the sACN Source API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpba_zyzsh_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpepfz9hx5_docs_pages_using_source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div id="div_2_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> my_cid;</div>
-<div class="line"><span class="keywordtype">char</span> my_name[<a class="code" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8">SACN_SOURCE_NAME_MAX_LEN</a>];</div>
+<div class="line"><span class="keywordtype">char</span> my_name[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0">kSacnSourceNameMaxLen</a>];</div>
 <div class="line"><span class="comment">// Assuming my_cid and my_name are initialized by the application...</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="struct_sacn_source_config.html">SacnSourceConfig</a> my_config = <a class="code" href="group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a>;</div>
@@ -233,15 +233,15 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the source when you&#39;re done with it:</span></div>
 <div class="line"><a class="code" href="group__sacn__source.html#gaeb8a9797368aabad696c81225b4c8aaa">sacn_source_destroy</a>(my_handle);</div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga0a68bef69f737e31072b475521d331c8"><div class="ttname"><a href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8">SACN_SOURCE_NAME_MAX_LEN</a></div><div class="ttdeci">#define SACN_SOURCE_NAME_MAX_LEN</div><div class="ttdoc">The maximum length of an sACN source name, including the null-terminator.</div><div class="ttdef"><b>Definition:</b> common.h:50</div></div>
-<div class="ttc" id="agroup__sacn__source_html_ga1fc88ea9a51c4a935ec87630a0b177f1"><div class="ttname"><a href="group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source.h:121</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0"><div class="ttname"><a href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0">kSacnSourceNameMaxLen</a></div><div class="ttdeci">@ kSacnSourceNameMaxLen</div><div class="ttdoc">The maximum length of an sACN source name, including the null-terminator.</div><div class="ttdef"><b>Definition:</b> common.h:57</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ga1fc88ea9a51c4a935ec87630a0b177f1"><div class="ttname"><a href="group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source.h:122</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga37f43cd2ec265e3052eea6d5f1b68233"><div class="ttname"><a href="group__sacn__source.html#ga37f43cd2ec265e3052eea6d5f1b68233">sacn_source_create</a></div><div class="ttdeci">etcpal_error_t sacn_source_create(const SacnSourceConfig *config, sacn_source_t *handle)</div><div class="ttdoc">Create a new sACN source to send sACN data.</div><div class="ttdef"><b>Definition:</b> source.c:106</div></div>
 <div class="ttc" id="agroup__sacn__source_html_gacc4c9d2c77cf4126e9ac7faf297c3dd8"><div class="ttname"><a href="group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_source_t</a></div><div class="ttdeci">int sacn_source_t</div><div class="ttdef"><b>Definition:</b> source.h:56</div></div>
 <div class="ttc" id="agroup__sacn__source_html_gaeb8a9797368aabad696c81225b4c8aaa"><div class="ttname"><a href="group__sacn__source.html#gaeb8a9797368aabad696c81225b4c8aaa">sacn_source_destroy</a></div><div class="ttdeci">void sacn_source_destroy(sacn_source_t handle)</div><div class="ttdoc">Destroy an sACN source instance.</div><div class="ttdef"><b>Definition:</b> source.c:222</div></div>
 <div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
-<div class="ttc" id="astruct_sacn_source_config_html"><div class="ttname"><a href="struct_sacn_source_config.html">SacnSourceConfig</a></div><div class="ttdef"><b>Definition:</b> source.h:87</div></div>
-<div class="ttc" id="astruct_sacn_source_config_html_a4c3f7d9a58af5033f9acd8c942bf81d9"><div class="ttname"><a href="struct_sacn_source_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">SacnSourceConfig::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdef"><b>Definition:</b> source.h:91</div></div>
-<div class="ttc" id="astruct_sacn_source_config_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="struct_sacn_source_config.html#a8f8f80d37794cde9472343e4487ba3eb">SacnSourceConfig::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> source.h:93</div></div>
+<div class="ttc" id="astruct_sacn_source_config_html"><div class="ttname"><a href="struct_sacn_source_config.html">SacnSourceConfig</a></div><div class="ttdef"><b>Definition:</b> source.h:88</div></div>
+<div class="ttc" id="astruct_sacn_source_config_html_a4c3f7d9a58af5033f9acd8c942bf81d9"><div class="ttname"><a href="struct_sacn_source_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">SacnSourceConfig::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdef"><b>Definition:</b> source.h:92</div></div>
+<div class="ttc" id="astruct_sacn_source_config_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="struct_sacn_source_config.html#a8f8f80d37794cde9472343e4487ba3eb">SacnSourceConfig::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> source.h:94</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_2_cpp" class="code-tab-content">
@@ -296,15 +296,15 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// To remove a universe from your source when you&#39;re done transmitting on it:</span></div>
 <div class="line"><a class="code" href="group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d">sacn_source_remove_universe</a>(my_handle, my_universe);</div>
-<div class="ttc" id="agroup__sacn__source_html_ga20483046bfb90da7c9bf089fc0229a6b"><div class="ttname"><a href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source.h:163</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ga20483046bfb90da7c9bf089fc0229a6b"><div class="ttname"><a href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source.h:164</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga22a80913e48354c6da37a9fa11626261"><div class="ttname"><a href="group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261">sacn_source_add_universe</a></div><div class="ttdeci">etcpal_error_t sacn_source_add_universe(sacn_source_t handle, const SacnSourceUniverseConfig *config, const SacnNetintConfig *netint_config)</div><div class="ttdoc">Add a universe to an sACN source.</div><div class="ttdef"><b>Definition:</b> source.c:265</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga7f8233fae115142c2e2a9488faa12d5d"><div class="ttname"><a href="group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d">sacn_source_remove_universe</a></div><div class="ttdeci">void sacn_source_remove_universe(sacn_source_t handle, uint16_t universe)</div><div class="ttdoc">Remove a universe from a source.</div><div class="ttdef"><b>Definition:</b> source.c:354</div></div>
-<div class="ttc" id="astruct_sacn_mcast_interface_html"><div class="ttname"><a href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></div><div class="ttdef"><b>Definition:</b> common.h:93</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdef"><b>Definition:</b> common.h:110</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_a6ddc029bb8aba3ead075508554592445"><div class="ttname"><a href="struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdef"><b>Definition:</b> common.h:115</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_add0da5313d4b1d06a67bda5508b848e1"><div class="ttname"><a href="struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdef"><b>Definition:</b> common.h:113</div></div>
-<div class="ttc" id="astruct_sacn_source_universe_config_html"><div class="ttname"><a href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a></div><div class="ttdef"><b>Definition:</b> source.h:131</div></div>
-<div class="ttc" id="astruct_sacn_source_universe_config_html_a0cf34824f8777f28b50f62b7870d6f8c"><div class="ttname"><a href="struct_sacn_source_universe_config.html#a0cf34824f8777f28b50f62b7870d6f8c">SacnSourceUniverseConfig::universe</a></div><div class="ttdeci">uint16_t universe</div><div class="ttdef"><b>Definition:</b> source.h:136</div></div>
+<div class="ttc" id="astruct_sacn_mcast_interface_html"><div class="ttname"><a href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></div><div class="ttdef"><b>Definition:</b> common.h:88</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdef"><b>Definition:</b> common.h:105</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_a6ddc029bb8aba3ead075508554592445"><div class="ttname"><a href="struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdef"><b>Definition:</b> common.h:110</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_add0da5313d4b1d06a67bda5508b848e1"><div class="ttname"><a href="struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdef"><b>Definition:</b> common.h:108</div></div>
+<div class="ttc" id="astruct_sacn_source_universe_config_html"><div class="ttname"><a href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a></div><div class="ttdef"><b>Definition:</b> source.h:132</div></div>
+<div class="ttc" id="astruct_sacn_source_universe_config_html_a0cf34824f8777f28b50f62b7870d6f8c"><div class="ttname"><a href="struct_sacn_source_universe_config.html#a0cf34824f8777f28b50f62b7870d6f8c">SacnSourceUniverseConfig::universe</a></div><div class="ttdeci">uint16_t universe</div><div class="ttdef"><b>Definition:</b> source.h:137</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_3_cpp" class="code-tab-content">
@@ -370,15 +370,15 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div id="div_5_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Initialize my_levels_buffer and (possibly) my_priorities_buffer with the data you want to send...</span></div>
-<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
-<div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
+<div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Now copy in the new data to send. Then the source thread will handle transmitting the </span></div>
 <div class="line"><span class="comment">// data (unless you set manually_process_source to true in the SacnSourceConfig).</span></div>
-<div class="line"><a class="code" href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341">sacn_source_update_levels</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line"><a class="code" href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341">sacn_source_update_levels</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
 <div class="line"><span class="comment">// Or if you&#39;re using per-address priorities:</span></div>
-<div class="line"><a class="code" href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab">sacn_source_update_levels_and_pap</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga681f92a30c76ae426e2403a328978abb"><div class="ttname"><a href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a></div><div class="ttdeci">#define DMX_ADDRESS_COUNT</div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
+<div class="line"><a class="code" href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab">sacn_source_update_levels_and_pap</a>(my_handle, my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605"><div class="ttname"><a href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a></div><div class="ttdeci">@ kSacnDmxAddressCount</div><div class="ttdef"><b>Definition:</b> common.h:59</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga23dc503a9f5a46fce7e8448266760341"><div class="ttname"><a href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341">sacn_source_update_levels</a></div><div class="ttdeci">void sacn_source_update_levels(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</div><div class="ttdoc">Copies the universe's DMX levels into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.c:824</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga6a8835b680485d307f9d2d9c750517ab"><div class="ttname"><a href="group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab">sacn_source_update_levels_and_pap</a></div><div class="ttdeci">void sacn_source_update_levels_and_pap(sacn_source_t handle, uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</div><div class="ttdoc">Copies the universe's DMX levels and per-address priorities into packets that are sent on the next th...</div><div class="ttdef"><b>Definition:</b> source.c:874</div></div>
 </div><!-- fragment --><p> 
@@ -386,14 +386,14 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div id="div_5_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Initialize my_levels_buffer and (possibly) my_priorities_buffer with the data you want to send...</span></div>
-<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
-<div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t my_levels_buffer[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
+<div class="line">uint8_t my_priorities_buffer[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Now copy in the new data to send. Then the source thread will handle transmitting the </span></div>
 <div class="line"><span class="comment">// data (unless you set manually_process_source to true in the Source::Settings).</span></div>
-<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3">UpdateLevels</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3">UpdateLevels</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
 <div class="line"><span class="comment">// Or if you&#39;re using per-address priorities:</span></div>
-<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126">UpdateLevelsAndPap</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126">UpdateLevelsAndPap</a>(my_universe, my_levels_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>, my_priorities_buffer, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a2d60e097ae578e5f8683fc10b271b126"><div class="ttname"><a href="classsacn_1_1_source.html#a2d60e097ae578e5f8683fc10b271b126">sacn::Source::UpdateLevelsAndPap</a></div><div class="ttdeci">void UpdateLevelsAndPap(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</div><div class="ttdoc">Copies the universe's DMX levels and per-address priorities into packets that are sent on the next th...</div><div class="ttdef"><b>Definition:</b> source.h:710</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_acbec36dcb6b7ac017788510763dffef3"><div class="ttname"><a href="classsacn_1_1_source.html#acbec36dcb6b7ac017788510763dffef3">sacn::Source::UpdateLevels</a></div><div class="ttdeci">void UpdateLevels(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</div><div class="ttdoc">Copies the universe's DMX levels into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition:</b> source.h:683</div></div>
 </div><!-- fragment --><p> 
@@ -472,20 +472,20 @@ $(document).ready(function(){initNavTree('using_source.html',''); initResizable(
 <div id="div_8_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line">uint8_t my_custom_start_code;</div>
-<div class="line">uint8_t my_custom_start_code_data[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t my_custom_start_code_data[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
 <div class="line"><span class="comment">// Initialize start code and data...</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="group__sacn__source.html#ga6e7cea16d61ae355bc313452f0b47e48">sacn_source_send_now</a>(my_handle, my_universe, my_custom_start_code, my_custom_start_code_data, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line"><a class="code" href="group__sacn__source.html#ga6e7cea16d61ae355bc313452f0b47e48">sacn_source_send_now</a>(my_handle, my_universe, my_custom_start_code, my_custom_start_code_data, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
 <div class="ttc" id="agroup__sacn__source_html_ga6e7cea16d61ae355bc313452f0b47e48"><div class="ttname"><a href="group__sacn__source.html#ga6e7cea16d61ae355bc313452f0b47e48">sacn_source_send_now</a></div><div class="ttdeci">etcpal_error_t sacn_source_send_now(sacn_source_t handle, uint16_t universe, uint8_t start_code, const uint8_t *buffer, size_t buflen)</div><div class="ttdoc">Immediately sends the provided sACN start code &amp; data.</div><div class="ttdef"><b>Definition:</b> source.c:716</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_8_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line">uint8_t my_custom_start_code;</div>
-<div class="line">uint8_t my_custom_start_code_data[<a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>];</div>
+<div class="line">uint8_t my_custom_start_code_data[<a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>];</div>
 <div class="line"><span class="comment">// Initialize start code and data...</span></div>
 <div class="line"> </div>
-<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a22cf560eca13a3cbc4c8384bad438897">SendNow</a>(my_universe, my_custom_start_code, my_custom_start_code_data, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>);</div>
+<div class="line">my_source.<a class="code" href="classsacn_1_1_source.html#a22cf560eca13a3cbc4c8384bad438897">SendNow</a>(my_universe, my_custom_start_code, my_custom_start_code_data, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>);</div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a22cf560eca13a3cbc4c8384bad438897"><div class="ttname"><a href="classsacn_1_1_source.html#a22cf560eca13a3cbc4c8384bad438897">sacn::Source::SendNow</a></div><div class="ttdeci">etcpal::Error SendNow(uint16_t universe, uint8_t start_code, const uint8_t *buffer, size_t buflen)</div><div class="ttdoc">Immediately sends the provided sACN start code &amp; data.</div><div class="ttdef"><b>Definition:</b> source.h:645</div></div>
 </div><!-- fragment --><p> 
 </div>

@@ -16,12 +16,12 @@ var group__sacn__receiver =
     [ "SacnRemoteSource", "struct_sacn_remote_source.html", [
       [ "cid", "struct_sacn_remote_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
       [ "handle", "struct_sacn_remote_source.html#abd2d36f012ca716885c43720824b4a75", null ],
-      [ "name", "struct_sacn_remote_source.html#a7e3669a12853b82f7d2b7488bb174956", null ]
+      [ "name", "struct_sacn_remote_source.html#a45a8c3c8006ff9d7a3925ae472132942", null ]
     ] ],
     [ "SacnLostSource", "struct_sacn_lost_source.html", [
       [ "cid", "struct_sacn_lost_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
       [ "handle", "struct_sacn_lost_source.html#abd2d36f012ca716885c43720824b4a75", null ],
-      [ "name", "struct_sacn_lost_source.html#a7e3669a12853b82f7d2b7488bb174956", null ],
+      [ "name", "struct_sacn_lost_source.html#a45a8c3c8006ff9d7a3925ae472132942", null ],
       [ "terminated", "struct_sacn_lost_source.html#ad1aea42fae01ba0d2917114d189a9d36", null ]
     ] ],
     [ "SacnReceiverCallbacks", "struct_sacn_receiver_callbacks.html", [
@@ -47,11 +47,7 @@ var group__sacn__receiver =
       [ "no_netints", "struct_sacn_receiver_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
       [ "num_netints", "struct_sacn_receiver_netint_list.html#a6ddc029bb8aba3ead075508554592445", null ]
     ] ],
-    [ "SACN_DEFAULT_EXPIRED_WAIT_MS", "group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde", null ],
     [ "SACN_RECEIVER_CONFIG_DEFAULT_INIT", "group__sacn__receiver.html#gaaaa17f5e77d094f9348c0efd361cee52", null ],
-    [ "SACN_RECEIVER_INFINITE_SOURCES", "group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea", null ],
-    [ "SACN_RECEIVER_INVALID", "group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637", null ],
-    [ "SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA", "group__sacn__receiver.html#ga8613a5c435a6120a1d410bead3949087", null ],
     [ "sacn_receiver_t", "group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6", null ],
     [ "SacnLostSource", "group__sacn__receiver.html#ga7fdeb921a4c00c9821019145683bdda4", null ],
     [ "SacnReceiverCallbacks", "group__sacn__receiver.html#ga114584027956aaaccfb9e74e1c311206", null ],
@@ -65,7 +61,11 @@ var group__sacn__receiver =
     [ "SacnSourceLimitExceededCallback", "group__sacn__receiver.html#ga64bfe2ecfceca8b4f50f1a3a0a9c9a07", null ],
     [ "SacnSourcePapLostCallback", "group__sacn__receiver.html#ga7608a394e455465e56c789957f3f3214", null ],
     [ "SacnSourcesLostCallback", "group__sacn__receiver.html#ga80326cc324898e1faebe2da1339bd0b3", null ],
-    [ "SacnUniverseDataCallback", "group__sacn__receiver.html#ga1ea1f87c1d1098d6df521cb9d9ccd0b3", null ],
+    [ "SacnUniverseDataCallback", "group__sacn__receiver.html#ga1ea1f87c1d1098d6df521cb9d9ccd0b3", [
+      [ "kSacnReceiverInfiniteSources", "group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725", null ],
+      [ "kSacnDefaultExpiredWaitMs", "group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569", null ],
+      [ "kSacnReceiverOptsFilterPreviewData", "group__sacn__receiver.html#gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8", null ]
+    ] ],
     [ "sacn_receiver_change_footprint", "group__sacn__receiver.html#gab5be9e77fa2652f71c93d9886ae826b2", null ],
     [ "sacn_receiver_change_universe", "group__sacn__receiver.html#gabb5ec7d4459ac694e5fa0ae97572f388", null ],
     [ "sacn_receiver_change_universe_and_footprint", "group__sacn__receiver.html#gaf046362e62f8f4a910a00aaee3006247", null ],

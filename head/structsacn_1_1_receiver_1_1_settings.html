@@ -224,9 +224,9 @@ Public Member Functions</h2></td></tr>
 Data Fields</h2></td></tr>
 <tr class="memitem:a7e0de4d0f4e4bbd14771257febdf7248"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#a7e0de4d0f4e4bbd14771257febdf7248">universe_id</a> {0}</td></tr>
 <tr class="separator:a7e0de4d0f4e4bbd14771257febdf7248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa13922bd1ee44412886d8e562582c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#a3fa13922bd1ee44412886d8e562582c8">footprint</a> {1, <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>}</td></tr>
+<tr class="memitem:a3fa13922bd1ee44412886d8e562582c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#a3fa13922bd1ee44412886d8e562582c8">footprint</a> {1, <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>}</td></tr>
 <tr class="separator:a3fa13922bd1ee44412886d8e562582c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a> {<a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>}</td></tr>
+<tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a> {<a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td></tr>
 <tr class="separator:aa56795d5b57bff4910ce11baac4003ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92588540e8c1d014a08cd8a45462b19"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_receiver_1_1_settings.html#ac92588540e8c1d014a08cd8a45462b19">flags</a> {0}</td></tr>
 <tr class="separator:ac92588540e8c1d014a08cd8a45462b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,7 +342,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> footprint {1, <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>}</td>
+          <td class="memname"><a class="el" href="struct_sacn_recv_universe_subrange.html">SacnRecvUniverseSubrange</a> footprint {1, <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -372,11 +372,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int source_count_max {<a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>}</td>
+          <td class="memname">int source_count_max {<a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The maximum number of sources this universe will listen to. May be <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">SACN_RECEIVER_INFINITE_SOURCES</a>. When configured to use static memory, this parameter is only used if it's less than <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> &ndash; otherwise <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead. </p>
+<p>The maximum number of sources this universe will listen to. May be <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">kSacnReceiverInfiniteSources</a>. When configured to use static memory, this parameter is only used if it's less than <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> &ndash; otherwise <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead. </p>
 
 </div>
 </div>

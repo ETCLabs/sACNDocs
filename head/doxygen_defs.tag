@@ -6,41 +6,6 @@
     <filename>common_8h.html</filename>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_NAME_MAX_LEN</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga0a68bef69f737e31072b475521d331c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>DMX_ADDRESS_COUNT</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga681f92a30c76ae426e2403a328978abb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_REMOTE_SOURCE_INVALID</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga4579b31d1f4e1ecff0ecd8214c551956</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_STARTCODE_DMX</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_STARTCODE_PRIORITY</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga92ab22221d9dedb5b22978e6c14c6349</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>sacn_remote_source_t</name>
@@ -60,6 +25,30 @@
       <name>SacnNetintConfig</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceNameMaxLen</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnDmxAddressCount</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnStartcodeDmx</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnStartcodePriority</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba38b4d4cbb7ef787234ee57f5a611668a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -239,20 +228,6 @@
     <class kind="struct">SacnDmxMergerSource</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_DMX_MERGER_INVALID</name>
-      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga4578a59809c13ece174e8dcf59fce26d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_SOURCE_INVALID</name>
-      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga1ca9e023e2091c5a8a4e5e2ba426f055</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_DMX_MERGER_CONFIG_INIT</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
       <anchor>ga7431ab2baf3af7e0d1999355c6bcc9d7</anchor>
@@ -379,13 +354,6 @@
     <class kind="struct">SacnMergeReceiverConfig</class>
     <class kind="struct">SacnMergeReceiverNetintList</class>
     <class kind="struct">SacnMergeReceiverSource</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_INVALID</name>
-      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
-      <anchor>gae86374c92bace3a7d2bef9656da6048a</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>SACN_MERGE_RECEIVER_CONFIG_DEFAULT_INIT</name>
@@ -875,37 +843,9 @@
     <class kind="struct">SacnReceiverNetintList</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_RECEIVER_INVALID</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga79dd5d0d62fb4d6120290afeeadb3637</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_INFINITE_SOURCES</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>gadb2ea19692692ca852423d0a9de749ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DEFAULT_EXPIRED_WAIT_MS</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga2f4617269e2d64c85b81556e0c3e8fde</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_RECEIVER_CONFIG_DEFAULT_INIT</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
       <anchor>gaaaa17f5e77d094f9348c0efd361cee52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga8613a5c435a6120a1d410bead3949087</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -1006,6 +946,24 @@
       <anchor>ga494aa6c2efd3b6a12943191c74946cb8</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>kSacnReceiverInfiniteSources</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnDefaultExpiredWaitMs</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnReceiverOptsFilterPreviewData</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>sacn_receiver_config_init</name>
@@ -1097,11 +1055,10 @@
       <anchor>gabd632f80d5da75c47c1f08103a42a391</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</name>
+    <member kind="enumvalue">
+      <name>kSacnReceiverOptsFilterPreviewData</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga8613a5c435a6120a1d410bead3949087</anchor>
+      <anchor>gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1126,34 +1083,6 @@
     <class kind="struct">SacnSourceConfig</class>
     <class kind="struct">SacnSourceUniverseConfig</class>
     <class kind="struct">SacnSourceUniverseNetintList</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_INVALID</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga446e9e065e08c7a90309a993b2502153</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_INFINITE_UNIVERSES</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga1ac5056bc752c32ca80c08b9839a142d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gab3c248f42fcdeccba28617fd2612ce71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gae3df139429df836f977bab01da3af19d</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>SACN_SOURCE_CONFIG_DEFAULT_INIT</name>
@@ -1194,6 +1123,24 @@
       <name>SacnSourceUniverseNetintList</name>
       <anchorfile>group__sacn__source.html</anchorfile>
       <anchor>ga0f30b2db7d3c6686a14bab97c80d73a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceInfiniteUniverses</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceKeepAliveIntervalDefault</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourcePapKeepAliveIntervalDefault</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -1412,13 +1359,6 @@
     <class kind="struct">SacnSourceDetectorConfig</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_INFINITE</name>
-      <anchorfile>group__sacn__source__detector.html</anchorfile>
-      <anchor>ga2a1bee1e4fe7a47ee053c8dbae05fbcb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</name>
       <anchorfile>group__sacn__source__detector.html</anchorfile>
       <anchor>ga78fbb7639c835e3b08091fc16e31d6fc</anchor>
@@ -1457,6 +1397,12 @@
       <name>SacnSourceDetectorConfig</name>
       <anchorfile>group__sacn__source__detector.html</anchorfile>
       <anchor>gacf1948692a93767d849b6df90f75f6a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceDetectorInfinite</name>
+      <anchorfile>group__sacn__source__detector.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1628,10 +1574,10 @@
     <filename>classsacn_1_1_dmx_merger.html</filename>
     <class kind="struct">sacn::DmxMerger::Settings</class>
     <member kind="typedef">
-      <type>etcpal::OpaqueId&lt; detail::DmxMergerHandleType, sacn_dmx_merger_t, SACN_DMX_MERGER_INVALID &gt;</type>
+      <type>etcpal::OpaqueId&lt; detail::DmxMergerHandleType, sacn_dmx_merger_t, kSacnDmxMergerInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a7b4c9f6ffcd98ecf441928151d890453</anchor>
+      <anchor>a693d9eac2aa92d66e893eb62bed04d06</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1731,10 +1677,10 @@
     <class kind="struct">sacn::MergeReceiver::Settings</class>
     <class kind="struct">sacn::MergeReceiver::Source</class>
     <member kind="typedef">
-      <type>etcpal::OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, SACN_MERGE_RECEIVER_INVALID &gt;</type>
+      <type>etcpal::OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, kSacnMergeReceiverInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a4a5bdec680598648c6dbfae0422ef922</anchor>
+      <anchor>a1fc240c7591bf132dec601df5fdfd926</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -2077,10 +2023,10 @@
     <class kind="class">sacn::Receiver::NotifyHandler</class>
     <class kind="struct">sacn::Receiver::Settings</class>
     <member kind="typedef">
-      <type>etcpal::OpaqueId&lt; detail::ReceiverHandleType, sacn_receiver_t, SACN_RECEIVER_INVALID &gt;</type>
+      <type>etcpal::OpaqueId&lt; detail::ReceiverHandleType, sacn_receiver_t, kSacnReceiverInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a7337fe02f7aa0f984a2da3fe2c7d4524</anchor>
+      <anchor>a5305fc5a2660b439528e406b442b0363</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -2320,8 +2266,8 @@
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_lost_source.html</anchorfile>
-      <anchor>a7e3669a12853b82f7d2b7488bb174956</anchor>
-      <arglist>[SACN_SOURCE_NAME_MAX_LEN]</arglist>
+      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -2508,8 +2454,8 @@
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>a7e3669a12853b82f7d2b7488bb174956</anchor>
-      <arglist>[SACN_SOURCE_NAME_MAX_LEN]</arglist>
+      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
     <member kind="variable">
       <type>EtcPalSockAddr</type>
@@ -2834,8 +2780,8 @@
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_remote_source.html</anchorfile>
-      <anchor>a7e3669a12853b82f7d2b7488bb174956</anchor>
-      <arglist>[SACN_SOURCE_NAME_MAX_LEN]</arglist>
+      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3403,10 +3349,10 @@
       <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfa3be842a0530fef755880cd131a19c6c5">kProcessLevelsAndPap</enumvalue>
     </member>
     <member kind="typedef">
-      <type>etcpal::OpaqueId&lt; detail::SourceHandleType, sacn_source_t, SACN_SOURCE_INVALID &gt;</type>
+      <type>etcpal::OpaqueId&lt; detail::SourceHandleType, sacn_source_t, kSacnSourceInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a3defc9aed71824af85696f0f7e1b9ae4</anchor>
+      <anchor>aa547d1fb9a9debb1f174484252c0aa78</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -3899,41 +3845,6 @@
     <subgroup>sacn_source_detector</subgroup>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_NAME_MAX_LEN</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga0a68bef69f737e31072b475521d331c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>DMX_ADDRESS_COUNT</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga681f92a30c76ae426e2403a328978abb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_REMOTE_SOURCE_INVALID</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga4579b31d1f4e1ecff0ecd8214c551956</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_STARTCODE_DMX</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_STARTCODE_PRIORITY</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>ga92ab22221d9dedb5b22978e6c14c6349</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>sacn_remote_source_t</name>
@@ -3953,6 +3864,30 @@
       <name>SacnNetintConfig</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceNameMaxLen</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnDmxAddressCount</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnStartcodeDmx</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnStartcodePriority</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gga06fc87d81c62e9abb8790b6e5713c55ba38b4d4cbb7ef787234ee57f5a611668a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -4085,20 +4020,6 @@
     <class kind="struct">SacnDmxMergerSource</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_DMX_MERGER_INVALID</name>
-      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga4578a59809c13ece174e8dcf59fce26d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_SOURCE_INVALID</name>
-      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga1ca9e023e2091c5a8a4e5e2ba426f055</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_DMX_MERGER_CONFIG_INIT</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
       <anchor>ga7431ab2baf3af7e0d1999355c6bcc9d7</anchor>
@@ -4212,13 +4133,6 @@
     <class kind="struct">SacnMergeReceiverConfig</class>
     <class kind="struct">SacnMergeReceiverNetintList</class>
     <class kind="struct">SacnMergeReceiverSource</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_MERGE_RECEIVER_INVALID</name>
-      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
-      <anchor>gae86374c92bace3a7d2bef9656da6048a</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>SACN_MERGE_RECEIVER_CONFIG_DEFAULT_INIT</name>
@@ -4729,27 +4643,6 @@
     <class kind="struct">SacnReceiverNetintList</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_RECEIVER_INVALID</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga79dd5d0d62fb4d6120290afeeadb3637</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_INFINITE_SOURCES</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>gadb2ea19692692ca852423d0a9de749ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DEFAULT_EXPIRED_WAIT_MS</name>
-      <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga2f4617269e2d64c85b81556e0c3e8fde</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_RECEIVER_CONFIG_DEFAULT_INIT</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
       <anchor>gaaaa17f5e77d094f9348c0efd361cee52</anchor>
@@ -4853,6 +4746,18 @@
       <anchor>ga494aa6c2efd3b6a12943191c74946cb8</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>kSacnReceiverInfiniteSources</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnDefaultExpiredWaitMs</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>sacn_receiver_config_init</name>
@@ -4944,11 +4849,10 @@
       <anchor>gabd632f80d5da75c47c1f08103a42a391</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</name>
+    <member kind="enumvalue">
+      <name>kSacnReceiverOptsFilterPreviewData</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
-      <anchor>ga8613a5c435a6120a1d410bead3949087</anchor>
+      <anchor>gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4959,34 +4863,6 @@
     <class kind="struct">SacnSourceConfig</class>
     <class kind="struct">SacnSourceUniverseConfig</class>
     <class kind="struct">SacnSourceUniverseNetintList</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_INVALID</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga446e9e065e08c7a90309a993b2502153</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_INFINITE_UNIVERSES</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>ga1ac5056bc752c32ca80c08b9839a142d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gab3c248f42fcdeccba28617fd2612ce71</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</name>
-      <anchorfile>group__sacn__source.html</anchorfile>
-      <anchor>gae3df139429df836f977bab01da3af19d</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>SACN_SOURCE_CONFIG_DEFAULT_INIT</name>
@@ -5027,6 +4903,24 @@
       <name>SacnSourceUniverseNetintList</name>
       <anchorfile>group__sacn__source.html</anchorfile>
       <anchor>ga0f30b2db7d3c6686a14bab97c80d73a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceInfiniteUniverses</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceKeepAliveIntervalDefault</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourcePapKeepAliveIntervalDefault</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -5231,13 +5125,6 @@
     <class kind="struct">SacnSourceDetectorConfig</class>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_SOURCE_DETECTOR_INFINITE</name>
-      <anchorfile>group__sacn__source__detector.html</anchorfile>
-      <anchor>ga2a1bee1e4fe7a47ee053c8dbae05fbcb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</name>
       <anchorfile>group__sacn__source__detector.html</anchorfile>
       <anchor>ga78fbb7639c835e3b08091fc16e31d6fc</anchor>
@@ -5276,6 +5163,12 @@
       <name>SacnSourceDetectorConfig</name>
       <anchorfile>group__sacn__source__detector.html</anchorfile>
       <anchor>gacf1948692a93767d849b6df90f75f6a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSacnSourceDetectorInfinite</name>
+      <anchorfile>group__sacn__source__detector.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -5433,67 +5326,67 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpba_zyzsh_docs_pages_additional_documentation</docanchor>
+    <docanchor file="additional_documentation.html">md__tmp_tmpepfz9hx5_docs_pages_additional_documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpba_zyzsh_docs_pages_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpepfz9hx5_docs_pages_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpba_zyzsh_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html">md__tmp_tmpepfz9hx5_docs_pages_configuring_lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpba_zyzsh_docs_pages_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpepfz9hx5_docs_pages_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpba_zyzsh_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpepfz9hx5_docs_pages_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpba_zyzsh_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html">md__tmp_tmpepfz9hx5_docs_pages_per_address_priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpba_zyzsh_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html">md__tmp_tmpepfz9hx5_docs_pages_source_loss_behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpba_zyzsh_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html">md__tmp_tmpepfz9hx5_docs_pages_using_dmx_merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpba_zyzsh_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html">md__tmp_tmpepfz9hx5_docs_pages_using_merge_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpba_zyzsh_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html">md__tmp_tmpepfz9hx5_docs_pages_using_receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpba_zyzsh_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html">md__tmp_tmpepfz9hx5_docs_pages_using_source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

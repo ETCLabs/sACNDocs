@@ -26,15 +26,15 @@ var group__sacn__source =
       [ "universe", "struct_sacn_source_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
     ] ],
     [ "SACN_SOURCE_CONFIG_DEFAULT_INIT", "group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1", null ],
-    [ "SACN_SOURCE_INFINITE_UNIVERSES", "group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d", null ],
-    [ "SACN_SOURCE_INVALID", "group__sacn__source.html#ga446e9e065e08c7a90309a993b2502153", null ],
-    [ "SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT", "group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71", null ],
-    [ "SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT", "group__sacn__source.html#gae3df139429df836f977bab01da3af19d", null ],
     [ "SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT", "group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b", null ],
     [ "sacn_source_t", "group__sacn__source.html#gacc4c9d2c77cf4126e9ac7faf297c3dd8", null ],
     [ "SacnSourceConfig", "group__sacn__source.html#gaf13f724dda8304930fcda0977088cd6a", null ],
     [ "SacnSourceUniverseConfig", "group__sacn__source.html#ga3f72b89ed47da0e268c7735ae8971e89", null ],
-    [ "SacnSourceUniverseNetintList", "group__sacn__source.html#ga0f30b2db7d3c6686a14bab97c80d73a0", null ],
+    [ "SacnSourceUniverseNetintList", "group__sacn__source.html#ga0f30b2db7d3c6686a14bab97c80d73a0", [
+      [ "kSacnSourceInfiniteUniverses", "group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f", null ],
+      [ "kSacnSourceKeepAliveIntervalDefault", "group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2", null ],
+      [ "kSacnSourcePapKeepAliveIntervalDefault", "group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559", null ]
+    ] ],
     [ "sacn_source_tick_mode_t", "group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d", [
       [ "kSacnSourceTickModeProcessLevelsOnly", "group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e", null ],
       [ "kSacnSourceTickModeProcessPapOnly", "group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280", null ],

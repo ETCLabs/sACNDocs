@@ -1,8 +1,6 @@
 var dmx__merger_8h =
 [
     [ "SACN_DMX_MERGER_CONFIG_INIT", "group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7", null ],
-    [ "SACN_DMX_MERGER_INVALID", "group__sacn__dmx__merger.html#ga4578a59809c13ece174e8dcf59fce26d", null ],
-    [ "SACN_DMX_MERGER_SOURCE_INVALID", "group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055", null ],
     [ "SACN_DMX_MERGER_SOURCE_IS_VALID", "group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86", null ],
     [ "sacn_dmx_merger_source_t", "group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2", null ],
     [ "sacn_dmx_merger_t", "group__sacn__dmx__merger.html#gabee79fb378d5942866adc898cb7da38b", null ],

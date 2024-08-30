@@ -1,7 +1,7 @@
 var group__sacn__merge__receiver__cpp =
 [
     [ "MergeReceiver", "classsacn_1_1_merge_receiver.html", [
-      [ "Handle", "classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922", null ],
+      [ "Handle", "classsacn_1_1_merge_receiver.html#a1fc240c7591bf132dec601df5fdfd926", null ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#abffd6ce55e98154f496e0d341728769b", null ],
       [ "~MergeReceiver", "classsacn_1_1_merge_receiver.html#adb1f9239326731fbfcd20429fde340ca", null ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html#ad3e150350cbde08d2a6cd57573e9ae89", null ],

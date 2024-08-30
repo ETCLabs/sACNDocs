@@ -250,7 +250,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is only allowed to be NULL if and only if <a class="el" href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26" title="Disables internal DMX merger owner buffer for merge results.">SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</a> is 0. Buffer of <a class="el" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f" title="Configures the maximum number of slots supported for merging by the DMX merger.">SACN_DMX_MERGER_MAX_SLOTS</a> source IDs that indicate the current winner of the merge for that slot, or <a class="el" href="group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055">SACN_DMX_MERGER_SOURCE_INVALID</a> to indicate that there is no winner for that slot. This is used if you need to know the source of each slot. If you only need to know whether or not a slot is sourced, set this to NULL and use per_address_priorities (which has half the memory footprint) to check if the slot has a priority of 0 (not sourced). Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
+<p>This is only allowed to be NULL if and only if <a class="el" href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26" title="Disables internal DMX merger owner buffer for merge results.">SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</a> is 0. Buffer of <a class="el" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f" title="Configures the maximum number of slots supported for merging by the DMX merger.">SACN_DMX_MERGER_MAX_SLOTS</a> source IDs that indicate the current winner of the merge for that slot, or #kSacnDmxMergerSourceInvalid to indicate that there is no winner for that slot. This is used if you need to know the source of each slot. If you only need to know whether or not a slot is sourced, set this to NULL and use per_address_priorities (which has half the memory footprint) to check if the slot has a priority of 0 (not sourced). Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The maximum number of sources this merger will listen to. Defaults to <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">SACN_RECEIVER_INFINITE_SOURCES</a>. This parameter is ignored when configured to use static memory &ndash; <a class="el" href="group__sacnopts__dmx__merger.html#gaaeaa9701ec2b290ddfb3b31d8463dca4" title="The maximum number of sources that can be merged on each merger instance.">SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</a> is used instead. </p>
+<p>The maximum number of sources this merger will listen to. Defaults to <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">kSacnReceiverInfiniteSources</a>. This parameter is ignored when configured to use static memory &ndash; <a class="el" href="group__sacnopts__dmx__merger.html#gaaeaa9701ec2b290ddfb3b31d8463dca4" title="The maximum number of sources that can be merged on each merger instance.">SACN_DMX_MERGER_MAX_SOURCES_PER_MERGER</a> is used instead. </p>
 
 </div>
 </div>

@@ -244,17 +244,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga0a68bef69f737e31072b475521d331c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8">SACN_SOURCE_NAME_MAX_LEN</a>&#160;&#160;&#160;64</td></tr>
-<tr class="memdesc:ga0a68bef69f737e31072b475521d331c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of an sACN source name, including the null-terminator.  <a href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8">More...</a><br /></td></tr>
-<tr class="separator:ga0a68bef69f737e31072b475521d331c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga681f92a30c76ae426e2403a328978abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>&#160;&#160;&#160;512</td></tr>
-<tr class="separator:ga681f92a30c76ae426e2403a328978abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4579b31d1f4e1ecff0ecd8214c551956"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a>&#160;&#160;&#160;((<a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>) - 1)</td></tr>
-<tr class="separator:ga4579b31d1f4e1ecff0ecd8214c551956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a">SACN_STARTCODE_DMX</a>&#160;&#160;&#160;0x00u</td></tr>
-<tr class="separator:ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92ab22221d9dedb5b22978e6c14c6349"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349">SACN_STARTCODE_PRIORITY</a>&#160;&#160;&#160;0xddu</td></tr>
-<tr class="separator:ga92ab22221d9dedb5b22978e6c14c6349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ee0954838bc60d3e04d7a54692533fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_NETINT_CONFIG_DEFAULT_INIT</b></td></tr>
 <tr class="separator:ga3ee0954838bc60d3e04d7a54692533fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -269,8 +258,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50">kSacnMinimumUniverse</a> = 1
+<tr class="memitem:ga06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0">kSacnSourceNameMaxLen</a> = 64
+, <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a> = 512
+, <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe">kSacnStartcodeDmx</a> = 0x00u
+, <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba38b4d4cbb7ef787234ee57f5a611668a">kSacnStartcodePriority</a> = 0xddu
+, <br />
+&#160;&#160;<a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50">kSacnMinimumUniverse</a> = 1
 , <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805">kSacnMaximumUniverse</a> = 63999
+<br />
  }</td></tr>
 <tr class="separator:ga06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02f82b9c734e2d2f70a1106d6480833a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a">sacn_ip_support_t</a> { <a class="el" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4">kSacnIpV4Only</a>
@@ -288,7 +284,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the sACN library.  <a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">More...</a><br /></td></tr>
 <tr class="separator:ga7b80ebcafe9eb3240a67785377872f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65d96208fc89676e2dea18d2ded31872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872">sacn_get_remote_source_handle</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *source_cid)</td></tr>
-<tr class="memdesc:ga65d96208fc89676e2dea18d2ded31872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found.  <a href="group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872">More...</a><br /></td></tr>
+<tr class="memdesc:ga65d96208fc89676e2dea18d2ded31872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or #kSacnRemoteSourceInvalid if not found.  <a href="group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872">More...</a><br /></td></tr>
 <tr class="separator:ga65d96208fc89676e2dea18d2ded31872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a71315342a299c22055fe195e6750ef"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef">sacn_get_remote_source_cid</a> (<a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a> source_handle, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *source_cid)</td></tr>
 <tr class="memdesc:ga9a71315342a299c22055fe195e6750ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source handle to the corresponding source CID.  <a href="group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef">More...</a><br /></td></tr>
@@ -317,21 +313,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>sACN: A Streaming ACN (sACN) implementation. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga681f92a30c76ae426e2403a328978abb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga681f92a30c76ae426e2403a328978abb">&#9670;&nbsp;</a></span>DMX_ADDRESS_COUNT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DMX_ADDRESS_COUNT&#160;&#160;&#160;512</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The number of addresses in a DMX universe. </p>
-
-</div>
-</div>
 <a id="ga3ee0954838bc60d3e04d7a54692533fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3ee0954838bc60d3e04d7a54692533fd">&#9670;&nbsp;</a></span>SACN_NETINT_CONFIG_DEFAULT_INIT</h2>
 
@@ -347,68 +328,6 @@ Functions</h2></td></tr>
 <div class="line">    NULL, 0, <span class="keyword">false</span>                      \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="ga4579b31d1f4e1ecff0ecd8214c551956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4579b31d1f4e1ecff0ecd8214c551956">&#9670;&nbsp;</a></span>SACN_REMOTE_SOURCE_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_REMOTE_SOURCE_INVALID&#160;&#160;&#160;((<a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>) - 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid remote source handle value. </p>
-
-</div>
-</div>
-<a id="ga0a68bef69f737e31072b475521d331c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a68bef69f737e31072b475521d331c8">&#9670;&nbsp;</a></span>SACN_SOURCE_NAME_MAX_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_NAME_MAX_LEN&#160;&#160;&#160;64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The maximum length of an sACN source name, including the null-terminator. </p>
-<p>E1.31 specifies that the Source Name field must be null-terminated on the wire. </p>
-
-</div>
-</div>
-<a id="ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a">&#9670;&nbsp;</a></span>SACN_STARTCODE_DMX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_STARTCODE_DMX&#160;&#160;&#160;0x00u</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The DMX start code. </p>
-
-</div>
-</div>
-<a id="ga92ab22221d9dedb5b22978e6c14c6349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92ab22221d9dedb5b22978e6c14c6349">&#9670;&nbsp;</a></span>SACN_STARTCODE_PRIORITY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_STARTCODE_PRIORITY&#160;&#160;&#160;0xddu</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The per-address priority start code. </p>
-
 </div>
 </div>
 <a id="gab22648c510945c218b806ad28e1e9a86"></a>
@@ -590,7 +509,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50"></a>kSacnMinimumUniverse&#160;</td><td class="fielddoc"><p>The lowest sACN universe number supported. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0"></a>kSacnSourceNameMaxLen&#160;</td><td class="fielddoc"><p>The maximum length of an sACN source name, including the null-terminator. </p>
+<p>E1.31 specifies that the Source Name field must be null-terminated on the wire. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605"></a>kSacnDmxAddressCount&#160;</td><td class="fielddoc"><p>The number of addresses in a DMX universe. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe"></a>kSacnStartcodeDmx&#160;</td><td class="fielddoc"><p>The DMX start code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba38b4d4cbb7ef787234ee57f5a611668a"></a>kSacnStartcodePriority&#160;</td><td class="fielddoc"><p>The per-address priority start code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50"></a>kSacnMinimumUniverse&#160;</td><td class="fielddoc"><p>The lowest sACN universe number supported. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805"></a>kSacnMaximumUniverse&#160;</td><td class="fielddoc"><p>The highest sACN universe number supported. </p>
 </td></tr>
@@ -704,7 +632,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found. </p>
+<p>Converts a remote source CID to the corresponding handle, or #kSacnRemoteSourceInvalid if not found. </p>
 <p>This is a simple conversion from a remote source CID to it's corresponding remote source handle. A handle will be returned only if it is a source that has been discovered by a receiver, merge receiver, or source detector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -712,7 +640,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The remote source handle, or <a class="el" href="group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956">SACN_REMOTE_SOURCE_INVALID</a> if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The remote source handle, or #kSacnRemoteSourceInvalid if not found. </dd></dl>
 
 </div>
 </div>

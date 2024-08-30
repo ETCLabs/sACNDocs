@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('group__sacn__source__detector.html',''
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sACN Source Detector<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a></div></div>  </div>
@@ -221,9 +222,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2a1bee1e4fe7a47ee053c8dbae05fbcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">SACN_SOURCE_DETECTOR_INFINITE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga2a1bee1e4fe7a47ee053c8dbae05fbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for "infinite" when listening for sources or universes on a source.  <a href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">More...</a><br /></td></tr>
-<tr class="separator:ga2a1bee1e4fe7a47ee053c8dbae05fbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78fbb7639c835e3b08091fc16e31d6fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc">SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:ga78fbb7639c835e3b08091fc16e31d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -242,6 +240,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaa539e91ba47bdb365998472761dcede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf1948692a93767d849b6df90f75f6a4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_source_detector_config.html">SacnSourceDetectorConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source__detector.html#gacf1948692a93767d849b6df90f75f6a4">SacnSourceDetectorConfig</a></td></tr>
 <tr class="separator:gacf1948692a93767d849b6df90f75f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gadc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__source__detector.html#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a> = 0
+ }</td></tr>
+<tr class="separator:gadc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -309,19 +313,19 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition:</b> common.c:251</div></div>
 <div class="ttc" id="agroup__sacn__source__detector_html_ga42bf1f29fa1a313343b672e33685ba1d"><div class="ttname"><a href="group__sacn__source__detector.html#ga42bf1f29fa1a313343b672e33685ba1d">sacn_source_detector_destroy</a></div><div class="ttdeci">void sacn_source_detector_destroy()</div><div class="ttdoc">Destroy the sACN Source Detector.</div><div class="ttdef"><b>Definition:</b> source_detector.c:129</div></div>
 <div class="ttc" id="agroup__sacn__source__detector_html_ga740a10eb54b67decf41794e298258a21"><div class="ttname"><a href="group__sacn__source__detector.html#ga740a10eb54b67decf41794e298258a21">sacn_source_detector_reset_networking</a></div><div class="ttdeci">etcpal_error_t sacn_source_detector_reset_networking(const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Updates the source detector system network interfaces. Also resets the underlying network sockets for...</div><div class="ttdef"><b>Definition:</b> source_detector.c:178</div></div>
-<div class="ttc" id="agroup__sacn__source__detector_html_ga78fbb7639c835e3b08091fc16e31d6fc"><div class="ttname"><a href="group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc">SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source_detector.h:236</div></div>
+<div class="ttc" id="agroup__sacn__source__detector_html_ga78fbb7639c835e3b08091fc16e31d6fc"><div class="ttname"><a href="group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc">SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</div><div class="ttdef"><b>Definition:</b> source_detector.h:239</div></div>
 <div class="ttc" id="agroup__sacn__source__detector_html_gaa662eb1cc3bb937691dcabc56332952f"><div class="ttname"><a href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f">sacn_source_detector_create</a></div><div class="ttdeci">etcpal_error_t sacn_source_detector_create(const SacnSourceDetectorConfig *config, const SacnNetintConfig *netint_config)</div><div class="ttdoc">Create the sACN Source Detector.</div><div class="ttdef"><b>Definition:</b> source_detector.c:85</div></div>
 <div class="ttc" id="asource__detector_8h_html"><div class="ttname"><a href="source__detector_8h.html">source_detector.h</a></div><div class="ttdoc">sACN Source Detector API definitions</div></div>
 <div class="ttc" id="astruct_etc_pal_log_params_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a></div></div>
-<div class="ttc" id="astruct_sacn_mcast_interface_html"><div class="ttname"><a href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></div><div class="ttdef"><b>Definition:</b> common.h:93</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdef"><b>Definition:</b> common.h:110</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_a6ddc029bb8aba3ead075508554592445"><div class="ttname"><a href="struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdef"><b>Definition:</b> common.h:115</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_add0da5313d4b1d06a67bda5508b848e1"><div class="ttname"><a href="struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdef"><b>Definition:</b> common.h:113</div></div>
-<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_a2a102ec50557c2902e0b43656c0fa33c"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#a2a102ec50557c2902e0b43656c0fa33c">SacnSourceDetectorCallbacks::limit_exceeded</a></div><div class="ttdeci">SacnSourceDetectorLimitExceededCallback limit_exceeded</div><div class="ttdef"><b>Definition:</b> source_detector.h:209</div></div>
-<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_ad53b703dc988168f5b0b5bff06b2d2ff"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#ad53b703dc988168f5b0b5bff06b2d2ff">SacnSourceDetectorCallbacks::source_expired</a></div><div class="ttdeci">SacnSourceDetectorSourceExpiredCallback source_expired</div><div class="ttdef"><b>Definition:</b> source_detector.h:208</div></div>
-<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_ae4d714b0bc64241d5632fe77d013fb45"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45">SacnSourceDetectorCallbacks::source_updated</a></div><div class="ttdeci">SacnSourceDetectorSourceUpdatedCallback source_updated</div><div class="ttdef"><b>Definition:</b> source_detector.h:207</div></div>
-<div class="ttc" id="astruct_sacn_source_detector_config_html"><div class="ttname"><a href="struct_sacn_source_detector_config.html">SacnSourceDetectorConfig</a></div><div class="ttdef"><b>Definition:</b> source_detector.h:215</div></div>
-<div class="ttc" id="astruct_sacn_source_detector_config_html_ac7495377d16d49972f79cebbd69f7095"><div class="ttname"><a href="struct_sacn_source_detector_config.html#ac7495377d16d49972f79cebbd69f7095">SacnSourceDetectorConfig::callbacks</a></div><div class="ttdeci">SacnSourceDetectorCallbacks callbacks</div><div class="ttdef"><b>Definition:</b> source_detector.h:217</div></div>
+<div class="ttc" id="astruct_sacn_mcast_interface_html"><div class="ttname"><a href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></div><div class="ttdef"><b>Definition:</b> common.h:88</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdef"><b>Definition:</b> common.h:105</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_a6ddc029bb8aba3ead075508554592445"><div class="ttname"><a href="struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdef"><b>Definition:</b> common.h:110</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_add0da5313d4b1d06a67bda5508b848e1"><div class="ttname"><a href="struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdef"><b>Definition:</b> common.h:108</div></div>
+<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_a2a102ec50557c2902e0b43656c0fa33c"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#a2a102ec50557c2902e0b43656c0fa33c">SacnSourceDetectorCallbacks::limit_exceeded</a></div><div class="ttdeci">SacnSourceDetectorLimitExceededCallback limit_exceeded</div><div class="ttdef"><b>Definition:</b> source_detector.h:212</div></div>
+<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_ad53b703dc988168f5b0b5bff06b2d2ff"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#ad53b703dc988168f5b0b5bff06b2d2ff">SacnSourceDetectorCallbacks::source_expired</a></div><div class="ttdeci">SacnSourceDetectorSourceExpiredCallback source_expired</div><div class="ttdef"><b>Definition:</b> source_detector.h:211</div></div>
+<div class="ttc" id="astruct_sacn_source_detector_callbacks_html_ae4d714b0bc64241d5632fe77d013fb45"><div class="ttname"><a href="struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45">SacnSourceDetectorCallbacks::source_updated</a></div><div class="ttdeci">SacnSourceDetectorSourceUpdatedCallback source_updated</div><div class="ttdef"><b>Definition:</b> source_detector.h:210</div></div>
+<div class="ttc" id="astruct_sacn_source_detector_config_html"><div class="ttname"><a href="struct_sacn_source_detector_config.html">SacnSourceDetectorConfig</a></div><div class="ttdef"><b>Definition:</b> source_detector.h:218</div></div>
+<div class="ttc" id="astruct_sacn_source_detector_config_html_ac7495377d16d49972f79cebbd69f7095"><div class="ttname"><a href="struct_sacn_source_detector_config.html#ac7495377d16d49972f79cebbd69f7095">SacnSourceDetectorConfig::callbacks</a></div><div class="ttdeci">SacnSourceDetectorCallbacks callbacks</div><div class="ttdef"><b>Definition:</b> source_detector.h:220</div></div>
 </div><!-- fragment --><p>Callback demonstrations: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> my_source_updated(<a class="code" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a> handle, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* cid, <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
 <div class="line">                       <span class="keyword">const</span> uint16_t* sourced_universes, <span class="keywordtype">size_t</span> num_sourced_universes, <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
@@ -361,7 +365,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_ga479b00b02ab33cf757e9476ad3286336"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a></div><div class="ttdeci">bool etcpal_uuid_to_string(const EtcPalUuid *uuid, char *buf)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_gabab14207e273082491f7be2a21275092"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_UUID_STRING_BYTES</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga31b1febd91134668307803d573ed2f2c"><div class="ttname"><a href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a></div><div class="ttdeci">uint16_t sacn_remote_source_t</div><div class="ttdef"><b>Definition:</b> common.h:58</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga31b1febd91134668307803d573ed2f2c"><div class="ttname"><a href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a></div><div class="ttdeci">uint16_t sacn_remote_source_t</div><div class="ttdef"><b>Definition:</b> common.h:46</div></div>
 <div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga78fbb7639c835e3b08091fc16e31d6fc"></a>
@@ -375,29 +379,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                          \</div>
-<div class="line">    {NULL, NULL, NULL, NULL}, <a class="code" href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">SACN_SOURCE_DETECTOR_INFINITE</a>, <a class="code" href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">SACN_SOURCE_DETECTOR_INFINITE</a>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                      \</div>
+<div class="line">    {NULL, NULL, NULL, NULL}, <a class="code" href="group__sacn__source__detector.html#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="code" href="group__sacn__source__detector.html#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdef"><b>Definition:</b> common.h:85</div></div>
-<div class="ttc" id="agroup__sacn__source__detector_html_ga2a1bee1e4fe7a47ee053c8dbae05fbcb"><div class="ttname"><a href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">SACN_SOURCE_DETECTOR_INFINITE</a></div><div class="ttdeci">#define SACN_SOURCE_DETECTOR_INFINITE</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening for sources or universes on a source.</div><div class="ttdef"><b>Definition:</b> source_detector.h:146</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdef"><b>Definition:</b> common.h:80</div></div>
+<div class="ttc" id="agroup__sacn__source__detector_html_ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76"><div class="ttname"><a href="group__sacn__source__detector.html#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a></div><div class="ttdeci">@ kSacnSourceDetectorInfinite</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening for sources or universes on a source.</div><div class="ttdef"><b>Definition:</b> source_detector.h:148</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_source_detector_config.html">SacnSourceDetectorConfig</a> struct. </p>
-
-</div>
-</div>
-<a id="ga2a1bee1e4fe7a47ee053c8dbae05fbcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a1bee1e4fe7a47ee053c8dbae05fbcb">&#9670;&nbsp;</a></span>SACN_SOURCE_DETECTOR_INFINITE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_DETECTOR_INFINITE&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constant for "infinite" when listening for sources or universes on a source. </p>
-<p>When using dynamic memory, this constant can be passed in when creating a source detector. It represents an infinite number of sources or universes on a source. </p>
 
 </div>
 </div>
@@ -445,7 +432,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that the module has run out of memory to track universes or sources. </p>
-<p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 1 when sACN was compiled (the default on non-embedded platforms), and the configuration you pass to <a class="el" href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f" title="Create the sACN Source Detector.">sacn_source_detector_create()</a> has source_count_max and universes_per_source_max set to <a class="el" href="group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb" title="Constant for &quot;infinite&quot; when listening for sources or universes on a source.">SACN_SOURCE_DETECTOR_INFINITE</a>, this callback will never be called (except for the rare case where a heap allocation function fails) and may be set to NULL.</p>
+<p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 1 when sACN was compiled (the default on non-embedded platforms), and the configuration you pass to <a class="el" href="group__sacn__source__detector.html#gaa662eb1cc3bb937691dcabc56332952f" title="Create the sACN Source Detector.">sacn_source_detector_create()</a> has source_count_max and universes_per_source_max set to <a class="el" href="group__sacn__source__detector.html#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76" title="Constant for &quot;infinite&quot; when listening for sources or universes on a source.">kSacnSourceDetectorInfinite</a>, this callback will never be called (except for the rare case where a heap allocation function fails) and may be set to NULL.</p>
 <p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 0 when sACN was compiled, source_count_max and universes_per_source_max are ignored and <a class="el" href="group__sacnopts__source__detector.html#ga872fc4bd419f3cc3d77e7502f0b1ed0e" title="The maximum number of sACN sources that can be monitored.">SACN_SOURCE_DETECTOR_MAX_SOURCES</a> and <a class="el" href="group__sacnopts__source__detector.html#ga24e186592053bd29fbffbfc92825268e" title="The maximum number of sACN universes that can be tracked on each source.">SACN_SOURCE_DETECTOR_MAX_UNIVERSES_PER_SOURCE</a> are used instead.</p>
 <p>This callback is rate-limited: it will only be called the first time a source or universe limit is exceeded. After that, it will not be called until the number of sources or universes has dropped below their limit and hits it again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -508,6 +495,26 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gadc29c2ff13d900c2f185ee95427fb06c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc29c2ff13d900c2f185ee95427fb06c">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76"></a>kSacnSourceDetectorInfinite&#160;</td><td class="fielddoc"><p>Constant for "infinite" when listening for sources or universes on a source. </p>
+<p>When using dynamic memory, this constant can be passed in when creating a source detector. It represents an infinite number of sources or universes on a source. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

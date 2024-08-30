@@ -1,7 +1,6 @@
 var merge__receiver_8h =
 [
     [ "SACN_MERGE_RECEIVER_CONFIG_DEFAULT_INIT", "group__sacn__merge__receiver.html#gaeb89255ebd3592d97fe76ed6203913ae", null ],
-    [ "SACN_MERGE_RECEIVER_INVALID", "group__sacn__merge__receiver.html#gae86374c92bace3a7d2bef9656da6048a", null ],
     [ "sacn_merge_receiver_t", "group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61", null ],
     [ "SacnMergeReceiverCallbacks", "group__sacn__merge__receiver.html#ga92cb80327e80976e7b004bf9819bca0a", null ],
     [ "SacnMergeReceiverConfig", "group__sacn__merge__receiver.html#ga05a8525a8ee5280ab3b6e0583ae01ae8", null ],

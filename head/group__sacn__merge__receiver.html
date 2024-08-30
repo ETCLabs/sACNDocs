@@ -227,8 +227,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gae86374c92bace3a7d2bef9656da6048a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#gae86374c92bace3a7d2bef9656da6048a">SACN_MERGE_RECEIVER_INVALID</a>&#160;&#160;&#160;<a class="el" href="group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637">SACN_RECEIVER_INVALID</a></td></tr>
-<tr class="separator:gae86374c92bace3a7d2bef9656da6048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb89255ebd3592d97fe76ed6203913ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__merge__receiver.html#gaeb89255ebd3592d97fe76ed6203913ae">SACN_MERGE_RECEIVER_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:gaeb89255ebd3592d97fe76ed6203913ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -323,28 +321,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                    \</div>
-<div class="line">    0, {NULL, NULL, NULL, NULL}, {1, <a class="code" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f">SACN_DMX_MERGER_MAX_SLOTS</a>}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, <span class="keyword">true</span>, \</div>
-<div class="line">        kSacnIpV4AndIpV6                                                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                                   \</div>
+<div class="line">    0, {NULL, NULL, NULL, NULL}, {1, <a class="code" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f">SACN_DMX_MERGER_MAX_SLOTS</a>}, <a class="code" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>, <span class="keyword">true</span>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdef"><b>Definition:</b> common.h:80</div></div>
+<div class="ttc" id="agroup__sacn__receiver_html_ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725"><div class="ttname"><a href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a></div><div class="ttdeci">@ kSacnReceiverInfiniteSources</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:70</div></div>
 <div class="ttc" id="agroup__sacnopts__dmx__merger_html_ga01ed1a377484d83e568bd7cf053f392f"><div class="ttname"><a href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f">SACN_DMX_MERGER_MAX_SLOTS</a></div><div class="ttdeci">#define SACN_DMX_MERGER_MAX_SLOTS</div><div class="ttdoc">Configures the maximum number of slots supported for merging by the DMX merger.</div><div class="ttdef"><b>Definition:</b> opts.h:487</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_merge_receiver_config.html">SacnMergeReceiverConfig</a> struct. </p>
-
-</div>
-</div>
-<a id="gae86374c92bace3a7d2bef9656da6048a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae86374c92bace3a7d2bef9656da6048a">&#9670;&nbsp;</a></span>SACN_MERGE_RECEIVER_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_MERGE_RECEIVER_INVALID&#160;&#160;&#160;<a class="el" href="group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637">SACN_RECEIVER_INVALID</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid sACN merge_receiver handle value. </p>
 
 </div>
 </div>

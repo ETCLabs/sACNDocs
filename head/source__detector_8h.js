@@ -1,7 +1,6 @@
 var source__detector_8h =
 [
     [ "SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT", "group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc", null ],
-    [ "SACN_SOURCE_DETECTOR_INFINITE", "group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb", null ],
     [ "SacnSourceDetectorCallbacks", "group__sacn__source__detector.html#gaa539e91ba47bdb365998472761dcede2", null ],
     [ "SacnSourceDetectorConfig", "group__sacn__source__detector.html#gacf1948692a93767d849b6df90f75f6a4", null ],
     [ "SacnSourceDetectorLimitExceededCallback", "group__sacn__source__detector.html#gadb2603e053f842705b654047e99c0096", null ],

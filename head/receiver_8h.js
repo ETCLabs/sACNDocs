@@ -1,10 +1,6 @@
 var receiver_8h =
 [
-    [ "SACN_DEFAULT_EXPIRED_WAIT_MS", "group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde", null ],
     [ "SACN_RECEIVER_CONFIG_DEFAULT_INIT", "group__sacn__receiver.html#gaaaa17f5e77d094f9348c0efd361cee52", null ],
-    [ "SACN_RECEIVER_INFINITE_SOURCES", "group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea", null ],
-    [ "SACN_RECEIVER_INVALID", "group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637", null ],
-    [ "SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA", "group__sacn__receiver.html#ga8613a5c435a6120a1d410bead3949087", null ],
     [ "sacn_receiver_t", "group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6", null ],
     [ "SacnLostSource", "group__sacn__receiver.html#ga7fdeb921a4c00c9821019145683bdda4", null ],
     [ "SacnReceiverCallbacks", "group__sacn__receiver.html#ga114584027956aaaccfb9e74e1c311206", null ],

@@ -226,15 +226,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga446e9e065e08c7a90309a993b2502153"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga446e9e065e08c7a90309a993b2502153">SACN_SOURCE_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga446e9e065e08c7a90309a993b2502153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ac5056bc752c32ca80c08b9839a142d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga1ac5056bc752c32ca80c08b9839a142d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for "infinite" when sending sACN universes.  <a href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">More...</a><br /></td></tr>
-<tr class="separator:ga1ac5056bc752c32ca80c08b9839a142d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3c248f42fcdeccba28617fd2612ce71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71">SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</a>&#160;&#160;&#160;800</td></tr>
-<tr class="separator:gab3c248f42fcdeccba28617fd2612ce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3df139429df836f977bab01da3af19d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gae3df139429df836f977bab01da3af19d">SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:gae3df139429df836f977bab01da3af19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20483046bfb90da7c9bf089fc0229a6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></td></tr>
@@ -253,6 +244,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gabc6126af1d45847bc59afa0aa3216b04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a> = 0
+, <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a> = 800
+, <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559">kSacnSourcePapKeepAliveIntervalDefault</a> = 1000
+ }</td></tr>
+<tr class="separator:gabc6126af1d45847bc59afa0aa3216b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> { <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e">kSacnSourceTickModeProcessLevelsOnly</a>
 , <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280">kSacnSourceTickModeProcessPapOnly</a>
 , <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61">kSacnSourceTickModeProcessLevelsAndPap</a>

@@ -221,14 +221,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga4578a59809c13ece174e8dcf59fce26d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__dmx__merger.html#ga4578a59809c13ece174e8dcf59fce26d">SACN_DMX_MERGER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga4578a59809c13ece174e8dcf59fce26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ca9e023e2091c5a8a4e5e2ba426f055"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055">SACN_DMX_MERGER_SOURCE_INVALID</a>&#160;&#160;&#160;((<a class="el" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a>) - 1)</td></tr>
-<tr class="separator:ga1ca9e023e2091c5a8a4e5e2ba426f055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a></td></tr>
 <tr class="memdesc:ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An initializer for an <a class="el" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> struct.  <a href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">More...</a><br /></td></tr>
 <tr class="separator:ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec4962a6c5655b357d4c81dc9e7a7b86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86">SACN_DMX_MERGER_SOURCE_IS_VALID</a>(owners_array,  slot_index)&#160;&#160;&#160;  (owners_array[slot_index] != <a class="el" href="group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055">SACN_DMX_MERGER_SOURCE_INVALID</a>)</td></tr>
+<tr class="memitem:gaec4962a6c5655b357d4c81dc9e7a7b86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86">SACN_DMX_MERGER_SOURCE_IS_VALID</a>(owners_array,  slot_index)&#160;&#160;&#160;  (owners_array[slot_index] != kSacnDmxMergerSourceInvalid)</td></tr>
 <tr class="memdesc:gaec4962a6c5655b357d4c81dc9e7a7b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to see if a slot owner is valid.  <a href="group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86">More...</a><br /></td></tr>
 <tr class="separator:gaec4962a6c5655b357d4c81dc9e7a7b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -294,48 +290,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                              \</div>
-<div class="line">    NULL, NULL, NULL, NULL, NULL, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a> \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                            \</div>
+<div class="line">    NULL, NULL, NULL, NULL, NULL, <a class="code" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a> \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
+<div class="ttc" id="agroup__sacn__receiver_html_ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725"><div class="ttname"><a href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a></div><div class="ttdeci">@ kSacnReceiverInfiniteSources</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:70</div></div>
 </div><!-- fragment -->
 <p>An initializer for an <a class="el" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// Create the struct</span></div>
 <div class="line"><a class="code" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> merger_config = <a class="code" href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a>;</div>
 <div class="line"><span class="comment">// Now fill in the members of the struct</span></div>
-<div class="ttc" id="agroup__sacn__dmx__merger_html_ga7431ab2baf3af7e0d1999355c6bcc9d7"><div class="ttname"><a href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a></div><div class="ttdeci">#define SACN_DMX_MERGER_CONFIG_INIT</div><div class="ttdoc">An initializer for an SacnDmxMergerConfig struct.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:134</div></div>
-<div class="ttc" id="astruct_sacn_dmx_merger_config_html"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a></div><div class="ttdef"><b>Definition:</b> dmx_merger.h:80</div></div>
+<div class="ttc" id="agroup__sacn__dmx__merger_html_ga7431ab2baf3af7e0d1999355c6bcc9d7"><div class="ttname"><a href="group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a></div><div class="ttdeci">#define SACN_DMX_MERGER_CONFIG_INIT</div><div class="ttdoc">An initializer for an SacnDmxMergerConfig struct.</div><div class="ttdef"><b>Definition:</b> dmx_merger.h:132</div></div>
+<div class="ttc" id="astruct_sacn_dmx_merger_config_html"><div class="ttname"><a href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a></div><div class="ttdef"><b>Definition:</b> dmx_merger.h:78</div></div>
 </div><!-- fragment --> 
-</div>
-</div>
-<a id="ga4578a59809c13ece174e8dcf59fce26d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4578a59809c13ece174e8dcf59fce26d">&#9670;&nbsp;</a></span>SACN_DMX_MERGER_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_DMX_MERGER_INVALID&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid sACN merger handle value. </p>
-
-</div>
-</div>
-<a id="ga1ca9e023e2091c5a8a4e5e2ba426f055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ca9e023e2091c5a8a4e5e2ba426f055">&#9670;&nbsp;</a></span>SACN_DMX_MERGER_SOURCE_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_DMX_MERGER_SOURCE_INVALID&#160;&#160;&#160;((<a class="el" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a>) - 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid DMX merger source handle value. </p>
-
 </div>
 </div>
 <a id="gaec4962a6c5655b357d4c81dc9e7a7b86"></a>
@@ -359,7 +325,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  (owners_array[slot_index] != <a class="el" href="group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055">SACN_DMX_MERGER_SOURCE_INVALID</a>)</td>
+          <td></td><td>&#160;&#160;&#160;  (owners_array[slot_index] != kSacnDmxMergerSourceInvalid)</td>
         </tr>
       </table>
 </div><div class="memdoc">

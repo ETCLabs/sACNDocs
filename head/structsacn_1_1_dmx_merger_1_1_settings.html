@@ -232,7 +232,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae39fb52602dd51d0696c8973b0d5cd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec37c8bd38cd533fbff8d704cef812d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sacn__dmx__merger.html#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_merger_source_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#aec37c8bd38cd533fbff8d704cef812d9">owners</a> {nullptr}</td></tr>
 <tr class="separator:aec37c8bd38cd533fbff8d704cef812d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a> {<a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>}</td></tr>
+<tr class="memitem:aa56795d5b57bff4910ce11baac4003ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsacn_1_1_dmx_merger_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba">source_count_max</a> {<a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td></tr>
 <tr class="separator:aa56795d5b57bff4910ce11baac4003ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -348,7 +348,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is only allowed to be NULL if and only if <a class="el" href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26" title="Disables internal DMX merger owner buffer for merge results.">SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</a> is 0. Buffer of <a class="el" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f" title="Configures the maximum number of slots supported for merging by the DMX merger.">SACN_DMX_MERGER_MAX_SLOTS</a> source IDs that indicate the current winner of the merge for that slot, or <a class="el" href="group__sacn__dmx__merger.html#ga1ca9e023e2091c5a8a4e5e2ba426f055">SACN_DMX_MERGER_SOURCE_INVALID</a> to indicate that there is no winner for that slot. This is used if you need to know the source of each slot. If you only need to know whether or not a slot is sourced, set this to NULL and use per_address_priorities (which has half the memory footprint) to check if the slot has a priority of 0 (not sourced). Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
+<p>This is only allowed to be NULL if and only if <a class="el" href="group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26" title="Disables internal DMX merger owner buffer for merge results.">SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER</a> is 0. Buffer of <a class="el" href="group__sacnopts__dmx__merger.html#ga01ed1a377484d83e568bd7cf053f392f" title="Configures the maximum number of slots supported for merging by the DMX merger.">SACN_DMX_MERGER_MAX_SLOTS</a> source IDs that indicate the current winner of the merge for that slot, or #kSacnDmxMergerSourceInvalid to indicate that there is no winner for that slot. This is used if you need to know the source of each slot. If you only need to know whether or not a slot is sourced, set this to NULL and use per_address_priorities (which has half the memory footprint) to check if the slot has a priority of 0 (not sourced). Memory is owned by the application and must remain allocated until the merger is destroyed. </p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int source_count_max {<a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>}</td>
+          <td class="memname">int source_count_max {<a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">

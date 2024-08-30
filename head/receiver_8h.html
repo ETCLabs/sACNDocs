@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('receiver_8h.html',''); initResizable()
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">receiver.h File Reference</div>  </div>
@@ -233,21 +234,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga79dd5d0d62fb4d6120290afeeadb3637"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637">SACN_RECEIVER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga79dd5d0d62fb4d6120290afeeadb3637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb2ea19692692ca852423d0a9de749ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gadb2ea19692692ca852423d0a9de749ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for "infinite" when listening or merging sACN universes.  <a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">More...</a><br /></td></tr>
-<tr class="separator:gadb2ea19692692ca852423d0a9de749ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde">SACN_DEFAULT_EXPIRED_WAIT_MS</a>&#160;&#160;&#160;1000u</td></tr>
-<tr class="memdesc:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default expired notification wait time.  <a href="group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde">More...</a><br /></td></tr>
-<tr class="separator:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaaa17f5e77d094f9348c0efd361cee52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gaaaa17f5e77d094f9348c0efd361cee52">SACN_RECEIVER_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:gaaaa17f5e77d094f9348c0efd361cee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">sACN receiver flags</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Valid values for the flags member in the <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
-</div></td></tr>
-<tr class="memitem:ga8613a5c435a6120a1d410bead3949087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga8613a5c435a6120a1d410bead3949087">SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</a>&#160;&#160;&#160;0x1</td></tr>
-<tr class="separator:ga8613a5c435a6120a1d410bead3949087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -285,6 +273,19 @@ Typedefs</h2></td></tr>
 <tr class="separator:gac54129e22da91ee8f1aaf9b56d771355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga494aa6c2efd3b6a12943191c74946cb8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_receiver_netint_list.html">SacnReceiverNetintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga494aa6c2efd3b6a12943191c74946cb8">SacnReceiverNetintList</a></td></tr>
 <tr class="separator:ga494aa6c2efd3b6a12943191c74946cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a> = 0
+, <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569">kSacnDefaultExpiredWaitMs</a> = 1000u
+ }</td></tr>
+<tr class="separator:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">sACN receiver flags</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Valid values for the flags member in the <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
+</div></td></tr>
+<tr class="memitem:ga99fb83031ce9923c84392b4e92f956b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__receiver.html#gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8">kSacnReceiverOptsFilterPreviewData</a> = 0x1
+ }</td></tr>
+<tr class="separator:ga99fb83031ce9923c84392b4e92f956b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

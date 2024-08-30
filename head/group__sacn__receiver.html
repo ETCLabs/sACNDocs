@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('group__sacn__receiver.html',''); initR
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sACN Receiver<div class="ingroups"><a class="el" href="group__s_a_c_n.html">sACN</a></div></div>  </div>
@@ -231,14 +232,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga79dd5d0d62fb4d6120290afeeadb3637"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga79dd5d0d62fb4d6120290afeeadb3637">SACN_RECEIVER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga79dd5d0d62fb4d6120290afeeadb3637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb2ea19692692ca852423d0a9de749ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gadb2ea19692692ca852423d0a9de749ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for "infinite" when listening or merging sACN universes.  <a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">More...</a><br /></td></tr>
-<tr class="separator:gadb2ea19692692ca852423d0a9de749ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde">SACN_DEFAULT_EXPIRED_WAIT_MS</a>&#160;&#160;&#160;1000u</td></tr>
-<tr class="memdesc:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default expired notification wait time.  <a href="group__sacn__receiver.html#ga2f4617269e2d64c85b81556e0c3e8fde">More...</a><br /></td></tr>
-<tr class="separator:ga2f4617269e2d64c85b81556e0c3e8fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaaa17f5e77d094f9348c0efd361cee52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#gaaaa17f5e77d094f9348c0efd361cee52">SACN_RECEIVER_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:gaaaa17f5e77d094f9348c0efd361cee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -278,6 +271,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:gac54129e22da91ee8f1aaf9b56d771355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga494aa6c2efd3b6a12943191c74946cb8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_sacn_receiver_netint_list.html">SacnReceiverNetintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga494aa6c2efd3b6a12943191c74946cb8">SacnReceiverNetintList</a></td></tr>
 <tr class="separator:ga494aa6c2efd3b6a12943191c74946cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a> = 0
+, <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569">kSacnDefaultExpiredWaitMs</a> = 1000u
+ }</td></tr>
+<tr class="separator:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -324,31 +324,15 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">sACN receiver flags</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp27ba3e7b7c8185f8a9c36ce9de75101f"></a>Valid values for the flags member in the <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
 </td></tr>
-<tr class="memitem:ga8613a5c435a6120a1d410bead3949087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__receiver.html#ga8613a5c435a6120a1d410bead3949087">SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</a>&#160;&#160;&#160;0x1</td></tr>
-<tr class="separator:ga8613a5c435a6120a1d410bead3949087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99fb83031ce9923c84392b4e92f956b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__receiver.html#gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8">kSacnReceiverOptsFilterPreviewData</a> = 0x1
+ }</td></tr>
+<tr class="separator:ga99fb83031ce9923c84392b4e92f956b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The sACN Receiver API; see <a class="el" href="using_receiver.html">Using the sACN Receiver API</a>. </p>
 <p>Components that receive sACN are referred to as sACN Receivers. Use this API to act as an sACN Receiver.</p>
 <p>See <a class="el" href="using_receiver.html">Using the sACN Receiver API</a> for a detailed description of how to use this API. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga2f4617269e2d64c85b81556e0c3e8fde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f4617269e2d64c85b81556e0c3e8fde">&#9670;&nbsp;</a></span>SACN_DEFAULT_EXPIRED_WAIT_MS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_DEFAULT_EXPIRED_WAIT_MS&#160;&#160;&#160;1000u</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The default expired notification wait time. </p>
-<p>The default amount of time the library will wait after a universe enters a source loss condition before calling the sources_lost() callback. Can be changed with <a class="el" href="group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06" title="Set the expired notification wait time.">sacn_receiver_set_expired_wait()</a>. </p>
-
-</div>
-</div>
 <a id="gaaaa17f5e77d094f9348c0efd361cee52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaaa17f5e77d094f9348c0efd361cee52">&#9670;&nbsp;</a></span>SACN_RECEIVER_CONFIG_DEFAULT_INIT</h2>
 
@@ -360,60 +344,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                     \</div>
-<div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, {1, <a class="code" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>}, <a class="code" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a>, 0, \</div>
-<div class="line">        kSacnIpV4AndIpV6                                                                                \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                      \</div>
+<div class="line">    0, {NULL, NULL, NULL, NULL, NULL, NULL}, {1, <a class="code" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>}, <a class="code" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>, 0, \</div>
+<div class="line">        kSacnIpV4AndIpV6                                                                                 \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga681f92a30c76ae426e2403a328978abb"><div class="ttname"><a href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a></div><div class="ttdeci">#define DMX_ADDRESS_COUNT</div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
-<div class="ttc" id="agroup__sacn__receiver_html_gadb2ea19692692ca852423d0a9de749ea"><div class="ttname"><a href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea">SACN_RECEIVER_INFINITE_SOURCES</a></div><div class="ttdeci">#define SACN_RECEIVER_INFINITE_SOURCES</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:68</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605"><div class="ttname"><a href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a></div><div class="ttdeci">@ kSacnDmxAddressCount</div><div class="ttdef"><b>Definition:</b> common.h:59</div></div>
+<div class="ttc" id="agroup__sacn__receiver_html_ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725"><div class="ttname"><a href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a></div><div class="ttdeci">@ kSacnReceiverInfiniteSources</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition:</b> receiver.h:70</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_receiver_config.html">SacnReceiverConfig</a> struct. </p>
-
-</div>
-</div>
-<a id="gadb2ea19692692ca852423d0a9de749ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb2ea19692692ca852423d0a9de749ea">&#9670;&nbsp;</a></span>SACN_RECEIVER_INFINITE_SOURCES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_RECEIVER_INFINITE_SOURCES&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constant for "infinite" when listening or merging sACN universes. </p>
-<p>When using dynamic memory, this constant can be passed in when creating a receiver or a merger. It represents an infinite number of sources on that universe. </p>
-
-</div>
-</div>
-<a id="ga79dd5d0d62fb4d6120290afeeadb3637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79dd5d0d62fb4d6120290afeeadb3637">&#9670;&nbsp;</a></span>SACN_RECEIVER_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_RECEIVER_INVALID&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid sACN receiver handle value. </p>
-
-</div>
-</div>
-<a id="ga8613a5c435a6120a1d410bead3949087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8613a5c435a6120a1d410bead3949087">&#9670;&nbsp;</a></span>SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_RECEIVER_OPTS_FILTER_PREVIEW_DATA&#160;&#160;&#160;0x1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Filter preview data. If set, any sACN data with the Preview flag set will be dropped for this universe. </p>
 
 </div>
 </div>
@@ -601,7 +538,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notify that more than the configured maximum number of sources are currently sending on the universe being listened to. </p>
-<p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 1 when sACN was compiled (the default on non-embedded platforms), and the configuration you pass to <a class="el" href="group__sacn__receiver.html#gacc6321deb0647ac0175993be6083683b" title="Create a new sACN receiver to listen for sACN data on a universe.">sacn_receiver_create()</a> has source_count_max set to <a class="el" href="group__sacn__receiver.html#gadb2ea19692692ca852423d0a9de749ea" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">SACN_RECEIVER_INFINITE_SOURCES</a>, this callback will never be called and may be set to NULL.</p>
+<p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 1 when sACN was compiled (the default on non-embedded platforms), and the configuration you pass to <a class="el" href="group__sacn__receiver.html#gacc6321deb0647ac0175993be6083683b" title="Create a new sACN receiver to listen for sACN data on a universe.">sacn_receiver_create()</a> has source_count_max set to <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725" title="Constant for &quot;infinite&quot; when listening or merging sACN universes.">kSacnReceiverInfiniteSources</a>, this callback will never be called and may be set to NULL.</p>
 <p>If <a class="el" href="group__sacnopts__global.html#gaf7b1d2fa482d1665683883f80b1f4d87" title="Use dynamic memory allocation.">SACN_DYNAMIC_MEM</a> was defined to 0 when sACN was compiled, source_count_max is only used if it's less than <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a>, otherwise <a class="el" href="group__sacnopts__receiver.html#ga079b2f51919b9ac76e3b3330040bd20e" title="The maximum number of sources that can be tracked on each universe.">SACN_RECEIVER_MAX_SOURCES_PER_UNIVERSE</a> is used instead.</p>
 <p>This callback is rate-limited: it will only be called when the first sACN packet is received from a source beyond the limit specified. After that, it will not be called again until the number of sources sending drops below that limit and then hits it again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -697,6 +634,47 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gadf764cbdea00d65edcd07bb9953ad2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf764cbdea00d65edcd07bb9953ad2b7">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725"></a>kSacnReceiverInfiniteSources&#160;</td><td class="fielddoc"><p>Constant for "infinite" when listening or merging sACN universes. </p>
+<p>When using dynamic memory, this constant can be passed in when creating a receiver or a merger. It represents an infinite number of sources on that universe. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a825b748950ce86921c78c77d5d178569"></a>kSacnDefaultExpiredWaitMs&#160;</td><td class="fielddoc"><p>The default expired notification wait time. </p>
+<p>The default amount of time the library will wait after a universe enters a source loss condition before calling the sources_lost() callback. Can be changed with <a class="el" href="group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06" title="Set the expired notification wait time.">sacn_receiver_set_expired_wait()</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga99fb83031ce9923c84392b4e92f956b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99fb83031ce9923c84392b4e92f956b5">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga99fb83031ce9923c84392b4e92f956b5a53ed3fec3e3d23fe7cb977d2db2c2ac8"></a>kSacnReceiverOptsFilterPreviewData&#160;</td><td class="fielddoc"><p>Filter preview data. If set, any sACN data with the Preview flag set will be dropped for this universe. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

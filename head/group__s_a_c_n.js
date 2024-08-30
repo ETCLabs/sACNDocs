@@ -15,11 +15,6 @@ var group__s_a_c_n =
       [ "no_netints", "struct_sacn_netint_config.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
       [ "num_netints", "struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445", null ]
     ] ],
-    [ "DMX_ADDRESS_COUNT", "group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb", null ],
-    [ "SACN_REMOTE_SOURCE_INVALID", "group__s_a_c_n.html#ga4579b31d1f4e1ecff0ecd8214c551956", null ],
-    [ "SACN_SOURCE_NAME_MAX_LEN", "group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8", null ],
-    [ "SACN_STARTCODE_DMX", "group__s_a_c_n.html#ga2dba81c3bf923ae2dbb0aaa6d8d5fa0a", null ],
-    [ "SACN_STARTCODE_PRIORITY", "group__s_a_c_n.html#ga92ab22221d9dedb5b22978e6c14c6349", null ],
     [ "SACN_VERSION_BUILD", "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86", null ],
     [ "SACN_VERSION_COPYRIGHT", "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b", null ],
     [ "SACN_VERSION_DATESTR", "group__s_a_c_n.html#ga99a95e107267c6f80cc2195f86c11586", null ],
@@ -31,6 +26,10 @@ var group__s_a_c_n =
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", [
+      [ "kSacnSourceNameMaxLen", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0", null ],
+      [ "kSacnDmxAddressCount", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605", null ],
+      [ "kSacnStartcodeDmx", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe", null ],
+      [ "kSacnStartcodePriority", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba38b4d4cbb7ef787234ee57f5a611668a", null ],
       [ "kSacnMinimumUniverse", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba0b9d5476719c1b5349b00cbe67c74e50", null ],
       [ "kSacnMaximumUniverse", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba6a8653df63873606353ac9479b24f805", null ]
     ] ],

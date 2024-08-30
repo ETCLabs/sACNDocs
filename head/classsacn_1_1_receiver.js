@@ -1,6 +1,6 @@
 var classsacn_1_1_receiver =
 [
-    [ "Handle", "classsacn_1_1_receiver.html#a7337fe02f7aa0f984a2da3fe2c7d4524", null ],
+    [ "Handle", "classsacn_1_1_receiver.html#a5305fc5a2660b439528e406b442b0363", null ],
     [ "Receiver", "classsacn_1_1_receiver.html#a96590ef9bb15aaa2d157193314684c3d", null ],
     [ "~Receiver", "classsacn_1_1_receiver.html#a1574b33a5e64fe9a6197931b97a6a38d", null ],
     [ "Receiver", "classsacn_1_1_receiver.html#a896715490bebfc93080500e9014a091d", null ],

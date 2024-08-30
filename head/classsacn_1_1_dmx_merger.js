@@ -1,6 +1,6 @@
 var classsacn_1_1_dmx_merger =
 [
-    [ "Handle", "classsacn_1_1_dmx_merger.html#a7b4c9f6ffcd98ecf441928151d890453", null ],
+    [ "Handle", "classsacn_1_1_dmx_merger.html#a693d9eac2aa92d66e893eb62bed04d06", null ],
     [ "DmxMerger", "classsacn_1_1_dmx_merger.html#af5cba58e23f9f704e330262f3e4213e6", null ],
     [ "~DmxMerger", "classsacn_1_1_dmx_merger.html#aa6ecb6b9ecaaa178d7f36445ee959e41", null ],
     [ "DmxMerger", "classsacn_1_1_dmx_merger.html#a366a68351bc07d5517436bbaf7425a62", null ],

@@ -224,15 +224,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga446e9e065e08c7a90309a993b2502153"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga446e9e065e08c7a90309a993b2502153">SACN_SOURCE_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga446e9e065e08c7a90309a993b2502153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ac5056bc752c32ca80c08b9839a142d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga1ac5056bc752c32ca80c08b9839a142d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for "infinite" when sending sACN universes.  <a href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">More...</a><br /></td></tr>
-<tr class="separator:ga1ac5056bc752c32ca80c08b9839a142d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3c248f42fcdeccba28617fd2612ce71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gab3c248f42fcdeccba28617fd2612ce71">SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</a>&#160;&#160;&#160;800</td></tr>
-<tr class="separator:gab3c248f42fcdeccba28617fd2612ce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3df139429df836f977bab01da3af19d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gae3df139429df836f977bab01da3af19d">SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:gae3df139429df836f977bab01da3af19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="separator:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20483046bfb90da7c9bf089fc0229a6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></td></tr>
@@ -251,6 +242,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gabc6126af1d45847bc59afa0aa3216b04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a> = 0
+, <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a> = 800
+, <a class="el" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559">kSacnSourcePapKeepAliveIntervalDefault</a> = 1000
+ }</td></tr>
+<tr class="separator:gabc6126af1d45847bc59afa0aa3216b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa32b392ec2a472f4b42d1395fa1d047d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d">sacn_source_tick_mode_t</a> { <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047dad2e8539866e4da26bfaaad3f7fea354e">kSacnSourceTickModeProcessLevelsOnly</a>
 , <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047daa135ff244f5bde7171ce9f53cb353280">kSacnSourceTickModeProcessPapOnly</a>
 , <a class="el" href="group__sacn__source.html#ggaa32b392ec2a472f4b42d1395fa1d047da811ce8e71a44eccfcf82135395792e61">kSacnSourceTickModeProcessLevelsAndPap</a>
@@ -348,76 +344,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                          \</div>
-<div class="line">    kEtcPalNullUuid, NULL, <a class="code" href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a>, <span class="keyword">false</span>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>,          \</div>
-<div class="line">        SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT, <a class="code" href="group__sacn__source.html#gae3df139429df836f977bab01da3af19d">SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</a> \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                                    \</div>
+<div class="line">    kEtcPalNullUuid, NULL, <a class="code" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a>, <span class="keyword">false</span>, <a class="code" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>, <a class="code" href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a>, \</div>
+<div class="line">        kSacnSourcePapKeepAliveIntervalDefault                                                                         \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdef"><b>Definition:</b> common.h:85</div></div>
-<div class="ttc" id="agroup__sacn__source_html_ga1ac5056bc752c32ca80c08b9839a142d"><div class="ttname"><a href="group__sacn__source.html#ga1ac5056bc752c32ca80c08b9839a142d">SACN_SOURCE_INFINITE_UNIVERSES</a></div><div class="ttdeci">#define SACN_SOURCE_INFINITE_UNIVERSES</div><div class="ttdoc">Constant for &quot;infinite&quot; when sending sACN universes.</div><div class="ttdef"><b>Definition:</b> source.h:66</div></div>
-<div class="ttc" id="agroup__sacn__source_html_gae3df139429df836f977bab01da3af19d"><div class="ttname"><a href="group__sacn__source.html#gae3df139429df836f977bab01da3af19d">SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</a></div><div class="ttdeci">#define SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</div><div class="ttdef"><b>Definition:</b> source.h:72</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdef"><b>Definition:</b> common.h:80</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2"><div class="ttname"><a href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a></div><div class="ttdeci">@ kSacnSourceKeepAliveIntervalDefault</div><div class="ttdef"><b>Definition:</b> source.h:70</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f"><div class="ttname"><a href="group__sacn__source.html#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a></div><div class="ttdeci">@ kSacnSourceInfiniteUniverses</div><div class="ttdoc">Constant for &quot;infinite&quot; when sending sACN universes.</div><div class="ttdef"><b>Definition:</b> source.h:68</div></div>
 </div><!-- fragment --><p>A default-value initializer for an <a class="el" href="struct_sacn_source_config.html">SacnSourceConfig</a> struct. </p>
-
-</div>
-</div>
-<a id="ga1ac5056bc752c32ca80c08b9839a142d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ac5056bc752c32ca80c08b9839a142d">&#9670;&nbsp;</a></span>SACN_SOURCE_INFINITE_UNIVERSES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_INFINITE_UNIVERSES&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constant for "infinite" when sending sACN universes. </p>
-<p>When using dynamic memory, this constant can be passed in when creating a source. It represents an infinite number of universes that can be sent to. </p>
-
-</div>
-</div>
-<a id="ga446e9e065e08c7a90309a993b2502153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga446e9e065e08c7a90309a993b2502153">&#9670;&nbsp;</a></span>SACN_SOURCE_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_INVALID&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An invalid sACN source handle value. </p>
-
-</div>
-</div>
-<a id="gab3c248f42fcdeccba28617fd2612ce71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab3c248f42fcdeccba28617fd2612ce71">&#9670;&nbsp;</a></span>SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_KEEP_ALIVE_INTERVAL_DEFAULT&#160;&#160;&#160;800</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The default NULL start code keep-alive interval for sources, in milliseconds. </p>
-
-</div>
-</div>
-<a id="gae3df139429df836f977bab01da3af19d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae3df139429df836f977bab01da3af19d">&#9670;&nbsp;</a></span>SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_PAP_KEEP_ALIVE_INTERVAL_DEFAULT&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The default per-address priority keep-alive interval for sources, in milliseconds. </p>
 
 </div>
 </div>
@@ -501,6 +435,29 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gabc6126af1d45847bc59afa0aa3216b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc6126af1d45847bc59afa0aa3216b04">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f"></a>kSacnSourceInfiniteUniverses&#160;</td><td class="fielddoc"><p>Constant for "infinite" when sending sACN universes. </p>
+<p>When using dynamic memory, this constant can be passed in when creating a source. It represents an infinite number of universes that can be sent to. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2"></a>kSacnSourceKeepAliveIntervalDefault&#160;</td><td class="fielddoc"><p>The default NULL start code keep-alive interval for sources, in milliseconds. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559"></a>kSacnSourcePapKeepAliveIntervalDefault&#160;</td><td class="fielddoc"><p>The default per-address priority keep-alive interval for sources, in milliseconds. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gaa32b392ec2a472f4b42d1395fa1d047d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa32b392ec2a472f4b42d1395fa1d047d">&#9670;&nbsp;</a></span>sacn_source_tick_mode_t</h2>
 
@@ -673,7 +630,7 @@ Functions</h2></td></tr>
 
 <p>Change the name of an sACN source. </p>
 <p>The name is a UTF-8 string representing "a user-assigned name provided by the source of the packet for use in
-displaying the identity of a source to a user." If its length (including the null terminator) is longer than <a class="el" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8" title="The maximum length of an sACN source name, including the null-terminator.">SACN_SOURCE_NAME_MAX_LEN</a>, then <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a> will be returned.</p>
+displaying the identity of a source to a user." If its length (including the null terminator) is longer than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0" title="The maximum length of an sACN source name, including the null-terminator.">kSacnSourceNameMaxLen</a>, then <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a> will be returned.</p>
 <p>This function will update the packet buffers of all this source's universes with the new name. For each universe that is transmitting NULL start code or PAP data, the logic that slows down packet transmission due to inactivity will be reset.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -916,7 +873,7 @@ used to generate live output."</p>
 <p>This creates the instance of the source and begins sending universe discovery packets for it (which will list no universes until start code data begins transmitting). No start code data is sent until <a class="el" href="group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261" title="Add a universe to an sACN source.">sacn_source_add_universe()</a> and a variant of <a class="el" href="group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341" title="Copies the universe&#39;s DMX levels into the packet to be sent on the next threaded or manual update.">sacn_source_update_levels()</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the sACN source to be created. If any of these parameters are invalid, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a> will be returned. This includes if the source name's length (including the null terminator) is beyond <a class="el" href="group__s_a_c_n.html#ga0a68bef69f737e31072b475521d331c8" title="The maximum length of an sACN source name, including the null-terminator.">SACN_SOURCE_NAME_MAX_LEN</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the sACN source to be created. If any of these parameters are invalid, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a> will be returned. This includes if the source name's length (including the null terminator) is beyond <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0" title="The maximum length of an sACN source name, including the null-terminator.">kSacnSourceNameMaxLen</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Filled in on success with a handle to the sACN source. </td></tr>
   </table>
   </dd>
@@ -1508,7 +1465,7 @@ The last error returned by <a class="elRef" href="https://etclabs.github.io/EtcP
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>A buffer of DMX levels to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1562,7 +1519,7 @@ The last error returned by <a class="elRef" href="https://etclabs.github.io/EtcP
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>A buffer of DMX levels to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1627,9 +1584,9 @@ The last error returned by <a class="elRef" href="https://etclabs.github.io/EtcP
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>A buffer of DMX levels to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1696,9 +1653,9 @@ The last error returned by <a class="elRef" href="https://etclabs.github.io/EtcP
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the source to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">universe</td><td>Universe to update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_levels</td><td>A buffer of DMX levels to copy from. If this pointer is NULL, the source will terminate DMX transmission without removing the universe. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_levels_size</td><td>Size of new_levels. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities</td><td>A buffer of per-address priorities to copy from. This will only be sent when DMX is also being sent. Setting this to NULL will stop the transmission of per-address priorities, in which case receivers will revert to the universe priority after PAP times out. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#ga681f92a30c76ae426e2403a328978abb">DMX_ADDRESS_COUNT</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_priorities_size</td><td>Size of new_priorities. This must be no larger than <a class="el" href="group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605">kSacnDmxAddressCount</a>. </td></tr>
   </table>
   </dd>
 </dl>

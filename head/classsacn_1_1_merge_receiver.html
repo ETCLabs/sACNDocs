@@ -229,8 +229,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4a5bdec680598648c6dbfae0422ef922"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> = <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt; <a class="el" href="classsacn_1_1detail_1_1_merge_receiver_handle_type.html">detail::MergeReceiverHandleType</a>, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>, <a class="el" href="group__sacn__merge__receiver.html#gae86374c92bace3a7d2bef9656da6048a">SACN_MERGE_RECEIVER_INVALID</a> &gt;</td></tr>
-<tr class="separator:a4a5bdec680598648c6dbfae0422ef922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc240c7591bf132dec601df5fdfd926"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#a1fc240c7591bf132dec601df5fdfd926">Handle</a> = <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt; <a class="el" href="classsacn_1_1detail_1_1_merge_receiver_handle_type.html">detail::MergeReceiverHandleType</a>, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>, kSacnMergeReceiverInvalid &gt;</td></tr>
+<tr class="separator:a1fc240c7591bf132dec601df5fdfd926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae0754f40a65bc30573808504455cfe5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="structsacn_1_1_merge_receiver_1_1_source.html">Source</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#aae0754f40a65bc30573808504455cfe5">GetSource</a> (<a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a> source_handle)</td></tr>
 <tr class="memdesc:aae0754f40a65bc30573808504455cfe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a copy of the information for the specified merge receiver source.  <a href="classsacn_1_1_merge_receiver.html#aae0754f40a65bc30573808504455cfe5">More...</a><br /></td></tr>
 <tr class="separator:aae0754f40a65bc30573808504455cfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a> () const</td></tr>
+<tr class="memitem:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classsacn_1_1_merge_receiver.html#a1fc240c7591bf132dec601df5fdfd926">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">handle</a> () const</td></tr>
 <tr class="memdesc:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current handle to the underlying C merge receiver.  <a href="classsacn_1_1_merge_receiver.html#aa4a2884ccfef0338bcb1985f86ae89b7">More...</a><br /></td></tr>
 <tr class="separator:aa4a2884ccfef0338bcb1985f86ae89b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -295,14 +295,14 @@ Static Public Member Functions</h2></td></tr>
 <p>This API is used to minimally wrap the sACN <a class="el" href="classsacn_1_1_receiver.html" title="An instance of sACN Receiver functionality; see Using the sACN Receiver API.">Receiver</a> and DMX Merger logic together so an application can receive and merge sACN sources in software.</p>
 <p>See <a class="el" href="using_merge_receiver.html">Using the sACN Merge Receiver API</a> for a detailed description of how to use this API. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4a5bdec680598648c6dbfae0422ef922"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a5bdec680598648c6dbfae0422ef922">&#9670;&nbsp;</a></span>Handle</h2>
+<a id="a1fc240c7591bf132dec601df5fdfd926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc240c7591bf132dec601df5fdfd926">&#9670;&nbsp;</a></span>Handle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">Handle</a> =  <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt;<a class="el" href="classsacn_1_1detail_1_1_merge_receiver_handle_type.html">detail::MergeReceiverHandleType</a>, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>, <a class="el" href="group__sacn__merge__receiver.html#gae86374c92bace3a7d2bef9656da6048a">SACN_MERGE_RECEIVER_INVALID</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classsacn_1_1_merge_receiver.html#a1fc240c7591bf132dec601df5fdfd926">Handle</a> =  <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt;<a class="el" href="classsacn_1_1detail_1_1_merge_receiver_handle_type.html">detail::MergeReceiverHandleType</a>, <a class="el" href="group__sacn__merge__receiver.html#gab674497f3bceb2d6ebf4b932b26bfe61">sacn_merge_receiver_t</a>, kSacnMergeReceiverInvalid&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -606,7 +606,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classsacn_1_1_merge_receiver.html#a4a5bdec680598648c6dbfae0422ef922">MergeReceiver::Handle</a> handle </td>
+          <td class="memname">constexpr <a class="el" href="classsacn_1_1_merge_receiver.html#a1fc240c7591bf132dec601df5fdfd926">MergeReceiver::Handle</a> handle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
