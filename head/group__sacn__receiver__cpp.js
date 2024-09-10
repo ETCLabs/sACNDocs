@@ -1,54 +1,53 @@
 var group__sacn__receiver__cpp =
 [
-    [ "Receiver", "classsacn_1_1_receiver.html", [
-      [ "Handle", "classsacn_1_1_receiver.html#a5305fc5a2660b439528e406b442b0363", null ],
-      [ "Receiver", "classsacn_1_1_receiver.html#a96590ef9bb15aaa2d157193314684c3d", null ],
-      [ "~Receiver", "classsacn_1_1_receiver.html#a1574b33a5e64fe9a6197931b97a6a38d", null ],
-      [ "Receiver", "classsacn_1_1_receiver.html#a896715490bebfc93080500e9014a091d", null ],
-      [ "Receiver", "classsacn_1_1_receiver.html#a8b226a7db315d39b6fdc4c8e61c3d896", null ],
-      [ "ChangeFootprint", "classsacn_1_1_receiver.html#a6d46635ac84bcb47ff0d01bcafe4ef91", null ],
-      [ "ChangeUniverse", "classsacn_1_1_receiver.html#aa94ae64c11fbb22db3e21fba1e85cc64", null ],
-      [ "ChangeUniverseAndFootprint", "classsacn_1_1_receiver.html#ac097835505ac503b525bcaa566cf506d", null ],
-      [ "GetFootprint", "classsacn_1_1_receiver.html#aaa4d2448f1e1f8b23c095742738df97c", null ],
-      [ "GetNetworkInterfaces", "classsacn_1_1_receiver.html#a227c8165a2af9b39ac6d53cbea18d121", null ],
-      [ "GetUniverse", "classsacn_1_1_receiver.html#a3d205f22d3d18f81585fd8d07ea21647", null ],
-      [ "handle", "classsacn_1_1_receiver.html#af5825bc604b5bf0316732a4db412e1f8", null ],
-      [ "operator=", "classsacn_1_1_receiver.html#ad12ee05fea085da2b0fe8d7982d869e5", null ],
-      [ "operator=", "classsacn_1_1_receiver.html#a9312079cda8a73e44f853bd361239f39", null ],
-      [ "Shutdown", "classsacn_1_1_receiver.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
-      [ "Startup", "classsacn_1_1_receiver.html#a1fa0e47dc34289f2cffabdfc69c216a2", null ],
-      [ "Startup", "classsacn_1_1_receiver.html#abb65535d2f1ed30a79014d81eb7f6807", null ]
+    [ "sacn::Receiver", "classsacn_1_1_receiver.html", [
+      [ "Handle", "classsacn_1_1_receiver.html#a77fa5c8bdea0f7230dba5d9553d28245", null ],
+      [ "Receiver", "classsacn_1_1_receiver.html#ab02abca2e1db16556913091bf652e336", null ],
+      [ "ChangeFootprint", "classsacn_1_1_receiver.html#a1a7a47f5e38e9ae8c7daf4b179a0bb53", null ],
+      [ "ChangeUniverse", "classsacn_1_1_receiver.html#ae3e737396cf3a8b3d3986c849ad6bd17", null ],
+      [ "ChangeUniverseAndFootprint", "classsacn_1_1_receiver.html#ab7b2f82c2aadee2f3b936e5668af3e37", null ],
+      [ "GetExpiredWait", "classsacn_1_1_receiver.html#a3bde49015e4423945ac2623db2fe42b5", null ],
+      [ "GetFootprint", "classsacn_1_1_receiver.html#ae4bd78ffcb11862b59e147192216829c", null ],
+      [ "GetNetworkInterfaces", "classsacn_1_1_receiver.html#abdfc92c08c490d80f87a4efa7a1faabe", null ],
+      [ "GetUniverse", "classsacn_1_1_receiver.html#a0d24444d9df00a7a4991f61995d16ab4", null ],
+      [ "handle", "classsacn_1_1_receiver.html#a4af9aa9169c6f1488e19b73bd07c016c", null ],
+      [ "operator=", "classsacn_1_1_receiver.html#a08660f5644495e18a269d297256b4143", null ],
+      [ "ResetNetworking", "classsacn_1_1_receiver.html#a7b7237999d0be527eafe462f10e4c10c", null ],
+      [ "ResetNetworking", "classsacn_1_1_receiver.html#a0ce43ce33830d04f92b815130c818d01", null ],
+      [ "ResetNetworking", "classsacn_1_1_receiver.html#a0179e50fe224cac10a8bdedc2dae78cf", null ],
+      [ "SetExpiredWait", "classsacn_1_1_receiver.html#a7f1806e38069596a3f6950026ccb4973", null ],
+      [ "Shutdown", "classsacn_1_1_receiver.html#a41c15b8ef03ea26998f6a9e7e816556a", null ],
+      [ "Startup", "classsacn_1_1_receiver.html#ae8af5b11cbcc0baa5f8f267fd23b82b9", null ],
+      [ "Startup", "classsacn_1_1_receiver.html#a0144c0081a583ca1eb68382c716c74f7", null ]
     ] ],
-    [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html", [
-      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a54da9d46d9fe3179d8d90c2cda62a978", null ],
-      [ "~NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a9e07a73282d628b72531a124236be7da", null ],
-      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a624efff6fc0cb574eec2cbf986228046", null ],
-      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a61048cd937a2855bc1a2815f3336af98", null ],
-      [ "HandleSamplingPeriodEnded", "classsacn_1_1_receiver_1_1_notify_handler.html#af02397cc6bf09294666b38883dbdf6a5", null ],
-      [ "HandleSamplingPeriodStarted", "classsacn_1_1_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc", null ],
-      [ "HandleSourceLimitExceeded", "classsacn_1_1_receiver_1_1_notify_handler.html#ab517496e89eb88b7ee7fa383558f725b", null ],
-      [ "HandleSourcePapLost", "classsacn_1_1_receiver_1_1_notify_handler.html#afc6fd518860704ac4b1f58d5a24f6672", null ],
-      [ "HandleSourcesLost", "classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae", null ],
-      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3", null ],
-      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a0c93c34dc16f72cb4d710a533cd24a43", null ],
-      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a4f8428079ddf253532b44e68fae1ad11", null ]
+    [ "sacn::Receiver::NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html", [
+      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a5809f48878240f09858cda1adca3173f", null ],
+      [ "NotifyHandler", "classsacn_1_1_receiver_1_1_notify_handler.html#a1f17abd43b9e566db1b06fd2db1cb2a8", null ],
+      [ "HandleSamplingPeriodEnded", "classsacn_1_1_receiver_1_1_notify_handler.html#a034a2947b48fabc45c70fe7ff174c530", null ],
+      [ "HandleSamplingPeriodStarted", "classsacn_1_1_receiver_1_1_notify_handler.html#a311457c731d8482bddcdfaccec5aad94", null ],
+      [ "HandleSourceLimitExceeded", "classsacn_1_1_receiver_1_1_notify_handler.html#aa6b27ea4cf71a5fb9a4c23a27f07e651", null ],
+      [ "HandleSourcePapLost", "classsacn_1_1_receiver_1_1_notify_handler.html#ad4bab3d8b12f0187e045a8c5c1e492fa", null ],
+      [ "HandleSourcesLost", "classsacn_1_1_receiver_1_1_notify_handler.html#a7408dd0f5056f92ef3d5c391bd665d30", null ],
+      [ "HandleUniverseData", "classsacn_1_1_receiver_1_1_notify_handler.html#aec5b97de2568363d4e5414c8cc5e3fae", null ],
+      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a63a3653f587b16a5f4da0b3e68592aaf", null ],
+      [ "operator=", "classsacn_1_1_receiver_1_1_notify_handler.html#a5492391ba849c56c7037dbb1fb29370b", null ]
     ] ],
-    [ "Settings", "structsacn_1_1_receiver_1_1_settings.html", [
-      [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb", null ],
-      [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a83831072af761dc03118f8474d28536f", null ],
-      [ "IsValid", "structsacn_1_1_receiver_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed", null ],
-      [ "flags", "structsacn_1_1_receiver_1_1_settings.html#ac92588540e8c1d014a08cd8a45462b19", null ],
-      [ "footprint", "structsacn_1_1_receiver_1_1_settings.html#a3fa13922bd1ee44412886d8e562582c8", null ],
-      [ "ip_supported", "structsacn_1_1_receiver_1_1_settings.html#ab619351af6b7a5abcb23e38bdc09e984", null ],
-      [ "source_count_max", "structsacn_1_1_receiver_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba", null ],
-      [ "universe_id", "structsacn_1_1_receiver_1_1_settings.html#a7e0de4d0f4e4bbd14771257febdf7248", null ]
+    [ "sacn::Receiver::Settings", "structsacn_1_1_receiver_1_1_settings.html", [
+      [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a65e57303d5016ca33beae0e1bf2cd8ee", null ],
+      [ "Settings", "structsacn_1_1_receiver_1_1_settings.html#a53a11228edd51301f33544b7defada7f", null ],
+      [ "IsValid", "structsacn_1_1_receiver_1_1_settings.html#a6cd633a06975f5371289a86c4cc2a282", null ],
+      [ "flags", "structsacn_1_1_receiver_1_1_settings.html#ad40fa1f3a91cb9515faf5389d14a8cc4", null ],
+      [ "footprint", "structsacn_1_1_receiver_1_1_settings.html#a4a11bf1963f825383b2a301d72a64712", null ],
+      [ "ip_supported", "structsacn_1_1_receiver_1_1_settings.html#ac9c285850267bdd5ca0d8a1c23853762", null ],
+      [ "source_count_max", "structsacn_1_1_receiver_1_1_settings.html#a187cb71c21387b2cce970ed741692d14", null ],
+      [ "universe_id", "structsacn_1_1_receiver_1_1_settings.html#acf007938f646d57aac8b427a30fad035", null ]
     ] ],
-    [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html", [
-      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#aab5d1e8b9c2879521f59b7a50388e1a3", null ],
-      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#ac0e52c9547dd642b53ff3f32d79856ec", null ],
-      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#a055503469cbefb1d3f658e9c8b55a5ba", null ],
-      [ "handle", "structsacn_1_1_receiver_1_1_netint_list.html#a0d237fd6d38af257c8ab2a14a64a76e0", null ],
-      [ "netints", "structsacn_1_1_receiver_1_1_netint_list.html#a2a0cd7263bacb4663085d28599867b12", null ],
-      [ "no_netints", "structsacn_1_1_receiver_1_1_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ]
+    [ "sacn::Receiver::NetintList", "structsacn_1_1_receiver_1_1_netint_list.html", [
+      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#a6c101729290ae74c9211a0341301c757", null ],
+      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#a4648c2333b3930898d972e8963a1c7f8", null ],
+      [ "NetintList", "structsacn_1_1_receiver_1_1_netint_list.html#af3903a8f92c4803941b615a57f017154", null ],
+      [ "handle", "structsacn_1_1_receiver_1_1_netint_list.html#a8af3ad05298339efd90ae62e1efaba0a", null ],
+      [ "netints", "structsacn_1_1_receiver_1_1_netint_list.html#aec9b1aba453a8f78f5a65f3482178b5f", null ],
+      [ "no_netints", "structsacn_1_1_receiver_1_1_netint_list.html#a5da73ec718c23289ab2652aecc82c9a9", null ]
     ] ]
 ];

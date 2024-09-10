@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['error_20_28error_20handling_29_5375',['error (Error Handling)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__error.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html',1,'(Global Namespace)']]],
-  ['etcpal_5376',['EtcPal',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal.html',1,'']]],
-  ['etcpal_20config_20options_5377',['EtcPal config options',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__opts.html',1,'']]],
-  ['event_5fgroup_20_28event_20groups_29_5378',['event_group (Event Groups)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__event__group.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__event__group.html',1,'(Global Namespace)']]]
+  ['c_20language_20apis_0',['sACN C++ Language APIs',['../group__sacn__cpp__api.html',1,'']]],
+  ['c_20wrappers_1',['C++ Wrappers',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp.html',1,'']]],
+  ['common_20definitions_2',['Common Definitions',['../group__sacn__cpp__common.html',1,'']]],
+  ['config_20options_3',['EtcPal config options',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__opts.html',1,'']]],
+  ['configuration_20options_4',['sACN Configuration Options',['../group__sacnopts.html',1,'']]],
+  ['core_20modules_5',['Core Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__core.html',1,'']]],
+  ['counting_20semaphores_6',['Counting Semaphores',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__sem.html',1,'sem (Counting Semaphores)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__sem.html',1,'sem (Counting Semaphores)']]]
 ];

@@ -7,5 +7,6 @@ var group__sacnopts__global =
     [ "SACN_LOG_MSG_PREFIX", "group__sacnopts__global.html#ga739093ac67975234540c307629ac8280", null ],
     [ "SACN_LOGGING_ENABLED", "group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c", null ],
     [ "SACN_LOOPBACK", "group__sacnopts__global.html#ga6ae6b1e22f87a5c2e49aefbc95a97256", null ],
-    [ "SACN_MAX_NETINTS", "group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81", null ]
+    [ "SACN_MAX_NETINTS", "group__sacnopts__global.html#ga2dd2edc6a9d13618baaf6d02b4d86e81", null ],
+    [ "sacn_assert_verify_fail", "group__sacnopts__global.html#gab694ddf2e6290ac8a1910b4acd879dd2", null ]
 ];

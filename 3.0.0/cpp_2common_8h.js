@@ -5,13 +5,13 @@ var cpp_2common_8h =
       [ "kEnabledOnAllInterfaces", "cpp_2common_8h.html#af874a6c4f11432c529c4068e745889b5ad1989e9a06422a85d3d6d2ecf25a50cf", null ],
       [ "kDisabledOnAllInterfaces", "cpp_2common_8h.html#af874a6c4f11432c529c4068e745889b5a42f053f48441c9286254c451c8bea6a2", null ]
     ] ],
-    [ "Deinit", "cpp_2common_8h.html#ga7c27553e8de8ffb78e3627f51fe9eb25", null ],
-    [ "GetRemoteSourceCid", "cpp_2common_8h.html#gab05243a382f6332a3d73dbb3b202bb95", null ],
-    [ "GetRemoteSourceHandle", "cpp_2common_8h.html#gaa353377fefbbdd6ae634d981944c5619", null ],
-    [ "Init", "cpp_2common_8h.html#ga0dfea4ef6503c65fd4e13eb9813e6513", null ],
-    [ "Init", "cpp_2common_8h.html#ga414aefdf3a0364b6261374e61a37bd05", null ],
-    [ "Init", "cpp_2common_8h.html#ga462a83ab46a4fa6a2f642fcacabecc82", null ],
-    [ "Init", "cpp_2common_8h.html#gac1cf1cb5e698e8ad656481cc834925db", null ],
-    [ "Init", "cpp_2common_8h.html#ga73781de46ab1321166a0dce24094c73d", null ],
+    [ "Deinit", "cpp_2common_8h.html#ga9f9d89fef9cb9c06f25222102d276470", null ],
+    [ "GetRemoteSourceCid", "cpp_2common_8h.html#ga10f0d39b2cdeb9aee1561269e3c11215", null ],
+    [ "GetRemoteSourceHandle", "cpp_2common_8h.html#ga1ec604ce1edee759f5d94c61ec3d274f", null ],
+    [ "Init", "cpp_2common_8h.html#ga4903ef2d970d48561cdc3e839590fba9", null ],
+    [ "Init", "cpp_2common_8h.html#ga67259bed476b490f465dde10adb45eca", null ],
+    [ "Init", "cpp_2common_8h.html#ga6c0a249933607f6f5e57e3cc7f053914", null ],
+    [ "Init", "cpp_2common_8h.html#ga1fcc775ac3442c5961044d9e3808ba1f", null ],
+    [ "Init", "cpp_2common_8h.html#ga25dd460c64f09a4f2b7f94d1f3ea8ba3", null ],
     [ "kInvalidRemoteSourceHandle", "cpp_2common_8h.html#a731047fe50bd58178f7cd8b1960e6e57", null ]
 ];

@@ -29,7 +29,7 @@ var NAVTREE =
     [ "Additional Documentation", "additional_documentation.html", "additional_documentation" ],
     [ "Getting Started with sACN", "getting_started.html", "getting_started" ],
     [ "Todo List", "todo.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -40,10 +40,10 @@ var NAVTREE =
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Data Fields", "functions.html", [
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
@@ -53,9 +53,10 @@ var NAVTREE =
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
-      [ "Globals", "globals.html", [
+      [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -67,12 +68,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"cpp/atomic/atomic_fetch_xor.html",
-"cpp/numeric/math/signbit.html",
-"group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c",
-"group__sacn__source.html#gaa32b392ec2a472f4b42d1395fa1d047d",
-"struct_sacn_recv_universe_data.html"
+"additional_documentation.html",
+"group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375",
+"struct_sacn_receiver_callbacks.html#a80cb2ef319ff23190641717b3468f49e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

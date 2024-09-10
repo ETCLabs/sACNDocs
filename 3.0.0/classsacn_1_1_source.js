@@ -6,8 +6,6 @@ var classsacn_1_1_source =
       [ "kProcessPapOnly", "classsacn_1_1_source.html#af36a9f4e41fd0d0e2f1c538486bf57bfa8a07e62c29375b0e7b5c3cdc53158e2d", null ],
       [ "kProcessLevelsAndPap", "classsacn_1_1_source.html#af36a9f4e41fd0d0e2f1c538486bf57bfa3be842a0530fef755880cd131a19c6c5", null ]
     ] ],
-    [ "Source", "classsacn_1_1_source.html#afcba8c9f647eab467be20bcf54000c21", null ],
-    [ "Source", "classsacn_1_1_source.html#ade9699a755d9e894dd62439e18869a23", null ],
     [ "Source", "classsacn_1_1_source.html#ab3745517fb270270e41c41f0938dc278", null ],
     [ "AddUnicastDestination", "classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454", null ],
     [ "AddUniverse", "classsacn_1_1_source.html#a62069c900842c7ca322bd7ed4b587800", null ],
@@ -20,8 +18,7 @@ var classsacn_1_1_source =
     [ "GetUnicastDestinations", "classsacn_1_1_source.html#a80e1d17f72cc96da34ed4e2ed7b5a439", null ],
     [ "GetUniverses", "classsacn_1_1_source.html#adc1d03b3f1516e7f545862b9096d834c", null ],
     [ "handle", "classsacn_1_1_source.html#a4f8c06497d45385dbb819d1dd4fc7a25", null ],
-    [ "operator=", "classsacn_1_1_source.html#ace1a98c6e347dddfb9c2b362b93b2a45", null ],
-    [ "operator=", "classsacn_1_1_source.html#a70ca8a75288ff8b02f7674f8feea7940", null ],
+    [ "operator=", "classsacn_1_1_source.html#a1b00362149eb55835dd67873cef08bc6", null ],
     [ "RemoveUnicastDestination", "classsacn_1_1_source.html#a2073e5814e81bf1257c7264a1b984966", null ],
     [ "RemoveUniverse", "classsacn_1_1_source.html#aa0293c6689075dd5cb9692f036c8540f", null ],
     [ "SendNow", "classsacn_1_1_source.html#a22cf560eca13a3cbc4c8384bad438897", null ],

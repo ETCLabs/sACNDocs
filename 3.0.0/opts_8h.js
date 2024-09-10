@@ -2,7 +2,6 @@ var opts_8h =
 [
     [ "SACN_ASSERT", "group__sacnopts__global.html#gabd4f61db43336221d5947896ef0f2921", null ],
     [ "SACN_ASSERT_VERIFY", "group__sacnopts__global.html#ga5a66b273b21d3c30e4531a590a480d2c", null ],
-    [ "SACN_DMX_MERGER_DEFAULT_MAX_MERGERS", "group__sacnopts__dmx__merger.html#ga2701910b53a3f1fa34c7d3d33c7ebe3b", null ],
     [ "SACN_DMX_MERGER_DISABLE_INTERNAL_OWNER_BUFFER", "group__sacnopts__dmx__merger.html#ga79ce98d0c9b30964fd17728dc8073a26", null ],
     [ "SACN_DMX_MERGER_DISABLE_INTERNAL_PAP_BUFFER", "group__sacnopts__dmx__merger.html#ga1291670a95116043ee7489006427aa5c", null ],
     [ "SACN_DMX_MERGER_MAX_MERGERS", "group__sacnopts__dmx__merger.html#ga7d15f54f43af8434b4967746f1282fb1", null ],
@@ -39,6 +38,5 @@ var opts_8h =
     [ "SACN_SOURCE_SOCKET_SNDBUF_SIZE", "group__sacnopts__send.html#gafb37b9b4569cb297e919655ad1f0ff22", null ],
     [ "SACN_SOURCE_THREAD_NAME", "group__sacnopts__send.html#ga0a2bddcd541aabbd0b4536d6dae4caa2", null ],
     [ "SACN_SOURCE_THREAD_PRIORITY", "group__sacnopts__send.html#gac69e2ffb7e6a156134373d687a7cbed7", null ],
-    [ "SACN_SOURCE_THREAD_STACK", "group__sacnopts__send.html#ga197a7ace1de904752a545c799ea9e498", null ],
-    [ "sacn_assert_verify_fail", "group__sacnopts__global.html#gad4259643c29ff35c310475e2ca95ce3a", null ]
+    [ "SACN_SOURCE_THREAD_STACK", "group__sacnopts__send.html#ga197a7ace1de904752a545c799ea9e498", null ]
 ];

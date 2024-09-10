@@ -34,5 +34,6 @@ var source_8h =
     [ "sacn_source_update_levels", "group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341", null ],
     [ "sacn_source_update_levels_and_force_sync", "group__sacn__source.html#ga56ea27101d95616ca53c5c602257311a", null ],
     [ "sacn_source_update_levels_and_pap", "group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab", null ],
-    [ "sacn_source_update_levels_and_pap_and_force_sync", "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009", null ]
+    [ "sacn_source_update_levels_and_pap_and_force_sync", "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009", null ],
+    [ "kSacnSourceInvalid", "group__sacn__source.html#gad79259a1529a69ed315764815d9055b2", null ]
 ];

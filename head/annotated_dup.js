@@ -33,5 +33,6 @@ var annotated_dup =
     [ "SacnSourceDetectorCallbacks", "struct_sacn_source_detector_callbacks.html", "struct_sacn_source_detector_callbacks" ],
     [ "SacnSourceDetectorConfig", "struct_sacn_source_detector_config.html", "struct_sacn_source_detector_config" ],
     [ "SacnSourceUniverseConfig", "struct_sacn_source_universe_config.html", "struct_sacn_source_universe_config" ],
-    [ "SacnSourceUniverseNetintList", "struct_sacn_source_universe_netint_list.html", "struct_sacn_source_universe_netint_list" ]
+    [ "SacnSourceUniverseNetintList", "struct_sacn_source_universe_netint_list.html", "struct_sacn_source_universe_netint_list" ],
+    [ "SacnState", "struct_sacn_state.html", "struct_sacn_state" ]
 ];

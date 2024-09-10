@@ -1,20 +1,20 @@
 var group__sacn__dmx__merger =
 [
     [ "SacnDmxMergerConfig", "struct_sacn_dmx_merger_config.html", [
-      [ "levels", "struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19", null ],
-      [ "owners", "struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9", null ],
-      [ "per_address_priorities", "struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30", null ],
-      [ "per_address_priorities_active", "struct_sacn_dmx_merger_config.html#aa844a92b4e32e58dee13b77318f8cb8e", null ],
-      [ "source_count_max", "struct_sacn_dmx_merger_config.html#aa56795d5b57bff4910ce11baac4003ba", null ],
-      [ "universe_priority", "struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44", null ]
+      [ "levels", "struct_sacn_dmx_merger_config.html#a96506d798afb89bc07c16b1906816e6c", null ],
+      [ "owners", "struct_sacn_dmx_merger_config.html#a06213530aeb55ece4486c48b5e4cbd9d", null ],
+      [ "per_address_priorities", "struct_sacn_dmx_merger_config.html#a54296964f2ee7319cde7a88ce3a58605", null ],
+      [ "per_address_priorities_active", "struct_sacn_dmx_merger_config.html#accb82a5eb6a005dea48ebdf34d49220c", null ],
+      [ "source_count_max", "struct_sacn_dmx_merger_config.html#a093b6286e7cc24b5e173cae060d253a2", null ],
+      [ "universe_priority", "struct_sacn_dmx_merger_config.html#a5ae44cef22725722dc4a3ea13948889e", null ]
     ] ],
     [ "SacnDmxMergerSource", "struct_sacn_dmx_merger_source.html", [
-      [ "address_priority", "struct_sacn_dmx_merger_source.html#a25728b13e434ea13b42583a7a27fce63", null ],
-      [ "id", "struct_sacn_dmx_merger_source.html#a5d30b5a537ddb24760bd71590427ac3e", null ],
-      [ "levels", "struct_sacn_dmx_merger_source.html#a5c49750d2936b26b07440cdc876a4844", null ],
-      [ "universe_priority", "struct_sacn_dmx_merger_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4", null ],
-      [ "using_universe_priority", "struct_sacn_dmx_merger_source.html#a61802cbe97a2c1aa336df0282b2bb07f", null ],
-      [ "valid_level_count", "struct_sacn_dmx_merger_source.html#a3695ed7e336fa1e6cf75ee3ccbc4937d", null ]
+      [ "address_priority", "struct_sacn_dmx_merger_source.html#a90054a31259a35b6b80d1624ff1899b8", null ],
+      [ "id", "struct_sacn_dmx_merger_source.html#ad3fa3d754c9dd95ba8333158f2149cff", null ],
+      [ "levels", "struct_sacn_dmx_merger_source.html#a5a3ae1efcdfa85be8580d8369eb8e7af", null ],
+      [ "universe_priority", "struct_sacn_dmx_merger_source.html#a9a4fa060f9e3d408df8ba2080d6bc3df", null ],
+      [ "using_universe_priority", "struct_sacn_dmx_merger_source.html#a710230eb074d9e3fdadc6f079a44bc61", null ],
+      [ "valid_level_count", "struct_sacn_dmx_merger_source.html#af3da83c58f85079db2d4c9abf817cbdd", null ]
     ] ],
     [ "SACN_DMX_MERGER_CONFIG_INIT", "group__sacn__dmx__merger.html#ga7431ab2baf3af7e0d1999355c6bcc9d7", null ],
     [ "SACN_DMX_MERGER_SOURCE_IS_VALID", "group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86", null ],
@@ -25,10 +25,12 @@ var group__sacn__dmx__merger =
     [ "sacn_dmx_merger_add_source", "group__sacn__dmx__merger.html#gadf879eb673c0ffe91ade6bcc5af615c3", null ],
     [ "sacn_dmx_merger_create", "group__sacn__dmx__merger.html#ga8758dad93531c1a5bbf4643157fe2c72", null ],
     [ "sacn_dmx_merger_destroy", "group__sacn__dmx__merger.html#ga539b249ea5d0898efce4ee7371fc91ef", null ],
-    [ "sacn_dmx_merger_get_source", "group__sacn__dmx__merger.html#ga0811c88edb22c748c8b80bbc49984e67", null ],
+    [ "sacn_dmx_merger_get_source", "group__sacn__dmx__merger.html#ga324d4b0c258a283b1ea5ee5ec9c6e41a", null ],
     [ "sacn_dmx_merger_remove_pap", "group__sacn__dmx__merger.html#gada109b5171e78bc858ab18a7c13931ee", null ],
     [ "sacn_dmx_merger_remove_source", "group__sacn__dmx__merger.html#gac6ebd9581fb8c6170d4acf1c24681ad7", null ],
     [ "sacn_dmx_merger_update_levels", "group__sacn__dmx__merger.html#ga6ee5e85689e75879fa1db01db0bad8a6", null ],
     [ "sacn_dmx_merger_update_pap", "group__sacn__dmx__merger.html#gac28b72fd6849cb6815c0ca58c2d29e65", null ],
-    [ "sacn_dmx_merger_update_universe_priority", "group__sacn__dmx__merger.html#gab56b1f0e4fe8d5d1dd23695a1a861b3b", null ]
+    [ "sacn_dmx_merger_update_universe_priority", "group__sacn__dmx__merger.html#gab56b1f0e4fe8d5d1dd23695a1a861b3b", null ],
+    [ "kSacnDmxMergerInvalid", "group__sacn__dmx__merger.html#ga9fbf1d9b7f9e121c9c63b987d1252bb2", null ],
+    [ "kSacnDmxMergerSourceInvalid", "group__sacn__dmx__merger.html#gadec6698442a5e939f922694d234f39b7", null ]
 ];

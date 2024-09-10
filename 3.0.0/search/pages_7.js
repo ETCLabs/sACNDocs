@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['targeting_20freertos_5416',['Targeting FreeRTOS',['https://etclabs.github.io/EtcPalDocs/head/targeting_freertos.html',1,'']]],
-  ['targeting_20lwip_5417',['Targeting lwIP',['https://etclabs.github.io/EtcPalDocs/head/targeting_lwip.html',1,'']]],
-  ['targeting_20mqx_5418',['Targeting MQX',['https://etclabs.github.io/EtcPalDocs/head/targeting_mqx.html',1,'']]],
-  ['targeting_20zephyr_5419',['Targeting Zephyr',['https://etclabs.github.io/EtcPalDocs/head/targeting_zephyr.html',1,'']]],
-  ['todo_20list_5420',['Todo List',['../todo.html',1,'']]]
+  ['indexes_0',['Network Interface Indexes',['https://etclabs.github.io/EtcPalDocs/head/interface_indexes.html',1,'']]],
+  ['initialization_20and_20destruction_1',['Global Initialization and Destruction',['../global_init_and_destroy.html',1,'getting_started']]],
+  ['integrating_20the_20sacn_20library_20into_20your_20project_2',['Building and Integrating the sACN Library Into Your Project',['../building_and_integrating.html',1,'getting_started']]],
+  ['interface_20indexes_3',['Network Interface Indexes',['https://etclabs.github.io/EtcPalDocs/head/interface_indexes.html',1,'']]],
+  ['into_20your_20project_4',['Building and Integrating the sACN Library Into Your Project',['../building_and_integrating.html',1,'getting_started']]]
 ];

@@ -2,8 +2,6 @@ var group__sacn__source__cpp =
 [
     [ "Source", "classsacn_1_1_source.html", [
       [ "Handle", "classsacn_1_1_source.html#a3defc9aed71824af85696f0f7e1b9ae4", null ],
-      [ "Source", "classsacn_1_1_source.html#afcba8c9f647eab467be20bcf54000c21", null ],
-      [ "Source", "classsacn_1_1_source.html#ade9699a755d9e894dd62439e18869a23", null ],
       [ "Source", "classsacn_1_1_source.html#ab3745517fb270270e41c41f0938dc278", null ],
       [ "AddUnicastDestination", "classsacn_1_1_source.html#a5d7f1f26d1a6f5dbffca60dd08ac0454", null ],
       [ "AddUniverse", "classsacn_1_1_source.html#ad899234878a1c955c1cc66a4f097902e", null ],
@@ -16,8 +14,7 @@ var group__sacn__source__cpp =
       [ "GetUnicastDestinations", "classsacn_1_1_source.html#a80e1d17f72cc96da34ed4e2ed7b5a439", null ],
       [ "GetUniverses", "classsacn_1_1_source.html#adc1d03b3f1516e7f545862b9096d834c", null ],
       [ "handle", "classsacn_1_1_source.html#a4f8c06497d45385dbb819d1dd4fc7a25", null ],
-      [ "operator=", "classsacn_1_1_source.html#ace1a98c6e347dddfb9c2b362b93b2a45", null ],
-      [ "operator=", "classsacn_1_1_source.html#a70ca8a75288ff8b02f7674f8feea7940", null ],
+      [ "operator=", "classsacn_1_1_source.html#a1b00362149eb55835dd67873cef08bc6", null ],
       [ "RemoveUnicastDestination", "classsacn_1_1_source.html#a2073e5814e81bf1257c7264a1b984966", null ],
       [ "RemoveUniverse", "classsacn_1_1_source.html#aa0293c6689075dd5cb9692f036c8540f", null ],
       [ "SendNow", "classsacn_1_1_source.html#a22cf560eca13a3cbc4c8384bad438897", null ],

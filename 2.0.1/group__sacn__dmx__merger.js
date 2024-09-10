@@ -27,7 +27,7 @@ var group__sacn__dmx__merger =
     [ "sacn_dmx_merger_add_source", "group__sacn__dmx__merger.html#gadf879eb673c0ffe91ade6bcc5af615c3", null ],
     [ "sacn_dmx_merger_create", "group__sacn__dmx__merger.html#ga8758dad93531c1a5bbf4643157fe2c72", null ],
     [ "sacn_dmx_merger_destroy", "group__sacn__dmx__merger.html#ga539b249ea5d0898efce4ee7371fc91ef", null ],
-    [ "sacn_dmx_merger_get_source", "group__sacn__dmx__merger.html#ga0811c88edb22c748c8b80bbc49984e67", null ],
+    [ "sacn_dmx_merger_get_source", "group__sacn__dmx__merger.html#ga324d4b0c258a283b1ea5ee5ec9c6e41a", null ],
     [ "sacn_dmx_merger_remove_pap", "group__sacn__dmx__merger.html#gada109b5171e78bc858ab18a7c13931ee", null ],
     [ "sacn_dmx_merger_remove_source", "group__sacn__dmx__merger.html#gac6ebd9581fb8c6170d4acf1c24681ad7", null ],
     [ "sacn_dmx_merger_update_levels", "group__sacn__dmx__merger.html#ga6ee5e85689e75879fa1db01db0bad8a6", null ],

@@ -7,14 +7,15 @@ var group__s_a_c_n =
     [ "sACN Source", "group__sacn__source.html", "group__sacn__source" ],
     [ "sACN Source Detector", "group__sacn__source__detector.html", "group__sacn__source__detector" ],
     [ "SacnMcastInterface", "struct_sacn_mcast_interface.html", [
-      [ "iface", "struct_sacn_mcast_interface.html#a9d398e27f9eb3b1ee3b422225196b684", null ],
-      [ "status", "struct_sacn_mcast_interface.html#a3ed2ca570213574abb27e4d16cab480b", null ]
+      [ "iface", "struct_sacn_mcast_interface.html#a65cd2dceb306fac087fbe140d427c82b", null ],
+      [ "status", "struct_sacn_mcast_interface.html#ac76406095077e7cfe14982fd8656c527", null ]
     ] ],
     [ "SacnNetintConfig", "struct_sacn_netint_config.html", [
-      [ "netints", "struct_sacn_netint_config.html#add0da5313d4b1d06a67bda5508b848e1", null ],
-      [ "no_netints", "struct_sacn_netint_config.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
-      [ "num_netints", "struct_sacn_netint_config.html#a6ddc029bb8aba3ead075508554592445", null ]
+      [ "netints", "struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01", null ],
+      [ "no_netints", "struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1", null ],
+      [ "num_netints", "struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7", null ]
     ] ],
+    [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
     [ "SACN_VERSION_BUILD", "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86", null ],
     [ "SACN_VERSION_COPYRIGHT", "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b", null ],
     [ "SACN_VERSION_DATESTR", "group__s_a_c_n.html#ga99a95e107267c6f80cc2195f86c11586", null ],
@@ -41,5 +42,6 @@ var group__s_a_c_n =
     [ "sacn_deinit", "group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a", null ],
     [ "sacn_get_remote_source_cid", "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef", null ],
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
-    [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ]
+    [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
+    [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

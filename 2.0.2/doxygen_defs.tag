@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1" doxygen_gitid="ef9b20ac7f8a8621fcfc299f8bd0b80422390f4b">
+<tagfile doxygen_version="1.11.0" doxygen_gitid="9b424b03c9833626cd435af22a444888fbbb192d">
   <compound kind="file">
     <name>common.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>common_8h.html</filename>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
@@ -118,87 +118,28 @@
   </compound>
   <compound kind="file">
     <name>common.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
+    <path>include/sacn/cpp/</path>
     <filename>cpp_2common_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <namespace>sacn</namespace>
-    <member kind="typedef">
-      <type>sacn_remote_source_t</type>
-      <name>RemoteSourceHandle</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>acfd8aea0d62baa7d2f16a969ec5849af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga65534ea21e4b2adde8d3189b3c4405a3</anchor>
-      <arglist>(const EtcPalLogParams *log_params=nullptr)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga462a83ab46a4fa6a2f642fcacabecc82</anchor>
-      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga73781de46ab1321166a0dce24094c73d</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga85e9b6458e49595e817c1c47538c61e5</anchor>
-      <arglist>(const etcpal::Logger &amp;logger)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga414aefdf3a0364b6261374e61a37bd05</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Deinit</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>RemoteSourceHandle</type>
-      <name>GetRemoteSourceHandle</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gaa353377fefbbdd6ae634d981944c5619</anchor>
-      <arglist>(const etcpal::Uuid &amp;source_cid)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
-      <name>GetRemoteSourceCid</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
-      <arglist>(RemoteSourceHandle source_handle)</arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr RemoteSourceHandle</type>
-      <name>kInvalidRemoteSourceHandle</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a731047fe50bd58178f7cd8b1960e6e57</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>dmx_merger.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2dmx__merger_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" import="no" module="no" objc="no">sacn/dmx_merger.h</includes>
+    <class kind="class">sacn::detail::DmxMergerHandleType</class>
+    <class kind="class">sacn::DmxMerger</class>
+    <class kind="struct">sacn::DmxMerger::Settings</class>
+    <namespace>sacn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dmx_merger.h</name>
+    <path>include/sacn/</path>
     <filename>dmx__merger_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
     <class kind="struct">SacnDmxMergerConfig</class>
     <class kind="struct">SacnDmxMergerSource</class>
     <member kind="define">
@@ -289,7 +230,7 @@
       <type>const SacnDmxMergerSource *</type>
       <name>sacn_dmx_merger_get_source</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga0811c88edb22c748c8b80bbc49984e67</anchor>
+      <anchor>ga324d4b0c258a283b1ea5ee5ec9c6e41a</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
@@ -322,22 +263,25 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>dmx_merger.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2dmx__merger_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" imported="no">sacn/dmx_merger.h</includes>
-    <class kind="class">sacn::detail::DmxMergerHandleType</class>
-    <class kind="class">sacn::DmxMerger</class>
-    <class kind="struct">sacn::DmxMerger::Settings</class>
+    <name>merge_receiver.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2merge__receiver_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="merge__receiver_8h" name="merge_receiver.h" local="yes" import="no" module="no" objc="no">sacn/merge_receiver.h</includes>
+    <class kind="class">sacn::detail::MergeReceiverHandleType</class>
+    <class kind="class">sacn::MergeReceiver</class>
+    <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
+    <class kind="struct">sacn::MergeReceiver::Settings</class>
+    <class kind="struct">sacn::MergeReceiver::NetintList</class>
+    <class kind="struct">sacn::MergeReceiver::Source</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>merge_receiver.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>merge__receiver_8h.html</filename>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
-    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" imported="no">sacn/dmx_merger.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
+    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" import="no" module="no" objc="no">sacn/dmx_merger.h</includes>
     <class kind="struct">SacnRecvMergedData</class>
     <class kind="struct">SacnMergeReceiverCallbacks</class>
     <class kind="struct">SacnMergeReceiverConfig</class>
@@ -506,24 +450,23 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>merge_receiver.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2merge__receiver_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="merge__receiver_8h" name="merge_receiver.h" local="yes" imported="no">sacn/merge_receiver.h</includes>
-    <class kind="class">sacn::detail::MergeReceiverHandleType</class>
-    <class kind="class">sacn::MergeReceiver</class>
-    <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
-    <class kind="struct">sacn::MergeReceiver::Settings</class>
-    <class kind="struct">sacn::MergeReceiver::NetintList</class>
-    <class kind="struct">sacn::MergeReceiver::Source</class>
+    <name>receiver.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2receiver_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
+    <class kind="class">sacn::detail::ReceiverHandleType</class>
+    <class kind="class">sacn::Receiver</class>
+    <class kind="class">sacn::Receiver::NotifyHandler</class>
+    <class kind="struct">sacn::Receiver::Settings</class>
+    <class kind="struct">sacn::Receiver::NetintList</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>receiver.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>receiver_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnRecvUniverseSubrange</class>
     <class kind="struct">SacnRecvUniverseData</class>
     <class kind="struct">SacnRemoteSource</class>
@@ -764,23 +707,23 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>receiver.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2receiver_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
-    <class kind="class">sacn::detail::ReceiverHandleType</class>
-    <class kind="class">sacn::Receiver</class>
-    <class kind="class">sacn::Receiver::NotifyHandler</class>
-    <class kind="struct">sacn::Receiver::Settings</class>
-    <class kind="struct">sacn::Receiver::NetintList</class>
+    <name>source.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2source_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="source_8h" name="source.h" local="yes" import="no" module="no" objc="no">sacn/source.h</includes>
+    <class kind="class">sacn::detail::SourceHandleType</class>
+    <class kind="class">sacn::Source</class>
+    <class kind="struct">sacn::Source::Settings</class>
+    <class kind="struct">sacn::Source::UniverseSettings</class>
+    <class kind="struct">sacn::Source::UniverseNetintList</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>source.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>source_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnSourceConfig</class>
     <class kind="struct">SacnSourceUniverseConfig</class>
     <class kind="struct">SacnSourceUniverseNetintList</class>
@@ -1017,23 +960,21 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>source.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2source_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="source_8h" name="source.h" local="yes" imported="no">sacn/source.h</includes>
-    <class kind="class">sacn::detail::SourceHandleType</class>
-    <class kind="class">sacn::Source</class>
-    <class kind="struct">sacn::Source::Settings</class>
-    <class kind="struct">sacn::Source::UniverseSettings</class>
-    <class kind="struct">sacn::Source::UniverseNetintList</class>
+    <name>source_detector.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2source__detector_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="source__detector_8h" name="source_detector.h" local="yes" import="no" module="no" objc="no">sacn/source_detector.h</includes>
+    <class kind="class">sacn::SourceDetector</class>
+    <class kind="class">sacn::SourceDetector::NotifyHandler</class>
+    <class kind="struct">sacn::SourceDetector::Settings</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>source_detector.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>source__detector_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnSourceDetectorCallbacks</class>
     <class kind="struct">SacnSourceDetectorConfig</class>
     <member kind="define">
@@ -1122,19 +1063,8 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>source_detector.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2source__detector_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="source__detector_8h" name="source_detector.h" local="yes" imported="no">sacn/source_detector.h</includes>
-    <class kind="class">sacn::SourceDetector</class>
-    <class kind="class">sacn::SourceDetector::NotifyHandler</class>
-    <class kind="struct">sacn::SourceDetector::Settings</class>
-    <namespace>sacn</namespace>
-  </compound>
-  <compound kind="file">
     <name>version.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>version_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -1251,7 +1181,7 @@
   </compound>
   <compound kind="file">
     <name>opts.h</name>
-    <path>/tmp/tmpn7aap4mc/sacn/src/sacn/private/</path>
+    <path>src/sacn/private/</path>
     <filename>opts_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -1486,7 +1416,7 @@
       <type>DmxMerger &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a95bbd64563cbe066ee91cc07cf85db9b</anchor>
+      <anchor>abb9974fc718ddc55a553b8347f8db0c6</anchor>
       <arglist>(DmxMerger &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
@@ -1589,7 +1519,7 @@
       <type>MergeReceiver &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a7778785bf8c7ee8aaf1708c6c188cced</anchor>
+      <anchor>a89b82308cffd7f7e02e71f985bd09de8</anchor>
       <arglist>(MergeReceiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
@@ -1879,7 +1809,7 @@
       <type>Receiver &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a9312079cda8a73e44f853bd361239f39</anchor>
+      <anchor>a5fd019f7409b551a79693c328fc76f7a</anchor>
       <arglist>(Receiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
@@ -3083,7 +3013,7 @@
       <type>Source &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a70ca8a75288ff8b02f7674f8feea7940</anchor>
+      <anchor>a1b00362149eb55835dd67873cef08bc6</anchor>
       <arglist>(Source &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
@@ -3460,56 +3390,56 @@
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga65534ea21e4b2adde8d3189b3c4405a3</anchor>
+      <anchor>gab49b06d17a9d14c429460258c242556b</anchor>
       <arglist>(const EtcPalLogParams *log_params=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga462a83ab46a4fa6a2f642fcacabecc82</anchor>
+      <anchor>ga6c0a249933607f6f5e57e3cc7f053914</anchor>
       <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga73781de46ab1321166a0dce24094c73d</anchor>
+      <anchor>ga25dd460c64f09a4f2b7f94d1f3ea8ba3</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga85e9b6458e49595e817c1c47538c61e5</anchor>
+      <anchor>gae31484ce011df06b27ba6b45500669ea</anchor>
       <arglist>(const etcpal::Logger &amp;logger)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga414aefdf3a0364b6261374e61a37bd05</anchor>
+      <anchor>ga67259bed476b490f465dde10adb45eca</anchor>
       <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Deinit</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
+      <anchor>ga9f9d89fef9cb9c06f25222102d276470</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
       <name>GetRemoteSourceHandle</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gaa353377fefbbdd6ae634d981944c5619</anchor>
+      <anchor>ga1ec604ce1edee759f5d94c61ec3d274f</anchor>
       <arglist>(const etcpal::Uuid &amp;source_cid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
       <name>GetRemoteSourceCid</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
+      <anchor>ga10f0d39b2cdeb9aee1561269e3c11215</anchor>
       <arglist>(RemoteSourceHandle source_handle)</arglist>
     </member>
     <member kind="variable">
@@ -3792,7 +3722,7 @@
       <type>const SacnDmxMergerSource *</type>
       <name>sacn_dmx_merger_get_source</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga0811c88edb22c748c8b80bbc49984e67</anchor>
+      <anchor>ga324d4b0c258a283b1ea5ee5ec9c6e41a</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
@@ -4578,58 +4508,58 @@
     <filename>group__sacn__cpp__common.html</filename>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga65534ea21e4b2adde8d3189b3c4405a3</anchor>
+      <anchor>gab49b06d17a9d14c429460258c242556b</anchor>
       <arglist>(const EtcPalLogParams *log_params=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga462a83ab46a4fa6a2f642fcacabecc82</anchor>
+      <anchor>ga6c0a249933607f6f5e57e3cc7f053914</anchor>
       <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga73781de46ab1321166a0dce24094c73d</anchor>
+      <anchor>ga25dd460c64f09a4f2b7f94d1f3ea8ba3</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga85e9b6458e49595e817c1c47538c61e5</anchor>
+      <anchor>gae31484ce011df06b27ba6b45500669ea</anchor>
       <arglist>(const etcpal::Logger &amp;logger)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga414aefdf3a0364b6261374e61a37bd05</anchor>
+      <anchor>ga67259bed476b490f465dde10adb45eca</anchor>
       <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>Deinit</name>
+      <name>sacn::Deinit</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
+      <anchor>ga9f9d89fef9cb9c06f25222102d276470</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
-      <name>GetRemoteSourceHandle</name>
+      <name>sacn::GetRemoteSourceHandle</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gaa353377fefbbdd6ae634d981944c5619</anchor>
+      <anchor>ga1ec604ce1edee759f5d94c61ec3d274f</anchor>
       <arglist>(const etcpal::Uuid &amp;source_cid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
-      <name>GetRemoteSourceCid</name>
+      <name>sacn::GetRemoteSourceCid</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
+      <anchor>ga10f0d39b2cdeb9aee1561269e3c11215</anchor>
       <arglist>(RemoteSourceHandle source_handle)</arglist>
     </member>
   </compound>
@@ -4931,71 +4861,81 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmpq2dhs0e__docs_pages_additional_documentation</docanchor>
+    <subpage>source_loss_behavior.html</subpage>
+    <subpage>per_address_priority.html</subpage>
+    <docanchor file="additional_documentation.html" title="/tmp/tmpv8eg2ikr/docs/pages/additional_documentation.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2additional__documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpq2dhs0e__docs_pages_building_and_integrating</docanchor>
+    <subpage>configuring_lwip.html</subpage>
+    <docanchor file="building_and_integrating.html" title="/tmp/tmpv8eg2ikr/docs/pages/building_and_integrating.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2building__and__integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmpq2dhs0e__docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html" title="/tmp/tmpv8eg2ikr/docs/pages/configuring_lwip.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2configuring__lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpq2dhs0e__docs_pages_getting_started</docanchor>
+    <subpage>building_and_integrating.html</subpage>
+    <subpage>global_init_and_destroy.html</subpage>
+    <subpage>using_source.html</subpage>
+    <subpage>using_merge_receiver.html</subpage>
+    <subpage>using_receiver.html</subpage>
+    <subpage>using_dmx_merger.html</subpage>
+    <docanchor file="getting_started.html" title="/tmp/tmpv8eg2ikr/docs/pages/getting_started.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2getting__started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpq2dhs0e__docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html" title="/tmp/tmpv8eg2ikr/docs/pages/global_init_and_destroy.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2global__init__and__destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmpq2dhs0e__docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html" title="/tmp/tmpv8eg2ikr/docs/pages/per_address_priority.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2per__address__priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmpq2dhs0e__docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html" title="/tmp/tmpv8eg2ikr/docs/pages/source_loss_behavior.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2source__loss__behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmpq2dhs0e__docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html" title="/tmp/tmpv8eg2ikr/docs/pages/using_dmx_merger.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2using__dmx__merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmpq2dhs0e__docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html" title="/tmp/tmpv8eg2ikr/docs/pages/using_merge_receiver.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2using__merge__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmpq2dhs0e__docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html" title="/tmp/tmpv8eg2ikr/docs/pages/using_receiver.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2using__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmpq2dhs0e__docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html" title="/tmp/tmpv8eg2ikr/docs/pages/using_source.md">md__2tmp_2tmpv8eg2ikr_2docs_2pages_2using__source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
     <title>Streaming ACN</title>
     <filename>index.html</filename>
+    <docanchor file="index.html">mainpage</docanchor>
   </compound>
 </tagfile>

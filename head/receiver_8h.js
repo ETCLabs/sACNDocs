@@ -27,5 +27,6 @@ var receiver_8h =
     [ "sacn_receiver_get_universe", "group__sacn__receiver.html#gae77eea445ebb380fb4d47c63c0f3ba32", null ],
     [ "sacn_receiver_reset_networking", "group__sacn__receiver.html#ga54fd65585c71e83af35289c3cad0f685", null ],
     [ "sacn_receiver_reset_networking_per_receiver", "group__sacn__receiver.html#ga29f330fc880d1c776afb5972514e6ac4", null ],
-    [ "sacn_receiver_set_expired_wait", "group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06", null ]
+    [ "sacn_receiver_set_expired_wait", "group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06", null ],
+    [ "kSacnReceiverInvalid", "group__sacn__receiver.html#ga94dc9e6fd4e4bb4010d8cf9f7e846954", null ]
 ];

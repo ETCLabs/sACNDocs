@@ -1,9 +1,9 @@
 var struct_sacn_dmx_merger_config =
 [
-    [ "levels", "struct_sacn_dmx_merger_config.html#a65f1e6db75de6e20f9df99807d14fe19", null ],
-    [ "owners", "struct_sacn_dmx_merger_config.html#aec37c8bd38cd533fbff8d704cef812d9", null ],
-    [ "per_address_priorities", "struct_sacn_dmx_merger_config.html#a6b8790b29687764423319cc2b8f24c30", null ],
-    [ "per_address_priorities_active", "struct_sacn_dmx_merger_config.html#aa844a92b4e32e58dee13b77318f8cb8e", null ],
-    [ "source_count_max", "struct_sacn_dmx_merger_config.html#aa56795d5b57bff4910ce11baac4003ba", null ],
-    [ "universe_priority", "struct_sacn_dmx_merger_config.html#ae39fb52602dd51d0696c8973b0d5cd44", null ]
+    [ "levels", "struct_sacn_dmx_merger_config.html#a96506d798afb89bc07c16b1906816e6c", null ],
+    [ "owners", "struct_sacn_dmx_merger_config.html#a06213530aeb55ece4486c48b5e4cbd9d", null ],
+    [ "per_address_priorities", "struct_sacn_dmx_merger_config.html#a54296964f2ee7319cde7a88ce3a58605", null ],
+    [ "per_address_priorities_active", "struct_sacn_dmx_merger_config.html#accb82a5eb6a005dea48ebdf34d49220c", null ],
+    [ "source_count_max", "struct_sacn_dmx_merger_config.html#a093b6286e7cc24b5e173cae060d253a2", null ],
+    [ "universe_priority", "struct_sacn_dmx_merger_config.html#a5ae44cef22725722dc4a3ea13948889e", null ]
 ];

@@ -26,10 +26,17 @@ var NAVTREE =
 [
   [ "sACN", "index.html", [
     [ "Streaming ACN", "index.html", null ],
+    [ "Additional Documentation", "https://etclabs.github.io/EtcPalDocs/0.4.1/additional_docs.html", null ],
+    [ "Building EtcPal", "https://etclabs.github.io/EtcPalDocs/0.4.1/building_etcpal.html", null ],
+    [ "Building EtcPal for an embedded target", "https://etclabs.github.io/EtcPalDocs/0.4.1/building_for_embedded.html", null ],
+    [ "Network Interface Indexes", "https://etclabs.github.io/EtcPalDocs/0.4.1/interface_indexes.html", null ],
+    [ "Targeting FreeRTOS", "https://etclabs.github.io/EtcPalDocs/0.4.1/targeting_freertos.html", null ],
+    [ "Targeting lwIP", "https://etclabs.github.io/EtcPalDocs/0.4.1/targeting_lwip.html", null ],
+    [ "Targeting MQX", "https://etclabs.github.io/EtcPalDocs/0.4.1/targeting_mqx.html", null ],
     [ "Additional Documentation", "additional_documentation.html", "additional_documentation" ],
     [ "Getting Started with sACN", "getting_started.html", "getting_started" ],
     [ "Todo List", "todo.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -65,12 +72,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"additional_documentation.html",
-"cpp/error/uncaught_exception.html",
-"cpp/string/byte/isgraph.html",
-"group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2",
-"group__sacn__source__detector.html#gaa539e91ba47bdb365998472761dcede2",
-"structsacn_1_1_receiver_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed"
+"additional_docs.html",
+"group__sacn__receiver.html#gabea27e71ae23c9176832f883a8ad7f06",
+"structsacn_1_1_merge_receiver_1_1_settings.html#a7e0de4d0f4e4bbd14771257febdf7248"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

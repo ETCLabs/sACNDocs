@@ -26,10 +26,18 @@ var NAVTREE =
 [
   [ "sACN", "index.html", [
     [ "Streaming ACN", "index.html", null ],
+    [ "Additional Documentation", "https://etclabs.github.io/EtcPalDocs/head/additional_docs.html", null ],
+    [ "Building EtcPal", "https://etclabs.github.io/EtcPalDocs/head/building_etcpal.html", null ],
+    [ "Building EtcPal for an embedded target", "https://etclabs.github.io/EtcPalDocs/head/building_for_embedded.html", null ],
+    [ "Network Interface Indexes", "https://etclabs.github.io/EtcPalDocs/head/interface_indexes.html", null ],
+    [ "Targeting FreeRTOS", "https://etclabs.github.io/EtcPalDocs/head/targeting_freertos.html", null ],
+    [ "Targeting lwIP", "https://etclabs.github.io/EtcPalDocs/head/targeting_lwip.html", null ],
+    [ "Targeting MQX", "https://etclabs.github.io/EtcPalDocs/head/targeting_mqx.html", null ],
+    [ "Targeting Zephyr", "https://etclabs.github.io/EtcPalDocs/head/targeting_zephyr.html", null ],
     [ "Additional Documentation", "additional_documentation.html", "additional_documentation" ],
     [ "Getting Started with sACN", "getting_started.html", "getting_started" ],
     [ "Todo List", "todo.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -65,12 +73,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"cpp/error/rethrow_exception.html",
-"cpp/string/byte/atoi.html",
-"group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86",
-"group__sacn__source__detector.html#ga2a1bee1e4fe7a47ee053c8dbae05fbcb",
-"structsacn_1_1_merge_receiver_1_1_settings.html#aa56795d5b57bff4910ce11baac4003ba"
+"additional_docs.html",
+"group__sacn__receiver.html#gab5be9e77fa2652f71c93d9886ae826b2",
+"structsacn_1_1_merge_receiver_1_1_netint_list.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

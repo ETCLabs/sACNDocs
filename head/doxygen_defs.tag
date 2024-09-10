@@ -1,11 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1" doxygen_gitid="ef9b20ac7f8a8621fcfc299f8bd0b80422390f4b">
+<tagfile doxygen_version="1.11.0" doxygen_gitid="9b424b03c9833626cd435af22a444888fbbb192d">
   <compound kind="file">
     <name>common.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>common_8h.html</filename>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_NETINT_CONFIG_DEFAULT_INIT</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga3ee0954838bc60d3e04d7a54692533fd</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>sacn_remote_source_t</name>
@@ -116,114 +123,39 @@
       <anchor>ga9a71315342a299c22055fe195e6750ef</anchor>
       <arglist>(sacn_remote_source_t source_handle, EtcPalUuid *source_cid)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_remote_source_t</type>
+      <name>kSacnRemoteSourceInvalid</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gaf801f0a4ae3ede2967106d9b360b8cd1</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>common.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
+    <path>include/sacn/cpp/</path>
     <filename>cpp_2common_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <namespace>sacn</namespace>
-    <member kind="typedef">
-      <type>sacn_remote_source_t</type>
-      <name>RemoteSourceHandle</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>acfd8aea0d62baa7d2f16a969ec5849af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>McastMode</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>af874a6c4f11432c529c4068e745889b5</anchor>
-      <arglist></arglist>
-      <enumvalue file="namespacesacn.html" anchor="af874a6c4f11432c529c4068e745889b5ad1989e9a06422a85d3d6d2ecf25a50cf">kEnabledOnAllInterfaces</enumvalue>
-      <enumvalue file="namespacesacn.html" anchor="af874a6c4f11432c529c4068e745889b5a42f053f48441c9286254c451c8bea6a2">kDisabledOnAllInterfaces</enumvalue>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gac1cf1cb5e698e8ad656481cc834925db</anchor>
-      <arglist>(const EtcPalLogParams *log_params=nullptr, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga462a83ab46a4fa6a2f642fcacabecc82</anchor>
-      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga73781de46ab1321166a0dce24094c73d</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga0dfea4ef6503c65fd4e13eb9813e6513</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Error</type>
-      <name>Init</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga414aefdf3a0364b6261374e61a37bd05</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Deinit</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>RemoteSourceHandle</type>
-      <name>GetRemoteSourceHandle</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gaa353377fefbbdd6ae634d981944c5619</anchor>
-      <arglist>(const etcpal::Uuid &amp;source_cid)</arglist>
-    </member>
-    <member kind="function">
-      <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
-      <name>GetRemoteSourceCid</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
-      <arglist>(RemoteSourceHandle source_handle)</arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr RemoteSourceHandle</type>
-      <name>kInvalidRemoteSourceHandle</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a731047fe50bd58178f7cd8b1960e6e57</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr uint16_t</type>
-      <name>kMinimumUniverse</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a3a2dc07a6c561afb7bc52f8298903e4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr uint16_t</type>
-      <name>kMaximumUniverse</name>
-      <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a3d7b4639506640d043637309708c57ae</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>dmx_merger.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2dmx__merger_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" import="no" module="no" objc="no">sacn/dmx_merger.h</includes>
+    <class kind="class">sacn::detail::DmxMergerHandleType</class>
+    <class kind="class">sacn::DmxMerger</class>
+    <class kind="struct">sacn::DmxMerger::Settings</class>
+    <namespace>sacn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dmx_merger.h</name>
+    <path>include/sacn/</path>
     <filename>dmx__merger_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
-    <includes id="opts_8h" name="opts.h" local="yes" imported="no">sacn/opts.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
+    <includes id="opts_8h" name="opts.h" local="yes" import="no" module="no" objc="no">sacn/opts.h</includes>
     <class kind="struct">SacnDmxMergerConfig</class>
     <class kind="struct">SacnDmxMergerSource</class>
     <member kind="define">
@@ -300,7 +232,7 @@
       <type>const SacnDmxMergerSource *</type>
       <name>sacn_dmx_merger_get_source</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga0811c88edb22c748c8b80bbc49984e67</anchor>
+      <anchor>ga324d4b0c258a283b1ea5ee5ec9c6e41a</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
@@ -331,24 +263,41 @@
       <anchor>gada109b5171e78bc858ab18a7c13931ee</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_dmx_merger_t</type>
+      <name>kSacnDmxMergerInvalid</name>
+      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
+      <anchor>ga9fbf1d9b7f9e121c9c63b987d1252bb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_dmx_merger_source_t</type>
+      <name>kSacnDmxMergerSourceInvalid</name>
+      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
+      <anchor>gadec6698442a5e939f922694d234f39b7</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
-    <name>dmx_merger.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2dmx__merger_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" imported="no">sacn/dmx_merger.h</includes>
-    <class kind="class">sacn::detail::DmxMergerHandleType</class>
-    <class kind="class">sacn::DmxMerger</class>
-    <class kind="struct">sacn::DmxMerger::Settings</class>
+    <name>merge_receiver.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2merge__receiver_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="merge__receiver_8h" name="merge_receiver.h" local="yes" import="no" module="no" objc="no">sacn/merge_receiver.h</includes>
+    <class kind="class">sacn::detail::MergeReceiverHandleType</class>
+    <class kind="class">sacn::MergeReceiver</class>
+    <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
+    <class kind="struct">sacn::MergeReceiver::Settings</class>
+    <class kind="struct">sacn::MergeReceiver::NetintList</class>
+    <class kind="struct">sacn::MergeReceiver::Source</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>merge_receiver.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>merge__receiver_8h.html</filename>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
-    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" imported="no">sacn/dmx_merger.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
+    <includes id="dmx__merger_8h" name="dmx_merger.h" local="yes" import="no" module="no" objc="no">sacn/dmx_merger.h</includes>
     <class kind="struct">SacnRecvMergedData</class>
     <class kind="struct">SacnMergeReceiverCallbacks</class>
     <class kind="struct">SacnMergeReceiverConfig</class>
@@ -536,24 +485,17 @@
       <anchor>ga807515578955a36b0a33de53a1d5bd9c</anchor>
       <arglist>(sacn_merge_receiver_t merge_receiver_handle, sacn_remote_source_t source_handle, SacnMergeReceiverSource *source_info)</arglist>
     </member>
-  </compound>
-  <compound kind="file">
-    <name>merge_receiver.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2merge__receiver_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="merge__receiver_8h" name="merge_receiver.h" local="yes" imported="no">sacn/merge_receiver.h</includes>
-    <class kind="class">sacn::detail::MergeReceiverHandleType</class>
-    <class kind="class">sacn::MergeReceiver</class>
-    <class kind="class">sacn::MergeReceiver::NotifyHandler</class>
-    <class kind="struct">sacn::MergeReceiver::Settings</class>
-    <class kind="struct">sacn::MergeReceiver::NetintList</class>
-    <class kind="struct">sacn::MergeReceiver::Source</class>
-    <namespace>sacn</namespace>
+    <member kind="variable" static="yes">
+      <type>static const sacn_merge_receiver_t</type>
+      <name>kSacnMergeReceiverInvalid</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>gaf9e0a1e60f26e2817f15d5872136f81b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>opts.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>opts_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -809,13 +751,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>SACN_SOURCE_DETECTOR_MAX_SOURCES</name>
       <anchorfile>group__sacnopts__source__detector.html</anchorfile>
       <anchor>ga872fc4bd419f3cc3d77e7502f0b1ed0e</anchor>
@@ -828,12 +763,32 @@
       <anchor>ga24e186592053bd29fbffbfc92825268e</anchor>
       <arglist></arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>sacn_assert_verify_fail</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gab694ddf2e6290ac8a1910b4acd879dd2</anchor>
+      <arglist>(const char *exp, const char *file, const char *func, int line)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>receiver.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2receiver_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="receiver_8h" name="receiver.h" local="yes" import="no" module="no" objc="no">sacn/receiver.h</includes>
+    <class kind="class">sacn::detail::ReceiverHandleType</class>
+    <class kind="class">sacn::Receiver</class>
+    <class kind="class">sacn::Receiver::NotifyHandler</class>
+    <class kind="struct">sacn::Receiver::Settings</class>
+    <class kind="struct">sacn::Receiver::NetintList</class>
+    <namespace>sacn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>receiver.h</name>
+    <path>include/sacn/</path>
     <filename>receiver_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnRecvUniverseSubrange</class>
     <class kind="struct">SacnRecvUniverseData</class>
     <class kind="struct">SacnRemoteSource</class>
@@ -1055,6 +1010,13 @@
       <anchor>gabd632f80d5da75c47c1f08103a42a391</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_receiver_t</type>
+      <name>kSacnReceiverInvalid</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ga94dc9e6fd4e4bb4010d8cf9f7e846954</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumvalue">
       <name>kSacnReceiverOptsFilterPreviewData</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
@@ -1063,23 +1025,23 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>receiver.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2receiver_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="receiver_8h" name="receiver.h" local="yes" imported="no">sacn/receiver.h</includes>
-    <class kind="class">sacn::detail::ReceiverHandleType</class>
-    <class kind="class">sacn::Receiver</class>
-    <class kind="class">sacn::Receiver::NotifyHandler</class>
-    <class kind="struct">sacn::Receiver::Settings</class>
-    <class kind="struct">sacn::Receiver::NetintList</class>
+    <name>source.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2source_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="source_8h" name="source.h" local="yes" import="no" module="no" objc="no">sacn/source.h</includes>
+    <class kind="class">sacn::detail::SourceHandleType</class>
+    <class kind="class">sacn::Source</class>
+    <class kind="struct">sacn::Source::Settings</class>
+    <class kind="struct">sacn::Source::UniverseSettings</class>
+    <class kind="struct">sacn::Source::UniverseNetintList</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>source.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>source_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnSourceConfig</class>
     <class kind="struct">SacnSourceUniverseConfig</class>
     <class kind="struct">SacnSourceUniverseNetintList</class>
@@ -1336,25 +1298,30 @@
       <anchor>gae8c8d77375ea48b26fc069c9068aec69</anchor>
       <arglist>(sacn_source_t handle, uint16_t universe, EtcPalMcastNetintId *netints, size_t netints_size)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_source_t</type>
+      <name>kSacnSourceInvalid</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>gad79259a1529a69ed315764815d9055b2</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
-    <name>source.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2source_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="source_8h" name="source.h" local="yes" imported="no">sacn/source.h</includes>
-    <class kind="class">sacn::detail::SourceHandleType</class>
-    <class kind="class">sacn::Source</class>
-    <class kind="struct">sacn::Source::Settings</class>
-    <class kind="struct">sacn::Source::UniverseSettings</class>
-    <class kind="struct">sacn::Source::UniverseNetintList</class>
+    <name>source_detector.h</name>
+    <path>include/sacn/cpp/</path>
+    <filename>cpp_2source__detector_8h.html</filename>
+    <includes id="cpp_2common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/cpp/common.h</includes>
+    <includes id="source__detector_8h" name="source_detector.h" local="yes" import="no" module="no" objc="no">sacn/source_detector.h</includes>
+    <class kind="class">sacn::SourceDetector</class>
+    <class kind="class">sacn::SourceDetector::NotifyHandler</class>
+    <class kind="struct">sacn::SourceDetector::Settings</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
     <name>source_detector.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>source__detector_8h.html</filename>
-    <includes id="common_8h" name="common.h" local="yes" imported="no">sacn/common.h</includes>
+    <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
     <class kind="struct">SacnSourceDetectorCallbacks</class>
     <class kind="struct">SacnSourceDetectorConfig</class>
     <member kind="define">
@@ -1442,19 +1409,8 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>source_detector.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/cpp/</path>
-    <filename>cpp_2source__detector_8h.html</filename>
-    <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">sacn/cpp/common.h</includes>
-    <includes id="source__detector_8h" name="source_detector.h" local="yes" imported="no">sacn/source_detector.h</includes>
-    <class kind="class">sacn::SourceDetector</class>
-    <class kind="class">sacn::SourceDetector::NotifyHandler</class>
-    <class kind="struct">sacn::SourceDetector::Settings</class>
-    <namespace>sacn</namespace>
-  </compound>
-  <compound kind="file">
     <name>version.h</name>
-    <path>/builds/etc/common-tech/net/sacn/include/sacn/</path>
+    <path>include/sacn/</path>
     <filename>version_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -1577,91 +1533,91 @@
       <type>etcpal::OpaqueId&lt; detail::DmxMergerHandleType, sacn_dmx_merger_t, kSacnDmxMergerInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a693d9eac2aa92d66e893eb62bed04d06</anchor>
+      <anchor>a03e67b1265644917d93641df5cb709d3</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DmxMerger</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a18d71ec061f6533c49251873b493818f</anchor>
+      <anchor>a323d5f8e868645c974d179ad03c18a23</anchor>
       <arglist>(DmxMerger &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>DmxMerger &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a95bbd64563cbe066ee91cc07cf85db9b</anchor>
+      <anchor>aecfa377e8db00475118fdf1572350c58</anchor>
       <arglist>(DmxMerger &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>ab263565edc9ebf5ffd6e82a18184e4c3</anchor>
+      <anchor>a9d874be78e79718a231d66c3acf0e077</anchor>
       <arglist>(const Settings &amp;settings)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
+      <anchor>a994d642b453d20df200a4613fe86912a</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; sacn_dmx_merger_source_t &gt;</type>
       <name>AddSource</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>ac4c679c71b50cde6301145a91b8440ce</anchor>
+      <anchor>ab2d55ab7f14ce6a1ec5f041ca30bf52f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveSource</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a826044729a5c70ee16d5fbc26f93414b</anchor>
+      <anchor>aba486e8526701846ddcab892f2d32877</anchor>
       <arglist>(sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
       <type>const SacnDmxMergerSource *</type>
       <name>GetSourceInfo</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a5f5b58945088002ac617cc5b80cd6fa2</anchor>
+      <anchor>a2653d8c10489cb2c1fdbab60b82fd735</anchor>
       <arglist>(sacn_dmx_merger_source_t source) const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>UpdateLevels</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a1aa19e03ca654b84ed0574bb4c4b5659</anchor>
+      <anchor>a8c7741d38fabc0489b23f991d7e65ed9</anchor>
       <arglist>(sacn_dmx_merger_source_t source, const uint8_t *new_levels, size_t new_levels_count)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>UpdatePap</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a6954a0af298bdb2c17829a129ce0aad6</anchor>
+      <anchor>a65248d7ff5b1dad39853a82ab083d9f4</anchor>
       <arglist>(sacn_dmx_merger_source_t source, const uint8_t *pap, size_t pap_count)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>UpdateUniversePriority</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>ada8d157cee674178ec576caa111afca9</anchor>
+      <anchor>a3aa088c65f5cea33a057c226c55bb41b</anchor>
       <arglist>(sacn_dmx_merger_source_t source, uint8_t universe_priority)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemovePap</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>ae33a69fe3b51efd79d384a462efcd64a</anchor>
+      <anchor>acc93e3baf115d98204b761c563491a97</anchor>
       <arglist>(sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classsacn_1_1_dmx_merger.html</anchorfile>
-      <anchor>a7a9405a7d27a0e79c0cc00f8a7e2e2e7</anchor>
+      <anchor>a86211a43d81873e642dd20c2f144c0c8</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1680,119 +1636,119 @@
       <type>etcpal::OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, kSacnMergeReceiverInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a1fc240c7591bf132dec601df5fdfd926</anchor>
+      <anchor>ae4491bd7ef5f35f82e73cd73717ddcca</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>MergeReceiver</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>acd894017c62b549662194bd84a9f4a15</anchor>
+      <anchor>ae23ec1694b8050c7144c1f763d5f4878</anchor>
       <arglist>(MergeReceiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>MergeReceiver &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a7778785bf8c7ee8aaf1708c6c188cced</anchor>
+      <anchor>aa7eccb9600ca6dcd67b5f1c807dad8cf</anchor>
       <arglist>(MergeReceiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a1fa0e47dc34289f2cffabdfc69c216a2</anchor>
+      <anchor>af545b92b7bae55a2a78ad924c3960652</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>abb65535d2f1ed30a79014d81eb7f6807</anchor>
+      <anchor>a4fb68dfeaeac7a2543ee43a67304f956</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
+      <anchor>ab3be54181cc3e36c82df3233388e5f9e</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint16_t &gt;</type>
       <name>GetUniverse</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a3d205f22d3d18f81585fd8d07ea21647</anchor>
+      <anchor>aa7c9de6e0ec6445c7ba5d76f8a964bd2</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; SacnRecvUniverseSubrange &gt;</type>
       <name>GetFootprint</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>aaa4d2448f1e1f8b23c095742738df97c</anchor>
+      <anchor>ac4bc011e7de4d166dea5f75531ee4f0f</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeUniverse</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>aa94ae64c11fbb22db3e21fba1e85cc64</anchor>
+      <anchor>ac1f40043780d80893868b5e469909b55</anchor>
       <arglist>(uint16_t new_universe_id)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeFootprint</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a6d46635ac84bcb47ff0d01bcafe4ef91</anchor>
+      <anchor>abb5877f72a2b569f1fbc2cd89dfd4518</anchor>
       <arglist>(const SacnRecvUniverseSubrange &amp;new_footprint)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeUniverseAndFootprint</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>ac097835505ac503b525bcaa566cf506d</anchor>
+      <anchor>ae20085fa0e68818747fa108d4881fe95</anchor>
       <arglist>(uint16_t new_universe_id, const SacnRecvUniverseSubrange &amp;new_footprint)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; EtcPalMcastNetintId &gt;</type>
       <name>GetNetworkInterfaces</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a227c8165a2af9b39ac6d53cbea18d121</anchor>
+      <anchor>a44cc32cdf967553d57a4b0674901f243</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; Source &gt;</type>
       <name>GetSource</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>aae0754f40a65bc30573808504455cfe5</anchor>
+      <anchor>ae903fd696ab6facb5bc5d70852077739</anchor>
       <arglist>(sacn_remote_source_t source_handle)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>aa4a2884ccfef0338bcb1985f86ae89b7</anchor>
+      <anchor>aaab3b2b52923c85f2a41665d1d23c257</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>aab11585b71f32bd1973f307435ffcd5b</anchor>
+      <anchor>a9647fdc8f7c102a036a4363b909f1f3f</anchor>
       <arglist>(McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a26dd2b3b95dbaac498bfc0ba231f42e6</anchor>
+      <anchor>a3dadafd4042cbaca7efb7f59c195ca71</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_merge_receiver.html</anchorfile>
-      <anchor>a8c0764f462388260aa5a6ab3fec2359c</anchor>
+      <anchor>adcb52a1d963151cdcf42424df330daaf</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, std::vector&lt; NetintList &gt; &amp;netint_lists)</arglist>
     </member>
   </compound>
@@ -1807,42 +1763,42 @@
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>aab5d1e8b9c2879521f59b7a50388e1a3</anchor>
+      <anchor>ad17cb61da25b6ca1a6dd30d83cbbe2de</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a8d90a29c2e9f8926b9b3ff64458392d2</anchor>
+      <anchor>a867d0da111ea942b50143314b2f2e75a</anchor>
       <arglist>(sacn_merge_receiver_t merge_receiver_handle, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a7f4b990c2355dccdf25025a56358b6fd</anchor>
+      <anchor>a5f3097323e13702440d43b20ab96ca38</anchor>
       <arglist>(sacn_merge_receiver_t merge_receiver_handle, const std::vector&lt; SacnMcastInterface &gt; &amp;network_interfaces)</arglist>
     </member>
     <member kind="variable">
       <type>sacn_merge_receiver_t</type>
       <name>handle</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>aba7e88ef8eda8612d97729978383ba05</anchor>
+      <anchor>a001e5c439f9c3818104b22526e3247b6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; SacnMcastInterface &gt;</type>
       <name>netints</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a2a0cd7263bacb4663085d28599867b12</anchor>
+      <anchor>aab9b97a2d1615440ac77baf02b6ac722</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>a47766b1b545d3ba55bbaad40fe247500</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1853,166 +1809,250 @@
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>aab5d1e8b9c2879521f59b7a50388e1a3</anchor>
+      <anchor>a6c101729290ae74c9211a0341301c757</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>ac0e52c9547dd642b53ff3f32d79856ec</anchor>
+      <anchor>a4648c2333b3930898d972e8963a1c7f8</anchor>
       <arglist>(sacn_receiver_t receiver_handle, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>NetintList</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a055503469cbefb1d3f658e9c8b55a5ba</anchor>
+      <anchor>af3903a8f92c4803941b615a57f017154</anchor>
       <arglist>(sacn_receiver_t receiver_handle, const std::vector&lt; SacnMcastInterface &gt; &amp;network_interfaces)</arglist>
     </member>
     <member kind="variable">
       <type>sacn_receiver_t</type>
       <name>handle</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a0d237fd6d38af257c8ab2a14a64a76e0</anchor>
+      <anchor>a8af3ad05298339efd90ae62e1efaba0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; SacnMcastInterface &gt;</type>
       <name>netints</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a2a0cd7263bacb4663085d28599867b12</anchor>
+      <anchor>aec9b1aba453a8f78f5a65f3482178b5f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>structsacn_1_1_receiver_1_1_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>a5da73ec718c23289ab2652aecc82c9a9</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sacn::MergeReceiver::NotifyHandler</name>
     <filename>classsacn_1_1_merge_receiver_1_1_notify_handler.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a37eedac83b8a87121951aebc354778e7</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a3131d13448b4988a2d263711a9b38ad8</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>afa47ccd5bf9ecda9ce5edd8b485c49da</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a5d9892d4686e9e6305ed0074af958357</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleMergedData</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>a0d46e56c609d6edd9806994bb81190fc</anchor>
+      <anchor>a73200d45e611a4697c3de4e6f301116e</anchor>
       <arglist>(Handle handle, const SacnRecvMergedData &amp;merged_data)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleNonDmxData</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>a7d7240a815773ac4a959a56d553588b7</anchor>
+      <anchor>a23f2c9df91e336acf995050be3d780c1</anchor>
       <arglist>(Handle receiver_handle, const etcpal::SockAddr &amp;source_addr, const SacnRemoteSource &amp;source_info, const SacnRecvUniverseData &amp;universe_data)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSourcesLost</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>ae2d27b76147fba2f4d4ed5219d614246</anchor>
+      <anchor>a9467144dec17a3c163014b8ff954a288</anchor>
       <arglist>(Handle handle, uint16_t universe, const std::vector&lt; SacnLostSource &gt; &amp;lost_sources)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSamplingPeriodStarted</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>a9cd14450c1a43ab482bebaf5a1dcb0cc</anchor>
+      <anchor>a408240070b041a26f05fba7414f46a5f</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSamplingPeriodEnded</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>af02397cc6bf09294666b38883dbdf6a5</anchor>
+      <anchor>aec5f9f8a09e25352a7277196d4327215</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSourcePapLost</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>afc6fd518860704ac4b1f58d5a24f6672</anchor>
+      <anchor>affd401f21c1e59b822825033bc228414</anchor>
       <arglist>(Handle handle, uint16_t universe, const SacnRemoteSource &amp;source)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSourceLimitExceeded</name>
       <anchorfile>classsacn_1_1_merge_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>ab517496e89eb88b7ee7fa383558f725b</anchor>
+      <anchor>acd57031b09b94ace632e6600e3463888</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sacn::Receiver::NotifyHandler</name>
     <filename>classsacn_1_1_receiver_1_1_notify_handler.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a5809f48878240f09858cda1adca3173f</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a63a3653f587b16a5f4da0b3e68592aaf</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a1f17abd43b9e566db1b06fd2db1cb2a8</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
+      <anchor>a5492391ba849c56c7037dbb1fb29370b</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleUniverseData</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>a31ed01381fa689d55d77f298fdf3c2c3</anchor>
+      <anchor>aec5b97de2568363d4e5414c8cc5e3fae</anchor>
       <arglist>(Handle receiver_handle, const etcpal::SockAddr &amp;source_addr, const SacnRemoteSource &amp;source_info, const SacnRecvUniverseData &amp;universe_data)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleSourcesLost</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>aeb67059ed834bf3d178bbdc4a931adae</anchor>
+      <anchor>a7408dd0f5056f92ef3d5c391bd665d30</anchor>
       <arglist>(Handle handle, uint16_t universe, const std::vector&lt; SacnLostSource &gt; &amp;lost_sources)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSamplingPeriodStarted</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>a9cd14450c1a43ab482bebaf5a1dcb0cc</anchor>
+      <anchor>a311457c731d8482bddcdfaccec5aad94</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSamplingPeriodEnded</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>af02397cc6bf09294666b38883dbdf6a5</anchor>
+      <anchor>a034a2947b48fabc45c70fe7ff174c530</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSourcePapLost</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>afc6fd518860704ac4b1f58d5a24f6672</anchor>
+      <anchor>ad4bab3d8b12f0187e045a8c5c1e492fa</anchor>
       <arglist>(Handle handle, uint16_t universe, const SacnRemoteSource &amp;source)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleSourceLimitExceeded</name>
       <anchorfile>classsacn_1_1_receiver_1_1_notify_handler.html</anchorfile>
-      <anchor>ab517496e89eb88b7ee7fa383558f725b</anchor>
+      <anchor>aa6b27ea4cf71a5fb9a4c23a27f07e651</anchor>
       <arglist>(Handle handle, uint16_t universe)</arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sacn::SourceDetector::NotifyHandler</name>
     <filename>classsacn_1_1_source_detector_1_1_notify_handler.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
+      <anchor>a4263fbe6744d016dbdc598f62fab118b</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
+      <anchor>a01ccf70d045f00c0306bb6471acf75f2</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
+      <anchor>a9608f0221f3b7e6e0d65b161d408f6a3</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
+      <anchor>ac55a18510c5ca9956f1ad13e6689ba91</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleSourceUpdated</name>
       <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
-      <anchor>ad449da95881e07e5566be76ebecd862d</anchor>
+      <anchor>a64611b11dc9043b9515d08406cbadaf4</anchor>
       <arglist>(RemoteSourceHandle handle, const etcpal::Uuid &amp;cid, const std::string &amp;name, const std::vector&lt; uint16_t &gt; &amp;sourced_universes)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleSourceExpired</name>
       <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
-      <anchor>a2ed8374706af489c957a72c39cc760e0</anchor>
+      <anchor>aaa3238925be374f50fc934b280dbe460</anchor>
       <arglist>(RemoteSourceHandle handle, const etcpal::Uuid &amp;cid, const std::string &amp;name)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleMemoryLimitExceeded</name>
       <anchorfile>classsacn_1_1_source_detector_1_1_notify_handler.html</anchorfile>
-      <anchor>a7e316ac3388e51f8a4d15e95495bc334</anchor>
+      <anchor>a10f3fb4050b089dc12b344c009b960f0</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -2026,126 +2066,126 @@
       <type>etcpal::OpaqueId&lt; detail::ReceiverHandleType, sacn_receiver_t, kSacnReceiverInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a5305fc5a2660b439528e406b442b0363</anchor>
+      <anchor>a77fa5c8bdea0f7230dba5d9553d28245</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Receiver</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a8b226a7db315d39b6fdc4c8e61c3d896</anchor>
+      <anchor>ab02abca2e1db16556913091bf652e336</anchor>
       <arglist>(Receiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Receiver &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a9312079cda8a73e44f853bd361239f39</anchor>
+      <anchor>a08660f5644495e18a269d297256b4143</anchor>
       <arglist>(Receiver &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a1fa0e47dc34289f2cffabdfc69c216a2</anchor>
+      <anchor>ae8af5b11cbcc0baa5f8f267fd23b82b9</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>abb65535d2f1ed30a79014d81eb7f6807</anchor>
+      <anchor>a0144c0081a583ca1eb68382c716c74f7</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
+      <anchor>a41c15b8ef03ea26998f6a9e7e816556a</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint16_t &gt;</type>
       <name>GetUniverse</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a3d205f22d3d18f81585fd8d07ea21647</anchor>
+      <anchor>a0d24444d9df00a7a4991f61995d16ab4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; SacnRecvUniverseSubrange &gt;</type>
       <name>GetFootprint</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>aaa4d2448f1e1f8b23c095742738df97c</anchor>
+      <anchor>ae4bd78ffcb11862b59e147192216829c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeUniverse</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>aa94ae64c11fbb22db3e21fba1e85cc64</anchor>
+      <anchor>ae3e737396cf3a8b3d3986c849ad6bd17</anchor>
       <arglist>(uint16_t new_universe_id)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeFootprint</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a6d46635ac84bcb47ff0d01bcafe4ef91</anchor>
+      <anchor>a1a7a47f5e38e9ae8c7daf4b179a0bb53</anchor>
       <arglist>(const SacnRecvUniverseSubrange &amp;new_footprint)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeUniverseAndFootprint</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>ac097835505ac503b525bcaa566cf506d</anchor>
+      <anchor>ab7b2f82c2aadee2f3b936e5668af3e37</anchor>
       <arglist>(uint16_t new_universe_id, const SacnRecvUniverseSubrange &amp;new_footprint)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; EtcPalMcastNetintId &gt;</type>
       <name>GetNetworkInterfaces</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a227c8165a2af9b39ac6d53cbea18d121</anchor>
+      <anchor>abdfc92c08c490d80f87a4efa7a1faabe</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>af5825bc604b5bf0316732a4db412e1f8</anchor>
+      <anchor>a4af9aa9169c6f1488e19b73bd07c016c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>SetExpiredWait</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a0f7e0ac39dc43d67c53daa787e733859</anchor>
+      <anchor>a7f1806e38069596a3f6950026ccb4973</anchor>
       <arglist>(uint32_t wait_ms)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static uint32_t</type>
       <name>GetExpiredWait</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a042c03773822b8aeada4ea92ee3c3a8a</anchor>
+      <anchor>a3bde49015e4423945ac2623db2fe42b5</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>aab11585b71f32bd1973f307435ffcd5b</anchor>
+      <anchor>a7b7237999d0be527eafe462f10e4c10c</anchor>
       <arglist>(McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a26dd2b3b95dbaac498bfc0ba231f42e6</anchor>
+      <anchor>a0ce43ce33830d04f92b815130c818d01</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_receiver.html</anchorfile>
-      <anchor>a8c0764f462388260aa5a6ab3fec2359c</anchor>
+      <anchor>a0179e50fe224cac10a8bdedc2dae78cf</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, std::vector&lt; NetintList &gt; &amp;netint_lists)</arglist>
     </member>
   </compound>
@@ -2160,42 +2200,42 @@
       <type>uint8_t *</type>
       <name>levels</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>a65f1e6db75de6e20f9df99807d14fe19</anchor>
+      <anchor>a96506d798afb89bc07c16b1906816e6c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>per_address_priorities</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>a6b8790b29687764423319cc2b8f24c30</anchor>
+      <anchor>a54296964f2ee7319cde7a88ce3a58605</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool *</type>
       <name>per_address_priorities_active</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>aa844a92b4e32e58dee13b77318f8cb8e</anchor>
+      <anchor>accb82a5eb6a005dea48ebdf34d49220c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>universe_priority</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>ae39fb52602dd51d0696c8973b0d5cd44</anchor>
+      <anchor>a5ae44cef22725722dc4a3ea13948889e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_dmx_merger_source_t *</type>
       <name>owners</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>aec37c8bd38cd533fbff8d704cef812d9</anchor>
+      <anchor>a06213530aeb55ece4486c48b5e4cbd9d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>struct_sacn_dmx_merger_config.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a093b6286e7cc24b5e173cae060d253a2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2206,42 +2246,42 @@
       <type>sacn_dmx_merger_source_t</type>
       <name>id</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a5d30b5a537ddb24760bd71590427ac3e</anchor>
+      <anchor>ad3fa3d754c9dd95ba8333158f2149cff</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>levels</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a5c49750d2936b26b07440cdc876a4844</anchor>
+      <anchor>a5a3ae1efcdfa85be8580d8369eb8e7af</anchor>
       <arglist>[SACN_DMX_MERGER_MAX_SLOTS]</arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>valid_level_count</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a3695ed7e336fa1e6cf75ee3ccbc4937d</anchor>
+      <anchor>af3da83c58f85079db2d4c9abf817cbdd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>universe_priority</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>aefc54b6cd291e480d6cb7c9b5b98a3f4</anchor>
+      <anchor>a9a4fa060f9e3d408df8ba2080d6bc3df</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>address_priority</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a25728b13e434ea13b42583a7a27fce63</anchor>
+      <anchor>a90054a31259a35b6b80d1624ff1899b8</anchor>
       <arglist>[SACN_DMX_MERGER_MAX_SLOTS]</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>using_universe_priority</name>
       <anchorfile>struct_sacn_dmx_merger_source.html</anchorfile>
-      <anchor>a61802cbe97a2c1aa336df0282b2bb07f</anchor>
+      <anchor>a710230eb074d9e3fdadc6f079a44bc61</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2252,28 +2292,28 @@
       <type>sacn_remote_source_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_lost_source.html</anchorfile>
-      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <anchor>afb45c6d720a81b74b917eab1caf141dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_sacn_lost_source.html</anchorfile>
-      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
+      <anchor>aee7ec6699f28fb400d14f7e6f99bd937</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_lost_source.html</anchorfile>
-      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <anchor>a961fc8cb9ebdc42255ed6bf88b69998d</anchor>
       <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>terminated</name>
       <anchorfile>struct_sacn_lost_source.html</anchorfile>
-      <anchor>ad1aea42fae01ba0d2917114d189a9d36</anchor>
+      <anchor>a9e1da52735652f6026ca1006fa0f182d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2284,14 +2324,14 @@
       <type>EtcPalMcastNetintId</type>
       <name>iface</name>
       <anchorfile>struct_sacn_mcast_interface.html</anchorfile>
-      <anchor>a9d398e27f9eb3b1ee3b422225196b684</anchor>
+      <anchor>a65cd2dceb306fac087fbe140d427c82b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal_error_t</type>
       <name>status</name>
       <anchorfile>struct_sacn_mcast_interface.html</anchorfile>
-      <anchor>a3ed2ca570213574abb27e4d16cab480b</anchor>
+      <anchor>ac76406095077e7cfe14982fd8656c527</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2302,56 +2342,56 @@
       <type>SacnMergeReceiverMergedDataCallback</type>
       <name>universe_data</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>a1a4295429c025c42d5a54b646f03f62b</anchor>
+      <anchor>a55e4446ff4200b80a04e48850ecef99d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverNonDmxCallback</type>
       <name>universe_non_dmx</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>ace7f60e7140c695d729d045abca2ba73</anchor>
+      <anchor>af74c63609fe74f315488f3d729f06f7e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverSourcesLostCallback</type>
       <name>sources_lost</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>ad26d911447fbf0732edb4c48e6cdd043</anchor>
+      <anchor>a5b34ded148269de10e156c42930ae4fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverSamplingPeriodStartedCallback</type>
       <name>sampling_period_started</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>a25de9ebaf3bbe659df822828f4011b42</anchor>
+      <anchor>a47eb2486101140bc958b42de2f90f914</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverSamplingPeriodEndedCallback</type>
       <name>sampling_period_ended</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>ab5b543dcbe601f5b9ae53cdb1564fa3d</anchor>
+      <anchor>aa943894a14e3a8ca8effaba1291f82fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverSourcePapLostCallback</type>
       <name>source_pap_lost</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>a78c717807daa436372d67d4c2a43a354</anchor>
+      <anchor>a8f0a9fa771258c26a4f6321232a0e0c1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverSourceLimitExceededCallback</type>
       <name>source_limit_exceeded</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>a29e01e068c71bd55dd31d6aeb5483992</anchor>
+      <anchor>a09e0f414718c8fb11a35d47a41b5d906</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>callback_context</name>
       <anchorfile>struct_sacn_merge_receiver_callbacks.html</anchorfile>
-      <anchor>a67b5953b36108e04f24abe803bc1fe44</anchor>
+      <anchor>a7127a3a7c88d905ad3239f93000d0204</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2362,42 +2402,42 @@
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>a743e160a4d837d8c31fa6c86cd7f5947</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMergeReceiverCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>ac1381db71af830c6635c5d2b338217ba</anchor>
+      <anchor>acbceab0e95a66ea798b1b408fba5ccc8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>footprint</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>a3fa13922bd1ee44412886d8e562582c8</anchor>
+      <anchor>a2b3cfb440162150256fa350e281dc5cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a0bb1c1c32680b838d48e125a17f6d219</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>use_pap</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>af4536f740a72ae5788afacd0db91da30</anchor>
+      <anchor>ab87aa6421d5c56e1840acfbc1825cfa3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>struct_sacn_merge_receiver_config.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>ad36fb3e384d2166fd1b0097aefcf813a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2408,28 +2448,28 @@
       <type>sacn_merge_receiver_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_merge_receiver_netint_list.html</anchorfile>
-      <anchor>aba7e88ef8eda8612d97729978383ba05</anchor>
+      <anchor>ab1b1c0bb444abeca1c83af46d245e8e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMcastInterface *</type>
       <name>netints</name>
       <anchorfile>struct_sacn_merge_receiver_netint_list.html</anchorfile>
-      <anchor>add0da5313d4b1d06a67bda5508b848e1</anchor>
+      <anchor>a94bc4510eda488e387789951b92827cf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_sacn_merge_receiver_netint_list.html</anchorfile>
-      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
+      <anchor>a2abb5dbfa1f2782b885f9e81297f0837</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>struct_sacn_merge_receiver_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>a93c7140d302337f80d4284a9f96c6528</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2440,42 +2480,42 @@
       <type>sacn_remote_source_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <anchor>af12e72d2ef537e8f12b44ebb742817bd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
+      <anchor>a54cf0d326b280190f5064b929866fd81</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <anchor>a26776457fcc3224959f62c977ed3d41f</anchor>
       <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
     <member kind="variable">
       <type>EtcPalSockAddr</type>
       <name>addr</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>a730cebe0970ed6300a5f832363e65852</anchor>
+      <anchor>a8ba4536981e1c7217264bfbcafeac33a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>per_address_priorities_active</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>a401cf1a9b9e5bd901e1600ea9abc4350</anchor>
+      <anchor>a9ab695a021c6b13ad7025fa12c011326</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>universe_priority</name>
       <anchorfile>struct_sacn_merge_receiver_source.html</anchorfile>
-      <anchor>aefc54b6cd291e480d6cb7c9b5b98a3f4</anchor>
+      <anchor>a82cc6f297f880862da8578707963cbf3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2486,21 +2526,21 @@
       <type>SacnMcastInterface *</type>
       <name>netints</name>
       <anchorfile>struct_sacn_netint_config.html</anchorfile>
-      <anchor>add0da5313d4b1d06a67bda5508b848e1</anchor>
+      <anchor>a0276bddc07d78d431f2be9b9cfd03b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_sacn_netint_config.html</anchorfile>
-      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
+      <anchor>a4bff77059abfe25ae72a2dc8e7d3fbe7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>struct_sacn_netint_config.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>ae9a40a7b2ee6f082d3631d2b93d16ca1</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2511,49 +2551,49 @@
       <type>SacnUniverseDataCallback</type>
       <name>universe_data</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>a98b4132d20211455c32c7d1d73b1e156</anchor>
+      <anchor>a5477643b6954c1d5d6404ccf0d504525</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSourcesLostCallback</type>
       <name>sources_lost</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>a4aa47bcca0d30a2c28463942cac94be5</anchor>
+      <anchor>a6fb298c22148d09900de5b7ede8159d0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSamplingPeriodStartedCallback</type>
       <name>sampling_period_started</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>a401d2be24423a263467e2b7b09f68b0b</anchor>
+      <anchor>a80cb2ef319ff23190641717b3468f49e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSamplingPeriodEndedCallback</type>
       <name>sampling_period_ended</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>a3c827e69c782db7012f8d20f9a25bf53</anchor>
+      <anchor>a5a2a6da1ae8f5686e9e26975fb86df20</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSourcePapLostCallback</type>
       <name>source_pap_lost</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>ae587c65553885a5286a270d7bca267dc</anchor>
+      <anchor>ae53ccb06454361449094e77b5b303208</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSourceLimitExceededCallback</type>
       <name>source_limit_exceeded</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>addfb88eea24f335ebbfc61590a5dffd3</anchor>
+      <anchor>ab5497745a1d8de87b33a539c726e4ad5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_sacn_receiver_callbacks.html</anchorfile>
-      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
+      <anchor>a264aeeaa2b55173b8c0af442a6a7471d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2564,42 +2604,42 @@
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>abb756a6b99dd2db84a5cc184e9925d02</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnReceiverCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>a4beb413a7e2291bf1488fc6472af6aa4</anchor>
+      <anchor>a839fce393f8beec39dc1de39f6524a7b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>footprint</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>a3fa13922bd1ee44412886d8e562582c8</anchor>
+      <anchor>a7520fb428e0f658be7ceefca8d2d85c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a933276c1513e606c60bb2aac941c6392</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>flags</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>ac92588540e8c1d014a08cd8a45462b19</anchor>
+      <anchor>a73f1954b933493a26119367834ad5484</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>struct_sacn_receiver_config.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>a42e3d0aa09b99bb972fbe43720a08d72</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2610,28 +2650,28 @@
       <type>sacn_receiver_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_receiver_netint_list.html</anchorfile>
-      <anchor>a0d237fd6d38af257c8ab2a14a64a76e0</anchor>
+      <anchor>af60b702e82b3165934f6d099a7db9a3e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMcastInterface *</type>
       <name>netints</name>
       <anchorfile>struct_sacn_receiver_netint_list.html</anchorfile>
-      <anchor>add0da5313d4b1d06a67bda5508b848e1</anchor>
+      <anchor>a98dc23545f1146958d37a395027d0385</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_sacn_receiver_netint_list.html</anchorfile>
-      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
+      <anchor>afe997ad0b6ff1300e4521322a240c736</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>struct_sacn_receiver_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>a638705f290320ca59ff6d523d36044a4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2642,49 +2682,49 @@
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>a4dc79ccaf9a332c0baedaf4174bd5278</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>slot_range</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>ad634e09aa77487d44087c02a9143ee17</anchor>
+      <anchor>a9b67f4a6b1f284a64697434aea6fca53</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>levels</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>a538119b446f2e353678608bd05ad4db2</anchor>
+      <anchor>a0f6e9407767b01fd161471cd7096946b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>priorities</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>a5c59c7a7fc70b6d32442895898e7d55e</anchor>
+      <anchor>ac9c5c8bf975fbfb38a5210dd72519d89</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const sacn_remote_source_t *</type>
       <name>owners</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>ade95d8642c07e44ecacc13f358ede54d</anchor>
+      <anchor>a5d5d21fdb670134d64b1582e75d9b344</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const sacn_remote_source_t *</type>
       <name>active_sources</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>a067998056b2591fd39a6ab1247edf94b</anchor>
+      <anchor>a76165c7379ebfc933e2972c01c5649af</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_active_sources</name>
       <anchorfile>struct_sacn_recv_merged_data.html</anchorfile>
-      <anchor>a6f445f896ce37297dbcd575006fdcb6c</anchor>
+      <anchor>a656dc6b34e28e654507feb9d3cf1cab9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2695,49 +2735,49 @@
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>a9c1d7b3c10ea00456cb3b6305e4c910b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>priority</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a0ad043071ccc7a261d79a759dc9c6f0c</anchor>
+      <anchor>a2a3d8ae09bc8582cc08282eba1326c49</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>preview</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a631d1206624dc91b6c574bf919a7699d</anchor>
+      <anchor>aa9d780b46e50b57be2abefbac6180a88</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>is_sampling</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a7d039abc15e5b41fb9404c941d705648</anchor>
+      <anchor>a5239eaee3213535f202491870dfd6013</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>start_code</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a09df16493b12c991aef309819c8eebab</anchor>
+      <anchor>a27f75c457c0aceefbefa758049ad750c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>slot_range</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>ad634e09aa77487d44087c02a9143ee17</anchor>
+      <anchor>a6b82cd3120383255d8b4f9f086529c08</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>values</name>
       <anchorfile>struct_sacn_recv_universe_data.html</anchorfile>
-      <anchor>a92142b0edf6b988306f478760c7a38aa</anchor>
+      <anchor>a856a61dbd66317cbe3b0cadfc5a43deb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2748,14 +2788,14 @@
       <type>int</type>
       <name>start_address</name>
       <anchorfile>struct_sacn_recv_universe_subrange.html</anchorfile>
-      <anchor>ace16bae043b38ea02cb084b12bcbf646</anchor>
+      <anchor>a0e0efb24e96fea57b4350fd97d63269d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>address_count</name>
       <anchorfile>struct_sacn_recv_universe_subrange.html</anchorfile>
-      <anchor>a827b7214573943430871533037d0f5b9</anchor>
+      <anchor>a974183f417ce5dcc63204eac44dd6aca</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2766,21 +2806,21 @@
       <type>sacn_remote_source_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_remote_source.html</anchorfile>
-      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <anchor>ad3110c26094ba6e4ccff9b7712e2a26f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_sacn_remote_source.html</anchorfile>
-      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
+      <anchor>a8274054077ae0edb5c935cf8ed472131</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>name</name>
       <anchorfile>struct_sacn_remote_source.html</anchorfile>
-      <anchor>a45a8c3c8006ff9d7a3925ae472132942</anchor>
+      <anchor>ad7713d26ad1caac6447d888681afdf83</anchor>
       <arglist>[kSacnSourceNameMaxLen]</arglist>
     </member>
   </compound>
@@ -2791,49 +2831,49 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
+      <anchor>a6fd0395a963497fecdf963a53e782d29</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>name</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>a8f8f80d37794cde9472343e4487ba3eb</anchor>
+      <anchor>af4381858b26ca76f0fe99ba779b01683</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>universe_count_max</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>af4a1d1d970b94a6a07b8c612b8d7ad73</anchor>
+      <anchor>ad4038650ac4db375533716895429749a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>manually_process_source</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>a16ca9a84fb49dbc5b40b8b333a239e2d</anchor>
+      <anchor>a153bf291285c4871347a6665331a8bad</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>a98bc87f70b88ef673c1e2b4cd199be07</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>keep_alive_interval</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>a987c78ebef19e1addb7485ce29ef4dd7</anchor>
+      <anchor>a839e1ab8c82a8aec5ecd4969d9f15905</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>pap_keep_alive_interval</name>
       <anchorfile>struct_sacn_source_config.html</anchorfile>
-      <anchor>aa0c6c9ee861a74ce7f88cbf8ba7ec99f</anchor>
+      <anchor>a1b39546335a927797fec60fc68965573</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2844,28 +2884,28 @@
       <type>SacnSourceDetectorSourceUpdatedCallback</type>
       <name>source_updated</name>
       <anchorfile>struct_sacn_source_detector_callbacks.html</anchorfile>
-      <anchor>ae4d714b0bc64241d5632fe77d013fb45</anchor>
+      <anchor>a3c54092d59e6862e7c39e85ea5e7b825</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSourceDetectorSourceExpiredCallback</type>
       <name>source_expired</name>
       <anchorfile>struct_sacn_source_detector_callbacks.html</anchorfile>
-      <anchor>ad53b703dc988168f5b0b5bff06b2d2ff</anchor>
+      <anchor>a1fa14e2ed4c60408fd9fce40ce669d16</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnSourceDetectorLimitExceededCallback</type>
       <name>limit_exceeded</name>
       <anchorfile>struct_sacn_source_detector_callbacks.html</anchorfile>
-      <anchor>a2a102ec50557c2902e0b43656c0fa33c</anchor>
+      <anchor>aada3f1e6329498132a0fce056fd4a8b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_sacn_source_detector_callbacks.html</anchorfile>
-      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
+      <anchor>ac5ecda696be3580d748d255511836c75</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2876,28 +2916,28 @@
       <type>SacnSourceDetectorCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_sacn_source_detector_config.html</anchorfile>
-      <anchor>ac7495377d16d49972f79cebbd69f7095</anchor>
+      <anchor>a581c619df1115fad842c64e00d40ca9f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>struct_sacn_source_detector_config.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a5f0da202335fcd501fe021a97097f8d7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>universes_per_source_max</name>
       <anchorfile>struct_sacn_source_detector_config.html</anchorfile>
-      <anchor>a56cecc9bab9fb8d197ce21bbbc036e06</anchor>
+      <anchor>acbc73b8c466814f4d3fe63279f1eb849</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>struct_sacn_source_detector_config.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>aa13676f35ad07d9fe8351738d1cd6328</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2908,49 +2948,49 @@
       <type>uint16_t</type>
       <name>universe</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>a0cf34824f8777f28b50f62b7870d6f8c</anchor>
+      <anchor>adafd5ecaf02a7eafaeab3b2e3d5c3598</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>priority</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>a0ad043071ccc7a261d79a759dc9c6f0c</anchor>
+      <anchor>a42ce1e0362146d4516af5713f67f84ff</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>send_preview</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>a5c7913b52f7d575e1cedacbd6601b047</anchor>
+      <anchor>abb866566a497b6120f0b8de58906ab96</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>send_unicast_only</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>adcf08448ca5544a8be4518fc2d966ef0</anchor>
+      <anchor>a5be0f598cbfbfc18b60f345064ae3602</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const EtcPalIpAddr *</type>
       <name>unicast_destinations</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>a42ef84da1b2dc4f0e993432d4a7be8a3</anchor>
+      <anchor>a295a211a4d3fa77e4b1e6e053d91c652</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_unicast_destinations</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>aa148fe1bdf89b3e7b900a130d32de29c</anchor>
+      <anchor>a3761d3f63c5dbb8eae9a486df7d9c95e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>sync_universe</name>
       <anchorfile>struct_sacn_source_universe_config.html</anchorfile>
-      <anchor>a9c7dff151ba6b32fc343e6aa55147bcc</anchor>
+      <anchor>a48c3a32e44141e1ce77aa756a7931043</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2961,35 +3001,53 @@
       <type>sacn_source_t</type>
       <name>handle</name>
       <anchorfile>struct_sacn_source_universe_netint_list.html</anchorfile>
-      <anchor>aee044b8551b82b1058427bbb17e74528</anchor>
+      <anchor>a5a564ae47e89b3efdf18b52a20b66633</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>universe</name>
       <anchorfile>struct_sacn_source_universe_netint_list.html</anchorfile>
-      <anchor>a0cf34824f8777f28b50f62b7870d6f8c</anchor>
+      <anchor>ac248aac8d75991856c97619f71736661</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnMcastInterface *</type>
       <name>netints</name>
       <anchorfile>struct_sacn_source_universe_netint_list.html</anchorfile>
-      <anchor>add0da5313d4b1d06a67bda5508b848e1</anchor>
+      <anchor>a99c58fe2eabd1cc540189f9b293f21db</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_sacn_source_universe_netint_list.html</anchorfile>
-      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
+      <anchor>ab5f164210f4028fd3d255b19376f0d8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>struct_sacn_source_universe_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>ac85b7eb6e9c67dca356034d84e2cd935</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SacnState</name>
+    <filename>struct_sacn_state.html</filename>
+    <member kind="variable">
+      <type>bool</type>
+      <name>initted</name>
+      <anchorfile>struct_sacn_state.html</anchorfile>
+      <anchor>acd5360f40c09d51dc994f1287a7e1d3a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>EtcPalLogParams</type>
+      <name>log_params</name>
+      <anchorfile>struct_sacn_state.html</anchorfile>
+      <anchor>af407733c50c5633e0806ae707136601a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3000,63 +3058,63 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
+      <anchor>a48e3d55dd1cd3022c98810953dd24d1b</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a22fb1d51b3d5315e1cd17f387e1abc77</anchor>
+      <anchor>ac67b75b0f77c74bb93aa39ab3951e269</anchor>
       <arglist>(uint8_t *levels_ptr)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
+      <anchor>a2673a7cd5a594d068c3948d67091ebff</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>levels</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a65f1e6db75de6e20f9df99807d14fe19</anchor>
+      <anchor>ab65c51842b30f8c500711e8c20ec2769</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>per_address_priorities</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>a6b8790b29687764423319cc2b8f24c30</anchor>
+      <anchor>a1ecb3741f2345bcec2d18eea5b58f3d6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool *</type>
       <name>per_address_priorities_active</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>aa844a92b4e32e58dee13b77318f8cb8e</anchor>
+      <anchor>a6e473b95381ed51fe57be8030daf6b84</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>universe_priority</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>ae39fb52602dd51d0696c8973b0d5cd44</anchor>
+      <anchor>ab1c707c7cce4a160f0075f0b36fd30dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_dmx_merger_source_t *</type>
       <name>owners</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>aec37c8bd38cd533fbff8d704cef812d9</anchor>
+      <anchor>ac6f2fcf10f3d0747a62af4c7a518793b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>structsacn_1_1_dmx_merger_1_1_settings.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>ad721284b980d888f4ef8ca273a0a1dc2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3067,56 +3125,56 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
+      <anchor>aba45dd808084127ee92332c0168efcc1</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>a83831072af761dc03118f8474d28536f</anchor>
+      <anchor>a353bd10bd209b20f5b0f6a7682a3251f</anchor>
       <arglist>(uint16_t new_universe_id)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
+      <anchor>a03b814f398a8f6008486e7a39b00ff09</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>a2972407893d984c4a6e7b71f26927593</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>footprint</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>a3fa13922bd1ee44412886d8e562582c8</anchor>
+      <anchor>a87f511e31999b944555ec4283f7bd643</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a3c8ef31fd54e713fd2f96e00ebd551f6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>use_pap</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>af4536f740a72ae5788afacd0db91da30</anchor>
+      <anchor>aa4f7913705b5fa4f45cec3a4962efa8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_settings.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>a331cbb4dec9072186c00d2a4a60a0083</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3127,56 +3185,56 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
+      <anchor>a65e57303d5016ca33beae0e1bf2cd8ee</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>a83831072af761dc03118f8474d28536f</anchor>
+      <anchor>a53a11228edd51301f33544b7defada7f</anchor>
       <arglist>(uint16_t new_universe_id)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
+      <anchor>a6cd633a06975f5371289a86c4cc2a282</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>universe_id</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>a7e0de4d0f4e4bbd14771257febdf7248</anchor>
+      <anchor>acf007938f646d57aac8b427a30fad035</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>SacnRecvUniverseSubrange</type>
       <name>footprint</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>a3fa13922bd1ee44412886d8e562582c8</anchor>
+      <anchor>a4a11bf1963f825383b2a301d72a64712</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a187cb71c21387b2cce970ed741692d14</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>flags</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>ac92588540e8c1d014a08cd8a45462b19</anchor>
+      <anchor>ad40fa1f3a91cb9515faf5389d14a8cc4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>structsacn_1_1_receiver_1_1_settings.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>ac9c285850267bdd5ca0d8a1c23853762</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3187,70 +3245,70 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
+      <anchor>af2abf0338324970917323cb9a93f47f4</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>acfd8cc20d59492732b3f0d7ccf757a0f</anchor>
+      <anchor>ac98c3b848cae660474e0115e999ec7e9</anchor>
       <arglist>(etcpal::Uuid new_cid, std::string new_name)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
+      <anchor>a5cd0616c0436b86efe426dcc634ad02e</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
+      <anchor>a6e459dc6b30bad017b5ae5aec7f1b386</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>name</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>a9b45b3e13bd9167aab02e17e08916231</anchor>
+      <anchor>ac3aa95e815372bbc2e0a2c2472e6f56d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>universe_count_max</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>af4a1d1d970b94a6a07b8c612b8d7ad73</anchor>
+      <anchor>a3be1991e33e8a468e2289d014f3834ec</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>manually_process_source</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>a16ca9a84fb49dbc5b40b8b333a239e2d</anchor>
+      <anchor>ad25ab1a4295110dff9dc532eb8072545</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>ac9e1f131d047cd71bf7f221d3d81ed14</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>keep_alive_interval</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>a987c78ebef19e1addb7485ce29ef4dd7</anchor>
+      <anchor>a6fa27e1fd604d70f8184d918ed9ba4c3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>pap_keep_alive_interval</name>
       <anchorfile>structsacn_1_1_source_1_1_settings.html</anchorfile>
-      <anchor>aa0c6c9ee861a74ce7f88cbf8ba7ec99f</anchor>
+      <anchor>afc604fa8af420b279d1772b3b538c772</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3261,28 +3319,28 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structsacn_1_1_source_detector_1_1_settings.html</anchorfile>
-      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
+      <anchor>a74bff93b2f3ff416f5c68f1d42142a50</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>source_count_max</name>
       <anchorfile>structsacn_1_1_source_detector_1_1_settings.html</anchorfile>
-      <anchor>aa56795d5b57bff4910ce11baac4003ba</anchor>
+      <anchor>a29299d5cbfbb34c1c8ee4d63662bf2c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>universes_per_source_max</name>
       <anchorfile>structsacn_1_1_source_detector_1_1_settings.html</anchorfile>
-      <anchor>a56cecc9bab9fb8d197ce21bbbc036e06</anchor>
+      <anchor>abaa4e93657ac4e42e5802cb5df67d4aa</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>sacn_ip_support_t</type>
       <name>ip_supported</name>
       <anchorfile>structsacn_1_1_source_detector_1_1_settings.html</anchorfile>
-      <anchor>ab619351af6b7a5abcb23e38bdc09e984</anchor>
+      <anchor>a859d0d93bd345155c1961ac9cbb4994b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3293,42 +3351,42 @@
       <type>sacn_remote_source_t</type>
       <name>handle</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>abd2d36f012ca716885c43720824b4a75</anchor>
+      <anchor>ab18cf5c0e0a755d60b57bd03f4449842</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
+      <anchor>a8277b8ee5383a94046688dcc58687cd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>name</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>a9b45b3e13bd9167aab02e17e08916231</anchor>
+      <anchor>ac2553417404f7463125d1b177ebe060a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal::SockAddr</type>
       <name>addr</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>a6089008b110eefe551612f1d3d9073bc</anchor>
+      <anchor>a8621c0e6683b9bdb849a99cb77c4fbc9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>per_address_priorities_active</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>a401cf1a9b9e5bd901e1600ea9abc4350</anchor>
+      <anchor>a6e5161bed4f0e8757050bf6657a5141c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>universe_priority</name>
       <anchorfile>structsacn_1_1_merge_receiver_1_1_source.html</anchorfile>
-      <anchor>aefc54b6cd291e480d6cb7c9b5b98a3f4</anchor>
+      <anchor>ab9951039e944c0c0da620affc0b28f1f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3342,206 +3400,206 @@
       <type></type>
       <name>TickMode</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>af36a9f4e41fd0d0e2f1c538486bf57bf</anchor>
+      <anchor>afd19e163106e0d787d192724025e7f8f</anchor>
       <arglist></arglist>
-      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfad95af72fafcf05564a73aa4c6ac8b79b">kProcessLevelsOnly</enumvalue>
-      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfa8a07e62c29375b0e7b5c3cdc53158e2d">kProcessPapOnly</enumvalue>
-      <enumvalue file="classsacn_1_1_source.html" anchor="af36a9f4e41fd0d0e2f1c538486bf57bfa3be842a0530fef755880cd131a19c6c5">kProcessLevelsAndPap</enumvalue>
+      <enumvalue file="classsacn_1_1_source.html" anchor="afd19e163106e0d787d192724025e7f8fad95af72fafcf05564a73aa4c6ac8b79b">kProcessLevelsOnly</enumvalue>
+      <enumvalue file="classsacn_1_1_source.html" anchor="afd19e163106e0d787d192724025e7f8fa8a07e62c29375b0e7b5c3cdc53158e2d">kProcessPapOnly</enumvalue>
+      <enumvalue file="classsacn_1_1_source.html" anchor="afd19e163106e0d787d192724025e7f8fa3be842a0530fef755880cd131a19c6c5">kProcessLevelsAndPap</enumvalue>
     </member>
     <member kind="typedef">
       <type>etcpal::OpaqueId&lt; detail::SourceHandleType, sacn_source_t, kSacnSourceInvalid &gt;</type>
       <name>Handle</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>aa547d1fb9a9debb1f174484252c0aa78</anchor>
+      <anchor>a15474ae79396021c208140375628f9a6</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Source</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ab3745517fb270270e41c41f0938dc278</anchor>
+      <anchor>a3d5376e38d130a1ed182f84c711e15c0</anchor>
       <arglist>(Source &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Source &amp;</type>
       <name>operator=</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a70ca8a75288ff8b02f7674f8feea7940</anchor>
+      <anchor>a36ec8364ea9e2c624b91b2ab4c56343d</anchor>
       <arglist>(Source &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ab263565edc9ebf5ffd6e82a18184e4c3</anchor>
+      <anchor>a4c9530ab80f913d24dab58ce88cb284a</anchor>
       <arglist>(const Settings &amp;settings)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
+      <anchor>ab009191f100ac6809a29e1faca72276c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeName</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>aa33e199741640a65c41cc19d18b4b6f0</anchor>
+      <anchor>a1a373722c14059cfd452488f80906dd9</anchor>
       <arglist>(const std::string &amp;new_name)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddUniverse</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a62069c900842c7ca322bd7ed4b587800</anchor>
+      <anchor>a187824733cd5a950b324263654f37079</anchor>
       <arglist>(const UniverseSettings &amp;settings, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddUniverse</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>acde56409812c209c488836f19cf53662</anchor>
+      <anchor>a378f1e1770fec04cc7a30d541fcc97a4</anchor>
       <arglist>(const UniverseSettings &amp;settings, std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>RemoveUniverse</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>aa0293c6689075dd5cb9692f036c8540f</anchor>
+      <anchor>a155bf88a9cb6b5980e9ae763654fb848</anchor>
       <arglist>(uint16_t universe)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; uint16_t &gt;</type>
       <name>GetUniverses</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>adc1d03b3f1516e7f545862b9096d834c</anchor>
+      <anchor>a85b66c7e50812b6bc1a379266ffebaf6</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddUnicastDestination</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a5d7f1f26d1a6f5dbffca60dd08ac0454</anchor>
+      <anchor>a7526f99c160eccbbc295d16fa24d5417</anchor>
       <arglist>(uint16_t universe, const etcpal::IpAddr &amp;dest)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>RemoveUnicastDestination</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a2073e5814e81bf1257c7264a1b984966</anchor>
+      <anchor>a81af0e3b61fdad0a9367fdbdebfac87c</anchor>
       <arglist>(uint16_t universe, const etcpal::IpAddr &amp;dest)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; etcpal::IpAddr &gt;</type>
       <name>GetUnicastDestinations</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a80e1d17f72cc96da34ed4e2ed7b5a439</anchor>
+      <anchor>a65cd2cbe228edaad83f5c1d78b425426</anchor>
       <arglist>(uint16_t universe)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangePriority</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a250e66ea54b315476f4c201600dd7b5f</anchor>
+      <anchor>af92307609428eb0be2d7fd82907c1fe2</anchor>
       <arglist>(uint16_t universe, uint8_t new_priority)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangePreviewFlag</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a386b243f62f7cc246de825add2af3161</anchor>
+      <anchor>ab929347c0537ef42f2d7ad922e21f7fb</anchor>
       <arglist>(uint16_t universe, bool new_preview_flag)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeSynchronizationUniverse</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a6f73aa9c83e7d7266128cba5d4f70ef2</anchor>
+      <anchor>a41abb0e825663d3a1559113600aaca5b</anchor>
       <arglist>(uint16_t universe, uint16_t new_sync_universe)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendNow</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a22cf560eca13a3cbc4c8384bad438897</anchor>
+      <anchor>a7714d77ac62a92d244250cb3c922730a</anchor>
       <arglist>(uint16_t universe, uint8_t start_code, const uint8_t *buffer, size_t buflen)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendSynchronization</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>aecaeb4e484f6b34e839b705a1395765f</anchor>
+      <anchor>a53baea5e014cd41897236e312ea50aad</anchor>
       <arglist>(uint16_t universe)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>UpdateLevels</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>acbec36dcb6b7ac017788510763dffef3</anchor>
+      <anchor>ad32e340d1c1e2be9963647aa45f55162</anchor>
       <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>UpdateLevelsAndPap</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a2d60e097ae578e5f8683fc10b271b126</anchor>
+      <anchor>aef17c67884901885038ee063d070fdd4</anchor>
       <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>UpdateLevelsAndForceSync</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ab7249aefa54c1fc4a230439d08fcfddd</anchor>
+      <anchor>adadaa141be6ba29cefcf390dd854ef2f</anchor>
       <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>UpdateLevelsAndPapAndForceSync</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ae6ab3c198ab506632e32e186bebe6a56</anchor>
+      <anchor>a131f28d7db8a9c4d62fa5fa256fd2248</anchor>
       <arglist>(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size, const uint8_t *new_priorities, size_t new_priorities_size)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; EtcPalMcastNetintId &gt;</type>
       <name>GetNetworkInterfaces</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>ab862dc0dd665318204b83182f016731c</anchor>
+      <anchor>aa31508191e58d9afa3238d1b7d178cd3</anchor>
       <arglist>(uint16_t universe)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a4f8c06497d45385dbb819d1dd4fc7a25</anchor>
+      <anchor>a7f44d183b68cb51a58ce157e08755dac</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static int</type>
       <name>ProcessManual</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a90c818e6bc851e44b833014780ad939c</anchor>
+      <anchor>a3277af418b16429c8f72a60ba9f401a4</anchor>
       <arglist>(TickMode tick_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>aab11585b71f32bd1973f307435ffcd5b</anchor>
+      <anchor>a7949ee55283066588f6969482b9734b4</anchor>
       <arglist>(McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a26dd2b3b95dbaac498bfc0ba231f42e6</anchor>
+      <anchor>a5dddcb17315d96c0fe54c8a2fd009a48</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>af94950609d80afb351cf8e72a9f174c5</anchor>
+      <anchor>a38407952289333b7acc45d8ee995e264</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, std::vector&lt; UniverseNetintList &gt; &amp;netint_lists)</arglist>
     </member>
   </compound>
@@ -3554,56 +3612,56 @@
       <type>static etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>a114885d14c950b73dde9f6168a809f8f</anchor>
+      <anchor>acab7fb1764c9c00dbc204009ab2e7ca5</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>a213169bd9a5d38cb80144f8d9fb82962</anchor>
+      <anchor>ac56ee45b4216b4049829d7beedd740b6</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>a1fa0e47dc34289f2cffabdfc69c216a2</anchor>
+      <anchor>af38d197556f103169e935ab57450af08</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>abb65535d2f1ed30a79014d81eb7f6807</anchor>
+      <anchor>ac915567074100f35cf3a9c38c8c7ee0a</anchor>
       <arglist>(const Settings &amp;settings, NotifyHandler &amp;notify_handler, std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>Shutdown</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
+      <anchor>a74c7ddb2c487a99d27b34ab73c81a199</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>aab11585b71f32bd1973f307435ffcd5b</anchor>
+      <anchor>aa2ea043df84f1db5f5b5792ad8e60c5c</anchor>
       <arglist>(McastMode mcast_mode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>a26dd2b3b95dbaac498bfc0ba231f42e6</anchor>
+      <anchor>a35a5469d4a5d2a378b7fdb70426f9d55</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static std::vector&lt; EtcPalMcastNetintId &gt;</type>
       <name>GetNetworkInterfaces</name>
       <anchorfile>classsacn_1_1_source_detector.html</anchorfile>
-      <anchor>a227c8165a2af9b39ac6d53cbea18d121</anchor>
+      <anchor>a76948d98daa5923935b3916370092a70</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -3618,49 +3676,49 @@
       <type></type>
       <name>UniverseNetintList</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>a73644ddd63df91014c177680f2336e47</anchor>
+      <anchor>abdbdd1a26c472201e3449a793bf60cb3</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>UniverseNetintList</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>ad95505f4cce0aa335224a5680ca309f4</anchor>
+      <anchor>a3a55a04ea5034364f4fae740445ca457</anchor>
       <arglist>(sacn_source_t source_handle, uint16_t universe_id, McastMode mcast_mode)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>UniverseNetintList</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>aa0cef0ea55a0e9bc9d8a2c5ecd16ec31</anchor>
+      <anchor>a7b23351d1036fb899dc7b60b6ead3d35</anchor>
       <arglist>(sacn_source_t source_handle, uint16_t universe_id, const std::vector&lt; SacnMcastInterface &gt; &amp;network_interfaces)</arglist>
     </member>
     <member kind="variable">
       <type>sacn_source_t</type>
       <name>handle</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>aee044b8551b82b1058427bbb17e74528</anchor>
+      <anchor>ab8fbdc85271bc8e58858c1ce48cf8a6b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>universe</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>a0cf34824f8777f28b50f62b7870d6f8c</anchor>
+      <anchor>a21b07a13d34d65eb6bf0782a60ba2fb4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; SacnMcastInterface &gt;</type>
       <name>netints</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>a2a0cd7263bacb4663085d28599867b12</anchor>
+      <anchor>abcc5fc9542b877810f436eb73de306d3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_netint_list.html</anchorfile>
-      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
+      <anchor>a94c5635941d9f4986235144f28c015df</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3671,63 +3729,63 @@
       <type></type>
       <name>UniverseSettings</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>af00507fb4c88058e9363bb4007ddea6f</anchor>
+      <anchor>ae1503c392e04b159877efd6833147ec4</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>UniverseSettings</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>aea1e029adb6a6702a0594a0a6fdce16d</anchor>
+      <anchor>a51a6f7e6df4ea13735153f9af406a9fa</anchor>
       <arglist>(uint16_t universe_id)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
+      <anchor>a6a443a09d5c64bf75a2f8ecf533d27cf</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>universe</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>a0cf34824f8777f28b50f62b7870d6f8c</anchor>
+      <anchor>a90b28b7ce34ed3f2377897096e9e4e1c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>priority</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>a0ad043071ccc7a261d79a759dc9c6f0c</anchor>
+      <anchor>ad5bfeff96e69ef77004357ea8757e1a4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>send_preview</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>a5c7913b52f7d575e1cedacbd6601b047</anchor>
+      <anchor>a39ed84d93d0b210485e85d5ba1bea651</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>send_unicast_only</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>adcf08448ca5544a8be4518fc2d966ef0</anchor>
+      <anchor>a208076851169ad897ba144b84fa2ed8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; etcpal::IpAddr &gt;</type>
       <name>unicast_destinations</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>a91fd2db41d13ddf5440d0d72619d1a2b</anchor>
+      <anchor>aea91fbcb2d950681328a78c982d6c09b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>sync_universe</name>
       <anchorfile>structsacn_1_1_source_1_1_universe_settings.html</anchorfile>
-      <anchor>a9c7dff151ba6b32fc343e6aa55147bcc</anchor>
+      <anchor>aeebf60c4eebd887f1a0d00e41f4303f5</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3743,17 +3801,17 @@
       <type>sacn_remote_source_t</type>
       <name>RemoteSourceHandle</name>
       <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>acfd8aea0d62baa7d2f16a969ec5849af</anchor>
+      <anchor>ad10087ddef7a9be3dd53c3a80087841d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
       <name>McastMode</name>
       <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>af874a6c4f11432c529c4068e745889b5</anchor>
+      <anchor>ad10de668b9a073fabe200d3f0830e381</anchor>
       <arglist></arglist>
-      <enumvalue file="namespacesacn.html" anchor="af874a6c4f11432c529c4068e745889b5ad1989e9a06422a85d3d6d2ecf25a50cf">kEnabledOnAllInterfaces</enumvalue>
-      <enumvalue file="namespacesacn.html" anchor="af874a6c4f11432c529c4068e745889b5a42f053f48441c9286254c451c8bea6a2">kDisabledOnAllInterfaces</enumvalue>
+      <enumvalue file="namespacesacn.html" anchor="ad10de668b9a073fabe200d3f0830e381ad1989e9a06422a85d3d6d2ecf25a50cf">kEnabledOnAllInterfaces</enumvalue>
+      <enumvalue file="namespacesacn.html" anchor="ad10de668b9a073fabe200d3f0830e381a42f053f48441c9286254c451c8bea6a2">kDisabledOnAllInterfaces</enumvalue>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
@@ -3808,28 +3866,28 @@
       <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
       <name>GetRemoteSourceCid</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
+      <anchor>gabd2bd6cb43e9b621b6627fb177b49523</anchor>
       <arglist>(RemoteSourceHandle source_handle)</arglist>
     </member>
     <member kind="variable">
       <type>constexpr RemoteSourceHandle</type>
       <name>kInvalidRemoteSourceHandle</name>
       <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a731047fe50bd58178f7cd8b1960e6e57</anchor>
+      <anchor>a3713d93556ad9b11143c46b43d24cd38</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>constexpr uint16_t</type>
       <name>kMinimumUniverse</name>
       <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a3a2dc07a6c561afb7bc52f8298903e4b</anchor>
+      <anchor>aa2bbf6160fa3bd73d4363b5f90d8f4d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>constexpr uint16_t</type>
       <name>kMaximumUniverse</name>
       <anchorfile>namespacesacn.html</anchorfile>
-      <anchor>a3d7b4639506640d043637309708c57ae</anchor>
+      <anchor>adce321fd7b045c2e42731e4460a98b74</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3845,6 +3903,13 @@
     <subgroup>sacn_source_detector</subgroup>
     <class kind="struct">SacnMcastInterface</class>
     <class kind="struct">SacnNetintConfig</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>SACN_NETINT_CONFIG_DEFAULT_INIT</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga3ee0954838bc60d3e04d7a54692533fd</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>sacn_remote_source_t</name>
@@ -3954,6 +4019,13 @@
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga9a71315342a299c22055fe195e6750ef</anchor>
       <arglist>(sacn_remote_source_t source_handle, EtcPalUuid *source_cid)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_remote_source_t</type>
+      <name>kSacnRemoteSourceInvalid</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gaf801f0a4ae3ede2967106d9b360b8cd1</anchor>
+      <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -4092,7 +4164,7 @@
       <type>const SacnDmxMergerSource *</type>
       <name>sacn_dmx_merger_get_source</name>
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
-      <anchor>ga0811c88edb22c748c8b80bbc49984e67</anchor>
+      <anchor>ga324d4b0c258a283b1ea5ee5ec9c6e41a</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
     </member>
     <member kind="function">
@@ -4122,6 +4194,20 @@
       <anchorfile>group__sacn__dmx__merger.html</anchorfile>
       <anchor>gada109b5171e78bc858ab18a7c13931ee</anchor>
       <arglist>(sacn_dmx_merger_t merger, sacn_dmx_merger_source_t source)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_dmx_merger_t</type>
+      <name>kSacnDmxMergerInvalid</name>
+      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
+      <anchor>ga9fbf1d9b7f9e121c9c63b987d1252bb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_dmx_merger_source_t</type>
+      <name>kSacnDmxMergerSourceInvalid</name>
+      <anchorfile>group__sacn__dmx__merger.html</anchorfile>
+      <anchor>gadec6698442a5e939f922694d234f39b7</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -4315,6 +4401,13 @@
       <anchor>ga807515578955a36b0a33de53a1d5bd9c</anchor>
       <arglist>(sacn_merge_receiver_t merge_receiver_handle, sacn_remote_source_t source_handle, SacnMergeReceiverSource *source_info)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_merge_receiver_t</type>
+      <name>kSacnMergeReceiverInvalid</name>
+      <anchorfile>group__sacn__merge__receiver.html</anchorfile>
+      <anchor>gaf9e0a1e60f26e2817f15d5872136f81b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>sacnopts</name>
@@ -4386,6 +4479,13 @@
       <anchorfile>group__sacnopts__global.html</anchorfile>
       <anchor>ga2dd2edc6a9d13618baaf6d02b4d86e81</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>sacn_assert_verify_fail</name>
+      <anchorfile>group__sacnopts__global.html</anchorfile>
+      <anchor>gab694ddf2e6290ac8a1910b4acd879dd2</anchor>
+      <arglist>(const char *exp, const char *file, const char *func, int line)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -4549,13 +4649,6 @@
     <name>sacnopts_dmx_merger</name>
     <title>sACN DMX Merger Options</title>
     <filename>group__sacnopts__dmx__merger.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_DMX_MERGER_MAX_MERGERS</name>
-      <anchorfile>group__sacnopts__dmx__merger.html</anchorfile>
-      <anchor>ga7d15f54f43af8434b4967746f1282fb1</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>SACN_DMX_MERGER_MAX_MERGERS</name>
@@ -4849,6 +4942,13 @@
       <anchor>gabd632f80d5da75c47c1f08103a42a391</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_receiver_t</type>
+      <name>kSacnReceiverInvalid</name>
+      <anchorfile>group__sacn__receiver.html</anchorfile>
+      <anchor>ga94dc9e6fd4e4bb4010d8cf9f7e846954</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumvalue">
       <name>kSacnReceiverOptsFilterPreviewData</name>
       <anchorfile>group__sacn__receiver.html</anchorfile>
@@ -5116,6 +5216,13 @@
       <anchor>gae8c8d77375ea48b26fc069c9068aec69</anchor>
       <arglist>(sacn_source_t handle, uint16_t universe, EtcPalMcastNetintId *netints, size_t netints_size)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static const sacn_source_t</type>
+      <name>kSacnSourceInvalid</name>
+      <anchorfile>group__sacn__source.html</anchorfile>
+      <anchor>gad79259a1529a69ed315764815d9055b2</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>sacn_source_detector</name>
@@ -5224,58 +5331,58 @@
     <filename>group__sacn__cpp__common.html</filename>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>gac1cf1cb5e698e8ad656481cc834925db</anchor>
       <arglist>(const EtcPalLogParams *log_params=nullptr, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga462a83ab46a4fa6a2f642fcacabecc82</anchor>
       <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga73781de46ab1321166a0dce24094c73d</anchor>
       <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga0dfea4ef6503c65fd4e13eb9813e6513</anchor>
       <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
-      <name>Init</name>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga414aefdf3a0364b6261374e61a37bd05</anchor>
       <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>Deinit</name>
+      <name>sacn::Deinit</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
-      <name>GetRemoteSourceHandle</name>
+      <name>sacn::GetRemoteSourceHandle</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>gaa353377fefbbdd6ae634d981944c5619</anchor>
       <arglist>(const etcpal::Uuid &amp;source_cid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; etcpal::Uuid &gt;</type>
-      <name>GetRemoteSourceCid</name>
+      <name>sacn::GetRemoteSourceCid</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab05243a382f6332a3d73dbb3b202bb95</anchor>
+      <anchor>gabd2bd6cb43e9b621b6627fb177b49523</anchor>
       <arglist>(RemoteSourceHandle source_handle)</arglist>
     </member>
   </compound>
@@ -5326,71 +5433,81 @@
     <name>additional_documentation</name>
     <title>Additional Documentation</title>
     <filename>additional_documentation.html</filename>
-    <docanchor file="additional_documentation.html">md__tmp_tmp0l9_1d56_docs_pages_additional_documentation</docanchor>
+    <subpage>source_loss_behavior.html</subpage>
+    <subpage>per_address_priority.html</subpage>
+    <docanchor file="additional_documentation.html" title="/tmp/tmprhoq405o/docs/pages/additional_documentation.md">md__2tmp_2tmprhoq405o_2docs_2pages_2additional__documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmp0l9_1d56_docs_pages_building_and_integrating</docanchor>
+    <subpage>configuring_lwip.html</subpage>
+    <docanchor file="building_and_integrating.html" title="/tmp/tmprhoq405o/docs/pages/building_and_integrating.md">md__2tmp_2tmprhoq405o_2docs_2pages_2building__and__integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html">md__tmp_tmp0l9_1d56_docs_pages_configuring_lwip</docanchor>
+    <docanchor file="configuring_lwip.html" title="/tmp/tmprhoq405o/docs/pages/configuring_lwip.md">md__2tmp_2tmprhoq405o_2docs_2pages_2configuring__lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started with sACN</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmp0l9_1d56_docs_pages_getting_started</docanchor>
+    <subpage>building_and_integrating.html</subpage>
+    <subpage>global_init_and_destroy.html</subpage>
+    <subpage>using_source.html</subpage>
+    <subpage>using_merge_receiver.html</subpage>
+    <subpage>using_receiver.html</subpage>
+    <subpage>using_dmx_merger.html</subpage>
+    <docanchor file="getting_started.html" title="/tmp/tmprhoq405o/docs/pages/getting_started.md">md__2tmp_2tmprhoq405o_2docs_2pages_2getting__started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmp0l9_1d56_docs_pages_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html" title="/tmp/tmprhoq405o/docs/pages/global_init_and_destroy.md">md__2tmp_2tmprhoq405o_2docs_2pages_2global__init__and__destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html">md__tmp_tmp0l9_1d56_docs_pages_per_address_priority</docanchor>
+    <docanchor file="per_address_priority.html" title="/tmp/tmprhoq405o/docs/pages/per_address_priority.md">md__2tmp_2tmprhoq405o_2docs_2pages_2per__address__priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html">md__tmp_tmp0l9_1d56_docs_pages_source_loss_behavior</docanchor>
+    <docanchor file="source_loss_behavior.html" title="/tmp/tmprhoq405o/docs/pages/source_loss_behavior.md">md__2tmp_2tmprhoq405o_2docs_2pages_2source__loss__behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html">md__tmp_tmp0l9_1d56_docs_pages_using_dmx_merger</docanchor>
+    <docanchor file="using_dmx_merger.html" title="/tmp/tmprhoq405o/docs/pages/using_dmx_merger.md">md__2tmp_2tmprhoq405o_2docs_2pages_2using__dmx__merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html">md__tmp_tmp0l9_1d56_docs_pages_using_merge_receiver</docanchor>
+    <docanchor file="using_merge_receiver.html" title="/tmp/tmprhoq405o/docs/pages/using_merge_receiver.md">md__2tmp_2tmprhoq405o_2docs_2pages_2using__merge__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html">md__tmp_tmp0l9_1d56_docs_pages_using_receiver</docanchor>
+    <docanchor file="using_receiver.html" title="/tmp/tmprhoq405o/docs/pages/using_receiver.md">md__2tmp_2tmprhoq405o_2docs_2pages_2using__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html">md__tmp_tmp0l9_1d56_docs_pages_using_source</docanchor>
+    <docanchor file="using_source.html" title="/tmp/tmprhoq405o/docs/pages/using_source.md">md__2tmp_2tmprhoq405o_2docs_2pages_2using__source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
     <title>Streaming ACN</title>
     <filename>index.html</filename>
+    <docanchor file="index.html">mainpage</docanchor>
   </compound>
 </tagfile>

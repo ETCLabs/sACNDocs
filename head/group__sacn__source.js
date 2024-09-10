@@ -1,29 +1,29 @@
 var group__sacn__source =
 [
     [ "SacnSourceConfig", "struct_sacn_source_config.html", [
-      [ "cid", "struct_sacn_source_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
-      [ "ip_supported", "struct_sacn_source_config.html#ab619351af6b7a5abcb23e38bdc09e984", null ],
-      [ "keep_alive_interval", "struct_sacn_source_config.html#a987c78ebef19e1addb7485ce29ef4dd7", null ],
-      [ "manually_process_source", "struct_sacn_source_config.html#a16ca9a84fb49dbc5b40b8b333a239e2d", null ],
-      [ "name", "struct_sacn_source_config.html#a8f8f80d37794cde9472343e4487ba3eb", null ],
-      [ "pap_keep_alive_interval", "struct_sacn_source_config.html#aa0c6c9ee861a74ce7f88cbf8ba7ec99f", null ],
-      [ "universe_count_max", "struct_sacn_source_config.html#af4a1d1d970b94a6a07b8c612b8d7ad73", null ]
+      [ "cid", "struct_sacn_source_config.html#a6fd0395a963497fecdf963a53e782d29", null ],
+      [ "ip_supported", "struct_sacn_source_config.html#a98bc87f70b88ef673c1e2b4cd199be07", null ],
+      [ "keep_alive_interval", "struct_sacn_source_config.html#a839e1ab8c82a8aec5ecd4969d9f15905", null ],
+      [ "manually_process_source", "struct_sacn_source_config.html#a153bf291285c4871347a6665331a8bad", null ],
+      [ "name", "struct_sacn_source_config.html#af4381858b26ca76f0fe99ba779b01683", null ],
+      [ "pap_keep_alive_interval", "struct_sacn_source_config.html#a1b39546335a927797fec60fc68965573", null ],
+      [ "universe_count_max", "struct_sacn_source_config.html#ad4038650ac4db375533716895429749a", null ]
     ] ],
     [ "SacnSourceUniverseConfig", "struct_sacn_source_universe_config.html", [
-      [ "num_unicast_destinations", "struct_sacn_source_universe_config.html#aa148fe1bdf89b3e7b900a130d32de29c", null ],
-      [ "priority", "struct_sacn_source_universe_config.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ],
-      [ "send_preview", "struct_sacn_source_universe_config.html#a5c7913b52f7d575e1cedacbd6601b047", null ],
-      [ "send_unicast_only", "struct_sacn_source_universe_config.html#adcf08448ca5544a8be4518fc2d966ef0", null ],
-      [ "sync_universe", "struct_sacn_source_universe_config.html#a9c7dff151ba6b32fc343e6aa55147bcc", null ],
-      [ "unicast_destinations", "struct_sacn_source_universe_config.html#a42ef84da1b2dc4f0e993432d4a7be8a3", null ],
-      [ "universe", "struct_sacn_source_universe_config.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
+      [ "num_unicast_destinations", "struct_sacn_source_universe_config.html#a3761d3f63c5dbb8eae9a486df7d9c95e", null ],
+      [ "priority", "struct_sacn_source_universe_config.html#a42ce1e0362146d4516af5713f67f84ff", null ],
+      [ "send_preview", "struct_sacn_source_universe_config.html#abb866566a497b6120f0b8de58906ab96", null ],
+      [ "send_unicast_only", "struct_sacn_source_universe_config.html#a5be0f598cbfbfc18b60f345064ae3602", null ],
+      [ "sync_universe", "struct_sacn_source_universe_config.html#a48c3a32e44141e1ce77aa756a7931043", null ],
+      [ "unicast_destinations", "struct_sacn_source_universe_config.html#a295a211a4d3fa77e4b1e6e053d91c652", null ],
+      [ "universe", "struct_sacn_source_universe_config.html#adafd5ecaf02a7eafaeab3b2e3d5c3598", null ]
     ] ],
     [ "SacnSourceUniverseNetintList", "struct_sacn_source_universe_netint_list.html", [
-      [ "handle", "struct_sacn_source_universe_netint_list.html#aee044b8551b82b1058427bbb17e74528", null ],
-      [ "netints", "struct_sacn_source_universe_netint_list.html#add0da5313d4b1d06a67bda5508b848e1", null ],
-      [ "no_netints", "struct_sacn_source_universe_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
-      [ "num_netints", "struct_sacn_source_universe_netint_list.html#a6ddc029bb8aba3ead075508554592445", null ],
-      [ "universe", "struct_sacn_source_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
+      [ "handle", "struct_sacn_source_universe_netint_list.html#a5a564ae47e89b3efdf18b52a20b66633", null ],
+      [ "netints", "struct_sacn_source_universe_netint_list.html#a99c58fe2eabd1cc540189f9b293f21db", null ],
+      [ "no_netints", "struct_sacn_source_universe_netint_list.html#ac85b7eb6e9c67dca356034d84e2cd935", null ],
+      [ "num_netints", "struct_sacn_source_universe_netint_list.html#ab5f164210f4028fd3d255b19376f0d8e", null ],
+      [ "universe", "struct_sacn_source_universe_netint_list.html#ac248aac8d75991856c97619f71736661", null ]
     ] ],
     [ "SACN_SOURCE_CONFIG_DEFAULT_INIT", "group__sacn__source.html#ga1fc88ea9a51c4a935ec87630a0b177f1", null ],
     [ "SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT", "group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b", null ],
@@ -63,5 +63,6 @@ var group__sacn__source =
     [ "sacn_source_update_levels", "group__sacn__source.html#ga23dc503a9f5a46fce7e8448266760341", null ],
     [ "sacn_source_update_levels_and_force_sync", "group__sacn__source.html#ga56ea27101d95616ca53c5c602257311a", null ],
     [ "sacn_source_update_levels_and_pap", "group__sacn__source.html#ga6a8835b680485d307f9d2d9c750517ab", null ],
-    [ "sacn_source_update_levels_and_pap_and_force_sync", "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009", null ]
+    [ "sacn_source_update_levels_and_pap_and_force_sync", "group__sacn__source.html#gabec53e52dbb1808a546832ef3446f009", null ],
+    [ "kSacnSourceInvalid", "group__sacn__source.html#gad79259a1529a69ed315764815d9055b2", null ]
 ];

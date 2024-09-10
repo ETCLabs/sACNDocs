@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['mempool_20_28memory_20pools_29_5229',['mempool (Memory Pools)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__mempool.html',1,'']]],
-  ['mutex_20_28mutexes_29_5230',['mutex (Mutexes)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__cpp__mutex.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__mutex.html',1,'(Global Namespace)']]]
+  ['handle_5fmanager_0',['handle_manager',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__handle__manager.html',1,'']]],
+  ['handles_1',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__cpp__opaque__id.html',1,'']]],
+  ['handling_2',['Handling',['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__error.html',1,'error (Error Handling)'],['https://etclabs.github.io/EtcPalDocs/0.4.1/group__etcpal__cpp__error.html',1,'error (Error Handling)']]]
 ];

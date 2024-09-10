@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['opaque_5fid_20_28strongly_20typed_20handles_29_5388',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__opaque__id.html',1,'']]],
-  ['os_20abstraction_20modules_5389',['OS Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__os.html',1,'']]]
+  ['language_20apis_0',['sACN C++ Language APIs',['../group__sacn__cpp__api.html',1,'']]],
+  ['layer_20protocol_1',['acn_rlp (ACN Root Layer Protocol)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__acn__rlp.html',1,'']]],
+  ['locks_2',['Locks',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__rwlock.html',1,'rwlock (Read-Write Locks)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__rwlock.html',1,'rwlock (Read-Write Locks)']]],
+  ['log_20logging_3',['log Logging',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'log (Logging)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'log (Logging)']]],
+  ['logging_4',['Logging',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'log (Logging)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'log (Logging)']]]
 ];

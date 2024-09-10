@@ -1,16 +1,16 @@
 var group__sacn__source__detector =
 [
     [ "SacnSourceDetectorCallbacks", "struct_sacn_source_detector_callbacks.html", [
-      [ "context", "struct_sacn_source_detector_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
-      [ "limit_exceeded", "struct_sacn_source_detector_callbacks.html#a2a102ec50557c2902e0b43656c0fa33c", null ],
-      [ "source_expired", "struct_sacn_source_detector_callbacks.html#ad53b703dc988168f5b0b5bff06b2d2ff", null ],
-      [ "source_updated", "struct_sacn_source_detector_callbacks.html#ae4d714b0bc64241d5632fe77d013fb45", null ]
+      [ "context", "struct_sacn_source_detector_callbacks.html#ac5ecda696be3580d748d255511836c75", null ],
+      [ "limit_exceeded", "struct_sacn_source_detector_callbacks.html#aada3f1e6329498132a0fce056fd4a8b0", null ],
+      [ "source_expired", "struct_sacn_source_detector_callbacks.html#a1fa14e2ed4c60408fd9fce40ce669d16", null ],
+      [ "source_updated", "struct_sacn_source_detector_callbacks.html#a3c54092d59e6862e7c39e85ea5e7b825", null ]
     ] ],
     [ "SacnSourceDetectorConfig", "struct_sacn_source_detector_config.html", [
-      [ "callbacks", "struct_sacn_source_detector_config.html#ac7495377d16d49972f79cebbd69f7095", null ],
-      [ "ip_supported", "struct_sacn_source_detector_config.html#ab619351af6b7a5abcb23e38bdc09e984", null ],
-      [ "source_count_max", "struct_sacn_source_detector_config.html#aa56795d5b57bff4910ce11baac4003ba", null ],
-      [ "universes_per_source_max", "struct_sacn_source_detector_config.html#a56cecc9bab9fb8d197ce21bbbc036e06", null ]
+      [ "callbacks", "struct_sacn_source_detector_config.html#a581c619df1115fad842c64e00d40ca9f", null ],
+      [ "ip_supported", "struct_sacn_source_detector_config.html#aa13676f35ad07d9fe8351738d1cd6328", null ],
+      [ "source_count_max", "struct_sacn_source_detector_config.html#a5f0da202335fcd501fe021a97097f8d7", null ],
+      [ "universes_per_source_max", "struct_sacn_source_detector_config.html#acbc73b8c466814f4d3fe63279f1eb849", null ]
     ] ],
     [ "SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT", "group__sacn__source__detector.html#ga78fbb7639c835e3b08091fc16e31d6fc", null ],
     [ "SacnSourceDetectorCallbacks", "group__sacn__source__detector.html#gaa539e91ba47bdb365998472761dcede2", null ],

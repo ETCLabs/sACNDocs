@@ -1,9 +1,9 @@
 var struct_sacn_merge_receiver_source =
 [
-    [ "addr", "struct_sacn_merge_receiver_source.html#a730cebe0970ed6300a5f832363e65852", null ],
-    [ "cid", "struct_sacn_merge_receiver_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
-    [ "handle", "struct_sacn_merge_receiver_source.html#abd2d36f012ca716885c43720824b4a75", null ],
-    [ "name", "struct_sacn_merge_receiver_source.html#a45a8c3c8006ff9d7a3925ae472132942", null ],
-    [ "per_address_priorities_active", "struct_sacn_merge_receiver_source.html#a401cf1a9b9e5bd901e1600ea9abc4350", null ],
-    [ "universe_priority", "struct_sacn_merge_receiver_source.html#aefc54b6cd291e480d6cb7c9b5b98a3f4", null ]
+    [ "addr", "struct_sacn_merge_receiver_source.html#a8ba4536981e1c7217264bfbcafeac33a", null ],
+    [ "cid", "struct_sacn_merge_receiver_source.html#a54cf0d326b280190f5064b929866fd81", null ],
+    [ "handle", "struct_sacn_merge_receiver_source.html#af12e72d2ef537e8f12b44ebb742817bd", null ],
+    [ "name", "struct_sacn_merge_receiver_source.html#a26776457fcc3224959f62c977ed3d41f", null ],
+    [ "per_address_priorities_active", "struct_sacn_merge_receiver_source.html#a9ab695a021c6b13ad7025fa12c011326", null ],
+    [ "universe_priority", "struct_sacn_merge_receiver_source.html#a82cc6f297f880862da8578707963cbf3", null ]
 ];

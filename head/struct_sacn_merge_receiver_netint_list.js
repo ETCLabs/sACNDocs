@@ -1,7 +1,7 @@
 var struct_sacn_merge_receiver_netint_list =
 [
-    [ "handle", "struct_sacn_merge_receiver_netint_list.html#aba7e88ef8eda8612d97729978383ba05", null ],
-    [ "netints", "struct_sacn_merge_receiver_netint_list.html#add0da5313d4b1d06a67bda5508b848e1", null ],
-    [ "no_netints", "struct_sacn_merge_receiver_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
-    [ "num_netints", "struct_sacn_merge_receiver_netint_list.html#a6ddc029bb8aba3ead075508554592445", null ]
+    [ "handle", "struct_sacn_merge_receiver_netint_list.html#ab1b1c0bb444abeca1c83af46d245e8e1", null ],
+    [ "netints", "struct_sacn_merge_receiver_netint_list.html#a94bc4510eda488e387789951b92827cf", null ],
+    [ "no_netints", "struct_sacn_merge_receiver_netint_list.html#a93c7140d302337f80d4284a9f96c6528", null ],
+    [ "num_netints", "struct_sacn_merge_receiver_netint_list.html#a2abb5dbfa1f2782b885f9e81297f0837", null ]
 ];

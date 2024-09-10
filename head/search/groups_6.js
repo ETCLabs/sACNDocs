@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['log_20_28logging_29_5383',['log (Logging)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'(Global Namespace)']]]
+  ['global_20options_0',['Global Options',['../group__sacnopts__global.html',1,'']]],
+  ['groups_1',['Groups',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__event__group.html',1,'event_group (Event Groups)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__event__group.html',1,'event_group (Event Groups)']]]
 ];

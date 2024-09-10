@@ -12,5 +12,6 @@ var common_8h =
     [ "sacn_deinit", "group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a", null ],
     [ "sacn_get_remote_source_cid", "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef", null ],
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
-    [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ]
+    [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
+    [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

@@ -1,8 +1,8 @@
 var struct_sacn_source_universe_netint_list =
 [
-    [ "handle", "struct_sacn_source_universe_netint_list.html#aee044b8551b82b1058427bbb17e74528", null ],
-    [ "netints", "struct_sacn_source_universe_netint_list.html#add0da5313d4b1d06a67bda5508b848e1", null ],
-    [ "no_netints", "struct_sacn_source_universe_netint_list.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
-    [ "num_netints", "struct_sacn_source_universe_netint_list.html#a6ddc029bb8aba3ead075508554592445", null ],
-    [ "universe", "struct_sacn_source_universe_netint_list.html#a0cf34824f8777f28b50f62b7870d6f8c", null ]
+    [ "handle", "struct_sacn_source_universe_netint_list.html#a5a564ae47e89b3efdf18b52a20b66633", null ],
+    [ "netints", "struct_sacn_source_universe_netint_list.html#a99c58fe2eabd1cc540189f9b293f21db", null ],
+    [ "no_netints", "struct_sacn_source_universe_netint_list.html#ac85b7eb6e9c67dca356034d84e2cd935", null ],
+    [ "num_netints", "struct_sacn_source_universe_netint_list.html#ab5f164210f4028fd3d255b19376f0d8e", null ],
+    [ "universe", "struct_sacn_source_universe_netint_list.html#ac248aac8d75991856c97619f71736661", null ]
 ];
