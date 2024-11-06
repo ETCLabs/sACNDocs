@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7":[4,0,7,2],
 "struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1":[4,0,7,1],
 "struct_sacn_receiver_callbacks.html":[4,0,3,4],
 "struct_sacn_receiver_callbacks.html#a264aeeaa2b55173b8c0af442a6a7471d":[4,0,3,4,0],
