@@ -15,6 +15,9 @@ var group__s_a_c_n =
       [ "no_netints", "struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1", null ],
       [ "num_netints", "struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7", null ]
     ] ],
+    [ "SACN_FEATURE_DMX_MERGER", "group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c", null ],
+    [ "SACN_FEATURES_ALL", "group__s_a_c_n.html#gae332f970f84a53d07da154915f343042", null ],
+    [ "SACN_FEATURES_ALL_BUT", "group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e", null ],
     [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
     [ "SACN_VERSION_BUILD", "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86", null ],
     [ "SACN_VERSION_COPYRIGHT", "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b", null ],
@@ -24,6 +27,7 @@ var group__s_a_c_n =
     [ "SACN_VERSION_PATCH", "group__s_a_c_n.html#gae1d8849ebfa2d27cec433e54f7f7308d", null ],
     [ "SACN_VERSION_PRODUCTNAME", "group__s_a_c_n.html#ga46b3c38236732e08243f8fe79bcf6c06", null ],
     [ "SACN_VERSION_STRING", "group__s_a_c_n.html#ga2ff6980847182dc1ac56ee3660e0a360", null ],
+    [ "sacn_features_t", "group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", [
@@ -43,5 +47,6 @@ var group__s_a_c_n =
     [ "sacn_get_remote_source_cid", "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef", null ],
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
     [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
+    [ "sacn_init_features", "group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0", null ],
     [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

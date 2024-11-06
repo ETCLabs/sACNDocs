@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"group__sacn__dmx__merger.html#gada109b5171e78bc858ab18a7c13931ee":[4,0,0,12],
+"group__sacn__dmx__merger.html#gadec6698442a5e939f922694d234f39b7":[4,0,0,18],
+"group__sacn__dmx__merger.html#gadf879eb673c0ffe91ade6bcc5af615c3":[4,0,0,8],
+"group__sacn__dmx__merger.html#gaec4962a6c5655b357d4c81dc9e7a7b86":[4,0,0,3],
+"group__sacn__dmx__merger__cpp.html":[4,1,1],
+"group__sacn__merge__receiver.html":[4,0,1],
 "group__sacn__merge__receiver.html#ga00e28a2333ce8cd38b0eb3e58ac5f375":[4,0,1,29],
 "group__sacn__merge__receiver.html#ga01cecd351da958dc2fc7b55088559de8":[4,0,1,26],
 "group__sacn__merge__receiver.html#ga02c0879618435049e7a9bd25dbe58850":[4,0,1,24],
@@ -173,13 +179,13 @@ var NAVTREEINDEX1 =
 "namespacemembers_vars.html":[5,1,2],
 "namespaces.html":[5,0],
 "namespacesacn.html":[5,0,0],
-"namespacesacn.html#a3713d93556ad9b11143c46b43d24cd38":[5,0,0,15],
-"namespacesacn.html#aa2bbf6160fa3bd73d4363b5f90d8f4d9":[5,0,0,17],
+"namespacesacn.html#a3713d93556ad9b11143c46b43d24cd38":[5,0,0,16],
+"namespacesacn.html#aa2bbf6160fa3bd73d4363b5f90d8f4d9":[5,0,0,18],
 "namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d":[5,0,0,5],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381":[5,0,0,6],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381a42f053f48441c9286254c451c8bea6a2":[5,0,0,6,1],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381ad1989e9a06422a85d3d6d2ecf25a50cf":[5,0,0,6,0],
-"namespacesacn.html#adce321fd7b045c2e42731e4460a98b74":[5,0,0,16],
+"namespacesacn.html#adce321fd7b045c2e42731e4460a98b74":[5,0,0,17],
 "opts_8h.html":[7,0,0,0,4],
 "opts_8h_source.html":[7,0,0,0,4],
 "pages.html":[],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "struct_sacn_merge_receiver_source.html#af12e72d2ef537e8f12b44ebb742817bd":[4,0,1,4,2],
 "struct_sacn_netint_config.html":[4,0,7],
 "struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01":[4,0,7,0],
-"struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7":[4,0,7,2],
-"struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1":[4,0,7,1],
-"struct_sacn_receiver_callbacks.html":[4,0,3,4],
-"struct_sacn_receiver_callbacks.html#a264aeeaa2b55173b8c0af442a6a7471d":[4,0,3,4,0],
-"struct_sacn_receiver_callbacks.html#a5477643b6954c1d5d6404ccf0d504525":[4,0,3,4,6],
-"struct_sacn_receiver_callbacks.html#a5a2a6da1ae8f5686e9e26975fb86df20":[4,0,3,4,1],
-"struct_sacn_receiver_callbacks.html#a6fb298c22148d09900de5b7ede8159d0":[4,0,3,4,5]
+"struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7":[4,0,7,2]
 };

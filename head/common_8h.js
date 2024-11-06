@@ -1,6 +1,10 @@
 var common_8h =
 [
+    [ "SACN_FEATURE_DMX_MERGER", "group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c", null ],
+    [ "SACN_FEATURES_ALL", "group__s_a_c_n.html#gae332f970f84a53d07da154915f343042", null ],
+    [ "SACN_FEATURES_ALL_BUT", "group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e", null ],
     [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
+    [ "sacn_features_t", "group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", null ],
@@ -13,5 +17,6 @@ var common_8h =
     [ "sacn_get_remote_source_cid", "group__s_a_c_n.html#ga9a71315342a299c22055fe195e6750ef", null ],
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
     [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
+    [ "sacn_init_features", "group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0", null ],
     [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

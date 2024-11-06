@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1":[4,0,7,1],
+"struct_sacn_receiver_callbacks.html":[4,0,3,4],
+"struct_sacn_receiver_callbacks.html#a264aeeaa2b55173b8c0af442a6a7471d":[4,0,3,4,0],
+"struct_sacn_receiver_callbacks.html#a5477643b6954c1d5d6404ccf0d504525":[4,0,3,4,6],
+"struct_sacn_receiver_callbacks.html#a5a2a6da1ae8f5686e9e26975fb86df20":[4,0,3,4,1],
+"struct_sacn_receiver_callbacks.html#a6fb298c22148d09900de5b7ede8159d0":[4,0,3,4,5],
 "struct_sacn_receiver_callbacks.html#a80cb2ef319ff23190641717b3468f49e":[4,0,3,4,2],
 "struct_sacn_receiver_callbacks.html#ab5497745a1d8de87b33a539c726e4ad5":[4,0,3,4,3],
 "struct_sacn_receiver_callbacks.html#ae53ccb06454361449094e77b5b303208":[4,0,3,4,4],
@@ -71,7 +77,7 @@ var NAVTREEINDEX2 =
 "struct_sacn_source_universe_netint_list.html#ac248aac8d75991856c97619f71736661":[4,0,4,2,4],
 "struct_sacn_source_universe_netint_list.html#ac85b7eb6e9c67dca356034d84e2cd935":[4,0,4,2,2],
 "struct_sacn_state.html":[6,0,22],
-"struct_sacn_state.html#acd5360f40c09d51dc994f1287a7e1d3a":[6,0,22,0],
+"struct_sacn_state.html#a0eaf4ce69a3862fb985362da9f5647d4":[6,0,22,0],
 "struct_sacn_state.html#af407733c50c5633e0806ae707136601a":[6,0,22,1],
 "structsacn_1_1_dmx_merger_1_1_settings.html":[4,1,1,1],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a1ecb3741f2345bcec2d18eea5b58f3d6":[4,1,1,1,5],
