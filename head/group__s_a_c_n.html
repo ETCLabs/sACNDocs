@@ -317,8 +317,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaec646a837c28740657cff1bd9a1bc1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize specific features of the sACN library.  <br /></td></tr>
 <tr class="separator:gaec646a837c28740657cff1bd9a1bc1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b80ebcafe9eb3240a67785377872f9a" id="r_ga7b80ebcafe9eb3240a67785377872f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a> (void)</td></tr>
-<tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the sACN library.  <br /></td></tr>
+<tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize all features of the sACN library.  <br /></td></tr>
 <tr class="separator:ga7b80ebcafe9eb3240a67785377872f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d36293cdea3c528989a96221147b6ab" id="r_ga6d36293cdea3c528989a96221147b6ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6d36293cdea3c528989a96221147b6ab">sacn_deinit_features</a> (<a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a> features)</td></tr>
+<tr class="memdesc:ga6d36293cdea3c528989a96221147b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize specific features of the sACN library.  <br /></td></tr>
+<tr class="separator:ga6d36293cdea3c528989a96221147b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65d96208fc89676e2dea18d2ded31872" id="r_ga65d96208fc89676e2dea18d2ded31872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga65d96208fc89676e2dea18d2ded31872">sacn_get_remote_source_handle</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *source_cid)</td></tr>
 <tr class="memdesc:ga65d96208fc89676e2dea18d2ded31872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or <a class="el" href="#gaf801f0a4ae3ede2967106d9b360b8cd1" title="An invalid remote source handle value.">kSacnRemoteSourceInvalid</a> if not found.  <br /></td></tr>
 <tr class="separator:ga65d96208fc89676e2dea18d2ded31872"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,7 +339,7 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 <tr class="heading"><td colspan="2"><h2 class="groupheader">sACN feature masks</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Pass one or more of these to <a class="el" href="#gaec646a837c28740657cff1bd9a1bc1b0" title="Initialize specific features of the sACN library.">sacn_init_features()</a> to initialize the relevant sACN feature.</p>
 <p>Multiple features can be requested using logical OR.</p>
-<p>Currently the DMX merger is the only feature that can be initialized individually. All other APIs can later be initialized with <a class="el" href="#gafde58e928ce53dd054a7f33500b7fd7e" title="Use every available module except the ones passed in mask.">SACN_FEATURES_ALL_BUT(SACN_FEATURE_DMX_MERGER)</a>. Consequently, SACN_FEATURES_ALL (used by <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a>) represents all APIs regardless if they have an individual feature defined for them. </p>
+<p>Currently the DMX merger is the only feature that can be initialized individually. All other APIs can later be initialized with SACN_FEATURES_ALL, which represents all APIs regardless if they have an individual feature defined for them. Redundant initialization will ensure the same feature isn't initialized twice. </p>
 </td></tr>
 <tr class="memitem:gab5f7ac205d84be7fdb324945a10f853c" id="r_gab5f7ac205d84be7fdb324945a10f853c"><td class="memItemLeft" align="right" valign="top"><a id="gab5f7ac205d84be7fdb324945a10f853c" name="gab5f7ac205d84be7fdb324945a10f853c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_FEATURE_DMX_MERGER</b>&#160;&#160;&#160;((<a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a>)(1u &lt;&lt; 0))</td></tr>
@@ -346,9 +349,6 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_FEATURES_ALL</b>&#160;&#160;&#160;0xffffffffu</td></tr>
 <tr class="memdesc:gae332f970f84a53d07da154915f343042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module. <br /></td></tr>
 <tr class="separator:gae332f970f84a53d07da154915f343042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafde58e928ce53dd054a7f33500b7fd7e" id="r_gafde58e928ce53dd054a7f33500b7fd7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafde58e928ce53dd054a7f33500b7fd7e">SACN_FEATURES_ALL_BUT</a>(mask)&#160;&#160;&#160;(((uint32_t)<a class="el" href="#gae332f970f84a53d07da154915f343042">SACN_FEATURES_ALL</a>) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td></tr>
-<tr class="memdesc:gafde58e928ce53dd054a7f33500b7fd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module except the ones passed in mask.  <br /></td></tr>
-<tr class="separator:gafde58e928ce53dd054a7f33500b7fd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">sACN version numbers</h2></td></tr>
 <tr class="memitem:ga3b04b863e88d1bae02133dfb19667e06" id="r_ga3b04b863e88d1bae02133dfb19667e06"><td class="memItemLeft" align="right" valign="top"><a id="ga3b04b863e88d1bae02133dfb19667e06" name="ga3b04b863e88d1bae02133dfb19667e06"></a>
@@ -364,17 +364,17 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 <tr class="memdesc:gae1d8849ebfa2d27cec433e54f7f7308d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The patch version. <br /></td></tr>
 <tr class="separator:gae1d8849ebfa2d27cec433e54f7f7308d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab22648c510945c218b806ad28e1e9a86" id="r_gab22648c510945c218b806ad28e1e9a86"><td class="memItemLeft" align="right" valign="top"><a id="gab22648c510945c218b806ad28e1e9a86" name="gab22648c510945c218b806ad28e1e9a86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_BUILD</b>&#160;&#160;&#160;1</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_BUILD</b>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:gab22648c510945c218b806ad28e1e9a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The build number. <br /></td></tr>
 <tr class="separator:gab22648c510945c218b806ad28e1e9a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">sACN version strings</h2></td></tr>
 <tr class="memitem:ga2ff6980847182dc1ac56ee3660e0a360" id="r_ga2ff6980847182dc1ac56ee3660e0a360"><td class="memItemLeft" align="right" valign="top"><a id="ga2ff6980847182dc1ac56ee3660e0a360" name="ga2ff6980847182dc1ac56ee3660e0a360"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_STRING</b>&#160;&#160;&#160;&quot;4.0.0.1&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_STRING</b>&#160;&#160;&#160;&quot;4.0.0.2&quot;</td></tr>
 <tr class="memdesc:ga2ff6980847182dc1ac56ee3660e0a360"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 4-digit version string. <br /></td></tr>
 <tr class="separator:ga2ff6980847182dc1ac56ee3660e0a360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99a95e107267c6f80cc2195f86c11586" id="r_ga99a95e107267c6f80cc2195f86c11586"><td class="memItemLeft" align="right" valign="top"><a id="ga99a95e107267c6f80cc2195f86c11586" name="ga99a95e107267c6f80cc2195f86c11586"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;16.Sep.2024&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;06.Nov.2024&quot;</td></tr>
 <tr class="memdesc:ga99a95e107267c6f80cc2195f86c11586"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date this version was released (dd.Mm.yyyy). <br /></td></tr>
 <tr class="separator:ga99a95e107267c6f80cc2195f86c11586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fd2e6c86426807d2eb598c67121723b" id="r_ga5fd2e6c86426807d2eb598c67121723b"><td class="memItemLeft" align="right" valign="top"><a id="ga5fd2e6c86426807d2eb598c67121723b" name="ga5fd2e6c86426807d2eb598c67121723b"></a>
@@ -389,32 +389,6 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>sACN: A Streaming ACN (sACN) implementation. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gafde58e928ce53dd054a7f33500b7fd7e" name="gafde58e928ce53dd054a7f33500b7fd7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafde58e928ce53dd054a7f33500b7fd7e">&#9670;&#160;</a></span>SACN_FEATURES_ALL_BUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_FEATURES_ALL_BUT</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>mask</em></span></td><td>)</td>
-          <td>&#160;&#160;&#160;(((uint32_t)<a class="el" href="#gae332f970f84a53d07da154915f343042">SACN_FEATURES_ALL</a>) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Use every available module except the ones passed in mask. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mask</td><td>Mask of SACN_FEATURE_* macros to not include in the feature mask. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Resulting sACN feature mask to pass to <a class="el" href="#gaec646a837c28740657cff1bd9a1bc1b0" title="Initialize specific features of the sACN library.">sacn_init_features()</a>. </dd></dl>
-
-</div>
-</div>
 <a id="ga3ee0954838bc60d3e04d7a54692533fd" name="ga3ee0954838bc60d3e04d7a54692533fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3ee0954838bc60d3e04d7a54692533fd">&#9670;&#160;</a></span>SACN_NETINT_CONFIG_DEFAULT_INIT</h2>
 
@@ -556,9 +530,36 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
       </table>
 </div><div class="memdoc">
 
-<p>Deinitialize the sACN library. </p>
-<p>Set the sACN library back to an uninitialized state. Calls to other sACN API functions will fail until <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a> is called again.</p>
+<p>Deinitialize all features of the sACN library. </p>
+<p>Set all sACN library features back to an uninitialized state if deinit is called as many times as init for a given feature. Calls to deinitialized sACN API functions will fail until <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a> is called again for their feature(s).</p>
 <p>This function is not thread safe with respect to other sACN API functions. Make sure to join your threads that use the APIs before calling this. </p>
+
+</div>
+</div>
+<a id="ga6d36293cdea3c528989a96221147b6ab" name="ga6d36293cdea3c528989a96221147b6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d36293cdea3c528989a96221147b6ab">&#9670;&#160;</a></span>sacn_deinit_features()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sacn_deinit_features </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a></td>          <td class="paramname"><span class="paramname"><em>features</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinitialize specific features of the sACN library. </p>
+<p>Set specific sACN library feature(s) back to an uninitialized state if deinit is called as many times as init for a given feature. Calls to deinitialized sACN API functions will fail until <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a> is called again for their feature(s).</p>
+<p>This function is not thread safe with respect to other sACN API functions. Make sure to join your threads that use the APIs before calling this.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">features</td><td>Mask of sACN features to deinitialize. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -647,6 +648,7 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 
 <p>Initialize all features of the sACN library. </p>
 <p>Do all necessary initialization before other sACN API functions can be called.</p>
+<p>Redundant initialization is permitted - the library tracks counters for each feature and expects deinit to be called the same number of times as init for each feature.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
@@ -655,8 +657,6 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
-<dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0">kEtcPalErrAlready</a>: Some features have already been initialized, please call with more specific features. </dd>
 <dd>
 <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>
@@ -690,6 +690,7 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 
 <p>Initialize specific features of the sACN library. </p>
 <p>Do all necessary initialization before other sACN API functions can be called.</p>
+<p>Redundant initialization of features is permitted - the library tracks counters for each feature and expects deinit to be called the same number of times as init for each feature.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
@@ -699,8 +700,6 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
-<dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0">kEtcPalErrAlready</a>: Some of the specified features have already been initialized, please call with more specific features. </dd>
 <dd>
 <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
 <dd>

@@ -12,7 +12,7 @@ var searchData=
   ['default_5fdelete_9',['default_delete',['https://en.cppreference.com/w/cpp/memory/default_delete.html',1,'std::default_delete']]],
   ['default_5ferror_5fcondition_10',['default_error_condition',['https://en.cppreference.com/w/cpp/error/error_code/default_error_condition.html',1,'std::error_code::default_error_condition()'],['https://en.cppreference.com/w/cpp/error/error_category/default_error_condition.html',1,'std::error_category::default_error_condition()']]],
   ['defaultfloat_11',['defaultfloat',['https://en.cppreference.com/w/cpp/io/manip/fixed.html',1,'std']]],
-  ['deinit_12',['Deinit',['../group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25',1,'sacn']]],
+  ['deinit_12',['Deinit',['../namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0',1,'sacn']]],
   ['denorm_5fmin_13',['denorm_min',['https://en.cppreference.com/w/cpp/types/numeric_limits/denorm_min.html',1,'std::numeric_limits']]],
   ['densities_14',['densities',['https://en.cppreference.com/w/cpp/numeric/random/piecewise_constant_distribution/params.html',1,'std::piecewise_constant_distribution::densities()'],['https://en.cppreference.com/w/cpp/numeric/random/piecewise_linear_distribution/params.html',1,'std::piecewise_linear_distribution::densities()']]],
   ['deque_15',['deque',['https://en.cppreference.com/w/cpp/container/deque/deque.html',1,'std::deque']]],

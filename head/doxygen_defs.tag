@@ -27,13 +27,6 @@
       <anchor>gae332f970f84a53d07da154915f343042</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_FEATURES_ALL_BUT</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>gafde58e928ce53dd054a7f33500b7fd7e</anchor>
-      <arglist>(mask)</arglist>
-    </member>
     <member kind="typedef">
       <type>uint16_t</type>
       <name>sacn_remote_source_t</name>
@@ -145,6 +138,13 @@
       <arglist>(void)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>sacn_deinit_features</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga6d36293cdea3c528989a96221147b6ab</anchor>
+      <arglist>(sacn_features_t features)</arglist>
+    </member>
+    <member kind="function">
       <type>sacn_remote_source_t</type>
       <name>sacn_get_remote_source_handle</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
@@ -178,13 +178,6 @@
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>gae332f970f84a53d07da154915f343042</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_FEATURES_ALL_BUT</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>gafde58e928ce53dd054a7f33500b7fd7e</anchor>
-      <arglist>(mask)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -3100,10 +3093,17 @@
     <name>SacnState</name>
     <filename>struct_sacn_state.html</filename>
     <member kind="variable">
-      <type>sacn_features_t</type>
-      <name>initted_features</name>
+      <type>int</type>
+      <name>dmx_merger_feature_init_count</name>
       <anchorfile>struct_sacn_state.html</anchorfile>
-      <anchor>a0eaf4ce69a3862fb985362da9f5647d4</anchor>
+      <anchor>ad8cd95447fdc087ab60572cd23553cc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>all_network_features_init_count</name>
+      <anchorfile>struct_sacn_state.html</anchorfile>
+      <anchor>a90685fec7dc6fd1d1d72e6f75159b9e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -3887,8 +3887,15 @@
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga546f1122dfe09ab6830371d258555b0a</anchor>
-      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gad513ef45e72b68724eb537c7aea2d51e</anchor>
+      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal::Error</type>
+      <name>Init</name>
+      <anchorfile>group__sacn__cpp__common.html</anchorfile>
+      <anchor>ga18e8b87064c350afe22a73cd2bff50d1</anchor>
+      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
@@ -3915,15 +3922,22 @@
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
+      <anchor>ga40d77a7f7f3bdff90c37e3c839839991</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal::Error</type>
+      <name>Init</name>
+      <anchorfile>group__sacn__cpp__common.html</anchorfile>
       <anchor>ga2921efbe77836c7cc57daa0e8d5786db</anchor>
       <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Deinit</name>
-      <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
-      <arglist>()</arglist>
+      <anchorfile>namespacesacn.html</anchorfile>
+      <anchor>ab84155251ffc5444d077cfd32a2bcff0</anchor>
+      <arglist>(sacn_features_t features=SACN_FEATURES_ALL)</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
@@ -4091,6 +4105,13 @@
       <arglist>(void)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>sacn_deinit_features</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga6d36293cdea3c528989a96221147b6ab</anchor>
+      <arglist>(sacn_features_t features)</arglist>
+    </member>
+    <member kind="function">
       <type>sacn_remote_source_t</type>
       <name>sacn_get_remote_source_handle</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
@@ -4124,13 +4145,6 @@
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>gae332f970f84a53d07da154915f343042</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SACN_FEATURES_ALL_BUT</name>
-      <anchorfile>group__s_a_c_n.html</anchorfile>
-      <anchor>gafde58e928ce53dd054a7f33500b7fd7e</anchor>
-      <arglist>(mask)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -5452,8 +5466,15 @@
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga546f1122dfe09ab6830371d258555b0a</anchor>
-      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gad513ef45e72b68724eb537c7aea2d51e</anchor>
+      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal::Error</type>
+      <name>sacn::Init</name>
+      <anchorfile>group__sacn__cpp__common.html</anchorfile>
+      <anchor>ga18e8b87064c350afe22a73cd2bff50d1</anchor>
+      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
@@ -5480,15 +5501,15 @@
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga2921efbe77836c7cc57daa0e8d5786db</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga40d77a7f7f3bdff90c37e3c839839991</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>sacn::Deinit</name>
+      <type>etcpal::Error</type>
+      <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga7c27553e8de8ffb78e3627f51fe9eb25</anchor>
-      <arglist>()</arglist>
+      <anchor>ga2921efbe77836c7cc57daa0e8d5786db</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
@@ -5554,20 +5575,20 @@
     <filename>additional_documentation.html</filename>
     <subpage>source_loss_behavior.html</subpage>
     <subpage>per_address_priority.html</subpage>
-    <docanchor file="additional_documentation.html" title="/tmp/tmpl9w7ym_1/docs/pages/additional_documentation.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2additional__documentation</docanchor>
+    <docanchor file="additional_documentation.html" title="/tmp/tmpws5tdbw3/docs/pages/additional_documentation.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2additional__documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
     <subpage>configuring_lwip.html</subpage>
-    <docanchor file="building_and_integrating.html" title="/tmp/tmpl9w7ym_1/docs/pages/building_and_integrating.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2building__and__integrating</docanchor>
+    <docanchor file="building_and_integrating.html" title="/tmp/tmpws5tdbw3/docs/pages/building_and_integrating.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2building__and__integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html" title="/tmp/tmpl9w7ym_1/docs/pages/configuring_lwip.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2configuring__lwip</docanchor>
+    <docanchor file="configuring_lwip.html" title="/tmp/tmpws5tdbw3/docs/pages/configuring_lwip.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2configuring__lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
@@ -5579,49 +5600,49 @@
     <subpage>using_merge_receiver.html</subpage>
     <subpage>using_receiver.html</subpage>
     <subpage>using_dmx_merger.html</subpage>
-    <docanchor file="getting_started.html" title="/tmp/tmpl9w7ym_1/docs/pages/getting_started.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2getting__started</docanchor>
+    <docanchor file="getting_started.html" title="/tmp/tmpws5tdbw3/docs/pages/getting_started.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2getting__started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html" title="/tmp/tmpl9w7ym_1/docs/pages/global_init_and_destroy.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2global__init__and__destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html" title="/tmp/tmpws5tdbw3/docs/pages/global_init_and_destroy.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2global__init__and__destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html" title="/tmp/tmpl9w7ym_1/docs/pages/per_address_priority.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2per__address__priority</docanchor>
+    <docanchor file="per_address_priority.html" title="/tmp/tmpws5tdbw3/docs/pages/per_address_priority.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2per__address__priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html" title="/tmp/tmpl9w7ym_1/docs/pages/source_loss_behavior.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2source__loss__behavior</docanchor>
+    <docanchor file="source_loss_behavior.html" title="/tmp/tmpws5tdbw3/docs/pages/source_loss_behavior.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2source__loss__behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html" title="/tmp/tmpl9w7ym_1/docs/pages/using_dmx_merger.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2using__dmx__merger</docanchor>
+    <docanchor file="using_dmx_merger.html" title="/tmp/tmpws5tdbw3/docs/pages/using_dmx_merger.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2using__dmx__merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html" title="/tmp/tmpl9w7ym_1/docs/pages/using_merge_receiver.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2using__merge__receiver</docanchor>
+    <docanchor file="using_merge_receiver.html" title="/tmp/tmpws5tdbw3/docs/pages/using_merge_receiver.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2using__merge__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html" title="/tmp/tmpl9w7ym_1/docs/pages/using_receiver.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2using__receiver</docanchor>
+    <docanchor file="using_receiver.html" title="/tmp/tmpws5tdbw3/docs/pages/using_receiver.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2using__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html" title="/tmp/tmpl9w7ym_1/docs/pages/using_source.md">md__2tmp_2tmpl9w7ym__1_2docs_2pages_2using__source</docanchor>
+    <docanchor file="using_source.html" title="/tmp/tmpws5tdbw3/docs/pages/using_source.md">md__2tmp_2tmpws5tdbw3_2docs_2pages_2using__source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

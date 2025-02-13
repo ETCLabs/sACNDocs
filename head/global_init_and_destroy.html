@@ -216,7 +216,7 @@ $(function(){initNavTree('global_init_and_destroy.html',''); initResizable(true)
   <div class="headertitle"><div class="title">Global Initialization and Destruction</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpl9w7ym__1_2docs_2pages_2global__init__and__destroy"></a> The sACN library has overall init and deinit functions that should be called once each at application startup and shutdown time. These functions interface with the EtcPal <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html">log (Logging)</a> API to configure what happens when the sACN library logs messages. Optionally pass an <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> structure to use this functionality. This structure can be shared across different ETC library modules.</p>
+<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpws5tdbw3_2docs_2pages_2global__init__and__destroy"></a> The sACN library has overall init and deinit functions that should be called once each at application startup and shutdown time. These functions interface with the EtcPal <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html">log (Logging)</a> API to configure what happens when the sACN library logs messages. Optionally pass an <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> structure to use this functionality. This structure can be shared across different ETC library modules.</p>
 <p> 
 <div class="code-tab-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectLanguage(event, '1', 'c')">C</button>
@@ -235,8 +235,8 @@ $(function(){initNavTree('global_init_and_destroy.html',''); initResizable(true)
 <div class="line"><span class="comment">// During shutdown:</span></div>
 <div class="line"><a class="code hl_function" href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a>();</div>
 <div class="ttc" id="agroup__etcpal__log_html_ga24911b91f9e4d5043348096a3065cd41"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html#ga24911b91f9e4d5043348096a3065cd41">ETCPAL_LOG_PARAMS_INIT</a></div><div class="ttdeci">#define ETCPAL_LOG_PARAMS_INIT</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga612160fe1d0f1e4f1fae4d72232fee07"><div class="ttname"><a href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a></div><div class="ttdeci">etcpal_error_t sacn_init(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Initialize all features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:81</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:310</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga612160fe1d0f1e4f1fae4d72232fee07"><div class="ttname"><a href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a></div><div class="ttdeci">etcpal_error_t sacn_init(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config)</div><div class="ttdoc">Initialize all features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:80</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga7b80ebcafe9eb3240a67785377872f9a"><div class="ttname"><a href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a></div><div class="ttdeci">void sacn_deinit(void)</div><div class="ttdoc">Deinitialize all features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:329</div></div>
 <div class="ttc" id="astruct_etc_pal_log_params_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a></div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -251,14 +251,14 @@ $(function(){initNavTree('global_init_and_destroy.html',''); initResizable(true)
 <div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a>();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// During shutdown:</span></div>
-<div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">sacn::Deinit</a>();</div>
+<div class="line"><a class="code hl_function" href="namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0">sacn::Deinit</a>();</div>
 <div class="ttc" id="aclassetcpal_1_1_logger_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a></div></div>
-<div class="ttc" id="agroup__sacn__cpp__common_html_ga372690d8ee9226793808787d4b03c345"><div class="ttname"><a href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a></div><div class="ttdeci">etcpal::Error Init(sacn_features_t features=SACN_FEATURES_ALL)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:84</div></div>
-<div class="ttc" id="agroup__sacn__cpp__common_html_ga7c27553e8de8ffb78e3627f51fe9eb25"><div class="ttname"><a href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">sacn::Deinit</a></div><div class="ttdeci">void Deinit()</div><div class="ttdoc">Deinitialize the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:230</div></div>
+<div class="ttc" id="agroup__sacn__cpp__common_html_ga372690d8ee9226793808787d4b03c345"><div class="ttname"><a href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a></div><div class="ttdeci">etcpal::Error Init(sacn_features_t features=SACN_FEATURES_ALL)</div><div class="ttdoc">Initialize the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:86</div></div>
+<div class="ttc" id="anamespacesacn_html_ab84155251ffc5444d077cfd32a2bcff0"><div class="ttname"><a href="namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0">sacn::Deinit</a></div><div class="ttdeci">void Deinit(sacn_features_t features=SACN_FEATURES_ALL)</div><div class="ttdoc">Deinitialize features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:299</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
-<p>Individual features can also be initialized separately:</p>
+<p>Individual features can also be initialized separately. The rest can then be initialized separately, since redundant initialization is handled to allow cases such as the following:</p>
 <p> 
 <div class="code-tab-selector">
   <button id="button_2_c" class="code-tab-links" onclick="selectLanguage(event, '2', 'c')">C</button>
@@ -268,28 +268,35 @@ $(function(){initNavTree('global_init_and_destroy.html',''); initResizable(true)
 </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0">sacn_init_features</a>(NULL, NULL, <a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Later on...</span></div>
-<div class="line"><a class="code hl_function" href="group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0">sacn_init_features</a>(NULL, NULL, <a class="code hl_define" href="group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e">SACN_FEATURES_ALL_BUT</a>(<a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>));</div>
+<div class="line"><span class="comment">// Later on, initialize everything else</span></div>
+<div class="line"><a class="code hl_function" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a>(NULL, NULL);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// During shutdown (all featured get deinitialized):</span></div>
+<div class="line"><span class="comment">// During shutdown (redundant init tracking keeps DMX merger alive):</span></div>
 <div class="line"><a class="code hl_function" href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Then clean up DMX merger</span></div>
+<div class="line"><a class="code hl_function" href="group__s_a_c_n.html#ga6d36293cdea3c528989a96221147b6ab">sacn_deinit_features</a>(<a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>);</div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga6d36293cdea3c528989a96221147b6ab"><div class="ttname"><a href="group__s_a_c_n.html#ga6d36293cdea3c528989a96221147b6ab">sacn_deinit_features</a></div><div class="ttdeci">void sacn_deinit_features(sacn_features_t features)</div><div class="ttdoc">Deinitialize specific features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:346</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_gab5f7ac205d84be7fdb324945a10f853c"><div class="ttname"><a href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a></div><div class="ttdeci">#define SACN_FEATURE_DMX_MERGER</div><div class="ttdoc">Use the sacn/dmx_merger module.</div><div class="ttdef"><b>Definition</b> common.h:140</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_gaec646a837c28740657cff1bd9a1bc1b0"><div class="ttname"><a href="group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0">sacn_init_features</a></div><div class="ttdeci">etcpal_error_t sacn_init_features(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, sacn_features_t features)</div><div class="ttdoc">Initialize specific features of the sACN library.</div><div class="ttdef"><b>Definition</b> common.c:103</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_gafde58e928ce53dd054a7f33500b7fd7e"><div class="ttname"><a href="group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e">SACN_FEATURES_ALL_BUT</a></div><div class="ttdeci">#define SACN_FEATURES_ALL_BUT(mask)</div><div class="ttdoc">Use every available module except the ones passed in mask.</div><div class="ttdef"><b>Definition</b> common.h:148</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a>(<a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Later on...</span></div>
-<div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a>(<a class="code hl_define" href="group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e">SACN_FEATURES_ALL_BUT</a>(<a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>));</div>
+<div class="line"><span class="comment">// Later on, initialize everything else</span></div>
+<div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga372690d8ee9226793808787d4b03c345">sacn::Init</a>();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// During shutdown (all featured get deinitialized):</span></div>
-<div class="line"><a class="code hl_function" href="group__sacn__cpp__common.html#ga7c27553e8de8ffb78e3627f51fe9eb25">sacn::Deinit</a>();</div>
+<div class="line"><span class="comment">// During shutdown (redundant init tracking keeps DMX merger alive):</span></div>
+<div class="line"><a class="code hl_function" href="namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0">sacn::Deinit</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Then clean up DMX merger</span></div>
+<div class="line"><a class="code hl_function" href="namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0">sacn::Deinit</a>(<a class="code hl_define" href="group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c">SACN_FEATURE_DMX_MERGER</a>);</div>
 </div><!-- fragment --><p> 
 </div>
- </p>
+</p>
+<p>You could also flip the init or deinit calls - order doesn't matter here (beyond calling init before deinit of course). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

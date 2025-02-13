@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"struct_sacn_merge_receiver_source.html#af12e72d2ef537e8f12b44ebb742817bd":[4,0,1,4,2],
+"struct_sacn_netint_config.html":[4,0,7],
+"struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01":[4,0,7,0],
 "struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7":[4,0,7,2],
 "struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1":[4,0,7,1],
 "struct_sacn_receiver_callbacks.html":[4,0,3,4],
@@ -78,8 +81,9 @@ var NAVTREEINDEX2 =
 "struct_sacn_source_universe_netint_list.html#ac248aac8d75991856c97619f71736661":[4,0,4,2,4],
 "struct_sacn_source_universe_netint_list.html#ac85b7eb6e9c67dca356034d84e2cd935":[4,0,4,2,2],
 "struct_sacn_state.html":[6,0,22],
-"struct_sacn_state.html#a0eaf4ce69a3862fb985362da9f5647d4":[6,0,22,0],
-"struct_sacn_state.html#af407733c50c5633e0806ae707136601a":[6,0,22,1],
+"struct_sacn_state.html#a90685fec7dc6fd1d1d72e6f75159b9e1":[6,0,22,0],
+"struct_sacn_state.html#ad8cd95447fdc087ab60572cd23553cc7":[6,0,22,1],
+"struct_sacn_state.html#af407733c50c5633e0806ae707136601a":[6,0,22,2],
 "structsacn_1_1_dmx_merger_1_1_settings.html":[4,1,1,1],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a1ecb3741f2345bcec2d18eea5b58f3d6":[4,1,1,1,5],
 "structsacn_1_1_dmx_merger_1_1_settings.html#a2673a7cd5a594d068c3948d67091ebff":[4,1,1,1,2],

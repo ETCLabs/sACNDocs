@@ -252,7 +252,7 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">sACN feature masks</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Pass one or more of these to <a class="el" href="group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0" title="Initialize specific features of the sACN library.">sacn_init_features()</a> to initialize the relevant sACN feature.</p>
 <p>Multiple features can be requested using logical OR.</p>
-<p>Currently the DMX merger is the only feature that can be initialized individually. All other APIs can later be initialized with <a class="el" href="group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e" title="Use every available module except the ones passed in mask.">SACN_FEATURES_ALL_BUT(SACN_FEATURE_DMX_MERGER)</a>. Consequently, SACN_FEATURES_ALL (used by <a class="el" href="group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a>) represents all APIs regardless if they have an individual feature defined for them. </p>
+<p>Currently the DMX merger is the only feature that can be initialized individually. All other APIs can later be initialized with SACN_FEATURES_ALL, which represents all APIs regardless if they have an individual feature defined for them. Redundant initialization will ensure the same feature isn't initialized twice. </p>
 </div></td></tr>
 <tr class="memitem:gab5f7ac205d84be7fdb324945a10f853c" id="r_gab5f7ac205d84be7fdb324945a10f853c"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_FEATURE_DMX_MERGER</b>&#160;&#160;&#160;((<a class="el" href="group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a>)(1u &lt;&lt; 0))</td></tr>
@@ -262,9 +262,6 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_FEATURES_ALL</b>&#160;&#160;&#160;0xffffffffu</td></tr>
 <tr class="memdesc:gae332f970f84a53d07da154915f343042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module. <br /></td></tr>
 <tr class="separator:gae332f970f84a53d07da154915f343042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafde58e928ce53dd054a7f33500b7fd7e" id="r_gafde58e928ce53dd054a7f33500b7fd7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#gafde58e928ce53dd054a7f33500b7fd7e">SACN_FEATURES_ALL_BUT</a>(mask)&#160;&#160;&#160;(((uint32_t)<a class="el" href="group__s_a_c_n.html#gae332f970f84a53d07da154915f343042">SACN_FEATURES_ALL</a>) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td></tr>
-<tr class="memdesc:gafde58e928ce53dd054a7f33500b7fd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module except the ones passed in mask.  <br /></td></tr>
-<tr class="separator:gafde58e928ce53dd054a7f33500b7fd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -319,8 +316,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaec646a837c28740657cff1bd9a1bc1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize specific features of the sACN library.  <br /></td></tr>
 <tr class="separator:gaec646a837c28740657cff1bd9a1bc1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b80ebcafe9eb3240a67785377872f9a" id="r_ga7b80ebcafe9eb3240a67785377872f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a> (void)</td></tr>
-<tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the sACN library.  <br /></td></tr>
+<tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize all features of the sACN library.  <br /></td></tr>
 <tr class="separator:ga7b80ebcafe9eb3240a67785377872f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d36293cdea3c528989a96221147b6ab" id="r_ga6d36293cdea3c528989a96221147b6ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga6d36293cdea3c528989a96221147b6ab">sacn_deinit_features</a> (<a class="el" href="group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a> features)</td></tr>
+<tr class="memdesc:ga6d36293cdea3c528989a96221147b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize specific features of the sACN library.  <br /></td></tr>
+<tr class="separator:ga6d36293cdea3c528989a96221147b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65d96208fc89676e2dea18d2ded31872" id="r_ga65d96208fc89676e2dea18d2ded31872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872">sacn_get_remote_source_handle</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *source_cid)</td></tr>
 <tr class="memdesc:ga65d96208fc89676e2dea18d2ded31872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a remote source CID to the corresponding handle, or <a class="el" href="group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1" title="An invalid remote source handle value.">kSacnRemoteSourceInvalid</a> if not found.  <br /></td></tr>
 <tr class="separator:ga65d96208fc89676e2dea18d2ded31872"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"group__sacn__dmx__merger.html#gac28b72fd6849cb6815c0ca58c2d29e65":[4,0,0,15],
+"group__sacn__dmx__merger.html#gac6ebd9581fb8c6170d4acf1c24681ad7":[4,0,0,13],
 "group__sacn__dmx__merger.html#gada109b5171e78bc858ab18a7c13931ee":[4,0,0,12],
 "group__sacn__dmx__merger.html#gadec6698442a5e939f922694d234f39b7":[4,0,0,18],
 "group__sacn__dmx__merger.html#gadf879eb673c0ffe91ade6bcc5af615c3":[4,0,0,8],
@@ -180,13 +182,14 @@ var NAVTREEINDEX1 =
 "namespacemembers_vars.html":[5,1,2],
 "namespaces.html":[5,0],
 "namespacesacn.html":[5,0,0],
-"namespacesacn.html#a3713d93556ad9b11143c46b43d24cd38":[5,0,0,16],
-"namespacesacn.html#aa2bbf6160fa3bd73d4363b5f90d8f4d9":[5,0,0,18],
+"namespacesacn.html#a3713d93556ad9b11143c46b43d24cd38":[5,0,0,18],
+"namespacesacn.html#aa2bbf6160fa3bd73d4363b5f90d8f4d9":[5,0,0,20],
+"namespacesacn.html#ab84155251ffc5444d077cfd32a2bcff0":[5,0,0,7],
 "namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d":[5,0,0,5],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381":[5,0,0,6],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381a42f053f48441c9286254c451c8bea6a2":[5,0,0,6,1],
 "namespacesacn.html#ad10de668b9a073fabe200d3f0830e381ad1989e9a06422a85d3d6d2ecf25a50cf":[5,0,0,6,0],
-"namespacesacn.html#adce321fd7b045c2e42731e4460a98b74":[5,0,0,17],
+"namespacesacn.html#adce321fd7b045c2e42731e4460a98b74":[5,0,0,19],
 "opts_8h.html":[7,0,0,0,4],
 "opts_8h_source.html":[7,0,0,0,4],
 "pages.html":[],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "struct_sacn_merge_receiver_source.html#a54cf0d326b280190f5064b929866fd81":[4,0,1,4,1],
 "struct_sacn_merge_receiver_source.html#a82cc6f297f880862da8578707963cbf3":[4,0,1,4,5],
 "struct_sacn_merge_receiver_source.html#a8ba4536981e1c7217264bfbcafeac33a":[4,0,1,4,0],
-"struct_sacn_merge_receiver_source.html#a9ab695a021c6b13ad7025fa12c011326":[4,0,1,4,4],
-"struct_sacn_merge_receiver_source.html#af12e72d2ef537e8f12b44ebb742817bd":[4,0,1,4,2],
-"struct_sacn_netint_config.html":[4,0,7],
-"struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01":[4,0,7,0]
+"struct_sacn_merge_receiver_source.html#a9ab695a021c6b13ad7025fa12c011326":[4,0,1,4,4]
 };

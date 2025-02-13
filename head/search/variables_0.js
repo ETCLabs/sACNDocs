@@ -12,6 +12,7 @@ var searchData=
   ['ai_5fflags_9',['ai_flags',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_addrinfo.html#a92528a848ebf34ab99687dd06a09cc93',1,'EtcPalAddrinfo']]],
   ['ai_5fprotocol_10',['ai_protocol',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_addrinfo.html#a6ade486587feaa03d492eb84cfc83451',1,'EtcPalAddrinfo']]],
   ['ai_5fsocktype_11',['ai_socktype',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_addrinfo.html#a2109130e73586150c41fed16311e1af6',1,'EtcPalAddrinfo']]],
-  ['alloc_5ff_12',['alloc_f',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b',1,'EtcPalRbTree']]],
-  ['app_5fname_13',['app_name',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]]
+  ['all_5fnetwork_5ffeatures_5finit_5fcount_12',['all_network_features_init_count',['../struct_sacn_state.html#a90685fec7dc6fd1d1d72e6f75159b9e1',1,'SacnState']]],
+  ['alloc_5ff_13',['alloc_f',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b',1,'EtcPalRbTree']]],
+  ['app_5fname_14',['app_name',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]]
 ];
