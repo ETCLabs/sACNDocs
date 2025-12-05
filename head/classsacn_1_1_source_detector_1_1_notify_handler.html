@@ -239,10 +239,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac55a18510c5ca9956f1ad13e6689ba91" id="r_ac55a18510c5ca9956f1ad13e6689ba91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsacn_1_1_source_detector_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55a18510c5ca9956f1ad13e6689ba91">operator=</a> (<a class="el" href="classsacn_1_1_source_detector_1_1_notify_handler.html">NotifyHandler</a> &amp;&amp;other)=default</td></tr>
 <tr class="memdesc:ac55a18510c5ca9956f1ad13e6689ba91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaulted move assignment operator.  <br /></td></tr>
 <tr class="separator:ac55a18510c5ca9956f1ad13e6689ba91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64611b11dc9043b9515d08406cbadaf4" id="r_a64611b11dc9043b9515d08406cbadaf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64611b11dc9043b9515d08406cbadaf4">HandleSourceUpdated</a> (<a class="el" href="namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d">RemoteSourceHandle</a> handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint16_t &gt; &amp;sourced_universes)=0</td></tr>
+<tr class="memitem:a64611b11dc9043b9515d08406cbadaf4" id="r_a64611b11dc9043b9515d08406cbadaf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64611b11dc9043b9515d08406cbadaf4">HandleSourceUpdated</a> (<a class="el" href="namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d">RemoteSourceHandle</a> handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const std::string &amp;name, const std::vector&lt; uint16_t &gt; &amp;sourced_universes)=0</td></tr>
 <tr class="memdesc:a64611b11dc9043b9515d08406cbadaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a source is new or has changed.  <br /></td></tr>
 <tr class="separator:a64611b11dc9043b9515d08406cbadaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3238925be374f50fc934b280dbe460" id="r_aaa3238925be374f50fc934b280dbe460"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3238925be374f50fc934b280dbe460">HandleSourceExpired</a> (<a class="el" href="namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d">RemoteSourceHandle</a> handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name)=0</td></tr>
+<tr class="memitem:aaa3238925be374f50fc934b280dbe460" id="r_aaa3238925be374f50fc934b280dbe460"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3238925be374f50fc934b280dbe460">HandleSourceExpired</a> (<a class="el" href="namespacesacn.html#ad10087ddef7a9be3dd53c3a80087841d">RemoteSourceHandle</a> handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const std::string &amp;name)=0</td></tr>
 <tr class="memdesc:aaa3238925be374f50fc934b280dbe460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that a source is no longer transmitting Universe Discovery messages.  <br /></td></tr>
 <tr class="separator:aaa3238925be374f50fc934b280dbe460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f3fb4050b089dc12b344c009b960f0" id="r_a10f3fb4050b089dc12b344c009b960f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f3fb4050b089dc12b344c009b960f0">HandleMemoryLimitExceeded</a> ()</td></tr>
@@ -371,7 +371,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -415,12 +415,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint16_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sourced_universes</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; uint16_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sourced_universes</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

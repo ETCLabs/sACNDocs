@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4648c2333b3930898d972e8963a1c7f8" id="r_a4648c2333b3930898d972e8963a1c7f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4648c2333b3930898d972e8963a1c7f8">NetintList</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, <a class="el" href="namespacesacn.html#ad10de668b9a073fabe200d3f0830e381">McastMode</a> mcast_mode)</td></tr>
 <tr class="memdesc:a4648c2333b3930898d972e8963a1c7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Netint List instance by passing the required members explicitly.  <br /></td></tr>
 <tr class="separator:a4648c2333b3930898d972e8963a1c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3903a8f92c4803941b615a57f017154" id="r_af3903a8f92c4803941b615a57f017154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3903a8f92c4803941b615a57f017154">NetintList</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt; &amp;network_interfaces)</td></tr>
+<tr class="memitem:af3903a8f92c4803941b615a57f017154" id="r_af3903a8f92c4803941b615a57f017154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3903a8f92c4803941b615a57f017154">NetintList</a> (<a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a> receiver_handle, const std::vector&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt; &amp;network_interfaces)</td></tr>
 <tr class="memdesc:af3903a8f92c4803941b615a57f017154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Netint List instance by passing the required members explicitly.  <br /></td></tr>
 <tr class="separator:af3903a8f92c4803941b615a57f017154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -245,7 +245,7 @@ Public Attributes</h2></td></tr>
 <a class="el" href="group__sacn__receiver.html#gafc1e3c92911f567bed81bbd04f3f34f6">sacn_receiver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> {<a class="el" href="group__sacn__receiver.html#ga94dc9e6fd4e4bb4010d8cf9f7e846954">kSacnReceiverInvalid</a>}</td></tr>
 <tr class="memdesc:a8af3ad05298339efd90ae62e1efaba0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The receiver's handle. <br /></td></tr>
 <tr class="separator:a8af3ad05298339efd90ae62e1efaba0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9b1aba453a8f78f5a65f3482178b5f" id="r_aec9b1aba453a8f78f5a65f3482178b5f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec9b1aba453a8f78f5a65f3482178b5f">netints</a></td></tr>
+<tr class="memitem:aec9b1aba453a8f78f5a65f3482178b5f" id="r_aec9b1aba453a8f78f5a65f3482178b5f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec9b1aba453a8f78f5a65f3482178b5f">netints</a></td></tr>
 <tr class="memdesc:aec9b1aba453a8f78f5a65f3482178b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If !empty, this is the list of interfaces the application wants to use, and the status codes are filled in.  <br /></td></tr>
 <tr class="separator:aec9b1aba453a8f78f5a65f3482178b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da73ec718c23289ab2652aecc82c9a9" id="r_a5da73ec718c23289ab2652aecc82c9a9"><td class="memItemLeft" align="right" valign="top"><a id="a5da73ec718c23289ab2652aecc82c9a9" name="a5da73ec718c23289ab2652aecc82c9a9"></a>
@@ -305,7 +305,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>no_netints</b> {false
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>network_interfaces</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>network_interfaces</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -328,7 +328,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>no_netints</b> {false
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a>&gt; sacn::Receiver::NetintList::netints</td>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a>&gt; sacn::Receiver::NetintList::netints</td>
         </tr>
       </table>
 </div><div class="memdoc">

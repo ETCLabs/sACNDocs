@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['has_5fvirtual_5fdestructor_0',['has_virtual_destructor',['https://en.cppreference.com/w/cpp/types/has_virtual_destructor.html',1,'std']]],
-  ['hash_1',['hash',['https://en.cppreference.com/w/cpp/utility/hash.html',1,'std']]],
-  ['hecto_2',['hecto',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
-  ['high_5fresolution_5fclock_3',['high_resolution_clock',['https://en.cppreference.com/w/cpp/chrono/high_resolution_clock.html',1,'std::chrono']]],
-  ['hours_4',['hours',['https://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono']]]
+  ['netintinfo_0',['NetintInfo',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_netint_info.html',1,'etcpal']]],
+  ['netintlist_1',['NetintList',['../structsacn_1_1_merge_receiver_1_1_netint_list.html',1,'sacn::MergeReceiver::NetintList'],['../structsacn_1_1_receiver_1_1_netint_list.html',1,'sacn::Receiver::NetintList']]],
+  ['notifyhandler_2',['NotifyHandler',['../classsacn_1_1_merge_receiver_1_1_notify_handler.html',1,'sacn::MergeReceiver::NotifyHandler'],['../classsacn_1_1_receiver_1_1_notify_handler.html',1,'sacn::Receiver::NotifyHandler'],['../classsacn_1_1_source_detector_1_1_notify_handler.html',1,'sacn::SourceDetector::NotifyHandler']]]
 ];

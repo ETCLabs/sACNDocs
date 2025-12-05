@@ -237,8 +237,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga78fbb7639c835e3b08091fc16e31d6fc" id="r_ga78fbb7639c835e3b08091fc16e31d6fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga78fbb7639c835e3b08091fc16e31d6fc">SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</a></td></tr>
-<tr class="memdesc:ga78fbb7639c835e3b08091fc16e31d6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_sacn_source_detector_config.html" title="A set of configuration information for the sACN Source Detector.">SacnSourceDetectorConfig</a> struct.  <br /></td></tr>
+<tr class="memitem:ga78fbb7639c835e3b08091fc16e31d6fc" id="r_ga78fbb7639c835e3b08091fc16e31d6fc"><td class="memItemLeft" align="right" valign="top"><a id="ga78fbb7639c835e3b08091fc16e31d6fc" name="ga78fbb7639c835e3b08091fc16e31d6fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</b>&#160;&#160;&#160;  {{NULL, NULL, NULL, NULL}, <a class="el" href="#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="el" href="#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="el" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>}</td></tr>
+<tr class="memdesc:ga78fbb7639c835e3b08091fc16e31d6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_sacn_source_detector_config.html" title="A set of configuration information for the sACN Source Detector.">SacnSourceDetectorConfig</a> struct. <br /></td></tr>
 <tr class="separator:ga78fbb7639c835e3b08091fc16e31d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -375,42 +376,19 @@ Functions</h2></td></tr>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">char</span> cid_str[<a class="code hl_defineRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">    <a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(cid, cid_str);</div>
-<div class="line">    <a class="code hl_functionRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) has expired.\n&quot;</span>, cid_str, name);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Source Detector: Source %s (name %s) has expired.\n&quot;</span>, cid_str, name);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> my_limit_exceeded(<span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
-<div class="line">  <a class="code hl_functionRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Source Detector: Source/universe limit exceeded!\n&quot;</span>);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Source Detector: Source/universe limit exceeded!\n&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_ga479b00b02ab33cf757e9476ad3286336"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a></div><div class="ttdeci">bool etcpal_uuid_to_string(const EtcPalUuid *uuid, char *buf)</div></div>
 <div class="ttc" id="agroup__etcpal__uuid_html_gabab14207e273082491f7be2a21275092"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_UUID_STRING_BYTES</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_ga31b1febd91134668307803d573ed2f2c"><div class="ttname"><a href="group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c">sacn_remote_source_t</a></div><div class="ttdeci">uint16_t sacn_remote_source_t</div><div class="ttdoc">A source discovered on an sACN network that has a CID - used by Receiver and Merge Receiver.</div><div class="ttdef"><b>Definition</b> common.h:46</div></div>
 <div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
-</div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga78fbb7639c835e3b08091fc16e31d6fc" name="ga78fbb7639c835e3b08091fc16e31d6fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga78fbb7639c835e3b08091fc16e31d6fc">&#9670;&#160;</a></span>SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_DETECTOR_CONFIG_DEFAULT_INIT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                      \</div>
-<div class="line">    {NULL, NULL, NULL, NULL}, <a class="code hl_enumvalue" href="#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="code hl_enumvalue" href="#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a>, <a class="code hl_enumvalue" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a> \</div>
-<div class="line">  }</div>
-<div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdoc">Use both IPv4 and IPv6.</div><div class="ttdef"><b>Definition</b> common.h:80</div></div>
-<div class="ttc" id="agroup__sacn__source__detector_html_ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76"><div class="ttname"><a href="#ggadc29c2ff13d900c2f185ee95427fb06ca632c9858f854b2a33668f6c9c532cc76">kSacnSourceDetectorInfinite</a></div><div class="ttdeci">@ kSacnSourceDetectorInfinite</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening for sources or universes on a source.</div><div class="ttdef"><b>Definition</b> source_detector.h:148</div></div>
-</div><!-- fragment -->
-<p>A default-value initializer for an <a class="el" href="struct_sacn_source_detector_config.html" title="A set of configuration information for the sACN Source Detector.">SacnSourceDetectorConfig</a> struct. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+</div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gadb2603e053f842705b654047e99c0096" name="gadb2603e053f842705b654047e99c0096"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadb2603e053f842705b654047e99c0096">&#9670;&#160;</a></span>SacnSourceDetectorLimitExceededCallback</h2>
 

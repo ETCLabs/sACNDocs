@@ -244,8 +244,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga1fc88ea9a51c4a935ec87630a0b177f1" id="r_ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1fc88ea9a51c4a935ec87630a0b177f1">SACN_SOURCE_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="memdesc:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_sacn_source_config.html" title="A set of configuration information for a sACN source.">SacnSourceConfig</a> struct.  <br /></td></tr>
 <tr class="separator:ga1fc88ea9a51c4a935ec87630a0b177f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20483046bfb90da7c9bf089fc0229a6b" id="r_ga20483046bfb90da7c9bf089fc0229a6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></td></tr>
-<tr class="memdesc:ga20483046bfb90da7c9bf089fc0229a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_sacn_source_universe_config.html" title="A set of configuration information for a sACN universe.">SacnSourceUniverseConfig</a> struct.  <br /></td></tr>
+<tr class="memitem:ga20483046bfb90da7c9bf089fc0229a6b" id="r_ga20483046bfb90da7c9bf089fc0229a6b"><td class="memItemLeft" align="right" valign="top"><a id="ga20483046bfb90da7c9bf089fc0229a6b" name="ga20483046bfb90da7c9bf089fc0229a6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</b>&#160;&#160;&#160;{0, 100, false, false, NULL, 0, 0}</td></tr>
+<tr class="memdesc:ga20483046bfb90da7c9bf089fc0229a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_sacn_source_universe_config.html" title="A set of configuration information for a sACN universe.">SacnSourceUniverseConfig</a> struct. <br /></td></tr>
 <tr class="separator:ga20483046bfb90da7c9bf089fc0229a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -387,10 +388,13 @@ static const <a class="el" href="#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_sourc
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                                    \</div>
-<div class="line">    <a class="code hl_variableRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e">kEtcPalNullUuid</a>, NULL, <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a>, <span class="keyword">false</span>, <a class="code hl_enumvalue" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>, <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a>, \</div>
-<div class="line">        <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559">kSacnSourcePapKeepAliveIntervalDefault</a>                                                                         \</div>
-<div class="line">  }</div>
+<b>Value:</b><div class="fragment"><div class="line">  {<a class="code hl_variableRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e">kEtcPalNullUuid</a>,                     \</div>
+<div class="line">   NULL,                                \</div>
+<div class="line">   <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a>,        \</div>
+<div class="line">   <span class="keyword">false</span>,                               \</div>
+<div class="line">   <a class="code hl_enumvalue" href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a>,                    \</div>
+<div class="line">   <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a>, \</div>
+<div class="line">   <a class="code hl_enumvalue" href="#ggabc6126af1d45847bc59afa0aa3216b04a3d8b5825700aaa2aac27b3318a396559">kSacnSourcePapKeepAliveIntervalDefault</a>}</div>
 <div class="ttc" id="agroup__etcpal__uuid_html_gae518c32bbc7d2266568ee9a703bb4f5e"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e">kEtcPalNullUuid</a></div><div class="ttdeci">const EtcPalUuid kEtcPalNullUuid</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdoc">Use both IPv4 and IPv6.</div><div class="ttdef"><b>Definition</b> common.h:80</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2"><div class="ttname"><a href="#ggabc6126af1d45847bc59afa0aa3216b04a23247b3eca4c5af802c11d08e939f1d2">kSacnSourceKeepAliveIntervalDefault</a></div><div class="ttdeci">@ kSacnSourceKeepAliveIntervalDefault</div><div class="ttdoc">The default NULL start code keep-alive interval for sources, in milliseconds.</div><div class="ttdef"><b>Definition</b> source.h:70</div></div>
@@ -398,25 +402,6 @@ static const <a class="el" href="#gacc4c9d2c77cf4126e9ac7faf297c3dd8">sacn_sourc
 <div class="ttc" id="agroup__sacn__source_html_ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f"><div class="ttname"><a href="#ggabc6126af1d45847bc59afa0aa3216b04ac4d813b3853440a6457b40222c23616f">kSacnSourceInfiniteUniverses</a></div><div class="ttdeci">@ kSacnSourceInfiniteUniverses</div><div class="ttdoc">Constant for &quot;infinite&quot; when sending sACN universes.</div><div class="ttdef"><b>Definition</b> source.h:68</div></div>
 </div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_sacn_source_config.html" title="A set of configuration information for a sACN source.">SacnSourceConfig</a> struct. </p>
-
-</div>
-</div>
-<a id="ga20483046bfb90da7c9bf089fc0229a6b" name="ga20483046bfb90da7c9bf089fc0229a6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20483046bfb90da7c9bf089fc0229a6b">&#9670;&#160;</a></span>SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                              \</div>
-<div class="line">    0, 100, <span class="keyword">false</span>, <span class="keyword">false</span>, NULL, 0, 0             \</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-<p>A default-value initializer for an <a class="el" href="struct_sacn_source_universe_config.html" title="A set of configuration information for a sACN universe.">SacnSourceUniverseConfig</a> struct. </p>
 
 </div>
 </div>

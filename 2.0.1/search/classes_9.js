@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jmp_5fbuf_0',['jmp_buf',['https://en.cppreference.com/w/cpp/utility/program/jmp_buf.html',1,'std']]]
+  ['queue_0',['Queue',['https://etclabs.github.io/EtcPalDocs/0.4.1/classetcpal_1_1_queue.html',1,'etcpal']]]
 ];

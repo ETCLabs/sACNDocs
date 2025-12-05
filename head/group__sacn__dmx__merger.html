@@ -237,7 +237,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga7431ab2baf3af7e0d1999355c6bcc9d7" id="r_ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a></td></tr>
+<tr class="memitem:ga7431ab2baf3af7e0d1999355c6bcc9d7" id="r_ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a>&#160;&#160;&#160;{NULL, NULL, NULL, NULL, NULL, <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td></tr>
 <tr class="memdesc:ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An initializer for an <a class="el" href="struct_sacn_dmx_merger_config.html" title="A set of configuration information for a merger instance.">SacnDmxMergerConfig</a> struct.  <br /></td></tr>
 <tr class="separator:ga7431ab2baf3af7e0d1999355c6bcc9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec4962a6c5655b357d4c81dc9e7a7b86" id="r_gaec4962a6c5655b357d4c81dc9e7a7b86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaec4962a6c5655b357d4c81dc9e7a7b86">SACN_DMX_MERGER_SOURCE_IS_VALID</a>(owners_array,  slot_index)&#160;&#160;&#160;  (owners_array[slot_index] != <a class="el" href="#gadec6698442a5e939f922694d234f39b7">kSacnDmxMergerSourceInvalid</a>)</td></tr>
@@ -319,15 +319,11 @@ static const <a class="el" href="#ga6c4761eedeaaf635ac495265849c07f2">sacn_dmx_m
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SACN_DMX_MERGER_CONFIG_INIT</td>
+          <td class="memname">#define SACN_DMX_MERGER_CONFIG_INIT&#160;&#160;&#160;{NULL, NULL, NULL, NULL, NULL, <a class="el" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                            \</div>
-<div class="line">    NULL, NULL, NULL, NULL, NULL, <a class="code hl_enumvalue" href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a> \</div>
-<div class="line">  }</div>
-<div class="ttc" id="agroup__sacn__receiver_html_ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725"><div class="ttname"><a href="group__sacn__receiver.html#ggadf764cbdea00d65edcd07bb9953ad2b7a60d38fcbfc626495a5e87bc7fea5c725">kSacnReceiverInfiniteSources</a></div><div class="ttdeci">@ kSacnReceiverInfiniteSources</div><div class="ttdoc">Constant for &quot;infinite&quot; when listening or merging sACN universes.</div><div class="ttdef"><b>Definition</b> receiver.h:70</div></div>
-</div><!-- fragment -->
+
 <p>An initializer for an <a class="el" href="struct_sacn_dmx_merger_config.html" title="A set of configuration information for a merger instance.">SacnDmxMergerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// Create the struct</span></div>
 <div class="line"><a class="code hl_struct" href="struct_sacn_dmx_merger_config.html">SacnDmxMergerConfig</a> merger_config = <a class="code hl_define" href="#ga7431ab2baf3af7e0d1999355c6bcc9d7">SACN_DMX_MERGER_CONFIG_INIT</a>;</div>

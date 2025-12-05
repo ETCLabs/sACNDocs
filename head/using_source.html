@@ -216,7 +216,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Using the sACN Source API</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpa464srs2_2docs_2pages_2using__source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpdt9bljnd_2docs_2pages_2using__source"></a> The sACN Source API provides a method for applications to transmit sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -260,7 +260,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div id="div_2_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> my_cid;</div>
-<div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> my_name;</div>
+<div class="line">std::string my_name;</div>
 <div class="line"><span class="comment">// Assuming my_cid and my_name are initialized by the application...</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="structsacn_1_1_source_1_1_settings.html">sacn::Source::Settings</a> my_config(my_cid, my_name);</div>
@@ -270,7 +270,6 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the source when you&#39;re done with it:</span></div>
 <div class="line">my_source.<a class="code hl_function" href="classsacn_1_1_source.html#ab009191f100ac6809a29e1faca72276c">Shutdown</a>();</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html"><div class="ttname"><a href="classsacn_1_1_source.html">sacn::Source</a></div><div class="ttdoc">An instance of sACN Source functionality; see Using the sACN Source API.</div><div class="ttdef"><b>Definition</b> source.h:61</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a4c9530ab80f913d24dab58ce88cb284a"><div class="ttname"><a href="classsacn_1_1_source.html#a4c9530ab80f913d24dab58ce88cb284a">sacn::Source::Startup</a></div><div class="ttdeci">etcpal::Error Startup(const Settings &amp;settings)</div><div class="ttdoc">Create a new sACN source to send sACN data.</div><div class="ttdef"><b>Definition</b> source.h:329</div></div>
@@ -310,15 +309,15 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div class="line"><span class="comment">// To remove a universe from your source when you&#39;re done transmitting on it:</span></div>
 <div class="line"><a class="code hl_function" href="group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d">sacn_source_remove_universe</a>(my_handle, my_universe);</div>
 <div class="ttc" id="agroup__s_a_c_n_html_ga3ee0954838bc60d3e04d7a54692533fd"><div class="ttname"><a href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_NETINT_CONFIG_DEFAULT_INIT</div><div class="ttdoc">Initializes the members of a SacnNetintConfig to defaults.</div><div class="ttdef"><b>Definition</b> common.h:119</div></div>
-<div class="ttc" id="agroup__sacn__source_html_ga20483046bfb90da7c9bf089fc0229a6b"><div class="ttname"><a href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</div><div class="ttdoc">A default-value initializer for an SacnSourceUniverseConfig struct.</div><div class="ttdef"><b>Definition</b> source.h:164</div></div>
+<div class="ttc" id="agroup__sacn__source_html_ga20483046bfb90da7c9bf089fc0229a6b"><div class="ttname"><a href="group__sacn__source.html#ga20483046bfb90da7c9bf089fc0229a6b">SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SOURCE_UNIVERSE_CONFIG_DEFAULT_INIT</div><div class="ttdoc">A default-value initializer for an SacnSourceUniverseConfig struct.</div><div class="ttdef"><b>Definition</b> source.h:167</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga22a80913e48354c6da37a9fa11626261"><div class="ttname"><a href="group__sacn__source.html#ga22a80913e48354c6da37a9fa11626261">sacn_source_add_universe</a></div><div class="ttdeci">etcpal_error_t sacn_source_add_universe(sacn_source_t handle, const SacnSourceUniverseConfig *config, const SacnNetintConfig *netint_config)</div><div class="ttdoc">Add a universe to an sACN source.</div><div class="ttdef"><b>Definition</b> source.c:265</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga7f8233fae115142c2e2a9488faa12d5d"><div class="ttname"><a href="group__sacn__source.html#ga7f8233fae115142c2e2a9488faa12d5d">sacn_source_remove_universe</a></div><div class="ttdeci">void sacn_source_remove_universe(sacn_source_t handle, uint16_t universe)</div><div class="ttdoc">Remove a universe from a source.</div><div class="ttdef"><b>Definition</b> source.c:354</div></div>
 <div class="ttc" id="astruct_sacn_mcast_interface_html"><div class="ttname"><a href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></div><div class="ttdoc">On input, this structure is used to indicate a network interface to use.</div><div class="ttdef"><b>Definition</b> common.h:88</div></div>
 <div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdoc">Network interface configuration information to give the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:105</div></div>
 <div class="ttc" id="astruct_sacn_netint_config_html_a0276bddc07d78d431f2be9b9cfd03b01"><div class="ttname"><a href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdoc">An array of network interface IDs to which to restrict multicast traffic.</div><div class="ttdef"><b>Definition</b> common.h:108</div></div>
 <div class="ttc" id="astruct_sacn_netint_config_html_a4bff77059abfe25ae72a2dc8e7d3fbe7"><div class="ttname"><a href="struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdoc">Size of netints array.</div><div class="ttdef"><b>Definition</b> common.h:110</div></div>
-<div class="ttc" id="astruct_sacn_source_universe_config_html"><div class="ttname"><a href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a></div><div class="ttdoc">A set of configuration information for a sACN universe.</div><div class="ttdef"><b>Definition</b> source.h:132</div></div>
-<div class="ttc" id="astruct_sacn_source_universe_config_html_adafd5ecaf02a7eafaeab3b2e3d5c3598"><div class="ttname"><a href="struct_sacn_source_universe_config.html#adafd5ecaf02a7eafaeab3b2e3d5c3598">SacnSourceUniverseConfig::universe</a></div><div class="ttdeci">uint16_t universe</div><div class="ttdoc">The universe number.</div><div class="ttdef"><b>Definition</b> source.h:137</div></div>
+<div class="ttc" id="astruct_sacn_source_universe_config_html"><div class="ttname"><a href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a></div><div class="ttdoc">A set of configuration information for a sACN universe.</div><div class="ttdef"><b>Definition</b> source.h:135</div></div>
+<div class="ttc" id="astruct_sacn_source_universe_config_html_adafd5ecaf02a7eafaeab3b2e3d5c3598"><div class="ttname"><a href="struct_sacn_source_universe_config.html#adafd5ecaf02a7eafaeab3b2e3d5c3598">SacnSourceUniverseConfig::universe</a></div><div class="ttdeci">uint16_t universe</div><div class="ttdoc">The universe number.</div><div class="ttdef"><b>Definition</b> source.h:140</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_3_cpp" class="code-tab-content">
@@ -327,7 +326,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="structsacn_1_1_source_1_1_universe_settings.html">sacn::Source::UniverseSettings</a> my_universe_config(my_universe);</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnMcastInterface&gt;</a> my_netints;</div>
+<div class="line">std::vector&lt;SacnMcastInterface&gt; my_netints;</div>
 <div class="line"><span class="comment">// Assuming my_netints is initialized by the application...</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// If you want to specify specific network interfaces to use:</span></div>
@@ -341,7 +340,6 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div class="ttc" id="aclasssacn_1_1_source_html_a155bf88a9cb6b5980e9ae763654fb848"><div class="ttname"><a href="classsacn_1_1_source.html#a155bf88a9cb6b5980e9ae763654fb848">sacn::Source::RemoveUniverse</a></div><div class="ttdeci">void RemoveUniverse(uint16_t universe)</div><div class="ttdoc">Remove a universe from a source.</div><div class="ttdef"><b>Definition</b> source.h:461</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a187824733cd5a950b324263654f37079"><div class="ttname"><a href="classsacn_1_1_source.html#a187824733cd5a950b324263654f37079">sacn::Source::AddUniverse</a></div><div class="ttdeci">etcpal::Error AddUniverse(const UniverseSettings &amp;settings, McastMode mcast_mode)</div><div class="ttdoc">Add a universe to an sACN source.</div><div class="ttdef"><b>Definition</b> source.h:399</div></div>
 <div class="ttc" id="astructsacn_1_1_source_1_1_universe_settings_html"><div class="ttname"><a href="structsacn_1_1_source_1_1_universe_settings.html">sacn::Source::UniverseSettings</a></div><div class="ttdoc">A set of configuration settings for a new universe on a source.</div><div class="ttdef"><b>Definition</b> source.h:123</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -368,7 +366,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 </div>
 <div id="div_4_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint16_t&gt;</a> universes = my_source.<a class="code hl_function" href="classsacn_1_1_source.html#a85b66c7e50812b6bc1a379266ffebaf6">GetUniverses</a>();</div>
+<div class="fragment"><div class="line">std::vector&lt;uint16_t&gt; universes = my_source.<a class="code hl_function" href="classsacn_1_1_source.html#a85b66c7e50812b6bc1a379266ffebaf6">GetUniverses</a>();</div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a85b66c7e50812b6bc1a379266ffebaf6"><div class="ttname"><a href="classsacn_1_1_source.html#a85b66c7e50812b6bc1a379266ffebaf6">sacn::Source::GetUniverses</a></div><div class="ttdeci">std::vector&lt; uint16_t &gt; GetUniverses()</div><div class="ttdoc">Obtain a vector of this source's universes (sorted lowest to highest).</div><div class="ttdef"><b>Definition</b> source.h:471</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -471,7 +469,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 </div>
 <div id="div_7_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;etcpal::IpAddr&gt;</a> unicast_dests = my_source.<a class="code hl_function" href="classsacn_1_1_source.html#a65cd2cbe228edaad83f5c1d78b425426">GetUnicastDestinations</a>(my_universe);</div>
+<div class="fragment"><div class="line">std::vector&lt;etcpal::IpAddr&gt; unicast_dests = my_source.<a class="code hl_function" href="classsacn_1_1_source.html#a65cd2cbe228edaad83f5c1d78b425426">GetUnicastDestinations</a>(my_universe);</div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a65cd2cbe228edaad83f5c1d78b425426"><div class="ttname"><a href="classsacn_1_1_source.html#a65cd2cbe228edaad83f5c1d78b425426">sacn::Source::GetUnicastDestinations</a></div><div class="ttdeci">std::vector&lt; etcpal::IpAddr &gt; GetUnicastDestinations(uint16_t universe)</div><div class="ttdoc">Obtain a vector of a universe's unicast destinations.</div><div class="ttdef"><b>Definition</b> source.h:529</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -564,7 +562,7 @@ $(function(){initNavTree('using_source.html',''); initResizable(true); });
 <div id="div_10_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// The preview flag, priority, and name can also be changed at any time:</span></div>
-<div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> new_name(<span class="stringliteral">&quot;Hello World&quot;</span>);</div>
+<div class="line">std::string new_name(<span class="stringliteral">&quot;Hello World&quot;</span>);</div>
 <div class="line">my_source.<a class="code hl_function" href="classsacn_1_1_source.html#a1a373722c14059cfd452488f80906dd9">ChangeName</a>(new_name)</div>
 <div class="line">uint8_t new_priority = 50;</div>
 <div class="line">my_source.<a class="code hl_function" href="classsacn_1_1_source.html#af92307609428eb0be2d7fd82907c1fe2">ChangePriority</a>(my_universe, new_priority);</div>

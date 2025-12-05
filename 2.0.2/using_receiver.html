@@ -216,7 +216,7 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Using the sACN Receiver API</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpvh2w20bp_2docs_2pages_2using__receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__2tmp_2tmpi9yl68c___2docs_2pages_2using__receiver"></a> The sACN Receiver API provides a method for applications to receive and process sACN data on one or more universes. This API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -293,7 +293,7 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div class="line">  <span class="comment">// Required callbacks that must be implemented:</span></div>
 <div class="line">  <span class="keywordtype">void</span> <a class="code hl_function" href="classsacn_1_1_receiver_1_1_notify_handler.html#a31ed01381fa689d55d77f298fdf3c2c3">HandleUniverseData</a>(Handle receiver_handle, <span class="keyword">const</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&amp; source_addr,</div>
 <div class="line">                          <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_remote_source.html">SacnRemoteSource</a>&amp; source_info, <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a>&amp; universe_data) <span class="keyword">override</span>;</div>
-<div class="line">  <span class="keywordtype">void</span> <a class="code hl_function" href="classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae">HandleSourcesLost</a>(Handle handle, uint16_t universe, <span class="keyword">const</span> <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources) <span class="keyword">override</span>;</div>
+<div class="line">  <span class="keywordtype">void</span> <a class="code hl_function" href="classsacn_1_1_receiver_1_1_notify_handler.html#aeb67059ed834bf3d178bbdc4a931adae">HandleSourcesLost</a>(Handle handle, uint16_t universe, <span class="keyword">const</span> std::vector&lt;SacnLostSource&gt;&amp; lost_sources) <span class="keyword">override</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Optional callbacks - these don&#39;t have to be a part of MyNotifyHandler:</span></div>
 <div class="line">  <span class="keywordtype">void</span> <a class="code hl_function" href="classsacn_1_1_receiver_1_1_notify_handler.html#a9cd14450c1a43ab482bebaf5a1dcb0cc">HandleSamplingPeriodStarted</a>(Handle handle, uint16_t universe) <span class="keyword">override</span>;</div>
@@ -311,7 +311,7 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div class="line"><span class="comment">// Or do this if Startup is being called within the NotifyHandler-derived class:</span></div>
 <div class="line">receiver.<a class="code hl_function" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Startup</a>(config, *<span class="keyword">this</span>);</div>
 <div class="line"><span class="comment">// Or do this to specify custom interfaces for the receiver to use:</span></div>
-<div class="line"><a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnMcastInterface&gt;</a> my_netints;  <span class="comment">// Assuming my_netints is initialized by the application...</span></div>
+<div class="line">std::vector&lt;SacnMcastInterface&gt; my_netints;  <span class="comment">// Assuming my_netints is initialized by the application...</span></div>
 <div class="line">receiver.<a class="code hl_function" href="classsacn_1_1_receiver.html#ab8a65d7188fcd0074fd757a450a79100">Startup</a>(config, my_notify_handler, my_netints);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// To destroy the receiver when you&#39;re done with it:</span></div>
@@ -330,7 +330,6 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div class="ttc" id="astruct_sacn_recv_universe_data_html"><div class="ttname"><a href="struct_sacn_recv_universe_data.html">SacnRecvUniverseData</a></div><div class="ttdef"><b>Definition</b> receiver.h:89</div></div>
 <div class="ttc" id="astruct_sacn_remote_source_html"><div class="ttname"><a href="struct_sacn_remote_source.html">SacnRemoteSource</a></div><div class="ttdef"><b>Definition</b> receiver.h:124</div></div>
 <div class="ttc" id="astructsacn_1_1_receiver_1_1_settings_html"><div class="ttname"><a href="structsacn_1_1_receiver_1_1_settings.html">sacn::Receiver::Settings</a></div><div class="ttdoc">A set of configuration settings that a receiver needs to initialize.</div><div class="ttdef"><b>Definition</b> receiver.h:166</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -490,15 +489,15 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You wouldn&#39;t normally print a message on each sACN update, but this is just to demonstrate the</span></div>
 <div class="line">  <span class="comment">// header fields available:</span></div>
-<div class="line">  <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Got sACN update from source &quot;</span> &lt;&lt; <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>(source_info.<a class="code hl_variable" href="struct_sacn_remote_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a>).<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot; (address &quot;</span> </div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Got sACN update from source &quot;</span> &lt;&lt; <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>(source_info.<a class="code hl_variable" href="struct_sacn_remote_source.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a>).<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot; (address &quot;</span> </div>
 <div class="line">            &lt;&lt; source_addr.<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;, name &quot;</span> &lt;&lt; source_info.<a class="code hl_variable" href="struct_sacn_remote_source.html#a7e3669a12853b82f7d2b7488bb174956">name</a> &lt;&lt; <span class="stringliteral">&quot;) on universe &quot;</span></div>
 <div class="line">            &lt;&lt; universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#a7e0de4d0f4e4bbd14771257febdf7248">universe_id</a> &lt;&lt; <span class="stringliteral">&quot;, priority &quot;</span> &lt;&lt; universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a> &lt;&lt; <span class="stringliteral">&quot;, start code &quot;</span></div>
 <div class="line">            &lt;&lt; universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab">start_code</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#a7d039abc15e5b41fb9404c941d705648">is_sampling</a>)</div>
-<div class="line">    <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; (during the sampling period)\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; (during the sampling period)\n&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">else</span></div>
-<div class="line">    <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Example for an sACN-enabled fixture...</span></div>
 <div class="line">  <span class="keywordflow">if</span> ((universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#a09df16493b12c991aef309819c8eebab">start_code</a> == 0x00) &amp;&amp; (universe_data.<a class="code hl_variable" href="struct_sacn_recv_universe_data.html#ad634e09aa77487d44087c02a9143ee17">slot_range</a>.<a class="code hl_variable" href="struct_sacn_recv_universe_subrange.html#ace16bae043b38ea02cb084b12bcbf646">start_address</a> == my_start_addr) &amp;&amp;</div>
@@ -509,7 +508,6 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div class="line">    <span class="comment">// Act on the data somehow</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Uuid::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
@@ -613,14 +611,14 @@ $(function(){initNavTree('using_receiver.html',''); initResizable(true); });
 <div id="div_8_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyNotifyHandler::HandleSourcesLost(Handle handle, uint16_t universe,</div>
-<div class="line">                                        <span class="keyword">const</span> <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;SacnLostSource&gt;</a>&amp; lost_sources)</div>
+<div class="line">                                        <span class="keyword">const</span> std::vector&lt;SacnLostSource&gt;&amp; lost_sources)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// You might not normally print a message on this condition, but this is just to demonstrate</span></div>
 <div class="line">  <span class="comment">// the fields available:</span></div>
-<div class="line">  <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The following sources have gone offline:\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;The following sources have gone offline:\n&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_lost_source.html">SacnLostSource</a>&amp; src : lost_sources)</div>
 <div class="line">  {</div>
-<div class="line">    <a class="code hl_classRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;CID: &quot;</span> &lt;&lt; <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>(source.cid).<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;\tName: &quot;</span> &lt;&lt; source.name &lt;&lt; <span class="stringliteral">&quot;\tTerminated: &quot;</span> </div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;CID: &quot;</span> &lt;&lt; <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>(source.cid).<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;\tName: &quot;</span> &lt;&lt; source.name &lt;&lt; <span class="stringliteral">&quot;\tTerminated: &quot;</span> </div>
 <div class="line">              &lt;&lt; source.terminated &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Remove the source from your state tracking...</span></div>
