@@ -5,8 +5,13 @@ var common_8h =
     [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
     [ "sacn_features_t", "group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
+    [ "SacnCommonCallbacks", "group__s_a_c_n.html#gade46e797abb2cb0c12110bec1e616c8c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
+    [ "SacnMulticastSendErrorCallback", "group__s_a_c_n.html#gae90f67a6c186bb64bc02e70d6ec25677", null ],
     [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", null ],
+    [ "SacnSendSocketConfig", "group__s_a_c_n.html#ga1481e0fee3c2c8f9a2e51f044301ce44", null ],
+    [ "SacnSocketErrorInfo", "group__s_a_c_n.html#ga24ed3049085b32159700b64c316bffdf", null ],
+    [ "SacnUnicastSendErrorCallback", "group__s_a_c_n.html#ga11f36368e56cb406d2f49fb19ec70cb8", null ],
     [ "sacn_ip_support_t", "group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a", [
       [ "kSacnIpV4Only", "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa900230541148a1eb50b457dfbf75a3c4", null ],
       [ "kSacnIpV6Only", "group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aaa7c7cce56d48e45e33bde272cb0be424", null ],
@@ -18,5 +23,7 @@ var common_8h =
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
     [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
     [ "sacn_init_features", "group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0", null ],
+    [ "sacn_init_features_with_cb", "group__s_a_c_n.html#ga50fb734805f4bae1e741f9652980edda", null ],
+    [ "sacn_init_with_cb", "group__s_a_c_n.html#gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4", null ],
     [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

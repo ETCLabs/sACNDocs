@@ -10,10 +10,28 @@ var group__s_a_c_n =
       [ "iface", "struct_sacn_mcast_interface.html#a65cd2dceb306fac087fbe140d427c82b", null ],
       [ "status", "struct_sacn_mcast_interface.html#ac76406095077e7cfe14982fd8656c527", null ]
     ] ],
+    [ "SacnSendSocketConfig", "struct_sacn_send_socket_config.html", [
+      [ "multicast_sndtimeo_ms", "struct_sacn_send_socket_config.html#a39a1512c3d1b28af2c6c3cfb50cc92d6", null ],
+      [ "unicast_sndtimeo_ms", "struct_sacn_send_socket_config.html#af04fef4014ced106882343e74dba789c", null ]
+    ] ],
     [ "SacnNetintConfig", "struct_sacn_netint_config.html", [
       [ "netints", "struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01", null ],
       [ "no_netints", "struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1", null ],
-      [ "num_netints", "struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7", null ]
+      [ "num_netints", "struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7", null ],
+      [ "send_socket_config", "struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558", null ]
+    ] ],
+    [ "SacnSocketErrorInfo", "struct_sacn_socket_error_info.html", [
+      [ "dest_addr", "struct_sacn_socket_error_info.html#a6c36c0ed8574a34ed18add15b25f7ede", null ],
+      [ "error", "struct_sacn_socket_error_info.html#a95dc9074b8e48225662fed030eb7c318", null ],
+      [ "flags", "struct_sacn_socket_error_info.html#a09fc1f4675d0ea29121b75ca1b08ea97", null ],
+      [ "length", "struct_sacn_socket_error_info.html#a631ca5dd5a826c305ef382ea2e957048", null ],
+      [ "message", "struct_sacn_socket_error_info.html#ad258b56dd47b875e957918b600b0efc7", null ],
+      [ "socket", "struct_sacn_socket_error_info.html#a3934201c8d45fed9f83337f36c82ab03", null ]
+    ] ],
+    [ "SacnCommonCallbacks", "struct_sacn_common_callbacks.html", [
+      [ "context", "struct_sacn_common_callbacks.html#aff15132e3672d21a279ab76876ad3f4d", null ],
+      [ "multicast_send_error", "struct_sacn_common_callbacks.html#a60ade51fed96ec102077ecfb95678dc7", null ],
+      [ "unicast_send_error", "struct_sacn_common_callbacks.html#a596202dccb1d167d9e00cb225ea0742d", null ]
     ] ],
     [ "SACN_FEATURE_DMX_MERGER", "group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c", null ],
     [ "SACN_FEATURES_ALL", "group__s_a_c_n.html#gae332f970f84a53d07da154915f343042", null ],
@@ -28,8 +46,13 @@ var group__s_a_c_n =
     [ "SACN_VERSION_STRING", "group__s_a_c_n.html#ga2ff6980847182dc1ac56ee3660e0a360", null ],
     [ "sacn_features_t", "group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
+    [ "SacnCommonCallbacks", "group__s_a_c_n.html#gade46e797abb2cb0c12110bec1e616c8c", null ],
     [ "SacnMcastInterface", "group__s_a_c_n.html#gabf46c3c353abbd956716fecbe24f2ae4", null ],
-    [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", [
+    [ "SacnMulticastSendErrorCallback", "group__s_a_c_n.html#gae90f67a6c186bb64bc02e70d6ec25677", null ],
+    [ "SacnNetintConfig", "group__s_a_c_n.html#ga3cd2196005e33f66518a0f0baba34147", null ],
+    [ "SacnSendSocketConfig", "group__s_a_c_n.html#ga1481e0fee3c2c8f9a2e51f044301ce44", null ],
+    [ "SacnSocketErrorInfo", "group__s_a_c_n.html#ga24ed3049085b32159700b64c316bffdf", null ],
+    [ "SacnUnicastSendErrorCallback", "group__s_a_c_n.html#ga11f36368e56cb406d2f49fb19ec70cb8", [
       [ "kSacnSourceNameMaxLen", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba490078e9d4ad12a751dab5b99ea1e6a0", null ],
       [ "kSacnDmxAddressCount", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55ba8e5f744b5e8caecf8022459ca0630605", null ],
       [ "kSacnStartcodeDmx", "group__s_a_c_n.html#gga06fc87d81c62e9abb8790b6e5713c55bafa346ef4e64c66dbf6e81ac7588a47fe", null ],
@@ -48,5 +71,7 @@ var group__s_a_c_n =
     [ "sacn_get_remote_source_handle", "group__s_a_c_n.html#ga65d96208fc89676e2dea18d2ded31872", null ],
     [ "sacn_init", "group__s_a_c_n.html#ga612160fe1d0f1e4f1fae4d72232fee07", null ],
     [ "sacn_init_features", "group__s_a_c_n.html#gaec646a837c28740657cff1bd9a1bc1b0", null ],
+    [ "sacn_init_features_with_cb", "group__s_a_c_n.html#ga50fb734805f4bae1e741f9652980edda", null ],
+    [ "sacn_init_with_cb", "group__s_a_c_n.html#gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4", null ],
     [ "kSacnRemoteSourceInvalid", "group__s_a_c_n.html#gaf801f0a4ae3ede2967106d9b360b8cd1", null ]
 ];

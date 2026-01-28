@@ -254,15 +254,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_mcast_interface.html">SacnMcastInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">On input, this structure is used to indicate a network interface to use.  <a href="struct_sacn_mcast_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for send sockets (e.g.  <a href="struct_sacn_send_socket_config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network interface configuration information to give the sACN library.  <a href="struct_sacn_netint_config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_socket_error_info.html">SacnSocketErrorInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a socket error that occurred.  <a href="struct_sacn_socket_error_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sacn_common_callbacks.html">SacnCommonCallbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callback functions that the library uses to notify the application about sACN events.  <a href="struct_sacn_common_callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga3ee0954838bc60d3e04d7a54692533fd" id="r_ga3ee0954838bc60d3e04d7a54692533fd"><td class="memItemLeft" align="right" valign="top"><a id="ga3ee0954838bc60d3e04d7a54692533fd" name="ga3ee0954838bc60d3e04d7a54692533fd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_NETINT_CONFIG_DEFAULT_INIT</b>&#160;&#160;&#160;{NULL, 0, false}</td></tr>
-<tr class="memdesc:ga3ee0954838bc60d3e04d7a54692533fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the members of a <a class="el" href="struct_sacn_netint_config.html" title="Network interface configuration information to give the sACN library.">SacnNetintConfig</a> to defaults. <br /></td></tr>
+<tr class="memitem:ga3ee0954838bc60d3e04d7a54692533fd" id="r_ga3ee0954838bc60d3e04d7a54692533fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a></td></tr>
+<tr class="memdesc:ga3ee0954838bc60d3e04d7a54692533fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the members of a <a class="el" href="struct_sacn_netint_config.html" title="Network interface configuration information to give the sACN library.">SacnNetintConfig</a> to defaults.  <br /></td></tr>
 <tr class="separator:ga3ee0954838bc60d3e04d7a54692533fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -274,9 +282,26 @@ typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>sacn_remo
 <tr class="memitem:gabf46c3c353abbd956716fecbe24f2ae4" id="r_gabf46c3c353abbd956716fecbe24f2ae4"><td class="memItemLeft" align="right" valign="top">typedef struct SacnMcastInterface&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabf46c3c353abbd956716fecbe24f2ae4">SacnMcastInterface</a></td></tr>
 <tr class="memdesc:gabf46c3c353abbd956716fecbe24f2ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">On input, this structure is used to indicate a network interface to use.  <br /></td></tr>
 <tr class="separator:gabf46c3c353abbd956716fecbe24f2ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1481e0fee3c2c8f9a2e51f044301ce44" id="r_ga1481e0fee3c2c8f9a2e51f044301ce44"><td class="memItemLeft" align="right" valign="top">typedef struct SacnSendSocketConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1481e0fee3c2c8f9a2e51f044301ce44">SacnSendSocketConfig</a></td></tr>
+<tr class="memdesc:ga1481e0fee3c2c8f9a2e51f044301ce44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for send sockets (e.g.  <br /></td></tr>
+<tr class="separator:ga1481e0fee3c2c8f9a2e51f044301ce44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3cd2196005e33f66518a0f0baba34147" id="r_ga3cd2196005e33f66518a0f0baba34147"><td class="memItemLeft" align="right" valign="top">typedef struct SacnNetintConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3cd2196005e33f66518a0f0baba34147">SacnNetintConfig</a></td></tr>
 <tr class="memdesc:ga3cd2196005e33f66518a0f0baba34147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network interface configuration information to give the sACN library.  <br /></td></tr>
 <tr class="separator:ga3cd2196005e33f66518a0f0baba34147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24ed3049085b32159700b64c316bffdf" id="r_ga24ed3049085b32159700b64c316bffdf"><td class="memItemLeft" align="right" valign="top"><a id="ga24ed3049085b32159700b64c316bffdf" name="ga24ed3049085b32159700b64c316bffdf"></a>
+typedef struct SacnSocketErrorInfo&#160;</td><td class="memItemRight" valign="bottom"><b>SacnSocketErrorInfo</b></td></tr>
+<tr class="memdesc:ga24ed3049085b32159700b64c316bffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a socket error that occurred. <br /></td></tr>
+<tr class="separator:ga24ed3049085b32159700b64c316bffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11f36368e56cb406d2f49fb19ec70cb8" id="r_ga11f36368e56cb406d2f49fb19ec70cb8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga11f36368e56cb406d2f49fb19ec70cb8">SacnUnicastSendErrorCallback</a>) (const <a class="el" href="struct_sacn_socket_error_info.html">SacnSocketErrorInfo</a> *err_info, void *context)</td></tr>
+<tr class="memdesc:ga11f36368e56cb406d2f49fb19ec70cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that an error just occurred sending unicast on a socket.  <br /></td></tr>
+<tr class="separator:ga11f36368e56cb406d2f49fb19ec70cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae90f67a6c186bb64bc02e70d6ec25677" id="r_gae90f67a6c186bb64bc02e70d6ec25677"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae90f67a6c186bb64bc02e70d6ec25677">SacnMulticastSendErrorCallback</a>) (const <a class="el" href="struct_sacn_socket_error_info.html">SacnSocketErrorInfo</a> *err_info, void *context)</td></tr>
+<tr class="memdesc:gae90f67a6c186bb64bc02e70d6ec25677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that an error just occurred sending multicast on a socket.  <br /></td></tr>
+<tr class="separator:gae90f67a6c186bb64bc02e70d6ec25677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade46e797abb2cb0c12110bec1e616c8c" id="r_gade46e797abb2cb0c12110bec1e616c8c"><td class="memItemLeft" align="right" valign="top"><a id="gade46e797abb2cb0c12110bec1e616c8c" name="gade46e797abb2cb0c12110bec1e616c8c"></a>
+typedef struct SacnCommonCallbacks&#160;</td><td class="memItemRight" valign="bottom"><b>SacnCommonCallbacks</b></td></tr>
+<tr class="memdesc:gade46e797abb2cb0c12110bec1e616c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callback functions that the library uses to notify the application about sACN events. <br /></td></tr>
+<tr class="separator:gade46e797abb2cb0c12110bec1e616c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac390a9f556357c2b93e8e8135f116723" id="r_gac390a9f556357c2b93e8e8135f116723"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a></td></tr>
 <tr class="memdesc:gac390a9f556357c2b93e8e8135f116723"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mask of desired sACN features.  <br /></td></tr>
 <tr class="separator:gac390a9f556357c2b93e8e8135f116723"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,9 +339,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga612160fe1d0f1e4f1fae4d72232fee07" id="r_ga612160fe1d0f1e4f1fae4d72232fee07"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07">sacn_init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config)</td></tr>
 <tr class="memdesc:ga612160fe1d0f1e4f1fae4d72232fee07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all features of the sACN library.  <br /></td></tr>
 <tr class="separator:ga612160fe1d0f1e4f1fae4d72232fee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4" id="r_gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4">sacn_init_with_cb</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, const <a class="el" href="struct_sacn_common_callbacks.html">SacnCommonCallbacks</a> *callbacks)</td></tr>
+<tr class="memdesc:gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all features of the sACN library.  <br /></td></tr>
+<tr class="separator:gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec646a837c28740657cff1bd9a1bc1b0" id="r_gaec646a837c28740657cff1bd9a1bc1b0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaec646a837c28740657cff1bd9a1bc1b0">sacn_init_features</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, <a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a> features)</td></tr>
 <tr class="memdesc:gaec646a837c28740657cff1bd9a1bc1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize specific features of the sACN library.  <br /></td></tr>
 <tr class="separator:gaec646a837c28740657cff1bd9a1bc1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50fb734805f4bae1e741f9652980edda" id="r_ga50fb734805f4bae1e741f9652980edda"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga50fb734805f4bae1e741f9652980edda">sacn_init_features_with_cb</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *sys_netint_config, <a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a> features, const <a class="el" href="struct_sacn_common_callbacks.html">SacnCommonCallbacks</a> *callbacks)</td></tr>
+<tr class="memdesc:ga50fb734805f4bae1e741f9652980edda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize specific features of the sACN library.  <br /></td></tr>
+<tr class="separator:ga50fb734805f4bae1e741f9652980edda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b80ebcafe9eb3240a67785377872f9a" id="r_ga7b80ebcafe9eb3240a67785377872f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b80ebcafe9eb3240a67785377872f9a">sacn_deinit</a> (void)</td></tr>
 <tr class="memdesc:ga7b80ebcafe9eb3240a67785377872f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize all features of the sACN library.  <br /></td></tr>
 <tr class="separator:ga7b80ebcafe9eb3240a67785377872f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,21 +396,21 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 <tr class="memdesc:gae1d8849ebfa2d27cec433e54f7f7308d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The patch version. <br /></td></tr>
 <tr class="separator:gae1d8849ebfa2d27cec433e54f7f7308d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab22648c510945c218b806ad28e1e9a86" id="r_gab22648c510945c218b806ad28e1e9a86"><td class="memItemLeft" align="right" valign="top"><a id="gab22648c510945c218b806ad28e1e9a86" name="gab22648c510945c218b806ad28e1e9a86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_BUILD</b>&#160;&#160;&#160;3</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_BUILD</b>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:gab22648c510945c218b806ad28e1e9a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The build number. <br /></td></tr>
 <tr class="separator:gab22648c510945c218b806ad28e1e9a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">sACN version strings</h2></td></tr>
 <tr class="memitem:ga2ff6980847182dc1ac56ee3660e0a360" id="r_ga2ff6980847182dc1ac56ee3660e0a360"><td class="memItemLeft" align="right" valign="top"><a id="ga2ff6980847182dc1ac56ee3660e0a360" name="ga2ff6980847182dc1ac56ee3660e0a360"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_STRING</b>&#160;&#160;&#160;&quot;4.0.0.3&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_STRING</b>&#160;&#160;&#160;&quot;4.0.0.4&quot;</td></tr>
 <tr class="memdesc:ga2ff6980847182dc1ac56ee3660e0a360"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 4-digit version string. <br /></td></tr>
 <tr class="separator:ga2ff6980847182dc1ac56ee3660e0a360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99a95e107267c6f80cc2195f86c11586" id="r_ga99a95e107267c6f80cc2195f86c11586"><td class="memItemLeft" align="right" valign="top"><a id="ga99a95e107267c6f80cc2195f86c11586" name="ga99a95e107267c6f80cc2195f86c11586"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;13.Feb.2025&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;27.Jan.2026&quot;</td></tr>
 <tr class="memdesc:ga99a95e107267c6f80cc2195f86c11586"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date this version was released (dd.Mm.yyyy). <br /></td></tr>
 <tr class="separator:ga99a95e107267c6f80cc2195f86c11586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fd2e6c86426807d2eb598c67121723b" id="r_ga5fd2e6c86426807d2eb598c67121723b"><td class="memItemLeft" align="right" valign="top"><a id="ga5fd2e6c86426807d2eb598c67121723b" name="ga5fd2e6c86426807d2eb598c67121723b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_COPYRIGHT</b>&#160;&#160;&#160;&quot;Copyright 2025 ETC Inc.&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SACN_VERSION_COPYRIGHT</b>&#160;&#160;&#160;&quot;Copyright 2026 ETC Inc.&quot;</td></tr>
 <tr class="memdesc:ga5fd2e6c86426807d2eb598c67121723b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The version's copyright string. <br /></td></tr>
 <tr class="separator:ga5fd2e6c86426807d2eb598c67121723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46b3c38236732e08243f8fe79bcf6c06" id="r_ga46b3c38236732e08243f8fe79bcf6c06"><td class="memItemLeft" align="right" valign="top"><a id="ga46b3c38236732e08243f8fe79bcf6c06" name="ga46b3c38236732e08243f8fe79bcf6c06"></a>
@@ -389,6 +420,29 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>sACN: A Streaming ACN (sACN) implementation. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga3ee0954838bc60d3e04d7a54692533fd" name="ga3ee0954838bc60d3e04d7a54692533fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ee0954838bc60d3e04d7a54692533fd">&#9670;&#160;</a></span>SACN_NETINT_CONFIG_DEFAULT_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SACN_NETINT_CONFIG_DEFAULT_INIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  {                                     \</div>
+<div class="line">    NULL, 0, <span class="keyword">false</span>,                     \</div>
+<div class="line">    {                                   \</div>
+<div class="line">      0, 0                              \</div>
+<div class="line">    }                                   \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Initializes the members of a <a class="el" href="struct_sacn_netint_config.html" title="Network interface configuration information to give the sACN library.">SacnNetintConfig</a> to defaults. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gac390a9f556357c2b93e8e8135f116723" name="gac390a9f556357c2b93e8e8135f116723"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac390a9f556357c2b93e8e8135f116723">&#9670;&#160;</a></span>sacn_features_t</h2>
@@ -424,6 +478,30 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 
 </div>
 </div>
+<a id="gae90f67a6c186bb64bc02e70d6ec25677" name="gae90f67a6c186bb64bc02e70d6ec25677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae90f67a6c186bb64bc02e70d6ec25677">&#9670;&#160;</a></span>SacnMulticastSendErrorCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnMulticastSendErrorCallback) (const <a class="el" href="struct_sacn_socket_error_info.html">SacnSocketErrorInfo</a> *err_info, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that an error just occurred sending multicast on a socket. </p>
+<p>The lock is taken when this callback is invoked, so don't call back into the library, and don't take too long.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">err_info</td><td>Information about the error that occurred. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given to <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga3cd2196005e33f66518a0f0baba34147" name="ga3cd2196005e33f66518a0f0baba34147"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3cd2196005e33f66518a0f0baba34147">&#9670;&#160;</a></span>SacnNetintConfig</h2>
 
@@ -438,6 +516,47 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
 
 <p>Network interface configuration information to give the sACN library. </p>
 <p>Multicast traffic will be restricted to the network interfaces given. The statuses are filled in for each interface. </p>
+
+</div>
+</div>
+<a id="ga1481e0fee3c2c8f9a2e51f044301ce44" name="ga1481e0fee3c2c8f9a2e51f044301ce44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1481e0fee3c2c8f9a2e51f044301ce44">&#9670;&#160;</a></span>SacnSendSocketConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct SacnSendSocketConfig SacnSendSocketConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configuration for send sockets (e.g. </p>
+<p>configurable sockopts). </p>
+
+</div>
+</div>
+<a id="ga11f36368e56cb406d2f49fb19ec70cb8" name="ga11f36368e56cb406d2f49fb19ec70cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11f36368e56cb406d2f49fb19ec70cb8">&#9670;&#160;</a></span>SacnUnicastSendErrorCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* SacnUnicastSendErrorCallback) (const <a class="el" href="struct_sacn_socket_error_info.html">SacnSocketErrorInfo</a> *err_info, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify that an error just occurred sending unicast on a socket. </p>
+<p>The lock is taken when this callback is invoked, so don't call back into the library, and don't take too long.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">err_info</td><td>Information about the error that occurred. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given to <a class="el" href="#ga612160fe1d0f1e4f1fae4d72232fee07" title="Initialize all features of the sACN library.">sacn_init()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -677,6 +796,98 @@ static const <a class="el" href="#ga31b1febd91134668307803d573ed2f2c">sacn_remot
     <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the library will be limited to (with the added option of not allowing any interfaces to be used), and the status codes are filled in. If NULL, the library is allowed to use all available system interfaces. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">features</td><td>Mask of sACN features to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
+<dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="ga50fb734805f4bae1e741f9652980edda" name="ga50fb734805f4bae1e741f9652980edda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50fb734805f4bae1e741f9652980edda">&#9670;&#160;</a></span>sacn_init_features_with_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_init_features_with_cb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *</td>          <td class="paramname"><span class="paramname"><em>log_params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *</td>          <td class="paramname"><span class="paramname"><em>sys_netint_config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#gac390a9f556357c2b93e8e8135f116723">sacn_features_t</a></td>          <td class="paramname"><span class="paramname"><em>features</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_common_callbacks.html">SacnCommonCallbacks</a> *</td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize specific features of the sACN library. </p>
+<p>Do all necessary initialization before other sACN API functions can be called.</p>
+<p>Redundant initialization of features is permitted - the library tracks counters for each feature and expects deinit to be called the same number of times as init for each feature.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the library will be limited to (with the added option of not allowing any interfaces to be used), and the status codes are filled in. If NULL, the library is allowed to use all available system interfaces. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">features</td><td>Mask of sACN features to initialize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callbacks</td><td>Optional. A struct of callback functions for the library to use to notify the application of events. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
+<dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid parameter provided. </dd>
+<dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4" name="gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4">&#9670;&#160;</a></span>sacn_init_with_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> sacn_init_with_cb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *</td>          <td class="paramname"><span class="paramname"><em>log_params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_netint_config.html">SacnNetintConfig</a> *</td>          <td class="paramname"><span class="paramname"><em>sys_netint_config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_sacn_common_callbacks.html">SacnCommonCallbacks</a> *</td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize all features of the sACN library. </p>
+<p>Do all necessary initialization before other sACN API functions can be called.</p>
+<p>Redundant initialization is permitted - the library tracks counters for each feature and expects deinit to be called the same number of times as init for each feature.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. If <a class="el" href="group__sacnopts__global.html#ga5b77f40b283fa0f754576a64ff6f3d4c" title="Enable message logging from the sACN library.">SACN_LOGGING_ENABLED</a> is 0, this parameter is ignored. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sys_netint_config</td><td>Optional. If non-NULL, this is the list of system interfaces the library will be limited to (with the added option of not allowing any interfaces to be used), and the status codes are filled in. If NULL, the library is allowed to use all available system interfaces. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callbacks</td><td>Optional. A struct of callback functions for the library to use to notify the application of events. </td></tr>
   </table>
   </dd>
 </dl>

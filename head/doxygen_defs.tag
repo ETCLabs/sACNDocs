@@ -5,7 +5,10 @@
     <path>include/sacn/</path>
     <filename>common_8h.html</filename>
     <class kind="struct">SacnMcastInterface</class>
+    <class kind="struct">SacnSendSocketConfig</class>
     <class kind="struct">SacnNetintConfig</class>
+    <class kind="struct">SacnSocketErrorInfo</class>
+    <class kind="struct">SacnCommonCallbacks</class>
     <member kind="define">
       <type>#define</type>
       <name>SACN_NETINT_CONFIG_DEFAULT_INIT</name>
@@ -42,10 +45,45 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
+      <type>struct SacnSendSocketConfig</type>
+      <name>SacnSendSocketConfig</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga1481e0fee3c2c8f9a2e51f044301ce44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>struct SacnNetintConfig</type>
       <name>SacnNetintConfig</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnSocketErrorInfo</type>
+      <name>SacnSocketErrorInfo</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga24ed3049085b32159700b64c316bffdf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>SacnUnicastSendErrorCallback</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga11f36368e56cb406d2f49fb19ec70cb8</anchor>
+      <arglist>)(const SacnSocketErrorInfo *err_info, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>SacnMulticastSendErrorCallback</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gae90f67a6c186bb64bc02e70d6ec25677</anchor>
+      <arglist>)(const SacnSocketErrorInfo *err_info, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnCommonCallbacks</type>
+      <name>SacnCommonCallbacks</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gade46e797abb2cb0c12110bec1e616c8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -125,10 +163,24 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
+      <name>sacn_init_with_cb</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4</anchor>
+      <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, const SacnCommonCallbacks *callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
       <name>sacn_init_features</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>gaec646a837c28740657cff1bd9a1bc1b0</anchor>
       <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, sacn_features_t features)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
+      <name>sacn_init_features_with_cb</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga50fb734805f4bae1e741f9652980edda</anchor>
+      <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, sacn_features_t features, const SacnCommonCallbacks *callbacks)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -185,6 +237,8 @@
     <path>include/sacn/cpp/</path>
     <filename>cpp_2common_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" import="no" module="no" objc="no">sacn/common.h</includes>
+    <class kind="class">sacn::NotifyHandler</class>
+    <class kind="struct">sacn::LibrarySettings</class>
     <namespace>sacn</namespace>
   </compound>
   <compound kind="file">
@@ -1681,6 +1735,31 @@
     <name>sacn::detail::DmxMergerHandleType</name>
     <filename>classsacn_1_1detail_1_1_dmx_merger_handle_type.html</filename>
   </compound>
+  <compound kind="struct">
+    <name>sacn::LibrarySettings</name>
+    <filename>structsacn_1_1_library_settings.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>LibrarySettings</name>
+      <anchorfile>structsacn_1_1_library_settings.html</anchorfile>
+      <anchor>a43830a97562fea7a7f84709df38de10c</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="variable">
+      <type>NotifyHandler *</type>
+      <name>notify_handler</name>
+      <anchorfile>structsacn_1_1_library_settings.html</anchorfile>
+      <anchor>a42b82f3ad030ffdaaef5cce799998578</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>SacnSendSocketConfig</type>
+      <name>send_socket_config</name>
+      <anchorfile>structsacn_1_1_library_settings.html</anchorfile>
+      <anchor>ad4a26a154ee0adeaab77b51dfd613f42</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>sacn::MergeReceiver</name>
     <filename>classsacn_1_1_merge_receiver.html</filename>
@@ -1986,6 +2065,52 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>sacn::NotifyHandler</name>
+    <filename>classsacn_1_1_notify_handler.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a0c8340a060cb80b82bb83d05387578f7</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a85c6a1aff046b8717c6edde22652bf29</anchor>
+      <arglist>(const NotifyHandler &amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NotifyHandler</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a9ad3a7f46c0b69c8625fb54c4ad7d59e</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>NotifyHandler &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a2d0c59431a517e9ad3cdb3dfd0bfc16b</anchor>
+      <arglist>(NotifyHandler &amp;&amp;other)=default</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>HandleUnicastSendError</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a9b7bc3ba89423516e56eba32c5494047</anchor>
+      <arglist>(const SacnSocketErrorInfo &amp;err_info)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>HandleMulticastSendError</name>
+      <anchorfile>classsacn_1_1_notify_handler.html</anchorfile>
+      <anchor>a2f3aeb9fb2ca8daa1881f4bf4ce0b30a</anchor>
+      <arglist>(const SacnSocketErrorInfo &amp;err_info)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>sacn::Receiver::NotifyHandler</name>
     <filename>classsacn_1_1_receiver_1_1_notify_handler.html</filename>
     <member kind="function">
@@ -2248,6 +2373,31 @@
   <compound kind="class">
     <name>sacn::detail::ReceiverHandleType</name>
     <filename>classsacn_1_1detail_1_1_receiver_handle_type.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>SacnCommonCallbacks</name>
+    <filename>struct_sacn_common_callbacks.html</filename>
+    <member kind="variable">
+      <type>SacnUnicastSendErrorCallback</type>
+      <name>unicast_send_error</name>
+      <anchorfile>struct_sacn_common_callbacks.html</anchorfile>
+      <anchor>a596202dccb1d167d9e00cb225ea0742d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>SacnMulticastSendErrorCallback</type>
+      <name>multicast_send_error</name>
+      <anchorfile>struct_sacn_common_callbacks.html</anchorfile>
+      <anchor>a60ade51fed96ec102077ecfb95678dc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void *</type>
+      <name>context</name>
+      <anchorfile>struct_sacn_common_callbacks.html</anchorfile>
+      <anchor>aff15132e3672d21a279ab76876ad3f4d</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>SacnDmxMergerConfig</name>
@@ -2599,6 +2749,13 @@
       <anchor>ae9a40a7b2ee6f082d3631d2b93d16ca1</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>SacnSendSocketConfig</type>
+      <name>send_socket_config</name>
+      <anchorfile>struct_sacn_netint_config.html</anchorfile>
+      <anchor>af696d0613d0f3572fb57012045a53558</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>SacnReceiverCallbacks</name>
@@ -2878,6 +3035,70 @@
       <anchorfile>struct_sacn_remote_source.html</anchorfile>
       <anchor>ad7713d26ad1caac6447d888681afdf83</anchor>
       <arglist>[kSacnSourceNameMaxLen]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SacnSendSocketConfig</name>
+    <filename>struct_sacn_send_socket_config.html</filename>
+    <member kind="variable">
+      <type>int</type>
+      <name>unicast_sndtimeo_ms</name>
+      <anchorfile>struct_sacn_send_socket_config.html</anchorfile>
+      <anchor>af04fef4014ced106882343e74dba789c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>multicast_sndtimeo_ms</name>
+      <anchorfile>struct_sacn_send_socket_config.html</anchorfile>
+      <anchor>a39a1512c3d1b28af2c6c3cfb50cc92d6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SacnSocketErrorInfo</name>
+    <filename>struct_sacn_socket_error_info.html</filename>
+    <member kind="variable">
+      <type>etcpal_error_t</type>
+      <name>error</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>a95dc9074b8e48225662fed030eb7c318</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>etcpal_socket_t</type>
+      <name>socket</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>a3934201c8d45fed9f83337f36c82ab03</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const void *</type>
+      <name>message</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>ad258b56dd47b875e957918b600b0efc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>length</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>a631ca5dd5a826c305ef382ea2e957048</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>flags</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>a09fc1f4675d0ea29121b75ca1b08ea97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const EtcPalSockAddr *</type>
+      <name>dest_addr</name>
+      <anchorfile>struct_sacn_socket_error_info.html</anchorfile>
+      <anchor>a6c36c0ed8574a34ed18add15b25f7ede</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3648,22 +3869,22 @@
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a7949ee55283066588f6969482b9734b4</anchor>
-      <arglist>(McastMode mcast_mode)</arglist>
+      <anchor>a34038488e521841a3cfdb73f4ddcfe26</anchor>
+      <arglist>(McastMode mcast_mode, const SacnSendSocketConfig &amp;send_socket_config)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a5dddcb17315d96c0fe54c8a2fd009a48</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints)</arglist>
+      <anchor>a467300ed10a47cae3c121ab0a8398c8b</anchor>
+      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;netints, const SacnSendSocketConfig &amp;send_socket_config)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static etcpal::Error</type>
       <name>ResetNetworking</name>
       <anchorfile>classsacn_1_1_source.html</anchorfile>
-      <anchor>a38407952289333b7acc45d8ee995e264</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, std::vector&lt; UniverseNetintList &gt; &amp;netint_lists)</arglist>
+      <anchor>a77f9033df5ae3fc659fa5361391b90b8</anchor>
+      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, std::vector&lt; UniverseNetintList &gt; &amp;netint_lists, const SacnSendSocketConfig &amp;send_socket_config)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -3856,7 +4077,9 @@
     <name>sacn</name>
     <filename>namespacesacn.html</filename>
     <class kind="class">sacn::DmxMerger</class>
+    <class kind="struct">sacn::LibrarySettings</class>
     <class kind="class">sacn::MergeReceiver</class>
+    <class kind="class">sacn::NotifyHandler</class>
     <class kind="class">sacn::Receiver</class>
     <class kind="class">sacn::Source</class>
     <class kind="class">sacn::SourceDetector</class>
@@ -3880,57 +4103,57 @@
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga372690d8ee9226793808787d4b03c345</anchor>
-      <arglist>(sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga955bf94f1d1865e75c1fc016909b8a87</anchor>
+      <arglist>(sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gad513ef45e72b68724eb537c7aea2d51e</anchor>
-      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga1baf221718d2682223ae846eee162e9b</anchor>
+      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga18e8b87064c350afe22a73cd2bff50d1</anchor>
-      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga9d456df24211d62419bc201b681064fb</anchor>
+      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab83d0a44768fea3e221600d1733eb41e</anchor>
-      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gae565208036f43547e32beabd36dd5a89</anchor>
+      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga5e09ff51dca11c87f25a7c55f3bf5434</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga82b705bc0cbe487b38598c108baffe92</anchor>
+      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga70bde52c5f4de0c652d8d18a2366a210</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga88dfed95aea7df22da5d6838dd2c872c</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga40d77a7f7f3bdff90c37e3c839839991</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features)</arglist>
+      <anchor>ga629e1f9cfdf8ffe25a0cbcceddb523c4</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga2921efbe77836c7cc57daa0e8d5786db</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gac3f1c88ff803db5c245383683a3e87d5</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3986,7 +4209,10 @@
     <subgroup>sacn_source</subgroup>
     <subgroup>sacn_source_detector</subgroup>
     <class kind="struct">SacnMcastInterface</class>
+    <class kind="struct">SacnSendSocketConfig</class>
     <class kind="struct">SacnNetintConfig</class>
+    <class kind="struct">SacnSocketErrorInfo</class>
+    <class kind="struct">SacnCommonCallbacks</class>
     <member kind="define">
       <type>#define</type>
       <name>SACN_NETINT_CONFIG_DEFAULT_INIT</name>
@@ -4009,10 +4235,45 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
+      <type>struct SacnSendSocketConfig</type>
+      <name>SacnSendSocketConfig</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga1481e0fee3c2c8f9a2e51f044301ce44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>struct SacnNetintConfig</type>
       <name>SacnNetintConfig</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>ga3cd2196005e33f66518a0f0baba34147</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnSocketErrorInfo</type>
+      <name>SacnSocketErrorInfo</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga24ed3049085b32159700b64c316bffdf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>SacnUnicastSendErrorCallback</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga11f36368e56cb406d2f49fb19ec70cb8</anchor>
+      <arglist>)(const SacnSocketErrorInfo *err_info, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>SacnMulticastSendErrorCallback</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gae90f67a6c186bb64bc02e70d6ec25677</anchor>
+      <arglist>)(const SacnSocketErrorInfo *err_info, void *context)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct SacnCommonCallbacks</type>
+      <name>SacnCommonCallbacks</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gade46e797abb2cb0c12110bec1e616c8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -4092,10 +4353,24 @@
     </member>
     <member kind="function">
       <type>etcpal_error_t</type>
+      <name>sacn_init_with_cb</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>gaa1f89c4a5a9f5ad8af26f5a09d0cd1a4</anchor>
+      <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, const SacnCommonCallbacks *callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
       <name>sacn_init_features</name>
       <anchorfile>group__s_a_c_n.html</anchorfile>
       <anchor>gaec646a837c28740657cff1bd9a1bc1b0</anchor>
       <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, sacn_features_t features)</arglist>
+    </member>
+    <member kind="function">
+      <type>etcpal_error_t</type>
+      <name>sacn_init_features_with_cb</name>
+      <anchorfile>group__s_a_c_n.html</anchorfile>
+      <anchor>ga50fb734805f4bae1e741f9652980edda</anchor>
+      <arglist>(const EtcPalLogParams *log_params, const SacnNetintConfig *sys_netint_config, sacn_features_t features, const SacnCommonCallbacks *callbacks)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -5455,61 +5730,63 @@
     <name>sacn_cpp_common</name>
     <title>Common Definitions</title>
     <filename>group__sacn__cpp__common.html</filename>
+    <class kind="class">sacn::NotifyHandler</class>
+    <class kind="struct">sacn::LibrarySettings</class>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga372690d8ee9226793808787d4b03c345</anchor>
-      <arglist>(sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga955bf94f1d1865e75c1fc016909b8a87</anchor>
+      <arglist>(sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gad513ef45e72b68724eb537c7aea2d51e</anchor>
-      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga1baf221718d2682223ae846eee162e9b</anchor>
+      <arglist>(const EtcPalLogParams *log_params, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga18e8b87064c350afe22a73cd2bff50d1</anchor>
-      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga9d456df24211d62419bc201b681064fb</anchor>
+      <arglist>(const EtcPalLogParams *log_params, McastMode mcast_mode, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>gab83d0a44768fea3e221600d1733eb41e</anchor>
-      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gae565208036f43547e32beabd36dd5a89</anchor>
+      <arglist>(const EtcPalLogParams *log_params, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga5e09ff51dca11c87f25a7c55f3bf5434</anchor>
-      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga82b705bc0cbe487b38598c108baffe92</anchor>
+      <arglist>(std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga70bde52c5f4de0c652d8d18a2366a210</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>ga88dfed95aea7df22da5d6838dd2c872c</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, McastMode mcast_mode=McastMode::kEnabledOnAllInterfaces, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga40d77a7f7f3bdff90c37e3c839839991</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features)</arglist>
+      <anchor>ga629e1f9cfdf8ffe25a0cbcceddb523c4</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, sacn_features_t features, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>sacn::Init</name>
       <anchorfile>group__sacn__cpp__common.html</anchorfile>
-      <anchor>ga2921efbe77836c7cc57daa0e8d5786db</anchor>
-      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL)</arglist>
+      <anchor>gac3f1c88ff803db5c245383683a3e87d5</anchor>
+      <arglist>(const etcpal::Logger &amp;logger, std::vector&lt; SacnMcastInterface &gt; &amp;sys_netints, sacn_features_t features=SACN_FEATURES_ALL, const LibrarySettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>RemoteSourceHandle</type>
@@ -5575,20 +5852,20 @@
     <filename>additional_documentation.html</filename>
     <subpage>source_loss_behavior.html</subpage>
     <subpage>per_address_priority.html</subpage>
-    <docanchor file="additional_documentation.html" title="/tmp/tmpdt9bljnd/docs/pages/additional_documentation.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2additional__documentation</docanchor>
+    <docanchor file="additional_documentation.html" title="/tmp/tmpfl68vjg2/docs/pages/additional_documentation.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2additional__documentation</docanchor>
   </compound>
   <compound kind="page">
     <name>building_and_integrating</name>
     <title>Building and Integrating the sACN Library Into Your Project</title>
     <filename>building_and_integrating.html</filename>
     <subpage>configuring_lwip.html</subpage>
-    <docanchor file="building_and_integrating.html" title="/tmp/tmpdt9bljnd/docs/pages/building_and_integrating.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2building__and__integrating</docanchor>
+    <docanchor file="building_and_integrating.html" title="/tmp/tmpfl68vjg2/docs/pages/building_and_integrating.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2building__and__integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>configuring_lwip</name>
     <title>Configuring lwIP for compatibility with sACN</title>
     <filename>configuring_lwip.html</filename>
-    <docanchor file="configuring_lwip.html" title="/tmp/tmpdt9bljnd/docs/pages/configuring_lwip.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2configuring__lwip</docanchor>
+    <docanchor file="configuring_lwip.html" title="/tmp/tmpfl68vjg2/docs/pages/configuring_lwip.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2configuring__lwip</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
@@ -5600,49 +5877,49 @@
     <subpage>using_merge_receiver.html</subpage>
     <subpage>using_receiver.html</subpage>
     <subpage>using_dmx_merger.html</subpage>
-    <docanchor file="getting_started.html" title="/tmp/tmpdt9bljnd/docs/pages/getting_started.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2getting__started</docanchor>
+    <docanchor file="getting_started.html" title="/tmp/tmpfl68vjg2/docs/pages/getting_started.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2getting__started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html" title="/tmp/tmpdt9bljnd/docs/pages/global_init_and_destroy.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2global__init__and__destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html" title="/tmp/tmpfl68vjg2/docs/pages/global_init_and_destroy.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2global__init__and__destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>per_address_priority</name>
     <title>Per Address Priority</title>
     <filename>per_address_priority.html</filename>
-    <docanchor file="per_address_priority.html" title="/tmp/tmpdt9bljnd/docs/pages/per_address_priority.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2per__address__priority</docanchor>
+    <docanchor file="per_address_priority.html" title="/tmp/tmpfl68vjg2/docs/pages/per_address_priority.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2per__address__priority</docanchor>
   </compound>
   <compound kind="page">
     <name>source_loss_behavior</name>
     <title>Source Loss Behavior</title>
     <filename>source_loss_behavior.html</filename>
-    <docanchor file="source_loss_behavior.html" title="/tmp/tmpdt9bljnd/docs/pages/source_loss_behavior.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2source__loss__behavior</docanchor>
+    <docanchor file="source_loss_behavior.html" title="/tmp/tmpfl68vjg2/docs/pages/source_loss_behavior.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2source__loss__behavior</docanchor>
   </compound>
   <compound kind="page">
     <name>using_dmx_merger</name>
     <title>Using the sACN DMX Merger API</title>
     <filename>using_dmx_merger.html</filename>
-    <docanchor file="using_dmx_merger.html" title="/tmp/tmpdt9bljnd/docs/pages/using_dmx_merger.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2using__dmx__merger</docanchor>
+    <docanchor file="using_dmx_merger.html" title="/tmp/tmpfl68vjg2/docs/pages/using_dmx_merger.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2using__dmx__merger</docanchor>
   </compound>
   <compound kind="page">
     <name>using_merge_receiver</name>
     <title>Using the sACN Merge Receiver API</title>
     <filename>using_merge_receiver.html</filename>
-    <docanchor file="using_merge_receiver.html" title="/tmp/tmpdt9bljnd/docs/pages/using_merge_receiver.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2using__merge__receiver</docanchor>
+    <docanchor file="using_merge_receiver.html" title="/tmp/tmpfl68vjg2/docs/pages/using_merge_receiver.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2using__merge__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_receiver</name>
     <title>Using the sACN Receiver API</title>
     <filename>using_receiver.html</filename>
-    <docanchor file="using_receiver.html" title="/tmp/tmpdt9bljnd/docs/pages/using_receiver.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2using__receiver</docanchor>
+    <docanchor file="using_receiver.html" title="/tmp/tmpfl68vjg2/docs/pages/using_receiver.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2using__receiver</docanchor>
   </compound>
   <compound kind="page">
     <name>using_source</name>
     <title>Using the sACN Source API</title>
     <filename>using_source.html</filename>
-    <docanchor file="using_source.html" title="/tmp/tmpdt9bljnd/docs/pages/using_source.md">md__2tmp_2tmpdt9bljnd_2docs_2pages_2using__source</docanchor>
+    <docanchor file="using_source.html" title="/tmp/tmpfl68vjg2/docs/pages/using_source.md">md__2tmp_2tmpfl68vjg2_2docs_2pages_2using__source</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

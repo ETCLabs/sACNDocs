@@ -8,11 +8,14 @@ var annotated_dup =
         [ "SourceHandleType", "classsacn_1_1detail_1_1_source_handle_type.html", null ]
       ] ],
       [ "DmxMerger", "classsacn_1_1_dmx_merger.html", "classsacn_1_1_dmx_merger" ],
+      [ "LibrarySettings", "structsacn_1_1_library_settings.html", "structsacn_1_1_library_settings" ],
       [ "MergeReceiver", "classsacn_1_1_merge_receiver.html", "classsacn_1_1_merge_receiver" ],
+      [ "NotifyHandler", "classsacn_1_1_notify_handler.html", "classsacn_1_1_notify_handler" ],
       [ "Receiver", "classsacn_1_1_receiver.html", "classsacn_1_1_receiver" ],
       [ "Source", "classsacn_1_1_source.html", "classsacn_1_1_source" ],
       [ "SourceDetector", "classsacn_1_1_source_detector.html", "classsacn_1_1_source_detector" ]
     ] ],
+    [ "SacnCommonCallbacks", "struct_sacn_common_callbacks.html", "struct_sacn_common_callbacks" ],
     [ "SacnDmxMergerConfig", "struct_sacn_dmx_merger_config.html", "struct_sacn_dmx_merger_config" ],
     [ "SacnDmxMergerSource", "struct_sacn_dmx_merger_source.html", "struct_sacn_dmx_merger_source" ],
     [ "SacnLostSource", "struct_sacn_lost_source.html", "struct_sacn_lost_source" ],
@@ -29,6 +32,8 @@ var annotated_dup =
     [ "SacnRecvUniverseData", "struct_sacn_recv_universe_data.html", "struct_sacn_recv_universe_data" ],
     [ "SacnRecvUniverseSubrange", "struct_sacn_recv_universe_subrange.html", "struct_sacn_recv_universe_subrange" ],
     [ "SacnRemoteSource", "struct_sacn_remote_source.html", "struct_sacn_remote_source" ],
+    [ "SacnSendSocketConfig", "struct_sacn_send_socket_config.html", "struct_sacn_send_socket_config" ],
+    [ "SacnSocketErrorInfo", "struct_sacn_socket_error_info.html", "struct_sacn_socket_error_info" ],
     [ "SacnSourceConfig", "struct_sacn_source_config.html", "struct_sacn_source_config" ],
     [ "SacnSourceDetectorCallbacks", "struct_sacn_source_detector_callbacks.html", "struct_sacn_source_detector_callbacks" ],
     [ "SacnSourceDetectorConfig", "struct_sacn_source_detector_config.html", "struct_sacn_source_detector_config" ],

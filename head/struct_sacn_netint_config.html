@@ -237,6 +237,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_netints</b></td
 <tr class="memitem:ae9a40a7b2ee6f082d3631d2b93d16ca1" id="r_ae9a40a7b2ee6f082d3631d2b93d16ca1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a40a7b2ee6f082d3631d2b93d16ca1">no_netints</a></td></tr>
 <tr class="memdesc:ae9a40a7b2ee6f082d3631d2b93d16ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is true, no network interfaces will be used for multicast.  <br /></td></tr>
 <tr class="separator:ae9a40a7b2ee6f082d3631d2b93d16ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af696d0613d0f3572fb57012045a53558" id="r_af696d0613d0f3572fb57012045a53558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af696d0613d0f3572fb57012045a53558">send_socket_config</a></td></tr>
+<tr class="memdesc:af696d0613d0f3572fb57012045a53558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for send sockets (e.g.  <br /></td></tr>
+<tr class="separator:af696d0613d0f3572fb57012045a53558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Network interface configuration information to give the sACN library. </p>
@@ -273,6 +276,23 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_netints</b></td
 
 <p>If this is true, no network interfaces will be used for multicast. </p>
 <p>If any are specified in netints, they will be ignored and their statuses will be set to invalid. </p>
+
+</div>
+</div>
+<a id="af696d0613d0f3572fb57012045a53558" name="af696d0613d0f3572fb57012045a53558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af696d0613d0f3572fb57012045a53558">&#9670;&#160;</a></span>send_socket_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a> SacnNetintConfig::send_socket_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configuration for send sockets (e.g. </p>
+<p>configurable sockopts). Only supported when setting library-wide interfaces (i.e. this cannot be set per-universe). </p>
 
 </div>
 </div>
