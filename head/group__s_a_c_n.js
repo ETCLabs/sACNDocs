@@ -12,6 +12,7 @@ var group__s_a_c_n =
     ] ],
     [ "SacnSendSocketConfig", "struct_sacn_send_socket_config.html", [
       [ "multicast_sndtimeo_ms", "struct_sacn_send_socket_config.html#a39a1512c3d1b28af2c6c3cfb50cc92d6", null ],
+      [ "unicast_ip_support", "struct_sacn_send_socket_config.html#a471703255ef486aecb3336aaee075af2", null ],
       [ "unicast_sndtimeo_ms", "struct_sacn_send_socket_config.html#af04fef4014ced106882343e74dba789c", null ]
     ] ],
     [ "SacnNetintConfig", "struct_sacn_netint_config.html", [
@@ -36,6 +37,8 @@ var group__s_a_c_n =
     [ "SACN_FEATURE_DMX_MERGER", "group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c", null ],
     [ "SACN_FEATURES_ALL", "group__s_a_c_n.html#gae332f970f84a53d07da154915f343042", null ],
     [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
+    [ "SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647", null ],
+    [ "SACN_SEND_SOCKET_CONFIG_DEFAULT_VALUES", "group__s_a_c_n.html#ga5a7f3adda7912b29be9847ab39989d2b", null ],
     [ "SACN_VERSION_BUILD", "group__s_a_c_n.html#gab22648c510945c218b806ad28e1e9a86", null ],
     [ "SACN_VERSION_COPYRIGHT", "group__s_a_c_n.html#ga5fd2e6c86426807d2eb598c67121723b", null ],
     [ "SACN_VERSION_DATESTR", "group__s_a_c_n.html#ga99a95e107267c6f80cc2195f86c11586", null ],

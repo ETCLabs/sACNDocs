@@ -3,6 +3,8 @@ var common_8h =
     [ "SACN_FEATURE_DMX_MERGER", "group__s_a_c_n.html#gab5f7ac205d84be7fdb324945a10f853c", null ],
     [ "SACN_FEATURES_ALL", "group__s_a_c_n.html#gae332f970f84a53d07da154915f343042", null ],
     [ "SACN_NETINT_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd", null ],
+    [ "SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT", "group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647", null ],
+    [ "SACN_SEND_SOCKET_CONFIG_DEFAULT_VALUES", "group__s_a_c_n.html#ga5a7f3adda7912b29be9847ab39989d2b", null ],
     [ "sacn_features_t", "group__s_a_c_n.html#gac390a9f556357c2b93e8e8135f116723", null ],
     [ "sacn_remote_source_t", "group__s_a_c_n.html#ga31b1febd91134668307803d573ed2f2c", null ],
     [ "SacnCommonCallbacks", "group__s_a_c_n.html#gade46e797abb2cb0c12110bec1e616c8c", null ],

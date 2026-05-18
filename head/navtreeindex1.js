@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"group__sacn__cpp__common.html#ga88dfed95aea7df22da5d6838dd2c872c":[4,1,0,4],
+"group__sacn__cpp__common.html#ga955bf94f1d1865e75c1fc016909b8a87":[4,1,0,10],
 "group__sacn__cpp__common.html#ga9d456df24211d62419bc201b681064fb":[4,1,0,7],
 "group__sacn__cpp__common.html#gaa353377fefbbdd6ae634d981944c5619":[4,1,0,3],
 "group__sacn__cpp__common.html#gabd2bd6cb43e9b621b6627fb177b49523":[4,1,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "struct_sacn_merge_receiver_callbacks.html":[4,0,1,1],
 "struct_sacn_merge_receiver_callbacks.html#a09e0f414718c8fb11a35d47a41b5d906":[4,0,1,1,3],
 "struct_sacn_merge_receiver_callbacks.html#a47eb2486101140bc958b42de2f90f914":[4,0,1,1,2],
-"struct_sacn_merge_receiver_callbacks.html#a55e4446ff4200b80a04e48850ecef99d":[4,0,1,1,6],
-"struct_sacn_merge_receiver_callbacks.html#a5b34ded148269de10e156c42930ae4fb":[4,0,1,1,5],
-"struct_sacn_merge_receiver_callbacks.html#a7127a3a7c88d905ad3239f93000d0204":[4,0,1,1,0]
+"struct_sacn_merge_receiver_callbacks.html#a55e4446ff4200b80a04e48850ecef99d":[4,0,1,1,6]
 };

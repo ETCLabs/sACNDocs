@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"struct_sacn_merge_receiver_callbacks.html#a5b34ded148269de10e156c42930ae4fb":[4,0,1,1,5],
+"struct_sacn_merge_receiver_callbacks.html#a7127a3a7c88d905ad3239f93000d0204":[4,0,1,1,0],
 "struct_sacn_merge_receiver_callbacks.html#a8f0a9fa771258c26a4f6321232a0e0c1":[4,0,1,1,4],
 "struct_sacn_merge_receiver_callbacks.html#aa943894a14e3a8ca8effaba1291f82fe":[4,0,1,1,1],
 "struct_sacn_merge_receiver_callbacks.html#af74c63609fe74f315488f3d729f06f7e":[4,0,1,1,7],
@@ -72,7 +74,8 @@ var NAVTREEINDEX2 =
 "struct_sacn_remote_source.html#ad7713d26ad1caac6447d888681afdf83":[4,0,3,2,2],
 "struct_sacn_send_socket_config.html":[4,0,7],
 "struct_sacn_send_socket_config.html#a39a1512c3d1b28af2c6c3cfb50cc92d6":[4,0,7,0],
-"struct_sacn_send_socket_config.html#af04fef4014ced106882343e74dba789c":[4,0,7,1],
+"struct_sacn_send_socket_config.html#a471703255ef486aecb3336aaee075af2":[4,0,7,1],
+"struct_sacn_send_socket_config.html#af04fef4014ced106882343e74dba789c":[4,0,7,2],
 "struct_sacn_socket_error_info.html":[4,0,9],
 "struct_sacn_socket_error_info.html#a09fc1f4675d0ea29121b75ca1b08ea97":[4,0,9,2],
 "struct_sacn_socket_error_info.html#a3934201c8d45fed9f83337f36c82ab03":[4,0,9,5],

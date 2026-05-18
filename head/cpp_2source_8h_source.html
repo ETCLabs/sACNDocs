@@ -671,146 +671,149 @@ $(function(){initNavTree('cpp_2source_8h_source.html',''); initResizable(true); 
 </div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
 <div class="foldopen" id="foldopen00827" data-start="{" data-end="}">
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">  827</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(<a class="code hl_enumeration" href="namespacesacn.html#ad10de668b9a073fabe200d3f0830e381">McastMode</a> mcast_mode = McastMode::kEnabledOnAllInterfaces,</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>                                             <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp; send_socket_config = {})</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>{</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <span class="keywordflow">if</span> (mcast_mode == McastMode::kDisabledOnAllInterfaces)</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1">no_netints</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>  netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">send_socket_config</a> = send_socket_config;</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a>(&amp;netint_config);</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">  827</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <a class="code hl_enumeration" href="namespacesacn.html#ad10de668b9a073fabe200d3f0830e381">McastMode</a>                   mcast_mode         = McastMode::kEnabledOnAllInterfaces,</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp; send_socket_config = <a class="code hl_define" href="group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647">SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT</a>)</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>{</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordflow">if</span> (mcast_mode == McastMode::kDisabledOnAllInterfaces)</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1">no_netints</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">send_socket_config</a> = send_socket_config;</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a>(&amp;netint_config);</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>}</div>
 </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
-<div class="foldopen" id="foldopen00864" data-start="{" data-end="}">
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a467300ed10a47cae3c121ab0a8398c8b">  864</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(std::vector&lt;SacnMcastInterface&gt;&amp; sys_netints,</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>                                             <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp;      send_socket_config = {})</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>{</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config   = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>  netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">send_socket_config</a> = send_socket_config;</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span> </div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  <span class="keywordflow">if</span> (!sys_netints.empty())</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>  {</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">netints</a>     = sys_netints.data();</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7">num_netints</a> = sys_netints.size();</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  }</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a>(&amp;netint_config);</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>}</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="foldopen" id="foldopen00865" data-start="{" data-end="}">
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a467300ed10a47cae3c121ab0a8398c8b">  865</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>    std::vector&lt;SacnMcastInterface&gt;&amp; sys_netints,</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp;      send_socket_config = <a class="code hl_define" href="group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647">SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT</a>)</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>{</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> netint_config   = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">send_socket_config</a> = send_socket_config;</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span> </div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <span class="keywordflow">if</span> (!sys_netints.empty())</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>  {</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">netints</a>     = sys_netints.data();</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7">num_netints</a> = sys_netints.size();</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>  }</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#ga348c4a38439a1bf2623253bbc30120c5">sacn_source_reset_networking</a>(&amp;netint_config);</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>}</div>
 </div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
-<div class="foldopen" id="foldopen00909" data-start="{" data-end="}">
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a77f9033df5ae3fc659fa5361391b90b8">  909</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(std::vector&lt;SacnMcastInterface&gt;&amp; sys_netints,</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>                                             std::vector&lt;UniverseNetintList&gt;&amp; per_universe_netint_lists,</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>                                             <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp;      send_socket_config = {})</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>{</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>  std::vector&lt;SacnSourceUniverseNetintList&gt; netint_lists_c;</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  netint_lists_c.reserve(per_universe_netint_lists.size());</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>  std::transform(per_universe_netint_lists.begin(), per_universe_netint_lists.end(), std::back_inserter(netint_lists_c),</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                 [](UniverseNetintList&amp; list) {</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                   <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        SacnSourceUniverseNetintList c_list = {</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>          list.handle,</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>          list.universe,</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>          list.netints.data(),</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>          list.netints.size(),</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>          list.no_netints</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        };</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                   <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                   <span class="keywordflow">return</span> c_list;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                 });</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span> </div>
+<div class="foldopen" id="foldopen00911" data-start="{" data-end="}">
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a77f9033df5ae3fc659fa5361391b90b8">  911</a></span><span class="keyword">inline</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code hl_function" href="classsacn_1_1_source.html#a34038488e521841a3cfdb73f4ddcfe26">Source::ResetNetworking</a>(</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    std::vector&lt;SacnMcastInterface&gt;&amp; sys_netints,</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    std::vector&lt;UniverseNetintList&gt;&amp; per_universe_netint_lists,</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a>&amp;      send_socket_config = <a class="code hl_define" href="group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647">SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT</a>)</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>{</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>  std::vector&lt;SacnSourceUniverseNetintList&gt; netint_lists_c;</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>  netint_lists_c.reserve(per_universe_netint_lists.size());</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>  std::transform(per_universe_netint_lists.begin(), per_universe_netint_lists.end(), std::back_inserter(netint_lists_c),</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>                 [](<a class="code hl_struct" href="structsacn_1_1_source_1_1_universe_netint_list.html">UniverseNetintList</a>&amp; list) {</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                   <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>        SacnSourceUniverseNetintList c_list = {</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>          list.handle,</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>          list.universe,</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>          list.netints.data(),</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>          list.netints.size(),</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>          list.no_netints</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        };</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                   <span class="comment">// clang-format on</span></div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> sys_netint_config   = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  sys_netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">netints</a>            = sys_netints.data();</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  sys_netint_config.num_netints        = sys_netints.size();</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  sys_netint_config.send_socket_config = send_socket_config;</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#gac47eb25e0017cf7d62120fb3fa072333">sacn_source_reset_networking_per_universe</a>(&amp;sys_netint_config, netint_lists_c.data(), netint_lists_c.size());</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>}</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                   <span class="keywordflow">return</span> c_list;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>                 });</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  <a class="code hl_struct" href="struct_sacn_netint_config.html">SacnNetintConfig</a> sys_netint_config   = <a class="code hl_define" href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  sys_netint_config.<a class="code hl_variable" href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">netints</a>            = sys_netints.data();</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>  sys_netint_config.num_netints        = sys_netints.size();</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  sys_netint_config.send_socket_config = send_socket_config;</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__sacn__source.html#gac47eb25e0017cf7d62120fb3fa072333">sacn_source_reset_networking_per_universe</a>(&amp;sys_netint_config, netint_lists_c.data(), netint_lists_c.size());</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>}</div>
 </div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span> </div>
-<div class="foldopen" id="foldopen00943" data-start="{" data-end="}">
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">  943</a></span><span class="keyword">inline</span> std::vector&lt;EtcPalMcastNetintId&gt; <a class="code hl_function" href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">Source::GetNetworkInterfaces</a>(uint16_t universe)</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>{</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>  <span class="comment">// This uses a guessing algorithm with a while loop to avoid race conditions.</span></div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  <span class="keywordtype">size_t</span>                           size_guess = 4u;</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>  std::vector&lt;EtcPalMcastNetintId&gt; netints(size_guess);</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  <span class="keywordtype">size_t</span> num_netints = <a class="code hl_function" href="group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69">sacn_source_get_network_interfaces</a>(handle_.<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html#afbeb3ea2eee6f9695aa8328ce7d9bac4">value</a>(), universe, netints.data(), netints.size());</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  <span class="keywordflow">while</span> (num_netints &gt; netints.size())</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  {</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    size_guess = num_netints + 4u;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    netints.resize(size_guess);</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    num_netints = <a class="code hl_function" href="group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69">sacn_source_get_network_interfaces</a>(handle_.<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html#afbeb3ea2eee6f9695aa8328ce7d9bac4">value</a>(), universe, netints.data(), netints.size());</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>  }</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>  netints.resize(num_netints);</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  <span class="keywordflow">return</span> netints;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>}</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
+<div class="foldopen" id="foldopen00946" data-start="{" data-end="}">
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">  946</a></span><span class="keyword">inline</span> std::vector&lt;EtcPalMcastNetintId&gt; <a class="code hl_function" href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">Source::GetNetworkInterfaces</a>(uint16_t universe)</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>{</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  <span class="comment">// This uses a guessing algorithm with a while loop to avoid race conditions.</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>  <span class="keywordtype">size_t</span>                           size_guess = 4u;</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  std::vector&lt;EtcPalMcastNetintId&gt; netints(size_guess);</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  <span class="keywordtype">size_t</span> num_netints = <a class="code hl_function" href="group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69">sacn_source_get_network_interfaces</a>(handle_.<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html#afbeb3ea2eee6f9695aa8328ce7d9bac4">value</a>(), universe, netints.data(), netints.size());</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>  <span class="keywordflow">while</span> (num_netints &gt; netints.size())</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>  {</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    size_guess = num_netints + 4u;</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    netints.resize(size_guess);</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    num_netints = <a class="code hl_function" href="group__sacn__source.html#gae8c8d77375ea48b26fc069c9068aec69">sacn_source_get_network_interfaces</a>(handle_.<a class="code hl_functionRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html#afbeb3ea2eee6f9695aa8328ce7d9bac4">value</a>(), universe, netints.data(), netints.size());</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  }</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>  netints.resize(num_netints);</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>  <span class="keywordflow">return</span> netints;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>}</div>
 </div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="foldopen" id="foldopen00966" data-start="{" data-end="}">
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">  966</a></span><span class="keyword">constexpr</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">Source::Handle</a> <a class="code hl_function" href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">Source::handle</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  <span class="keywordflow">return</span> handle_;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>}</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span> </div>
+<div class="foldopen" id="foldopen00969" data-start="{" data-end="}">
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno"><a class="line" href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">  969</a></span><span class="keyword">constexpr</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">Source::Handle</a> <a class="code hl_function" href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">Source::handle</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>  <span class="keywordflow">return</span> handle_;</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>}</div>
 </div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="keyword">inline</span> <a class="code hl_struct" href="struct_sacn_source_config.html">SacnSourceConfig</a> Source::TranslateConfig(<span class="keyword">const</span> Settings&amp; settings)</div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>{</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>  <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>  <a class="code hl_struct" href="struct_sacn_source_config.html">SacnSourceConfig</a> config = {</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    settings.<a class="code hl_variable" href="struct_sacn_source_config.html#a6fd0395a963497fecdf963a53e782d29">cid</a>.get(),</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>    settings.name.c_str(),</div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    settings.universe_count_max,</div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    settings.manually_process_source,</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    settings.ip_supported,</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    settings.keep_alive_interval,</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    settings.pap_keep_alive_interval</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>  };</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span> </div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>  <span class="keywordflow">return</span> config;</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>}</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span><span class="keyword">inline</span> <a class="code hl_struct" href="struct_sacn_source_config.html">SacnSourceConfig</a> Source::TranslateConfig(<span class="keyword">const</span> Settings&amp; settings)</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>{</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>  <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>  <a class="code hl_struct" href="struct_sacn_source_config.html">SacnSourceConfig</a> config = {</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    settings.<a class="code hl_variable" href="struct_sacn_source_config.html#a6fd0395a963497fecdf963a53e782d29">cid</a>.get(),</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    settings.name.c_str(),</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    settings.universe_count_max,</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    settings.manually_process_source,</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    settings.ip_supported,</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    settings.keep_alive_interval,</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    settings.pap_keep_alive_interval</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>  };</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  <span class="comment">// clang-format on</span></div>
 <div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span> </div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a>&amp; Source::TranslatedUniverseConfig::get() noexcept</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>{</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>  <span class="keywordflow">if</span> (!unicast_destinations_.empty())</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>  {</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>    config_.<a class="code hl_variable" href="struct_sacn_source_universe_config.html#a295a211a4d3fa77e4b1e6e053d91c652">unicast_destinations</a>     = unicast_destinations_.data();</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>    config_.<a class="code hl_variable" href="struct_sacn_source_universe_config.html#a3761d3f63c5dbb8eae9a486df7d9c95e">num_unicast_destinations</a> = unicast_destinations_.size();</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>  }</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>  <span class="keywordflow">return</span> config_;</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>}</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  <span class="keywordflow">return</span> config;</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>}</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_sacn_source_universe_config.html">SacnSourceUniverseConfig</a>&amp; Source::TranslatedUniverseConfig::get() noexcept</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>{</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>  <span class="keywordflow">if</span> (!unicast_destinations_.empty())</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>  {</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    config_.<a class="code hl_variable" href="struct_sacn_source_universe_config.html#a295a211a4d3fa77e4b1e6e053d91c652">unicast_destinations</a>     = unicast_destinations_.data();</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>    config_.<a class="code hl_variable" href="struct_sacn_source_universe_config.html#a3761d3f63c5dbb8eae9a486df7d9c95e">num_unicast_destinations</a> = unicast_destinations_.size();</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>  }</div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span><span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span><span class="keyword">inline</span> Source::TranslatedUniverseConfig::TranslatedUniverseConfig(<span class="keyword">const</span> UniverseSettings&amp; settings)</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>    : config_{</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>        settings.universe,</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>        settings.priority,</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        settings.send_preview,</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        settings.send_unicast_only,</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        nullptr,</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>        0,</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>        settings.sync_universe</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>      }</div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>{</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>  <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span> </div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>  <span class="keywordflow">if</span> (!settings.unicast_destinations.empty())</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>  {</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    unicast_destinations_.reserve(settings.unicast_destinations.size());</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    std::transform(settings.unicast_destinations.begin(), settings.unicast_destinations.end(),</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>                   std::back_inserter(unicast_destinations_), [](<span class="keyword">const</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a>&amp; dest) { return dest.get(); });</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>  }</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>}</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>};  <span class="comment">// namespace sacn</span></div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span><span class="preprocessor">#endif  </span><span class="comment">// SACN_CPP_SOURCE_H_</span></div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>  <span class="keywordflow">return</span> config_;</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>}</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span> </div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span><span class="keyword">inline</span> Source::TranslatedUniverseConfig::TranslatedUniverseConfig(<span class="keyword">const</span> UniverseSettings&amp; settings)</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    : config_{</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        settings.universe,</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        settings.priority,</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>        settings.send_preview,</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>        settings.send_unicast_only,</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>        nullptr,</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>        0,</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>        settings.sync_universe</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>      }</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>{</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>  <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span> </div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>  <span class="keywordflow">if</span> (!settings.unicast_destinations.empty())</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>  {</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    unicast_destinations_.reserve(settings.unicast_destinations.size());</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    std::transform(settings.unicast_destinations.begin(), settings.unicast_destinations.end(),</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>                   std::back_inserter(unicast_destinations_), [](<span class="keyword">const</span> <a class="code hl_classRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a>&amp; dest) { return dest.get(); });</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>  }</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>}</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span> </div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>};  <span class="comment">// namespace sacn</span></div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span> </div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span><span class="preprocessor">#endif  </span><span class="comment">// SACN_CPP_SOURCE_H_</span></div>
 <div class="ttc" id="aclassetcpal_1_1_bad_expected_access_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_bad_expected_access.html">etcpal</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html">etcpal::IpAddr</a></div></div>
@@ -835,10 +838,10 @@ $(function(){initNavTree('cpp_2source_8h_source.html',''); initResizable(true); 
 <div class="ttc" id="aclasssacn_1_1_source_html_a65cd2cbe228edaad83f5c1d78b425426"><div class="ttname"><a href="classsacn_1_1_source.html#a65cd2cbe228edaad83f5c1d78b425426">sacn::Source::GetUnicastDestinations</a></div><div class="ttdeci">std::vector&lt; etcpal::IpAddr &gt; GetUnicastDestinations(uint16_t universe)</div><div class="ttdoc">Obtain a vector of a universe's unicast destinations.</div><div class="ttdef"><b>Definition</b> source.h:531</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a7526f99c160eccbbc295d16fa24d5417"><div class="ttname"><a href="classsacn_1_1_source.html#a7526f99c160eccbbc295d16fa24d5417">sacn::Source::AddUnicastDestination</a></div><div class="ttdeci">etcpal::Error AddUnicastDestination(uint16_t universe, const etcpal::IpAddr &amp;dest)</div><div class="ttdoc">Add a unicast destination for a universe.</div><div class="ttdef"><b>Definition</b> source.h:506</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a7714d77ac62a92d244250cb3c922730a"><div class="ttname"><a href="classsacn_1_1_source.html#a7714d77ac62a92d244250cb3c922730a">sacn::Source::SendNow</a></div><div class="ttdeci">etcpal::Error SendNow(uint16_t universe, uint8_t start_code, const uint8_t *buffer, size_t buflen)</div><div class="ttdoc">Immediately sends the provided sACN start code &amp; data.</div><div class="ttdef"><b>Definition</b> source.h:647</div></div>
-<div class="ttc" id="aclasssacn_1_1_source_html_a7f44d183b68cb51a58ce157e08755dac"><div class="ttname"><a href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">sacn::Source::handle</a></div><div class="ttdeci">constexpr Handle handle() const</div><div class="ttdoc">Get the current handle to the underlying C source.</div><div class="ttdef"><b>Definition</b> source.h:966</div></div>
+<div class="ttc" id="aclasssacn_1_1_source_html_a7f44d183b68cb51a58ce157e08755dac"><div class="ttname"><a href="classsacn_1_1_source.html#a7f44d183b68cb51a58ce157e08755dac">sacn::Source::handle</a></div><div class="ttdeci">constexpr Handle handle() const</div><div class="ttdoc">Get the current handle to the underlying C source.</div><div class="ttdef"><b>Definition</b> source.h:969</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a81af0e3b61fdad0a9367fdbdebfac87c"><div class="ttname"><a href="classsacn_1_1_source.html#a81af0e3b61fdad0a9367fdbdebfac87c">sacn::Source::RemoveUnicastDestination</a></div><div class="ttdeci">void RemoveUnicastDestination(uint16_t universe, const etcpal::IpAddr &amp;dest)</div><div class="ttdoc">Remove a unicast destination on a universe.</div><div class="ttdef"><b>Definition</b> source.h:520</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_a85b66c7e50812b6bc1a379266ffebaf6"><div class="ttname"><a href="classsacn_1_1_source.html#a85b66c7e50812b6bc1a379266ffebaf6">sacn::Source::GetUniverses</a></div><div class="ttdeci">std::vector&lt; uint16_t &gt; GetUniverses()</div><div class="ttdoc">Obtain a vector of this source's universes (sorted lowest to highest).</div><div class="ttdef"><b>Definition</b> source.h:473</div></div>
-<div class="ttc" id="aclasssacn_1_1_source_html_aa31508191e58d9afa3238d1b7d178cd3"><div class="ttname"><a href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">sacn::Source::GetNetworkInterfaces</a></div><div class="ttdeci">std::vector&lt; EtcPalMcastNetintId &gt; GetNetworkInterfaces(uint16_t universe)</div><div class="ttdoc">Obtain a vector of a universe's network interfaces.</div><div class="ttdef"><b>Definition</b> source.h:943</div></div>
+<div class="ttc" id="aclasssacn_1_1_source_html_aa31508191e58d9afa3238d1b7d178cd3"><div class="ttname"><a href="classsacn_1_1_source.html#aa31508191e58d9afa3238d1b7d178cd3">sacn::Source::GetNetworkInterfaces</a></div><div class="ttdeci">std::vector&lt; EtcPalMcastNetintId &gt; GetNetworkInterfaces(uint16_t universe)</div><div class="ttdoc">Obtain a vector of a universe's network interfaces.</div><div class="ttdef"><b>Definition</b> source.h:946</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_ab009191f100ac6809a29e1faca72276c"><div class="ttname"><a href="classsacn_1_1_source.html#ab009191f100ac6809a29e1faca72276c">sacn::Source::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdoc">Destroy an sACN source instance.</div><div class="ttdef"><b>Definition</b> source.h:347</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_ab929347c0537ef42f2d7ad922e21f7fb"><div class="ttname"><a href="classsacn_1_1_source.html#ab929347c0537ef42f2d7ad922e21f7fb">sacn::Source::ChangePreviewFlag</a></div><div class="ttdeci">etcpal::Error ChangePreviewFlag(uint16_t universe, bool new_preview_flag)</div><div class="ttdoc">Change the send_preview option on a universe.</div><div class="ttdef"><b>Definition</b> source.h:599</div></div>
 <div class="ttc" id="aclasssacn_1_1_source_html_ad32e340d1c1e2be9963647aa45f55162"><div class="ttname"><a href="classsacn_1_1_source.html#ad32e340d1c1e2be9963647aa45f55162">sacn::Source::UpdateLevels</a></div><div class="ttdeci">void UpdateLevels(uint16_t universe, const uint8_t *new_levels, size_t new_levels_size)</div><div class="ttdoc">Copies the universe's DMX levels into the packet to be sent on the next threaded or manual update.</div><div class="ttdef"><b>Definition</b> source.h:685</div></div>
@@ -854,7 +857,8 @@ $(function(){initNavTree('cpp_2source_8h_source.html',''); initResizable(true); 
 <div class="ttc" id="acpp_2inet_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2inet_8h.html">inet.h</a></div></div>
 <div class="ttc" id="acpp_2uuid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_ga02f82b9c734e2d2f70a1106d6480833a"><div class="ttname"><a href="group__s_a_c_n.html#ga02f82b9c734e2d2f70a1106d6480833a">sacn_ip_support_t</a></div><div class="ttdeci">sacn_ip_support_t</div><div class="ttdoc">This enum defines how the API module will use IPv4 and IPv6 networking.</div><div class="ttdef"><b>Definition</b> common.h:75</div></div>
-<div class="ttc" id="agroup__s_a_c_n_html_ga3ee0954838bc60d3e04d7a54692533fd"><div class="ttname"><a href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_NETINT_CONFIG_DEFAULT_INIT</div><div class="ttdoc">Initializes the members of a SacnNetintConfig to defaults.</div><div class="ttdef"><b>Definition</b> common.h:176</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga1db3e66539bf0ae701d24bd61b54b647"><div class="ttname"><a href="group__s_a_c_n.html#ga1db3e66539bf0ae701d24bd61b54b647">SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_SEND_SOCKET_CONFIG_DEFAULT_INIT</div><div class="ttdoc">Initializes the members of a SacnSendSocketConfig to defaults.</div><div class="ttdef"><b>Definition</b> common.h:182</div></div>
+<div class="ttc" id="agroup__s_a_c_n_html_ga3ee0954838bc60d3e04d7a54692533fd"><div class="ttname"><a href="group__s_a_c_n.html#ga3ee0954838bc60d3e04d7a54692533fd">SACN_NETINT_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define SACN_NETINT_CONFIG_DEFAULT_INIT</div><div class="ttdoc">Initializes the members of a SacnNetintConfig to defaults.</div><div class="ttdef"><b>Definition</b> common.h:187</div></div>
 <div class="ttc" id="agroup__s_a_c_n_html_gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2"><div class="ttname"><a href="group__s_a_c_n.html#gga02f82b9c734e2d2f70a1106d6480833aa946f61a87ca52ca76b687484c5cdced2">kSacnIpV4AndIpV6</a></div><div class="ttdeci">@ kSacnIpV4AndIpV6</div><div class="ttdoc">Use both IPv4 and IPv6.</div><div class="ttdef"><b>Definition</b> common.h:81</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga0c44cd3dba2627779bfb65ea8349fe1c"><div class="ttname"><a href="group__sacn__source.html#ga0c44cd3dba2627779bfb65ea8349fe1c">sacn_source_change_name</a></div><div class="ttdeci">etcpal_error_t sacn_source_change_name(sacn_source_t handle, const char *new_name)</div><div class="ttdoc">Change the name of an sACN source.</div><div class="ttdef"><b>Definition</b> source.c:172</div></div>
 <div class="ttc" id="agroup__sacn__source_html_ga0e07a954dab245c7d6f323d9bdeb2df3"><div class="ttname"><a href="group__sacn__source.html#ga0e07a954dab245c7d6f323d9bdeb2df3">sacn_source_send_synchronization</a></div><div class="ttdeci">etcpal_error_t sacn_source_send_synchronization(sacn_source_t handle, uint16_t universe)</div><div class="ttdoc">Indicate that a new synchronization packet should be sent on the given synchronization universe.</div><div class="ttdef"><b>Definition</b> source.c:800</div></div>
@@ -894,11 +898,11 @@ $(function(){initNavTree('cpp_2source_8h_source.html',''); initResizable(true); 
 <div class="ttc" id="aopaque__id_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/opaque__id_8h.html">opaque_id.h</a></div></div>
 <div class="ttc" id="asource_8h_html"><div class="ttname"><a href="source_8h.html">source.h</a></div><div class="ttdoc">sACN Source API definitions</div></div>
 <div class="ttc" id="astruct_etc_pal_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdoc">Network interface configuration information to give the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:113</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_a0276bddc07d78d431f2be9b9cfd03b01"><div class="ttname"><a href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdoc">An array of network interface IDs to which to restrict multicast traffic.</div><div class="ttdef"><b>Definition</b> common.h:116</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_a4bff77059abfe25ae72a2dc8e7d3fbe7"><div class="ttname"><a href="struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdoc">Size of netints array.</div><div class="ttdef"><b>Definition</b> common.h:118</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_ae9a40a7b2ee6f082d3631d2b93d16ca1"><div class="ttname"><a href="struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1">SacnNetintConfig::no_netints</a></div><div class="ttdeci">bool no_netints</div><div class="ttdoc">If this is true, no network interfaces will be used for multicast.</div><div class="ttdef"><b>Definition</b> common.h:121</div></div>
-<div class="ttc" id="astruct_sacn_netint_config_html_af696d0613d0f3572fb57012045a53558"><div class="ttname"><a href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">SacnNetintConfig::send_socket_config</a></div><div class="ttdeci">SacnSendSocketConfig send_socket_config</div><div class="ttdoc">Configuration for send sockets (e.g.</div><div class="ttdef"><b>Definition</b> common.h:125</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html"><div class="ttname"><a href="struct_sacn_netint_config.html">SacnNetintConfig</a></div><div class="ttdoc">Network interface configuration information to give the sACN library.</div><div class="ttdef"><b>Definition</b> common.h:114</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_a0276bddc07d78d431f2be9b9cfd03b01"><div class="ttname"><a href="struct_sacn_netint_config.html#a0276bddc07d78d431f2be9b9cfd03b01">SacnNetintConfig::netints</a></div><div class="ttdeci">SacnMcastInterface * netints</div><div class="ttdoc">An array of network interface IDs to which to restrict multicast traffic.</div><div class="ttdef"><b>Definition</b> common.h:117</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_a4bff77059abfe25ae72a2dc8e7d3fbe7"><div class="ttname"><a href="struct_sacn_netint_config.html#a4bff77059abfe25ae72a2dc8e7d3fbe7">SacnNetintConfig::num_netints</a></div><div class="ttdeci">size_t num_netints</div><div class="ttdoc">Size of netints array.</div><div class="ttdef"><b>Definition</b> common.h:119</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_ae9a40a7b2ee6f082d3631d2b93d16ca1"><div class="ttname"><a href="struct_sacn_netint_config.html#ae9a40a7b2ee6f082d3631d2b93d16ca1">SacnNetintConfig::no_netints</a></div><div class="ttdeci">bool no_netints</div><div class="ttdoc">If this is true, no network interfaces will be used for multicast.</div><div class="ttdef"><b>Definition</b> common.h:122</div></div>
+<div class="ttc" id="astruct_sacn_netint_config_html_af696d0613d0f3572fb57012045a53558"><div class="ttname"><a href="struct_sacn_netint_config.html#af696d0613d0f3572fb57012045a53558">SacnNetintConfig::send_socket_config</a></div><div class="ttdeci">SacnSendSocketConfig send_socket_config</div><div class="ttdoc">Configuration for send sockets (e.g.</div><div class="ttdef"><b>Definition</b> common.h:126</div></div>
 <div class="ttc" id="astruct_sacn_send_socket_config_html"><div class="ttname"><a href="struct_sacn_send_socket_config.html">SacnSendSocketConfig</a></div><div class="ttdoc">Configuration for send sockets (e.g.</div><div class="ttdef"><b>Definition</b> common.h:103</div></div>
 <div class="ttc" id="astruct_sacn_source_config_html"><div class="ttname"><a href="struct_sacn_source_config.html">SacnSourceConfig</a></div><div class="ttdoc">A set of configuration information for a sACN source.</div><div class="ttdef"><b>Definition</b> source.h:88</div></div>
 <div class="ttc" id="astruct_sacn_source_config_html_a6fd0395a963497fecdf963a53e782d29"><div class="ttname"><a href="struct_sacn_source_config.html#a6fd0395a963497fecdf963a53e782d29">SacnSourceConfig::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdoc">The source's CID.</div><div class="ttdef"><b>Definition</b> source.h:92</div></div>
