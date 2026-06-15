@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['librarysettings_0',['LibrarySettings',['../structsacn_1_1_library_settings.html',1,'sacn']]],
-  ['logger_1',['Logger',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html',1,'etcpal']]],
-  ['logmessagehandler_2',['LogMessageHandler',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_log_message_handler.html',1,'etcpal']]],
-  ['logtimestamp_3',['LogTimestamp',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_log_timestamp.html',1,'etcpal']]]
+  ['firsttype_0',['FirstType',['https://etclabs.github.io/EtcPalDocs/head/structetcpal_1_1detail_1_1_first_type.html',1,'etcpal::detail']]],
+  ['firsttype_3c_20first_2c_20rest_2e_2e_2e_20_3e_1',['FirstType&lt; First, Rest... &gt;',['https://etclabs.github.io/EtcPalDocs/head/structetcpal_1_1detail_1_1_first_type_3_01_first_00_01_rest_8_8_8_01_4.html',1,'etcpal::detail']]]
 ];

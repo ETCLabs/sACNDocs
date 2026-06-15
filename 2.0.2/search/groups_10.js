@@ -33,5 +33,7 @@ var searchData=
   ['source_20detector_20api_30',['sACN Source Detector API',['../group__sacn__source__detector__cpp.html',1,'']]],
   ['source_20detector_20options_31',['sACN Source Detector Options',['../group__sacnopts__source__detector.html',1,'']]],
   ['static_5fqueue_20rtos_20queues_32',['static_queue (RTOS queues)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__static__queue.html',1,'']]],
-  ['strongly_20typed_20handles_33',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__opaque__id.html',1,'']]]
+  ['strongly_20typed_20handles_33',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__opaque__id.html',1,'']]],
+  ['synchronized_20values_34',['synchronized_value (Synchronized Values)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__synchronized__value.html',1,'']]],
+  ['synchronized_5fvalue_20synchronized_20values_35',['synchronized_value (Synchronized Values)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__synchronized__value.html',1,'']]]
 ];

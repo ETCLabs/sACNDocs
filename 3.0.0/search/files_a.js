@@ -3,5 +3,6 @@ var searchData=
   ['sem_2eh_0',['sem.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2sem_8h.html',1,'']]],
   ['signal_2eh_1',['signal.h',['https://etclabs.github.io/EtcPalDocs/head/cpp_2signal_8h.html',1,'']]],
   ['source_2eh_2',['source.h',['../cpp_2source_8h.html',1,'(Global Namespace)'],['../source_8h.html',1,'(Global Namespace)']]],
-  ['source_5fdetector_2eh_3',['source_detector.h',['../cpp_2source__detector_8h.html',1,'(Global Namespace)'],['../source__detector_8h.html',1,'(Global Namespace)']]]
+  ['source_5fdetector_2eh_3',['source_detector.h',['../cpp_2source__detector_8h.html',1,'(Global Namespace)'],['../source__detector_8h.html',1,'(Global Namespace)']]],
+  ['synchronized_5fvalue_2eh_4',['synchronized_value.h',['https://etclabs.github.io/EtcPalDocs/head/synchronized__value_8h.html',1,'']]]
 ];

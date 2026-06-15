@@ -14,7 +14,7 @@ var searchData=
   ['linger_11',['linger',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
   ['link_12',['link',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
   ['list_13',['Todo List',['../todo.html',1,'']]],
-  ['lock_14',['Lock',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::Mutex::Lock()'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_recursive_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::RecursiveMutex::Lock()']]],
+  ['lock_14',['Lock',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_const_unique_lock_ptr.html#a74d183962cfb39d8c50382b496c82703',1,'etcpal::ConstUniqueLockPtr::Lock()'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::Mutex::Lock()'],['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_recursive_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::RecursiveMutex::Lock()']]],
   ['locks_15',['Locks',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__rwlock.html',1,'rwlock (Read-Write Locks)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__rwlock.html',1,'rwlock (Read-Write Locks)']]],
   ['log_16',['Log',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html#aa613ebedf6ebc98cccf35990217e2eab',1,'etcpal::Logger']]],
   ['log_20logging_17',['log Logging',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__log.html',1,'log (Logging)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__log.html',1,'log (Logging)']]],

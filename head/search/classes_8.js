@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['opaqueid_0',['OpaqueId',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3admxmergerhandletype_2c_20sacn_5fdmx_5fmerger_5ft_2c_20ksacndmxmergerinvalid_20_3e_1',['OpaqueId&lt; detail::DmxMergerHandleType, sacn_dmx_merger_t, kSacnDmxMergerInvalid &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3amergereceiverhandletype_2c_20sacn_5fmerge_5freceiver_5ft_2c_20ksacnmergereceiverinvalid_20_3e_2',['OpaqueId&lt; detail::MergeReceiverHandleType, sacn_merge_receiver_t, kSacnMergeReceiverInvalid &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3areceiverhandletype_2c_20sacn_5freceiver_5ft_2c_20ksacnreceiverinvalid_20_3e_3',['OpaqueId&lt; detail::ReceiverHandleType, sacn_receiver_t, kSacnReceiverInvalid &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3asourcehandletype_2c_20sacn_5fsource_5ft_2c_20ksacnsourceinvalid_20_3e_4',['OpaqueId&lt; detail::SourceHandleType, sacn_source_t, kSacnSourceInvalid &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]]
+  ['macaddr_0',['MacAddr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mac_addr.html',1,'etcpal']]],
+  ['mergereceiver_1',['MergeReceiver',['../classsacn_1_1_merge_receiver.html',1,'sacn']]],
+  ['mergereceiverhandletype_2',['MergeReceiverHandleType',['../classsacn_1_1detail_1_1_merge_receiver_handle_type.html',1,'sacn::detail']]],
+  ['mutex_3',['Mutex',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex.html',1,'etcpal']]],
+  ['mutexguard_4',['MutexGuard',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mutex_guard.html',1,'etcpal']]]
 ];

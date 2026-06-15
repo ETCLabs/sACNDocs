@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dmxmerger_0',['DmxMerger',['../classsacn_1_1_dmx_merger.html',1,'sacn']]],
-  ['dmxmergerhandletype_1',['DmxMergerHandleType',['../classsacn_1_1detail_1_1_dmx_merger_handle_type.html',1,'sacn::detail']]]
+  ['conststrictlockptr_0',['ConstStrictLockPtr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_const_strict_lock_ptr.html',1,'etcpal']]],
+  ['conststrictlockptr_3c_20t_2c_20mutex_20_3e_1',['ConstStrictLockPtr&lt; T, Mutex &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_const_strict_lock_ptr.html',1,'']]],
+  ['constuniquelockptr_2',['ConstUniqueLockPtr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_const_unique_lock_ptr.html',1,'etcpal']]]
 ];

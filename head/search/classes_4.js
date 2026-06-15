@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['inthandlemanager_0',['IntHandleManager',['https://etclabs.github.io/EtcPalDocs/head/struct_int_handle_manager.html',1,'']]],
-  ['ipaddr_1',['IpAddr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html',1,'etcpal']]]
+  ['error_0',['Error',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html',1,'etcpal']]],
+  ['etcpaladdrinfo_1',['EtcPalAddrinfo',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_addrinfo.html',1,'']]],
+  ['etcpalcmsghdr_2',['EtcPalCMsgHdr',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_c_msg_hdr.html',1,'']]],
+  ['etcpalgroupreq_3',['EtcPalGroupReq',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_group_req.html',1,'']]],
+  ['etcpalipaddr_4',['EtcPalIpAddr',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html',1,'']]],
+  ['etcpallinger_5',['EtcPalLinger',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_linger.html',1,'']]],
+  ['etcpallogparams_6',['EtcPalLogParams',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html',1,'']]],
+  ['etcpallogstrings_7',['EtcPalLogStrings',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_strings.html',1,'']]],
+  ['etcpallogtimestamp_8',['EtcPalLogTimestamp',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_timestamp.html',1,'']]],
+  ['etcpalmacaddr_9',['EtcPalMacAddr',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mac_addr.html',1,'']]],
+  ['etcpalmcastnetintid_10',['EtcPalMcastNetintId',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html',1,'']]],
+  ['etcpalmreq_11',['EtcPalMreq',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mreq.html',1,'']]],
+  ['etcpalmsghdr_12',['EtcPalMsgHdr',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html',1,'']]],
+  ['etcpalnetintinfo_13',['EtcPalNetintInfo',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_netint_info.html',1,'']]],
+  ['etcpalpktinfo_14',['EtcPalPktInfo',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_pkt_info.html',1,'']]],
+  ['etcpalpollevent_15',['EtcPalPollEvent',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_poll_event.html',1,'']]],
+  ['etcpalrbiter_16',['EtcPalRbIter',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_iter.html',1,'']]],
+  ['etcpalrbnode_17',['EtcPalRbNode',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_node.html',1,'']]],
+  ['etcpalrbtree_18',['EtcPalRbTree',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html',1,'']]],
+  ['etcpalsockaddr_19',['EtcPalSockAddr',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html',1,'']]],
+  ['etcpalsyslogparams_20',['EtcPalSyslogParams',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_syslog_params.html',1,'']]],
+  ['etcpalthreadparams_21',['EtcPalThreadParams',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_thread_params.html',1,'']]],
+  ['etcpaltimer_22',['EtcPalTimer',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_timer.html',1,'']]],
+  ['etcpaluuid_23',['EtcPalUuid',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html',1,'']]],
+  ['eventgroup_24',['EventGroup',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_event_group.html',1,'etcpal']]],
+  ['expected_25',['Expected',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html',1,'etcpal']]]
 ];
